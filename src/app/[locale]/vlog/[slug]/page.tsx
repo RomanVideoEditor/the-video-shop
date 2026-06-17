@@ -191,9 +191,9 @@ export default async function BlogPostPage({
             <span className="text-[#c8a96e] font-bold text-sm">R</span>
           </div>
           <div>
-            <p className="text-sm font-semibold text-[#f5f5f0]">Roman Gornih</p>
+            <p className="text-sm font-semibold text-[#f5f5f0]">The Video Shop</p>
             <p className="text-xs text-[#6b6b6b]">
-              {isHe ? "במאי ומפיק | The Video Shop" : "Director & Producer | The Video Shop"}
+              {isHe ? "סטודיו בוטיק להפקות וידאו ו-AI" : "Boutique Video & AI Production Studio"}
             </p>
           </div>
         </div>

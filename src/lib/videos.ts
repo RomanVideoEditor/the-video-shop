@@ -536,9 +536,9 @@ export const faqItems: FAQItem[] = [
     answerEn: "Absolutely. Every project is delivered in formats tailored to all relevant platforms: 16:9 for YouTube and LinkedIn, 9:16 for Reels and Stories, 1:1 for feed, and short versions for paid advertising.",
   },
   {
-    questionHe: "האם רומן גורניה מעורב ישירות בכל פרויקט?",
-    questionEn: "Is Roman Gornih personally involved in every project?",
-    answerHe: "כן. רומן גורניה, מייסד הסטודיו, מעורב ישירות בכל פרויקט — מהפגישה הראשונה ועד הסרט הסופי. אין מצב שנמכר לכם רומן ותקבלו עוזר. זה בדיוק מה שאומר 'בוטיק'.",
-    answerEn: "Yes. Roman Gornih, the studio founder, is personally involved in every project — from the first meeting to the final film. There's no situation where you're sold Roman and get an assistant. That's exactly what 'boutique' means.",
+    questionHe: "האם הסטודיו מעורב ישירות בכל פרויקט?",
+    questionEn: "Is the studio personally involved in every project?",
+    answerHe: "כן. הסטודיו מעורב ישירות בכל פרויקט מהפגישה הראשונה ועד הסרט הסופי. אין מצב שנמכר לכם בוטיק ותקבלו קו ייצור. זה בדיוק מה שאומר 'בוטיק'.",
+    answerEn: "Yes. The studio is directly involved in every project from the first meeting to the final film. There's no situation where you're sold boutique and get a production line. That's exactly what 'boutique' means.",
   },
 ];
