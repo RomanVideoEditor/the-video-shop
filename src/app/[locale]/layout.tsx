@@ -28,6 +28,8 @@ function buildSchema(locale: string) {
         url: SITE_URL,
         sameAs: [
           "https://www.youtube.com/@romangor",
+          "https://www.facebook.com/Video.Shop.Productions",
+          "https://il.linkedin.com/company/the-video-shop",
           "https://www.the-videoshop.com",
         ],
         areaServed: [

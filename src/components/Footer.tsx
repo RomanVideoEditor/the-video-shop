@@ -28,10 +28,7 @@ export default function Footer({ locale }: { locale: string }) {
             <h4 className="text-sm font-semibold text-[#c8a96e] uppercase tracking-widest mb-4">{nav("services")}</h4>
             <ul className="space-y-2">
               {[
-                { href: "/services/defense", label: nav("servicesDefense") },
-                { href: "/services/realestate", label: nav("servicesRealestate") },
-                { href: "/services/corporate", label: nav("servicesCorporate") },
-                { href: "/services/ai", label: nav("servicesAI") },
+                { href: "/services", label: nav("services") },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-[#6b6b6b] hover:text-[#c8a96e] transition-colors">
@@ -62,6 +59,18 @@ export default function Footer({ locale }: { locale: string }) {
                 <a href="https://www.youtube.com/@romangor" target="_blank" rel="noopener noreferrer"
                   className="text-sm text-[#6b6b6b] hover:text-[#c8a96e] transition-colors">
                   YouTube
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/Video.Shop.Productions" target="_blank" rel="noopener noreferrer"
+                  className="text-sm text-[#6b6b6b] hover:text-[#c8a96e] transition-colors">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://il.linkedin.com/company/the-video-shop" target="_blank" rel="noopener noreferrer"
+                  className="text-sm text-[#6b6b6b] hover:text-[#c8a96e] transition-colors">
+                  LinkedIn
                 </a>
               </li>
               <li>
