@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 
@@ -12,17 +12,7 @@ export default function Header({ locale }: HeaderProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isRTL = locale === "he";
-
-  const openServices = () => {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    setServicesOpen(true);
-  };
-  const closeServices = () => {
-    closeTimer.current = setTimeout(() => setServicesOpen(false), 120);
-  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -32,17 +22,11 @@ export default function Header({ locale }: HeaderProps) {
 
   const navLinks = [
     { href: "/", label: t("home") },
+    { href: "/services", label: t("services") },
     { href: "/about", label: t("about") },
     { href: "/portfolio", label: t("portfolio") },
     { href: "/vlog", label: t("vlog") },
     { href: "/contact", label: t("contact") },
-  ];
-
-  const serviceLinks = [
-    { href: "/services/defense", label: t("servicesDefense") },
-    { href: "/services/realestate", label: t("servicesRealestate") },
-    { href: "/services/corporate", label: t("servicesCorporate") },
-    { href: "/services/ai", label: t("servicesAI") },
   ];
 
   return (
@@ -60,55 +44,9 @@ export default function Header({ locale }: HeaderProps) {
           </span>
         </Link>
 
-        {/* Desktop Nav — flex-row-reverse in RTL so items start from right */}
+        {/* Desktop Nav */}
         <div className={`hidden lg:flex items-center gap-8 ${isRTL ? "flex-row-reverse" : ""}`}>
-          {/* Home */}
-          <Link
-            href="/"
-            className={`text-sm font-medium transition-colors hover:text-[#c8a96e] ${
-              pathname === "/" ? "text-[#c8a96e]" : "text-[#f5f5f0]/80"
-            }`}
-          >
-            {t("home")}
-          </Link>
-
-          {/* Services dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={openServices}
-            onMouseLeave={closeServices}
-          >
-            <button className="text-sm font-medium text-[#f5f5f0]/80 hover:text-[#c8a96e] transition-colors flex items-center gap-1.5">
-              {t("services")}
-              <svg className={`w-3 h-3 transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {servicesOpen && (
-              <div
-                className={`absolute top-full w-64 bg-[#111] border border-[#1e1e1e] rounded-xl shadow-2xl py-2 ${isRTL ? "right-0 text-right" : "left-0 text-left"}`}
-                style={{ marginTop: "-1px", paddingTop: "10px" }}
-                onMouseEnter={openServices}
-                onMouseLeave={closeServices}
-              >
-                {/* invisible bridge to prevent gap */}
-                <div className="absolute -top-3 left-0 right-0 h-3" />
-                {serviceLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setServicesOpen(false)}
-                    className="block px-4 py-2.5 text-sm text-[#f5f5f0]/70 hover:text-[#c8a96e] hover:bg-[#1a1a1a] transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Rest of nav links */}
-          {navLinks.slice(1).map((link) => (
+          {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -148,19 +86,6 @@ export default function Header({ locale }: HeaderProps) {
               {link.label}
             </Link>
           ))}
-          <div className="border-t border-[#1e1e1e] pt-4">
-            <p className="text-xs text-[#6b6b6b] mb-2">{t("services")}</p>
-            {serviceLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block text-[#f5f5f0]/70 hover:text-[#c8a96e] transition-colors py-1.5 text-sm"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
         </div>
       )}
     </header>

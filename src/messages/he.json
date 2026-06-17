@@ -86,9 +86,13 @@
     "h1": "תיק עבודות",
     "subtitle": "מעל 100 סרטים. כאן תמצאו פרויקטים נבחרים מהעבודות שאנחנו הכי גאים בהן.",
     "filterAll": "הכל",
-    "filterDefense": "ביטחוני / AI",
+    "filterHightech": "הייטק",
+    "filterProduct": "סרטי מוצר",
+    "filterAI": "סרטי AI",
     "filterRealestate": "נדל\"ן",
-    "filterCorporate": "תדמית",
+    "filterCommercial": "פרסומות",
+    "filterCreative": "קריאטיב",
+    "filterRecruitment": "גיוס עובדים",
     "challenge": "האתגר",
     "solution": "הפתרון"
   },
@@ -130,6 +134,8 @@
     "portfolioDesc": "100+ סרטי הפקה פרימיום: Palo Alto Networks, Ashtrom, Humavox, CROPX ועוד. צפו בפרויקטים נבחרים בתחומי הייטק, ביטחוני, נדל\"ן מסחרי וקורפורייט.",
     "contactTitle": "צור קשר | The Video Shop – הפקות וידאו ו-AI פרימיום לחברות B2B",
     "contactDesc": "מעוניינים בהפקת וידאו לחברת הייטק, ביטחוני, נדל\"ן מסחרי או AI? ספרו לנו על הפרויקט ונחזור אליכם תוך יום עסקים. סטודיו פרימיום לחברות B2B בלבד.",
+    "servicesTitle": "שירותים | The Video Shop – הפקת וידאו מלאה מקונספט ועד מסירה",
+    "servicesDesc": "כל שירותי הפקת הוידאו תחת קורת גג אחת: קריאטיב, תסריט, צילום, עריכה, צבע, מיקס, AI ועוד. תהליך מלא, ליווי אישי.",
     "vlogTitle": "בלוג | The Video Shop – תובנות הפקה, AI ו-B2B Video",
     "vlogDesc": "מאמרים מקצועיים על הפקות B2B, AI בוידאו, צילומי נדל\"ן וסרטי Investor Pitch. ידע מעשי ישירות מהסטודיו."
   }

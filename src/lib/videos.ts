@@ -1,4 +1,11 @@
-export type VideoCategory = "defense" | "realestate" | "corporate";
+export type VideoCategory =
+  | "hightech"
+  | "product"
+  | "ai"
+  | "realestate"
+  | "commercial"
+  | "creative"
+  | "recruitment";
 
 /** Convert "1:30" → "PT1M30S" for schema.org VideoObject duration */
 export function toIsoDuration(mmss: string): string {
@@ -42,7 +49,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Raise capital from international investors and government regulators for an autonomous interception drone system — with sensitive information and strict exposure limitations.",
     solutionHe: "פיתחנו סרט פיצ' עם ויזואליזציות פוטוריאליסטיות ב-Midjourney ו-Kling, תסריט טכני מורכב וסטוריבורד קולנועי שמציג את המערכת בפעולה מבלי לחשוף מידע סווג.",
     solutionEn: "We developed a pitch film with photorealistic visualizations in Midjourney and Kling, a complex technical script, and a cinematic storyboard showcasing the system in action without revealing classified information.",
-    category: "defense",
+    category: "ai",
     client: "Airobotics / Ondas Group",
     duration: "2:00",
     date: "2023-09-01",
@@ -56,7 +63,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Recruit talented developers in a highly competitive market — without sounding like everyone else.",
     solutionHe: "הפכנו את הקונבנציה על ראשה: סרט שמודע לעצמו ומלגלג על סרטי הגיוס הקלישאתיים, ובדיוק בגלל זה בלט ועבד.",
     solutionEn: "We flipped the convention: a self-aware film that mocks clichéd recruitment videos — and that's exactly why it stood out and worked.",
-    category: "corporate",
+    category: "recruitment",
     client: "Palo Alto Networks",
     duration: "1:23",
   },
@@ -82,7 +89,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Explain complex wireless charging technology in a way that stays in memory.",
     solutionHe: "קומדיה קולנועית: שודדים במוזיאון שהציוד שלהם גווע מסוללה — אבל ה-Humavox POD פועל בשלמות.",
     solutionEn: "Cinematic comedy: museum robbers whose equipment dies from dead batteries — but the Humavox POD works perfectly.",
-    category: "defense",
+    category: "creative",
     client: "Humavox",
     duration: "1:20",
   },
@@ -95,7 +102,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "A B2B product video for innovative technology not yet known to the market.",
     solutionHe: "שילוב של פוטאג' שטוק, צילום live action ומושן גרפיקס מותאם אישית לסרט שמסביר ומרגש.",
     solutionEn: "A combination of stock footage, live action filming, and custom motion graphics for a film that explains and excites.",
-    category: "defense",
+    category: "product",
     client: "Humavox",
     duration: "1:08",
   },
@@ -108,7 +115,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Explain smart agriculture technology to international investors and audiences.",
     solutionHe: "סרט investor pitch קולנועי שהציג את הטכנולוגיה בשדות האמיתיים ובמעבדה.",
     solutionEn: "A cinematic investor pitch film showcasing the technology in real fields and in the lab.",
-    category: "defense",
+    category: "hightech",
     client: "CROPX",
     duration: "1:41",
   },
@@ -134,7 +141,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Present a drone safety solution to an international professional audience.",
     solutionHe: "סרט מוצר B2B עם צילומי רחפן אמיתיים ועריכה דינמית שמציגה את המוצר בפעולה.",
     solutionEn: "A B2B product film with real drone footage and dynamic editing showcasing the product in action.",
-    category: "defense",
+    category: "product",
     client: "ParaZero",
     duration: "1:23",
   },
@@ -147,7 +154,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Present a tech product to the international market in a way that differentiates it from competitors.",
     solutionHe: "קמפיין דיגיטלי סאטירי שהשתמש בוויס-אובר סרקסטי להשוואה עם מצלמות זולות.",
     solutionEn: "A satirical digital campaign using sarcastic voiceover to compare with cheap cameras.",
-    category: "defense",
+    category: "commercial",
     client: "DRIDE",
     duration: "1:20",
   },
@@ -160,7 +167,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Explain a complex business travel platform in under a minute.",
     solutionHe: "סרט מסחרי מהיר, חכם וממוקד שהצליח לתקשר את הערך הבסיסי של המוצר בצורה בלתי נשכחת.",
     solutionEn: "A fast, smart, and focused commercial that successfully communicated the product's core value in an unforgettable way.",
-    category: "defense",
+    category: "commercial",
     client: "TravelPerk",
     duration: "0:42",
   },
@@ -173,7 +180,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     challengeEn: "Present a digital accessibility tool through a real and moving human story.",
     solutionHe: "סרט דוקומנטרי קצר על Neil Elefant, עיוור בעין אחת, שמציג את השפעת הנגישות על חייו.",
     solutionEn: "A short documentary film about Neil Elefant, blind in one eye, showing the impact of accessibility on his life.",
-    category: "corporate",
+    category: "creative",
     client: "UserWay",
     duration: "1:47",
   },

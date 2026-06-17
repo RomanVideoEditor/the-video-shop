@@ -7,9 +7,13 @@ interface Labels {
   h1: string;
   subtitle: string;
   filterAll: string;
-  filterDefense: string;
+  filterHightech: string;
+  filterProduct: string;
+  filterAI: string;
   filterRealestate: string;
-  filterCorporate: string;
+  filterCommercial: string;
+  filterCreative: string;
+  filterRecruitment: string;
   challenge: string;
   solution: string;
 }
@@ -22,14 +26,28 @@ interface Props {
 
 type Filter = "all" | VideoCategory;
 
+const categoryColors: Record<VideoCategory, string> = {
+  hightech: "border-blue-500/30 text-blue-400",
+  product: "border-purple-500/30 text-purple-400",
+  ai: "border-cyan-500/30 text-cyan-400",
+  realestate: "border-green-500/30 text-green-400",
+  commercial: "border-orange-500/30 text-orange-400",
+  creative: "border-pink-500/30 text-pink-400",
+  recruitment: "border-yellow-500/30 text-yellow-400",
+};
+
 export default function PortfolioClient({ locale, labels, videos }: Props) {
   const [filter, setFilter] = useState<Filter>("all");
 
   const filters: { key: Filter; label: string }[] = [
     { key: "all", label: labels.filterAll },
-    { key: "defense", label: labels.filterDefense },
+    { key: "hightech", label: labels.filterHightech },
+    { key: "product", label: labels.filterProduct },
+    { key: "ai", label: labels.filterAI },
     { key: "realestate", label: labels.filterRealestate },
-    { key: "corporate", label: labels.filterCorporate },
+    { key: "commercial", label: labels.filterCommercial },
+    { key: "creative", label: labels.filterCreative },
+    { key: "recruitment", label: labels.filterRecruitment },
   ];
 
   const filtered = filter === "all" ? videos : videos.filter((v) => v.category === filter);
@@ -79,6 +97,7 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
               <article key={video.id} className="bg-[#111] border border-[#1e1e1e] rounded-2xl overflow-hidden hover:border-[#c8a96e]/30 transition-colors">
                 <VideoEmbed
                   youtubeId={video.youtubeId}
+                  vimeoId={video.vimeoId}
                   title={isHe ? video.titleHe : video.titleEn}
                 />
                 <div className="p-6">
@@ -107,11 +126,7 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
                     </div>
                   </div>
                   <div className="mt-4">
-                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${
-                      video.category === "defense" ? "border-blue-500/30 text-blue-400" :
-                      video.category === "realestate" ? "border-green-500/30 text-green-400" :
-                      "border-orange-500/30 text-orange-400"
-                    }`}>
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${categoryColors[video.category]}`}>
                       {video.category}
                     </span>
                   </div>

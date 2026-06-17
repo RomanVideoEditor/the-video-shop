@@ -86,9 +86,13 @@
     "h1": "Portfolio",
     "subtitle": "Over 100 films. Here you'll find selected projects from our work that we're most proud of.",
     "filterAll": "All",
-    "filterDefense": "Defense / AI",
+    "filterHightech": "High-Tech",
+    "filterProduct": "Product Films",
+    "filterAI": "AI Films",
     "filterRealestate": "Real Estate",
-    "filterCorporate": "Corporate",
+    "filterCommercial": "Commercials",
+    "filterCreative": "Creative",
+    "filterRecruitment": "Recruitment",
     "challenge": "The Challenge",
     "solution": "The Solution"
   },
@@ -130,6 +134,8 @@
     "portfolioDesc": "100+ premium production films: Palo Alto Networks, Ashtrom, Humavox, CROPX and more. View selected projects in high-tech, defense, commercial real estate, and corporate.",
     "contactTitle": "Contact The Video Shop | Premium Video & AI Production for B2B Companies",
     "contactDesc": "Looking for premium video production for your high-tech, defense, real estate, or AI company? Tell us about your project — we respond within one business day. Premium studio for B2B companies only.",
+    "servicesTitle": "Services | The Video Shop – Full Video Production from Concept to Delivery",
+    "servicesDesc": "All video production services under one roof: creative, script, filming, editing, color, mix, AI and more. Full process, personal guidance.",
     "vlogTitle": "Blog | The Video Shop – Production Insights, AI & B2B Video",
     "vlogDesc": "Professional articles on B2B productions, AI in video, real estate filming, and Investor Pitch films. Practical knowledge straight from the studio."
   }
