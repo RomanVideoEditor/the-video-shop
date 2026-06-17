@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <rect width="1600" height="700" fill="#0d1117"/>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a7c59" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <text x="80" y="320" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f5f5f0" opacity="0.10">DRONE &amp; REAL ESTATE</text>
+  <text x="80" y="420" font-family="Arial, sans-serif" font-size="22" fill="#c8a96e" opacity="0.6">The Video Shop — Replace with real image</text>
+  <rect x="80" y="460" width="120" height="3" fill="#c8a96e" opacity="0.4"/>
+</svg>

@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "vlog": "Blog",
+    "contact": "Contact",
+    "servicesDefense": "Defense & AI Tech",
+    "servicesRealestate": "Real Estate & Architecture",
+    "servicesCorporate": "Brand & Corporate",
+    "servicesAI": "AI Video Production"
+  },
+  "home": {
+    "h1": "The Video Shop",
+    "h1sub": "A boutique video & AI production studio for Israel's leading companies.",
+    "subtitle": "Boundary-breaking creativity, personal service, and industrial-grade peace of mind. With 20 years of directing and production experience, we turn complex processes into videos that work.",
+    "subtitleSub": "No assembly-line productions. 100% attention to every frame.",
+    "cta": "Let's Talk",
+    "ctaPortfolio": "View Portfolio",
+    "socialProof": "Companies that trust us",
+    "servicesTitle": "What We Do",
+    "servicesSubtitle": "From high-tech to real estate, from AI to corporate content — full-service video under one roof.",
+    "s1title": "Defense & AI Tech",
+    "s1desc": "Complex pitch films for the defense, drone, and autonomy industry — with photorealistic AI visualizations.",
+    "s2title": "Real Estate & Architecture",
+    "s2desc": "Drone and architectural cinematography for major companies — Ashtrom, G City, and more.",
+    "s3title": "Brand & Corporate",
+    "s3desc": "20 years of directing: employer branding, employee films, campaigns and pitches that drive action.",
+    "s4title": "AI Video Production",
+    "s4desc": "Kling, Runway Gen-3 Alpha, Midjourney — visuals that until recently required million-dollar sets.",
+    "whyTitle": "Why The Video Shop?",
+    "why1": "20+ years of directing & production experience",
+    "why2": "100+ successful films in our portfolio",
+    "why3": "Personal guidance from concept to final cut",
+    "why4": "Smart AI integration for boundary-breaking results",
+    "why5": "Trusted by Israel's largest corporations",
+    "why6": "Fast delivery, green Core Web Vitals"
+  },
+  "about": {
+    "h1": "Boutique creativity. Enterprise capability.",
+    "intro": "We're a studio that lives and breathes video, and we understand that behind every project there are people, goals, and a vision. Our advantage lies in combining personal, eye-level service with premium deliverables.",
+    "howTitle": "How We Work",
+    "howText": "Quality production doesn't have to be heavy and cumbersome. We arrive on set sharp, light, and efficient — no dummy equipment or unnecessary tripods that just slow down the shooting day. The goal is to focus purely on the creation and the final result, and to give the client peace of mind.",
+    "techTitle": "Technology & People",
+    "techText": "We combine classic cinema with the cutting edge of artificial intelligence to produce content that until recently required enormous sets. When you work with us, you get a real team that accompanies you personally throughout the entire process, solves problems, and delivers the most precise creative work.",
+    "stat1num": "20+",
+    "stat1label": "Years Experience",
+    "stat2num": "100+",
+    "stat2label": "Successful Films",
+    "stat3num": "50+",
+    "stat3label": "Happy Clients",
+    "cta": "Let's Work Together"
+  },
+  "services": {
+    "hightech": {
+      "h1": "High-Tech & Startup Video",
+      "subtitle": "Investor pitches, brand films, and B2B video that raises capital and generates measurable ROI.",
+      "body1": "The tech world is full of excellent companies that don't know how to tell their story. That's exactly what we're here for — taking a complex product, a grand vision, or a groundbreaking technology and turning it into a film that can be understood, felt, and remembered.",
+      "body2": "From the first storyboard to the final film presented to investors — we're full partners in the process.",
+      "features": ["Investor Pitch Videos", "Brand Films", "Demo Videos", "Product & Explainer Videos", "Conference & Event Video", "Customer Testimonials"]
+    },
+    "realestate": {
+      "h1": "Real Estate & Architecture Video",
+      "subtitle": "Comprehensive video solutions for developers and commercial projects — from drone to the perfect marketing film.",
+      "body1": "Real estate is sold with the eyes before it's sold on paper. Professional video for commercial and residential projects creates a first impression that won't be forgotten, increases buyer demand, and shortens the sales cycle.",
+      "body2": "We have proven experience working with Israel's largest companies — Ashtrom, G City, and more. We know what a large development project needs.",
+      "features": ["Professional Drone Footage", "Virtual Tours", "Project Marketing Films", "Aerial Photography", "Construction Documentation", "Developer Event Videos"]
+    },
+    "ai": {
+      "h1": "AI Video Production",
+      "subtitle": "The next generation of business productions — combining artificial intelligence with a director's eye for results that feel like the future.",
+      "body1": "AI doesn't replace creativity — it amplifies it. We combine advanced AI tools like Kling, Runway Gen-3 Alpha, and Midjourney with 20 years of cinema experience to produce content that until recently required enormous budgets.",
+      "body2": "Storyboard development, visual renderings, groundbreaking B2B films, and marketing content unlike anything else on the market.",
+      "features": ["Kling AI Video Generation", "Runway Gen-3 Alpha", "Midjourney Visual Development", "AI Storyboarding", "Hybrid AI + Live Action", "AI Motion Graphics"]
+    },
+    "corporate": {
+      "h1": "Corporate Video",
+      "subtitle": "Invested employee films, employer branding, and premium internal content that radiates pride.",
+      "body1": "The hardest people to convince are those who already know you. When your internal corporate film looks great, employees are proud, managers are happy, and candidates want to join.",
+      "body2": "From onboarding films to company events, from employer branding to HR content — we create content your organization will be proud to share.",
+      "features": ["Employer Branding Films", "Onboarding Videos", "Company Event Films", "HR & Recruitment Videos", "Internal Content", "Anniversary & Milestone Films"]
+    }
+  },
+  "portfolio": {
+    "h1": "Portfolio",
+    "subtitle": "Over 100 films. Here you'll find selected projects from our work that we're most proud of.",
+    "filterAll": "All",
+    "filterDefense": "Defense / AI",
+    "filterRealestate": "Real Estate",
+    "filterCorporate": "Corporate",
+    "challenge": "The Challenge",
+    "solution": "The Solution"
+  },
+  "vlog": {
+    "h1": "Blog",
+    "subtitle": "Professional insights on B2B productions, AI in video, real estate, and pitch films — straight from the studio.",
+    "readMore": "Read Article",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog"
+  },
+  "contact": {
+    "h1": "Let's Make Something Amazing Together",
+    "subtitle": "Tell us about your project and we'll get back to you within one business day.",
+    "name": "Full Name",
+    "company": "Company",
+    "email": "Email",
+    "phone": "Phone",
+    "projectType": "Project Type",
+    "projectTypes": ["High-Tech / Startup", "Real Estate / Architecture", "AI Production", "Corporate Video", "Other"],
+    "message": "Tell us about your project",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Thank you! We'll be in touch soon.",
+    "required": "Required",
+    "trustedBy": "Trusted by leading brands",
+    "trustQuote": "\"Every project is personally guided by Roman Gornih from the first meeting to the final film. That's what 'boutique' really means.\""
+  },
+  "footer": {
+    "tagline": "A boutique video & AI production studio",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy"
+  },
+  "meta": {
+    "homeTitle": "The Video Shop – Boutique Video & AI Production Studio | B2B, High-Tech, Real Estate",
+    "homeDesc": "Premium video & AI production studio for B2B companies: high-tech, defense, commercial real estate, and corporate. 20 years experience, 100+ films, full personal guidance. Content that raises capital and drives action.",
+    "aboutTitle": "About Roman Gornih | The Video Shop – Premium Video & AI Production",
+    "aboutDesc": "Roman Gornih, director and producer with 20+ years of experience. The Video Shop specializes in premium B2B films for high-tech, defense, and commercial real estate companies. Personal service, results that work.",
+    "portfolioTitle": "Portfolio | The Video Shop – B2B, High-Tech, Real Estate & AI Films",
+    "portfolioDesc": "100+ premium production films: Palo Alto Networks, Ashtrom, Humavox, CROPX and more. View selected projects in high-tech, defense, commercial real estate, and corporate.",
+    "contactTitle": "Contact The Video Shop | Premium Video & AI Production for B2B Companies",
+    "contactDesc": "Looking for premium video production for your high-tech, defense, real estate, or AI company? Tell us about your project — we respond within one business day. Premium studio for B2B companies only.",
+    "vlogTitle": "Blog | The Video Shop – Production Insights, AI & B2B Video",
+    "vlogDesc": "Professional articles on B2B productions, AI in video, real estate filming, and Investor Pitch films. Practical knowledge straight from the studio."
+  }
+}
