@@ -18,8 +18,8 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
     : `https://vumbnail.com/${vimeoId}.jpg`;
 
   const embedSrc = youtubeId
-    ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`
-    : `https://player.vimeo.com/video/${vimeoId}?autoplay=1`;
+    ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&color=white`
+    : `https://player.vimeo.com/video/${vimeoId}?autoplay=1&title=0&byline=0&portrait=0&color=c8a96e`;
 
   if (playing) {
     return (
