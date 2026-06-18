@@ -99,6 +99,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     date: "2025-03-01",
   },
   {
+    id: "bright-data-ai-explainer",
+    youtubeId: "HKkqkHBSt7Q",
+    titleHe: "Bright Data — כשה-AI שלך רעב לדאטה | Motion Graphics & Tech Storytelling",
+    titleEn: "Bright Data — When Your AI Is Hungry for Data | Motion Graphics & Tech Storytelling",
+    challengeHe: "להסביר תשתית דאטה מורכבת לקהל של CTOs ומנהלי מוצר AI — בפחות מ-60 שניות, בלי להאבד בטכני ובלי לאבד את האנרגיה.",
+    challengeEn: "Explain a complex data infrastructure to an audience of CTOs and AI product managers — in under 60 seconds, without getting lost in technical details or losing energy.",
+    solutionHe: "Tech Storytelling שמתחיל מהכאב: מודלי AI שנשארים מאחור בגלל חוסר דאטה. Motion Graphics תלת-ממד עם Particle Systems שמדמים זרימת מידע ורשתות. UI Simulation של שגיאות קוד ממשיות, גרף השוואתי מול מתחרים, ו-Beat-matching מדויק לפסקול אלקטרוני. 60 שניות שמסיימות עם CTA ברור.",
+    solutionEn: "Tech Storytelling that opens with the pain: AI models falling behind due to data starvation. 3D Motion Graphics with Particle Systems simulating data flow and networks. UI Simulation with real code errors, a competitive benchmark graph, and precise beat-matching to an electronic soundtrack. 60 seconds that end with a clear CTA.",
+    category: "hightech",
+    client: "Bright Data",
+    duration: "1:00",
+    date: "2024-06-01",
+  },
+  {
     id: "iron-bullet-airobotics",
     vimeoId: "TODO_iron_bullet",
     titleHe: "Iron Bullet — Airobotics / Ondas Group",
@@ -272,6 +286,99 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "tech-product-video-60sec",
+    coverImage: "/blog/tech-product-video-cover.svg",
+    titleHe: "איך להסביר טכנולוגיה מורכבת ב-60 שניות? האמנות של סרטי מוצר לעולם ה-AI והדאטה",
+    titleEn: "How to Explain Complex Technology in 60 Seconds? The Art of Product Films for the AI and Data World",
+    excerptHe: "האתגר הגדול של חברות הייטק ו-SaaS הוא לא הפיתוח — אלא היכולת להסביר מה המוצר שלהן עושה ב-60 שניות. שלושת החוקים לסרטון מוצר טכנולוגי שממיר צופים ללידים.",
+    excerptEn: "The biggest challenge for high-tech and SaaS companies isn't development — it's explaining what their product does in 60 seconds. Three laws of a technology product film that converts viewers to leads.",
+    readingTime: 5,
+    bodyHe: `## האתגר שכל חברת הייטק מכירה
+
+האתגר הגדול ביותר של חברות הייטק וסטארטאפים בתחום ה-AI וה-Deep Tech הוא לא הפיתוח עצמו — אלא היכולת להסביר ללקוחות ולמשקיעים מה המוצר שלהם באמת עושה, ואיך הוא פותר להם את הבעיה בצורה פשוטה ומהירה. כשהמוצר שלכם מבוסס על אלגוריתמים, תשתית נתונים או חיבורי API, אי אפשר פשוט "לצלם אותו בשטח".
+
+כאן נכנס לתמונה השילוב בין קריאטיב חכם, Motion Graphics מתקדם וסיפור סיפורים טכנולוגי.
+
+בפרויקט שיצרנו עבור Bright Data, המטרה הייתה לפצח את האופן שבו תשתית הדאטה שלהם מניעה ומזינה מודלים של בינה מלאכותית. במקום להשתמש בהסברים טקסטואליים ארוכים, תרגמנו את הארכיטקטורה המורכבת לשפה חזותית קולנועית ודינמית.
+
+[IMAGE]
+
+## חוק 1: להתחיל מהכאב — לא מהפיצ'ר
+
+הלקוח שלכם לא קונה טכנולוגיה, הוא קונה פתרון לבעיה. הסרטון נפתח בחרדה הגדולה ביותר של מפתחי AI — מודלים שנשארים מאחור ומאבדים את היתרון התחרותי שלהם בגלל חוסר במידע עדכני. ברגע שהגדרתם את הכאב בשניות הראשונות, הקהל שלכם קשוב לפתרון.
+
+**רוב חברות הטכנולוגיה עושות את הטעות ההפוכה:** הן מתחילות בפיצ'רים, ב"מה יש לנו", ב-USPs. הצופה עוד לא יודע למה לו אכפת. תנו לו סיבה לצפות — אז תציגו את הפתרון.
+
+## חוק 2: מטפורות ויזואליות שמייצגות מה שלא ניתן לצלם
+
+דאטה הוא לא דבר מוחשי. כדי להראות זרימה, נפח ומהירות של מידע, השתמשנו במערכות חלקיקים תלת-ממדיות ובגרפיקה בתנועה המדמה רשתות עצביות וזרימת קוד.
+
+שלושה כלים שעושים את זה נכון:
+
+**Particle Systems:** כדורים, נקודות ונתיבים שזורמים בחלל — מדמים את הכמות העצומה של נתונים שעוברים דרך המערכת. הצופה מרגיש "סקייל" בלי להבין מספרים.
+
+**UI Simulation:** ממשקי מסך אמיתיים עם שגיאות קוד מוכרות (404, 502, timeout errors) — הצופה הטכני מזהה אותם מיד ומזדהה עם הכאב. זה לא עיצוב גנרי, זה שפה משותפת.
+
+**Beat-matching:** כל תנועה גרפית מסונכרנת עם הביט של הפסקול. זה לא מקרי — זה מה שגורם לסרטון להרגיש "חי" ואנרגטי גם כשאין בו שחקן אחד.
+
+## חוק 3: לדבר בשפה של מקבלי ההחלטות
+
+מנהלי מוצר, CTOs וסמנכ"לי טכנולוגיה מחפשים אמינות. שילוב של מונחים מקצועיים נכונים (LLMs, MCP, A2A, Petabyte scale), תצוגות ממשק מוכרות ונתונים השוואתיים מול מתחרים — מעניקים לסרטון את הסמכותיות הדרושה.
+
+**הגרף ההשוואתי הוא כלי שיווקי עוצמתי:** הוא הופך שאלה של "האם לקנות" לשאלה של "למה לא לקנות". מקבל ההחלטות רואה את הנתונים, מבין את הפער — ועובר לשלב הבא.
+
+## מה זה שווה בפועל
+
+סרטון מוצר חכם הוא לא רק חלון ראווה יפה — הוא זרוע המכירות והשיווק הדיגיטלית של החברה שלכם. הוא מסוגל לקחת את הטכנולוגיה המורכבת ביותר ולתרגם אותה לערך עסקי ברור — בין אם על דף הנחיתה, בהצגה למשקיעים, או ב-LinkedIn.
+
+**60 שניות שנעשות נכון שוות יותר מ-6 עמודי מצגת.**`,
+    bodyEn: `## The Challenge Every High-Tech Company Knows
+
+The biggest challenge for high-tech companies and startups in AI and Deep Tech isn't the development itself — it's the ability to explain to clients and investors what the product actually does, and how it solves their problem simply and quickly. When your product is based on algorithms, data infrastructure, or API connections, you simply can't "film it in the field."
+
+This is where the combination of smart creative, advanced Motion Graphics, and Tech Storytelling comes in.
+
+In the project we created for Bright Data, the goal was to crack the way their data infrastructure powers and feeds AI models. Instead of using long textual explanations, we translated the complex architecture into a cinematic, dynamic visual language.
+
+[IMAGE]
+
+## Law 1: Start with the Pain — Not the Feature
+
+Your client isn't buying technology, they're buying a solution to a problem. The video opens with the biggest anxiety of AI developers — models falling behind and losing their competitive advantage due to a lack of current data. Once you define the pain in the first seconds, your audience is listening for the solution.
+
+**Most tech companies make the opposite mistake:** they start with features, with "what we have," with USPs. The viewer doesn't yet know why they should care. Give them a reason to watch — then present the solution.
+
+## Law 2: Visual Metaphors That Represent the Unfilmable
+
+Data isn't a tangible thing. To show the flow, volume, and speed of information, we used 3D particle systems and motion graphics simulating neural networks and code flow.
+
+Three tools that do this right:
+
+**Particle Systems:** spheres, points, and paths flowing through space — simulating the enormous volume of data passing through the system. The viewer feels "scale" without understanding numbers.
+
+**UI Simulation:** real screen interfaces with familiar error codes (404, 502, timeout errors) — the technical viewer recognizes them immediately and identifies with the pain. This isn't generic design, it's a shared language.
+
+**Beat-matching:** every graphic movement is synchronized with the soundtrack's beat. This isn't accidental — it's what makes the video feel "alive" and energetic even without a single actor.
+
+## Law 3: Speak the Language of Decision-Makers
+
+Product managers, CTOs, and technology VPs look for credibility. Combining the right professional terminology (LLMs, MCP, A2A, Petabyte scale), familiar interface displays, and comparative data against competitors — gives the video the authority it needs.
+
+**The comparison graph is a powerful sales tool:** it turns the question of "whether to buy" into "why not to buy." The decision-maker sees the data, understands the gap — and moves to the next stage.
+
+## What This Is Worth in Practice
+
+A smart product film isn't just a pretty showpiece — it's your company's digital sales and marketing arm. It can take the most complex technology and translate it into clear business value — whether on a landing page, in an investor presentation, or on LinkedIn.
+
+**60 seconds done right are worth more than 6 slides of a deck.**`,
+    date: "2025-06-01",
+    tags: ["High-Tech", "Motion Graphics", "Tech Storytelling", "SaaS"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    relatedYoutubeId: "HKkqkHBSt7Q",
+  },
   {
     id: "max-roi-production",
     coverImage: "/blog/social-content-cover.svg",
