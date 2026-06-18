@@ -75,11 +75,11 @@
       "features": ["Defense & Tech Concept Films", "Pre-visualization for Investors & Governments", "Kling AI Motion Generation", "Runway Gen-3 Alpha", "Midjourney Storyboarding", "HUD/UI Overlays in After Effects", "Hybrid AI + Live Action", "Hard-Surface Visual Consistency"]
     },
     "corporate": {
-      "h1": "Corporate Video",
-      "subtitle": "Invested employee films, employer branding, and premium internal content that radiates pride.",
-      "body1": "The hardest people to convince are those who already know you. When your internal corporate film looks great, employees are proud, managers are happy, and candidates want to join.",
-      "body2": "From onboarding films to company events, from employer branding to HR content — we create content your organization will be proud to share.",
-      "features": ["Employer Branding Films", "Onboarding Videos", "Company Event Films", "HR & Recruitment Videos", "Internal Content", "Anniversary & Milestone Films"]
+      "h1": "Employer Branding & Recruitment Films",
+      "subtitle": "Turning organizational values into a film that attracts talent, unifies employees, and differentiates you from every competitor in the job market.",
+      "body1": "The best talent chooses where to work — not just by salary, but by the story the company tells. The right employer branding film doesn't present work conditions, it presents identity. Who you are, why you do what you do, and what it means to be part of that story.",
+      "body2": "We specialize in drawing the most authentic performance from non-actor employees — real pride, unforced laughter, the sentence that comes from the heart. That's what connects a candidate to a company before they've even sent a CV.",
+      "features": ["Employer Branding Films", "Recruitment Videos", "Organizational DNA & Company Identity", "Non-actor Directing", "Onboarding Videos", "Company Event Films", "Department & HQ Branding", "HR Content for Social Media"]
     }
   },
   "portfolio": {
@@ -142,8 +142,8 @@
     "servicesRealestateDesc": "Marketing films, drone cinematography, and development documentation for commercial and residential real estate. Worked with Ashtrom, Yh Damari and more.",
     "servicesAITitle": "Photorealistic AI Video Production | Kling, Runway Gen-3, Midjourney | The Video Shop",
     "servicesAIDesc": "Cinematic, photorealistic AI films for pitch, investment, and B2B. Kling, Runway Gen-3 Alpha, Midjourney — from storyboard to delivery. Visuals that can't be filmed, at accessible budgets.",
-    "servicesCorporateTitle": "Internal Corporate & Employer Branding Video | The Video Shop",
-    "servicesCorporateDesc": "Employer branding films, recruitment videos, onboarding, and HR content for leading companies. Employer branding that attracts talent and accelerates hiring.",
+    "servicesCorporateTitle": "Employer Branding & Recruitment Films | The Video Shop Israel",
+    "servicesCorporateDesc": "Employer branding that attracts talent and unifies employees. Non-actor directing, organizational DNA films, recruitment videos for companies like Ashtrom Group and Palo Alto Networks.",
     "vlogTitle": "Blog | The Video Shop – Production Insights, AI & B2B Video",
     "vlogDesc": "Professional articles on B2B productions, AI in video, real estate filming, and Investor Pitch films. Practical knowledge straight from the studio."
   }

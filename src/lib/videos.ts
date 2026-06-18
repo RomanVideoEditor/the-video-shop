@@ -41,6 +41,20 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "ashtrom-employer-branding",
+    youtubeId: "3wO3R6Xr8bU",
+    titleHe: "להיות אשטרומיסט — מיתוג מעסיק | קבוצת אשטרום",
+    titleEn: "Being an Ashtromist — Employer Branding | Ashtrom Group",
+    challengeHe: "לקחת קונצרן בנייה ותשתית עצום עם אלפי עובדים בעשרות מוקדים ולזקק אותו לזהות ארגונית אחת שכולם — מצוות השטח ועד ההנהלה — מזדהים איתה.",
+    challengeEn: "Take a massive construction and infrastructure conglomerate with thousands of employees across dozens of sites and distill it into one organizational identity that everyone — from field crews to management — identifies with.",
+    solutionHe: "שבוע הפקה אחד, עשרות לוקיישנים ברחבי הארץ. שילוב צילומי רחפן, שטח ומשרדים עם Sound Design קצבי שמתכתב עם פעימות התעשייה. בימוי non-actors שהוציא גאווה ואותנטיות אמיתית. תוצאה: המונח 'אשטרומיסט' הפך לזהות — לא לסיסמה.",
+    solutionEn: "One production week, dozens of locations across the country. Drone, field, and office footage combined with rhythmic sound design that echoes the industry's pulse. Non-actor directing that brought out real pride and authenticity. Result: 'Ashtromist' became an identity — not a slogan.",
+    category: "recruitment",
+    client: "Ashtrom Group",
+    duration: "2:10",
+    date: "2023-06-01",
+  },
+  {
     id: "iron-arrow-airobotics",
     youtubeId: "iMfsWqluFpo",
     titleHe: "IRON ARROW — מערכת יירוט אוטונומית | Airobotics / Ondas Group",
