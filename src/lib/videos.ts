@@ -99,6 +99,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     date: "2025-03-01",
   },
   {
+    id: "dride-4k-kickstarter",
+    youtubeId: "JncBv6FbkRc",
+    titleHe: "Dride 4K — סרט קיקסטארטר שגייס 1.1 מיליון דולר",
+    titleEn: "Dride 4K — Kickstarter Film That Raised $1.1 Million",
+    challengeHe: "להפוך מצלמת רכב בשלב פיתוח מתקדם לקמפיין גיוס המונים שיגייס מעל מיליון דולר מ-3,748 תומכים — בלי מוצר מוגמר על המדף.",
+    challengeEn: "Turn an advanced-stage dashcam into a crowdfunding campaign that raises over $1M from 3,748 backers — without a finished product on the shelf.",
+    solutionHe: "Kickstarter Blueprint קלאסי: Hook קולנועי, הצגת כאב (חום קיצוני, פגיעות בחנייה), הצגת גיבור המוצר, Feature Walkthrough ו-Pitch ישיר ליזמים. שילוב Live Action + הדמיות 3D של פנים המכשיר נטרל את חשש האמינות. הצגת 'כבר רכשנו אלפי CPUs' סגרה את ההתנגדות האחרונה.",
+    solutionEn: "Classic Kickstarter Blueprint: cinematic hook, pain presentation (extreme heat, parking hits), hero product reveal, feature walkthrough, and direct founder pitch. Live Action + 3D renders of device internals neutralized credibility fear. 'We already purchased thousands of CPUs' closed the final objection.",
+    category: "product",
+    client: "Dride",
+    duration: "3:15",
+    date: "2023-04-01",
+  },
+  {
     id: "bright-data-ai-explainer",
     youtubeId: "HKkqkHBSt7Q",
     titleHe: "Bright Data — כשה-AI שלך רעב לדאטה | Motion Graphics & Tech Storytelling",
@@ -286,6 +300,119 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "kickstarter-blueprint",
+    coverImage: "/blog/kickstarter-blueprint-cover.svg",
+    titleHe: "ה-Blueprint של סרט קיקסטארטר: איך הופכים ספקנים לתומכים משלמים",
+    titleEn: "The Kickstarter Blueprint: How to Turn Skeptics into Paying Backers",
+    excerptHe: "סרטון קיקסטארטר מוצלח פועל לפי חוקים שונים לחלוטין מסרטון תדמית. כשהמוצר עוד לא קיים — האמון הוא הכל. ניתוח הקמפיין של Dride 4K שגייס 1.1 מיליון דולר.",
+    excerptEn: "A successful Kickstarter video plays by completely different rules than a brand film. When the product doesn't exist yet — trust is everything. Analysis of the Dride 4K campaign that raised $1.1 million.",
+    readingTime: 6,
+    bodyHe: `## קמפיין גיוס המונים ≠ סרטון תדמית
+
+רוב חברות ההפקה מגיעות לקמפיין קיקסטארטר עם הכלים של סרטוני מותג: אסתטיקה יפה, מוזיקה מרגשת, מסרים ברמה גבוהה. התוצאה? סרטון מרשים שלא מוכר כלום.
+
+בגיוס המונים, הצופה הוא לא לקוח שרוכש מוצר מוכח. הוא משקיע בחזון של מוצר שעוד לא קיים בשוק. הפחד מכשלון, מאיחור במשלוח, מבעיות ייצור — כל אלה עובדים נגדכם. הסרטון צריך לנטרל התנגדויות, לא רק לייצר התרגשות.
+
+בפרויקט Dride 4K — מצלמת רכב 4K שפוצחה לקמפיין קיקסטארטר — בנינו כל שנייה של הסרטון סביב מבנה אחד מוכח.
+
+[IMAGE]
+
+## ה-Kickstarter Blueprint: חמישה שלבים
+
+### שלב 1 — ה-Hook הקולנועי (0–10 שניות)
+
+החמש עד עשר שניות הראשונות הן הכל. הגולש בקיקסטארטר רואה עשרות פרויקטים. ה-Hook לא צריך להסביר — הוא צריך לעצור.
+
+Dride 4K פתח עם המוצר בפעולה, רכב בתנועה, גימור מטאלי שמשדר "זה לא מוצר מוסכייה — זה טכנולוגיה רצינית." לפני שהצופה שמע מילה אחת, הוא כבר הבין שזה שונה.
+
+### שלב 2 — הצגת הכאב (The Problem)
+
+אחרי ה-Hook, לא מציגים את המוצר — מציגים את הבעיה. **חום קיצוני** שמשבית מצלמות רגילות. **פגיעה ברכב חונה** ללא עדים ובלי ראיות. **קושי בשיתוף** חומרים עם ביטוח ומשטרה.
+
+הצופה צריך לחשוב "זה בדיוק מה שקרה לי" לפני שהוא שומע על הפתרון. ברגע שיש זיהוי עם הבעיה — הפתרון כבר חצי מכור.
+
+### שלב 3 — גיבור המוצר (The Hero Reveal)
+
+עכשיו, ורק עכשיו, מציגים את המוצר — עם תיאור נועז: **"The most rigid dashcam on the planet."** זה לא תיאור מפרט, זה הצהרת עמדה. זה מה שגורם לתומך לרצות לספר לחברים שלו.
+
+### שלב 4 — Feature Walkthrough שמתרגם ל-Benefits
+
+כל פיצ'ר טכני מתרגם מיד לתועלת רגשית:
+
+**"שלדת אלומיניום לפיזור חום"** → "לא תפסיק לעבוד כשהרכב עומד בשמש של ישראל."
+**"חיישן מכ"ם Radar-based"** → "תדע שמישהו פגע ברכב שלך שניות לפני שזה קרה."
+**"4G/5G עם ענן"** → "החומרים שמורים לפני שהגנב הספיק לברוח."
+
+המפרט הטכני הוא הראיה. התועלת הרגשית היא הסיבה לקנות.
+
+### שלב 5 — נטרול ההתנגדות הגדולה
+
+בקיקסטארטר, ההתנגדות הסמויה תמיד אותה: "זה ישלח בזמן? זה לא יעלם לי עם הכסף?" התשובה לא יכולה להיות "אנחנו אמינים." היא צריכה להיות **עדות קונקרטית**.
+
+Dride 4K הציג בסרטון: "כבר רכשנו אלפי מעבדים מראש." זה משפט אחד שנטרל פחד של כל Backer שחשב פעמיים. לא הבטחות — עובדות.
+
+## התוצאה: 3,748 תומכים, $1,191,083
+
+הפרויקט גייס מעל 1.1 מיליון דולר. לא בגלל שהמוצר היה הכי טוב בשוק — אלא כי הסרטון בנה אמון, תרגם טכנולוגיה לרגש, ונתן לצופה סיבה לפעול **עכשיו**.
+
+**סרטון קמפיין הוא המנוע העסקי המרכזי של הגיוס. הוא לא "חלק מהקמפיין" — הוא הקמפיין.**`,
+    bodyEn: `## Crowdfunding Video ≠ Brand Film
+
+Most production companies come to a Kickstarter campaign with brand film tools: beautiful aesthetics, moving music, high-level messaging. The result? An impressive video that sells nothing.
+
+In crowdfunding, the viewer isn't a customer buying a proven product. They're investing in the vision of a product that doesn't exist in the market yet. Fear of failure, late delivery, production issues — all working against you. The video needs to neutralize objections, not just generate excitement.
+
+In the Dride 4K project — a 4K dashcam cracked for a Kickstarter campaign — we built every second of the video around one proven structure.
+
+[IMAGE]
+
+## The Kickstarter Blueprint: Five Stages
+
+### Stage 1 — The Cinematic Hook (0–10 seconds)
+
+The first five to ten seconds are everything. A Kickstarter browser sees dozens of projects. The hook doesn't need to explain — it needs to stop.
+
+Dride 4K opened with the product in action, a car in motion, metallic finish that communicates "this isn't a garage product — this is serious technology." Before the viewer heard a single word, they already understood this was different.
+
+### Stage 2 — The Pain Presentation
+
+After the hook, don't present the product — present the problem. **Extreme heat** that disables regular cameras. **Parking hits** with no witnesses and no evidence. **Difficulty sharing** footage with insurance and police.
+
+The viewer needs to think "that's exactly what happened to me" before they hear about the solution. Once there's identification with the problem — the solution is already half sold.
+
+### Stage 3 — The Hero Reveal
+
+Now, and only now, present the product — with a bold declaration: **"The most rigid dashcam on the planet."** This isn't a spec description, it's a position statement. This is what makes a backer want to tell their friends.
+
+### Stage 4 — Feature Walkthrough That Translates to Benefits
+
+Every technical feature immediately translates to an emotional benefit:
+
+**"Aluminum chassis for heat dissipation"** → "It won't stop working when your car sits in the Israeli sun."
+**"Radar-based sensor"** → "You'll know someone hit your car seconds before it happened."
+**"4G/5G with cloud"** → "Footage is saved before the thief had time to escape."
+
+The technical spec is the proof. The emotional benefit is the reason to buy.
+
+### Stage 5 — Neutralizing the Big Objection
+
+In Kickstarter, the hidden objection is always the same: "Will it ship on time? Will my money disappear?" The answer can't be "we're trustworthy." It needs to be **concrete evidence**.
+
+Dride 4K showed in the video: "We've already purchased thousands of processors in advance." One sentence that neutralized the fear of every backer who thought twice. Not promises — facts.
+
+## The Result: 3,748 Backers, $1,191,083
+
+The project raised over $1.1 million. Not because the product was the best on the market — but because the video built trust, translated technology into emotion, and gave the viewer a reason to act **now**.
+
+**A campaign video is the primary business engine of the fundraise. It's not "part of the campaign" — it is the campaign.**`,
+    date: "2025-04-01",
+    tags: ["Crowdfunding", "Kickstarter", "Product Launch", "Direct Response"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "סרטי מוצר והשקות",
+    relatedServiceLabelEn: "Product & Launch Films",
+    relatedYoutubeId: "JncBv6FbkRc",
+  },
   {
     id: "tech-product-video-60sec",
     coverImage: "/blog/tech-product-video-cover.svg",
