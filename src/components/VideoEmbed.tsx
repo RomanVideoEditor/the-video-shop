@@ -32,6 +32,10 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
           className="absolute inset-0 w-full h-full"
           loading="lazy"
         />
+        {/* Masks YouTube title/channel bar — pointer-events:none lets clicks pass through */}
+        {youtubeId && (
+          <div className="absolute top-0 left-0 right-0 h-12 bg-black pointer-events-none z-10" />
+        )}
       </div>
     );
   }
