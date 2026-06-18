@@ -41,6 +41,20 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "safe-ground-ai",
+    youtubeId: "8c9gf7cM8hk",
+    titleHe: "Safe Ground Program — AI Concept Film",
+    titleEn: "Safe Ground Program — AI Concept Film",
+    challengeHe: "להמחיש בפני ממשלות ומשקיעים בינלאומיים סיכון תפעולי נסתר בפרויקט שיקום מורכב — בלי לצלם כלום, בלי שחקנים, בלי לוקיישן.",
+    challengeEn: "Visualize a hidden operational risk in a complex reconstruction project for international governments and investors — without filming anything, no actors, no location.",
+    solutionHe: "סרט קונספט פוטוריאליסטי מלא ב-AI: מ-Midjourney לסטוריבורד ועד Kling ו-Runway לגנרציית התנועה. HUD overlays ב-After Effects, קריינות בינלאומית, ועיצוב סאונד קולנועי מלא. תוצאה: סרט פיצ' שנראה כמו הפקה בינלאומית של מיליוני דולרים.",
+    solutionEn: "Full photorealistic AI concept film: from Midjourney storyboard to Kling and Runway for motion generation. HUD overlays in After Effects, international VO, and full cinematic sound design. Result: a pitch film that looks like a multi-million dollar international production.",
+    category: "ai",
+    client: "Safe Ground Program",
+    duration: "2:45",
+    date: "2025-03-01",
+  },
+  {
     id: "iron-bullet-airobotics",
     vimeoId: "TODO_iron_bullet",
     titleHe: "Iron Bullet — Airobotics / Ondas Group",
@@ -212,6 +226,258 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "ai-storyboard-workflow",
+    coverImage: "/blog/ai-storyboard-cover.svg",
+    titleHe: "איך מייצרים סרט AI שנראה כמו הפקה של מיליון דולר — מהסטוריבורד ועד המסירה",
+    titleEn: "How to Produce an AI Film That Looks Like a Million-Dollar Production — From Storyboard to Delivery",
+    excerptHe: "הסוד לא נמצא בכלי. הוא נמצא בתהליך. אחרי עשרות פרויקטי AI — הנה המתודולוגיה המלאה שלנו, שלב אחרי שלב.",
+    excerptEn: "The secret isn't in the tool. It's in the process. After dozens of AI projects — here's our complete methodology, step by step.",
+    readingTime: 8,
+    bodyHe: `## הנחת היסוד הלא נכונה
+
+רוב האנשים שמגיעים אלינו עם בקשה לסרט AI חושבים שהתהליך נראה כך: כותבים פרומפט → מקבלים סרט → מסיימים.
+
+הם מגלים שזה לא עובד ככה. ואנחנו לא מפתיעים אותם — אנחנו מסבירים למה.
+
+**הפקת AI מקצועית עוברת אותם שלבים בדיוק כמו הפקה קלאסית.** ה-AI הוא לא קיצור דרך — הוא כלי ייצור חדש. כמו שמצלמת ARRI לא מצלמת בעצמה, Kling לא מפיק בעצמו. מישהו צריך לדעת מה לבקש ממנה, ומה לעשות עם מה שיוצא.
+
+הנה התהליך המלא שלנו, כפי שהוא מתרחש בפועל.
+
+## שלב 1 — הבריף: לא "מה אתם רוצים" אלא "מה אתם רוצים שיקרה"
+
+הפגישה הראשונה שלנו עם לקוח AI אף פעם לא מתחילה בשאלה "איזה סרט תרצו?". היא מתחילה בשאלה: **"מה הצופה צריך לחשוב, להרגיש ולעשות שלוש שניות אחרי שהסרט מסתיים?"**
+
+ההבדל הזה קריטי.
+
+לקוח שמגיע ואומר "אנחנו רוצים סרט שמציג את הטכנולוגיה שלנו" עדיין לא יודע מה הוא רוצה. לקוח שמגיע ואומר "אנחנו רוצים שמנמ"ר של תאגיד בנייה בינלאומי יצלצל אלינו אחרי הצפייה" — זה בריף שאפשר לעבוד איתו.
+
+הבריף הנכון מגדיר:
+- **קהל יעד ספציפי** — לא "עסקים" אלא "VP Operations בחברת קבלנות בינלאומית שמשתתף בדיון תקציב"
+- **פעולה מוגדרת** — לא "מודעות" אלא "בקשת פגישה / שליחת RFP"
+- **חסם אחד שצריך לפרוץ** — מה מונע מהצופה לפעול כרגע? אי-אמון? חוסר ידע? לא מבין את הדחיפות?
+
+[IMAGE]
+
+## שלב 2 — ארכיטקטורת הנרטיב
+
+אחרי הבריף אנחנו כותבים מסמך של שני עמודים לפני שנוגעים באיזה כלי שהוא:
+
+**The Story Spine:**
+- **Act 1 — הסטטוס קוו:** העולם כפי שהוא נראה בלי הפתרון
+- **Act 2 — הבעיה הנסתרת:** הסיכון שהצופה לא ידע עליו (ולכן לא פעל)
+- **Act 3 — ה-turning point:** הרגע שבו הפתרון מוכנס
+- **Act 4 — העולם החדש:** מה נראה אחרי
+
+המבנה הזה עובד בכל סרט — B2B, הומניטרי, טכנולוגי, נדל"ן. אנושות לא השתנתה. אנחנו עדיין מחוברים לסיפורים שנבנו ככה.
+
+לאחר מכן: **תסריט מלא.** כל שניה מחושבת. VO, תיאור ויזואלי, גרפיקה, מוזיקה — הכל כתוב על הנייר לפני שפותחים Midjourney.
+
+## שלב 3 — הסטוריבורד עם AI
+
+**זה הצעד שרוב הלקוחות לא מצפים לו — וזה הצעד שמכריע את כל הפרויקט.**
+
+אנחנו לא יוצרים סטוריבורד "על הדרך". אנחנו מוציאים שלושה עד חמישה ימים **רק** על הסטוריבורד.
+
+הסטוריבורד ב-Midjourney מגדיר:
+- **כל angle** — שוט מהצדדים? מלמעלה? POV?
+- **לוק ויזואלי** — טון, פלטת צבעים, depth of field, lighting direction
+- **ה-art direction של הדמויות** — מה הם לובשים? איפה הם עומדים? מה הם עושים?
+- **ה-environment** — איפה מתרחשת כל סצנה? איזה שעה ביום?
+
+כל frame ב-Midjourney עובר לפחות 8-12 iterations לפני שאנחנו מרוצים ממנו. כל שוט שיישמע כמו "קרוב מספיק" — יהפוך לבעיה בשלב הגנרציה.
+
+**הסטוריבורד הוא גם כלי ניהול לקוח.** לפני שאנחנו מייצרים שנייה אחת של וידאו, הלקוח מאשר כל frame. זה מונע את אחת הבעיות הגדולות ביותר בהפקות AI: "זה לא מה שחשבתי שיצא".
+
+## שלב 4 — אישור הלקוח
+
+לפני הגנרציה, הלקוח מקבל:
+1. תסריט עם טיימינג מדויק
+2. Storyboard מלא (20-40 frames)
+3. Mood board — reference של לוק וטון
+
+הלקוח מאשר את שלושת המסמכים. **רק אז** מתחילה העבודה האמיתית.
+
+זה לוקח עוד שבוע. אבל זה חוסך שלושה שבועות של iterations אחרי הגנרציה.
+
+[IMAGE]
+
+## שלב 5 — גנרציית התנועה
+
+עכשיו, לבסוף, נכנסים Kling ו-Runway Gen-3 Alpha לתמונה.
+
+**ב-Kling:** כל frame מה-Midjourney הופך ל-seed לגנרציית תנועה. אנחנו מגדירים: כיוון תנועת המצלמה, מהירות, תנועת הדמויות, ואת ה-motion style הכולל. לכל שניה אחת שתיכנס לסרט הסופי — מייצרים 8-15 variants ובוחרים אחת.
+
+**ב-Runway:** בעיקר עבור shots שדורשים שליטה מדויקת יותר בתנועת המצלמה, או לצמצם inconsistency בין frames.
+
+**ה-consistency challenge:** זו הבעיה מספר אחת ב-AI. כל frame שנוצר בנפרד עלול לא לשבת עם הקודם. אנחנו פותרים אותה עם:
+- Visual style guide קפדני שנמסר לכל פרומפט
+- Reference image עקבי לכל דמות/לוקיישן
+- Color correction בפוסט שמאחד את הכל
+
+## שלב 6 — פוסט-פרודקשן
+
+**עריכה:** כל ה-clips עולים ל-DaVinci Resolve. בונים את הסרט לפי התסריט והסטוריבורד המאושרים. זה לא "שיחקנו" ב-AI — זה עריכה רצינית עם תשומת לב לקצב, tension, ו-breathing.
+
+**HUD & Motion Graphics:** ב-After Effects — כל אלמנט גרפי שאנחנו מוסיפים (UI overlays, גרפים, כותרות, annotations) מעוצב לפי שפה ויזואלית מותאמת לסרט. לא template. לא Canva.
+
+**Color Grading:** כל clip עובר grading ב-DaVinci כדי לאחד את הלוק. AI מייצר inconsistencies בצבע — grading מקצועי מוחק אותן.
+
+**Sound Design ו-Mix:** קריינות, מוזיקה, Foley — הכל מעוצב ומיוצב. הסרט הסופי מגיע עם LUFS מנורמלים לכל הפלטפורמות.
+
+## מה זה עולה בזמן
+
+לקוחות מצפים שסרט AI ייקח שבוע. סרט AI מקצועי לוקח **אותו הזמן כמו הפקה קלאסית** — בין 4 ל-8 שבועות.
+
+הפירוט:
+- בריף ואישור כיוון: שבוע
+- תסריט + סטוריבורד + אישור לקוח: שבוע וחצי
+- גנרציה: שבועיים
+- פוסט-פרודקשן + פידבק: שבועיים
+
+ה"קסם" של AI לא מקצר את הזמן — הוא מרחיב את מה שאפשר ליצור. בתקציב שבעבר ייצר פרומו פשוט, היום אפשר לייצר עולם.
+
+## מה AI יכול — ומה הוא לא יכול
+
+**AI מנצח כשצריך לצלם את הלא-ניתן לצילום:**
+- עולמות עתידיים
+- מערכות שסווגות או לא נגישות
+- Scale שאין לו תקציב — שמיים, הרס, המונים
+- מדינות או אזורים שאי אפשר לנסוע אליהם
+
+**AI מפסיד כשנדרש הרגע האנושי האמיתי:**
+- עדות של לקוח
+- CEO מסביר חזון
+- עובד מדבר על מה שהוא אוהב בחברה
+
+לכן ב-Hybrid productions שלנו — תמיד יש שניות של live action אמיתי. הן מה שנותנות לסרט את ה"אמת" שהמוח האנושי מחפש.
+
+The Video Shop לא מוכרים "סרטי AI". אנחנו מפיקים **סרטים שמשתמשים בכלי הנכון לכל רגע.** לפעמים זה מצלמה. לפעמים זה Kling. תמיד זה תסריט.`,
+    bodyEn: `## The Wrong Assumption
+
+Most people who come to us with an AI film request think the process looks like this: write a prompt → get a film → done.
+
+They discover that's not how it works. And we don't surprise them — we explain why.
+
+**Professional AI production goes through the exact same stages as classical production.** AI is not a shortcut — it's a new production tool. Just as an ARRI camera doesn't film itself, Kling doesn't produce itself. Someone needs to know what to ask of it, and what to do with what comes out.
+
+Here's our complete process, as it actually happens.
+
+## Stage 1 — The Brief: Not "What Do You Want" But "What Do You Want to Happen"
+
+Our first meeting with an AI client never starts with "what film do you want?" It starts with: **"What should the viewer think, feel, and do three seconds after the film ends?"**
+
+This difference is critical.
+
+A client who comes and says "we want a film that shows our technology" doesn't yet know what they want. A client who comes and says "we want the COO of an international construction corporation to call us after watching" — that's a brief you can work with.
+
+The right brief defines:
+- **Specific target audience** — not "businesses" but "VP Operations at an international contracting company attending a budget meeting"
+- **Defined action** — not "awareness" but "request a meeting / send an RFP"
+- **One barrier to break** — what's preventing the viewer from acting right now? Mistrust? Lack of knowledge? Not understanding the urgency?
+
+[IMAGE]
+
+## Stage 2 — Narrative Architecture
+
+After the brief we write a two-page document before touching any tool:
+
+**The Story Spine:**
+- **Act 1 — Status quo:** The world as it looks without the solution
+- **Act 2 — The hidden problem:** The risk the viewer didn't know about (and therefore didn't act)
+- **Act 3 — The turning point:** The moment the solution is introduced
+- **Act 4 — The new world:** What it looks like after
+
+This structure works in every film — B2B, humanitarian, technological, real estate. Humanity hasn't changed. We're still wired to connect to stories built this way.
+
+Then: **a full script.** Every second calculated. VO, visual description, graphics, music — everything written on paper before opening Midjourney.
+
+## Stage 3 — AI Storyboarding
+
+**This is the step most clients don't expect — and it's the step that decides the entire project.**
+
+We don't create a storyboard "on the way." We spend three to five days **only** on the storyboard.
+
+The Midjourney storyboard defines:
+- **Every angle** — side shot? overhead? POV?
+- **Visual look** — tone, color palette, depth of field, lighting direction
+- **Art direction of characters** — what are they wearing? where are they standing? what are they doing?
+- **The environment** — where does each scene take place? what time of day?
+
+Every Midjourney frame goes through at least 8-12 iterations before we're satisfied. Every shot that sounds "close enough" — will become a problem in the generation stage.
+
+**The storyboard is also a client management tool.** Before we generate a single second of video, the client approves every frame. This prevents one of the biggest problems in AI productions: "that's not what I thought would come out."
+
+## Stage 4 — Client Approval
+
+Before generation, the client receives:
+1. Script with precise timing
+2. Complete storyboard (20-40 frames)
+3. Mood board — look and tone reference
+
+The client approves all three documents. **Only then** does the real work begin.
+
+This takes another week. But it saves three weeks of iterations after generation.
+
+[IMAGE]
+
+## Stage 5 — Motion Generation
+
+Now, finally, Kling and Runway Gen-3 Alpha enter the picture.
+
+**In Kling:** every frame from Midjourney becomes a seed for motion generation. We define: camera movement direction, speed, character movement, and overall motion style. For every second that will go into the final film — we generate 8-15 variants and choose one.
+
+**In Runway:** primarily for shots requiring more precise camera movement control, or to reduce inconsistency between frames.
+
+**The consistency challenge:** this is the number one problem in AI. Every separately generated frame may not sit with the previous one. We solve it with:
+- A strict visual style guide passed to every prompt
+- Consistent reference image for every character/location
+- Color correction in post that unifies everything
+
+## Stage 6 — Post-Production
+
+**Editing:** all clips go into DaVinci Resolve. We build the film according to the approved script and storyboard. This isn't "playing with AI" — it's serious editing with attention to rhythm, tension, and breathing.
+
+**HUD & Motion Graphics:** in After Effects — every graphic element we add (UI overlays, graphs, titles, annotations) is designed according to a visual language tailored to the film. Not a template. Not Canva.
+
+**Color Grading:** every clip goes through grading in DaVinci to unify the look. AI generates inconsistencies in color — professional grading erases them.
+
+**Sound Design & Mix:** voiceover, music, Foley — all designed and balanced. The final film arrives with LUFS normalized for every platform.
+
+## What This Costs in Time
+
+Clients expect an AI film to take a week. A professional AI film takes **the same time as a classical production** — between 4 and 8 weeks.
+
+The breakdown:
+- Brief and direction approval: one week
+- Script + storyboard + client approval: one and a half weeks
+- Generation: two weeks
+- Post-production + feedback: two weeks
+
+The AI "magic" doesn't shorten the time — it expands what's possible. With a budget that previously produced a simple promo, today you can produce a world.
+
+## What AI Can Do — And What It Can't
+
+**AI wins when you need to film the unfilmable:**
+- Future worlds
+- Classified or inaccessible systems
+- Scale with no budget — skies, destruction, crowds
+- Countries or regions you can't travel to
+
+**AI loses when a genuine human moment is required:**
+- Client testimony
+- CEO explaining a vision
+- Employee talking about what they love about the company
+
+That's why in our hybrid productions — there are always seconds of real live action. They're what give the film the "truth" the human brain is looking for.
+
+The Video Shop doesn't sell "AI films." We produce **films that use the right tool for every moment.** Sometimes that's a camera. Sometimes that's Kling. Always that's a script.`,
+    date: "2025-04-10",
+    tags: ["AI", "Workflow", "Storyboard", "Behind the Scenes"],
+    relatedServiceHref: "/services/ai",
+    relatedServiceLabelHe: "הפקות וידאו AI",
+    relatedServiceLabelEn: "AI Video Production",
+  },
   {
     id: "ai-video-2024",
     coverImage: "/blog/ai-production-cover.svg",

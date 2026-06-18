@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+  <rect width="1600" height="700" fill="#0a0a0a"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <!-- Grid lines suggesting storyboard frames -->
+  <rect x="80" y="120" width="340" height="200" rx="4" fill="none" stroke="#c8a96e" stroke-opacity="0.2" stroke-width="1"/>
+  <rect x="460" y="120" width="340" height="200" rx="4" fill="none" stroke="#c8a96e" stroke-opacity="0.15" stroke-width="1"/>
+  <rect x="840" y="120" width="340" height="200" rx="4" fill="none" stroke="#c8a96e" stroke-opacity="0.1" stroke-width="1"/>
+  <!-- Frame numbers -->
+  <text x="86" y="143" font-family="monospace" font-size="11" fill="#c8a96e" opacity="0.5">01</text>
+  <text x="466" y="143" font-family="monospace" font-size="11" fill="#c8a96e" opacity="0.35">02</text>
+  <text x="846" y="143" font-family="monospace" font-size="11" fill="#c8a96e" opacity="0.25">03</text>
+  <!-- Arrow between frames -->
+  <line x1="425" y1="220" x2="455" y2="220" stroke="#c8a96e" stroke-opacity="0.3" stroke-width="1.5"/>
+  <polygon points="453,216 460,220 453,224" fill="#c8a96e" opacity="0.3"/>
+  <line x1="805" y1="220" x2="835" y2="220" stroke="#c8a96e" stroke-opacity="0.2" stroke-width="1.5"/>
+  <polygon points="833,216 840,220 833,224" fill="#c8a96e" opacity="0.2"/>
+  <!-- Main text -->
+  <text x="80" y="420" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f5f5f0" opacity="0.08">STORYBOARD → KLING</text>
+  <text x="80" y="500" font-family="Arial, sans-serif" font-size="20" fill="#c8a96e" opacity="0.55">The Video Shop — Replace with real image</text>
+  <rect x="80" y="530" width="120" height="2" fill="#c8a96e" opacity="0.35"/>
+</svg>
