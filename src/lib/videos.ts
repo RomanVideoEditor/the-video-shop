@@ -41,6 +41,20 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "iron-arrow-airobotics",
+    youtubeId: "iMfsWqluFpo",
+    titleHe: "IRON ARROW — מערכת יירוט אוטונומית | Airobotics / Ondas Group",
+    titleEn: "IRON ARROW — Autonomous Mass Interception System | Airobotics / Ondas Group",
+    challengeHe: "להמחיש בפני ממשלות, צבאות ומשקיעים מערכת יירוט אוטונומית שלא ניתן לצלם — בצורה שתשדר עליונות טכנולוגית ואמינות מבצעית.",
+    challengeEn: "Visualize an autonomous interception system for governments, militaries, and investors — in a way that conveys technological superiority and operational credibility.",
+    solutionHe: "סרט קונספט AI פוטוריאליסטי מלא: עקביות מכנית קפדנית של סיבי פחמן ורכיבי מל\"ט, סימולציה דינמית של VTOL ונחיל יירוט, HUD overlays טכניים, ועיצוב סאונד תעשייתי. כל פריים — Midjourney, כל תנועה — Kling.",
+    solutionEn: "Full photorealistic AI concept film: meticulous hard-surface consistency of carbon fiber and UAV components, dynamic VTOL and swarm simulation, technical HUD overlays, and industrial sound design. Every frame — Midjourney. Every motion — Kling.",
+    category: "ai",
+    client: "Airobotics / Ondas Group",
+    duration: "2:30",
+    date: "2025-05-01",
+  },
+  {
     id: "safe-ground-ai",
     youtubeId: "8c9gf7cM8hk",
     titleHe: "Safe Ground Program — AI Concept Film",

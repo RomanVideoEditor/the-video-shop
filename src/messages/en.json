@@ -68,11 +68,11 @@
       "features": ["Professional Drone Footage", "Virtual Tours", "Project Marketing Films", "Aerial Photography", "Construction Documentation", "Developer Event Videos"]
     },
     "ai": {
-      "h1": "AI Video Production",
-      "subtitle": "The next generation of business productions — combining artificial intelligence with a director's eye for results that feel like the future.",
-      "body1": "AI doesn't replace creativity — it amplifies it. We combine advanced AI tools like Kling, Runway Gen-3 Alpha, and Midjourney with 20 years of cinema experience to produce content that until recently required enormous budgets.",
-      "body2": "Storyboard development, visual renderings, groundbreaking B2B films, and marketing content unlike anything else on the market.",
-      "features": ["Kling AI Video Generation", "Runway Gen-3 Alpha", "Midjourney Visual Development", "AI Storyboarding", "Hybrid AI + Live Action", "AI Motion Graphics"]
+      "h1": "Photorealistic AI Video Productions",
+      "subtitle": "Cinematic concept films for defense, tech, and B2B companies — what can't be filmed, we create.",
+      "body1": "Defense and technology companies face a unique challenge: their product isn't accessible for filming — classified, not yet built, or too complex to convey to an external audience. That's precisely where our AI production comes in. We create worlds, systems, and scenarios that no camera could ever capture.",
+      "body2": "Every project begins with a photorealistic Midjourney storyboard the client approves frame-by-frame — before a single second of video is generated. A client management process that eliminates surprises and delivers a result precise to the brief.",
+      "features": ["Defense & Tech Concept Films", "Pre-visualization for Investors & Governments", "Kling AI Motion Generation", "Runway Gen-3 Alpha", "Midjourney Storyboarding", "HUD/UI Overlays in After Effects", "Hybrid AI + Live Action", "Hard-Surface Visual Consistency"]
     },
     "corporate": {
       "h1": "Corporate Video",
