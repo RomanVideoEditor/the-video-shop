@@ -21,6 +21,8 @@ export async function generateMetadata({
 const clients = [
   "Palo Alto Networks",
   "Ashtrom",
+  "Bright Data",
+  "Airobotics",
   "Humavox",
   "CROPX",
   "TravelPerk",
