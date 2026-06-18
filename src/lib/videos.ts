@@ -199,6 +199,9 @@ export interface VlogPost {
   date: string;
   readingTime?: number; // minutes
   tags: string[];
+  relatedServiceHref?: string;
+  relatedServiceLabelHe?: string;
+  relatedServiceLabelEn?: string;
 }
 
 // Body syntax:
@@ -317,6 +320,9 @@ If you're considering an AI production for your company, ask yourself:
 The Video Shop doesn't sell "AI films." We produce **B2B films that use AI intelligently.** That difference is worth everything.`,
     date: "2024-11-15",
     tags: ["AI", "B2B", "Kling", "Runway"],
+    relatedServiceHref: "/services/ai",
+    relatedServiceLabelHe: "הפקות וידאו AI",
+    relatedServiceLabelEn: "AI Video Production",
   },
   {
     id: "real-estate-drone",
@@ -394,6 +400,9 @@ The clients most satisfied with us are those who've worked with us on more than 
 Companies like Ashtrom work with productions that will hold for 3-5 years. They're not looking for a "cheap drone pilot" — they're looking for **a partner who understands the project from the first look to the final film.** We arrive at an Ashtrom set exactly as we arrive to every client — with full attention, the best equipment, and a commitment to the result.`,
     date: "2024-10-03",
     tags: ["Real Estate", "Drone", "Behind the Scenes"],
+    relatedServiceHref: "/services/realestate",
+    relatedServiceLabelHe: "וידאו נדל\"ן ואדריכלות",
+    relatedServiceLabelEn: "Real Estate Video",
   },
   {
     id: "investor-pitch-tips",
@@ -487,6 +496,9 @@ And then the second mistake: the film ends, the viewer is supposed to do somethi
 At The Video Shop, we work on every pitch like we work on a film. Weeks, not days. Feedback, edits, more feedback. Not because we're complicated — but because **the pitch that raises capital is one that was worked on until it could no longer be improved.** Only then is it ready.`,
     date: "2024-09-20",
     tags: ["Hightech", "Investor Pitch", "Tips"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "סרטי הייטק וסטארטאפים",
+    relatedServiceLabelEn: "High-Tech & Startup Videos",
   },
 ];
 

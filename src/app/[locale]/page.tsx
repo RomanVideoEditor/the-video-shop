@@ -40,7 +40,7 @@ export default async function HomePage({
   const t = await getTranslations({ locale, namespace: "home" });
 
   const services = [
-    { key: "1", title: t("s1title"), desc: t("s1desc"), href: "/services/defense", icon: "⬡" },
+    { key: "1", title: t("s1title"), desc: t("s1desc"), href: "/services/hightech", icon: "⬡" },
     { key: "2", title: t("s2title"), desc: t("s2desc"), href: "/services/realestate", icon: "🏗" },
     { key: "3", title: t("s3title"), desc: t("s3desc"), href: "/services/corporate", icon: "◆" },
     { key: "4", title: t("s4title"), desc: t("s4desc"), href: "/services/ai", icon: "✦" },

@@ -198,6 +198,24 @@ export default async function BlogPostPage({
           </div>
         </div>
 
+        {/* Related service internal link */}
+        {post.relatedServiceHref && (
+          <div className="mt-10 flex items-center gap-4 p-5 border border-[#c8a96e]/20 rounded-xl bg-[#c8a96e]/5">
+            <div className="w-px h-10 bg-[#c8a96e]/40 shrink-0" />
+            <div className="flex-1">
+              <p className="text-xs font-semibold tracking-widest text-[#c8a96e]/60 uppercase mb-1">
+                {isHe ? "השירות הרלוונטי" : "Related Service"}
+              </p>
+              <Link
+                href={post.relatedServiceHref}
+                className="text-sm font-bold text-[#f5f5f0] hover:text-[#c8a96e] transition-colors"
+              >
+                {isHe ? post.relatedServiceLabelHe : post.relatedServiceLabelEn} ›
+              </Link>
+            </div>
+          </div>
+        )}
+
         {/* CTA */}
         <div className="mt-14 p-8 bg-[#111] border border-[#1e1e1e] rounded-2xl">
           <p className="text-xs font-semibold tracking-[0.3em] text-[#c8a96e]/60 uppercase mb-3">The Video Shop</p>
