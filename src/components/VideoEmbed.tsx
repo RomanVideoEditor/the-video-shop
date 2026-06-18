@@ -18,7 +18,7 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
     : `https://vumbnail.com/${vimeoId}.jpg`;
 
   const embedSrc = youtubeId
-    ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&color=white`
+    ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=0`
     : `https://player.vimeo.com/video/${vimeoId}?autoplay=1&title=0&byline=0&portrait=0&color=c8a96e`;
 
   if (playing) {
@@ -32,10 +32,7 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
           className="absolute inset-0 w-full h-full"
           loading="lazy"
         />
-        {/* Masks YouTube title/channel bar — pointer-events:none lets clicks pass through */}
-        {youtubeId && (
-          <div className="absolute top-0 left-0 right-0 h-12 bg-black pointer-events-none z-10" />
-        )}
+
       </div>
     );
   }
