@@ -8,9 +8,10 @@ interface VideoEmbedProps {
   title: string;
   altText?: string;
   className?: string;
+  vertical?: boolean;
 }
 
-export default function VideoEmbed({ youtubeId, vimeoId, title, altText, className = "" }: VideoEmbedProps) {
+export default function VideoEmbed({ youtubeId, vimeoId, title, altText, className = "", vertical = false }: VideoEmbedProps) {
   const [playing, setPlaying] = useState(false);
 
   const thumbUrl = youtubeId
@@ -21,9 +22,11 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
     ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=0`
     : `https://player.vimeo.com/video/${vimeoId}?autoplay=1&title=0&byline=0&portrait=0&color=c8a96e`;
 
+  const aspectClass = vertical ? "aspect-[9/16]" : "aspect-video";
+
   if (playing) {
     return (
-      <div className={`relative aspect-video bg-black ${className}`}>
+      <div className={`relative ${aspectClass} bg-black ${className}`}>
         <iframe
           src={embedSrc}
           title={title}
@@ -32,7 +35,6 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
           className="absolute inset-0 w-full h-full"
           loading="lazy"
         />
-
       </div>
     );
   }
@@ -40,7 +42,7 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
   return (
     <button
       onClick={() => setPlaying(true)}
-      className={`relative aspect-video bg-black group overflow-hidden w-full ${className}`}
+      className={`relative ${aspectClass} bg-black group overflow-hidden w-full ${className}`}
       aria-label={`Play: ${title}`}
     >
       {(youtubeId || vimeoId) && (

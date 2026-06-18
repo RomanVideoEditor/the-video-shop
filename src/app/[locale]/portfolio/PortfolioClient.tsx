@@ -99,6 +99,7 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
                   youtubeId={video.youtubeId}
                   vimeoId={video.vimeoId}
                   title={isHe ? video.titleHe : video.titleEn}
+                  vertical={video.vertical}
                 />
                 <div className="p-6">
                   {video.client && (

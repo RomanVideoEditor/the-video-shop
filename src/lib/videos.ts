@@ -37,9 +37,25 @@ export interface PortfolioVideo {
   client?: string;
   duration?: string; // "mm:ss"
   date?: string;     // "YYYY-MM-DD"
+  vertical?: boolean; // 9:16 aspect ratio (Shorts/Reels)
 }
 
 export const portfolioVideos: PortfolioVideo[] = [
+  {
+    id: "lyfe-social-content",
+    youtubeId: "d2xNLprySKQ",
+    titleHe: "LYFE — בנק תוכן סושיאל מיום צילום אחד | קבוצת אשטרום",
+    titleEn: "LYFE — Social Content Bank from One Filming Day | Ashtrom Group",
+    challengeHe: "לייצר נכסים דיגיטליים רבים לרשתות החברתיות עבור מתחם LYFE — בלי להכפיל ימי צילום ותקציבים.",
+    challengeEn: "Generate multiple social media digital assets for the LYFE complex — without multiplying filming days and budgets.",
+    solutionHe: "Max ROI Production: יום צילום מרוכז אחד עם אסטרטגיית תוכן מקיפה. צילום מודולרי (רחפן, גוף ראשון, אווירה) סביב עוגן ויזואלי מרכזי — הכדורים המטאליים בלובי. בפוסט: עריכה קצבית, Motion Overlays ו-Beat-matching לעשרות גרסאות.",
+    solutionEn: "Max ROI Production: one concentrated filming day with a comprehensive content strategy. Modular shooting (drone, POV, atmosphere) around a central visual anchor — the metallic orbs in the lobby. In post: rhythmic editing, motion overlays, and beat-matching to produce dozens of versions.",
+    category: "commercial",
+    client: "Ashtrom Group / LYFE",
+    duration: "0:30",
+    date: "2024-01-01",
+    vertical: true,
+  },
   {
     id: "ashtrom-employer-branding",
     youtubeId: "3wO3R6Xr8bU",
@@ -256,6 +272,131 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "max-roi-production",
+    coverImage: "/blog/social-content-cover.svg",
+    titleHe: "פיצוח ה-ROI של הסושיאל: איך הופכים יום צילום אחד לעשרות סרטוני תוכן מנצחים",
+    titleEn: "Cracking Social ROI: How One Filming Day Becomes Dozens of Winning Content Videos",
+    excerptHe: "הרשתות רעבות לתוכן כל יום. תקציבי ההפקה מוגבלים. הפתרון לא נמצא בעוד ימי צילום — הוא נמצא בתכנון חכם יותר.",
+    excerptEn: "Social media is hungry for content every day. Production budgets are limited. The solution isn't more filming days — it's smarter planning.",
+    readingTime: 5,
+    bodyHe: `## הבעיה שמנהלי שיווק לא אוהבים לדבר עליה
+
+מנהלי שיווק ודיגיטל בחברות גדולות מכירים את התסכול: הרשתות צריכות תוכן כל יום, אבל ימי צילום עולים כסף. כל Reel, כל Short, כל Story — אם מייצרים אותם בנפרד, העלות מתפוצצת. הפתרון הנפוץ? להתפשר על איכות. להשתמש בחומרים ישנים. לעלות פחות.
+
+זו טעות.
+
+**יש גישה אחרת.** היא לא דורשת יותר ימי צילום — היא דורשת תכנון שונה לחלוטין לפני שמגיעים לסט.
+
+## Max ROI Production: עיקרון אחד, עשרות תוצאות
+
+הגישה שלנו מבוססת על פירוק יום הצילום לרכיבים — מה שאנחנו קוראים **"צילום מודולרי"**. במקום להגיע עם תסריט אחד ולצלם אותו קדימה-אחורה, אנחנו מגיעים עם מפת תוכן: רשימת "קוביות" שכל אחת מהן עובדת לבד — וגם יחד עם האחרות.
+
+בפרויקט LYFE של קבוצת אשטרום, המטרה הייתה לייצר נכסים דיגיטליים לרשתות החברתיות לאירועי השנה החדשה. יכולנו להגיע, לצלם סרטון אחד ולהסתיים.
+
+במקום זה, הגענו עם אסטרטגיית תוכן מלאה ליום אחד.
+
+[IMAGE]
+
+## שלב 1 — פיצוח ה"עוגן הויזואלי"
+
+לפני שאנחנו נוגעים במצלמה, אנחנו מחפשים את **ה-Scroll-stopper**: האלמנט שיעצור אצבע בגלילה תוך שנייה.
+
+בLYFE, הכדורים המטאליים הענקיים בלובי היו התשובה. השתקפויות, צבעים, אינטראקציה עם אנשים — הם הפכו ל"עוגן" שמחבר בין כל הסרטונים ומייצר זיהוי מיידי של המקום.
+
+כל פרויקט יש לו עוגן כזה. לא תמיד הוא ברור מיד — זה חלק מעבודת הפרה-פרודקשן.
+
+## שלב 2 — צילום מודולרי בשטח
+
+**רחפן:** פתיחות, סקייל, כניסות דרמטיות למרחב.
+**גוף ראשון (POV):** תחושת "אתה שם". הצופה נכנס למרחב.
+**זוויות נמוכות:** מייצרות גובה ויוקרה.
+**אווירה ואנשים:** הרגעים האנושיים האמיתיים — חיוכים, תנועה, אנרגיה.
+
+כל "קובייה" מצולמת בטייקים קצרים, מכמה זוויות. בסוף היום — בנק חומרים עשיר שניתן לחתוך אותו בדרכים שונות.
+
+## שלב 3 — פוסט-פרודקשן מותאם פלטפורמה
+
+כאן קורה הקסם. אותם חומרים גלם עוברים:
+
+**Beat-matching:** עריכה שמסונכרנת עם הביט של המוזיקה — יוצרת תחושת אנרגיה גבוהה גם בסרטון של 15 שניות.
+
+**Motion Overlays:** שכבות גרפיות שמעניקות לוידאו את הלוק הטרנדי — בלי לאבד את היוקרה של המותג.
+
+**חיתוך לפלטפורמות:** אותו יום צילום → 9:16 לReels ו-TikTok, 16:9 ליוטיוב, 1:1 לפיד. גרסאות לחגים, לקמפיינים עונתיים, לפוסטים שוטפים.
+
+## מה יוצא בסוף
+
+מיום צילום אחד מתוכנן נכון, חברות מקבלות:
+- 8-15 סרטוני Reels/Shorts מוכנים לעלייה
+- חומר גלם ל-20-30 גרסאות עתידיות
+- נכסים ויזואליים לשימוש חוזר לאורך כל השנה
+
+**אתם לא צריכים יותר ימי צילום. אתם צריכים ימי צילום חכמים יותר.**
+
+The Video Shop מביאה את האסטרטגיה, את הצוות ואת המתודולוגיה. אתם מביאים את הסיפור שרוצים לספר.`,
+    bodyEn: `## The Problem Marketing Managers Don't Like Talking About
+
+Marketing and digital managers at large companies know the frustration: social media needs content every day, but filming days cost money. Every Reel, every Short, every Story — if produced separately, costs explode. The common solution? Compromise on quality. Use old materials. Post less.
+
+That's a mistake.
+
+**There's another approach.** It doesn't require more filming days — it requires completely different planning before arriving on set.
+
+## Max ROI Production: One Principle, Dozens of Results
+
+Our approach is based on breaking down the filming day into components — what we call **"modular shooting."** Instead of arriving with one script and filming it front to back, we arrive with a content map: a list of "building blocks" where each one works alone — and also with the others.
+
+In the LYFE project for Ashtrom Group, the goal was to create digital assets for social media for New Year events. We could have arrived, filmed one video, and left.
+
+Instead, we arrived with a complete content strategy for one day.
+
+[IMAGE]
+
+## Stage 1 — Identifying the Visual Anchor
+
+Before we touch a camera, we look for **the scroll-stopper**: the element that will stop a scrolling finger within a second.
+
+At LYFE, the giant metallic orbs in the lobby were the answer. Reflections, colors, interaction with people — they became the "anchor" connecting all the videos and creating immediate recognition of the location.
+
+Every project has such an anchor. It's not always immediately obvious — that's part of the pre-production work.
+
+## Stage 2 — Modular Shooting on Location
+
+**Drone:** openings, scale, dramatic entrances into the space.
+**POV (point of view):** the feeling of "you're there." The viewer enters the space.
+**Low angles:** create height and luxury.
+**Atmosphere and people:** the real human moments — smiles, movement, energy.
+
+Each "building block" is filmed in short takes, from multiple angles. At the end of the day — a rich footage bank that can be cut in different ways.
+
+## Stage 3 — Platform-Tailored Post-Production
+
+This is where the magic happens. The same raw footage goes through:
+
+**Beat-matching:** editing synchronized to the music beat — creates a high-energy feeling even in a 15-second video.
+
+**Motion Overlays:** graphic layers that give the video a trending look — without losing the brand's luxury feel.
+
+**Platform cutting:** same filming day → 9:16 for Reels and TikTok, 16:9 for YouTube, 1:1 for feed. Versions for holidays, seasonal campaigns, ongoing posts.
+
+## What Comes Out in the End
+
+From one well-planned filming day, companies receive:
+- 8-15 Reels/Shorts ready to post
+- Raw material for 20-30 future versions
+- Visual assets for reuse throughout the year
+
+**You don't need more filming days. You need smarter filming days.**
+
+The Video Shop brings the strategy, the crew, and the methodology. You bring the story you want to tell.`,
+    date: "2025-02-15",
+    tags: ["Social Media", "ROI", "Content Strategy", "Behind the Scenes"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "מיתוג מעסיק וסרטי גיוס",
+    relatedServiceLabelEn: "Employer Branding & Recruitment",
+    relatedYoutubeId: "d2xNLprySKQ",
+  },
   {
     id: "ai-storyboard-workflow",
     coverImage: "/blog/ai-storyboard-cover.svg",
