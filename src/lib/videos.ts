@@ -230,6 +230,8 @@ export interface VlogPost {
   relatedServiceHref?: string;
   relatedServiceLabelHe?: string;
   relatedServiceLabelEn?: string;
+  relatedYoutubeId?: string;
+  relatedVimeoId?: string;
 }
 
 // Body syntax:
@@ -491,6 +493,7 @@ The Video Shop doesn't sell "AI films." We produce **films that use the right to
     relatedServiceHref: "/services/ai",
     relatedServiceLabelHe: "הפקות וידאו AI",
     relatedServiceLabelEn: "AI Video Production",
+    relatedYoutubeId: "iMfsWqluFpo",
   },
   {
     id: "ai-video-2024",
@@ -603,6 +606,7 @@ The Video Shop doesn't sell "AI films." We produce **B2B films that use AI intel
     relatedServiceHref: "/services/ai",
     relatedServiceLabelHe: "הפקות וידאו AI",
     relatedServiceLabelEn: "AI Video Production",
+    relatedYoutubeId: "8c9gf7cM8hk",
   },
   {
     id: "real-estate-drone",

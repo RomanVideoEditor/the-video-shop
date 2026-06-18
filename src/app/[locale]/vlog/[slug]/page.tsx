@@ -4,6 +4,7 @@ import Image from "next/image";
 import { vlogPosts } from "@/lib/videos";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+import VideoEmbed from "@/components/VideoEmbed";
 
 export async function generateStaticParams() {
   return vlogPosts.map((post) => ({ slug: post.id }));
@@ -155,6 +156,17 @@ export default async function BlogPostPage({
             </>
           )}
         </div>
+
+        {/* Related video — shown before article title if exists */}
+        {(post.relatedYoutubeId || post.relatedVimeoId) && (
+          <div className="mb-10 rounded-xl overflow-hidden border border-[#1e1e1e] shadow-2xl">
+            <VideoEmbed
+              youtubeId={post.relatedYoutubeId}
+              vimeoId={post.relatedVimeoId}
+              title={title}
+            />
+          </div>
+        )}
 
         {/* Title */}
         <h1 className="text-3xl md:text-5xl font-black text-[#f5f5f0] mb-8 leading-[1.1]">
