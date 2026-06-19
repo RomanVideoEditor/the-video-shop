@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "regev-gutman-10-questions",
+    youtubeId: "gE-8-eOtQg0",
+    titleHe: "10 שאלות — פורמט תוכן שעובד לכל עסק | רגב גוטמן",
+    titleEn: "10 Questions — A Content Format That Works for Any Business | Regev Gutman",
+    challengeHe: "לייצר תוכן שיווקי לרגב גוטמן — מוסד לימודי לסטודנטים במתמטיקה, כלכלה והנהלת חשבונות — שיהיה כיפי, אינפורמטיבי ויבנה אמון מול קהל של סטודנטים.",
+    challengeEn: "Create marketing content for Regev Gutman — an educational institution helping students succeed in mathematics, economics, and accounting — that's fun, informative, and builds trust with a student audience.",
+    solutionHe: "פורמט '10 שאלות': צילום באולפן, פרזנטור שמנוסה מול מצלמה, שאלות מגוונות שמשלבות מידע מקצועי עם אנרגיה קלה וכיפית. כתיבה פשוטה ותהליך צילום קצר — פרויקט שהלקוח מבין מהרגע הראשון. התוצר: סרטון שאפשר לפרק לעשרות קטעי Micro-Content לכל המדיות.",
+    solutionEn: "The '10 Questions' format: studio filming, a camera-experienced presenter, varied questions combining professional information with light and fun energy. Simple writing and a short filming process — a project the client understands from day one. The output: one video that can be cut into dozens of micro-content clips for all platforms.",
+    category: "commercial",
+    client: "Regev Gutman",
+    duration: "4:30",
+    date: "2024-08-01",
+  },
+  {
     id: "iron-drone-airobotics",
     youtubeId: "N4iNxvFGA34",
     titleHe: "IRON DRONE — סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
@@ -370,6 +384,107 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "10-questions-format",
+    coverImage: "/blog/10-questions-cover.svg",
+    titleHe: "פורמט '10 שאלות': הדרך הקצרה ביותר לבנות אמון, מודעות ותוכן לכל המדיות",
+    titleEn: "The '10 Questions' Format: The Shortest Path to Building Trust, Awareness, and Content for All Platforms",
+    excerptHe: "פורמט שכולם מבינים מהרגע הראשון, כיפי לצפייה, מתחלק ל-Micro-Content ועובד לשירות לקוחות, מיתוג עסקי ופרסום — מיום צילום אחד קצר.",
+    excerptEn: "A format everyone understands from day one, fun to watch, splits into micro-content, and works for customer service, business branding, and advertising — from one short filming day.",
+    readingTime: 4,
+    bodyHe: `## למה הפורמט הזה עובד כל כך טוב
+
+יש פורמטים שדורשים הסבר ארוך ללקוח. "10 שאלות" הוא לא אחד מהם.
+
+ברגע שאתם אומרים "נצלם אתכם עונים על 10 שאלות" — הלקוח מבין מיד לאן זה הולך. אין חרדת תסריט, אין ויכוחים על מסרים, אין פחד מ"מה יצא". הפורמט הוא הביטחון. וכשהלקוח בטוח — הוא נינוח. וכשהוא נינוח — הוא אותנטי.
+
+זו הסיבה שפורמט "10 שאלות" מייצר את אחת מרמות האותנטיות הגבוהות ביותר שניתן להשיג בצילום.
+
+[IMAGE]
+
+## מה הפורמט עושה עבורכם
+
+**בונה אמון מהיר:** הצופה רואה אדם אמיתי עונה על שאלות אמיתיות. לא שחקן, לא תסריט מלוטש. זה עובד במיוחד בעסקים שבהם האמון הוא הנכס הכי חשוב — חינוך, שירותים מקצועיים, בריאות.
+
+**מעשיר במידע:** 10 שאלות = 10 הזדמנויות לתת ערך. כל תשובה יכולה לפצח שאלה שהלקוחות שלכם שואלים כל יום, לפרק מיתוס נפוץ, או לספר משהו שרוב האנשים לא יודעים על תחום העיסוק.
+
+**גמיש בשימוש:** מהסרטון המלא אפשר להפיק:
+- 10 קטעי Micro-Content קצרים (שאלה + תשובה = 30-60 שניות)
+- Story Highlights לאינסטגרם
+- פוסטים ב-LinkedIn עם ציטוטים
+- FAQ מונפש לעמוד נחיתה
+
+**הכתיבה היא שחרור:** לא צריך תסריט מורכב. כותבים 10 שאלות, מסדרים אותן מ"קלה ומפתיעה" ל"מקצועית ומעמיקה", וזהו. אפשר לסיים את כתיבת הפרויקט תוך שעה.
+
+## מה שחשוב: הפרזנטור
+
+הפורמט עובד — אבל הוא לא מחל על הצד האנושי. הפרזנטור (בין אם מישהו מהצוות של הלקוח או פרזנטור חיצוני) צריך להיות נוח מול מצלמה.
+
+לא "שחקן" — נוח. יש הבדל עצום.
+
+מישהו שנוח מול מצלמה: מחייך ספונטנית, עונה בשפה הטבעית שלו, לא מרגיש שהוא "מצלם פרסומת". מישהו שלא נוח: תשובות רובוטיות, עיניים נעות, אנרגיה נוקשה שמרגישה על המסך בבירור.
+
+**בפרויקט עבור רגב גוטמן** — מוסד לימודי לסטודנטים בכלכלה, הנהלת חשבונות ומתמטיקה — הפרזנטור הגיע עם אנרגיה טבעית ומנוסה. התוצאה: 10 שאלות שמרגישות כמו שיחה עם חבר שמקצוען בתחום שלו. בדיוק מה שסטודנט צריך לראות לפני שהוא בוחר מאיפה ללמוד.
+
+## מתי להשתמש בפורמט הזה
+
+- שירות לקוחות: "10 דברים שכולם שואלים על [המוצר שלנו]"
+- מיתוג אישי: "10 שאלות ל[שם], [תפקיד]"
+- פרסום: "10 סיבות למה [המוצר/השירות]"
+- חינוך: "10 טעויות שסטודנטים עושים ב[תחום]"
+- גיוס עובדים: "10 שאלות שתרצו לשאול לפני שאתם מגישים קורות חיים"
+
+יום צילום אחד. עריכה קצרה. תוכן שעובד לחצי שנה.`,
+    bodyEn: `## Why This Format Works So Well
+
+Some formats require a long explanation to the client. "10 Questions" is not one of them.
+
+The moment you say "we'll film you answering 10 questions" — the client immediately understands where it's going. No script anxiety, no arguments about messaging, no fear of "what will come out." The format is the security. And when the client is secure — they're relaxed. And when they're relaxed — they're authentic.
+
+This is why the "10 Questions" format produces one of the highest levels of authenticity achievable in filming.
+
+[IMAGE]
+
+## What the Format Does for You
+
+**Builds trust fast:** The viewer sees a real person answering real questions. Not an actor, not a polished script. This works especially in businesses where trust is the most important asset — education, professional services, healthcare.
+
+**Enriches with information:** 10 questions = 10 opportunities to provide value. Each answer can crack a question your clients ask every day, debunk a common myth, or tell something most people don't know about your field.
+
+**Flexible in use:** From the full video you can produce:
+- 10 short micro-content clips (question + answer = 30-60 seconds)
+- Instagram Story Highlights
+- LinkedIn posts with quotes
+- Animated FAQ for a landing page
+
+**Writing is liberation:** No complex script needed. Write 10 questions, arrange them from "light and surprising" to "professional and deep," and that's it. You can finish writing the project in an hour.
+
+## What Matters: The Presenter
+
+The format works — but it doesn't forgive the human side. The presenter (whether someone from the client's team or an external presenter) needs to be comfortable on camera.
+
+Not "an actor" — comfortable. There's a huge difference.
+
+Someone comfortable on camera: smiles spontaneously, answers in their natural language, doesn't feel like they're "filming a commercial." Someone not comfortable: robotic answers, moving eyes, stiff energy that reads clearly on screen.
+
+**In the project for Regev Gutman** — an educational institution for students in economics, accounting, and mathematics — the presenter arrived with natural, experienced energy. The result: 10 questions that feel like a conversation with a friend who's an expert in their field. Exactly what a student needs to see before choosing where to study.
+
+## When to Use This Format
+
+- Customer service: "10 things everyone asks about [our product]"
+- Personal branding: "10 questions for [name], [role]"
+- Advertising: "10 reasons why [product/service]"
+- Education: "10 mistakes students make in [field]"
+- Recruitment: "10 questions you'll want to ask before submitting your CV"
+
+One filming day. Short editing. Content that works for six months.`,
+    date: "2024-09-01",
+    tags: ["Content Strategy", "Format Content", "Social Media", "Personal Branding"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תוכן ופורמטים",
+    relatedServiceLabelEn: "Content Films & Formats",
+    relatedYoutubeId: "gE-8-eOtQg0",
+  },
   {
     id: "video-to-brand-identity",
     coverImage: "/blog/video-to-brand-cover.svg",
