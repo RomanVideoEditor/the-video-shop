@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <defs>
+    <radialGradient id="g1" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+
+  <!-- Audience silhouettes -->
+  <rect x="80" y="390" width="1040" height="120" rx="0" fill="#0f0f0f"/>
+  <ellipse cx="160" cy="390" rx="22" ry="22" fill="#1a1a1a"/>
+  <rect x="138" y="390" width="44" height="50" rx="4" fill="#1a1a1a"/>
+  <ellipse cx="240" cy="385" rx="20" ry="20" fill="#222"/>
+  <rect x="220" y="385" width="40" height="55" rx="4" fill="#222"/>
+  <ellipse cx="320" cy="392" rx="22" ry="22" fill="#1a1a1a"/>
+  <rect x="298" y="392" width="44" height="48" rx="4" fill="#1a1a1a"/>
+  <ellipse cx="400" cy="388" rx="20" ry="20" fill="#1e1e1e"/>
+  <rect x="380" y="388" width="40" height="52" rx="4" fill="#1e1e1e"/>
+  <ellipse cx="480" cy="391" rx="22" ry="22" fill="#1a1a1a"/>
+  <rect x="458" y="391" width="44" height="49" rx="4" fill="#1a1a1a"/>
+  <ellipse cx="560" cy="386" rx="21" ry="21" fill="#222"/>
+  <rect x="539" y="386" width="42" height="54" rx="4" fill="#222"/>
+  <ellipse cx="640" cy="390" rx="20" ry="20" fill="#1e1e1e"/>
+  <rect x="620" y="390" width="40" height="50" rx="4" fill="#1e1e1e"/>
+  <ellipse cx="720" cy="387" rx="22" ry="22" fill="#1a1a1a"/>
+  <rect x="698" y="387" width="44" height="53" rx="4" fill="#1a1a1a"/>
+  <ellipse cx="800" cy="391" rx="20" ry="20" fill="#222"/>
+  <rect x="780" y="391" width="40" height="49" rx="4" fill="#222"/>
+  <ellipse cx="880" cy="389" rx="21" ry="21" fill="#1e1e1e"/>
+  <rect x="859" y="389" width="42" height="51" rx="4" fill="#1e1e1e"/>
+  <ellipse cx="960" cy="390" rx="22" ry="22" fill="#1a1a1a"/>
+  <rect x="938" y="390" width="44" height="50" rx="4" fill="#1a1a1a"/>
+  <ellipse cx="1040" cy="387" rx="20" ry="20" fill="#222"/>
+  <rect x="1020" y="387" width="40" height="53" rx="4" fill="#222"/>
+
+  <!-- Stage / speaker area -->
+  <rect x="400" y="240" width="400" height="130" rx="4" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+  <line x1="600" y1="240" x2="600" y2="370" stroke="#c8a96e" stroke-width="1" opacity="0.2"/>
+  <!-- Speaker podium -->
+  <rect x="560" y="290" width="80" height="80" rx="4" fill="#1a1a1a"/>
+  <circle cx="600" cy="270" r="20" fill="#1e1e1e"/>
+  <!-- Spotlight -->
+  <path d="M600 170 L520 290 L680 290 Z" fill="#c8a96e" opacity="0.04"/>
+
+  <!-- Content output icons -->
+  <rect x="100" y="200" width="110" height="65" rx="6" fill="#111" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <text x="155" y="228" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="1">LINKEDIN</text>
+  <text x="155" y="248" font-family="sans-serif" font-size="10" fill="#f5f5f0" text-anchor="middle" opacity="0.5">Thought</text>
+  <text x="155" y="261" font-family="sans-serif" font-size="10" fill="#f5f5f0" text-anchor="middle" opacity="0.5">Leadership</text>
+
+  <rect x="990" y="200" width="110" height="65" rx="6" fill="#111" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <text x="1045" y="228" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="1">REELS</text>
+  <text x="1045" y="248" font-family="sans-serif" font-size="10" fill="#f5f5f0" text-anchor="middle" opacity="0.5">Employer</text>
+  <text x="1045" y="261" font-family="sans-serif" font-size="10" fill="#f5f5f0" text-anchor="middle" opacity="0.5">Branding</text>
+
+  <!-- Arrows from event to outputs -->
+  <line x1="400" y1="300" x2="215" y2="255" stroke="#c8a96e" stroke-width="1" stroke-dasharray="5,4" opacity="0.3"/>
+  <line x1="800" y1="300" x2="988" y2="255" stroke="#c8a96e" stroke-width="1" stroke-dasharray="5,4" opacity="0.3"/>
+
+  <!-- Labels -->
+  <text x="600" y="530" font-family="sans-serif" font-size="16" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="4">CORPORATE EVENT → CONTENT ENGINE</text>
+  <text x="600" y="565" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>

@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "maccabi-corporate-event",
+    youtubeId: "M0EhoVJsxJM",
+    titleHe: "תיעוד אירוע עסקי — מכבי | מנכס חד-פעמי לנכס שיווקי",
+    titleEn: "Corporate Event Documentation — Maccabi | From One-Time Event to Marketing Asset",
+    challengeHe: "להפוך כנס חברה חד-פעמי לתוכן שממשיך לעבוד חודשים קדימה — מבלי להפריע למהלך האירוע ולאנרגיה שלו.",
+    challengeEn: "Turn a one-time corporate conference into content that keeps working months ahead — without disrupting the event's flow and energy.",
+    solutionHe: "Run-and-Gun Filming: צוות קל ומנוסה שלוכד רגעים אמיתיים (חיוכים, רגעי הרצאה, אנרגיה קבוצתית) עם סאונד ישיר מהמיקסר. חומרי גלם מתוכננים למודולריות: סרטון סיכום קצבי, קליפים לרשתות, הרצאות מלאות ו-Micro-Content לגאנט השיווקי.",
+    solutionEn: "Run-and-Gun Filming: a light, experienced crew capturing real moments (smiles, lecture highlights, group energy) with direct sound from the mixer. Footage planned for modularity: a rhythmic recap video, social media clips, full lecture recordings, and micro-content to fill the marketing calendar.",
+    category: "commercial",
+    client: "Maccabi",
+    duration: "3:30",
+    date: "2023-11-01",
+  },
+  {
     id: "ashtrom-sorry-for-asking",
     youtubeId: "cbqFpHi5gHE",
     titleHe: "סליחה על השאלה — Format-Driven Employer Branding | קבוצת אשטרום",
@@ -314,6 +328,105 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "corporate-event-marketing-engine",
+    coverImage: "/blog/corporate-event-cover.svg",
+    titleHe: "אל תתנו לאירוע שלכם להסתיים כשהאורות כבים: איך הופכים כנס חברה לנכס שיווקי מתמשך",
+    titleEn: "Don't Let Your Event End When the Lights Go Out: How to Turn a Corporate Conference into a Lasting Marketing Asset",
+    excerptHe: "חברות משקיעות חודשים בתכנון אירוע, ואז האורות כבים — וזהו. בסביבה השיווקית המודרנית, זה פספוס אדיר. תיעוד אירועים עסקיים הוא כבר מזמן לא מזכרת — הוא מנוע תוכן.",
+    excerptEn: "Companies spend months planning an event, then the lights go out — and that's it. In today's marketing environment, that's a massive missed opportunity. Corporate event documentation is no longer a keepsake — it's a content engine.",
+    readingTime: 5,
+    bodyHe: `## הפספוס הכי יקר בשיווק ארגוני
+
+חברות וארגונים משקיעים תקציבים עצומים וחודשים ארוכים של תכנון בהפקת אירועים עסקיים. כולם מגיעים, נהנים, ואז האורות כבים — והאירוע נשאר בעיקר כחשבוניות מהקייטרינג וזיכרון רחוק.
+
+בסביבה העסקית המודרנית, זה פספוס שיווקי אדיר.
+
+אם אתם כבר משקיעים בהפקת אירוע — התיעוד שלו הוא לא "בונוס נחמד". הוא חובה אסטרטגית שמאפשרת לכם לסחוט את המקסימום מהתקציב ולייצר חומרי שיווק שממשיכים לעבוד חודשים קדימה.
+
+[IMAGE]
+
+## מה שלרוב מפספסים
+
+רוב החברות חושבות על תיעוד אירוע כסרטון אחד: "Recap מהכנס." זה טוב, אבל זה עשירית מהאפשרות האמיתית.
+
+אירוע עסקי אחד הוא בעצם **מכרה תוכן** שמספק:
+
+**סמכות מקצועית (Thought Leadership):** הרצאות, פאנלים, ראיונות מומחים — כל אלה, כשנערכים נכון, הופכים לסדרת תוכן ב-LinkedIn שמבססת את מומחיות החברה חודשים אחרי שהכנס הסתיים.
+
+**Employer Branding חי:** אנרגיה קבוצתית אמיתית, עובדים שנהנים, מנהלים שנגישים — זה לא ניתן לבים. סרטון אירוע מלוטש שמראה שהחברה משקיעה בעובדים שלה הוא מגנט גיוס שעובד 24/7.
+
+**Micro-Content לגאנט השיווקי:** מ-15 שניות לסטוריז ועד ציטוטים של נואמים בגרפיקה — אירוע אחד יכול לספק תוכן לחצי שנה שלמה.
+
+## איך אנחנו עובדים באירועים
+
+הגישה שלנו היא **Run-and-Gun Filming**: צוות קל, מנוסה ובלתי נראה שלוכד את האנרגיה האמיתית של האירוע — בלי לעצור אנשים, בלי להפריע לזרימה, בלי חצובות שחוסמות מעברים.
+
+**סאונד מהמיקסר:** כשיש נואם על במה, הסאונד שלנו מגיע ישיר מהמיקסר של האירוע — תוצאה? הקלטות הרצאות שאפשר להשתמש בהן, לא רק ב-B-roll.
+
+**תכנון מודולרי מראש:** לפני האירוע, אנחנו מגדירים יחד את ה"קוביות" — מה צריך לסרטון הסיכום, מה לרשתות, מה להרצאות מלאות. כל שוט מצולם עם המטרה הסופית בראש.
+
+**עריכה ב-3 רמות:** סרטון סיכום קצבי (2-3 דקות), גרסאות קצרות לרשתות (30-60 שניות), והרצאות מלאות עם עריכה נקייה וכותרות.
+
+## התוצאה: המשכה מעבר לאולם
+
+אירוע שתועד נכון ממשיך להניב ערך חודשים אחרי שהוא הסתיים:
+
+- פוסטי LinkedIn עם ציטוטים ורגעי מפתח → Thought Leadership
+- סרטוני Reel קצרים → מיתוג מעסיק ברשתות
+- הרצאות מלאות ב-YouTube → שימור ידע ארגוני
+- Story arcs של "מאחורי הקלעים" → אנושיות ותרבות ארגונית
+
+**אל תשארו רק עם החשבוניות מהקייטרינג. תצאו מכל אירוע עם בנק תכנים שמציג את החברה שלכם בשיא תפארתה.**`,
+    bodyEn: `## The Most Expensive Miss in Corporate Marketing
+
+Companies and organizations invest enormous budgets and long months of planning into producing business events. Everyone shows up, has a great time, the lights go out — and the event lives on mainly as catering invoices and a distant memory.
+
+In today's business environment, that's a massive marketing miss.
+
+If you're already investing in producing an event — documenting it isn't a "nice bonus." It's a strategic necessity that lets you maximize your budget and generate marketing content that keeps working months ahead.
+
+[IMAGE]
+
+## What Most Companies Miss
+
+Most companies think about event documentation as one video: "A conference recap." That's fine, but it's a tenth of the real opportunity.
+
+One business event is essentially a **content mine** that provides:
+
+**Thought Leadership:** Lectures, panels, expert interviews — all of these, when edited correctly, become a LinkedIn content series that establishes the company's expertise months after the conference ended.
+
+**Live Employer Branding:** Real group energy, employees enjoying themselves, accessible managers — this can't be faked. A polished event video showing the company invests in its people is a recruitment magnet working 24/7.
+
+**Micro-Content for the Marketing Calendar:** From 15-second Stories to speaker quote graphics — one event can supply content for an entire half-year.
+
+## How We Work at Events
+
+Our approach is **Run-and-Gun Filming**: a light, experienced, near-invisible crew that captures the real energy of the event — without stopping people, disrupting flow, or blocking walkways with tripods.
+
+**Sound from the mixer:** When there's a speaker on stage, our sound comes directly from the event's mixer — result? Lecture recordings you can actually use, not just B-roll.
+
+**Modular planning upfront:** Before the event, we define together the "building blocks" — what's needed for the recap video, what for social media, what for full lectures. Every shot is filmed with the final purpose in mind.
+
+**Editing at 3 levels:** A rhythmic recap video (2-3 minutes), shorter social versions (30-60 seconds), and full lectures with clean editing and titles.
+
+## The Result: Momentum Beyond the Venue
+
+An event documented correctly keeps generating value months after it ended:
+
+- LinkedIn posts with quotes and key moments → Thought Leadership
+- Short Reel videos → Employer branding on social media
+- Full lectures on YouTube → Organizational knowledge retention
+- "Behind the scenes" story arcs → Humanity and company culture
+
+**Don't walk away with just the catering invoices. Walk out of every event with a content bank that presents your company at its finest.**`,
+    date: "2025-03-10",
+    tags: ["Corporate Events", "Employer Branding", "Content Strategy", "LinkedIn"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "תיעוד אירועים ומיתוג מעסיק",
+    relatedServiceLabelEn: "Event Documentation & Employer Branding",
+    relatedYoutubeId: "M0EhoVJsxJM",
+  },
   {
     id: "format-driven-employer-branding",
     coverImage: "/blog/format-driven-eb-cover.svg",
