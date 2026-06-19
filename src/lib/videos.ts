@@ -2313,6 +2313,124 @@ But when we ask clients what prevents their customers from closing — the answe
   },
   {
     id: "corporate-business-card-film",
+    coverImage: "/blog/corporate-business-card-cover.svg",
+    titleHe: "סרט 'כרטיס הביקור' התאגידי: מתי הפורמט הקלאסי הוא הבחירה הנכונה",
+    titleEn: "The Corporate 'Business Card' Film: When the Classic Format Is the Right Choice",
+    excerptHe: "לא כל סרט חייב להיות פורץ דרך. כשהמטרה היא להוכיח גודל, יציבות וסמכות — ה'כרטיס ביקור' התאגידי הוא הכלי החד ביותר בארסנל.",
+    excerptEn: "Not every film has to be groundbreaking. When the goal is to prove scale, stability, and authority — the corporate 'business card' is the sharpest tool in the arsenal.",
+    readingTime: 5,
+    bodyHe: `## הפרדוקס של הפורמט ה"שמרני"
+
+בתעשיית הווידאו יש נטייה לרומנטיזציה: כולם רוצים "פורמט פורץ דרך", "נרטיב בלתי צפוי", "מהלך קריאייטיבי מפתיע". זה הגיוני כשמדובר בסרטוני ויראליות, קמפיינים לצרכן הסופי, או מיתוג מעסיק.
+
+אבל יש לקוחות שונים לחלוטין: **חברות נדל"ן מניב, קרנות תשתית, תאגידים פיננסיים.** הלקוח שלהם — משקיע, בנק, שוכר עוגן — לא מחפש יצירתיות. הוא מחפש ביטחון.
+
+לסרט כזה יש שם: **"כרטיס ביקור" תאגידי.** ולפורמט הזה יש תפקיד ספציפי מאוד.
+
+[IMAGE]
+
+## מה המסר האמיתי שסרט תדמית תאגידי מעביר
+
+כשאשטרום נכסים — חברת נדל"ן מניב עם פורטפוליו של מגדלי משרדים, פארקים לוגיסטיים ומרכזי מסחר ברחבי ישראל — יצאה להפיק סרט תדמית, הם לא ביקשו "שיר אהבה למשרדים שלהם". הם ביקשו ויזיטקארטה שתענה על שאלה אחת:
+
+**"למה אנחנו כדאיים לך כשותף, כשוכר, כמשקיע?"**
+
+התשובה לשאלה הזו בנויה מארבעה אלמנטים:
+
+### 1. ותק + היסטוריה = ביטחון
+"הוקמה ב-1990" זה לא רק תאריך — זה "אנחנו שרדנו משבר 2008, קורונה, ועוד." חברה שפועלת 30+ שנה בנדל"ן מסחרי ישראלי עברה מחזורי שוק. זה מה שמשקיע רוצה לדעת.
+
+### 2. פריסה ארצית = סקייל
+רשימת הערים — תל אביב, הרצליה, חיפה, ירושלים, באר שבע — היא לא שיווק. זו הוכחה שלחברה יש **גב לוגיסטי** ולא רק פרויקט מקומי אחד.
+
+### 3. PropTech = שדרוג תפיסתי
+הצגת AshtromHost — האפליקציה לניהול הנכס — היא "טוויסט" שהופך חברת נדל"ן "אפורה" לחברת **PropTech**. עבור שוכרים צעירים, חברות טכנולוגיה, ושותפים בינלאומיים: זה הפרש בין "מוציא שכירות" לבין "ספק חווית עבודה".
+
+### 4. ESG = כניסה לשיחה הגלובלית
+LEED Gold ופאנלים סולאריים אינם נחמדות. בשוק הנדל"ן העסקי של 2024, **חברות Enterprise גדולות מחויבות לדיווח ESG.** הן לא יכולות להיכנס לבניין שאינו עומד בתקנים. כלומר — לנכס ירוק יש שוק שכירים שבניין "רגיל" לא ניגש אליו.
+
+## למה רחפן הוא הכלי הכי חסכוני להוכחת גודל
+
+בנדל"ן מסחרי, רחפן הוא לא "טרנד" — הוא **הפתרון ההנדסי** לבעיה ספציפית: איך מראים בניין של 50,000 מ"ר, מגרש בנייה פעיל, ופארק שלם — בלי להוציא מאות אלפים על תשתיות צילום?
+
+תשובה: טיסת רחפן אחת + עורך טוב = אמינות ויזואלית שעולה על כל שחזור גרפי.
+
+המעבר בין **אתר בנייה פעיל** → **מגדל גמור ומאוכלס** בסרט אחד עושה משהו שמצגות פאוורפוינט לא מצליחות: **הוא מוכיח שהחברה מסיימת פרויקטים.**
+
+## מבנה ה"כרטיס ביקור" התאגידי — תבנית עבודה
+
+**פתיחה (0:00–0:15):** הצהרת זהות. שם + נתון מרכזי (שנת ייסוד / מ"ר / ערים).
+
+**גוף (0:15–1:00):** פאזות פעילות: פרויקטים → שירותים → טכנולוגיה → קיימות. כל פאזה 10-15 שניות, ויזואל ספציפי, טקסט מינימלי.
+
+**סיכום (1:00–1:30):** Call to Action מרוסן. לא "התקשרו עכשיו!" אלא "זאת אשטרום." הרושם הוא הפנייה לפעולה.
+
+## מתי **לא** לבחור בפורמט הזה
+
+סרט "כרטיס ביקור" תאגידי הוא הבחירה הלא נכונה כש:
+
+- **הקהל הוא צרכן סופי** — הם רוצים רגש, לא נתונים
+- **המוצר חדש ולא מוכר** — צריך הסבר, לא הפגנת גודל
+- **המטרה היא ויראליות** — הפורמט הזה לא מיועד לשיתוף ברשתות
+- **הקמפיין הוא גיוס המונים** — שם הרגש הוא הכל
+
+אבל כשמדובר ב-**B2B ארגוני, שוק נדל"ן, תשתיות, פיננסים** — הפורמט הזה לא "ישן". הוא **מדויק**.
+
+---
+
+ב-The Video Shop אנחנו יודעים לזהות מתי הפרויקט דורש "פרץ קריאייטיבי" ומתי הוא דורש **ביצוע מקצועי ומדויק של פורמט מנוסה.** שתי היכולות האלה שוות בדיוק אותו דבר.`,
+    bodyEn: `## The Paradox of the "Conservative" Format
+
+There's a tendency in video production to romanticize: everyone wants a "groundbreaking format," "unexpected narrative," "surprising creative move." That makes sense for viral content, B2C campaigns, or employer branding.
+
+But there are completely different clients: **commercial real estate companies, infrastructure funds, financial corporations.** Their customer — investor, bank, anchor tenant — isn't looking for creativity. They're looking for confidence.
+
+This type of film has a name: the corporate **"business card."** And this format has a very specific role.
+
+[IMAGE]
+
+## What a Corporate Brand Film Really Communicates
+
+When Ashtrom Properties set out to produce a brand film, they weren't asking for a "love letter to their offices." They were asking for a calling card that answers one question:
+
+**"Why are we worth it — as a partner, as a tenant, as an investor?"**
+
+The answer is built from four elements:
+
+### 1. Longevity + History = Confidence
+"Founded in 1990" means "we survived 2008, COVID, and more." A company operating 30+ years has been through market cycles. That's what an investor needs to know.
+
+### 2. National Footprint = Scale
+The list of cities isn't marketing. It's proof the company has **logistical backbone** and not just one local project.
+
+### 3. PropTech = Perceptual Upgrade
+Showcasing AshtromHost turns a "gray" real estate company into a **PropTech** company — the difference between "landlord" and "work experience provider."
+
+### 4. ESG = Entry into the Global Conversation
+LEED Gold and solar panels aren't nice-to-haves. Large enterprise companies are committed to ESG reporting. A green asset has a tenant market a "regular" building can't access.
+
+## Why Drone Is the Most Cost-Efficient Way to Prove Scale
+
+One drone flight + a good editor = visual credibility that surpasses any graphic reconstruction. The cut from **active construction site** → **finished, occupied tower** proves something PowerPoint can't: **the company finishes projects.**
+
+## Corporate "Business Card" Structure — A Working Template
+
+**Opening (0:00–0:15):** Identity statement. Name + core metric.
+**Body (0:15–1:00):** Activity phases: projects → services → technology → sustainability.
+**Close (1:00–1:30):** Restrained call to action. The impression *is* the call to action.
+
+## When **Not** to Choose This Format
+
+Wrong choice when: the audience is the end consumer, the product is new and unknown, the goal is virality, or the campaign is crowdfunding.
+
+Right choice for: **B2B enterprise, real estate, infrastructure, finance** — this format isn't "old." It's **precise**.
+
+---
+
+At The Video Shop, we know how to identify when a project demands a creative leap and when it demands **professional, precise execution of a proven format.** Both capabilities are worth exactly the same thing.`,
+    date: "2023-04-15",
+    tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
+    relatedYoutubeId: "ome2LtSiFWQ",
     relatedServiceHref: "/services/realestate",
     relatedServiceLabelHe: "סרטי נדל\"ן ותשתיות",
     relatedServiceLabelEn: "Real Estate & Infrastructure Films",
