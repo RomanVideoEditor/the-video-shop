@@ -42,6 +42,32 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "medical-device-instructional",
+    youtubeId: "9uIA1nRaWqc",
+    titleHe: "סרטון הדרכה רפואי עם הדמיות תלת-מימד | מכשיר Medical",
+    titleEn: "Medical Device Instructional Video with 3D Visualization",
+    challengeHe: "להפוך הוראות שימוש טכניות של מכשיר רפואי לסרטון הדרכה שמפיג חרדה, מוכיח בטיחות ומאפשר ללקוח להגיע מ-Unboxing לשימוש עצמאי — בלי שיחת תמיכה.",
+    challengeEn: "Turn a medical device's technical instructions into an instructional video that reduces anxiety, proves safety, and lets the customer go from unboxing to independent use — without a support call.",
+    solutionHe: "פתיחת Unboxing להפגת חרדה, צילום Top-Down לדיוק ויזואלי, הדמיות תלת-מימד רפואיות (כחול רפואי) להסבר אופן פעולת גלי הרדיו על הרקמות, כתוביות ואייקונים המאפשרים צפייה ללא סאונד. התוצאה: 'איש תמיכה' 24/7 שחוסך עומס על מוקד השירות ומגדיל סגירות.",
+    solutionEn: "Unboxing opening to reduce anxiety, Top-Down filming for visual precision, medical 3D visualization (medical blue) to explain radio wave action on tissue, subtitles and icons enabling silent viewing. Result: a 24/7 'support agent' that reduces service center load and increases conversions.",
+    category: "product",
+    duration: "3:00",
+    date: "2023-10-01",
+  },
+  {
+    id: "medical-device-myths",
+    youtubeId: "fXThM6hPzSM",
+    titleHe: "הפרכת מיתוסים — מכשיר Medical | שלב השיקול במסע הלקוח",
+    titleEn: "Myth Busting — Medical Device | Consideration Stage in the Customer Journey",
+    challengeHe: "לטפל בהתנגדויות וחששות נפוצים לפני שהלקוח מגיע לנקודת הרכישה — בלי להישמע כמו פרסומת.",
+    challengeEn: "Address common objections and concerns before the customer reaches the purchase point — without sounding like an advertisement.",
+    solutionHe: "פורמט 'הפרכת מיתוסים' ישיר מול מצלמה: שאלות אמיתיות, תשובות כנות, הדגמות חיות. הסרטון ממוקם בשלב השיקול של מסע הלקוח ומטפל בחסמי קנייה לפני שהם עוצרים את הרכישה.",
+    solutionEn: "Direct-to-camera 'myth busting' format: real questions, honest answers, live demonstrations. Positioned at the consideration stage of the customer journey to handle purchase barriers before they stop the sale.",
+    category: "product",
+    duration: "2:30",
+    date: "2023-10-01",
+  },
+  {
     id: "lyfe-social-content",
     youtubeId: "d2xNLprySKQ",
     titleHe: "LYFE — בנק תוכן סושיאל מיום צילום אחד | קבוצת אשטרום",
@@ -2117,6 +2143,176 @@ At The Video Shop, we know how to identify when a project demands a "creative le
     date: "2023-04-15",
     tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
     relatedYoutubeId: "ome2LtSiFWQ",
+  },
+  {
+    id: "instructional-video-customer-journey",
+    coverImage: "/blog/instructional-video-cover.svg",
+    titleHe: "מסע הלקוח בווידאו: למה סרטון ההדרכה הוא הסגירה שאף אחד לא מכין",
+    titleEn: "The Video Customer Journey: Why the Instructional Video Is the Close Nobody Prepares",
+    excerptHe: "כולם משקיעים בסרט התדמית. מעטים מכינים סרטון הדרכה. אבל הלקוח שמחפש 'איך זה עובד' לפני שהוא קונה — הוא הלקוח הכי קרוב לסגירה.",
+    excerptEn: "Everyone invests in the brand film. Few prepare an instructional video. But the customer searching 'how does this work' before buying — is the closest customer to closing.",
+    readingTime: 5,
+    bodyHe: `## שלושה סרטונים, שלושה שלבים — אחד שכולם מדלגים עליו
+
+כשחברה מחליטה להשקיע בווידאו, היא בדרך כלל שואלת: "איזה סרט אנחנו מכינים?" השאלה הנכונה היא: **"באיזה שלב של מסע הלקוח אנחנו נמצאים?"**
+
+מסע לקוח קלאסי מכיל שלושה שלבים שלכל אחד מהם יש פורמט וידאו מתאים:
+
+**שלב 1 — מודעות (Awareness):** סרט תדמית. מראה מי אתם, מה אתם מייצרים ולמה כדאי לשים לב. הוא לא מוכר — הוא מכיר.
+
+**שלב 2 — שיקול (Consideration):** "הפרכת מיתוסים" / השוואה / שאלות ותשובות. הלקוח כבר יודע שאתם קיימים. עכשיו הוא שואל: *"למה דווקא אתם?"*
+
+**שלב 3 — רכישה ושימוש (Purchase & Use):** סרטון הדרכה. הלקוח כמעט החליט. הוא מחפש ביטחון אחרון: *"האם אצליח להשתמש בזה?"*
+
+**רוב החברות מכינות שלב 1. כמה מכינות שלב 2. כמעט אף אחד לא מכין שלב 3.**
+
+[IMAGE]
+
+## מה קורה כשאין סרטון הדרכה
+
+הלקוח מחפש ב-YouTube "איך מפעילים את [מוצר]". הוא מוצא:
+- סרטון חובבני שצילם לקוח אחר ושמציג את המוצר בצורה גרועה
+- פורום עם תגובות לא עדכניות
+- כלום
+
+אחת משלוש התוצאות: הוא לא קונה, הוא קונה ומתקשר לשירות לקוחות, או שהוא קונה ומחזיר כי "הוא לא הצליח להבין איך עובד".
+
+**סרטון הדרכה טוב מבטל את שלושתן.**
+
+## האנטומיה של סרטון הדרכה שעובד — ניתוח מקרה
+
+בפרויקט שהפקנו עבור מכשיר Medical, האתגר היה לגרום ללקוחות להרגיש ביטחון מול מכשיר שמשתמש בגלי רדיו — טכנולוגיה שנשמעת מורכבת ואפילו מפחידה מעט עבור הדיוט.
+
+### א. Unboxing כהפגת חרדה
+
+הסרטון פותח בפריסת כל חלקי המארז על המשטח. זה לא "אסתטיקה" — זו **פסיכולוגיה**. הלקוח רואה שאין הפתעות. הכל מולו, הכל מסודר, הכל הגיוני.
+
+כל מוצר מורכב שמגיע בקופסה צריך את הסצנה הזו.
+
+### ב. Top-Down: הזווית שמבטלת בלבול
+
+צילום מלמעלה למטה (Bird's Eye / Top-Down) הוא הסטנדרט לסרטוני הדרכה מסיבה פשוטה: הוא משחזר את נקודת המבט של הלקוח. כשהמוצר מונח על שולחן, ה-Top-Down מקביל בדיוק לאיך הלקוח עצמו יסתכל על המוצר.
+
+כל זווית אחרת יוצרת דיסוריינטציה — "אם אני מסתכל מהצד, איפה הכפתור הזה נמצא אצלי?"
+
+### ג. הדמיות תלת-מימד רפואיות: הפיכת הבלתי-נראה לנראה
+
+**זה ה-differentiator האמיתי** שהופך סרטון הדרכה בינוני לסרטון הדרכה מעולה.
+
+גלי רדיו על רקמות — אי-אפשר לצלם את זה. אפשר להסביר בטקסט, אבל הלקוח לא ייזכר. הדמיית תלת-מימד רפואית בכחול, שמראה בדיוק מה קורה מתחת לעור, עושה שלושה דברים:
+
+1. **מסבירה** — הלקוח מבין מנגנון, לא רק הוראות
+2. **מהימנה** — "רפואי" + תלת-מימד = "מדעי" = "בטוח"
+3. **מבדלת** — מוצרים מתחרים עם הוראות שימוש מודפסות לא יכולים להתחרות בזה
+
+### ד. כתוביות ואייקונים — לא אביזר, תשתית
+
+נתון: 85% מהצפייה בסרטונים ברשתות החברתיות היא ללא סאונד.
+
+סרטון הדרכה שדורש אודיו כדי להבין — **לא עובד**. כתוביות ואייקונים שמופיעים בתזמון מדויק הופכים את הסרטון לנגיש בכל מצב: ברכבת, בחנות, בלילה.
+
+## ה-ROI של סרטון הדרכה: מה אפשר למדוד
+
+**הפחתת פניות לשירות לקוחות:** ניתן לבדוק כמה פניות "איך מפעילים" יש לפני ואחרי פרסום הסרטון.
+
+**הגדלת שיעור המרה בדף המוצר:** סרטון הדרכה שמוטמע בדף מוצר מגדיל המרות. הלקוח רואה שזה פשוט — הוא קונה.
+
+**הפחתת החזרות:** לקוח שמבין את המוצר לפני הרכישה — מחזיר פחות.
+
+**Social Proof עקיף:** צופה שמחפש מידע ורואה שהחברה "כבר חשבה על זה" — רוכש יותר אמון.
+
+## מסקנה: הסרטון שלא נראה ה"מרשים" הוא לעתים הכי חשוב
+
+בפגישה עם לקוח, לא פעם שומעים: "אנחנו רוצים סרט תדמית מרהיב." נדיר ששומעים: "אנחנו רוצים סרטון הדרכה מעולה."
+
+אבל כשאנחנו שואלים לקוחות מה מונע מהלקוחות שלהם לסגור — לעתים קרובות התשובה היא: "הם לא בטוחים שיצליחו להשתמש בזה."
+
+**זו בדיוק הבעיה שסרטון ההדרכה פותר.**`,
+    bodyEn: `## Three Videos, Three Stages — One That Everyone Skips
+
+When a company decides to invest in video, it usually asks: "What film are we making?" The right question is: **"At what stage of the customer journey are we?"**
+
+A classic customer journey has three stages, each with an appropriate video format:
+
+**Stage 1 — Awareness:** Brand film. Shows who you are, what you make, and why it's worth attention. It doesn't sell — it introduces.
+
+**Stage 2 — Consideration:** Myth busting / comparison / Q&A. The customer already knows you exist. Now they ask: *"Why specifically you?"*
+
+**Stage 3 — Purchase & Use:** Instructional video. The customer has almost decided. They're seeking one final reassurance: *"Will I be able to use this?"*
+
+**Most companies prepare Stage 1. A few prepare Stage 2. Almost no one prepares Stage 3.**
+
+[IMAGE]
+
+## What Happens When There's No Instructional Video
+
+The customer searches YouTube for "how to use [product]." They find:
+- An amateur video shot by another customer presenting the product poorly
+- An outdated forum thread
+- Nothing
+
+One of three outcomes: they don't buy, they buy and call customer service, or they buy and return it because "they couldn't figure out how it worked."
+
+**A good instructional video eliminates all three.**
+
+## The Anatomy of an Instructional Video That Works — Case Study
+
+In a project we produced for a medical device, the challenge was making customers feel confident about a device that uses radio waves — technology that sounds complex and even slightly intimidating to a layperson.
+
+### A. Unboxing as Anxiety Reduction
+
+The video opens by spreading all kit components on the surface. This isn't "aesthetics" — it's **psychology**. The customer sees there are no surprises. Everything is in front of them, organized, logical.
+
+Every complex product that arrives in a box needs this scene.
+
+### B. Top-Down: The Angle That Eliminates Confusion
+
+Bird's Eye / Top-Down filming is the industry standard for instructional videos for a simple reason: it replicates the customer's viewpoint. When the product is on a table, Top-Down exactly matches how the customer themselves will look at the product.
+
+Any other angle creates disorientation — "if I'm looking from the side, where is that button on mine?"
+
+### C. Medical 3D Visualization: Making the Invisible Visible
+
+**This is the real differentiator** that turns a mediocre instructional video into an excellent one.
+
+Radio waves on tissue — you can't film that. You can explain in text, but the customer won't remember. A medical 3D visualization in blue, showing exactly what happens under the skin, does three things:
+
+1. **Explains** — the customer understands a mechanism, not just instructions
+2. **Builds trust** — "medical" + 3D = "scientific" = "safe"
+3. **Differentiates** — competing products with printed instructions can't compete with this
+
+### D. Subtitles and Icons — Not an Accessory, Infrastructure
+
+Fact: 85% of social media video viewing happens without sound.
+
+An instructional video that requires audio to understand — **doesn't work**. Subtitles and icons appearing at precise timing make the video accessible in any situation: on the train, in a store, at night.
+
+## The ROI of an Instructional Video: What You Can Measure
+
+**Reduction in customer service inquiries:** you can track how many "how to use" contacts exist before and after publishing the video.
+
+**Increased conversion rate on the product page:** an embedded instructional video increases conversions. The customer sees it's simple — they buy.
+
+**Reduced returns:** a customer who understands the product before purchase — returns less.
+
+**Indirect social proof:** a viewer searching for information who sees the company "already thought of this" — builds more trust.
+
+## Conclusion: The Film That Doesn't Look "Impressive" Is Often the Most Important
+
+In client meetings, we often hear: "We want a stunning brand film." We rarely hear: "We want an excellent instructional video."
+
+But when we ask clients what prevents their customers from closing — the answer is often: "They're not sure they'll be able to use it."
+
+**That's exactly the problem the instructional video solves.**`,
+    date: "2023-11-05",
+    tags: ["Product", "Strategy", "Customer Journey", "Tips"],
+    relatedYoutubeId: "9uIA1nRaWqc",
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "סרטי מוצר וטכנולוגיה",
+    relatedServiceLabelEn: "Product & Technology Videos",
+  },
+  {
+    id: "corporate-business-card-film",
     relatedServiceHref: "/services/realestate",
     relatedServiceLabelHe: "סרטי נדל\"ן ותשתיות",
     relatedServiceLabelEn: "Real Estate & Infrastructure Films",
