@@ -42,30 +42,46 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
-    id: "medical-device-instructional",
-    youtubeId: "9uIA1nRaWqc",
-    titleHe: "סרטון הדרכה רפואי עם הדמיות תלת-מימד | מכשיר Medical",
-    titleEn: "Medical Device Instructional Video with 3D Visualization",
-    challengeHe: "להפוך הוראות שימוש טכניות של מכשיר רפואי לסרטון הדרכה שמפיג חרדה, מוכיח בטיחות ומאפשר ללקוח להגיע מ-Unboxing לשימוש עצמאי — בלי שיחת תמיכה.",
-    challengeEn: "Turn a medical device's technical instructions into an instructional video that reduces anxiety, proves safety, and lets the customer go from unboxing to independent use — without a support call.",
-    solutionHe: "פתיחת Unboxing להפגת חרדה, צילום Top-Down לדיוק ויזואלי, הדמיות תלת-מימד רפואיות (כחול רפואי) להסבר אופן פעולת גלי הרדיו על הרקמות, כתוביות ואייקונים המאפשרים צפייה ללא סאונד. התוצאה: 'איש תמיכה' 24/7 שחוסך עומס על מוקד השירות ומגדיל סגירות.",
-    solutionEn: "Unboxing opening to reduce anxiety, Top-Down filming for visual precision, medical 3D visualization (medical blue) to explain radio wave action on tissue, subtitles and icons enabling silent viewing. Result: a 24/7 'support agent' that reduces service center load and increases conversions.",
-    category: "product",
-    duration: "3:00",
-    date: "2023-10-01",
+    id: "vertica-lifestyle-ad",
+    youtubeId: "rixmoZ4Y4Uk",
+    titleHe: "Vertica — פרסומת לייף-סטייל | כשבימוי פוגש אסטרטגיה",
+    titleEn: "Vertica — Lifestyle Ad | When Direction Meets Strategy",
+    challengeHe: "לנפץ את מחסום המבוכה סביב מכשיר HealthTech ולמכור חוויה — לא מפרט טכני. לגרום לצופה להרגיש מה המוצר מאפשר, לא רק להבין מה הוא עושה.",
+    challengeEn: "Break the embarrassment barrier around a HealthTech device and sell an experience — not a spec sheet. Make the viewer feel what the product enables, not just understand what it does.",
+    solutionHe: "קריאייטיב נועז: ריקוד, קצב ואנרגיה מתפרצת שמפרקים מבוכה ומנגישים את הפתרון בגובה עיניים. בימוי שחקנים מדויק, כוריאוגרפיה שמעבירה מסר, פוסט-פרודקשן ברמה עולמית. הסרט שמוכיח שקריאייטיב נועז הוא הכלי החזק ביותר של מותג.",
+    solutionEn: "Bold creative: dance, rhythm, and explosive energy that dissolve embarrassment and make the solution relatable. Precise actor direction, message-carrying choreography, world-class post-production. The film that proves bold creative is a brand's most powerful tool.",
+    category: "commercial",
+    client: "Vertica",
+    duration: "1:00",
+    date: "2023-09-01",
   },
   {
-    id: "medical-device-myths",
-    youtubeId: "fXThM6hPzSM",
-    titleHe: "הפרכת מיתוסים — מכשיר Medical | שלב השיקול במסע הלקוח",
-    titleEn: "Myth Busting — Medical Device | Consideration Stage in the Customer Journey",
-    challengeHe: "לטפל בהתנגדויות וחששות נפוצים לפני שהלקוח מגיע לנקודת הרכישה — בלי להישמע כמו פרסומת.",
-    challengeEn: "Address common objections and concerns before the customer reaches the purchase point — without sounding like an advertisement.",
-    solutionHe: "פורמט 'הפרכת מיתוסים' ישיר מול מצלמה: שאלות אמיתיות, תשובות כנות, הדגמות חיות. הסרטון ממוקם בשלב השיקול של מסע הלקוח ומטפל בחסמי קנייה לפני שהם עוצרים את הרכישה.",
-    solutionEn: "Direct-to-camera 'myth busting' format: real questions, honest answers, live demonstrations. Positioned at the consideration stage of the customer journey to handle purchase barriers before they stop the sale.",
+    id: "vertica-instructional",
+    youtubeId: "9uIA1nRaWqc",
+    titleHe: "Vertica — סרטון הדרכה עם הדמיות תלת-מימד רפואיות",
+    titleEn: "Vertica — Instructional Video with Medical 3D Visualization",
+    challengeHe: "להפוך הוראות שימוש טכניות של מכשיר HealthTech לסרטון הדרכה שמפיג חרדה, מוכיח בטיחות ומאפשר ללקוח להגיע מ-Unboxing לשימוש עצמאי — בלי שיחת תמיכה.",
+    challengeEn: "Turn a HealthTech device's technical instructions into an instructional video that reduces anxiety, proves safety, and lets the customer go from unboxing to independent use — without a support call.",
+    solutionHe: "פתיחת Unboxing להפגת חרדה, צילום Top-Down לדיוק ויזואלי, הדמיות תלת-מימד רפואיות להסבר אופן פעולת גלי הרדיו על הרקמות, כתוביות ואייקונים למאפשרים צפייה ללא סאונד.",
+    solutionEn: "Unboxing opening to reduce anxiety, Top-Down filming for visual precision, medical 3D visualization to explain radio wave action on tissue, subtitles and icons enabling silent viewing.",
     category: "product",
+    client: "Vertica",
+    duration: "3:00",
+    date: "2023-09-01",
+  },
+  {
+    id: "vertica-myth-busting",
+    youtubeId: "fXThM6hPzSM",
+    titleHe: "Vertica — הפרכת מיתוסים | שלב השיקול במסע הלקוח",
+    titleEn: "Vertica — Myth Busting | Consideration Stage in the Customer Journey",
+    challengeHe: "לטפל בהתנגדויות וחששות נפוצים סביב מכשיר HealthTech לפני שהלקוח מגיע לנקודת הרכישה — בלי להישמע כמו פרסומת.",
+    challengeEn: "Address common objections around a HealthTech device before the customer reaches the purchase point — without sounding like an advertisement.",
+    solutionHe: "פורמט 'הפרכת מיתוסים' ישיר מול מצלמה: שאלות אמיתיות, תשובות כנות, הדגמות חיות. ממוקם בשלב השיקול של מסע הלקוח ומטפל בחסמי קנייה לפני שהם עוצרים את הרכישה.",
+    solutionEn: "Direct-to-camera myth busting: real questions, honest answers, live demonstrations. Positioned at the consideration stage to handle purchase barriers before they stop the sale.",
+    category: "product",
+    client: "Vertica",
     duration: "2:30",
-    date: "2023-10-01",
+    date: "2023-09-01",
   },
   {
     id: "lyfe-social-content",
@@ -2143,6 +2159,139 @@ At The Video Shop, we know how to identify when a project demands a "creative le
     date: "2023-04-15",
     tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
     relatedYoutubeId: "ome2LtSiFWQ",
+  },
+  {
+    id: "vertica-flagship-case-study",
+    coverImage: "/blog/vertica-flagship-cover.svg",
+    titleHe: "כשבימוי פוגש אסטרטגיה: ה-Case Study של Vertica Lifestyle Ad",
+    titleEn: "When Direction Meets Strategy: The Vertica Lifestyle Ad Case Study",
+    excerptHe: "ב-HealthTech רוב החברות נופלות למלכודת ה'רצינות יתר'. הן מוכרות פתרונות, לא חוויות. הפרויקט של Vertica הוא הדגמה מלאה של ה-DNA שלנו: מהרעיון הראשוני ועד ל-Final Cut — ליווי אסטרטגי שהופך מוצר טכני לשיחת סלון.",
+    excerptEn: "In HealthTech, most companies fall into the 'over-seriousness' trap. They sell solutions, not experiences. The Vertica project is a full demonstration of our DNA: from first idea to final cut — strategic partnership that turns a technical product into a cultural conversation.",
+    readingTime: 6,
+    bodyHe: `## למה הבחרנו בסרט הזה כסרט הדגל שלנו
+
+סרט דגל לא נבחר בגלל שהוא היפה ביותר. הוא נבחר כי הוא מספר הכי טוב מה אנחנו.
+
+הפרסומת שיצרנו עבור Vertica — מכשיר HealthTech — עשתה דבר שרוב החברות בתחום לא מעזות לעשות: **היא הפכה נושא רגיש לשמחה.** בריאות, גוף, מוגבלות — אלה נושאים שהמיינסטרים מטפל בהם בכפפות לבנות, בנימה חינוכית, בזהירות יתר. אנחנו בחרנו בריקוד.
+
+[IMAGE]
+
+## האתגר: HealthTech ומחסום המבוכה
+
+בעולם ה-HealthTech, החברות מוכרות "פתרונות". הן מסבירות מנגנונים. הן מדגימות תוצאות. אבל לעתים נדירות הן שואלות: **מה הלקוח מרגיש לפני שהוא קונה?**
+
+התשובה, ברוב המקרים: **מבוכה.** הכאב שהמוצר פותר הוא אישי. להודות בו זה חשיפה. לקנות מכשיר שפותר אותו זה צעד עם מחסום רגשי.
+
+כשניגשנו לפרויקט Vertica, לא שאלנו "איך נסביר את המוצר". שאלנו: **"איך מוחקים את מחסום המבוכה?"**
+
+### הפיצוח הקריאייטיבי: ריקוד כשפה
+
+הפתרון הגיע מכיוון לא צפוי: **קצב ואנרגיה.** כשאדם רוקד — הוא לא מתנצל על גופו. הוא מציג אותו. הריקוד הפך את הנרטיב מ"מישהו שסובל" ל"מישהו שחי בגוף שלו".
+
+זה לא רק קריאייטיב — זו **הצהרת עמדה מותגית.** Vertica לא מתייחסת לגוף כלבעיה שצריך לתקן. היא מתייחסת אליו כלכוח שצריך לשחרר.
+
+## האנטומיה של ההפקה
+
+### בימוי שחקנים: דיוק בכל תנועה
+בסרטים שמשתמשים בריקוד כאמצעי, הסכנה היא לאבד את המסר בתוך ה"מחזמר". כל תנועה בפרסומת הזו עוצבה כדי לשדר ספציפיקה של פעולה — לא לבצע. כל הבעה — לא לשחק תפקיד.
+
+הבימוי עבד על ניגוד: אנרגיה מבחוץ, כנות מבפנים. הצופה צריך להרגיש גם "זה מהנה" וגם "זה אמיתי".
+
+### כוריאוגרפיה ממוקדת מסר
+הכוריאוגרפיה לא הגיעה מאסטרטיב לריקוד. היא הגיעה מהשאלה: **"מה גוף שמרגיש חופשי נראה כמוהו?"** הרגעים שבהם השחקן עוצר בין תנועות לתנועות — הם הרגעים שמוכרים. כי שם הצופה מזהה את עצמו.
+
+### פוסט-פרודקשן: לשמור על האותנטי
+הסכנה בפוסט של סרטי "אנרגיה" היא לצבוע הכל בפילטרים שהופכים אותם ל-Instagram Reel עוד אחד. העיבוד השמיר על בהירות ויזואלית, צבע עור אמיתי, ותאורה שנראית כמו אור יום — לא כמו מאחורה צבועה.
+
+## מה הסרט הזה מוכיח על The Video Shop
+
+הסרט הזה הוא שלושה דברים בו-זמנית:
+
+**1. יכולת קריאייטיבית:** אנחנו לא רק מצלמים מה שנאמר לנו. אנחנו מביאים אסטרטגיה ופיצוח קריאייטיבי שמגיעים *לפני* הצילום.
+
+**2. בימוי מדויק:** מחוות, הבעות, קצב — אנחנו עובדים ברמה של שחקנים ולא רק "אנשים שמשתמשים במוצר".
+
+**3. ליווי מלא:** Vertica קיבל מאתנו שלושה סרטים שמכסים את מסע הלקוח כולו:
+- **פרסומת Lifestyle** — מודעות ורגש
+- **סרטון הפרכת מיתוסים** — שיקול והסרת חסמים
+- **סרטון הדרכה + 3D** — שימוש ואמון
+
+זו לא "חבילת הפקה". זו **אסטרטגיית תוכן ביצוע.**
+
+## הלקח לכל מותג HealthTech ו-EdTech
+
+אם המוצר שלכם פותר בעיה אמיתית — אתם כבר מחצית מהדרך. אבל אם הפרסומת שלכם לא גורמת לאנשים להרגיש שהם *יכולים* להחזיק בפתרון הזה — אתם מאבדים לקוחות לא בגלל המוצר, אלא בגלל שהמסר לא הגיע.
+
+**הקריאייטיב הוא לא "עטיפה". הוא המוצר.**
+
+---
+
+הפרויקט הזה זמין לצפייה מלאה בפורטפוליו. ליצירת קשר לגבי פרויקט דומה — [דף יצירת קשר](/contact).`,
+    bodyEn: `## Why We Chose This Film as Our Flagship
+
+A flagship film isn't chosen because it's the most beautiful. It's chosen because it best explains who we are.
+
+The commercial we created for Vertica — a HealthTech device — did something most companies in the field don't dare to do: **it turned a sensitive subject into joy.** Health, body, limitation — topics the mainstream handles with white gloves, educational tone, excessive caution. We chose dance.
+
+[IMAGE]
+
+## The Challenge: HealthTech and the Embarrassment Barrier
+
+In HealthTech, companies sell "solutions." They explain mechanisms. They demonstrate results. But they rarely ask: **what does the customer feel before they buy?**
+
+The answer, in most cases: **embarrassment.** The pain the product solves is personal. Admitting it is exposure. Buying a device that solves it carries an emotional barrier.
+
+When we approached the Vertica project, we didn't ask "how do we explain the product?" We asked: **"how do we erase the embarrassment barrier?"**
+
+### The Creative Breakthrough: Dance as Language
+
+The solution came from an unexpected direction: **rhythm and energy.** When a person dances — they don't apologize for their body. They present it. Dance shifted the narrative from "someone who suffers" to "someone who lives in their body."
+
+This isn't just creative — it's a **brand positioning statement.** Vertica doesn't treat the body as a problem to fix. It treats it as a force to release.
+
+## The Anatomy of the Production
+
+### Actor Direction: Precision in Every Movement
+In films that use dance as a medium, the danger is losing the message inside the "musical." Every movement in this ad was designed to convey action specificity — not to perform. Every expression — not to play a role.
+
+Direction worked on contrast: energy on the outside, honesty on the inside. The viewer needs to feel both "this is fun" and "this is real."
+
+### Message-Driven Choreography
+The choreography didn't come from a dance aesthetic. It came from the question: **"what does a body that feels free look like?"** The moments where the actor pauses between movements — those are the selling moments. Because that's where the viewer recognizes themselves.
+
+### Post-Production: Protecting the Authentic
+The danger in post for "energy" films is painting everything with filters that turn them into another Instagram Reel. The processing preserved visual clarity, real skin tone, and lighting that looks like daylight — not a painted backdrop.
+
+## What This Film Proves About The Video Shop
+
+This film is three things simultaneously:
+
+**1. Creative capability:** we don't just film what we're told. We bring strategy and creative breakthroughs that arrive *before* filming.
+
+**2. Precise direction:** gestures, expressions, rhythm — we work at the level of actors, not "people using a product."
+
+**3. Full-service partnership:** Vertica received three films covering the complete customer journey:
+- **Lifestyle Ad** — awareness and emotion
+- **Myth Busting** — consideration and barrier removal
+- **Instructional + 3D** — use and trust
+
+This isn't a "production package." It's a **content strategy in execution.**
+
+## The Lesson for Every HealthTech and EdTech Brand
+
+If your product solves a real problem — you're already halfway there. But if your advertising doesn't make people feel they *can* hold that solution — you're losing customers not because of the product, but because the message didn't land.
+
+**Creative is not the "packaging." It's the product.**
+
+---
+
+This project is available for full viewing in the portfolio. To discuss a similar project — [contact us](/contact).`,
+    date: "2023-09-15",
+    tags: ["HealthTech", "Commercial", "Case Study", "Strategy"],
+    relatedYoutubeId: "rixmoZ4Y4Uk",
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית ומסחריים",
+    relatedServiceLabelEn: "Brand & Commercial Films",
   },
   {
     id: "instructional-video-customer-journey",

@@ -1,0 +1,77 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0408"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#4a0a2e" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0a0408" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="30%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#0a0408" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e060a0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0a0408" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Dance motion arcs — energy lines -->
+  <path d="M 350 480 Q 450 200 600 310 Q 750 420 850 150" fill="none" stroke="#e060a0" stroke-width="1.5" opacity="0.25"/>
+  <path d="M 320 500 Q 430 210 580 320 Q 730 430 820 180" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.18"/>
+  <path d="M 380 460 Q 470 190 620 300 Q 760 410 870 140" fill="none" stroke="#e060a0" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- Central figure: abstract human in motion -->
+  <!-- Body -->
+  <ellipse cx="600" cy="350" rx="28" ry="55" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.7" transform="rotate(-15 600 350)"/>
+  <!-- Head -->
+  <circle cx="600" cy="260" r="32" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.7"/>
+  <!-- Arms extended in dance -->
+  <path d="M 572 320 Q 500 280 440 300" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.65"/>
+  <path d="M 628 320 Q 710 270 780 290" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.65"/>
+  <!-- Legs in motion -->
+  <path d="M 590 400 Q 555 450 520 490" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.6"/>
+  <path d="M 615 400 Q 650 455 700 480" fill="none" stroke="#e060a0" stroke-width="2" opacity="0.6"/>
+
+  <!-- Energy dots -->
+  <circle cx="440" cy="300" r="4" fill="#e060a0" opacity="0.7"/>
+  <circle cx="780" cy="290" r="4" fill="#e060a0" opacity="0.7"/>
+  <circle cx="520" cy="490" r="3" fill="#c8a96e" opacity="0.6"/>
+  <circle cx="700" cy="480" r="3" fill="#c8a96e" opacity="0.6"/>
+
+  <!-- Left panel: three-stage ladder -->
+  <rect x="65" y="195" width="190" height="260" rx="8" fill="#0f0810" stroke="#2a1a22" stroke-width="1" opacity="0.8"/>
+  <text x="160" y="225" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" letter-spacing="2" opacity="0.7">VERTICA JOURNEY</text>
+  <!-- Stage bars -->
+  <rect x="85" y="242" width="150" height="34" rx="4" fill="#e060a0" opacity="0.8"/>
+  <text x="160" y="264" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fff" text-anchor="middle" opacity="0.95">01 — LIFESTYLE AD</text>
+  <rect x="85" y="285" width="150" height="34" rx="4" fill="#1a1028" stroke="#7a40a0" stroke-width="1" opacity="0.8"/>
+  <text x="160" y="307" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.85">02 — MYTH BUSTING</text>
+  <rect x="85" y="328" width="150" height="34" rx="4" fill="#101028" stroke="#4060a0" stroke-width="1" opacity="0.7"/>
+  <text x="160" y="350" font-family="sans-serif" font-size="10" fill="#7ab0f0" text-anchor="middle" opacity="0.8">03 — INSTRUCTIONAL</text>
+  <!-- Brace / equals -->
+  <line x1="240" y1="259" x2="260" y2="259" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+  <line x1="240" y1="302" x2="260" y2="302" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
+  <line x1="240" y1="345" x2="260" y2="345" stroke="#c8a96e" stroke-width="1" opacity="0.25"/>
+  <line x1="260" y1="259" x2="260" y2="345" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
+  <line x1="260" y1="302" x2="280" y2="302" stroke="#c8a96e" stroke-width="1" opacity="0.3"/>
+  <text x="310" y="306" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" opacity="0.55">FULL</text>
+  <text x="310" y="320" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" opacity="0.55">JOURNEY</text>
+  <text x="160" y="410" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">מסע לקוח מלא</text>
+  <text x="160" y="428" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">הפקה אחת, אסטרטגיה אחת</text>
+
+  <!-- Right panel: brand statement -->
+  <rect x="945" y="220" width="190" height="190" rx="8" fill="#0f0810" stroke="#3a0a22" stroke-width="1" opacity="0.8"/>
+  <text x="1040" y="256" font-family="sans-serif" font-size="9" fill="#e060a0" text-anchor="middle" letter-spacing="2" opacity="0.8">CREATIVE IS NOT</text>
+  <text x="1040" y="278" font-family="sans-serif" font-size="9" fill="#e060a0" text-anchor="middle" letter-spacing="2" opacity="0.8">THE PACKAGING</text>
+  <line x1="965" y1="293" x2="1115" y2="293" stroke="#3a0a22" stroke-width="1" opacity="0.5"/>
+  <text x="1040" y="318" font-family="sans-serif" font-size="22" font-weight="900" fill="#e060a0" text-anchor="middle" opacity="0.8">IT IS</text>
+  <text x="1040" y="355" font-family="sans-serif" font-size="22" font-weight="900" fill="#e060a0" text-anchor="middle" opacity="0.8">THE</text>
+  <text x="1040" y="392" font-family="sans-serif" font-size="22" font-weight="900" fill="#e060a0" text-anchor="middle" opacity="0.8">PRODUCT</text>
+
+  <!-- Labels -->
+  <text x="600" y="555" font-family="sans-serif" font-size="15" fill="#e060a0" text-anchor="middle" opacity="0.65" letter-spacing="4">VERTICA · FLAGSHIP CASE STUDY</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>

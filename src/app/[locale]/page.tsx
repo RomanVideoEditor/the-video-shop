@@ -94,7 +94,7 @@ export default async function HomePage({
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-[#1e1e1e]">
-            <VideoEmbed youtubeId="dQw4w9WgXcQ" title="The Video Shop — Showreel" />
+            <VideoEmbed youtubeId="rixmoZ4Y4Uk" title="The Video Shop — Vertica Lifestyle Ad" />
           </div>
         </div>
       </section>
