@@ -127,6 +127,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     date: "2023-11-01",
   },
   {
+    id: "ashtrom-ashtromist-short",
+    youtubeId: "loW4i8ZOLNA",
+    titleHe: "להיות אשטרומיסט — גרסה קצרה לרשתות | קבוצת אשטרום",
+    titleEn: "Being an Ashtromist — Short Version for Social Media | Ashtrom Group",
+    challengeHe: "לדחוס את נשמת מיתוג המעסיק של קבוצת אשטרום — ה-DNA, הגאווה, הפריסה הארצית — לפורמט קצר שתופס קשב תוך 3 שניות.",
+    challengeEn: "Compress the soul of Ashtrom Group's employer branding — the DNA, the pride, the national footprint — into a short format that captures attention within 3 seconds.",
+    solutionHe: "עריכת 'פינג-פונג' קצבית: מעברים בין דוברים בתוך משפט, שינויי לוקיישן תכופים מהשטח למטה. צילומי רחפן ארוכים שמראים סקייל לצד פרופיל אישי בגובה עיניים. טיפוגרפיה עם + המותג בכל חיתוך. תוצאה: הגרסה הארוכה שומרת על נרטיב מלא, הגרסה הקצרה מניעה קמפיינים דיגיטליים — שתיהן מאותה הפקה אחת.",
+    solutionEn: "Rhythmic 'ping-pong' editing: cuts between speakers mid-sentence, frequent location changes from field to HQ. Long drone shots showing scale alongside eye-level personal profiles. Brand '+' typography on every cut. Result: the long version holds the full narrative, the short version drives digital campaigns — both from the same production.",
+    category: "recruitment",
+    client: "Ashtrom Group",
+    duration: "0:45",
+    date: "2023-06-01",
+  },
+  {
     id: "ashtrom-sorry-for-asking",
     youtubeId: "cbqFpHi5gHE",
     titleHe: "סליחה על השאלה — Format-Driven Employer Branding | קבוצת אשטרום",
@@ -1957,6 +1971,151 @@ At The Video Shop, we work on every pitch like we work on a film. Weeks, not day
     relatedServiceHref: "/services/hightech",
     relatedServiceLabelHe: "סרטי הייטק וסטארטאפים",
     relatedServiceLabelEn: "High-Tech & Startup Videos",
+  },
+  {
+    id: "hybrid-distribution-employer-branding",
+    coverImage: "/blog/hybrid-distribution-cover.svg",
+    titleHe: "הפקה אחת, ארבעה ערוצים: המדריך למערך ההפצה ההיברידי של מיתוג מעסיק",
+    titleEn: "One Production, Four Channels: The Guide to Hybrid Distribution for Employer Branding",
+    excerptHe: "הגרסה הקצרה של 'להיות אשטרומיסט' לא הייתה אחרי-מחשבה — היא הייתה חלק מהתכנון מהיום הראשון. כך בונים מערך הפצה שמגיע לכל קהל ביומו ובפורמט שלו.",
+    excerptEn: "The short version of 'Being an Ashtromist' wasn't an afterthought — it was part of the plan from day one. Here's how to build a distribution system that reaches every audience on their terms.",
+    readingTime: 5,
+    bodyHe: `## כשגרסה "קצרה" היא לא פשרה — היא אסטרטגיה
+
+רוב הארגונים מגיעים לחדר עריכה עם שאלה אחת: "כמה קצר אנחנו חייבים לעשות את זה?" זו השאלה הלא נכונה.
+
+השאלה הנכונה: **לאיזה קהל, באיזה פלטפורמה, ובאיזה שלב של המשפך?**
+
+כשעבדנו עם קבוצת אשטרום על קמפיין "להיות אשטרומיסט", תכננו מהיום הראשון שתי גרסאות עם מטרות שונות לחלוטין — לא שתי ערכות חיתוך של אותו סרט.
+
+[IMAGE]
+
+## הגרסה הארוכה: נרטיב לגיוס ברצינות
+
+הגרסה הארוכה נועדה לקהל שכבר שוקל להגיש מועמדות לאשטרום — או שמתלבט. היא עונה לשאלות: **מי אשטרום? מה ה-DNA? למה זה לא עוד עבודה?**
+
+הפורמט: ריאיונות מעמיקים עם עובדים מכל שכבות הארגון, שילוב צילומי רחפן הנותנים פרספקטיבה על הפריסה הארצית, ועריכה שמאפשרת לכל דובר סיפור מלא בלי לפצל.
+
+**הפלטפורמות:** עמוד קריירות, מצגות גיוס, לינקדאין בפוסט מסודר.
+
+## הגרסה הקצרה: עצירת גלילה להנעת פעולה
+
+45 שניות. עריכת "פינג-פונג" — חיתוך בין דוברים *בתוך* משפט. לוקיישן חדש כל 3-4 שניות. טיפוגרפיה עם ה-+ המותגי בכל מעבר.
+
+**המטרה:** לא לספר סיפור — להדליק סקרנות. מי שצפה בשלמות מגיע לגרסה הארוכה. מי שרק גלל — נחשף לשם.
+
+**הפלטפורמות:** Instagram Reels, LinkedIn Stories, פרסום ממומן לגיל/תחום.
+
+## למה "צלם פעם אחת, חתוך פעמים רבות" עובד
+
+**עלות:** יום צילום אחד. שתי גרסאות שיכולות להצדיק כל אחת בנפרד את עלות ההפקה.
+
+**עקביות:** אותם עובדים, אותה אסתטיקה ויזואלית, אותו DNA — אבל אורז שונה לפלטפורמה שונה.
+
+**מדידה:** ניתן להשוות ביצועים: מה גרסת הרחפן עשתה לעומת הראיון האישי? הנתונים האלה שייכים לך לפרויקט הבא.
+
+## ארבעת ערוצי ההפצה לכל קמפיין מיתוג מעסיק
+
+### 1. גיוס חיצוני (External Recruitment)
+**מה:** גרסה ארוכה + גרסה קצרה לפרסום
+**איפה:** LinkedIn Ads, מצגת HR, דף קריירות
+**מטרה:** המרת מועמד פסיבי למועמד אקטיבי
+
+### 2. גיוס פנימי (Internal Mobility)
+**מה:** גרסה ארוכה + קטעים ספציפיים לפי מחלקה
+**איפה:** אינטרא-נט, אסיפות עובדים, Slack/Teams
+**מטרה:** עידוד ניידות פנימית, חיזוק שייכות
+
+### 3. פרסום מותג מעסיק (Employer Brand Awareness)
+**מה:** גרסה קצרה ל-Reels/TikTok, נכסי Story
+**איפה:** כל הפלטפורמות, פרסום ממומן
+**מטרה:** בניית מודעות שנים לפני שמועמד מחפש עבודה
+
+### 4. ייצוג B2B (Business Identity)
+**מה:** גרסה ארוכה + ציטוטים לתדמית עסקית
+**איפה:** About Us, מצגות לשותפים, אירועי תעשייה
+**מטרה:** "אנחנו לא רק חברה, אנחנו תרבות"
+
+## התכנון מתחיל לפני ההפקה — לא אחריה
+
+הטעות הכי נפוצה: צולמה הפקה מלאה, אחר כך שואלים "האם יש משהו לחתוך לרשתות?" בשלב הזה — כמעט תמיד התשובה היא לא. כי לא צולמו Reaction shots מהירים, לא צולמו takes עם קצב פינג-פונג, לא תוכנן Timeline שמאפשר קיצור.
+
+**המערך ההיברידי בנוי מהסטוריבורד. לא מחדר העריכה.**
+
+---
+
+ב-The Video Shop כל פרויקט מיתוג מעסיק מתחיל בשאלה: מה הערוצים שלך ומה המסר לכל קהל? רק אחרי שיש תשובה ברורה — מגיעים לסט.`,
+    bodyEn: `## When a "Short" Version Isn't a Compromise — It's a Strategy
+
+Most organizations arrive at the editing room with one question: "How short do we have to make this?" That's the wrong question.
+
+The right question: **Which audience, on which platform, at which funnel stage?**
+
+When we worked with Ashtrom Group on the "Being an Ashtromist" campaign, we planned from day one for two versions with completely different goals — not two cut-down versions of the same film.
+
+[IMAGE]
+
+## The Long Version: Narrative for Serious Candidates
+
+The long version is designed for an audience already considering applying to Ashtrom — or wavering. It answers: **Who is Ashtrom? What's the DNA? Why is this not just another job?**
+
+The format: in-depth interviews with employees from across the organization, drone footage providing perspective on the national footprint, and editing that gives each speaker a complete story without splitting it.
+
+**Platforms:** careers page, HR presentations, LinkedIn long-form post.
+
+## The Short Version: Scroll-Stopping Action Trigger
+
+45 seconds. "Ping-pong" editing — cutting between speakers *mid-sentence*. New location every 3-4 seconds. Brand "+" typography on every transition.
+
+**The goal:** not to tell a story — to ignite curiosity. Those who watch in full arrive at the long version. Those who just scrolled — got exposed to the name.
+
+**Platforms:** Instagram Reels, LinkedIn Stories, paid advertising by age/field.
+
+## Why "Film Once, Cut Many Times" Works
+
+**Cost:** one filming day. Two versions that can each individually justify the production cost.
+
+**Consistency:** same employees, same visual aesthetic, same DNA — but different packaging for different platforms.
+
+**Measurement:** performance comparison is possible: what did the drone version achieve vs. the personal interview? That data belongs to you for the next project.
+
+## Four Distribution Channels for Every Employer Branding Campaign
+
+### 1. External Recruitment
+**What:** long version + short version for advertising
+**Where:** LinkedIn Ads, HR presentation, careers page
+**Goal:** convert passive candidate to active candidate
+
+### 2. Internal Mobility
+**What:** long version + segments by department
+**Where:** intranet, all-hands meetings, Slack/Teams
+**Goal:** encourage internal mobility, reinforce belonging
+
+### 3. Employer Brand Awareness
+**What:** short version for Reels/TikTok, Story assets
+**Where:** all platforms, paid advertising
+**Goal:** build awareness years before a candidate job-hunts
+
+### 4. B2B Representation
+**What:** long version + quotes for corporate identity
+**Where:** About Us, partner presentations, industry events
+**Goal:** "We're not just a company — we're a culture"
+
+## Planning Starts Before Production — Not After
+
+The most common mistake: a full production is filmed, then someone asks "Is there anything to cut for social?" At that stage — almost always the answer is no. Because fast reaction shots weren't filmed, ping-pong paced takes weren't done, no timeline was designed that allows shortening.
+
+**The hybrid system is built from the storyboard. Not from the editing room.**
+
+---
+
+At The Video Shop, every employer branding project starts with a question: what are your channels and what's the message for each audience? Only once there's a clear answer — do we arrive on set.`,
+    date: "2023-07-10",
+    tags: ["Employer Branding", "Strategy", "Ashtrom"],
+    relatedYoutubeId: "loW4i8ZOLNA",
+    relatedServiceHref: "/services/recruitment",
+    relatedServiceLabelHe: "סרטי Employer Branding",
+    relatedServiceLabelEn: "Employer Branding Videos",
   },
 ];
 
