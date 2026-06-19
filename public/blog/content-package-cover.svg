@@ -1,0 +1,61 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#2d7a3a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="80%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- 2 filming days input -->
+  <rect x="60" y="200" width="220" height="230" rx="10" fill="#0f1a11" stroke="#2d7a3a" stroke-width="1.5" opacity="0.8"/>
+  <text x="170" y="232" font-family="sans-serif" font-size="11" fill="#2d7a3a" text-anchor="middle" letter-spacing="2" opacity="0.9">FILMING DAYS</text>
+  <text x="170" y="310" font-family="sans-serif" font-size="72" font-weight="900" fill="#2d7a3a" text-anchor="middle" opacity="0.7">2</text>
+  <text x="170" y="400" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle">ראיונות + שטח ורחפן</text>
+
+  <!-- Arrow -->
+  <path d="M295 315 L420 315" stroke="#c8a96e" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+  <polygon points="420,307 440,315 420,323" fill="#c8a96e" opacity="0.5"/>
+
+  <!-- Output cards -->
+  <!-- Hero -->
+  <rect x="450" y="120" width="220" height="110" rx="8" fill="#111" stroke="#c8a96e" stroke-width="1.5" opacity="0.9"/>
+  <text x="560" y="155" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" letter-spacing="2" opacity="0.8">01 — HERO VIDEO</text>
+  <text x="560" y="178" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">עמוד בית · פגישות</text>
+  <text x="560" y="198" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">Production Value מלא</text>
+  <text x="560" y="218" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle">2:45 דקות</text>
+
+  <!-- Visual Shorts -->
+  <rect x="450" y="255" width="220" height="110" rx="8" fill="#111" stroke="#2d7a3a" stroke-width="1" opacity="0.7"/>
+  <text x="560" y="290" font-family="sans-serif" font-size="10" fill="#2d7a3a" text-anchor="middle" letter-spacing="2" opacity="0.8">02 — VISUAL SHORTS</text>
+  <text x="560" y="313" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">Top of Funnel · קמפיינים</text>
+  <text x="560" y="333" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">Less is More</text>
+  <text x="560" y="353" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle">×2 שפות</text>
+
+  <!-- Testimonials -->
+  <rect x="450" y="390" width="220" height="110" rx="8" fill="#111" stroke="#1e1e1e" stroke-width="1" opacity="0.8"/>
+  <text x="560" y="425" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">03 — TESTIMONIALS</text>
+  <text x="560" y="448" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">Social Proof · LinkedIn</text>
+  <text x="560" y="468" font-family="sans-serif" font-size="11" fill="#f5f5f0" text-anchor="middle" opacity="0.6">Lead Nurturing</text>
+  <text x="560" y="488" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle">×3 סרטים</text>
+
+  <!-- Second arrow -->
+  <path d="M680 315 L790 315" stroke="#c8a96e" stroke-width="2" stroke-dasharray="6,4" opacity="0.4"/>
+  <polygon points="790,307 810,315 790,323" fill="#c8a96e" opacity="0.4"/>
+
+  <!-- 6+ assets output -->
+  <rect x="820" y="200" width="220" height="230" rx="10" fill="#111" stroke="#c8a96e" stroke-width="1.5" opacity="0.7"/>
+  <text x="930" y="232" font-family="sans-serif" font-size="11" fill="#c8a96e" text-anchor="middle" letter-spacing="2" opacity="0.9">DIGITAL ASSETS</text>
+  <text x="930" y="310" font-family="sans-serif" font-size="72" font-weight="900" fill="#c8a96e" text-anchor="middle" opacity="0.7">6+</text>
+  <text x="930" y="400" font-family="sans-serif" font-size="10" fill="#6b6b6b" text-anchor="middle">תוכן לחצי שנה</text>
+
+  <!-- Labels -->
+  <text x="600" y="565" font-family="sans-serif" font-size="16" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="4">MAX ROI · CONTENT PACKAGE</text>
+  <text x="600" y="598" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>

@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "green-wall-hero",
+    youtubeId: "GoX5983yoQg",
+    titleHe: "Green Wall — חבילת שיווק שלמה מ-2 ימי צילום | Hero Video",
+    titleEn: "Green Wall — Full Marketing Package from 2 Filming Days | Hero Video",
+    challengeHe: "לבנות תשתית שיווקית דיגיטלית מלאה לחברת Green Wall — Hero Video, סרטי אווירה, Testimonials — עם מינימום ימי צילום ומקסימום נכסים.",
+    challengeEn: "Build a complete digital marketing infrastructure for Green Wall — Hero Video, atmosphere shorts, testimonials — with minimum filming days and maximum assets.",
+    solutionHe: "2 ימי צילום: יום ראיונות מרוכז ויום שטח ורחפן. מאותם חומרי גלם: סרט מותג יוקרתי לפגישות ועמוד הבית, סרטי אווירה קצרים ל-Top of Funnel ברשתות, ו-3 Testimonials עצמאיים לטפטוף לאורך הגאנט השיווקי.",
+    solutionEn: "2 filming days: one concentrated interview day and one field + drone day. From the same raw footage: a premium brand film for meetings and the homepage, short atmosphere films for Top-of-Funnel social media, and 3 standalone testimonials to drip throughout the marketing calendar.",
+    category: "commercial",
+    client: "Green Wall",
+    duration: "2:45",
+    date: "2024-03-01",
+  },
+  {
     id: "akerstein-100-years",
     youtubeId: "GFkN83F-DBU",
     titleHe: "100 שנה לאקרשטיין — מיתוג מחדש של מותג היסטורי לעתיד סינמטי",
@@ -342,6 +356,111 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "content-package-raw-footage",
+    coverImage: "/blog/content-package-cover.svg",
+    titleHe: "מחומרי גלם לנכסים דיגיטליים: איך בונים קמפיין וידאו שלם מיומיים של צילום",
+    titleEn: "From Raw Footage to Digital Assets: How to Build a Complete Video Campaign from Two Filming Days",
+    excerptHe: "הטעות הנפוצה ביותר: לגשת להפקה עם מחשבה על תוצר אחד. אולפן הפקות מתקדם לא חושב על 'סרט' — הוא חושב על 'מאגר נכסים'. ניתוח פרויקט Green Wall.",
+    excerptEn: "The most common mistake: approaching production thinking about one output. An advanced production studio doesn't think 'film' — it thinks 'asset bank'. A breakdown of the Green Wall project.",
+    readingTime: 5,
+    bodyHe: `## הטעות שמפסידה לכם כסף בכל הפקה
+
+הטעות הנפוצה ביותר של מותגים וחברות היא לגשת להפקת וידאו מתוך מחשבה על תוצר סופי אחד. "אנחנו צריכים סרט תדמית", הם אומרים. "אחד. מלוטש. לאתר."
+
+התוצאה: השקעה מלאה של זמן, תקציב ואנרגיה — בנכס אחד שמתיישן מהרגע שהוא עולה לאוויר, בעוד הרשתות החברתיות דורשות נוכחות שוטפת ומגוונת לכל אורך השנה.
+
+**אולפן הפקות מתקדם לא חושב על "סרט". הוא חושב על "מאגר נכסים".**
+
+[IMAGE]
+
+## הפרויקט: Green Wall, 2 ימי צילום, חבילה שלמה
+
+בפרויקט של חברת Green Wall — חברת קירות ירוקים וגגות ירוקים — ניגשנו לצילומים עם תכנון אסטרטגי מראש.
+
+**יום 1 — ראיונות מרוכזים:** כל הדוברים, כל הלקוחות הממליצים, כל המנהלים — ליום אחד מאורגן. כל ראיון צולם בצורה שמאפשרת שני סוגי שימוש: חלק מהסרט המרכזי, **וגם** יחידה עצמאית עם חיתוך ראשון-אחרון.
+
+**יום 2 — שטח ורחפן:** לוקיישנים מרובים, צילומי אוויר, B-roll של המוצר בסביבות שונות. כל שוט מצולם עם שלוש מטרות: Hero Video, אווירה קצרה, קמפיין ממומן.
+
+מאותם חומרי גלם, חדר העריכה הוציא:
+
+## 3 שכבות תוכן, 3 נקודות במשפך
+
+**שכבה 1 — The Hero Video (סרט המותג המרכזי)**
+
+סרט יוקרתי, צילום רחפן, סיפור מסגרת, Production Value גבוה. נועד לשבת בעמוד הבית, לפתוח פגישות עם לקוחות אסטרטגיים ומשקיעים. זו ה-Flagship — הכרטיס ביקור.
+
+**שכבה 2 — Visual Shorts (סרטי אווירה, Top of Funnel)**
+
+גישת "Less is More": עריכה מינימליסטית, קצב נכון, טיפוגרפיה נקייה — בלי קריינות, בלי ראיונות. **המוצר כל כך ויזואלי** (קירות ירוקים, גגות, טבע בתוך עיר) שהוא מוכר את עצמו. הסרטים האלה עוצרים גלילה, מייצרים מודעות ועובדים מצוין בקמפיינים ממומנים קצרים.
+
+**שכבה 3 — Standalone Testimonials (הוכחה חברתית לטפטוף)**
+
+3 סרטי המלצות עצמאיים מיום הראיונות — כל אחד מהם יחידת תוכן עצמאית. הלקוח מטפטף אותם לאורך הגאנט: פוסט LinkedIn השבוע, עמוד נחיתה לקמפיין הבא, שליחה ישירה ללידים מתלבטים.
+
+## מה שהלקוח קיבל
+
+| מה | לאיפה |
+|---|---|
+| Hero Video | עמוד בית, פגישות, YouTube |
+| 2 Visual Shorts (עברית + אנגלית) | קמפיינים ממומנים, Instagram, LinkedIn |
+| 3 Testimonials | עמודי נחיתה, ליד נורצ'ינג, LinkedIn |
+
+**ימי צילום:** 2. **נכסים שיווקיים:** 6+. **תוכן לחצי שנה:** כן.
+
+זו לא חשיבה של ספק צילום. זו חשיבה של שותף אסטרטגי.`,
+    bodyEn: `## The Mistake That Costs You Money on Every Production
+
+The most common mistake companies make is approaching video production thinking about one final output. "We need a brand film," they say. "One. Polished. For the website."
+
+The result: full investment of time, budget, and energy — in one asset that ages from the moment it goes live, while social media demands ongoing, varied presence throughout the year.
+
+**An advanced production studio doesn't think "film." It thinks "asset bank."**
+
+[IMAGE]
+
+## The Project: Green Wall, 2 Filming Days, Full Package
+
+In the Green Wall project — a green walls and rooftop greenery company — we approached the filming with strategic planning upfront.
+
+**Day 1 — Concentrated interviews:** All speakers, all recommending clients, all managers — in one organized day. Every interview was filmed in a way that allows two types of use: part of the main film, **and also** a standalone unit with its own opening and close.
+
+**Day 2 — Field and drone:** Multiple locations, aerial footage, B-roll of the product in different environments. Every shot filmed with three purposes: Hero Video, short atmosphere, paid campaign.
+
+From the same raw footage, the editing suite produced:
+
+## 3 Content Layers, 3 Points in the Funnel
+
+**Layer 1 — The Hero Video (Central Brand Film)**
+
+A premium film with drone cinematography, narrative framework, and high production value. Designed to sit on the homepage, open meetings with strategic clients and investors. This is the Flagship — the business card.
+
+**Layer 2 — Visual Shorts (Atmosphere Films, Top of Funnel)**
+
+The "Less is More" approach: minimalist editing, the right rhythm, clean typography — no voiceover, no interviews. **The product is so visual** (green walls, rooftops, nature inside a city) that it sells itself. These films stop scrolling, generate awareness, and work well in short paid campaigns.
+
+**Layer 3 — Standalone Testimonials (Social Proof for Dripping)**
+
+3 standalone testimonial films from the interview day — each an independent content unit. The client drips them across the calendar: a LinkedIn post this week, a landing page for the next campaign, a direct send to hesitant leads.
+
+## What the Client Received
+
+| What | Where |
+|---|---|
+| Hero Video | Homepage, meetings, YouTube |
+| 2 Visual Shorts (Hebrew + English) | Paid campaigns, Instagram, LinkedIn |
+| 3 Testimonials | Landing pages, lead nurturing, LinkedIn |
+
+**Filming days:** 2. **Marketing assets:** 6+. **Content for six months:** Yes.
+
+This isn't the thinking of a filming vendor. This is the thinking of a strategic partner.`,
+    date: "2024-05-01",
+    tags: ["Content Strategy", "Max ROI", "Video Campaign", "Social Media"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "חבילות תוכן אסטרטגיות",
+    relatedServiceLabelEn: "Strategic Content Packages",
+    relatedYoutubeId: "GoX5983yoQg",
+  },
   {
     id: "akerstein-100-rebranding",
     coverImage: "/blog/akerstein-100-cover.svg",
