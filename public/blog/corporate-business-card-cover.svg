@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08100a"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#1a3a2a" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#08100a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="75%" cy="25%" r="40%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#08100a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- Grid of city nodes -->
+  <!-- Tel Aviv -->
+  <circle cx="540" cy="260" r="28" fill="none" stroke="#c8a96e" stroke-width="2" opacity="0.8"/>
+  <circle cx="540" cy="260" r="6" fill="#c8a96e" opacity="0.9"/>
+  <text x="540" y="302" font-family="sans-serif" font-size="11" fill="#c8a96e" text-anchor="middle" opacity="0.8">תל אביב</text>
+
+  <!-- Herzliya -->
+  <circle cx="430" cy="185" r="18" fill="none" stroke="#c8a96e" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="430" cy="185" r="4" fill="#c8a96e" opacity="0.7"/>
+  <text x="430" y="213" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.6">הרצליה</text>
+
+  <!-- Haifa -->
+  <circle cx="350" cy="150" r="16" fill="none" stroke="#c8a96e" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="350" cy="150" r="4" fill="#c8a96e" opacity="0.6"/>
+  <text x="350" y="176" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.5">חיפה</text>
+
+  <!-- Jerusalem -->
+  <circle cx="670" cy="320" r="16" fill="none" stroke="#c8a96e" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="670" cy="320" r="4" fill="#c8a96e" opacity="0.6"/>
+  <text x="670" y="346" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.5">ירושלים</text>
+
+  <!-- Beer Sheva -->
+  <circle cx="590" cy="420" r="14" fill="none" stroke="#c8a96e" stroke-width="1.5" opacity="0.45"/>
+  <circle cx="590" cy="420" r="4" fill="#c8a96e" opacity="0.5"/>
+  <text x="590" y="444" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.45">באר שבע</text>
+
+  <!-- Connection lines between nodes -->
+  <line x1="540" y1="260" x2="430" y2="185" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4,5" opacity="0.25"/>
+  <line x1="430" y1="185" x2="350" y2="150" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4,5" opacity="0.2"/>
+  <line x1="540" y1="260" x2="670" y2="320" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4,5" opacity="0.22"/>
+  <line x1="540" y1="260" x2="590" y2="420" stroke="#c8a96e" stroke-width="1" stroke-dasharray="4,5" opacity="0.18"/>
+
+  <!-- Left panel: metrics -->
+  <rect x="60" y="180" width="220" height="270" rx="10" fill="#0e1a10" stroke="#2a4a30" stroke-width="1.5" opacity="0.8"/>
+  <text x="170" y="215" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" letter-spacing="3" opacity="0.8">SINCE</text>
+  <text x="170" y="268" font-family="sans-serif" font-size="58" font-weight="900" fill="#c8a96e" text-anchor="middle" opacity="0.7">1990</text>
+  <line x1="80" y1="285" x2="260" y2="285" stroke="#2a4a30" stroke-width="1" opacity="0.5"/>
+  <text x="170" y="316" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.6">LEED Gold ✓</text>
+  <text x="170" y="340" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.5">Solar Panels ✓</text>
+  <text x="170" y="364" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" opacity="0.45">AshtromHost ✓</text>
+  <text x="170" y="392" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">ESG · PropTech · Scale</text>
+  <text x="170" y="428" font-family="sans-serif" font-size="10" fill="#3a6a40" text-anchor="middle" opacity="0.9">30+ YEARS</text>
+
+  <!-- Right panel: building silhouette -->
+  <rect x="870" y="150" width="270" height="350" rx="0" fill="none"/>
+  <!-- Tower 1 (tallest) -->
+  <rect x="930" y="200" width="55" height="270" rx="2" fill="#1a2a1a" stroke="#3a5a3a" stroke-width="1" opacity="0.7"/>
+  <!-- Windows grid on Tower 1 -->
+  <rect x="939" y="215" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.4"/>
+  <rect x="952" y="215" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.3"/>
+  <rect x="965" y="215" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.4"/>
+  <rect x="939" y="232" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.3"/>
+  <rect x="952" y="232" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.5"/>
+  <rect x="965" y="232" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.3"/>
+  <rect x="939" y="249" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.4"/>
+  <rect x="952" y="249" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.3"/>
+  <rect x="965" y="249" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.35"/>
+  <rect x="939" y="266" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.25"/>
+  <rect x="952" y="266" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.4"/>
+  <rect x="965" y="266" width="8" height="8" rx="1" fill="#c8a96e" opacity="0.28"/>
+
+  <!-- Tower 2 (medium) -->
+  <rect x="998" y="248" width="45" height="222" rx="2" fill="#152015" stroke="#2a4a2a" stroke-width="1" opacity="0.6"/>
+  <rect x="1007" y="263" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.35"/>
+  <rect x="1018" y="263" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.4"/>
+  <rect x="1029" y="263" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.3"/>
+  <rect x="1007" y="278" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.45"/>
+  <rect x="1018" y="278" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.28"/>
+  <rect x="1029" y="278" width="6" height="6" rx="1" fill="#c8a96e" opacity="0.4"/>
+
+  <!-- Tower 3 (shorter) -->
+  <rect x="1056" y="300" width="38" height="170" rx="2" fill="#101810" stroke="#1e3a1e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Ground line -->
+  <line x1="870" y1="470" x2="1140" y2="470" stroke="#2a4a30" stroke-width="1" opacity="0.4"/>
+
+  <!-- Drone icon top right -->
+  <circle cx="1085" cy="175" r="3" fill="#c8a96e" opacity="0.6"/>
+  <line x1="1085" y1="175" x2="1075" y2="165" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+  <line x1="1085" y1="175" x2="1095" y2="165" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+  <line x1="1085" y1="175" x2="1075" y2="185" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+  <line x1="1085" y1="175" x2="1095" y2="185" stroke="#c8a96e" stroke-width="1" opacity="0.4"/>
+  <circle cx="1075" cy="165" r="3" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <circle cx="1095" cy="165" r="3" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <circle cx="1075" cy="185" r="3" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <circle cx="1095" cy="185" r="3" fill="none" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Labels -->
+  <text x="600" y="555" font-family="sans-serif" font-size="15" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="4">CORPORATE BRAND FILM · REAL ESTATE</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>

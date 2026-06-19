@@ -127,6 +127,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     date: "2023-11-01",
   },
   {
+    id: "ashtrom-properties-brand-film",
+    youtubeId: "ome2LtSiFWQ",
+    titleHe: "סרט תדמית | אשטרום נכסים — נדל\"ן מניב, היקף ארצי",
+    titleEn: "Brand Film | Ashtrom Properties — Income-Producing Real Estate at National Scale",
+    challengeHe: "להפגין גודל, יציבות ותחכום תאגידי בפחות מדקה וחצי — תוך הצגת פורטפוליו רחב של פרויקטים, ערים וטכנולוגיה לדיירים ומשקיעים.",
+    challengeEn: "Demonstrate scale, stability, and corporate sophistication in under 90 seconds — while presenting a broad portfolio of projects, cities, and technology to tenants and investors.",
+    solutionHe: "סרט 'כרטיס ביקור' תאגידי קלאסי: צילומי רחפן שמכסים אתרים ברחבי הארץ, היררכיית מסרים ברורה (1990 → היום → עתיד), הצגת AshtromHost כ-PropTech differentiator, ותקני LEED Gold ופאנלים סולאריים כ-ESG storytelling לשוק הנדל"ן המודרני.",
+    solutionEn: "Classic corporate 'business card' film: drone coverage across national sites, clear message hierarchy (1990 → today → future), AshtromHost app as a PropTech differentiator, and LEED Gold + solar panels as ESG storytelling for the modern real estate market.",
+    category: "realestate",
+    client: "Ashtrom Properties",
+    duration: "1:30",
+    date: "2023-03-01",
+  },
+  {
     id: "ashtrom-ashtromist-short",
     youtubeId: "loW4i8ZOLNA",
     titleHe: "להיות אשטרומיסט — גרסה קצרה לרשתות | קבוצת אשטרום",
@@ -1973,6 +1987,141 @@ At The Video Shop, we work on every pitch like we work on a film. Weeks, not day
     relatedServiceLabelEn: "High-Tech & Startup Videos",
   },
   {
+    id: "corporate-business-card-film",
+    coverImage: "/blog/corporate-business-card-cover.svg",
+    titleHe: "סרט 'כרטיס הביקור' התאגידי: מתי הפורמט הקלאסי הוא הבחירה הנכונה",
+    titleEn: "The Corporate 'Business Card' Film: When the Classic Format Is the Right Choice",
+    excerptHe: "לא כל סרט חייב להיות פורץ דרך. כשהמטרה היא להוכיח גודל, יציבות וסמכות — ה'כרטיס ביקור' התאגידי הוא הכלי החד ביותר בארסנל.",
+    excerptEn: "Not every film has to be groundbreaking. When the goal is to prove scale, stability, and authority — the corporate 'business card' is the sharpest tool in the arsenal.",
+    readingTime: 5,
+    bodyHe: `## הפרדוקס של הפורמט ה"שמרני"
+
+בתעשיית הווידאו יש נטייה לרומנטיזציה: כולם רוצים "פורמט פורץ דרך", "נרטיב בלתי צפוי", "מהלך קריאייטיבי מפתיע". זה הגיוני כשמדובר בסרטוני ויראליות, קמפיינים לצרכן הסופי, או מיתוג מעסיק.
+
+אבל יש לקוחות שונים לחלוטין: **חברות נדל"ן מניב, קרנות תשתית, תאגידים פיננסיים.** הלקוח שלהם — משקיע, בנק, שוכר עוגן — לא מחפש יצירתיות. הוא מחפש ביטחון.
+
+לסרט כזה יש שם: **"כרטיס ביקור" תאגידי.** ולפורמט הזה יש תפקיד ספציפי מאוד.
+
+[IMAGE]
+
+## מה המסר האמיתי שסרט תדמית תאגידי מעביר
+
+כשאשטרום נכסים — חברת נדל"ן מניב עם פורטפוליו של מגדלי משרדים, פארקים לוגיסטיים ומרכזי מסחר ברחבי ישראל — יצאה להפיק סרט תדמית, הם לא ביקשו "שיר אהבה למשרדים שלהם". הם ביקשו ויזיטקארטה שתענה על שאלה אחת:
+
+**"למה אנחנו כדאיים לך כשותף, כשוכר, כמשקיע?"**
+
+התשובה לשאלה הזו בנויה מארבעה אלמנטים:
+
+### 1. ותק + היסטוריה = ביטחון
+"הוקמה ב-1990" זה לא רק תאריך — זה "אנחנו שרדנו משבר 2008, קורונה, ועוד." חברה שפועלת 30+ שנה בנדל"ן מסחרי ישראלי עברה מחזורי שוק. זה מה שמשקיע רוצה לדעת.
+
+### 2. פריסה ארצית = סקייל
+רשימת הערים — תל אביב, הרצליה, חיפה, ירושלים, באר שבע — היא לא שיווק. זו הוכחה שלחברה יש **גב לוגיסטי** ולא רק פרויקט מקומי אחד.
+
+### 3. PropTech = שדרוג תפיסתי
+הצגת AshtromHost — האפליקציה לניהול הנכס — היא "טוויסט" שהופך חברת נדל"ן "אפורה" לחברת **PropTech**. עבור שוכרים צעירים, חברות טכנולוגיה, ושותפים בינלאומיים: זה הפרש בין "מוציא שכירות" לבין "ספק חווית עבודה".
+
+### 4. ESG = כניסה לשיחה הגלובלית
+LEED Gold ופאנלים סולאריים אינם נחמדות. בשוק הנדל"ן העסקי של 2024, **חברות Enterprise גדולות מחויבות לדיווח ESG.** הן לא יכולות להיכנס לבניין שאינו עומד בתקנים. כלומר — לנכס ירוק יש שוק שכירים שבניין "רגיל" לא ניגש אליו.
+
+## למה רחפן הוא הכלי הכי חסכוני להוכחת גודל
+
+בנדל"ן מסחרי, רחפן הוא לא "טרנד" — הוא **הפתרון ההנדסי** לבעיה ספציפית: איך מראים בניין של 50,000 מ"ר, מגרש בנייה פעיל, ופארק שלם — בלי להוציא מאות אלפים על תשתיות צילום?
+
+תשובה: טיסת רחפן אחת + עורך טוב = אמינות ויזואלית שעולה על כל שחזור גרפי.
+
+המעבר בין **אתר בנייה פעיל** → **מגדל גמור ומאוכלס** בסרט אחד עושה משהו שמצגות פאוורפוינט לא מצליחות: **הוא מוכיח שהחברה מסיימת פרויקטים.**
+
+## מבנה ה"כרטיס ביקור" התאגידי — תבנית עבודה
+
+**פתיחה (0:00–0:15):** הצהרת זהות. שם + נתון מרכזי (שנת ייסוד / מ"ר / ערים).
+
+**גוף (0:15–1:00):** פאזות פעילות: פרויקטים → שירותים → טכנולוגיה → קיימות. כל פאזה 10-15 שניות, ויזואל ספציפי, טקסט מינימלי.
+
+**סיכום (1:00–1:30):** Call to Action מרוסן. לא "התקשרו עכשיו!" אלא "זאת אשטרום." הרושם הוא הפנייה לפעולה.
+
+## מתי **לא** לבחור בפורמט הזה
+
+סרט "כרטיס ביקור" תאגידי הוא הבחירה הלא נכונה כש:
+
+- **הקהל הוא צרכן סופי** — הם רוצים רגש, לא נתונים
+- **המוצר חדש ולא מוכר** — צריך הסבר, לא הפגנת גודל
+- **המטרה היא ויראליות** — הפורמט הזה לא מיועד לשיתוף ברשתות
+- **הקמפיין הוא גיוס המונים** — שם הרגש הוא הכל
+
+אבל כשמדובר ב-**B2B ארגוני, שוק נדל"ן, תשתיות, פיננסים** — הפורמט הזה לא "ישן". הוא **מדויק**.
+
+---
+
+ב-The Video Shop אנחנו יודעים לזהות מתי הפרויקט דורש "פרץ קריאייטיבי" ומתי הוא דורש **ביצוע מקצועי ומדויק של פורמט מנוסה.** שתי היכולות האלה שוות בדיוק אותו דבר.`,
+    bodyEn: `## The Paradox of the "Conservative" Format
+
+There's a tendency in video production to romanticize: everyone wants a "groundbreaking format," "unexpected narrative," "surprising creative move." That makes sense for viral content, B2C campaigns, or employer branding.
+
+But there are completely different clients: **commercial real estate companies, infrastructure funds, financial corporations.** Their customer — investor, bank, anchor tenant — isn't looking for creativity. They're looking for confidence.
+
+This type of film has a name: the corporate **"business card."** And this format has a very specific role.
+
+[IMAGE]
+
+## What a Corporate Brand Film Really Communicates
+
+When Ashtrom Properties — a commercial real estate company with a portfolio of office towers, logistics parks, and commercial centers across Israel — set out to produce a brand film, they weren't asking for a "love letter to their offices." They were asking for a calling card that answers one question:
+
+**"Why are we worth it — as a partner, as a tenant, as an investor?"**
+
+The answer to that question is built from four elements:
+
+### 1. Longevity + History = Confidence
+"Founded in 1990" isn't just a date — it's "we survived 2008, COVID, and more." A company operating 30+ years in Israeli commercial real estate has been through market cycles. That's what an investor wants to know.
+
+### 2. National Footprint = Scale
+The list of cities — Tel Aviv, Herzliya, Haifa, Jerusalem, Beer Sheva — isn't marketing. It's proof the company has **logistical backbone** and not just one local project.
+
+### 3. PropTech = Perceptual Upgrade
+Showcasing AshtromHost — the property management app — is a "twist" that turns a "gray" real estate company into a **PropTech** company. For younger tenants, tech companies, and international partners: this is the difference between "landlord" and "work experience provider."
+
+### 4. ESG = Entry into the Global Conversation
+LEED Gold and solar panels aren't nice-to-haves. In the 2024 commercial real estate market, **large enterprise companies are committed to ESG reporting.** They can't enter a building that doesn't meet standards. Meaning — a green asset has a tenant market that a "regular" building simply can't access.
+
+## Why Drone Footage Is the Most Cost-Efficient Way to Prove Scale
+
+In commercial real estate, drone footage isn't a "trend" — it's the **engineering solution** to a specific problem: how do you show a 50,000 sqm building, an active construction site, and an entire park — without spending hundreds of thousands on camera infrastructure?
+
+Answer: one drone flight + a good editor = visual credibility that surpasses any graphic reconstruction.
+
+The cut from **active construction site** → **finished, occupied tower** in one film does something PowerPoint presentations cannot: **it proves the company finishes projects.**
+
+## The Corporate "Business Card" Structure — A Working Template
+
+**Opening (0:00–0:15):** Identity statement. Name + core metric (founding year / sqm / cities).
+
+**Body (0:15–1:00):** Activity phases: projects → services → technology → sustainability. Each phase 10-15 seconds, specific visual, minimal text.
+
+**Close (1:00–1:30):** Restrained call to action. Not "Call now!" but "This is Ashtrom." The impression *is* the call to action.
+
+## When **Not** to Choose This Format
+
+The corporate "business card" film is the wrong choice when:
+
+- **The audience is the end consumer** — they want emotion, not data
+- **The product is new and unknown** — it needs explanation, not a show of force
+- **The goal is virality** — this format isn't designed for social sharing
+- **The campaign is crowdfunding** — there, emotion is everything
+
+But when it comes to **B2B enterprise, real estate, infrastructure, finance** — this format isn't "old." It's **precise**.
+
+---
+
+At The Video Shop, we know how to identify when a project demands a "creative leap" and when it demands **professional, precise execution of a proven format.** Both capabilities are worth exactly the same thing.`,
+    date: "2023-04-15",
+    tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
+    relatedYoutubeId: "ome2LtSiFWQ",
+    relatedServiceHref: "/services/realestate",
+    relatedServiceLabelHe: "סרטי נדל\"ן ותשתיות",
+    relatedServiceLabelEn: "Real Estate & Infrastructure Films",
+  },
+  {
     id: "hybrid-distribution-employer-branding",
     coverImage: "/blog/hybrid-distribution-cover.svg",
     titleHe: "הפקה אחת, ארבעה ערוצים: המדריך למערך ההפצה ההיברידי של מיתוג מעסיק",
@@ -2111,7 +2260,7 @@ The most common mistake: a full production is filmed, then someone asks "Is ther
 
 At The Video Shop, every employer branding project starts with a question: what are your channels and what's the message for each audience? Only once there's a clear answer — do we arrive on set.`,
     date: "2023-07-10",
-    tags: ["Employer Branding", "Strategy", "Ashtrom"],
+    tags: ["Employer Branding", "Strategy", "Distribution"],
     relatedYoutubeId: "loW4i8ZOLNA",
     relatedServiceHref: "/services/recruitment",
     relatedServiceLabelHe: "סרטי Employer Branding",
