@@ -77,9 +77,8 @@ function buildSchema(locale: string) {
           addressLocality: "Tel Aviv",
         },
         founder: {
-          "@type": "Person",
-          name: "Roman Gornih",
-          jobTitle: "Director & Producer",
+          "@type": "Organization",
+          name: "The Video Shop",
         },
         priceRange: "$$$",
       },

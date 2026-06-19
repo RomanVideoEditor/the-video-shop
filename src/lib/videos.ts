@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "ashtrom-sorry-for-asking",
+    youtubeId: "cbqFpHi5gHE",
+    titleHe: "סליחה על השאלה — Format-Driven Employer Branding | קבוצת אשטרום",
+    titleEn: "Sorry for Asking — Format-Driven Employer Branding | Ashtrom Group",
+    challengeHe: "לייצר תוכן מיתוג מעסיק שמחזיק צופה 15 דקות תמימות — ומרגיש כמו בחירה, לא כמו חובה.",
+    challengeEn: "Create employer branding content that holds a viewer for 15 full minutes — and feels like a choice, not an obligation.",
+    solutionHe: "פורמט 'סליחה על השאלה' מוסב לעולם הארגוני: תחקיר מעמיק, ליהוק עובדים מכל אתרי אשטרום ברחבי הארץ, בימוי non-actors תחת תנאי שטח אמיתיים (אתרי בנייה, מפעלים, משרדים). עריכה סיפורית שמאזנת הומור, גאווה מקצועית ורגעים אנושיים — ויוצרת כלי גיוס ויום כיף פנים-ארגוני בהפקה אחת.",
+    solutionEn: "The 'Sorry for Asking' format adapted for the corporate world: deep research, casting employees across all Ashtrom sites nationwide, directing non-actors in real field conditions (construction sites, factories, offices). Narrative editing that balances humor, professional pride, and human moments — creating both a recruitment tool and an internal team-building experience in one production.",
+    category: "recruitment",
+    client: "Ashtrom Group",
+    duration: "15:00",
+    date: "2023-09-01",
+  },
+  {
     id: "ashtrom-employer-branding",
     youtubeId: "3wO3R6Xr8bU",
     titleHe: "להיות אשטרומיסט — מיתוג מעסיק | קבוצת אשטרום",
@@ -300,6 +314,99 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "format-driven-employer-branding",
+    coverImage: "/blog/format-driven-eb-cover.svg",
+    titleHe: "כשהפורמט עושה את העבודה: איך 'סליחה על השאלה' הפך לכלי Employer Branding מנצח",
+    titleEn: "When the Format Does the Work: How 'Sorry for Asking' Became a Winning Employer Branding Tool",
+    excerptHe: "לקחת פורמט טלוויזיוני מוכר ולהסב אותו לצרכים עסקיים — זו לא רק הברקה קריאטיבית. זו אסטרטגיית תוכן שמספקת שתי ציפורים במכה אחת: כלי גיוס אותנטי ויום כיף פנים-ארגוני.",
+    excerptEn: "Taking a well-known TV format and adapting it for corporate use — that's not just creative brilliance. It's a content strategy that delivers two birds with one stone: an authentic recruitment tool and an internal team-building event.",
+    readingTime: 6,
+    bodyHe: `## הפורמט כגשר בין אנשים לחברה
+
+יש טעות נפוצה שחברות גדולות עושות עם Employer Branding: הן מייצרות סרטים מלוטשים על "הערכים שלנו" ו"היתרונות שלנו" — ולא מביאות אף עובד אמיתי לדבר בגובה העיניים.
+
+התוצאה? תוכן שנראה טוב בסרגל המידות הטכני, אבל לא מצליח לגרום למועמד פוטנציאלי לחשוב "אני רוצה לעבוד שם."
+
+בפרויקט שיצרנו עבור קבוצת אשטרום, ניגשנו לאתגר אחרת לחלוטין. במקום לבנות תסריט על החברה — לקחנו פורמט שאנשים כבר אוהבים ויודעים, והסבנו אותו.
+
+[IMAGE]
+
+## מדוע פורמט מוכר עובד ב-Employer Branding
+
+הפורמט של "סליחה על השאלה" — שאלות אישיות ישירות, תשובות ספונטניות, אווירה של כיף ואותנטיות — עושה משהו שסרטוני תדמית לא מצליחים לעשות: **הוא מוריד את המחסום.**
+
+הצופה מגיע עם ציפיות פורמט: הוא יודע שזה הולך להיות מצחיק, קצת נוקב, ואמיתי. הוא לא מוכן לסרטון שיווקי — הוא מוכן לאנשים. ואז האנשים של אשטרום בדיוק מסיפרים לו מה זה בעצם לעבוד שם.
+
+## האתגר האמיתי: 15 דקות מהצילומים
+
+בניגוד לסרטון קצר, פרויקט בן 15 דקות דורש מגוון אתגרים:
+
+**תחקיר וליהוק:** הלב של הפורמט הוא הצוות הנכון. עבדנו על זיהוי עובדים מכל מחלקה ואתר — כאלה שיביאו גיוון, אנרגיה, ויאמינו בתהליך. השאלות עצמן גם עברו עיצוב מדוקדק: האיזון בין שאלות שמצחיקות לבין כאלה שמביאות עומק אמיתי.
+
+**בימוי non-actors בתנאי שטח:** ראיין עובדים אמיתיים בתנאי אתר בנייה — רעש, אבק, לוגיסטיקה — זה אתגר שונה לגמרי מסטודיו. היכולת לגרום לעובד להרגיש בנוח מספיק כדי לצחוק, להתרגש ולהיות כן מול מצלמה — זה עיקר העבודה.
+
+**עריכה סיפורית לאורך:** 15 דקות לא מתחזקות את עצמן. העריכה קבעה את הקצב, בחרה את הרגעים שמחזיקים ומרגשים, שילבה B-roll מחיי החברה, ויצרה קשת שלמה — מהומור ועד גאווה מקצועית אמיתית.
+
+## ערך כפול: פנים וחוץ ארגוני
+
+מה שמייחד את הפרויקט הזה הוא שהוא מספק שתי תוצאות עסקיות שונות מהפקה אחת:
+
+**פנים ארגוני:** יום הצילומים עצמו הפך לאירוע מגבש. העובדים שהשתתפו הרגישו שרואים אותם ומעריכים אותם. הסרט שעלה אחר כך עשה גאווה לכל מי שהופיע בו — וגם לאלה שלא.
+
+**חוץ ארגוני:** מועמד שצופה ב-15 דקות של עובדים אמיתיים שמספרים על שגרת החיים של קבוצת אשטרום — הוא לא רק מבין את ה-DNA הארגוני, הוא כבר נמצא בתוכו.
+
+## מה זה אומר עבורכם
+
+אם יש לכם חברה עם סיפורים ייחודיים שעדיין לא סופרו — Format-Driven Content הוא הדרך להוציא אותם. הפורמט הנכון מוריד את ההתנגדות של הצופה, בונה אמינות מהיום הראשון ומייצר תוכן שאנשים בוחרים לצפות בו.
+
+**הסרט הטוב ביותר הוא זה שהצופה שוכח שהוא מיתוג.**`,
+    bodyEn: `## The Format as a Bridge Between People and Company
+
+There's a common mistake large companies make with Employer Branding: they produce polished films about "our values" and "our benefits" — without bringing a single real employee to speak eye-to-eye.
+
+The result? Content that looks good on technical metrics, but fails to make a potential candidate think "I want to work there."
+
+In the project we created for Ashtrom Group, we approached the challenge completely differently. Instead of building a script about the company — we took a format people already love and know, and adapted it.
+
+[IMAGE]
+
+## Why a Familiar Format Works in Employer Branding
+
+The "Sorry for Asking" format — direct personal questions, spontaneous answers, an atmosphere of fun and authenticity — does something brand films can't: **it lowers the barrier.**
+
+The viewer arrives with format expectations: they know it's going to be funny, a little pointed, and real. They're not prepared for a marketing video — they're prepared for people. And then Ashtrom's people tell them exactly what it's really like to work there.
+
+## The Real Challenge: 15 Minutes Held Together
+
+Unlike a short film, a 15-minute project demands a different range of challenges:
+
+**Research and casting:** The heart of the format is the right team. We worked on identifying employees from every department and site — people who would bring diversity, energy, and believe in the process. The questions themselves were also carefully crafted: the balance between questions that make people laugh and ones that bring real depth.
+
+**Directing non-actors in field conditions:** Interviewing real employees on a construction site — noise, dust, logistics — is a completely different challenge from a studio. The ability to make an employee comfortable enough to laugh, get emotional, and be honest on camera — that's the core of the work.
+
+**Long-form narrative editing:** 15 minutes don't sustain themselves. Editing determined the pacing, chose the moments that hold and move, integrated B-roll from company life, and created a complete arc — from humor to genuine professional pride.
+
+## Double Value: Internal and External
+
+What distinguishes this project is that it delivers two different business outcomes from one production:
+
+**Internal:** The filming day itself became a bonding event. The employees who participated felt seen and appreciated. The film that came out afterward created pride for everyone who appeared in it — and even those who didn't.
+
+**External:** A candidate who watches 15 minutes of real employees describing the daily life of Ashtrom Group — they're not just understanding the organizational DNA, they're already inside it.
+
+## What This Means for You
+
+If you have a company with unique stories that haven't been told yet — Format-Driven Content is the way to bring them out. The right format lowers viewer resistance, builds credibility from day one, and creates content people choose to watch.
+
+**The best film is the one the viewer forgets is branding.**`,
+    date: "2025-05-15",
+    tags: ["Employer Branding", "Format Content", "Long-Form", "Behind the Scenes"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "מיתוג מעסיק וסרטי גיוס",
+    relatedServiceLabelEn: "Employer Branding & Recruitment",
+    relatedYoutubeId: "cbqFpHi5gHE",
+  },
   {
     id: "kickstarter-blueprint",
     coverImage: "/blog/kickstarter-blueprint-cover.svg",
