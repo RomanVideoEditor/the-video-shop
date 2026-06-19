@@ -385,6 +385,107 @@ export interface VlogPost {
 
 export const vlogPosts: VlogPost[] = [
   {
+    id: "myth-busting-format",
+    coverImage: "/blog/myth-busting-cover.svg",
+    titleHe: "להרוג את הפיל שבחדר: איך פורמט 'הפרכת מיתוסים' מגדיל המרות",
+    titleEn: "Killing the Elephant in the Room: How the 'Myth Busting' Format Increases Conversions",
+    excerptHe: "לכל מוצר יש חסמי קנייה. במקום להתעלם מהם, האסטרטגיה הטובה ביותר היא לשים אותם במרכז הפריים ולפרק אותם אחד אחד — ישירות מול המצלמה.",
+    excerptEn: "Every product has purchase barriers. Instead of ignoring them, the best strategy is to put them center frame and dismantle them one by one — directly on camera.",
+    readingTime: 4,
+    bodyHe: `## הפחדים של הלקוח שלכם לא נעלמים — הם מתבטאים בחוסר רכישה
+
+לכל מוצר ושירות יש חסמי קנייה. הלקוחות שלכם מלאים בחששות, שאלות וסטיגמות לפני שהם מוציאים את האשראי. רוב העסקים בוחרים להתעלם מזה ולשים בסרטונים שלהם רק את הצד הטוב.
+
+הבעיה: הלקוח הפוטנציאלי עוצר בדיוק בגלל הדברים שלא אמרתם.
+
+**האסטרטגיה הטובה ביותר היא לשים את ההתנגדויות במרכז הפריים — ולפרק אותן אחת אחת.**
+
+[IMAGE]
+
+## פורמט "הפרכת מיתוסים" בפעולה
+
+בפרויקט שיצרנו עבור אתר הלימודים "רגב גוטמן" — מוסד שעוזר לסטודנטים לעבור מבחני הסמכה בכלכלה, הנהלת חשבונות ושמאות מקרקעין — בחרנו לא לעשות סרט תדמית רגיל.
+
+במקום להראות ממשקי פלטפורמה יפים ותלמידים מאושרים, הושבנו את שני המייסדים מול המצלמה ושאלנו אותם ישירות: **מה הפחדים הכי גדולים שסטודנטים מביאים אליכם?**
+
+"האם זה רק שיעור זום?" — תשובה. "האם החומר מעודכן למבחן של השנה?" — תשובה. "האם זה מתאים למבחני מועצת רואי חשבון?" — תשובה.
+
+כל תשובה היא פינת קנייה שנפתחת.
+
+## למה שני מנחים עובד טוב יותר מ"ראש מדבר" אחד
+
+הפורמט של שני מייסדים זה לצד זה מייצר שתי תוצאות:
+
+**דינמיקה טבעית:** כשיש שניים בפריים, הם מדברים אחד עם השני — לא "אל" המצלמה. זה מפחית את תחושת הנאום הפרסומי ומגדיל את תחושת השיחה האותנטית.
+
+**סמכות כפולה:** שני מייסדים שיושבים יחד משדרים יציבות ארגונית. זה קריטי כשמוכרים מוצר חינוכי שדורש מהלקוח השקעה של זמן וכסף. הוא צריך לדעת שמי שמאחורי המוצר לא הולך לשום מקום.
+
+## הנוסחה: כנות + דיוק + מינימום הסחות דעת
+
+שימו לב לדברים שלא רואים בסרט הזה: אין B-roll מוגזם, אין גרפיקה שמסיחה דעת, אין מוזיקה שמנסה לרגש. הרקע חשוך מעט, התאורה רכה ואחידה על הפנים.
+
+**זה לא עצלות. זה בחירה.**
+
+כשהמטרה היא טיפול בהתנגדויות — כל אלמנט נוסף שמוסיפים מחליש את המסר. הלקוח צריך לשמוע ולהאמין. לא להתרשם.
+
+הכתוביות (Burned-in subtitles) הן האלמנט הגרפי היחיד שנוסף — כי הן עוזרות לצפייה ללא סאונד ברשתות, ומדגישות את נקודות המפתח של כל תשובה.
+
+## כשהשיווק הכי טוב הוא השיחה הכי כנה
+
+סרטון "הפרכת מיתוסים" עובד בגלל פרדוקס: ככל שאתם מדברים יותר על הפחדים של הלקוח, כך הוא סומך עליכם יותר. כי הוא מרגיש שאתם מבינים אותו — לא מוכרים לו.
+
+**המסר ללקוחות:** אם יש לכם מוצר שאנשים מהססים לקנות בגלל חסמים ספציפיים שידועים לכם — זה הפורמט שיפרק אותם.`,
+    bodyEn: `## Your Client's Fears Don't Disappear — They Show Up as Non-Purchases
+
+Every product and service has purchase barriers. Your clients are full of concerns, questions, and stigmas before they pull out their credit card. Most businesses choose to ignore this and only show the good side in their videos.
+
+The problem: the potential client stops exactly because of the things you didn't say.
+
+**The best strategy is to put the objections center frame — and dismantle them one by one.**
+
+[IMAGE]
+
+## The 'Myth Busting' Format in Action
+
+In the project we created for "Regev Gutman" — an institution that helps students pass certification exams in economics, accounting, and real estate appraisal — we chose not to make a regular brand film.
+
+Instead of showing pretty platform interfaces and happy students, we sat both founders in front of the camera and asked them directly: **what are the biggest fears students bring to you?**
+
+"Is it just a Zoom class?" — answered. "Is the material updated for this year's exam?" — answered. "Does it work for CPA board exams?" — answered.
+
+Every answer is a purchase objection that gets opened up and resolved.
+
+## Why Two Presenters Works Better Than One "Talking Head"
+
+The format of two founders side by side produces two outcomes:
+
+**Natural dynamics:** When there are two in frame, they talk to each other — not "at" the camera. This reduces the feeling of an advertising speech and increases the feeling of an authentic conversation.
+
+**Double authority:** Two founders sitting together signal organizational stability. This is critical when selling an educational product that requires the client to invest time and money. They need to know the people behind the product aren't going anywhere.
+
+## The Formula: Honesty + Precision + Minimum Distractions
+
+Notice what's not in this film: no excessive B-roll, no distracting graphics, no music trying to move you emotionally. The background is slightly dark, the lighting is soft and even on the faces.
+
+**This isn't laziness. It's a choice.**
+
+When the goal is objection handling — every additional element you add weakens the message. The client needs to hear and believe. Not be impressed.
+
+The burned-in subtitles are the only graphic element added — because they help viewing without sound on social media, and highlight the key points of each answer.
+
+## When the Best Marketing Is the Most Honest Conversation
+
+A "myth busting" video works because of a paradox: the more you talk about your client's fears, the more they trust you. Because they feel you understand them — not selling to them.
+
+**The message to clients:** if you have a product that people hesitate to buy due to specific known barriers — this is the format that will dismantle them.`,
+    date: "2024-10-01",
+    tags: ["Content Strategy", "Objection Handling", "EdTech", "Conversion"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תוכן ופורמטים",
+    relatedServiceLabelEn: "Content Films & Formats",
+    relatedYoutubeId: "gE-8-eOtQg0",
+  },
+  {
     id: "10-questions-format",
     coverImage: "/blog/10-questions-cover.svg",
     titleHe: "פורמט '10 שאלות': הדרך הקצרה ביותר לבנות אמון, מודעות ותוכן לכל המדיות",

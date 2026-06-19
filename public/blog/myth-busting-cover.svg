@@ -1,0 +1,60 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+
+  <!-- Objection bubbles being crossed out -->
+  <!-- Bubble 1 - crossed -->
+  <rect x="80" y="130" width="280" height="70" rx="35" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="220" y="172" font-family="sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">"זה רק שיעור זום?"</text>
+  <line x1="90" y1="140" x2="350" y2="190" stroke="#c8a96e" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Bubble 2 - crossed -->
+  <rect x="80" y="240" width="280" height="70" rx="35" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="220" y="282" font-family="sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">"החומר מעודכן?"</text>
+  <line x1="90" y1="250" x2="350" y2="300" stroke="#c8a96e" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Bubble 3 - crossed -->
+  <rect x="80" y="350" width="280" height="70" rx="35" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="220" y="392" font-family="sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle">"מתאים למבחני לשכה?"</text>
+  <line x1="90" y1="360" x2="350" y2="410" stroke="#c8a96e" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Bubble 4 - crossed -->
+  <rect x="80" y="460" width="280" height="70" rx="35" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+  <text x="220" y="502" font-family="sans-serif" font-size="14" fill="#6b6b6b" text-anchor="middle">"האם שווה לי?"</text>
+  <line x1="90" y1="470" x2="350" y2="520" stroke="#c8a96e" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Arrow to camera -->
+  <path d="M375 330 L490 330" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <polygon points="490,322 510,330 490,338" fill="#c8a96e" opacity="0.4"/>
+
+  <!-- Two-shot frame -->
+  <rect x="520" y="160" width="380" height="340" rx="10" fill="#111" stroke="#c8a96e" stroke-width="1.5" opacity="0.7"/>
+  <!-- Person 1 -->
+  <circle cx="630" cy="280" r="45" fill="#1e1e1e"/>
+  <rect x="588" y="322" width="84" height="100" rx="18" fill="#1e1e1e"/>
+  <!-- Person 2 -->
+  <circle cx="790" cy="280" r="45" fill="#222"/>
+  <rect x="748" y="322" width="84" height="100" rx="18" fill="#222"/>
+  <!-- Subtitle bar -->
+  <rect x="530" y="460" width="360" height="30" rx="4" fill="#c8a96e" opacity="0.15"/>
+  <text x="710" y="480" font-family="sans-serif" font-size="11" fill="#c8a96e" text-anchor="middle" opacity="0.8">ובעיקר למבחני ההסמכה ✓</text>
+
+  <!-- Arrow to result -->
+  <path d="M910 330 L1010 330" stroke="#c8a96e" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <polygon points="1010,322 1030,330 1010,338" fill="#c8a96e" opacity="0.4"/>
+
+  <!-- Conversion up arrow -->
+  <rect x="1040" y="220" width="110" height="220" rx="8" fill="#111" stroke="#c8a96e" stroke-width="1" opacity="0.6"/>
+  <text x="1095" y="258" font-family="sans-serif" font-size="10" fill="#c8a96e" text-anchor="middle" letter-spacing="1" opacity="0.7">CONVERSION</text>
+  <path d="M1095 420 L1095 290 L1068 320 M1095 290 L1122 320" fill="none" stroke="#c8a96e" stroke-width="2" opacity="0.6"/>
+
+  <!-- Labels -->
+  <text x="600" y="560" font-family="sans-serif" font-size="15" fill="#c8a96e" text-anchor="middle" opacity="0.7" letter-spacing="4">MYTH BUSTING FORMAT</text>
+  <text x="600" y="595" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>
