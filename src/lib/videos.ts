@@ -133,7 +133,7 @@ export const portfolioVideos: PortfolioVideo[] = [
     titleEn: "Brand Film | Ashtrom Properties — Income-Producing Real Estate at National Scale",
     challengeHe: "להפגין גודל, יציבות ותחכום תאגידי בפחות מדקה וחצי — תוך הצגת פורטפוליו רחב של פרויקטים, ערים וטכנולוגיה לדיירים ומשקיעים.",
     challengeEn: "Demonstrate scale, stability, and corporate sophistication in under 90 seconds — while presenting a broad portfolio of projects, cities, and technology to tenants and investors.",
-    solutionHe: "סרט 'כרטיס ביקור' תאגידי קלאסי: צילומי רחפן שמכסים אתרים ברחבי הארץ, היררכיית מסרים ברורה (1990 → היום → עתיד), הצגת AshtromHost כ-PropTech differentiator, ותקני LEED Gold ופאנלים סולאריים כ-ESG storytelling לשוק הנדל"ן המודרני.",
+    solutionHe: "סרט 'כרטיס ביקור' תאגידי קלאסי: צילומי רחפן שמכסים אתרים ברחבי הארץ, היררכיית מסרים ברורה (1990 → היום → עתיד), הצגת AshtromHost כ-PropTech differentiator, ותקני LEED Gold ופאנלים סולאריים כ-ESG storytelling לשוק הנדל\"ן המודרני.",
     solutionEn: "Classic corporate 'business card' film: drone coverage across national sites, clear message hierarchy (1990 → today → future), AshtromHost app as a PropTech differentiator, and LEED Gold + solar panels as ESG storytelling for the modern real estate market.",
     category: "realestate",
     client: "Ashtrom Properties",
