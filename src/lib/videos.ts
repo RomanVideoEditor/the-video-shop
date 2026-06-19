@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "akerstein-100-years",
+    youtubeId: "GFkN83F-DBU",
+    titleHe: "100 שנה לאקרשטיין — מיתוג מחדש של מותג היסטורי לעתיד סינמטי",
+    titleEn: "100 Years of Akerstein — Rebranding a Historic Brand for a Cinematic Future",
+    challengeHe: "לחגוג 100 שנות היסטוריה של מותג תעשייתי כבד — עם ארכיון מתקופות שונות, מנהלים שמרנים ודיביזיות רבות — ולהוציא סרט אחד קצבי שמכבד את העבר ומביט קדימה.",
+    challengeEn: "Celebrate 100 years of a heavy industrial brand — with multi-era archives, conservative management, and many divisions — and produce one rhythmic film that honors the past and looks forward.",
+    solutionHe: "ארכיטקטורת תסריט אחודה שמחברת 100 שנות היסטוריה עם שפת מותג חדשנית. שילוב חומרי ארכיון (פילם, שחור-לבן, אנלוגי) בתוך צילומי 4K מודרניים ללא נפילת קצב. ימי צילום רחפן מרובים באתרי ייצור ופרויקטים ארציים, עם מעברים חדים מאוויר לקלוז-אפ. תוצאה: סרט דגל שמשמש פתיחת כנסים, ישיבות דירקטוריון ומיתוג מעסיק — במקביל.",
+    solutionEn: "A unified script architecture connecting 100 years of history with an innovative brand language. Archival footage (film, black-and-white, analog) integrated into modern 4K without losing pace. Multiple drone filming days across production sites and national projects, with sharp aerial-to-closeup transitions. Result: a flagship film serving as a conference opener, board meeting asset, and employer branding — simultaneously.",
+    category: "hightech",
+    client: "Akerstein",
+    duration: "3:20",
+    date: "2023-10-01",
+  },
+  {
     id: "maccabi-corporate-event",
     youtubeId: "M0EhoVJsxJM",
     titleHe: "תיעוד אירוע עסקי — מכבי | מנכס חד-פעמי לנכס שיווקי",
@@ -328,6 +342,107 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "akerstein-100-rebranding",
+    coverImage: "/blog/akerstein-100-cover.svg",
+    titleHe: "100 שנה לאקרשטיין: איך לוקחים מותג היסטורי ומותגים אותו מחדש לעתיד סינמטי",
+    titleEn: "100 Years of Akerstein: How to Take a Historic Brand and Rebrand It for a Cinematic Future",
+    excerptHe: "חברה בת 100 שנה עם ארכיון של דורות, מנהלים שמרנים ואין-ספור דיביזיות. האתגר: סרט אחד של 3 דקות שמחזיק את כולם — ואת הצופה. ניתוח מלא של מה שהפך את הפרויקט הזה לאחת העבודות המורכבות ביותר בתיק.",
+    excerptEn: "A 100-year-old company with generational archives, conservative management, and countless divisions. The challenge: one 3-minute film that holds everyone — and the viewer. A full breakdown of what made this project one of the most complex in the portfolio.",
+    readingTime: 7,
+    bodyHe: `## כשהלקוח הוא מפלצת של מורכבות (המשמעות הטובה)
+
+יש פרויקטים שבהם האתגר הגדול ביותר הוא לא הצילום ולא העריכה — אלא ההבנה מה הסרט הזה צריך לעשות, עבור מי, ואיך לרצות אנשים עם אג'נדות שונות בלי לאבד את הנשמה של הסיפור.
+
+אקרשטיין היא חברה שמרנית, ותיקה, ועמוסה בהיסטוריה. 100 שנה, משפחות מייסדים, תעשייה כבדה, פרויקטים ארציים — ומנהלים לכל מחלקה שיש לכל אחד מהם דעה על מה הסרט "חייב להראות."
+
+זה בדיוק הפרויקט שמוכיח עד כמה ניהול לקוח חכם שווה לפחות כמו ניהול ציוד.
+
+[IMAGE]
+
+## אתגר 1: ארכיון שמגיע מכמה מאות שנים
+
+כשעובדים על סרט יובל למותג ותיק, מקבלים הרים של חומרים: **פילמים 8mm ו-16mm** ממייסדים, **תמונות שחור-לבן** שהוסרקו בנסיבות לא ברורות, **וידאו אנלוגי VHS** מהשמונים, ו-**צילומים דיגיטליים** מהעשור האחרון — כולם ביחסי מסך שונים ואיכויות שונות.
+
+האתגר הוא לא "לנקות" אותם — זה בלתי אפשרי ולא רצוי. **האתגר הוא לכלול אותם בצורה שמרגישה כבחירה קולנועית, לא כמגבלה טכנית.**
+
+הפתרון: להחליט מראש שחומרי הארכיון יהיו "חלון לזמן" — לא ינסו להיות 4K. הם מוצגים עם גרעיניות, צבע חם ומסגרות שמאותתות "זיכרון", ואז נחתכים חדשות לבקרים לצילומי הרחפן המודרניים. המעבר בין העתיק לחדש הופך למוטיב הויזואלי המרכזי של הסרט.
+
+## אתגר 2: לגרום לחברה עם 100 דעות להסכים על 100 שניות
+
+בפרויקטים של תאגידים גדולים, כל סמנכ"ל רוצה שה"זרוע שלו" תקבל מספיק מסך-טיים. כל מחלקת שיווק רוצה את המסרים שלה. כל מנהל בכיר מחפש את עצמו בין הפריימים.
+
+הפתרון: **אסטרטגיית תסריט שמאחדת מבפנים.** במקום לרשום "נראה מפעל, אחר כך נראה פרויקט, אחר כך נראה עובד" — בנינו חוט סיפורי רגשי אחד: **החומרים שיוצרים את ישראל.** כל זרוע של אקרשטיין היא פרק בסיפור הזה — לא בגלל שהיא "חייבת להיכנס", אלא כי היא חלק מהנרטיב.
+
+כשמנהלים שמרנים קיבלו את התסריט עם הלוגיקה הזו, הם הבינו שהסרט כבד עליהם **יותר** מאשר אם היו מגיעים עם דרישות. הם קיבלו בעלות על הנרטיב.
+
+## אתגר 3: להחזיק 3 דקות קשב בלי לאבד קצב
+
+שלוש דקות זה נצח בוידאו ברשת. הפתרון הוא לא "לקצר" — הפתרון הוא **קצב עריכה שמשנה עצימות כל 20-30 שניות.**
+
+הסרט בנוי כגלים: פתיחה רחבה (אוויר, מחוות, גדולה), אחר כך צלילה פנימה (קלוז-אפ על טקסטורה, חומר, ידיים), אחר כך שוב פתיחה. הקצב הזה מונע עייפות חזותית ומייצר תחושה של נשימה.
+
+בנוסף, מוזיקת הרקע מאפשרת "עיגון קצבי" — בכל שינוי עצימות מוזיקלי, העריכה מחזירה קשב.
+
+## מה שיוצא: נכס חברתי מולטי-פונקציונלי
+
+הסרט הזה לא נועד רק ל-YouTube. הוא מוגש:
+
+- **בפתיחת כנסים ואירועי יובל** — יצר "וואו מומנט" בפני קהל חיצוני ועובדים
+- **בישיבות דירקטוריון ומשקיעים** — מיצב את אקרשטיין כמובילת שוק עם 100 שנות עמידה
+- **כנכס Employer Branding** — עובדים ראו את עצמם כחלק מסיפור גדול מהם, וגאוות היחידה עלתה
+
+**מיתוג מחדש לא אומר לזרוק את העבר. לפעמים זה אומר לגרום לעבר להיות הנכס הכי חזק שיש לך.**`,
+    bodyEn: `## When the Client Is a Monster of Complexity (in the Best Way)
+
+There are projects where the biggest challenge isn't the filming or the editing — it's understanding what the film needs to do, for whom, and how to satisfy people with different agendas without losing the soul of the story.
+
+Akerstein is a conservative, veteran company loaded with history. 100 years, founding families, heavy industry, national projects — and managers in every department, each with opinions on what the film "must show."
+
+This is exactly the project that proves how much smart client management is worth, at least as much as equipment management.
+
+[IMAGE]
+
+## Challenge 1: An Archive Spanning Several Eras
+
+When you work on a legacy brand's anniversary film, you receive mountains of materials: **8mm and 16mm films** from founders, **black-and-white photos** scanned under unclear circumstances, **analog VHS video** from the eighties, and **digital footage** from the last decade — all in different aspect ratios and qualities.
+
+The challenge isn't to "clean" them — that's impossible and undesirable. **The challenge is to include them in a way that feels like a cinematic choice, not a technical limitation.**
+
+The solution: decide upfront that archive materials will be a "window in time" — they won't try to be 4K. They're presented with grain, warm color, and framing that signals "memory," then cut sharply to modern drone footage. The transition between old and new becomes the film's central visual motif.
+
+## Challenge 2: Getting a Company with 100 Opinions to Agree on 100 Seconds
+
+In large corporate projects, every VP wants their "arm" to get enough screen time. Every marketing department wants its messages. Every senior manager looks for themselves between the frames.
+
+The solution: **a script strategy that unifies from within.** Instead of writing "we'll show a factory, then a project, then an employee" — we built one emotional narrative thread: **the materials that build Israel.** Every arm of Akerstein is a chapter in that story — not because it "has to fit in," but because it's part of the narrative.
+
+When conservative managers received the script with this logic, they understood that the film honored them **more** than if they'd arrived with demands. They received ownership of the narrative.
+
+## Challenge 3: Holding 3 Minutes of Attention Without Losing Pace
+
+Three minutes is an eternity in online video. The solution isn't to "shorten" — it's **editing rhythm that changes intensity every 20-30 seconds.**
+
+The film is built in waves: wide opening (aerial, gestures, scale), then diving inward (closeup on texture, material, hands), then opening wide again. This rhythm prevents visual fatigue and creates a breathing feeling.
+
+Additionally, the backing music allows "rhythmic anchoring" — with every musical intensity shift, editing recaptures attention.
+
+## What Comes Out: A Multi-Functional Corporate Asset
+
+This film wasn't designed just for YouTube. It's delivered:
+
+- **At conference and anniversary event openings** — created a "wow moment" in front of external audiences and employees
+- **At board and investor meetings** — positioned Akerstein as a market leader with 100 years of standing
+- **As an Employer Branding asset** — employees saw themselves as part of a story bigger than themselves, and unit pride soared
+
+**Rebranding doesn't mean throwing away the past. Sometimes it means making the past the most powerful asset you have.**`,
+    date: "2025-01-20",
+    tags: ["Corporate Branding", "Archive Production", "Rebranding", "Industrial"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית ומיתוג ארגוני",
+    relatedServiceLabelEn: "Corporate Branding & Identity Films",
+    relatedYoutubeId: "GFkN83F-DBU",
+  },
   {
     id: "corporate-event-marketing-engine",
     coverImage: "/blog/corporate-event-cover.svg",
