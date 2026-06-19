@@ -57,6 +57,20 @@ export const portfolioVideos: PortfolioVideo[] = [
     vertical: true,
   },
   {
+    id: "iron-drone-airobotics",
+    youtubeId: "N4iNxvFGA34",
+    titleHe: "IRON DRONE — סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
+    titleEn: "IRON DRONE — The Film That Defined a Public Company's Visual Language | Airobotics / Ondas Group",
+    challengeHe: "להפיק סרט מוצר לטכנולוגיה ביטחונית מתקדמת — בלי Brand Book, בלי שפת אינפוגרפיקה קיימת — ולצאת עם זהות מותגית שתאמץ כסטנדרט הרשמי.",
+    challengeEn: "Produce a product film for advanced defense technology — without a Brand Book, without existing infographic language — and emerge with a brand identity adopted as the official standard.",
+    solutionHe: "בניית Visual DNA מאפס: פלטת צבעים, טיפוגרפיה טכנולוגית, HUD/UI שמשדר סמכות מבצעית. Speed Ramps שמאיטים ברגעי הליבה הטכנולוגיים (שיגור, נעילת מטרה, יירוט) ומאיצים בתנועת מרדף. Drone-to-Drone Tracking אוויריים וסאונד-דיזיין כירורגי שיושב על הביט. התוצאה: הגרפיקה שפותחה לסרט הפכה לסטנדרט העיצובי הרשמי של ONDS.",
+    solutionEn: "Built Visual DNA from scratch: color palette, tech typography, HUD/UI conveying operational authority. Speed Ramps that slow at core technical moments (launch, target lock, intercept) and accelerate in pursuit motion. Aerial Drone-to-Drone tracking and surgical sound design sitting on the beat. Result: the graphics developed for the film became ONDS's official design standard.",
+    category: "ai",
+    client: "Airobotics / Ondas Group",
+    duration: "2:20",
+    date: "2023-12-01",
+  },
+  {
     id: "green-wall-hero",
     youtubeId: "GoX5983yoQg",
     titleHe: "Green Wall — חבילת שיווק שלמה מ-2 ימי צילום | Hero Video",
@@ -356,6 +370,107 @@ export interface VlogPost {
 //   blank line      → paragraph break
 
 export const vlogPosts: VlogPost[] = [
+  {
+    id: "video-to-brand-identity",
+    coverImage: "/blog/video-to-brand-cover.svg",
+    titleHe: "מוידאו למותג: הדרך החכמה לייצר שפה ויזואלית מנצחת לחברות טכנולוגיה",
+    titleEn: "From Video to Brand: The Smart Way to Build a Winning Visual Language for Tech Companies",
+    excerptHe: "חברות טכנולוגיה מוציאות הון על ספרי מותג סטטיים שלא מתרגמים למסך. בפרויקט IRON DRONE בנינו שפה ויזואלית מלאה מתוך הסרט עצמו — והיא הפכה לסטנדרט הרשמי של חברה בורסאית.",
+    excerptEn: "Tech companies spend fortunes on static brand books that don't translate to screen. In the IRON DRONE project we built a complete visual language out of the film itself — and it became a public company's official design standard.",
+    readingTime: 6,
+    bodyHe: `## הבעיה עם ספרי מותג סטטיים
+
+תהליך מיתוג של חברות טכנולוגיה, תשתיות וביטחון דורש לעיתים קרובות תקציבי עתק המועברים למשרדי פרסום עבור יצירת "ספר מותג" סטטי. הבעיה מתחילה כשהמותג פוגש את המסך.
+
+אותם עיצובים סטטיים — הצבע, הטיפוגרפיה, הגריד — לא מתרגמים היטב לעולמות הווידאו, האנימציה והדיגיטל הדינמי. יוצרים מחדש ממקום ה-וידאו, ושם מוצאים שהחוקים שונים לחלוטין.
+
+**השפה הוויזואלית של מותג מודרני צריכה להיוולד מתוך תנועה.**
+
+[IMAGE]
+
+## IRON DRONE: כשסרט מוצר הפך לזהות חברה
+
+בפרויקט שהפקנו עבור מערכת IRON DRONE מבית Airobotics / Ondas Group, ניגשנו לאתגר ייחודי: החברה הגיעה ללא Brand Book מסודר ובלי שפת אינפוגרפיקה שמתאימה למוצר ביטחוני מתקדם.
+
+במקום לחכות לסוכנות מיתוג — בנינו את השפה בעצמנו, ישירות מתוך עולם הסרט.
+
+## שלב 1: Visual DNA מאפס
+
+מחלקת הארט פיתחה קונספט ויזואלי מלא:
+
+**פלטת צבעים:** כחול-מתכת עמוק, ירוק HUD צבאי, שחור תפעולי. כל צבע נבחר כדי לשדר שני דברים בו-זמנית: טכנולוגיה מתקדמת + אמינות מבצעית.
+
+**טיפוגרפיה:** פונטים טכנולוגיים עם ריווח מדוד שמדמה ממשק cockpit. כל מספר, כל מפרט טכני — נראה כאילו הוא חלק מממשק אמיתי של מערכת נשק.
+
+**HUD/UI Elements:** ממשקי מסך שנבנו מאפס: נעילות מטרה, טווחי זיהוי, אינדיקטורי גובה ומהירות. כל אלמנט תוכנן כך שהמדהים בו הוא **שהוא נראה אמיתי**.
+
+## שלב 2: האתגר הקולנועי — מהירות פוגשת דיוק
+
+לסרט יש שני מצבי עריכה שצריכים לדור בשלום:
+
+**Speed Ramp מהיר** — רגעי מרדף, טיסה, תנועת נחיל. הצופה חייב להרגיש אדרנלין, מהירות, כוח תפעולי. Drone-to-Drone Tracking אוויריים, זוויות Low-angle שמגדילות את האגרסיביות.
+
+**Speed Ramp איטי** — רגעי הליבה הטכנולוגיים: שיגור, נעילת מטרה, יירוט. פה הסרט מאט. הצופה צריך לראות, להבין, ולהאמין. בדיוק בנקודה הזו נכנסות שכבות ה-HUD שמסבירות את המכניקה.
+
+**סאונד-דיזיין כירורגי:** כל הופעה של גרפיקה "מקבעת" על צליל — בין אם זה ping של מכ"ם, buzz של מנוע חשמלי, או click של נעילה. הסנכרון בין עריכה לסאונד הוא מה שהופך סרט מוצר אינפורמטיבי לחוויה קולנועית.
+
+## התוצאה: השפה הפכה לסטנדרט
+
+מה שהתחיל כסרט מוצר הפך לתשתית מותגית: **הגרפיקה, האנימציה וה-HUD שפיתחנו לסרט אומצו על ידי ONDS כסטנדרט הרשמי** לכלל מערך השיווק שלהם.
+
+**ROI כפול:** הלקוח הגיע לסרט, יצא עם זהות מותגית. ללא תוספת תקציב. ללא משרד פרסום.
+
+זו לא עבודת סוכנות. זו שותפות אסטרטגית.`,
+    bodyEn: `## The Problem with Static Brand Books
+
+Branding processes for technology, infrastructure, and defense companies often require enormous budgets transferred to ad agencies for creating a static "brand book." The problem starts when the brand meets the screen.
+
+Those static designs — color, typography, grid — don't translate well to the worlds of video, animation, and dynamic digital. You recreate from the video side, and there you find the rules are completely different.
+
+**A modern brand's visual language needs to be born from motion.**
+
+[IMAGE]
+
+## IRON DRONE: When a Product Film Became a Company's Identity
+
+In the project we produced for the IRON DRONE system by Airobotics / Ondas Group, we faced a unique challenge: the company arrived without an organized Brand Book and without an infographic language suited to an advanced defense product.
+
+Instead of waiting for a branding agency — we built the language ourselves, directly from within the film's world.
+
+## Stage 1: Visual DNA from Scratch
+
+The art department developed a complete visual concept:
+
+**Color palette:** Deep metal blue, military HUD green, operational black. Each color chosen to communicate two things simultaneously: advanced technology + operational reliability.
+
+**Typography:** Technical fonts with measured spacing simulating a cockpit interface. Every number, every technical spec — looks as if it's part of a real weapons system interface.
+
+**HUD/UI Elements:** Screen interfaces built from scratch: target locks, detection ranges, altitude and speed indicators. Every element designed so the remarkable thing about it is **that it looks real**.
+
+## Stage 2: The Cinematic Challenge — Speed Meets Precision
+
+The film has two editing modes that need to coexist:
+
+**Fast Speed Ramp** — chase moments, flight, swarm motion. The viewer must feel adrenaline, speed, operational power. Aerial Drone-to-Drone Tracking, Low-angle shots that increase aggression.
+
+**Slow Speed Ramp** — core technical moments: launch, target lock, intercept. Here the film slows. The viewer needs to see, understand, and believe. Exactly at this point the HUD layers enter to explain the mechanics.
+
+**Surgical Sound Design:** Every graphic appearance "locks" on a sound — whether a radar ping, an electric motor buzz, or a lock click. The sync between editing and sound is what turns an informative product film into a cinematic experience.
+
+## The Result: The Language Became the Standard
+
+What started as a product film became brand infrastructure: **the graphics, animation, and HUD we developed for the film were adopted by ONDS as the official standard** for their entire marketing operation.
+
+**Double ROI:** The client came for a film, left with a brand identity. No extra budget. No ad agency.
+
+This isn't agency work. This is strategic partnership.`,
+    date: "2024-02-10",
+    tags: ["Defense Tech", "Motion Design", "Brand Identity", "Visual Language"],
+    relatedServiceHref: "/services/ai",
+    relatedServiceLabelHe: "הפקות AI וסרטי ביטחון",
+    relatedServiceLabelEn: "AI & Defense Tech Productions",
+    relatedYoutubeId: "N4iNxvFGA34",
+  },
   {
     id: "content-package-raw-footage",
     coverImage: "/blog/content-package-cover.svg",

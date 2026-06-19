@@ -1,0 +1,58 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050810"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a3a6e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="70%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#050810" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+
+  <!-- HUD grid lines -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#1a4a2e" stroke-width="0.5" opacity="0.4"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#1a4a2e" stroke-width="0.5" opacity="0.4"/>
+  <circle cx="600" cy="315" r="200" fill="none" stroke="#1a4a2e" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="600" cy="315" r="120" fill="none" stroke="#1a4a2e" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Target lock reticle -->
+  <circle cx="600" cy="315" r="60" fill="none" stroke="#3dff6e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="540" y1="315" x2="510" y2="315" stroke="#3dff6e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="660" y1="315" x2="690" y2="315" stroke="#3dff6e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="600" y1="255" x2="600" y2="225" stroke="#3dff6e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="600" y1="375" x2="600" y2="405" stroke="#3dff6e" stroke-width="1.5" opacity="0.6"/>
+  <!-- Corner brackets -->
+  <path d="M555 270 L540 270 L540 285" fill="none" stroke="#3dff6e" stroke-width="1.5" opacity="0.7"/>
+  <path d="M645 270 L660 270 L660 285" fill="none" stroke="#3dff6e" stroke-width="1.5" opacity="0.7"/>
+  <path d="M555 360 L540 360 L540 345" fill="none" stroke="#3dff6e" stroke-width="1.5" opacity="0.7"/>
+  <path d="M645 360 L660 360 L660 345" fill="none" stroke="#3dff6e" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- HUD data panels -->
+  <rect x="80" y="180" width="180" height="120" rx="3" fill="#050810" stroke="#3dff6e" stroke-width="1" opacity="0.5"/>
+  <text x="170" y="207" font-family="monospace" font-size="9" fill="#3dff6e" text-anchor="middle" opacity="0.8" letter-spacing="1">SYSTEM STATUS</text>
+  <line x1="90" y1="215" x2="250" y2="215" stroke="#3dff6e" stroke-width="0.5" opacity="0.3"/>
+  <text x="95" y="233" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.7">ALT  : 120m</text>
+  <text x="95" y="251" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.7">SPD  : 87km/h</text>
+  <text x="95" y="269" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.7">LOCK : ●●●○○</text>
+  <text x="95" y="287" font-family="monospace" font-size="10" fill="#c8a96e" opacity="0.8">STAT : TRACKING</text>
+
+  <rect x="940" y="180" width="180" height="120" rx="3" fill="#050810" stroke="#3dff6e" stroke-width="1" opacity="0.5"/>
+  <text x="1030" y="207" font-family="monospace" font-size="9" fill="#3dff6e" text-anchor="middle" opacity="0.8" letter-spacing="1">VISUAL DNA</text>
+  <line x1="950" y1="215" x2="1110" y2="215" stroke="#3dff6e" stroke-width="0.5" opacity="0.3"/>
+  <text x="955" y="233" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.7">COLOR : #0a1a3e</text>
+  <text x="955" y="251" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.7">TYPE  : TECH-01</text>
+  <text x="955" y="269" font-family="monospace" font-size="10" fill="#c8a96e" opacity="0.7">HUD   : CUSTOM</text>
+  <text x="955" y="287" font-family="monospace" font-size="10" fill="#3dff6e" opacity="0.8">STD   : ADOPTED ✓</text>
+
+  <!-- Center drone dot -->
+  <circle cx="600" cy="315" r="6" fill="#3dff6e" opacity="0.8"/>
+  <circle cx="600" cy="315" r="12" fill="none" stroke="#3dff6e" stroke-width="1" opacity="0.4"/>
+
+  <!-- Labels -->
+  <text x="600" y="520" font-family="monospace" font-size="15" fill="#3dff6e" text-anchor="middle" opacity="0.6" letter-spacing="4">IRON DRONE · VISUAL IDENTITY</text>
+  <text x="600" y="558" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>
