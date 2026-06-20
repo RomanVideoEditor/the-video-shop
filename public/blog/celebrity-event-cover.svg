@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#08060a"/>
+  <defs>
+    <radialGradient id="g1" cx="45%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#2a0a3a" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#08060a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="70%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#c8a96e" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#08060a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spotlight" cx="40%" cy="35%" r="30%">
+      <stop offset="0%" stop-color="#f0c060" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#08060a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <rect width="1200" height="630" fill="url(#spotlight)"/>
+
+  <!-- Stage light beams -->
+  <path d="M 480 0 L 360 420" stroke="#f0c060" stroke-width="30" opacity="0.04"/>
+  <path d="M 520 0 L 440 420" stroke="#f0c060" stroke-width="20" opacity="0.05"/>
+  <path d="M 460 0 L 320 420" stroke="#f0c060" stroke-width="15" opacity="0.03"/>
+
+  <!-- Center: Talent silhouette (star) -->
+  <circle cx="480" cy="220" r="50" fill="#1a0a2a" stroke="#f0c060" stroke-width="2.5" opacity="0.85"/>
+  <rect x="432" y="268" width="96" height="110" rx="28" fill="#1a0a2a" stroke="#f0c060" stroke-width="2" opacity="0.8"/>
+  <!-- Star glow -->
+  <circle cx="480" cy="220" r="62" fill="none" stroke="#f0c060" stroke-width="1" opacity="0.25"/>
+  <circle cx="480" cy="220" r="76" fill="none" stroke="#f0c060" stroke-width="0.5" opacity="0.12"/>
+  <!-- Star label -->
+  <text x="480" y="407" font-family="sans-serif" font-size="11" fill="#f0c060" text-anchor="middle" opacity="0.9">דודו ארז — TALENT</text>
+
+  <!-- Crowd: smaller employee figures -->
+  <!-- Row left -->
+  <circle cx="200" cy="290" r="22" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.7"/>
+  <rect x="180" y="310" width="40" height="55" rx="14" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.6"/>
+  <circle cx="290" cy="275" r="20" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.65"/>
+  <rect x="272" y="293" width="36" height="50" rx="12" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.55"/>
+  <circle cx="370" cy="285" r="18" fill="#1a0a2a" stroke="#c8a96e" stroke-width="1" opacity="0.6"/>
+  <rect x="354" y="301" width="34" height="48" rx="12" fill="#1a0a2a" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Row right -->
+  <circle cx="600" cy="285" r="18" fill="#1a0a2a" stroke="#c8a96e" stroke-width="1" opacity="0.6"/>
+  <rect x="584" y="301" width="34" height="48" rx="12" fill="#1a0a2a" stroke="#c8a96e" stroke-width="1" opacity="0.5"/>
+  <circle cx="680" cy="275" r="20" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.65"/>
+  <rect x="662" y="293" width="36" height="50" rx="12" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.55"/>
+  <circle cx="770" cy="290" r="22" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.7"/>
+  <rect x="750" y="310" width="40" height="55" rx="14" fill="#120820" stroke="#7a4a9e" stroke-width="1" opacity="0.6"/>
+
+  <!-- Connection lines talent → employees -->
+  <line x1="432" y1="300" x2="390" y2="290" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.3"/>
+  <line x1="432" y1="310" x2="310" y2="295" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.25"/>
+  <line x1="432" y1="320" x2="222" y2="305" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.2"/>
+  <line x1="530" y1="300" x2="600" y2="295" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.3"/>
+  <line x1="530" y1="310" x2="695" y2="288" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.25"/>
+  <line x1="530" y1="320" x2="770" y2="300" stroke="#f0c060" stroke-width="1" stroke-dasharray="4,5" opacity="0.2"/>
+
+  <!-- Right panel: 3 assets -->
+  <rect x="870" y="160" width="270" height="290" rx="10" fill="#0e0a16" stroke="#3a2050" stroke-width="1.5" opacity="0.85"/>
+  <text x="1005" y="195" font-family="sans-serif" font-size="9" fill="#c8a96e" text-anchor="middle" letter-spacing="2" opacity="0.8">3 ASSETS · 1 PRODUCTION</text>
+  <line x1="885" y1="208" x2="1125" y2="208" stroke="#3a2050" stroke-width="1" opacity="0.4"/>
+  <!-- Asset 1 -->
+  <rect x="890" y="222" width="230" height="60" rx="6" fill="#140a20" stroke="#f0c060" stroke-width="1.5" opacity="0.8"/>
+  <text x="1005" y="248" font-family="sans-serif" font-size="10" fill="#f0c060" text-anchor="middle" opacity="0.9">01 — MAIN FILM</text>
+  <text x="1005" y="268" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">2-3 דקות · אינטרא-נט · גיוס</text>
+  <!-- Asset 2 -->
+  <rect x="890" y="295" width="230" height="60" rx="6" fill="#100818" stroke="#7a4a9e" stroke-width="1" opacity="0.7"/>
+  <text x="1005" y="321" font-family="sans-serif" font-size="10" fill="#a07ace" text-anchor="middle" opacity="0.9">02 — SHORT CLIPS</text>
+  <text x="1005" y="341" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">15-30 שניות · Reels · Stories</text>
+  <!-- Asset 3 -->
+  <rect x="890" y="368" width="230" height="60" rx="6" fill="#0e0814" stroke="#4a3060" stroke-width="1" opacity="0.6"/>
+  <text x="1005" y="394" font-family="sans-serif" font-size="10" fill="#7a5a9e" text-anchor="middle" opacity="0.8">03 — TESTIMONIALS</text>
+  <text x="1005" y="414" font-family="sans-serif" font-size="9" fill="#6b6b6b" text-anchor="middle">עובדים · גיוס · Social Proof</text>
+
+  <!-- Share icons: viral effect hint -->
+  <text x="200" y="410" font-family="sans-serif" font-size="9" fill="#7a4a9e" text-anchor="middle" opacity="0.6" letter-spacing="1">↗ SHARE</text>
+  <text x="770" y="410" font-family="sans-serif" font-size="9" fill="#7a4a9e" text-anchor="middle" opacity="0.6" letter-spacing="1">↗ SHARE</text>
+
+  <!-- Labels -->
+  <text x="600" y="555" font-family="sans-serif" font-size="15" fill="#f0c060" text-anchor="middle" opacity="0.65" letter-spacing="4">BRANDED ENTERTAINMENT · EMPLOYER BRANDING</text>
+  <text x="600" y="590" font-family="sans-serif" font-size="12" fill="#6b6b6b" text-anchor="middle" letter-spacing="2">THE VIDEO SHOP</text>
+</svg>

@@ -42,6 +42,20 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "levi-strauss-celebrity-event",
+    youtubeId: "94W9SfZcx-Y",
+    titleHe: "לוי שטרק — אירוע חברה עם דודו ארז | Branded Entertainment",
+    titleEn: "Levi Strauss — Corporate Event with Dudu Erez | Branded Entertainment",
+    challengeHe: "ליצור לעובדי לוי שטרק מזכרת בלתי נשכחת מאירוע חברה — שתהיה גם נכס שיווקי שהעובדים ישתפו ברצון, וגם תוכן Employer Branding שמדבר אמת.",
+    challengeEn: "Create an unforgettable memento for Levi Strauss employees from a corporate event — that is also a marketing asset employees will willingly share, and Employer Branding content that speaks authentically.",
+    solutionHe: "שילוב טאלנט (דודו ארז) עם ניהול הפקה אינטגרלי מלא: כתיבת תסריט קריאייטיבי מותאם לסגנון הטאלנט, ניהול מול הלקוח ומול הטאלנט, צילום קצבי דינמי שמשחזר את אנרגיית האירוע, עריכה מהודקת. תוצאה: המזכרת הפכה לתוכן ויראלי פנים-ארגוני.",
+    solutionEn: "Celebrity talent integration (Dudu Erez) with full integral production management: creative scriptwriting tailored to the talent's style, client and talent coordination, dynamic rhythmic filming that recreates the event's energy, tight editing. Result: the memento became internal viral content.",
+    category: "recruitment",
+    client: "Levi Strauss",
+    duration: "2:00",
+    date: "2023-07-01",
+  },
+  {
     id: "medical-leadership-program-recap",
     youtubeId: "VsiMUos3_58",
     titleHe: "סיכום תוכנית מנהיגות רפואית-טכנולוגית | הפקה ממוקסמת מאירוע",
@@ -2173,6 +2187,173 @@ At The Video Shop, we know how to identify when a project demands a "creative le
     date: "2023-04-15",
     tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
     relatedYoutubeId: "ome2LtSiFWQ",
+  },
+  {
+    id: "celebrity-event-employer-branding",
+    coverImage: "/blog/celebrity-event-cover.svg",
+    titleHe: "מעבר לתמונה הקבוצתית: כך הופכים אירוע חברה לנכס שיווקי מרגש",
+    titleEn: "Beyond the Group Photo: How to Turn a Corporate Event into an Emotional Marketing Asset",
+    excerptHe: "אירועי חברה הם ההזדמנות הכי מוזלת ליצור תוכן Employer Branding אמיתי. כשמוסיפים טאלנט נכון — הם הופכים לתוכן שהעובדים משתפים מעצמם.",
+    excerptEn: "Corporate events are the most cost-effective opportunity to create real Employer Branding content. Add the right talent — and they become content employees share on their own.",
+    readingTime: 5,
+    bodyHe: `## אירוע חברה: ההשקעה הכי מוזלת בתוכן Employer Branding
+
+חברות מוציאות עשרות אלפי שקלים על אירוע חברה. קייטרינג, מקום, ציוד, הסעות, מרצים — תקציב אמיתי. ואז האירוע מסתיים. ומה נשאר?
+
+תמונה קבוצתית. כמה סטורי שנעלמו בחצות.
+
+**הגישה שלנו שונה:** האירוע הוא לא ה"אירוע" — האירוע הוא **חומר הגלם** להפקה.
+
+בפרויקט שהפקנו עבור חברת לוי שטרק, הגענו לאירוע חברה כמו שמגיעים לסט קולנוע: עם תסריט, עם כוונה, ועם ידיעה ברורה מה אנחנו מוציאים ממנו.
+
+[IMAGE]
+
+## הנוסחה: אנרגיה × טאלנט × עריכה = תוכן שחי
+
+### למה טאלנט משנה הכל
+
+שאלה פשוטה: מה גורם לעובד לצפות בסרטון אירוע חברה שנית, לשלוח לחבר, לפרסם בסטורי שלו?
+
+**תשובה: כי קורה בו משהו בלתי צפוי שהוא לא ראה לפני כן.**
+
+דודו ארז הוא לא רק "פרזנטור" — הוא **מכפיל ערך**. הנוכחות שלו הופכת כל אינטראקציה עם עובד לרגע שאפשר לצלם. כל תגובה ספונטנית הופכת לתוכן. האנרגיה שלו מוציאה את האנשים מה"מוד מנוחה" ומכניסה אותם ל"מוד השתתפות".
+
+וזה בדיוק מה שצריך כדי לצלם.
+
+### ניהול הפקה עם טאלנט: מה זה אומר בפועל
+
+עבודה עם טאלנטים מוכרים לא מסתיימת ב"בואו נצלם ביחד". זה תהליך:
+
+**כתיבת תסריט מותאם:** לכל טאלנט יש שפה, קצב וסגנון הומור. תסריט "גנרי" יישמע מאולץ. כתבנו חומר שנכתב *עבור* דודו ארז — לא חומר שדודו ארז אמור לומר.
+
+**ניהול לוח זמנים:** טאלנטים מגיעים לחלון זמן מוגדר. כל דקה שאתה מבזבז על "אולי ננסה עוד פעם" — נעלמת. הגענו מוכנים: רשימת סצנות מסודרת לפי סדר עדיפויות, כל לוקיישן מסומן מראש.
+
+**הנחיית הספונטניות:** אחד הפרדוקסים של הפקה עם קומיקאים: הרגעים הכי טובים הם ה"בלתי צפויים" — אבל הם קורים רק כשהתנאים מאפשרים אותם. יצרנו סיטואציות שבהן הספונטניות *יכלה* לקרות, ואז הנחנו את עצמנו מהדרך.
+
+### עריכה שמשחזרת אנרגיה — לא מתעדת אירוע
+
+הבדל מהותי: **תיעוד מראה מה קרה. עריכה מרגישה מה היה שם.**
+
+סרטון recap רגיל עובר בסדר כרונולוגי: פתיחה, הרצאות, אוכל, ריקודים, להתראות. זה נכון. זה גם משעמם.
+
+הגישה שלנו: **עריכה לפי שיא האנרגיה.** פתיחה בשיא, "נשימה" עם רגעים אנושיים יפים, שיא שני, הרמת כוסית קצרה שמותירה רגש. הצופה לא יודע כמה זמן האירוע ארך — הוא מרגיש שהיה שם.
+
+## מה העובדים מקבלים שלא ציפו לו
+
+### המזכרת שחיה לנצח
+
+תמונה קבוצתית נשמרת בגוגל פוטוס ונשכחת. סרטון שדודו ארז מפרגן לך בו אישית — **נשלח לאמא**.
+
+זה ההבדל בין מזכרת לבין **נכס רגשי**. האחת יוצרת זיכרון. השני יוצר קשר.
+
+### האפקט הויראלי הפנים-ארגוני
+
+כשעובד משתף סרטון אירוע חברה ברצון — זה לא "עוד תוכן". זה Employer Branding ב-100% ממשק אורגני, בלי שקל פרסום.
+
+חשבו מה קורה כשמחצית מעובדי חברה של 200 אנשים מעלים את הסרטון לסטורי שלהם ביום שאחרי האירוע. **כמה אנשים רואים שם עובדים מאושרים, צוחקים, מחוברים לחברה שלהם?**
+
+זה הפרסום הכי אמין שיש.
+
+## שלושה נכסים מהפקה אחת
+
+**1. הסרטון הראשי (2-3 דקות):** לאינטרא-נט, ל-YouTube, למצגות גיוס.
+
+**2. קליפים קצרים (15-30 שניות):** לכל רגע שיא עם הטאלנט — פרפקט לסטורי ולרילס.
+
+**3. ריאיונות עובדים:** "מה אמרתם לחברים שעבדתם עם דודו ארז?" — תוכן Testimonial שמוכר את החברה לקנדידטים.
+
+## למי זה מתאים?
+
+✅ חברות בגיוס אקטיבי שרוצות להראות "איך זה לעבוד אצלנו"
+✅ ארגונים עם עובדים ותיקים שצריכים "ריענון קשר" אחרי תקופות קשות
+✅ חברות שמארגנות אירועים ממילא ורוצות להפיק מהם יותר
+✅ מנהלי HR שנמאס להם מתוכן Employer Branding גנרי ומשעמם
+
+---
+
+אם האירוע הבא שלכם כבר מתוכנן — אתם כבר בחצי הדרך להפקה. [בואו נדבר](/contact) לפני שהאורות נדלקים.`,
+    bodyEn: `## Corporate Events: The Most Underpriced Employer Branding Content
+
+Companies spend tens of thousands on a corporate event. Catering, venue, equipment, transportation, speakers — real budget. And then the event ends. What remains?
+
+A group photo. A few Stories that disappeared at midnight.
+
+**Our approach is different:** the event isn't the "event" — the event is the **raw material** for production.
+
+In the project we produced for Levi Strauss, we arrived at the corporate event like you arrive at a film set: with a script, with intention, and with clear knowledge of what we're taking out of it.
+
+[IMAGE]
+
+## The Formula: Energy × Talent × Editing = Content That Lives
+
+### Why Talent Changes Everything
+
+A simple question: what makes an employee watch a corporate event video twice, send it to a friend, post it to their Story?
+
+**Answer: because something unexpected happens in it that they haven't seen before.**
+
+Dudu Erez isn't just a "presenter" — he's a **value multiplier.** His presence turns every interaction with an employee into a filmable moment. Every spontaneous reaction becomes content. His energy pulls people out of "relaxation mode" and into "participation mode."
+
+And that's exactly what you need to film.
+
+### Talent Production Management: What It Means in Practice
+
+Working with recognized talent doesn't end at "let's film together." It's a process:
+
+**Tailored scriptwriting:** every talent has a language, rhythm, and comedy style. A "generic" script sounds forced. We wrote material created *for* Dudu Erez — not material Dudu Erez is supposed to say.
+
+**Schedule management:** talent arrives for a defined time window. Every minute wasted on "maybe we'll try again" — disappears. We arrived prepared: a scenes list ordered by priority, every location marked in advance.
+
+**Directing the spontaneous:** one paradox of producing with comedians: the best moments are the "unexpected" ones — but they only happen when conditions allow them. We created situations where spontaneity *could* happen, then got out of the way.
+
+### Editing That Recreates Energy — Not Documents an Event
+
+A fundamental difference: **documentation shows what happened. Editing makes you feel what was there.**
+
+A standard recap video goes chronologically: opening, talks, food, dancing, goodbye. Accurate. Also boring.
+
+Our approach: **edit by energy peak.** Open at the peak, "breathe" with beautiful human moments, second peak, a short toast that leaves emotion. The viewer doesn't know how long the event ran — they feel like they were there.
+
+## What Employees Get That They Didn't Expect
+
+### The Memento That Lives Forever
+
+A group photo gets saved to Google Photos and forgotten. A video where Dudu Erez personally cheers you on — **gets sent to your mother.**
+
+That's the difference between a memento and an **emotional asset.** One creates a memory. The other creates a bond.
+
+### The Internal Viral Effect
+
+When an employee willingly shares a corporate event video — it's not "more content." It's Employer Branding at 100% organic reach, without a single shekel in advertising.
+
+Think about what happens when half of a 200-person company's employees post the video to their Stories the day after the event. **How many people see happy employees, laughing, connected to their company?**
+
+That's the most credible advertising there is.
+
+## Three Assets from One Production
+
+**1. Main film (2-3 minutes):** for the intranet, YouTube, recruitment presentations.
+
+**2. Short clips (15-30 seconds):** every peak moment with talent — perfect for Stories and Reels.
+
+**3. Employee interviews:** "What did you tell friends about working with Dudu Erez?" — Testimonial content that sells the company to candidates.
+
+## Who Is This Right For?
+
+✅ Companies in active recruitment who want to show "what it's like to work here"
+✅ Organizations with long-term employees who need a "reconnection" after hard periods
+✅ Companies already organizing events who want to extract more from them
+✅ HR managers tired of generic, boring Employer Branding content
+
+---
+
+If your next event is already planned — you're already halfway to a production. [Let's talk](/contact) before the lights go on.`,
+    date: "2023-08-01",
+    tags: ["Employer Branding", "Event Recap", "Celebrity", "Case Study"],
+    relatedYoutubeId: "94W9SfZcx-Y",
+    relatedServiceHref: "/services/recruitment",
+    relatedServiceLabelHe: "סרטי Employer Branding",
+    relatedServiceLabelEn: "Employer Branding Videos",
   },
   {
     id: "event-recap-brand-asset",
