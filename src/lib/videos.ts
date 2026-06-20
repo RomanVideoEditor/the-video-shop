@@ -42,6 +42,20 @@ export interface PortfolioVideo {
 
 export const portfolioVideos: PortfolioVideo[] = [
   {
+    id: "medical-leadership-program-recap",
+    youtubeId: "VsiMUos3_58",
+    titleHe: "סיכום תוכנית מנהיגות רפואית-טכנולוגית | הפקה ממוקסמת מאירוע",
+    titleEn: "Medical-Tech Leadership Program Recap | Maximized Production from Event Footage",
+    challengeHe: "לקוח שרצה סרט תדמית מלא אך תקציב מוגבל — הפתרון: ניצול חומרי האירוע עצמו. להפוך תיעוד אירוע לנכס שיווקי שמבסס סמכות, יוצר FOMO ומניע הצטרפות לתוכנית הבאה.",
+    challengeEn: "A client who wanted a full brand film with limited budget — the solution: maximizing the event footage itself. Turning event documentation into a marketing asset that builds authority, creates FOMO, and drives enrollment in the next program.",
+    solutionHe: "סינכרון מספר ראשים מדברים (רופאים, יזמים, מנהלי תוכנית) עם קו נרטיבי רציף, כתוביות בסגנון כתב יד שמחברות בין המסרים, נתוני השפעה על המסך (11 בתי חולים, 20+ מוסדות), תאורה טבעית שמשדרת אותנטיות עסקית. תוצאה: סרט תדמית מלא — מחומרי אירוע בלבד.",
+    solutionEn: "Synchronized multiple talking heads (doctors, entrepreneurs, program managers) with a continuous narrative thread, handwritten-style subtitles connecting messages, on-screen impact numbers (11 hospitals, 20+ institutions), natural lighting that radiates business authenticity. Result: a full brand film — from event footage alone.",
+    category: "hightech",
+    client: "Nucleai",
+    duration: "2:30",
+    date: "2023-05-01",
+  },
+  {
     id: "vertica-lifestyle-ad",
     youtubeId: "rixmoZ4Y4Uk",
     titleHe: "Vertica — פרסומת לייף-סטייל | כשבימוי פוגש אסטרטגיה",
@@ -2159,6 +2173,161 @@ At The Video Shop, we know how to identify when a project demands a "creative le
     date: "2023-04-15",
     tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
     relatedYoutubeId: "ome2LtSiFWQ",
+  },
+  {
+    id: "event-recap-brand-asset",
+    coverImage: "/blog/event-recap-cover.svg",
+    titleHe: "סיכום אירוע כנכס מותגי: איך הופכים תיעוד לסרט תדמית",
+    titleEn: "Event Recap as Brand Asset: How to Turn Documentation into a Brand Film",
+    excerptHe: "כשהתקציב מוגבל, הפתרון לא תמיד הוא לדחות את ההפקה. לפעמים האירוע שכבר קורה הוא חומר הגלם שמחכה לעורך נכון.",
+    excerptEn: "When the budget is limited, the solution isn't always to postpone production. Sometimes the event that's already happening is the raw material waiting for the right editor.",
+    readingTime: 5,
+    bodyHe: `## ניצול הזדמנויות: הגישה שחוסכת תקציב ומייצרת ערך
+
+יש לקוחות שמגיעים עם פער: הם צריכים סרט תדמית, אבל אין להם תקציב להפקה מאפס. עבור רוב הסטודיואים, זו שיחה קצרה: "תחזרו כשתהיה תקציב".
+
+עבורנו, זו שאלה אחרת: **"מה כבר קיים שאפשר להפיק ממנו?"**
+
+כשגישנו לפרויקט תוכנית המנהיגות הרפואית-טכנולוגית של Nucleai — ארגון שמחבר בין רופאים לחברות AI בהיירטק הרפואי — לא הגענו עם ציוד לצילום יום מלא. הגענו לאירוע. ויצאנו עם סרט תדמית.
+
+[IMAGE]
+
+## מה הופך אירוע ל"חומר גלם" לסרט תדמית?
+
+לא כל אירוע שווה להפיק. שלושה תנאים הכרחיים:
+
+**1. דוברים שמספרים סיפורים אמיתיים**
+בכנסים עסקיים, הדוברים לא "משחקים" — הם מדברים על מה שחשוב להם. אבי וידמן מ-Nucleai שאומר "אנחנו צריכים רופאים שידריכו אותנו" — זה לא שורה כתובה. זה האמת של המיזם. וזה מה שהמצלמה קולטת ולא יכולה לשחזר.
+
+**2. ויזואל שמראה קהילה**
+חדר מלא רופאים ויזמים שמדברים, מתייעצים, מחייכים — זה לא "תיעוד". זה **ראיה**. הצופה רואה שהדבר קיים, שהוא גדול, שיש בו חיים. שום Zoom call לא יוצר את האפקט הזה.
+
+**3. נתונים שמכמתים גודל**
+"11 בתי חולים", "20+ מוסדות רפואיים" — מספרים על מסך לא עולים כסף. אבל הם עושים משהו שהסיפור לבד לא עושה: הם נותנים קנה מידה.
+
+## הטכניקה: מריבוי קולות לנרטיב אחד
+
+האתגר הטכני של סרטון Talking Heads עם מספר דוברים: **איך שומרים על קו נרטיבי רציף?**
+
+### שיטת ה"פאזל הנרטיבי"
+אנחנו לא חותכים לפי סדר הדיבור — אנחנו חותכים לפי **פאזות המסר**:
+
+- **פאזה 1 — הבעיה:** "לרפואה ולטכנולוגיה יש פער שצריך לגשר עליו."
+- **פאזה 2 — הפתרון:** "התוכנית הזו מביאה אותם לאותו שולחן."
+- **פאזה 3 — ההוכחה:** מספרים, קהילה, ראיות.
+- **פאזה 4 — ה-FOMO:** "הצטרפו אלינו."
+
+כל דובר מקדם פאזה — לא "מספר את הסיפור שלו".
+
+### כתוביות בסגנון כתב יד — לא קישוט
+הכתוביות בסגנון handwritten ממלאות תפקיד ספציפי: הן יוצרות **המשכיות ויזואלית** בין שני דוברים שאין בינהם קשר ויזואלי. הצופה עובר מרופאה בחדר ישיבות ליזם בכנס — והכתובית שמופיעה מחברת ביניהם.
+
+### תאורה טבעית: אמינות שאין לה מחיר
+
+כאן ניגוד לוגיסטי יוצר יתרון: **תאורת סטודיו נראית כמו פרסומת. תאורה טבעית נראית כמו עדות.**
+
+לפרויקט שמוכר "אמינות מקצועית" ו"ידע אמיתי" — האסתטיקה הטבעית של אירוע עובדת *בשביל* המסר, לא *נגדו*.
+
+## מה הלקוח מקבל שהוא לא ציפה לו
+
+כשמגיעים לאירוע ומפיקים ממנו, הלקוח מקבל שלושה נכסים:
+
+**1. סרט תדמית:** 2-3 דקות שמסכמים את התוכנית, ההשפעה והקהילה.
+
+**2. קטעי LinkedIn:** מהחומר הגולמי, 3-5 קליפים קצרים לפוסטים — כל דובר מקבל "הבזק" משלו.
+
+**3. ארכיון תיעוד:** כל האירוע מתועד לשימוש עתידי — Case Studies, דוחות, מצגות.
+
+**השקעה אחת = שלושה נכסי שיווק.**
+
+## מתי הגישה הזו מתאימה
+
+✅ **תוכניות חינוך וליווי** — הביצוע הוא הנכס הכי חזק.
+✅ **כנסי תעשייה** — הקהל, הדוברים והאנרגיה לא ניתנים ל"שחזור".
+✅ **קהילות מקצועיות** — FOMO עובד רק כשרואים את הקהל שהחמצת.
+✅ **לקוחות עם תקציב מוגבל** — ROI מקסימלי מהשקעה בצילום יום אחד.
+
+❌ **לא מתאים:** השקות מוצר, פרסומות מסחריות, סרטים שדורשים שליטה מוחלטת בסביבה.
+
+---
+
+ב-The Video Shop אנחנו מאמינים שהגדרת "הפקה" לא מתחילה עם "מה נצלם" — היא מתחילה עם **"מה כבר קורה שאפשר לצלם."** כשחושבים כך, כל אירוע הוא הזדמנות הפקה.`,
+    bodyEn: `## Opportunity Capture: The Approach That Saves Budget and Creates Value
+
+Some clients arrive with a gap: they need a brand film, but don't have a budget for production from scratch. For most studios, it's a short conversation: "Come back when you have a budget."
+
+For us, it's a different question: **"What already exists that we can produce from?"**
+
+When we approached the Nucleai medical-tech leadership program project — an organization that connects doctors with AI companies in medical hightech — we didn't arrive with equipment for a full filming day. We arrived at an event. And left with a brand film.
+
+[IMAGE]
+
+## What Turns an Event into Raw Material for a Brand Film?
+
+Not every event is worth producing from. Three necessary conditions:
+
+**1. Speakers who tell real stories**
+At business conferences, speakers aren't "performing" — they're talking about what matters to them. Avi Widman from Nucleai saying "we need doctors to guide us" — that's not a written line. That's the venture's truth. And that's what the camera captures and cannot recreate.
+
+**2. Visuals that show a community**
+A room full of doctors and entrepreneurs talking, consulting, smiling — that's not "documentation." That's **evidence.** The viewer sees that the thing exists, that it's large, that it has life. No Zoom call creates this effect.
+
+**3. Numbers that quantify scale**
+"11 hospitals," "20+ medical institutions" — numbers on screen cost nothing. But they do something the story alone doesn't: they give scale.
+
+## The Technique: From Multiple Voices to One Narrative
+
+The technical challenge of a Talking Heads video with multiple speakers: **how do you maintain a continuous narrative thread?**
+
+### The "Narrative Puzzle" Method
+We don't cut in order of speaking — we cut by **message phases:**
+
+- **Phase 1 — The problem:** "Medicine and technology have a gap that needs bridging."
+- **Phase 2 — The solution:** "This program brings them to the same table."
+- **Phase 3 — The proof:** numbers, community, evidence.
+- **Phase 4 — The FOMO:** "Join us."
+
+Each speaker advances a phase — they don't "tell their story."
+
+### Handwritten-Style Subtitles — Not Decoration
+The handwritten-style subtitles serve a specific role: they create **visual continuity** between two speakers with no visual connection. The viewer moves from a doctor in a conference room to an entrepreneur at a conference — and the subtitle appearing between them creates the bridge.
+
+### Natural Lighting: Credibility That Has No Price
+
+Here a logistical constraint creates an advantage: **studio lighting looks like advertising. Natural lighting looks like testimony.**
+
+For a project selling "professional credibility" and "real knowledge" — the natural aesthetic of an event works *for* the message, not *against* it.
+
+## What the Client Gets That They Didn't Expect
+
+When you arrive at an event and produce from it, the client gets three assets:
+
+**1. Brand film:** 2-3 minutes summarizing the program, impact, and community.
+
+**2. LinkedIn clips:** from the raw material, 3-5 short clips for posts — each speaker gets their own "flash."
+
+**3. Documentation archive:** the entire event documented for future use — case studies, reports, presentations.
+
+**One investment = three marketing assets.**
+
+## When This Approach Is Right
+
+✅ **Education and mentorship programs** — the execution is the most powerful asset.
+✅ **Industry conferences** — the audience, speakers, and energy can't be "recreated."
+✅ **Professional communities** — FOMO only works when you see the audience you missed.
+✅ **Clients with limited budget** — maximum ROI from a single day's filming investment.
+
+❌ **Not suitable for:** product launches, commercial ads, films requiring full environment control.
+
+---
+
+At The Video Shop, we believe the definition of "production" doesn't begin with "what do we film" — it begins with **"what is already happening that we can film."** When you think this way, every event is a production opportunity.`,
+    date: "2023-06-01",
+    tags: ["HealthTech", "Event Recap", "Strategy", "Tips"],
+    relatedYoutubeId: "VsiMUos3_58",
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "סרטי הייטק וסטארטאפים",
+    relatedServiceLabelEn: "High-Tech & Startup Videos",
   },
   {
     id: "vertica-flagship-case-study",
