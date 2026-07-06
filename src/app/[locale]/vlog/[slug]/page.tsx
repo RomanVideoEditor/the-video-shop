@@ -21,13 +21,24 @@ export async function generateMetadata({
   const isHe = locale === "he";
   const title = isHe ? post.titleHe : post.titleEn;
   const desc = isHe ? post.excerptHe : post.excerptEn;
+  const BASE = "https://thevideoshop.co.il";
+  const canonical = isHe ? `${BASE}/vlog/${slug}` : `${BASE}/en/vlog/${slug}`;
   return {
     title,
     description: desc,
+    alternates: {
+      canonical,
+      languages: {
+        "he": `${BASE}/vlog/${slug}`,
+        "en": `${BASE}/en/vlog/${slug}`,
+        "x-default": `${BASE}/vlog/${slug}`,
+      },
+    },
     openGraph: {
       title,
       description: desc,
-      images: post.coverImage ? [{ url: post.coverImage }] : [],
+      url: canonical,
+      images: post.coverImage ? [{ url: `${BASE}${post.coverImage}`, width: 1200, height: 630 }] : [],
       type: "article",
       publishedTime: post.date,
     },

@@ -94,7 +94,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
-    title: { default: t("homeTitle"), template: "%s" },
+    title: { default: t("homeTitle"), template: "%s | The Video Shop" },
     description: t("homeDesc"),
     metadataBase: new URL("https://thevideoshop.co.il"),
     alternates: {
