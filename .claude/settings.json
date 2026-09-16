@@ -1,12 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(vercel *)",
-      "Bash(npm *)",
-      "Bash(npx *)",
-      "Bash(git *)",
-      "Bash(node *)",
-      "Bash(curl *)"
-    ]
+    "defaultMode": "acceptAll"
   }
 }

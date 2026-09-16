@@ -485,6 +485,7 @@ export const vlogPosts: VlogPost[] = [
   {
     id: "myth-busting-format",
     coverImage: "/vlogimg/myth-busting-cover.jpg",
+    sectionImages: ["/vlogimg/myth-busting-s1.jpg"],
     titleHe: "להרוג את הפיל שבחדר: איך פורמט 'הפרכת מיתוסים' מגדיל המרות",
     titleEn: "Killing the Elephant in the Room: How the 'Myth Busting' Format Increases Conversions",
     excerptHe: "לכל מוצר יש חסמי קנייה. במקום להתעלם מהם, האסטרטגיה הטובה ביותר היא לשים אותם במרכז הפריים ולפרק אותם אחד אחד, ישירות מול המצלמה.",
@@ -586,6 +587,7 @@ A "myth busting" video works because of a paradox: the more you talk about your 
   {
     id: "10-questions-format",
     coverImage: "/vlogimg/10-questions-cover.jpg",
+    sectionImages: ["/vlogimg/10-questions-s1.jpg"],
     titleHe: "פורמט '10 שאלות': הדרך הקצרה ביותר לבנות אמון, מודעות ותוכן לכל המדיות",
     titleEn: "The '10 Questions' Format: The Shortest Path to Building Trust, Awareness, and Content for All Platforms",
     excerptHe: "פורמט שכולם מבינים מהרגע הראשון, כיפי לצפייה, מתחלק ל-Micro-Content ועובד לשירות לקוחות, מיתוג עסקי ופרסום, מיום צילום אחד קצר.",
@@ -994,6 +996,7 @@ This film wasn't designed just for YouTube. It's delivered:
   {
     id: "corporate-event-marketing-engine",
     coverImage: "/vlogimg/corporate-event-cover.jpg",
+    sectionImages: ["/vlogimg/corporate-event-s1.jpg"],
     titleHe: "אל תתנו לאירוע שלכם להסתיים כשהאורות כבים: איך הופכים כנס חברה לנכס שיווקי מתמשך",
     titleEn: "Don't Let Your Event End When the Lights Go Out: How to Turn a Corporate Conference into a Lasting Marketing Asset",
     excerptHe: "חברות משקיעות חודשים בתכנון אירוע, ואז האורות כבים. בסביבה השיווקית המודרנית, זה פספוס אדיר. תיעוד אירועים עסקיים הוא כבר מזמן לא מזכרת, הוא מנוע תוכן.",
@@ -1093,6 +1096,7 @@ An event documented correctly keeps generating value months after it ended:
   {
     id: "format-driven-employer-branding",
     coverImage: "/vlogimg/format-driven-eb-cover.jpg",
+    sectionImages: ["/vlogimg/format-driven-eb-s1.jpg"],
     titleHe: "כשהפורמט עושה את העבודה: איך 'סליחה על השאלה' הפך לכלי Employer Branding מנצח",
     titleEn: "When the Format Does the Work: How 'Sorry for Asking' Became a Winning Employer Branding Tool",
     excerptHe: "לקחת פורמט טלוויזיוני מוכר ולהסב אותו לצרכים עסקיים, זו לא רק הברקה קריאטיבית. זו אסטרטגיית תוכן שמספקת שתי ציפורים במכה אחת: כלי גיוס אותנטי ויום כיף פנים-ארגוני.",
@@ -1185,7 +1189,9 @@ If you have a company with unique stories that haven't been told yet, Format-Dri
   },
   {
     id: "kickstarter-blueprint",
+    sectionImages: ["/vlogimg/kickstarter-blueprint-s1.jpg"],
     coverImage: "/vlogimg/kickstarter-blueprint-cover.jpg",
+    sectionImages: ["/vlogimg/kickstarter-blueprint-s1.jpg"],
     titleHe: "ה-Blueprint של סרט קיקסטארטר: איך הופכים ספקנים לתומכים משלמים",
     titleEn: "The Kickstarter Blueprint: How to Turn Skeptics into Paying Backers",
     excerptHe: "סרטון קיקסטארטר מוצלח פועל לפי חוקים שונים לחלוטין מסרטון תדמית. כשהמוצר עוד לא קיים, האמון הוא הכל. ניתוח הקמפיין של Dride 4K שגייס 1.1 מיליון דולר.",
@@ -1299,6 +1305,7 @@ The project raised over $1.1 million. Not because the product was the best on th
   {
     id: "tech-product-video-60sec",
     coverImage: "/vlogimg/tech-product-video-cover.jpg",
+    sectionImages: ["/vlogimg/tech-product-video-s1.jpg"],
     titleHe: "איך להסביר טכנולוגיה מורכבת ב-60 שניות? האמנות של סרטי מוצר לעולם ה-AI והדאטה",
     titleEn: "How to Explain Complex Technology in 60 Seconds? The Art of Product Films for the AI and Data World",
     excerptHe: "האתגר הגדול של חברות הייטק ו-SaaS הוא לא הפיתוח, אלא היכולת להסביר מה המוצר שלהן עושה ב-60 שניות. שלושת החוקים לסרטון מוצר טכנולוגי שממיר צופים ללידים.",
@@ -1392,6 +1399,7 @@ A smart product film isn't just a pretty showpiece. It's your company's digital 
   {
     id: "max-roi-production",
     coverImage: "/vlogimg/social-content-cover.jpg",
+    sectionImages: ["/vlogimg/social-content-s1.jpg"],
     titleHe: "פיצוח ה-ROI של הסושיאל: איך הופכים יום צילום אחד לעשרות סרטוני תוכן מנצחים",
     titleEn: "Cracking Social ROI: How One Filming Day Becomes Dozens of Winning Content Videos",
     excerptHe: "הרשתות רעבות לתוכן כל יום. תקציבי ההפקה מוגבלים. הפתרון לא נמצא בעוד ימי צילום, הוא נמצא בתכנון חכם יותר.",
@@ -1517,6 +1525,7 @@ videoshop brings the strategy, the crew, and the methodology. You bring the stor
   {
     id: "ai-storyboard-workflow",
     coverImage: "/vlogimg/ai-storyboard-cover.jpg",
+    sectionImages: ["/vlogimg/ai-storyboard-s1.jpg"],
     titleHe: "איך מייצרים סרט AI שנראה כמו הפקה של מיליון דולר: מהסטוריבורד ועד המסירה",
     titleEn: "How to Produce an AI Film That Looks Like a Million-Dollar Production: From Storyboard to Delivery",
     excerptHe: "הסוד לא נמצא בכלי. הוא נמצא בתהליך. אחרי עשרות פרויקטי AI, הנה המתודולוגיה המלאה שלנו, שלב אחרי שלב.",
@@ -1770,6 +1779,7 @@ videoshop doesn't sell "AI films." We produce **films that use the right tool fo
   {
     id: "ai-video-2024",
     coverImage: "/vlogimg/ai-production-cover.jpg",
+    sectionImages: ["/vlogimg/ai-production-s1.jpg"],
     titleHe: "למה רוב סרטי ה-AI נראים מזויפים, ומה קורה כשבמאי אמיתי מחזיק בהגה",
     titleEn: "Why Most AI Films Look Fake, and What Happens When a Real Director Takes the Wheel",
     excerptHe: "כולם יכולים ללחוץ על כפתור ב-Kling. לא כולם יודעים מה לעשות עם מה שיוצא. אחרי עשרות פרויקטי AI, הנה מה שלמדנו.",
@@ -1883,6 +1893,7 @@ videoshop doesn't sell "AI films." We produce **B2B films that use AI intelligen
   {
     id: "real-estate-drone",
     coverImage: "/vlogimg/drone-realestate-cover.jpg",
+    sectionImages: ["/vlogimg/drone-realestate-s1.jpg"],
     titleHe: "צילום רחפן לנדל\"ן: המדריך שהיזמים לא מקבלים מהמפיקים שלהם",
     titleEn: "Drone Filming for Real Estate: The Guide Developers Never Get From Their Producers",
     excerptHe: "80% מהעבודה ביום צילום רחפן לא קורה באוויר. ומה שקורה לפני ההמראה קובע אם הפרויקט שלכם ייראה כמו Ashtrom, או כמו כולם.",
@@ -1963,6 +1974,7 @@ Companies like Ashtrom work with productions that will hold for 3-5 years. They'
   {
     id: "investor-pitch-tips",
     coverImage: "/vlogimg/investor-pitch-cover.jpg",
+    sectionImages: ["/vlogimg/investor-pitch-s1.jpg"],
     titleHe: "5 הטעויות שהפכו סרטי Investor Pitch מוצלחים לשכחים: וכיצד לא ליפול בהן",
     titleEn: "5 Mistakes That Turn Good Investor Pitch Films Forgettable: And How to Avoid Them",
     excerptHe: "הפקנו עשרות סרטי Investor Pitch. הטעויות האלה חוזרות על עצמן שוב ושוב, ולא כי הלקוחות טיפשים, אלא כי אף אחד לא אמר להם את האמת.",
@@ -2059,6 +2071,7 @@ At videoshop, we work on every pitch like we work on a film. Weeks, not days. Fe
   {
     id: "corporate-business-card-film",
     coverImage: "/vlogimg/corporate-business-card-cover.jpg",
+    sectionImages: ["/vlogimg/corporate-business-card-s1.jpg"],
     titleHe: "סרט 'כרטיס הביקור' התאגידי: מתי הפורמט הקלאסי הוא הבחירה הנכונה",
     titleEn: "The Corporate 'Business Card' Film: When the Classic Format Is the Right Choice",
     excerptHe: "לא כל סרט חייב להיות פורץ דרך. כשהמטרה היא להוכיח גודל, יציבות וסמכות, ה'כרטיס ביקור' התאגידי הוא הכלי החד ביותר בארסנל.",
@@ -2191,6 +2204,7 @@ At videoshop, we know how to identify when a project demands a "creative leap" a
   {
     id: "celebrity-event-employer-branding",
     coverImage: "/vlogimg/celebrity-event-cover.jpg",
+    sectionImages: ["/vlogimg/celebrity-event-s1.jpg"],
     titleHe: "מעבר לתמונה הקבוצתית: כך הופכים אירוע חברה לנכס שיווקי מרגש",
     titleEn: "Beyond the Group Photo: How to Turn a Corporate Event into an Emotional Marketing Asset",
     excerptHe: "אירועי חברה הם ההזדמנות הכי מוזלת ליצור תוכן Employer Branding אמיתי. כשמוסיפים טאלנט נכון, הם הופכים לתוכן שהעובדים משתפים מעצמם.",
@@ -2358,6 +2372,7 @@ If your next event is already planned, you're already halfway to a production. [
   {
     id: "event-recap-brand-asset",
     coverImage: "/vlogimg/event-recap-cover.jpg",
+    sectionImages: ["/vlogimg/event-recap-s1.jpg"],
     titleHe: "סיכום אירוע כנכס מותגי: איך הופכים תיעוד לסרט תדמית",
     titleEn: "Event Recap as Brand Asset: How to Turn Documentation into a Brand Film",
     excerptHe: "כשהתקציב מוגבל, הפתרון לא תמיד הוא לדחות את ההפקה. לפעמים האירוע שכבר קורה הוא חומר הגלם שמחכה לעורך נכון.",
@@ -2513,6 +2528,7 @@ At videoshop, we believe the definition of "production" doesn't begin with "what
   {
     id: "vertica-flagship-case-study",
     coverImage: "/vlogimg/vertica-flagship-cover.jpg",
+    sectionImages: ["/vlogimg/vertica-flagship-s1.jpg"],
     titleHe: "כשבימוי פוגש אסטרטגיה: ה-Case Study של Vertica Lifestyle Ad",
     titleEn: "When Direction Meets Strategy: The Vertica Lifestyle Ad Case Study",
     excerptHe: "ב-HealthTech רוב החברות נופלות למלכודת ה'רצינות יתר'. הן מוכרות פתרונות, לא חוויות. הפרויקט של Vertica הוא הדגמה מלאה של ה-DNA שלנו: מהרעיון הראשוני ועד ל-Final Cut, ליווי אסטרטגי שהופך מוצר טכני לשיחת סלון.",
@@ -2646,6 +2662,7 @@ This project is available for full viewing in the portfolio. To discuss a simila
   {
     id: "instructional-video-customer-journey",
     coverImage: "/vlogimg/instructional-video-cover.jpg",
+    sectionImages: ["/vlogimg/instructional-video-s1.jpg"],
     titleHe: "מסע הלקוח בווידאו: למה סרטון ההדרכה הוא הסגירה שאף אחד לא מכין",
     titleEn: "The Video Customer Journey: Why the Instructional Video Is the Close Nobody Prepares",
     excerptHe: "כולם משקיעים בסרט התדמית. מעטים מכינים סרטון הדרכה. אבל הלקוח שמחפש 'איך זה עובד' לפני שהוא קונה, הוא הלקוח הכי קרוב לסגירה.",
@@ -2813,6 +2830,7 @@ But when we ask clients what prevents their customers from closing, the answer i
   {
     id: "hybrid-distribution-employer-branding",
     coverImage: "/vlogimg/hybrid-distribution-cover.jpg",
+    sectionImages: ["/vlogimg/hybrid-distribution-s1.jpg"],
     titleHe: "הפקה אחת, ארבעה ערוצים: המדריך למערך ההפצה ההיברידי של מיתוג מעסיק",
     titleEn: "One Production, Four Channels: The Guide to Hybrid Distribution for Employer Branding",
     excerptHe: "הגרסה הקצרה של 'להיות אשטרומיסט' לא הייתה אחרי-מחשבה, היא הייתה חלק מהתכנון מהיום הראשון. כך בונים מערך הפצה שמגיע לכל קהל ביומו ובפורמט שלו.",
@@ -2957,7 +2975,9 @@ At videoshop, every employer branding project starts with a question: what are y
   },
   {
     id: "kama-ole-seret-tadmit",
+    sectionImages: ["/vlogimg/kama-ole-seret-tadmit-s1.jpg"],
     coverImage: "/vlogimg/kama-ole-seret-tadmit-cover.jpg",
+    sectionImages: ["/vlogimg/kama-ole-seret-tadmit-s1.jpg"],
     titleHe: "כמה עולה סרט תדמית? מדריך מחירים אמיתי לשנת 2025",
     titleEn: "How Much Does a Brand Film Cost? An Honest Pricing Guide for 2025",
     excerptHe: "מה באמת קובע את המחיר של סרט תדמית? מדריך שקוף שמסביר את הפרמטרים — בלי בלוף.",
@@ -3067,7 +3087,9 @@ Want a transparent, itemized quote? Fill out our short quiz — we'll be in touc
   },
   {
     id: "seret-giyus-hon-startup",
+    sectionImages: ["/vlogimg/seret-giyus-hon-startup-s1.jpg"],
     coverImage: "/vlogimg/seret-giyus-hon-startup-cover.jpg",
+    sectionImages: ["/vlogimg/seret-giyus-hon-startup-s1.jpg"],
     titleHe: "סרט גיוס הון לסטארטאפ: איך עושים אותו נכון",
     titleEn: "Startup Fundraising Video: How to Do It Right",
     excerptHe: "משקיעים רואים אלפי מצגות. סרט שמספר את הסיפור נכון — יכול לשנות החלטות. כל מה שצריך לדעת לפני ההפקה.",
@@ -3193,7 +3215,9 @@ We'd love to hear about your startup and suggest what fits. Fill out the quiz an
   },
   {
     id: "employer-branding-video-israel",
+    sectionImages: ["/vlogimg/employer-branding-video-s1.jpg"],
     coverImage: "/vlogimg/employer-branding-video-cover.jpg",
+    sectionImages: ["/vlogimg/employer-branding-video-s1.jpg"],
     titleHe: "Employer Branding וידאו בישראל: המדריך המלא לגיוס עובדים עם תוכן",
     titleEn: "Employer Branding Video in Israel: Complete Guide to Recruiting with Content",
     excerptHe: "חברות ישראליות מאבדות מועמדים טובים לטובת חברות שמספרות סיפור טוב יותר. כך עושים employer branding שבאמת עובד.",
@@ -3321,7 +3345,9 @@ Want to talk employer branding for your company? Leave your details — we'll be
   },
   {
     id: "hafakat-video-b2b",
+    sectionImages: ["/vlogimg/hafakat-video-b2b-s1.jpg"],
     coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    sectionImages: ["/vlogimg/hafakat-video-b2b-s1.jpg"],
     titleHe: "הפקת וידאו B2B: למה עסקים שמוכרים לעסקים צריכים סרט שונה לגמרי",
     titleEn: "B2B Video Production: Why Businesses Selling to Businesses Need a Completely Different Film",
     excerptHe: "סרט B2B שנראה כמו פרסומת B2C — לא עובד. הנה מה שבאמת משכנע קונים מוסדיים.",

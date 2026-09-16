@@ -47,33 +47,28 @@ export async function generateMetadata({
 }
 
 // Render rich body: ## h2, ### h3, **bold** inline, [IMAGE] placeholder, paragraphs
-function renderBody(text: string, coverImage: string | undefined, imageAlt: string) {
+function renderBody(text: string, sectionImages: string[], imageAlt: string) {
   const blocks = text.split(/\n\n+/);
   const elements: React.ReactNode[] = [];
-  let imageInserted = false;
+  let imgIdx = 0;
 
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i].trim();
     if (!block) continue;
 
     if (block === "[IMAGE]") {
-      imageInserted = true;
+      const src = sectionImages[imgIdx++];
+      if (!src) continue; // skip if no image available for this slot
       elements.push(
         <figure key={`img-${i}`} className="my-12 -mx-4 md:-mx-12">
-          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-white border border-gray-200">
-            {coverImage ? (
-              <Image
-                src={coverImage}
-                alt={imageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 800px"
-              />
-            ) : (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-[#555] text-xs tracking-widest uppercase">Image placeholder</span>
-              </div>
-            )}
+          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-gray-200">
+            <Image
+              src={src}
+              alt={imageAlt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 800px"
+            />
           </div>
         </figure>
       );
@@ -236,7 +231,7 @@ export default async function BlogPostPage({
 
         {/* Body */}
         <div className="mt-2">
-          {renderBody(body, post.coverImage, title)}
+          {renderBody(body, (post as any).sectionImages ?? [], title)}
         </div>
 
         {/* Author bar */}
