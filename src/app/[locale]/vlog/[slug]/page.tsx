@@ -46,7 +46,19 @@ export async function generateMetadata({
   };
 }
 
-// Render rich body: ## h2, ### h3, **bold** inline, [IMAGE] placeholder, paragraphs
+// Inline: handle **bold** and *italic*
+function renderInline(text: string): React.ReactNode[] {
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+  return parts.map((part, j) => {
+    if (part.startsWith("**") && part.endsWith("**"))
+      return <strong key={j} className="text-[#111] font-bold">{part.slice(2, -2)}</strong>;
+    if (part.startsWith("*") && part.endsWith("*"))
+      return <em key={j}>{part.slice(1, -1)}</em>;
+    return part;
+  });
+}
+
+// Render rich body: ## h2, ### h3, bold inline, [IMAGE], bullet lists, checkmark lines, paragraphs
 function renderBody(text: string, sectionImages: string[], imageAlt: string) {
   const blocks = text.split(/\n\n+/);
   const elements: React.ReactNode[] = [];
@@ -58,37 +70,13 @@ function renderBody(text: string, sectionImages: string[], imageAlt: string) {
 
     if (block === "[IMAGE]") {
       const src = sectionImages[imgIdx++];
-      if (!src) continue; // skip if no image available for this slot
+      if (!src) continue;
       elements.push(
         <figure key={`img-${i}`} className="my-12 -mx-4 md:-mx-12">
           <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-gray-200">
-            <Image
-              src={src}
-              alt={imageAlt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 800px"
-            />
+            <Image src={src} alt={imageAlt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
           </div>
         </figure>
-      );
-      continue;
-    }
-
-    if (block.startsWith("## ")) {
-      elements.push(
-        <h2 key={i} className="text-2xl md:text-3xl font-black text-[#111] mt-14 mb-5 leading-tight">
-          {block.slice(3)}
-        </h2>
-      );
-      continue;
-    }
-
-    if (block.startsWith("### ")) {
-      elements.push(
-        <h3 key={i} className="text-xl font-bold text-[#c9a800] mt-10 mb-4">
-          {block.slice(4)}
-        </h3>
       );
       continue;
     }
@@ -98,18 +86,79 @@ function renderBody(text: string, sectionImages: string[], imageAlt: string) {
       continue;
     }
 
-    // Regular paragraph — handle **bold** inline
-    const parts = block.split(/(\*\*[^*]+\*\*)/g);
-    const rendered = parts.map((part, j) => {
-      if (part.startsWith("**") && part.endsWith("**")) {
-        return <strong key={j} className="text-[#111] font-bold">{part.slice(2, -2)}</strong>;
-      }
-      return part;
-    });
+    if (block.startsWith("## ")) {
+      elements.push(
+        <h2 key={i} className="text-2xl md:text-3xl font-black text-[#111] mt-14 mb-4 leading-tight border-b border-gray-100 pb-3">
+          {renderInline(block.slice(3))}
+        </h2>
+      );
+      continue;
+    }
 
+    if (block.startsWith("### ")) {
+      elements.push(
+        <h3 key={i} className="text-lg font-bold text-[#111] mt-10 mb-3 flex items-center gap-2">
+          <span className="w-1 h-5 bg-[#FFD000] rounded-full inline-block shrink-0" />
+          {renderInline(block.slice(4))}
+        </h3>
+      );
+      continue;
+    }
+
+    // Bullet / checkmark list block — consecutive lines starting with "- " or "✅" or "❌"
+    const lines = block.split("\n");
+    const isList = lines.every(l => /^[-✅❌•]\s/.test(l.trim()) || l.trim() === "");
+    if (isList && lines.length > 1) {
+      const items = lines.filter(l => l.trim());
+      elements.push(
+        <ul key={i} className="my-6 space-y-3 pl-1">
+          {items.map((item, j) => {
+            const raw = item.trim();
+            const isCheck = raw.startsWith("✅");
+            const isCross = raw.startsWith("❌");
+            const content = raw.replace(/^[-✅❌•]\s*/, "");
+            return (
+              <li key={j} className="flex items-start gap-3">
+                {isCheck ? (
+                  <span className="mt-0.5 shrink-0 text-green-600 font-bold text-sm">✅</span>
+                ) : isCross ? (
+                  <span className="mt-0.5 shrink-0 text-red-500 font-bold text-sm">❌</span>
+                ) : (
+                  <span className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-[#FFD000]" />
+                )}
+                <span className="text-[#444] leading-relaxed text-[1rem]">{renderInline(content)}</span>
+              </li>
+            );
+          })}
+        </ul>
+      );
+      continue;
+    }
+
+    // Numbered item: **N. Title** — style as a mini heading
+    const numberedMatch = block.match(/^\*\*(\d+)\.\s+(.+?)\*\*(\s*[\n][\s\S]*)?$/);
+    if (numberedMatch) {
+      const [, num, title, rest] = numberedMatch;
+      elements.push(
+        <div key={i} className="my-6">
+          <div className="flex items-start gap-3 mb-2">
+            <span className="shrink-0 w-7 h-7 rounded-full bg-[#FFD000]/15 border border-[#FFD000]/30 flex items-center justify-center text-xs font-black text-[#b89200]">
+              {num}
+            </span>
+            <strong className="text-[#111] font-bold text-[1.05rem] leading-snug pt-0.5">{title}</strong>
+          </div>
+          {rest?.trim() && (
+            <p className="text-[#555] leading-[1.85] text-[1.05rem] pl-10">{renderInline(rest.trim())}</p>
+          )}
+        </div>
+      );
+      continue;
+    }
+
+    // Regular paragraph
     elements.push(
-      <p key={i} className="text-[#555] leading-[1.85] text-[1.05rem] mb-6">
-        {rendered}
+      <p key={i} className="text-[#444] leading-[1.9] text-[1.05rem] mb-6">
+        {renderInline(block)}
       </p>
     );
   }
