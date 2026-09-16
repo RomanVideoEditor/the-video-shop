@@ -114,7 +114,7 @@ export default async function VlogPage({
                         )}
                       </div>
 
-                      <h2 className={`font-black text-[#111] leading-tight mb-3 group-hover:text-[#FFD000] transition-colors duration-200 ${
+                      <h2 className={`font-black text-[#111] leading-tight mb-3 group-hover:text-[#c9a800] transition-colors duration-200 ${
                         isFirst ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"
                       }`}>
                         {title}

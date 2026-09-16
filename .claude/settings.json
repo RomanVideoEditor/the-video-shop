@@ -1,5 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "acceptAll"
+    "defaultMode": "dontAsk"
   }
 }

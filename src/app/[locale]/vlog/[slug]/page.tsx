@@ -86,7 +86,7 @@ function renderBody(text: string, sectionImages: string[], imageAlt: string) {
 
     if (block.startsWith("### ")) {
       elements.push(
-        <h3 key={i} className="text-xl font-bold text-[#FFD000] mt-10 mb-4">
+        <h3 key={i} className="text-xl font-bold text-[#c9a800] mt-10 mb-4">
           {block.slice(4)}
         </h3>
       );
@@ -211,7 +211,7 @@ export default async function BlogPostPage({
         </h1>
 
         {/* Excerpt / lead */}
-        <p className="text-lg md:text-xl text-[#FFD000]/80 leading-relaxed mb-10 border-r-2 border-[#FFD000]/30 pr-5">
+        <p className="text-lg md:text-xl text-[#444] leading-relaxed mb-10 border-r-4 border-[#FFD000] pr-5">
           {isHe ? post.excerptHe : post.excerptEn}
         </p>
 
