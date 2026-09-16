@@ -458,6 +458,7 @@ export const portfolioVideos: PortfolioVideo[] = [
 export interface VlogPost {
   id: string;
   coverImage?: string; // path under /public, e.g. "/vlogimg/ai-cover.jpg"
+  sectionImages?: string[]; // additional images for [IMAGE] placeholders in body
   titleHe: string;
   titleEn: string;
   excerptHe: string;

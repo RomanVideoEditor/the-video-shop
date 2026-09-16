@@ -231,7 +231,7 @@ export default async function BlogPostPage({
 
         {/* Body */}
         <div className="mt-2">
-          {renderBody(body, (post as any).sectionImages ?? [], title)}
+          {renderBody(body, post.sectionImages ?? [], title)}
         </div>
 
         {/* Author bar */}
