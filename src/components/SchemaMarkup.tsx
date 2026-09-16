@@ -4,11 +4,11 @@ export default function SchemaMarkup() {
     "@graph": [
       {
         "@type": "VideoProductionService",
-        "@id": "https://thevideoshop.co.il/#business",
-        name: "The Video Shop",
+        "@id": "https://www.the-videoshop.com/#business",
+        name: "videoshop",
         description:
           "סטודיו בוטיק להפקות וידאו ו-AI לחברות המובילות במשק. מעל 20 שנות ניסיון בבימוי והפקה.",
-        url: "https://thevideoshop.co.il",
+        url: "https://www.the-videoshop.com",
         sameAs: ["https://www.youtube.com/@romangor"],
         areaServed: { "@type": "Country", name: "Israel" },
         knowsAbout: [
@@ -32,12 +32,12 @@ export default function SchemaMarkup() {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://thevideoshop.co.il/#local",
-        name: "The Video Shop",
-        image: "https://thevideoshop.co.il/og-image.jpg",
+        "@id": "https://www.the-videoshop.com/#local",
+        name: "videoshop",
+        image: "https://www.the-videoshop.com/og-image.jpg",
         address: { "@type": "PostalAddress", addressCountry: "IL" },
         email: "roman@the-videoshop.com",
-        url: "https://thevideoshop.co.il",
+        url: "https://www.the-videoshop.com",
       },
     ],
   };

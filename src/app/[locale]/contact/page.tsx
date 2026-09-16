@@ -1,6 +1,8 @@
-import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import ContactForm from "./ContactForm";
+import { buildAlternates } from "@/app/[locale]/layout";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import QuoteWizard from "./QuoteWizard";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -9,7 +11,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("contactTitle"), description: t("contactDesc") };
+  const isHe = locale === "he";
+  return {
+    title: t("contactTitle"),
+    description: t("contactDesc"),
+    keywords: isHe
+      ? ["הצעת מחיר סרט תדמית", "הפקת וידאו לעסקים", "צור קשר סטודיו וידאו", "הפקת וידאו B2B ישראל", "סרט תדמית מחיר"]
+      : ["video production quote Israel", "B2B video studio contact", "brand film inquiry", "video production Israel"],
+    alternates: buildAlternates(locale, "contact"),
+    openGraph: { title: t("contactTitle"), description: t("contactDesc") },
+    twitter: { card: "summary_large_image", title: t("contactTitle"), description: t("contactDesc") },
+  };
 }
 
 export default async function ContactPage({
@@ -18,25 +30,11 @@ export default async function ContactPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "contact" });
-
-  const labels = {
-    h1: t("h1"),
-    subtitle: t("subtitle"),
-    name: t("name"),
-    company: t("company"),
-    email: t("email"),
-    phone: t("phone"),
-    projectType: t("projectType"),
-    projectTypes: t.raw("projectTypes") as string[],
-    message: t("message"),
-    submit: t("submit"),
-    sending: t("sending"),
-    success: t("success"),
-    required: t("required"),
-    trustedBy: t("trustedBy"),
-    trustQuote: t("trustQuote"),
-  };
-
-  return <ContactForm labels={labels} locale={locale} />;
+  const isHe = locale === "he";
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} crumbs={[{ name: isHe ? "צור קשר" : "Contact", path: "/contact" }]} />
+      <QuoteWizard locale={locale} />
+    </>
+  );
 }

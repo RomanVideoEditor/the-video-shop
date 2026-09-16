@@ -59,12 +59,12 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block mb-6">
-            <span className="text-xs font-semibold tracking-[0.3em] text-[#c8a96e] uppercase border border-[#c8a96e]/30 px-4 py-2 rounded-full">
+            <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full">
               Portfolio
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-[#f5f5f0] mb-6">{labels.h1}</h1>
-          <p className="text-xl text-[#6b6b6b] max-w-2xl">{labels.subtitle}</p>
+          <h1 className="text-4xl md:text-6xl font-black text-[#111] mb-6">{labels.h1}</h1>
+          <p className="text-xl text-[#555] max-w-2xl">{labels.subtitle}</p>
         </div>
       </section>
 
@@ -78,8 +78,8 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
                 onClick={() => setFilter(f.key)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                   filter === f.key
-                    ? "bg-[#c8a96e] text-[#0a0a0a]"
-                    : "border border-[#1e1e1e] text-[#6b6b6b] hover:border-[#c8a96e]/50 hover:text-[#c8a96e]"
+                    ? "bg-[#FFD000] text-[#111]"
+                    : "border border-gray-200 text-[#555] hover:border-[#FFD000]/50 hover:text-[#FFD000]"
                 }`}
               >
                 {f.label}
@@ -94,7 +94,7 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filtered.map((video) => (
-              <article key={video.id} className="bg-[#111] border border-[#1e1e1e] rounded-2xl overflow-hidden hover:border-[#c8a96e]/30 transition-colors">
+              <article key={video.id} className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-[#FFD000]/30 transition-colors">
                 <VideoEmbed
                   youtubeId={video.youtubeId}
                   vimeoId={video.vimeoId}
@@ -103,25 +103,25 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
                 />
                 <div className="p-6">
                   {video.client && (
-                    <span className="text-xs font-semibold tracking-wider text-[#c8a96e] uppercase">{video.client}</span>
+                    <span className="text-xs font-semibold tracking-wider text-[#FFD000] uppercase">{video.client}</span>
                   )}
-                  <h2 className="text-xl font-bold text-[#f5f5f0] mt-2 mb-4">
+                  <h2 className="text-xl font-bold text-[#111] mt-2 mb-4">
                     {isHe ? video.titleHe : video.titleEn}
                   </h2>
                   <div className="space-y-3">
                     <div>
-                      <span className="text-xs font-semibold text-[#6b6b6b] uppercase tracking-widest block mb-1">
+                      <span className="text-xs font-semibold text-[#555] uppercase tracking-widest block mb-1">
                         {labels.challenge}
                       </span>
-                      <p className="text-sm text-[#f5f5f0]/60">
+                      <p className="text-sm text-[#666]">
                         {isHe ? video.challengeHe : video.challengeEn}
                       </p>
                     </div>
                     <div>
-                      <span className="text-xs font-semibold text-[#6b6b6b] uppercase tracking-widest block mb-1">
+                      <span className="text-xs font-semibold text-[#555] uppercase tracking-widest block mb-1">
                         {labels.solution}
                       </span>
-                      <p className="text-sm text-[#f5f5f0]/60">
+                      <p className="text-sm text-[#666]">
                         {isHe ? video.solutionHe : video.solutionEn}
                       </p>
                     </div>

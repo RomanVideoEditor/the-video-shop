@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "The Video Shop – Boutique Video & AI Production Studio";
+export const alt = "videoshop – Boutique Video & AI Production Studio";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -33,7 +33,7 @@ export default async function OGImage({
           position: "absolute",
           top: 0, left: 0, right: 0,
           height: 4,
-          background: "#c8a96e",
+          background: "#FFD000",
         }} />
 
         {/* Background subtle grid */}
@@ -45,15 +45,17 @@ export default async function OGImage({
 
         {/* Top: logo + badge */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 0 }}>
-            <span style={{ color: "#c8a96e", fontSize: 32, fontWeight: 900, letterSpacing: -1 }}>Video</span>
-            <span style={{ color: "#f5f5f0", fontSize: 32, fontWeight: 900, letterSpacing: -1 }}>Shop</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <div style={{ width: 36, height: 36, borderRadius: 999, background: "#FFD000", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 0, height: 0, borderTop: "8px solid transparent", borderBottom: "8px solid transparent", borderLeft: "14px solid #111", marginLeft: 3, display: "flex" }} />
+            </div>
+            <span style={{ color: "#f5f5f0", fontSize: 28, fontWeight: 900, letterSpacing: -1 }}>videoshop</span>
           </div>
           <div style={{
             border: "1px solid rgba(200,169,110,0.35)",
             borderRadius: 999,
             padding: "8px 20px",
-            color: "#c8a96e",
+            color: "#FFD000",
             fontSize: 12,
             fontWeight: 700,
             letterSpacing: "0.2em",
@@ -98,7 +100,7 @@ export default async function OGImage({
             ))}
           </div>
           <div style={{
-            background: "#c8a96e",
+            background: "#FFD000",
             color: "#0a0a0a",
             fontWeight: 800,
             fontSize: 16,

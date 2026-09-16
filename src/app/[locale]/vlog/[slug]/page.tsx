@@ -5,6 +5,7 @@ import { vlogPosts } from "@/lib/videos";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import VideoEmbed from "@/components/VideoEmbed";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export async function generateStaticParams() {
   return vlogPosts.map((post) => ({ slug: post.id }));
@@ -21,7 +22,7 @@ export async function generateMetadata({
   const isHe = locale === "he";
   const title = isHe ? post.titleHe : post.titleEn;
   const desc = isHe ? post.excerptHe : post.excerptEn;
-  const BASE = "https://thevideoshop.co.il";
+  const BASE = "https://www.the-videoshop.com";
   const canonical = isHe ? `${BASE}/vlog/${slug}` : `${BASE}/en/vlog/${slug}`;
   return {
     title,
@@ -59,7 +60,7 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
       imageInserted = true;
       elements.push(
         <figure key={`img-${i}`} className="my-12 -mx-4 md:-mx-12">
-          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-[#1e1e1e]">
+          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-white border border-gray-200">
             {coverImage ? (
               <Image
                 src={coverImage}
@@ -70,7 +71,7 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-[#6b6b6b] text-xs tracking-widest uppercase">Image placeholder</span>
+                <span className="text-[#555] text-xs tracking-widest uppercase">Image placeholder</span>
               </div>
             )}
           </div>
@@ -81,7 +82,7 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
 
     if (block.startsWith("## ")) {
       elements.push(
-        <h2 key={i} className="text-2xl md:text-3xl font-black text-[#f5f5f0] mt-14 mb-5 leading-tight">
+        <h2 key={i} className="text-2xl md:text-3xl font-black text-[#111] mt-14 mb-5 leading-tight">
           {block.slice(3)}
         </h2>
       );
@@ -90,7 +91,7 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
 
     if (block.startsWith("### ")) {
       elements.push(
-        <h3 key={i} className="text-xl font-bold text-[#c8a96e] mt-10 mb-4">
+        <h3 key={i} className="text-xl font-bold text-[#FFD000] mt-10 mb-4">
           {block.slice(4)}
         </h3>
       );
@@ -98,7 +99,7 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
     }
 
     if (block === "---") {
-      elements.push(<hr key={i} className="border-[#1e1e1e] my-12" />);
+      elements.push(<hr key={i} className="border-gray-200 my-12" />);
       continue;
     }
 
@@ -106,13 +107,13 @@ function renderBody(text: string, coverImage: string | undefined, imageAlt: stri
     const parts = block.split(/(\*\*[^*]+\*\*)/g);
     const rendered = parts.map((part, j) => {
       if (part.startsWith("**") && part.endsWith("**")) {
-        return <strong key={j} className="text-[#f5f5f0] font-bold">{part.slice(2, -2)}</strong>;
+        return <strong key={j} className="text-[#111] font-bold">{part.slice(2, -2)}</strong>;
       }
       return part;
     });
 
     elements.push(
-      <p key={i} className="text-[#f5f5f0]/65 leading-[1.85] text-[1.05rem] mb-6">
+      <p key={i} className="text-[#555] leading-[1.85] text-[1.05rem] mb-6">
         {rendered}
       </p>
     );
@@ -134,15 +135,45 @@ export default async function BlogPostPage({
   const isHe = locale === "he";
   const title = isHe ? post.titleHe : post.titleEn;
   const body = isHe ? post.bodyHe : post.bodyEn;
+  const BASE = "https://www.the-videoshop.com";
+  const canonical = isHe ? `${BASE}/vlog/${slug}` : `${BASE}/en/vlog/${slug}`;
+  const desc = isHe ? post.excerptHe : post.excerptEn;
+
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: desc,
+    url: canonical,
+    datePublished: post.date,
+    dateModified: post.date,
+    image: post.coverImage ? `${BASE}${post.coverImage}` : `${BASE}/og-image.jpg`,
+    author: { "@type": "Organization", name: "videoshop", url: BASE },
+    publisher: {
+      "@type": "Organization",
+      name: "videoshop",
+      logo: { "@type": "ImageObject", url: `${BASE}/favicon.svg` },
+    },
+    inLanguage: isHe ? "he" : "en",
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+  };
 
   return (
     <article className="pt-28 pb-24 px-6">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <BreadcrumbSchema
+        locale={locale}
+        crumbs={[
+          { name: isHe ? "בלוג" : "Blog", path: "/vlog" },
+          { name: title, path: `/vlog/${slug}` },
+        ]}
+      />
       <div className="max-w-3xl mx-auto">
 
         {/* Back */}
         <Link
           href="/vlog"
-          className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-[#6b6b6b] hover:text-[#c8a96e] uppercase transition-colors mb-12"
+          className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-[#555] hover:text-[#FFD000] uppercase transition-colors mb-12"
         >
           ← {t("backToBlog")}
         </Link>
@@ -150,27 +181,27 @@ export default async function BlogPostPage({
         {/* Tags + meta */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
           {post.tags.map((tag) => (
-            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#c8a96e] uppercase border border-[#c8a96e]/25 px-3 py-1 rounded-full">
+            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/25 px-3 py-1 rounded-full">
               {tag}
             </span>
           ))}
-          <span className="text-[#6b6b6b]/40">·</span>
-          <time className="text-xs text-[#6b6b6b]">
+          <span className="text-[#555]/40">·</span>
+          <time className="text-xs text-[#555]">
             {new Date(post.date).toLocaleDateString(isHe ? "he-IL" : "en-US", {
               year: "numeric", month: "long", day: "numeric",
             })}
           </time>
           {post.readingTime && (
             <>
-              <span className="text-[#6b6b6b]/40">·</span>
-              <span className="text-xs text-[#6b6b6b]">{post.readingTime} {t("minRead")}</span>
+              <span className="text-[#555]/40">·</span>
+              <span className="text-xs text-[#555]">{post.readingTime} {t("minRead")}</span>
             </>
           )}
         </div>
 
         {/* Related video — shown before article title if exists */}
         {(post.relatedYoutubeId || post.relatedVimeoId) && (
-          <div className="mb-10 rounded-xl overflow-hidden border border-[#1e1e1e] shadow-2xl">
+          <div className="mb-10 rounded-xl overflow-hidden border border-gray-200 shadow-2xl">
             <VideoEmbed
               youtubeId={post.relatedYoutubeId}
               vimeoId={post.relatedVimeoId}
@@ -180,21 +211,21 @@ export default async function BlogPostPage({
         )}
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-black text-[#f5f5f0] mb-8 leading-[1.1]">
+        <h1 className="text-3xl md:text-5xl font-black text-[#111] mb-8 leading-[1.1]">
           {title}
         </h1>
 
         {/* Excerpt / lead */}
-        <p className="text-lg md:text-xl text-[#c8a96e]/80 leading-relaxed mb-10 border-r-2 border-[#c8a96e]/30 pr-5">
+        <p className="text-lg md:text-xl text-[#FFD000]/80 leading-relaxed mb-10 border-r-2 border-[#FFD000]/30 pr-5">
           {isHe ? post.excerptHe : post.excerptEn}
         </p>
 
         {/* Cover image — hero */}
         {post.coverImage && (
-          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-[#1e1e1e] mb-12">
+          <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-white border border-gray-200 mb-12">
             <Image
               src={post.coverImage}
-              alt={`${title} | The Video Shop`}
+              alt={`${title} | videoshop`}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 800px"
@@ -209,13 +240,13 @@ export default async function BlogPostPage({
         </div>
 
         {/* Author bar */}
-        <div className="mt-16 pt-8 border-t border-[#1e1e1e] flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-[#c8a96e]/20 flex items-center justify-center shrink-0">
-            <span className="text-[#c8a96e] font-bold text-sm">R</span>
+        <div className="mt-16 pt-8 border-t border-gray-200 flex items-center gap-4">
+          <div className="w-10 h-10 rounded-full bg-[#FFD000]/20 flex items-center justify-center shrink-0">
+            <span className="text-[#FFD000] font-bold text-sm">R</span>
           </div>
           <div>
-            <p className="text-sm font-semibold text-[#f5f5f0]">The Video Shop</p>
-            <p className="text-xs text-[#6b6b6b]">
+            <p className="text-sm font-semibold text-[#111] tracking-tight">videoshop</p>
+            <p className="text-xs text-[#555]">
               {isHe ? "סטודיו בוטיק להפקות וידאו ו-AI" : "Boutique Video & AI Production Studio"}
             </p>
           </div>
@@ -223,15 +254,15 @@ export default async function BlogPostPage({
 
         {/* Related service internal link */}
         {post.relatedServiceHref && (
-          <div className="mt-10 flex items-center gap-4 p-5 border border-[#c8a96e]/20 rounded-xl bg-[#c8a96e]/5">
-            <div className="w-px h-10 bg-[#c8a96e]/40 shrink-0" />
+          <div className="mt-10 flex items-center gap-4 p-5 border border-[#FFD000]/20 rounded-xl bg-[#FFD000]/5">
+            <div className="w-px h-10 bg-[#FFD000]/40 shrink-0" />
             <div className="flex-1">
-              <p className="text-xs font-semibold tracking-widest text-[#c8a96e]/60 uppercase mb-1">
+              <p className="text-xs font-semibold tracking-widest text-[#FFD000]/60 uppercase mb-1">
                 {isHe ? "השירות הרלוונטי" : "Related Service"}
               </p>
               <Link
                 href={post.relatedServiceHref}
-                className="text-sm font-bold text-[#f5f5f0] hover:text-[#c8a96e] transition-colors"
+                className="text-sm font-bold text-[#111] hover:text-[#FFD000] transition-colors"
               >
                 {isHe ? post.relatedServiceLabelHe : post.relatedServiceLabelEn} ›
               </Link>
@@ -240,21 +271,21 @@ export default async function BlogPostPage({
         )}
 
         {/* CTA */}
-        <div className="mt-14 p-8 bg-[#111] border border-[#1e1e1e] rounded-2xl">
-          <p className="text-xs font-semibold tracking-[0.3em] text-[#c8a96e]/60 uppercase mb-3">The Video Shop</p>
-          <h3 className="text-xl md:text-2xl font-black text-[#f5f5f0] mb-3 leading-tight">
+        <div className="mt-14 p-8 bg-white border border-gray-200 rounded-2xl">
+          <p className="text-xs font-semibold tracking-tight text-[#FFD000]/60 mb-3">videoshop</p>
+          <h3 className="text-xl md:text-2xl font-black text-[#111] mb-3 leading-tight">
             {isHe
               ? "הפרויקט הבא שלכם מתחיל בשיחה"
               : "Your next project starts with a conversation"}
           </h3>
-          <p className="text-sm text-[#6b6b6b] mb-6 leading-relaxed">
+          <p className="text-sm text-[#555] mb-6 leading-relaxed">
             {isHe
-              ? "אנחנו לא עובדים עם כולם — אנחנו עובדים עם מי שרוצה לעשות משהו שייזכרו בו. אם זה נשמע כמוכם, בואו נדבר."
-              : "We don't work with everyone — we work with those who want to make something worth remembering. If that sounds like you, let's talk."}
+              ? "אנחנו לא עובדים עם כולם. אנחנו עובדים עם מי שרוצה לעשות משהו שייזכרו בו. אם זה נשמע כמוכם, בואו נדבר."
+              : "We don't work with everyone. We work with those who want to make something worth remembering. If that sounds like you, let's talk."}
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-[#c8a96e] text-[#0a0a0a] font-bold px-8 py-3.5 rounded-sm hover:bg-[#e8d5a8] transition-colors text-sm tracking-wide uppercase"
+            className="inline-block bg-[#FFD000] text-[#111] font-bold px-8 py-3.5 rounded-sm hover:bg-[#f0c400] transition-colors text-sm tracking-wide uppercase"
           >
             {isHe ? "בואו נדבר" : "Let's Talk"}
           </Link>

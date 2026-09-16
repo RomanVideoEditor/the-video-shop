@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import PortfolioClient from "./PortfolioClient";
 import VideoObjectSchema from "@/components/VideoObjectSchema";
 import { portfolioVideos, toIsoDuration, vimeoThumb, ytThumb } from "@/lib/videos";
+import { buildAlternates } from "@/app/[locale]/layout";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export async function generateMetadata({
   params,
@@ -11,7 +13,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
-  return { title: t("portfolioTitle"), description: t("portfolioDesc") };
+  return {
+    title: t("portfolioTitle"),
+    description: t("portfolioDesc"),
+    alternates: buildAlternates(locale, "portfolio"),
+    openGraph: { title: t("portfolioTitle"), description: t("portfolioDesc") },
+    twitter: { card: "summary_large_image", title: t("portfolioTitle"), description: t("portfolioDesc") },
+  };
 }
 
 export default async function PortfolioPage({
@@ -37,8 +45,10 @@ export default async function PortfolioPage({
     solution: t("solution"),
   };
 
+  const isHe = locale === "he";
   return (
     <>
+      <BreadcrumbSchema locale={locale} crumbs={[{ name: isHe ? "תיק עבודות" : "Portfolio", path: "/portfolio" }]} />
       {/* VideoObject schema for every portfolio video */}
       {portfolioVideos.map((v) => {
         const thumb = v.youtubeId ? ytThumb(v.youtubeId) : v.vimeoId ? vimeoThumb(v.vimeoId) : null;

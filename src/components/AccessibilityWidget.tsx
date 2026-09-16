@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect, useCallback } from "react";
 
 interface Feature {
@@ -46,7 +46,7 @@ export default function AccessibilityWidget({ locale }: { locale: string }) {
     if (on) {
       const el = document.createElement("style");
       el.id = "a11y-links";
-      el.textContent = "a { outline: 2px solid #c8a96e !important; outline-offset: 2px !important; }";
+      el.textContent = "a { outline: 2px solid #FFD000 !important; outline-offset: 2px !important; }";
       document.head.appendChild(el);
     } else {
       style?.remove();
@@ -143,7 +143,7 @@ export default function AccessibilityWidget({ locale }: { locale: string }) {
         onClick={() => setOpen(!open)}
         aria-label={isHe ? "פתח תפריט נגישות" : "Open accessibility menu"}
         aria-expanded={open}
-        className="fixed bottom-6 left-4 z-[190] w-12 h-12 rounded-full bg-[#c8a96e] text-[#0a0a0a] flex items-center justify-center shadow-lg hover:bg-[#e8d5a8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#c8a96e] focus:ring-offset-2 focus:ring-offset-[#0a0a0a]"
+        className="fixed bottom-6 left-4 z-[190] w-12 h-12 rounded-full bg-[#FFD000] text-[#111] flex items-center justify-center shadow-lg hover:bg-[#f0c400] transition-colors focus:outline-none focus:ring-2 focus:ring-[#FFD000] focus:ring-offset-2 focus:ring-offset-[#0a0a0a]"
       >
         {/* Wheelchair / accessibility icon */}
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true">
@@ -166,17 +166,17 @@ export default function AccessibilityWidget({ locale }: { locale: string }) {
             role="dialog"
             aria-modal="true"
             aria-label={isHe ? "תפריט נגישות" : "Accessibility menu"}
-            className="fixed bottom-20 left-4 z-[200] w-72 bg-[#111] border border-[#1e1e1e] rounded-2xl shadow-2xl overflow-hidden"
+            className="fixed bottom-20 left-4 z-[200] w-72 bg-white border border-gray-200 rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
-            <div className="px-5 py-4 border-b border-[#1e1e1e] flex items-center justify-between">
-              <h2 className="font-bold text-[#f5f5f0] text-sm">
+            <div className="px-5 py-4 border-b border-gray-200 flex items-center justify-between">
+              <h2 className="font-bold text-[#111] text-sm">
                 {isHe ? "הגדרות נגישות" : "Accessibility Settings"}
               </h2>
               <button
                 onClick={() => setOpen(false)}
                 aria-label={isHe ? "סגור" : "Close"}
-                className="text-[#6b6b6b] hover:text-[#f5f5f0] transition-colors"
+                className="text-[#555] hover:text-[#111] transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -193,8 +193,8 @@ export default function AccessibilityWidget({ locale }: { locale: string }) {
                   aria-pressed={!!active[feature.key]}
                   className={`flex flex-col items-center gap-2 p-3 rounded-xl border text-xs font-medium transition-all ${
                     active[feature.key]
-                      ? "bg-[#c8a96e]/20 border-[#c8a96e] text-[#c8a96e]"
-                      : "bg-[#0a0a0a] border-[#1e1e1e] text-[#6b6b6b] hover:border-[#c8a96e]/40 hover:text-[#f5f5f0]"
+                      ? "bg-[#FFD000]/20 border-[#FFD000] text-[#FFD000]"
+                      : "bg-white border-gray-200 text-[#555] hover:border-[#FFD000]/40 hover:text-[#111]"
                   }`}
                 >
                   <span className="text-lg leading-none" aria-hidden="true">{feature.icon}</span>
@@ -207,14 +207,14 @@ export default function AccessibilityWidget({ locale }: { locale: string }) {
             <div className="px-4 pb-4">
               <button
                 onClick={resetAll}
-                className="w-full text-xs text-[#6b6b6b] hover:text-[#f5f5f0] border border-[#1e1e1e] rounded-lg py-2 transition-colors"
+                className="w-full text-xs text-[#555] hover:text-[#111] border border-gray-200 rounded-lg py-2 transition-colors"
               >
                 {isHe ? "איפוס הכל" : "Reset All"}
               </button>
             </div>
 
             {/* Footer */}
-            <div className="px-5 py-3 border-t border-[#1e1e1e] bg-[#0a0a0a]">
+            <div className="px-5 py-3 border-t border-gray-200 bg-white">
               <p className="text-[10px] text-[#3a3a3a] text-center">
                 VideoShop · Accessibility
               </p>

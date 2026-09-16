@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -48,15 +48,15 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
       {(youtubeId || vimeoId) && (
         <Image
           src={thumbUrl}
-          alt={altText ?? `The Video Shop – ${title} | Video production thumbnail`}
+          alt={altText ?? `videoshop – ${title} | Video production thumbnail`}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )}
       <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors flex items-center justify-center">
-        <div className="w-16 h-16 rounded-full bg-[#c8a96e] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-          <svg className="w-6 h-6 text-[#0a0a0a] ms-1" fill="currentColor" viewBox="0 0 24 24">
+        <div className="w-16 h-16 rounded-full bg-[#FFD000] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+          <svg className="w-6 h-6 text-[#111] ms-1" fill="currentColor" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>

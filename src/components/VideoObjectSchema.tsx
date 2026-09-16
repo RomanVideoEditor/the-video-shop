@@ -29,8 +29,8 @@ export default function VideoObjectSchema({
     ...(duration && { duration }),
     publisher: {
       "@type": "Organization",
-      name: "The Video Shop",
-      url: "https://thevideoshop.co.il",
+      name: "videoshop",
+      url: "https://www.the-videoshop.com",
     },
   };
 

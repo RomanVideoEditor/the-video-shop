@@ -1,0 +1,441 @@
+span[data-value="arial"]::before {
+	font-family: "Arial";
+}
+
+.ql-font-arial {
+	font-family: "Arial";
+}
+span[data-value="tinos"]::before {
+	font-family: "Tinos";
+}
+
+.ql-font-tinos {
+	font-family: "Tinos";
+}
+span[data-value="raleway"]::before {
+	font-family: "Raleway";
+}
+
+.ql-font-raleway {
+	font-family: "Raleway";
+}
+span[data-value="cousine"]::before {
+	font-family: "Cousine";
+}
+
+.ql-font-cousine {
+	font-family: "Cousine";
+}
+span[data-value="open-sans"]::before {
+	font-family: "Open Sans";
+}
+
+.ql-font-open-sans {
+	font-family: "Open Sans";
+}
+span[data-value="droid-sans"]::before {
+	font-family: "Droid Sans";
+}
+
+.ql-font-droid-sans {
+	font-family: "Droid Sans";
+}
+span[data-value="droid-serif"]::before {
+	font-family: "Droid Serif";
+}
+
+.ql-font-droid-serif {
+	font-family: "Droid Serif";
+}
+span[data-value="eb-garamond"]::before {
+	font-family: "EB Garamond";
+}
+
+.ql-font-eb-garamond {
+	font-family: "EB Garamond";
+}
+span[data-value="pt-sans"]::before {
+	font-family: "PT Sans";
+}
+
+.ql-font-pt-sans {
+	font-family: "PT Sans";
+}
+span[data-value="ubuntu"]::before {
+	font-family: "Ubuntu";
+}
+
+.ql-font-ubuntu {
+	font-family: "Ubuntu";
+}
+span[data-value="lato"]::before {
+	font-family: "Lato";
+}
+
+.ql-font-lato {
+	font-family: "Lato";
+}
+span[data-value="oswald"]::before {
+	font-family: "Oswald";
+}
+
+.ql-font-oswald {
+	font-family: "Oswald";
+}
+span[data-value="abeezee"]::before {
+	font-family: "ABeeZee";
+}
+
+.ql-font-abeezee {
+	font-family: "ABeeZee";
+}
+span[data-value="source-sans-pro"]::before {
+	font-family: "Source Sans Pro";
+}
+
+.ql-font-source-sans-pro {
+	font-family: "Source Sans Pro";
+}
+span[data-value="alegreya"]::before {
+	font-family: "Alegreya";
+}
+
+.ql-font-alegreya {
+	font-family: "Alegreya";
+}
+span[data-value="b612"]::before {
+	font-family: "B612";
+}
+
+.ql-font-b612 {
+	font-family: "B612";
+}
+span[data-value="muli"]::before {
+	font-family: "Muli";
+}
+
+.ql-font-muli {
+	font-family: "Muli";
+}
+span[data-value="titillium"]::before {
+	font-family: "Titillium";
+}
+
+.ql-font-titillium {
+	font-family: "Titillium";
+}
+span[data-value="varela"]::before {
+	font-family: "Varela";
+}
+
+.ql-font-varela {
+	font-family: "Varela";
+}
+span[data-value="volkorn"]::before {
+	font-family: "Volkorn";
+}
+
+.ql-font-volkorn {
+	font-family: "Volkorn";
+}
+span[data-value="ibm-plex"]::before {
+	font-family: "IBM Plex";
+}
+
+.ql-font-ibm-plex {
+	font-family: "IBM Plex";
+}
+span[data-value="crimson-text"]::before {
+	font-family: "Crimson Text";
+}
+
+.ql-font-crimson-text {
+	font-family: "Crimson Text";
+}
+span[data-value="cairo"]::before {
+	font-family: "Cairo";
+}
+
+.ql-font-cairo {
+	font-family: "Cairo";
+}
+span[data-value="biorhyme"]::before {
+	font-family: "BioRhyme";
+}
+
+.ql-font-biorhyme {
+	font-family: "BioRhyme";
+}
+span[data-value="karla"]::before {
+	font-family: "Karla";
+}
+
+.ql-font-karla {
+	font-family: "Karla";
+}
+span[data-value="times-new-roman"]::before {
+	font-family: "Times New Roman";
+}
+
+.ql-font-times-new-roman {
+	font-family: "Times New Roman";
+}
+span[data-value="lora"]::before {
+	font-family: "Lora";
+}
+
+.ql-font-lora {
+	font-family: "Lora";
+}
+span[data-value="mizra"]::before {
+	font-family: "Mizra";
+}
+
+.ql-font-mizra {
+	font-family: "Mizra";
+}
+span[data-value="frank-ruhl-libre"]::before {
+	font-family: "Frank Ruhl Libre";
+}
+
+.ql-font-frank-ruhl-libre {
+	font-family: "Frank Ruhl Libre";
+}
+span[data-value="playfair-display"]::before {
+	font-family: "Playfair Display";
+}
+
+.ql-font-playfair-display {
+	font-family: "Playfair Display";
+}
+span[data-value="archivo"]::before {
+	font-family: "Archivo";
+}
+
+.ql-font-archivo {
+	font-family: "Archivo";
+}
+span[data-value="spectral"]::before {
+	font-family: "Spectral";
+}
+
+.ql-font-spectral {
+	font-family: "Spectral";
+}
+span[data-value="fjalla-one"]::before {
+	font-family: "Fjalla One";
+}
+
+.ql-font-fjalla-one {
+	font-family: "Fjalla One";
+}
+span[data-value="roboto"]::before {
+	font-family: "Roboto";
+}
+
+.ql-font-roboto {
+	font-family: "Roboto";
+}
+span[data-value="montserrat"]::before {
+	font-family: "Montserrat";
+}
+
+.ql-font-montserrat {
+	font-family: "Montserrat";
+}
+span[data-value="monospace"]::before {
+	font-family: "Monospace";
+}
+
+.ql-font-monospace {
+	font-family: "Monospace";
+}
+span[data-value="serif"]::before {
+	font-family: "Serif";
+}
+
+.ql-font-serif {
+	font-family: "Serif";
+}
+span[data-value="sans-serif"]::before {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.ql-font-sans-serif {
+	font-family: Helvetica, Arial, sans-serif;
+}
+span[data-value="rubik"]::before {
+	font-family: "Rubik";
+}
+
+.ql-font-rubik {
+	font-family: "Rubik";
+}
+span[data-value="source-sans"]::before {
+	font-family: "Source Sans";
+}
+
+.ql-font-source-sans {
+	font-family: "Source Sans";
+}
+span[data-value="cardo"]::before {
+	font-family: "Cardo";
+}
+
+.ql-font-cardo {
+	font-family: "Cardo";
+}
+span[data-value="cormorant"]::before {
+	font-family: "Cormorant";
+}
+
+.ql-font-cormorant {
+	font-family: "Cormorant";
+}
+span[data-value="work-sans"]::before {
+	font-family: "Work Sans";
+}
+
+.ql-font-work-sans {
+	font-family: "Work Sans";
+}
+span[data-value="rakkas"]::before {
+	font-family: "Rakkas";
+}
+
+.ql-font-rakkas {
+	font-family: "Rakkas";
+}
+span[data-value="concert-one"]::before {
+	font-family: "Concert One";
+}
+
+.ql-font-concert-one {
+	font-family: "Concert One";
+}
+span[data-value="yatra-one"]::before {
+	font-family: "Yatra One";
+}
+
+.ql-font-yatra-one {
+	font-family: "Yatra One";
+}
+span[data-value="arvo"]::before {
+	font-family: "Arvo";
+}
+
+.ql-font-arvo {
+	font-family: "Arvo";
+}
+span[data-value="lato"]::before {
+	font-family: "Lato";
+}
+
+.ql-font-lato {
+	font-family: "Lato";
+}
+span[data-value="abril-fatface"]::before {
+	font-family: "Abril Fatface";
+}
+
+.ql-font-abril-fatface {
+	font-family: "Abril Fatface";
+}
+span[data-value="ubuntu"]::before {
+	font-family: "Ubuntu";
+}
+
+.ql-font-ubuntu {
+	font-family: "Ubuntu";
+}
+span[data-value="pt-serif"]::before {
+	font-family: "PT Serif";
+}
+
+.ql-font-pt-serif {
+	font-family: "PT Serif";
+}
+span[data-value="old-standard-tt"]::before {
+	font-family: "Old Standard TT";
+}
+
+.ql-font-old-standard-tt {
+	font-family: "Old Standard TT";
+}
+span[data-value="oswald"]::before {
+	font-family: "Oswald";
+}
+
+.ql-font-oswald {
+	font-family: "Oswald";
+}
+span[data-value="pt-sans"]::before {
+	font-family: "PT Sans";
+}
+
+.ql-font-pt-sans {
+	font-family: "PT Sans";
+}
+span[data-value="poppins"]::before {
+	font-family: "Poppins";
+}
+
+.ql-font-poppins {
+	font-family: "Poppins";
+}
+span[data-value="fira-sans"]::before {
+	font-family: "Fira Sans";
+}
+
+.ql-font-fira-sans {
+	font-family: "Fira Sans";
+}
+span[data-value="nunito"]::before {
+	font-family: "Nunito";
+}
+
+.ql-font-nunito {
+	font-family: "Nunito";
+}
+span[data-value="oxygen"]::before {
+	font-family: "Oxygen";
+}
+
+.ql-font-oxygen {
+	font-family: "Oxygen";
+}
+span[data-value="exo-2"]::before {
+	font-family: "Exo 2";
+}
+
+.ql-font-exo-2 {
+	font-family: "Exo 2";
+}
+span[data-value="open-sans"]::before {
+	font-family: "Open Sans";
+}
+
+.ql-font-open-sans {
+	font-family: "Open Sans";
+}
+span[data-value="merriweather"]::before {
+	font-family: "Merriweather";
+}
+
+.ql-font-merriweather {
+	font-family: "Merriweather";
+}
+span[data-value="noto-sans"]::before {
+	font-family: "Noto Sans";
+}
+
+.ql-font-noto-sans {
+	font-family: "Noto Sans";
+}
+span[data-value="source-sans-pro"]::before {
+	font-family: "Source Sans Pro";
+}
+
+.ql-font-source-sans-pro {
+	font-family: "Source Sans Pro";
+}

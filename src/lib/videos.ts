@@ -44,10 +44,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "levi-strauss-celebrity-event",
     youtubeId: "94W9SfZcx-Y",
-    titleHe: "לוי שטרק — אירוע חברה עם דודו ארז | Branded Entertainment",
-    titleEn: "Levi Strauss — Corporate Event with Dudu Erez | Branded Entertainment",
-    challengeHe: "ליצור לעובדי לוי שטרק מזכרת בלתי נשכחת מאירוע חברה — שתהיה גם נכס שיווקי שהעובדים ישתפו ברצון, וגם תוכן Employer Branding שמדבר אמת.",
-    challengeEn: "Create an unforgettable memento for Levi Strauss employees from a corporate event — that is also a marketing asset employees will willingly share, and Employer Branding content that speaks authentically.",
+    titleHe: "לוי שטרק: אירוע חברה עם דודו ארז | Branded Entertainment",
+    titleEn: "Levi Strauss: Corporate Event with Dudu Erez | Branded Entertainment",
+    challengeHe: "ליצור לעובדי לוי שטרק מזכרת בלתי נשכחת מאירוע חברה, שתהיה גם נכס שיווקי שהעובדים ישתפו ברצון, וגם תוכן Employer Branding שמדבר אמת.",
+    challengeEn: "Create an unforgettable memento for Levi Strauss employees from a corporate event, that is also a marketing asset employees will willingly share, and Employer Branding content that speaks authentically.",
     solutionHe: "שילוב טאלנט (דודו ארז) עם ניהול הפקה אינטגרלי מלא: כתיבת תסריט קריאייטיבי מותאם לסגנון הטאלנט, ניהול מול הלקוח ומול הטאלנט, צילום קצבי דינמי שמשחזר את אנרגיית האירוע, עריכה מהודקת. תוצאה: המזכרת הפכה לתוכן ויראלי פנים-ארגוני.",
     solutionEn: "Celebrity talent integration (Dudu Erez) with full integral production management: creative scriptwriting tailored to the talent's style, client and talent coordination, dynamic rhythmic filming that recreates the event's energy, tight editing. Result: the memento became internal viral content.",
     category: "recruitment",
@@ -60,10 +60,10 @@ export const portfolioVideos: PortfolioVideo[] = [
     youtubeId: "VsiMUos3_58",
     titleHe: "סיכום תוכנית מנהיגות רפואית-טכנולוגית | הפקה ממוקסמת מאירוע",
     titleEn: "Medical-Tech Leadership Program Recap | Maximized Production from Event Footage",
-    challengeHe: "לקוח שרצה סרט תדמית מלא אך תקציב מוגבל — הפתרון: ניצול חומרי האירוע עצמו. להפוך תיעוד אירוע לנכס שיווקי שמבסס סמכות, יוצר FOMO ומניע הצטרפות לתוכנית הבאה.",
-    challengeEn: "A client who wanted a full brand film with limited budget — the solution: maximizing the event footage itself. Turning event documentation into a marketing asset that builds authority, creates FOMO, and drives enrollment in the next program.",
-    solutionHe: "סינכרון מספר ראשים מדברים (רופאים, יזמים, מנהלי תוכנית) עם קו נרטיבי רציף, כתוביות בסגנון כתב יד שמחברות בין המסרים, נתוני השפעה על המסך (11 בתי חולים, 20+ מוסדות), תאורה טבעית שמשדרת אותנטיות עסקית. תוצאה: סרט תדמית מלא — מחומרי אירוע בלבד.",
-    solutionEn: "Synchronized multiple talking heads (doctors, entrepreneurs, program managers) with a continuous narrative thread, handwritten-style subtitles connecting messages, on-screen impact numbers (11 hospitals, 20+ institutions), natural lighting that radiates business authenticity. Result: a full brand film — from event footage alone.",
+    challengeHe: "לקוח שרצה סרט תדמית מלא אך תקציב מוגבל. הפתרון: ניצול חומרי האירוע עצמו. להפוך תיעוד אירוע לנכס שיווקי שמבסס סמכות, יוצר FOMO ומניע הצטרפות לתוכנית הבאה.",
+    challengeEn: "A client who wanted a full brand film with limited budget. The solution: maximizing the event footage itself. Turning event documentation into a marketing asset that builds authority, creates FOMO, and drives enrollment in the next program.",
+    solutionHe: "סינכרון מספר ראשים מדברים (רופאים, יזמים, מנהלי תוכנית) עם קו נרטיבי רציף, כתוביות בסגנון כתב יד שמחברות בין המסרים, נתוני השפעה על המסך (11 בתי חולים, 20+ מוסדות), תאורה טבעית שמשדרת אותנטיות עסקית. תוצאה: סרט תדמית מלא, מחומרי אירוע בלבד.",
+    solutionEn: "Synchronized multiple talking heads (doctors, entrepreneurs, program managers) with a continuous narrative thread, handwritten-style subtitles connecting messages, on-screen impact numbers (11 hospitals, 20+ institutions), natural lighting that radiates business authenticity. Result: a full brand film, from event footage alone.",
     category: "hightech",
     client: "Nucleai",
     duration: "2:30",
@@ -72,10 +72,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "vertica-lifestyle-ad",
     youtubeId: "rixmoZ4Y4Uk",
-    titleHe: "Vertica — פרסומת לייף-סטייל | כשבימוי פוגש אסטרטגיה",
-    titleEn: "Vertica — Lifestyle Ad | When Direction Meets Strategy",
-    challengeHe: "לנפץ את מחסום המבוכה סביב מכשיר HealthTech ולמכור חוויה — לא מפרט טכני. לגרום לצופה להרגיש מה המוצר מאפשר, לא רק להבין מה הוא עושה.",
-    challengeEn: "Break the embarrassment barrier around a HealthTech device and sell an experience — not a spec sheet. Make the viewer feel what the product enables, not just understand what it does.",
+    titleHe: "Vertica: פרסומת לייף-סטייל | כשבימוי פוגש אסטרטגיה",
+    titleEn: "Vertica: Lifestyle Ad | When Direction Meets Strategy",
+    challengeHe: "לנפץ את מחסום המבוכה סביב מכשיר HealthTech ולמכור חוויה, לא מפרט טכני. לגרום לצופה להרגיש מה המוצר מאפשר, לא רק להבין מה הוא עושה.",
+    challengeEn: "Break the embarrassment barrier around a HealthTech device and sell an experience, not a spec sheet. Make the viewer feel what the product enables, not just understand what it does.",
     solutionHe: "קריאייטיב נועז: ריקוד, קצב ואנרגיה מתפרצת שמפרקים מבוכה ומנגישים את הפתרון בגובה עיניים. בימוי שחקנים מדויק, כוריאוגרפיה שמעבירה מסר, פוסט-פרודקשן ברמה עולמית. הסרט שמוכיח שקריאייטיב נועז הוא הכלי החזק ביותר של מותג.",
     solutionEn: "Bold creative: dance, rhythm, and explosive energy that dissolve embarrassment and make the solution relatable. Precise actor direction, message-carrying choreography, world-class post-production. The film that proves bold creative is a brand's most powerful tool.",
     category: "commercial",
@@ -86,10 +86,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "vertica-instructional",
     youtubeId: "9uIA1nRaWqc",
-    titleHe: "Vertica — סרטון הדרכה עם הדמיות תלת-מימד רפואיות",
-    titleEn: "Vertica — Instructional Video with Medical 3D Visualization",
-    challengeHe: "להפוך הוראות שימוש טכניות של מכשיר HealthTech לסרטון הדרכה שמפיג חרדה, מוכיח בטיחות ומאפשר ללקוח להגיע מ-Unboxing לשימוש עצמאי — בלי שיחת תמיכה.",
-    challengeEn: "Turn a HealthTech device's technical instructions into an instructional video that reduces anxiety, proves safety, and lets the customer go from unboxing to independent use — without a support call.",
+    titleHe: "Vertica: סרטון הדרכה עם הדמיות תלת-מימד רפואיות",
+    titleEn: "Vertica: Instructional Video with Medical 3D Visualization",
+    challengeHe: "להפוך הוראות שימוש טכניות של מכשיר HealthTech לסרטון הדרכה שמפיג חרדה, מוכיח בטיחות ומאפשר ללקוח להגיע מ-Unboxing לשימוש עצמאי, בלי שיחת תמיכה.",
+    challengeEn: "Turn a HealthTech device's technical instructions into an instructional video that reduces anxiety, proves safety, and lets the customer go from unboxing to independent use, without a support call.",
     solutionHe: "פתיחת Unboxing להפגת חרדה, צילום Top-Down לדיוק ויזואלי, הדמיות תלת-מימד רפואיות להסבר אופן פעולת גלי הרדיו על הרקמות, כתוביות ואייקונים למאפשרים צפייה ללא סאונד.",
     solutionEn: "Unboxing opening to reduce anxiety, Top-Down filming for visual precision, medical 3D visualization to explain radio wave action on tissue, subtitles and icons enabling silent viewing.",
     category: "product",
@@ -100,10 +100,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "vertica-myth-busting",
     youtubeId: "fXThM6hPzSM",
-    titleHe: "Vertica — הפרכת מיתוסים | שלב השיקול במסע הלקוח",
-    titleEn: "Vertica — Myth Busting | Consideration Stage in the Customer Journey",
-    challengeHe: "לטפל בהתנגדויות וחששות נפוצים סביב מכשיר HealthTech לפני שהלקוח מגיע לנקודת הרכישה — בלי להישמע כמו פרסומת.",
-    challengeEn: "Address common objections around a HealthTech device before the customer reaches the purchase point — without sounding like an advertisement.",
+    titleHe: "Vertica: הפרכת מיתוסים | שלב השיקול במסע הלקוח",
+    titleEn: "Vertica: Myth Busting | Consideration Stage in the Customer Journey",
+    challengeHe: "לטפל בהתנגדויות וחששות נפוצים סביב מכשיר HealthTech לפני שהלקוח מגיע לנקודת הרכישה, בלי להישמע כמו פרסומת.",
+    challengeEn: "Address common objections around a HealthTech device before the customer reaches the purchase point, without sounding like an advertisement.",
     solutionHe: "פורמט 'הפרכת מיתוסים' ישיר מול מצלמה: שאלות אמיתיות, תשובות כנות, הדגמות חיות. ממוקם בשלב השיקול של מסע הלקוח ומטפל בחסמי קנייה לפני שהם עוצרים את הרכישה.",
     solutionEn: "Direct-to-camera myth busting: real questions, honest answers, live demonstrations. Positioned at the consideration stage to handle purchase barriers before they stop the sale.",
     category: "product",
@@ -114,12 +114,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "lyfe-social-content",
     youtubeId: "d2xNLprySKQ",
-    titleHe: "LYFE — בנק תוכן סושיאל מיום צילום אחד | קבוצת אשטרום",
-    titleEn: "LYFE — Social Content Bank from One Filming Day | Ashtrom Group",
-    challengeHe: "לייצר נכסים דיגיטליים רבים לרשתות החברתיות עבור מתחם LYFE — בלי להכפיל ימי צילום ותקציבים.",
-    challengeEn: "Generate multiple social media digital assets for the LYFE complex — without multiplying filming days and budgets.",
-    solutionHe: "Max ROI Production: יום צילום מרוכז אחד עם אסטרטגיית תוכן מקיפה. צילום מודולרי (רחפן, גוף ראשון, אווירה) סביב עוגן ויזואלי מרכזי — הכדורים המטאליים בלובי. בפוסט: עריכה קצבית, Motion Overlays ו-Beat-matching לעשרות גרסאות.",
-    solutionEn: "Max ROI Production: one concentrated filming day with a comprehensive content strategy. Modular shooting (drone, POV, atmosphere) around a central visual anchor — the metallic orbs in the lobby. In post: rhythmic editing, motion overlays, and beat-matching to produce dozens of versions.",
+    titleHe: "LYFE: בנק תוכן סושיאל מיום צילום אחד | קבוצת אשטרום",
+    titleEn: "LYFE: Social Content Bank from One Filming Day | Ashtrom Group",
+    challengeHe: "לייצר נכסים דיגיטליים רבים לרשתות החברתיות עבור מתחם LYFE, בלי להכפיל ימי צילום ותקציבים.",
+    challengeEn: "Generate multiple social media digital assets for the LYFE complex, without multiplying filming days and budgets.",
+    solutionHe: "Max ROI Production: יום צילום מרוכז אחד עם אסטרטגיית תוכן מקיפה. צילום מודולרי (רחפן, גוף ראשון, אווירה) סביב עוגן ויזואלי מרכזי: הכדורים המטאליים בלובי. בפוסט: עריכה קצבית, Motion Overlays ו-Beat-matching לעשרות גרסאות.",
+    solutionEn: "Max ROI Production: one concentrated filming day with a comprehensive content strategy. Modular shooting (drone, POV, atmosphere) around a central visual anchor: the metallic orbs in the lobby. In post: rhythmic editing, motion overlays, and beat-matching to produce dozens of versions.",
     category: "commercial",
     client: "Ashtrom Group / LYFE",
     duration: "0:30",
@@ -129,12 +129,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "regev-gutman-10-questions",
     youtubeId: "gE-8-eOtQg0",
-    titleHe: "10 שאלות — פורמט תוכן שעובד לכל עסק | רגב גוטמן",
-    titleEn: "10 Questions — A Content Format That Works for Any Business | Regev Gutman",
-    challengeHe: "לייצר תוכן שיווקי לרגב גוטמן — מוסד לימודי לסטודנטים במתמטיקה, כלכלה והנהלת חשבונות — שיהיה כיפי, אינפורמטיבי ויבנה אמון מול קהל של סטודנטים.",
-    challengeEn: "Create marketing content for Regev Gutman — an educational institution helping students succeed in mathematics, economics, and accounting — that's fun, informative, and builds trust with a student audience.",
-    solutionHe: "פורמט '10 שאלות': צילום באולפן, פרזנטור שמנוסה מול מצלמה, שאלות מגוונות שמשלבות מידע מקצועי עם אנרגיה קלה וכיפית. כתיבה פשוטה ותהליך צילום קצר — פרויקט שהלקוח מבין מהרגע הראשון. התוצר: סרטון שאפשר לפרק לעשרות קטעי Micro-Content לכל המדיות.",
-    solutionEn: "The '10 Questions' format: studio filming, a camera-experienced presenter, varied questions combining professional information with light and fun energy. Simple writing and a short filming process — a project the client understands from day one. The output: one video that can be cut into dozens of micro-content clips for all platforms.",
+    titleHe: "10 שאלות: פורמט תוכן שעובד לכל עסק | רגב גוטמן",
+    titleEn: "10 Questions: A Content Format That Works for Any Business | Regev Gutman",
+    challengeHe: "לייצר תוכן שיווקי לרגב גוטמן, מוסד לימודי לסטודנטים במתמטיקה, כלכלה והנהלת חשבונות, שיהיה כיפי, אינפורמטיבי ויבנה אמון מול קהל של סטודנטים.",
+    challengeEn: "Create marketing content for Regev Gutman, an educational institution helping students succeed in mathematics, economics, and accounting, that's fun, informative, and builds trust with a student audience.",
+    solutionHe: "פורמט '10 שאלות': צילום באולפן, פרזנטור שמנוסה מול מצלמה, שאלות מגוונות שמשלבות מידע מקצועי עם אנרגיה קלה וכיפית. כתיבה פשוטה ותהליך צילום קצר, פרויקט שהלקוח מבין מהרגע הראשון. התוצר: סרטון שאפשר לפרק לעשרות קטעי Micro-Content לכל המדיות.",
+    solutionEn: "The '10 Questions' format: studio filming, a camera-experienced presenter, varied questions combining professional information with light and fun energy. Simple writing and a short filming process, a project the client understands from day one. The output: one video that can be cut into dozens of micro-content clips for all platforms.",
     category: "commercial",
     client: "Regev Gutman",
     duration: "4:30",
@@ -143,10 +143,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "iron-drone-airobotics",
     youtubeId: "N4iNxvFGA34",
-    titleHe: "IRON DRONE — סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
-    titleEn: "IRON DRONE — The Film That Defined a Public Company's Visual Language | Airobotics / Ondas Group",
-    challengeHe: "להפיק סרט מוצר לטכנולוגיה ביטחונית מתקדמת — בלי Brand Book, בלי שפת אינפוגרפיקה קיימת — ולצאת עם זהות מותגית שתאמץ כסטנדרט הרשמי.",
-    challengeEn: "Produce a product film for advanced defense technology — without a Brand Book, without existing infographic language — and emerge with a brand identity adopted as the official standard.",
+    titleHe: "IRON DRONE: סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
+    titleEn: "IRON DRONE: The Film That Defined a Public Company's Visual Language | Airobotics / Ondas Group",
+    challengeHe: "להפיק סרט מוצר לטכנולוגיה ביטחונית מתקדמת, בלי Brand Book, בלי שפת אינפוגרפיקה קיימת, ולצאת עם זהות מותגית שתאמץ כסטנדרט הרשמי.",
+    challengeEn: "Produce a product film for advanced defense technology, without a Brand Book, without existing infographic language, and emerge with a brand identity adopted as the official standard.",
     solutionHe: "בניית Visual DNA מאפס: פלטת צבעים, טיפוגרפיה טכנולוגית, HUD/UI שמשדר סמכות מבצעית. Speed Ramps שמאיטים ברגעי הליבה הטכנולוגיים (שיגור, נעילת מטרה, יירוט) ומאיצים בתנועת מרדף. Drone-to-Drone Tracking אוויריים וסאונד-דיזיין כירורגי שיושב על הביט. התוצאה: הגרפיקה שפותחה לסרט הפכה לסטנדרט העיצובי הרשמי של ONDS.",
     solutionEn: "Built Visual DNA from scratch: color palette, tech typography, HUD/UI conveying operational authority. Speed Ramps that slow at core technical moments (launch, target lock, intercept) and accelerate in pursuit motion. Aerial Drone-to-Drone tracking and surgical sound design sitting on the beat. Result: the graphics developed for the film became ONDS's official design standard.",
     category: "ai",
@@ -157,10 +157,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "green-wall-hero",
     youtubeId: "GoX5983yoQg",
-    titleHe: "Green Wall — חבילת שיווק שלמה מ-2 ימי צילום | Hero Video",
-    titleEn: "Green Wall — Full Marketing Package from 2 Filming Days | Hero Video",
-    challengeHe: "לבנות תשתית שיווקית דיגיטלית מלאה לחברת Green Wall — Hero Video, סרטי אווירה, Testimonials — עם מינימום ימי צילום ומקסימום נכסים.",
-    challengeEn: "Build a complete digital marketing infrastructure for Green Wall — Hero Video, atmosphere shorts, testimonials — with minimum filming days and maximum assets.",
+    titleHe: "Green Wall: חבילת שיווק שלמה מ-2 ימי צילום | Hero Video",
+    titleEn: "Green Wall: Full Marketing Package from 2 Filming Days | Hero Video",
+    challengeHe: "לבנות תשתית שיווקית דיגיטלית מלאה לחברת Green Wall: Hero Video, סרטי אווירה, Testimonials, עם מינימום ימי צילום ומקסימום נכסים.",
+    challengeEn: "Build a complete digital marketing infrastructure for Green Wall: Hero Video, atmosphere shorts, testimonials, with minimum filming days and maximum assets.",
     solutionHe: "2 ימי צילום: יום ראיונות מרוכז ויום שטח ורחפן. מאותם חומרי גלם: סרט מותג יוקרתי לפגישות ועמוד הבית, סרטי אווירה קצרים ל-Top of Funnel ברשתות, ו-3 Testimonials עצמאיים לטפטוף לאורך הגאנט השיווקי.",
     solutionEn: "2 filming days: one concentrated interview day and one field + drone day. From the same raw footage: a premium brand film for meetings and the homepage, short atmosphere films for Top-of-Funnel social media, and 3 standalone testimonials to drip throughout the marketing calendar.",
     category: "commercial",
@@ -171,12 +171,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "akerstein-100-years",
     youtubeId: "GFkN83F-DBU",
-    titleHe: "100 שנה לאקרשטיין — מיתוג מחדש של מותג היסטורי לעתיד סינמטי",
-    titleEn: "100 Years of Akerstein — Rebranding a Historic Brand for a Cinematic Future",
-    challengeHe: "לחגוג 100 שנות היסטוריה של מותג תעשייתי כבד — עם ארכיון מתקופות שונות, מנהלים שמרנים ודיביזיות רבות — ולהוציא סרט אחד קצבי שמכבד את העבר ומביט קדימה.",
-    challengeEn: "Celebrate 100 years of a heavy industrial brand — with multi-era archives, conservative management, and many divisions — and produce one rhythmic film that honors the past and looks forward.",
-    solutionHe: "ארכיטקטורת תסריט אחודה שמחברת 100 שנות היסטוריה עם שפת מותג חדשנית. שילוב חומרי ארכיון (פילם, שחור-לבן, אנלוגי) בתוך צילומי 4K מודרניים ללא נפילת קצב. ימי צילום רחפן מרובים באתרי ייצור ופרויקטים ארציים, עם מעברים חדים מאוויר לקלוז-אפ. תוצאה: סרט דגל שמשמש פתיחת כנסים, ישיבות דירקטוריון ומיתוג מעסיק — במקביל.",
-    solutionEn: "A unified script architecture connecting 100 years of history with an innovative brand language. Archival footage (film, black-and-white, analog) integrated into modern 4K without losing pace. Multiple drone filming days across production sites and national projects, with sharp aerial-to-closeup transitions. Result: a flagship film serving as a conference opener, board meeting asset, and employer branding — simultaneously.",
+    titleHe: "100 שנה לאקרשטיין: מיתוג מחדש של מותג היסטורי לעתיד סינמטי",
+    titleEn: "100 Years of Akerstein: Rebranding a Historic Brand for a Cinematic Future",
+    challengeHe: "לחגוג 100 שנות היסטוריה של מותג תעשייתי כבד, עם ארכיון מתקופות שונות, מנהלים שמרנים ודיביזיות רבות, ולהוציא סרט אחד קצבי שמכבד את העבר ומביט קדימה.",
+    challengeEn: "Celebrate 100 years of a heavy industrial brand, with multi-era archives, conservative management, and many divisions, and produce one rhythmic film that honors the past and looks forward.",
+    solutionHe: "ארכיטקטורת תסריט אחודה שמחברת 100 שנות היסטוריה עם שפת מותג חדשנית. שילוב חומרי ארכיון (פילם, שחור-לבן, אנלוגי) בתוך צילומי 4K מודרניים ללא נפילת קצב. ימי צילום רחפן מרובים באתרי ייצור ופרויקטים ארציים, עם מעברים חדים מאוויר לקלוז-אפ. תוצאה: סרט דגל שמשמש פתיחת כנסים, ישיבות דירקטוריון ומיתוג מעסיק, במקביל.",
+    solutionEn: "A unified script architecture connecting 100 years of history with an innovative brand language. Archival footage (film, black-and-white, analog) integrated into modern 4K without losing pace. Multiple drone filming days across production sites and national projects, with sharp aerial-to-closeup transitions. Result: a flagship film serving as a conference opener, board meeting asset, and employer branding, simultaneously.",
     category: "hightech",
     client: "Akerstein",
     duration: "3:20",
@@ -185,10 +185,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "maccabi-corporate-event",
     youtubeId: "M0EhoVJsxJM",
-    titleHe: "תיעוד אירוע עסקי — אשטרום נכסים | מנכס חד-פעמי לנכס שיווקי",
-    titleEn: "Corporate Event Documentation — Ashtrom Properties | From One-Time Event to Marketing Asset",
-    challengeHe: "להפוך כנס חברה חד-פעמי לתוכן שממשיך לעבוד חודשים קדימה — מבלי להפריע למהלך האירוע ולאנרגיה שלו.",
-    challengeEn: "Turn a one-time corporate conference into content that keeps working months ahead — without disrupting the event's flow and energy.",
+    titleHe: "תיעוד אירוע עסקי: אשטרום נכסים | מנכס חד-פעמי לנכס שיווקי",
+    titleEn: "Corporate Event Documentation: Ashtrom Properties | From One-Time Event to Marketing Asset",
+    challengeHe: "להפוך כנס חברה חד-פעמי לתוכן שממשיך לעבוד חודשים קדימה, מבלי להפריע למהלך האירוע ולאנרגיה שלו.",
+    challengeEn: "Turn a one-time corporate conference into content that keeps working months ahead, without disrupting the event's flow and energy.",
     solutionHe: "Run-and-Gun Filming: צוות קל ומנוסה שלוכד רגעים אמיתיים (חיוכים, רגעי הרצאה, אנרגיה קבוצתית) עם סאונד ישיר מהמיקסר. חומרי גלם מתוכננים למודולריות: סרטון סיכום קצבי, קליפים לרשתות, הרצאות מלאות ו-Micro-Content לגאנט השיווקי.",
     solutionEn: "Run-and-Gun Filming: a light, experienced crew capturing real moments (smiles, lecture highlights, group energy) with direct sound from the mixer. Footage planned for modularity: a rhythmic recap video, social media clips, full lecture recordings, and micro-content to fill the marketing calendar.",
     category: "commercial",
@@ -199,10 +199,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "ashtrom-properties-brand-film",
     youtubeId: "ome2LtSiFWQ",
-    titleHe: "סרט תדמית | אשטרום נכסים — נדל\"ן מניב, היקף ארצי",
-    titleEn: "Brand Film | Ashtrom Properties — Income-Producing Real Estate at National Scale",
-    challengeHe: "להפגין גודל, יציבות ותחכום תאגידי בפחות מדקה וחצי — תוך הצגת פורטפוליו רחב של פרויקטים, ערים וטכנולוגיה לדיירים ומשקיעים.",
-    challengeEn: "Demonstrate scale, stability, and corporate sophistication in under 90 seconds — while presenting a broad portfolio of projects, cities, and technology to tenants and investors.",
+    titleHe: "סרט תדמית | אשטרום נכסים: נדל\"ן מניב, היקף ארצי",
+    titleEn: "Brand Film | Ashtrom Properties: Income-Producing Real Estate at National Scale",
+    challengeHe: "להפגין גודל, יציבות ותחכום תאגידי בפחות מדקה וחצי, תוך הצגת פורטפוליו רחב של פרויקטים, ערים וטכנולוגיה לדיירים ומשקיעים.",
+    challengeEn: "Demonstrate scale, stability, and corporate sophistication in under 90 seconds, while presenting a broad portfolio of projects, cities, and technology to tenants and investors.",
     solutionHe: "סרט 'כרטיס ביקור' תאגידי קלאסי: צילומי רחפן שמכסים אתרים ברחבי הארץ, היררכיית מסרים ברורה (1990 → היום → עתיד), הצגת AshtromHost כ-PropTech differentiator, ותקני LEED Gold ופאנלים סולאריים כ-ESG storytelling לשוק הנדל\"ן המודרני.",
     solutionEn: "Classic corporate 'business card' film: drone coverage across national sites, clear message hierarchy (1990 → today → future), AshtromHost app as a PropTech differentiator, and LEED Gold + solar panels as ESG storytelling for the modern real estate market.",
     category: "realestate",
@@ -213,12 +213,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "ashtrom-ashtromist-short",
     youtubeId: "loW4i8ZOLNA",
-    titleHe: "להיות אשטרומיסט — גרסה קצרה לרשתות | קבוצת אשטרום",
-    titleEn: "Being an Ashtromist — Short Version for Social Media | Ashtrom Group",
-    challengeHe: "לדחוס את נשמת מיתוג המעסיק של קבוצת אשטרום — ה-DNA, הגאווה, הפריסה הארצית — לפורמט קצר שתופס קשב תוך 3 שניות.",
-    challengeEn: "Compress the soul of Ashtrom Group's employer branding — the DNA, the pride, the national footprint — into a short format that captures attention within 3 seconds.",
-    solutionHe: "עריכת 'פינג-פונג' קצבית: מעברים בין דוברים בתוך משפט, שינויי לוקיישן תכופים מהשטח למטה. צילומי רחפן ארוכים שמראים סקייל לצד פרופיל אישי בגובה עיניים. טיפוגרפיה עם + המותג בכל חיתוך. תוצאה: הגרסה הארוכה שומרת על נרטיב מלא, הגרסה הקצרה מניעה קמפיינים דיגיטליים — שתיהן מאותה הפקה אחת.",
-    solutionEn: "Rhythmic 'ping-pong' editing: cuts between speakers mid-sentence, frequent location changes from field to HQ. Long drone shots showing scale alongside eye-level personal profiles. Brand '+' typography on every cut. Result: the long version holds the full narrative, the short version drives digital campaigns — both from the same production.",
+    titleHe: "להיות אשטרומיסט: גרסה קצרה לרשתות | קבוצת אשטרום",
+    titleEn: "Being an Ashtromist: Short Version for Social Media | Ashtrom Group",
+    challengeHe: "לדחוס את נשמת מיתוג המעסיק של קבוצת אשטרום, ה-DNA, הגאווה, הפריסה הארצית, לפורמט קצר שתופס קשב תוך 3 שניות.",
+    challengeEn: "Compress the soul of Ashtrom Group's employer branding, the DNA, the pride, the national footprint, into a short format that captures attention within 3 seconds.",
+    solutionHe: "עריכת 'פינג-פונג' קצבית: מעברים בין דוברים בתוך משפט, שינויי לוקיישן תכופים מהשטח למטה. צילומי רחפן ארוכים שמראים סקייל לצד פרופיל אישי בגובה עיניים. טיפוגרפיה עם + המותג בכל חיתוך. תוצאה: הגרסה הארוכה שומרת על נרטיב מלא, הגרסה הקצרה מניעה קמפיינים דיגיטליים, שתיהן מאותה הפקה אחת.",
+    solutionEn: "Rhythmic 'ping-pong' editing: cuts between speakers mid-sentence, frequent location changes from field to HQ. Long drone shots showing scale alongside eye-level personal profiles. Brand '+' typography on every cut. Result: the long version holds the full narrative, the short version drives digital campaigns, both from the same production.",
     category: "recruitment",
     client: "Ashtrom Group",
     duration: "0:45",
@@ -227,12 +227,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "ashtrom-sorry-for-asking",
     youtubeId: "cbqFpHi5gHE",
-    titleHe: "סליחה על השאלה — Format-Driven Employer Branding | קבוצת אשטרום",
-    titleEn: "Sorry for Asking — Format-Driven Employer Branding | Ashtrom Group",
-    challengeHe: "לייצר תוכן מיתוג מעסיק שמחזיק צופה 15 דקות תמימות — ומרגיש כמו בחירה, לא כמו חובה.",
-    challengeEn: "Create employer branding content that holds a viewer for 15 full minutes — and feels like a choice, not an obligation.",
-    solutionHe: "פורמט 'סליחה על השאלה' מוסב לעולם הארגוני: תחקיר מעמיק, ליהוק עובדים מכל אתרי אשטרום ברחבי הארץ, בימוי non-actors תחת תנאי שטח אמיתיים (אתרי בנייה, מפעלים, משרדים). עריכה סיפורית שמאזנת הומור, גאווה מקצועית ורגעים אנושיים — ויוצרת כלי גיוס ויום כיף פנים-ארגוני בהפקה אחת.",
-    solutionEn: "The 'Sorry for Asking' format adapted for the corporate world: deep research, casting employees across all Ashtrom sites nationwide, directing non-actors in real field conditions (construction sites, factories, offices). Narrative editing that balances humor, professional pride, and human moments — creating both a recruitment tool and an internal team-building experience in one production.",
+    titleHe: "סליחה על השאלה: Format-Driven Employer Branding | קבוצת אשטרום",
+    titleEn: "Sorry for Asking: Format-Driven Employer Branding | Ashtrom Group",
+    challengeHe: "לייצר תוכן מיתוג מעסיק שמחזיק צופה 15 דקות תמימות, ומרגיש כמו בחירה, לא כמו חובה.",
+    challengeEn: "Create employer branding content that holds a viewer for 15 full minutes, and feels like a choice, not an obligation.",
+    solutionHe: "פורמט 'סליחה על השאלה' מוסב לעולם הארגוני: תחקיר מעמיק, ליהוק עובדים מכל אתרי אשטרום ברחבי הארץ, בימוי non-actors תחת תנאי שטח אמיתיים (אתרי בנייה, מפעלים, משרדים). עריכה סיפורית שמאזנת הומור, גאווה מקצועית ורגעים אנושיים, ויוצרת כלי גיוס ויום כיף פנים-ארגוני בהפקה אחת.",
+    solutionEn: "The 'Sorry for Asking' format adapted for the corporate world: deep research, casting employees across all Ashtrom sites nationwide, directing non-actors in real field conditions (construction sites, factories, offices). Narrative editing that balances humor, professional pride, and human moments, creating both a recruitment tool and an internal team-building experience in one production.",
     category: "recruitment",
     client: "Ashtrom Group",
     duration: "15:00",
@@ -241,12 +241,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "ashtrom-employer-branding",
     youtubeId: "3wO3R6Xr8bU",
-    titleHe: "להיות אשטרומיסט — מיתוג מעסיק | קבוצת אשטרום",
-    titleEn: "Being an Ashtromist — Employer Branding | Ashtrom Group",
-    challengeHe: "לקחת קונצרן בנייה ותשתית עצום עם אלפי עובדים בעשרות מוקדים ולזקק אותו לזהות ארגונית אחת שכולם — מצוות השטח ועד ההנהלה — מזדהים איתה.",
-    challengeEn: "Take a massive construction and infrastructure conglomerate with thousands of employees across dozens of sites and distill it into one organizational identity that everyone — from field crews to management — identifies with.",
-    solutionHe: "שבוע הפקה אחד, עשרות לוקיישנים ברחבי הארץ. שילוב צילומי רחפן, שטח ומשרדים עם Sound Design קצבי שמתכתב עם פעימות התעשייה. בימוי non-actors שהוציא גאווה ואותנטיות אמיתית. תוצאה: המונח 'אשטרומיסט' הפך לזהות — לא לסיסמה.",
-    solutionEn: "One production week, dozens of locations across the country. Drone, field, and office footage combined with rhythmic sound design that echoes the industry's pulse. Non-actor directing that brought out real pride and authenticity. Result: 'Ashtromist' became an identity — not a slogan.",
+    titleHe: "להיות אשטרומיסט: מיתוג מעסיק | קבוצת אשטרום",
+    titleEn: "Being an Ashtromist: Employer Branding | Ashtrom Group",
+    challengeHe: "לקחת קונצרן בנייה ותשתית עצום עם אלפי עובדים בעשרות מוקדים ולזקק אותו לזהות ארגונית אחת שכולם, מצוות השטח ועד ההנהלה, מזדהים איתה.",
+    challengeEn: "Take a massive construction and infrastructure conglomerate with thousands of employees across dozens of sites and distill it into one organizational identity that everyone, from field crews to management, identifies with.",
+    solutionHe: "שבוע הפקה אחד, עשרות לוקיישנים ברחבי הארץ. שילוב צילומי רחפן, שטח ומשרדים עם Sound Design קצבי שמתכתב עם פעימות התעשייה. בימוי non-actors שהוציא גאווה ואותנטיות אמיתית. תוצאה: המונח 'אשטרומיסט' הפך לזהות, לא לסיסמה.",
+    solutionEn: "One production week, dozens of locations across the country. Drone, field, and office footage combined with rhythmic sound design that echoes the industry's pulse. Non-actor directing that brought out real pride and authenticity. Result: 'Ashtromist' became an identity, not a slogan.",
     category: "recruitment",
     client: "Ashtrom Group",
     duration: "2:10",
@@ -255,12 +255,12 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "iron-arrow-airobotics",
     youtubeId: "iMfsWqluFpo",
-    titleHe: "IRON ARROW — מערכת יירוט אוטונומית | Airobotics / Ondas Group",
-    titleEn: "IRON ARROW — Autonomous Mass Interception System | Airobotics / Ondas Group",
-    challengeHe: "להמחיש בפני ממשלות, צבאות ומשקיעים מערכת יירוט אוטונומית שלא ניתן לצלם — בצורה שתשדר עליונות טכנולוגית ואמינות מבצעית.",
-    challengeEn: "Visualize an autonomous interception system for governments, militaries, and investors — in a way that conveys technological superiority and operational credibility.",
-    solutionHe: "סרט קונספט AI פוטוריאליסטי מלא: עקביות מכנית קפדנית של סיבי פחמן ורכיבי מל\"ט, סימולציה דינמית של VTOL ונחיל יירוט, HUD overlays טכניים, ועיצוב סאונד תעשייתי. כל פריים — Midjourney, כל תנועה — Kling.",
-    solutionEn: "Full photorealistic AI concept film: meticulous hard-surface consistency of carbon fiber and UAV components, dynamic VTOL and swarm simulation, technical HUD overlays, and industrial sound design. Every frame — Midjourney. Every motion — Kling.",
+    titleHe: "IRON ARROW: מערכת יירוט אוטונומית | Airobotics / Ondas Group",
+    titleEn: "IRON ARROW: Autonomous Mass Interception System | Airobotics / Ondas Group",
+    challengeHe: "להמחיש בפני ממשלות, צבאות ומשקיעים מערכת יירוט אוטונומית שלא ניתן לצלם, בצורה שתשדר עליונות טכנולוגית ואמינות מבצעית.",
+    challengeEn: "Visualize an autonomous interception system for governments, militaries, and investors, in a way that conveys technological superiority and operational credibility.",
+    solutionHe: "סרט קונספט AI פוטוריאליסטי מלא: עקביות מכנית קפדנית של סיבי פחמן ורכיבי מל\"ט, סימולציה דינמית של VTOL ונחיל יירוט, HUD overlays טכניים, ועיצוב סאונד תעשייתי. כל פריים: Midjourney. כל תנועה: Kling.",
+    solutionEn: "Full photorealistic AI concept film: meticulous hard-surface consistency of carbon fiber and UAV components, dynamic VTOL and swarm simulation, technical HUD overlays, and industrial sound design. Every frame: Midjourney. Every motion: Kling.",
     category: "ai",
     client: "Airobotics / Ondas Group",
     duration: "2:30",
@@ -269,10 +269,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "safe-ground-ai",
     youtubeId: "8c9gf7cM8hk",
-    titleHe: "Safe Ground Program — AI Concept Film",
-    titleEn: "Safe Ground Program — AI Concept Film",
-    challengeHe: "להמחיש בפני ממשלות ומשקיעים בינלאומיים סיכון תפעולי נסתר בפרויקט שיקום מורכב — בלי לצלם כלום, בלי שחקנים, בלי לוקיישן.",
-    challengeEn: "Visualize a hidden operational risk in a complex reconstruction project for international governments and investors — without filming anything, no actors, no location.",
+    titleHe: "Safe Ground Program: AI Concept Film",
+    titleEn: "Safe Ground Program: AI Concept Film",
+    challengeHe: "להמחיש בפני ממשלות ומשקיעים בינלאומיים סיכון תפעולי נסתר בפרויקט שיקום מורכב, בלי לצלם כלום, בלי שחקנים, בלי לוקיישן.",
+    challengeEn: "Visualize a hidden operational risk in a complex reconstruction project for international governments and investors, without filming anything, no actors, no location.",
     solutionHe: "סרט קונספט פוטוריאליסטי מלא ב-AI: מ-Midjourney לסטוריבורד ועד Kling ו-Runway לגנרציית התנועה. HUD overlays ב-After Effects, קריינות בינלאומית, ועיצוב סאונד קולנועי מלא. תוצאה: סרט פיצ' שנראה כמו הפקה בינלאומית של מיליוני דולרים.",
     solutionEn: "Full photorealistic AI concept film: from Midjourney storyboard to Kling and Runway for motion generation. HUD overlays in After Effects, international VO, and full cinematic sound design. Result: a pitch film that looks like a multi-million dollar international production.",
     category: "ai",
@@ -283,10 +283,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "dride-4k-kickstarter",
     youtubeId: "JncBv6FbkRc",
-    titleHe: "Dride 4K — סרט קיקסטארטר שגייס 1.1 מיליון דולר",
-    titleEn: "Dride 4K — Kickstarter Film That Raised $1.1 Million",
-    challengeHe: "להפוך מצלמת רכב בשלב פיתוח מתקדם לקמפיין גיוס המונים שיגייס מעל מיליון דולר מ-3,748 תומכים — בלי מוצר מוגמר על המדף.",
-    challengeEn: "Turn an advanced-stage dashcam into a crowdfunding campaign that raises over $1M from 3,748 backers — without a finished product on the shelf.",
+    titleHe: "Dride 4K: סרט קיקסטארטר שגייס 1.1 מיליון דולר",
+    titleEn: "Dride 4K: Kickstarter Film That Raised $1.1 Million",
+    challengeHe: "להפוך מצלמת רכב בשלב פיתוח מתקדם לקמפיין גיוס המונים שיגייס מעל מיליון דולר מ-3,748 תומכים, בלי מוצר מוגמר על המדף.",
+    challengeEn: "Turn an advanced-stage dashcam into a crowdfunding campaign that raises over $1M from 3,748 backers, without a finished product on the shelf.",
     solutionHe: "Kickstarter Blueprint קלאסי: Hook קולנועי, הצגת כאב (חום קיצוני, פגיעות בחנייה), הצגת גיבור המוצר, Feature Walkthrough ו-Pitch ישיר ליזמים. שילוב Live Action + הדמיות 3D של פנים המכשיר נטרל את חשש האמינות. הצגת 'כבר רכשנו אלפי CPUs' סגרה את ההתנגדות האחרונה.",
     solutionEn: "Classic Kickstarter Blueprint: cinematic hook, pain presentation (extreme heat, parking hits), hero product reveal, feature walkthrough, and direct founder pitch. Live Action + 3D renders of device internals neutralized credibility fear. 'We already purchased thousands of CPUs' closed the final objection.",
     category: "product",
@@ -297,10 +297,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "bright-data-ai-explainer",
     youtubeId: "HKkqkHBSt7Q",
-    titleHe: "Bright Data — כשה-AI שלך רעב לדאטה | Motion Graphics & Tech Storytelling",
-    titleEn: "Bright Data — When Your AI Is Hungry for Data | Motion Graphics & Tech Storytelling",
-    challengeHe: "להסביר תשתית דאטה מורכבת לקהל של CTOs ומנהלי מוצר AI — בפחות מ-60 שניות, בלי להאבד בטכני ובלי לאבד את האנרגיה.",
-    challengeEn: "Explain a complex data infrastructure to an audience of CTOs and AI product managers — in under 60 seconds, without getting lost in technical details or losing energy.",
+    titleHe: "Bright Data: כשה-AI שלך רעב לדאטה | Motion Graphics & Tech Storytelling",
+    titleEn: "Bright Data: When Your AI Is Hungry for Data | Motion Graphics & Tech Storytelling",
+    challengeHe: "להסביר תשתית דאטה מורכבת לקהל של CTOs ומנהלי מוצר AI, בפחות מ-60 שניות, בלי להאבד בטכני ובלי לאבד את האנרגיה.",
+    challengeEn: "Explain a complex data infrastructure to an audience of CTOs and AI product managers, in under 60 seconds, without getting lost in technical details or losing energy.",
     solutionHe: "Tech Storytelling שמתחיל מהכאב: מודלי AI שנשארים מאחור בגלל חוסר דאטה. Motion Graphics תלת-ממד עם Particle Systems שמדמים זרימת מידע ורשתות. UI Simulation של שגיאות קוד ממשיות, גרף השוואתי מול מתחרים, ו-Beat-matching מדויק לפסקול אלקטרוני. 60 שניות שמסיימות עם CTA ברור.",
     solutionEn: "Tech Storytelling that opens with the pain: AI models falling behind due to data starvation. 3D Motion Graphics with Particle Systems simulating data flow and networks. UI Simulation with real code errors, a competitive benchmark graph, and precise beat-matching to an electronic soundtrack. 60 seconds that end with a clear CTA.",
     category: "hightech",
@@ -311,10 +311,10 @@ export const portfolioVideos: PortfolioVideo[] = [
   {
     id: "iron-bullet-airobotics",
     vimeoId: "TODO_iron_bullet",
-    titleHe: "Iron Bullet — Airobotics / Ondas Group",
-    titleEn: "Iron Bullet — Airobotics / Ondas Group",
-    challengeHe: "לגייס הון ממשקיעים בינלאומיים ורגולטורים ממשלתיים עבור מערכת רחפני יירוט אוטונומית — עם מידע רגיש ומגבלות חשיפה קשות.",
-    challengeEn: "Raise capital from international investors and government regulators for an autonomous interception drone system — with sensitive information and strict exposure limitations.",
+    titleHe: "Iron Bullet: Airobotics / Ondas Group",
+    titleEn: "Iron Bullet: Airobotics / Ondas Group",
+    challengeHe: "לגייס הון ממשקיעים בינלאומיים ורגולטורים ממשלתיים עבור מערכת רחפני יירוט אוטונומית, עם מידע רגיש ומגבלות חשיפה קשות.",
+    challengeEn: "Raise capital from international investors and government regulators for an autonomous interception drone system, with sensitive information and strict exposure limitations.",
     solutionHe: "פיתחנו סרט פיצ' עם ויזואליזציות פוטוריאליסטיות ב-Midjourney ו-Kling, תסריט טכני מורכב וסטוריבורד קולנועי שמציג את המערכת בפעולה מבלי לחשוף מידע סווג.",
     solutionEn: "We developed a pitch film with photorealistic visualizations in Midjourney and Kling, a complex technical script, and a cinematic storyboard showcasing the system in action without revealing classified information.",
     category: "ai",
@@ -327,10 +327,10 @@ export const portfolioVideos: PortfolioVideo[] = [
     vimeoId: "TODO_palo_alto",
     titleHe: "סרט הגיוס הכי גנרי אי פעם | Palo Alto Networks",
     titleEn: "The Most Generic Recruitment Video Ever | Palo Alto Networks",
-    challengeHe: "לגייס מפתחים מוכשרים בשוק תחרותי מאוד — בלי להישמע כמו כולם.",
-    challengeEn: "Recruit talented developers in a highly competitive market — without sounding like everyone else.",
+    challengeHe: "לגייס מפתחים מוכשרים בשוק תחרותי מאוד, בלי להישמע כמו כולם.",
+    challengeEn: "Recruit talented developers in a highly competitive market, without sounding like everyone else.",
     solutionHe: "הפכנו את הקונבנציה על ראשה: סרט שמודע לעצמו ומלגלג על סרטי הגיוס הקלישאתיים, ובדיוק בגלל זה בלט ועבד.",
-    solutionEn: "We flipped the convention: a self-aware film that mocks clichéd recruitment videos — and that's exactly why it stood out and worked.",
+    solutionEn: "We flipped the convention: a self-aware film that mocks clichéd recruitment videos, and that's exactly why it stood out and worked.",
     category: "recruitment",
     client: "Palo Alto Networks",
     duration: "1:23",
@@ -340,8 +340,8 @@ export const portfolioVideos: PortfolioVideo[] = [
     vimeoId: "TODO_ashtrom",
     titleHe: "Ashtrom Port – Where Work Feels Good",
     titleEn: "Ashtrom Port – Where Work Feels Good",
-    challengeHe: "השקת מרחב קו-וורקינג חדש של אשטרום — לייצר אווירה שמוכרת חוויה, לא רק שטח.",
-    challengeEn: "Launching Ashtrom's new coworking space — creating an atmosphere that sells an experience, not just space.",
+    challengeHe: "השקת מרחב קו-וורקינג חדש של אשטרום, ליצור אווירה שמוכרת חוויה, לא רק שטח.",
+    challengeEn: "Launching Ashtrom's new coworking space, creating an atmosphere that sells an experience, not just space.",
     solutionHe: "סרט תדמית עם זרימה דינמית וצילום סטייליסטי שהעניק למקום אופי ייחודי.",
     solutionEn: "A brand video with dynamic flow and stylish cinematography that gave the space a unique character.",
     category: "realestate",
@@ -355,8 +355,8 @@ export const portfolioVideos: PortfolioVideo[] = [
     titleEn: "Humavox Wireless Power: The Robbery",
     challengeHe: "להסביר טכנולוגיית טעינה אלחוטית מורכבת בצורה שתישאר בזיכרון.",
     challengeEn: "Explain complex wireless charging technology in a way that stays in memory.",
-    solutionHe: "קומדיה קולנועית: שודדים במוזיאון שהציוד שלהם גווע מסוללה — אבל ה-Humavox POD פועל בשלמות.",
-    solutionEn: "Cinematic comedy: museum robbers whose equipment dies from dead batteries — but the Humavox POD works perfectly.",
+    solutionHe: "קומדיה קולנועית: שודדים במוזיאון שהציוד שלהם גווע מסוללה, אבל ה-Humavox POD פועל בשלמות.",
+    solutionEn: "Cinematic comedy: museum robbers whose equipment dies from dead batteries, but the Humavox POD works perfectly.",
     category: "creative",
     client: "Humavox",
     duration: "1:20",
@@ -392,8 +392,8 @@ export const portfolioVideos: PortfolioVideo[] = [
     vimeoId: "TODO_givatayim",
     titleHe: "Urban Pulse – IM גבעתיים",
     titleEn: "Urban Pulse – IM Givatayim",
-    challengeHe: "השקת פרויקט מגורים יוקרתי בגבעתיים — לייצר סרט שמצדיק את מחיר הפרמיום.",
-    challengeEn: "Launch of a luxury residential project in Givatayim — create a film that justifies the premium price.",
+    challengeHe: "השקת פרויקט מגורים יוקרתי בגבעתיים, לייצר סרט שמצדיק את מחיר הפרמיום.",
+    challengeEn: "Launch of a luxury residential project in Givatayim, creating a film that justifies the premium price.",
     solutionHe: "סרט קולנועי עם hyperlapse ועדשות tilt-shift, עם קריינות של כובי מידן.",
     solutionEn: "Cinematic film with hyperlapse and tilt-shift lenses, narrated by Kobi Meidan.",
     category: "realestate",
@@ -457,7 +457,7 @@ export const portfolioVideos: PortfolioVideo[] = [
 // Blog posts
 export interface VlogPost {
   id: string;
-  coverImage?: string; // path under /public, e.g. "/blog/ai-cover.jpg"
+  coverImage?: string; // path under /public, e.g. "/vlogimg/ai-cover.jpg"
   titleHe: string;
   titleEn: string;
   excerptHe: string;
@@ -484,29 +484,29 @@ export interface VlogPost {
 export const vlogPosts: VlogPost[] = [
   {
     id: "myth-busting-format",
-    coverImage: "/blog/myth-busting-cover.svg",
+    coverImage: "/vlogimg/myth-busting-cover.jpg",
     titleHe: "להרוג את הפיל שבחדר: איך פורמט 'הפרכת מיתוסים' מגדיל המרות",
     titleEn: "Killing the Elephant in the Room: How the 'Myth Busting' Format Increases Conversions",
-    excerptHe: "לכל מוצר יש חסמי קנייה. במקום להתעלם מהם, האסטרטגיה הטובה ביותר היא לשים אותם במרכז הפריים ולפרק אותם אחד אחד — ישירות מול המצלמה.",
-    excerptEn: "Every product has purchase barriers. Instead of ignoring them, the best strategy is to put them center frame and dismantle them one by one — directly on camera.",
+    excerptHe: "לכל מוצר יש חסמי קנייה. במקום להתעלם מהם, האסטרטגיה הטובה ביותר היא לשים אותם במרכז הפריים ולפרק אותם אחד אחד, ישירות מול המצלמה.",
+    excerptEn: "Every product has purchase barriers. Instead of ignoring them, the best strategy is to put them center frame and dismantle them one by one, directly on camera.",
     readingTime: 4,
-    bodyHe: `## הפחדים של הלקוח שלכם לא נעלמים — הם מתבטאים בחוסר רכישה
+    bodyHe: `## הפחדים של הלקוח שלכם לא נעלמים: הם מתבטאים בחוסר רכישה
 
 לכל מוצר ושירות יש חסמי קנייה. הלקוחות שלכם מלאים בחששות, שאלות וסטיגמות לפני שהם מוציאים את האשראי. רוב העסקים בוחרים להתעלם מזה ולשים בסרטונים שלהם רק את הצד הטוב.
 
 הבעיה: הלקוח הפוטנציאלי עוצר בדיוק בגלל הדברים שלא אמרתם.
 
-**האסטרטגיה הטובה ביותר היא לשים את ההתנגדויות במרכז הפריים — ולפרק אותן אחת אחת.**
+**האסטרטגיה הטובה ביותר היא לשים את ההתנגדויות במרכז הפריים, ולפרק אותן אחת אחת.**
 
 [IMAGE]
 
 ## פורמט "הפרכת מיתוסים" בפעולה
 
-בפרויקט שיצרנו עבור אתר הלימודים "רגב גוטמן" — מוסד שעוזר לסטודנטים לעבור מבחני הסמכה בכלכלה, הנהלת חשבונות ושמאות מקרקעין — בחרנו לא לעשות סרט תדמית רגיל.
+בפרויקט שיצרנו עבור אתר הלימודים "רגב גוטמן", מוסד שעוזר לסטודנטים לעבור מבחני הסמכה בכלכלה, הנהלת חשבונות ושמאות מקרקעין, בחרנו לא לעשות סרט תדמית רגיל.
 
 במקום להראות ממשקי פלטפורמה יפים ותלמידים מאושרים, הושבנו את שני המייסדים מול המצלמה ושאלנו אותם ישירות: **מה הפחדים הכי גדולים שסטודנטים מביאים אליכם?**
 
-"האם זה רק שיעור זום?" — תשובה. "האם החומר מעודכן למבחן של השנה?" — תשובה. "האם זה מתאים למבחני מועצת רואי חשבון?" — תשובה.
+"האם זה רק שיעור זום?" תשובה. "האם החומר מעודכן למבחן של השנה?" תשובה. "האם זה מתאים למבחני מועצת רואי חשבון?" תשובה.
 
 כל תשובה היא פינת קנייה שנפתחת.
 
@@ -514,7 +514,7 @@ export const vlogPosts: VlogPost[] = [
 
 הפורמט של שני מייסדים זה לצד זה מייצר שתי תוצאות:
 
-**דינמיקה טבעית:** כשיש שניים בפריים, הם מדברים אחד עם השני — לא "אל" המצלמה. זה מפחית את תחושת הנאום הפרסומי ומגדיל את תחושת השיחה האותנטית.
+**דינמיקה טבעית:** כשיש שניים בפריים, הם מדברים אחד עם השני, לא "אל" המצלמה. זה מפחית את תחושת הנאום הפרסומי ומגדיל את תחושת השיחה האותנטית.
 
 **סמכות כפולה:** שני מייסדים שיושבים יחד משדרים יציבות ארגונית. זה קריטי כשמוכרים מוצר חינוכי שדורש מהלקוח השקעה של זמן וכסף. הוא צריך לדעת שמי שמאחורי המוצר לא הולך לשום מקום.
 
@@ -524,32 +524,32 @@ export const vlogPosts: VlogPost[] = [
 
 **זה לא עצלות. זה בחירה.**
 
-כשהמטרה היא טיפול בהתנגדויות — כל אלמנט נוסף שמוסיפים מחליש את המסר. הלקוח צריך לשמוע ולהאמין. לא להתרשם.
+כשהמטרה היא טיפול בהתנגדויות, כל אלמנט נוסף שמוסיפים מחליש את המסר. הלקוח צריך לשמוע ולהאמין. לא להתרשם.
 
-הכתוביות (Burned-in subtitles) הן האלמנט הגרפי היחיד שנוסף — כי הן עוזרות לצפייה ללא סאונד ברשתות, ומדגישות את נקודות המפתח של כל תשובה.
+הכתוביות (Burned-in subtitles) הן האלמנט הגרפי היחיד שנוסף, כי הן עוזרות לצפייה ללא סאונד ברשתות, ומדגישות את נקודות המפתח של כל תשובה.
 
 ## כשהשיווק הכי טוב הוא השיחה הכי כנה
 
-סרטון "הפרכת מיתוסים" עובד בגלל פרדוקס: ככל שאתם מדברים יותר על הפחדים של הלקוח, כך הוא סומך עליכם יותר. כי הוא מרגיש שאתם מבינים אותו — לא מוכרים לו.
+סרטון "הפרכת מיתוסים" עובד בגלל פרדוקס: ככל שאתם מדברים יותר על הפחדים של הלקוח, כך הוא סומך עליכם יותר. כי הוא מרגיש שאתם מבינים אותו, לא מוכרים לו.
 
-**המסר ללקוחות:** אם יש לכם מוצר שאנשים מהססים לקנות בגלל חסמים ספציפיים שידועים לכם — זה הפורמט שיפרק אותם.`,
-    bodyEn: `## Your Client's Fears Don't Disappear — They Show Up as Non-Purchases
+**המסר ללקוחות:** אם יש לכם מוצר שאנשים מהססים לקנות בגלל חסמים ספציפיים שידועים לכם, זה הפורמט שיפרק אותם.`,
+    bodyEn: `## Your Client's Fears Don't Disappear: They Show Up as Non-Purchases
 
 Every product and service has purchase barriers. Your clients are full of concerns, questions, and stigmas before they pull out their credit card. Most businesses choose to ignore this and only show the good side in their videos.
 
 The problem: the potential client stops exactly because of the things you didn't say.
 
-**The best strategy is to put the objections center frame — and dismantle them one by one.**
+**The best strategy is to put the objections center frame, and dismantle them one by one.**
 
 [IMAGE]
 
 ## The 'Myth Busting' Format in Action
 
-In the project we created for "Regev Gutman" — an institution that helps students pass certification exams in economics, accounting, and real estate appraisal — we chose not to make a regular brand film.
+In the project we created for "Regev Gutman", an institution that helps students pass certification exams in economics, accounting, and real estate appraisal, we chose not to make a regular brand film.
 
 Instead of showing pretty platform interfaces and happy students, we sat both founders in front of the camera and asked them directly: **what are the biggest fears students bring to you?**
 
-"Is it just a Zoom class?" — answered. "Is the material updated for this year's exam?" — answered. "Does it work for CPA board exams?" — answered.
+"Is it just a Zoom class?" Answered. "Is the material updated for this year's exam?" Answered. "Does it work for CPA board exams?" Answered.
 
 Every answer is a purchase objection that gets opened up and resolved.
 
@@ -557,7 +557,7 @@ Every answer is a purchase objection that gets opened up and resolved.
 
 The format of two founders side by side produces two outcomes:
 
-**Natural dynamics:** When there are two in frame, they talk to each other — not "at" the camera. This reduces the feeling of an advertising speech and increases the feeling of an authentic conversation.
+**Natural dynamics:** When there are two in frame, they talk to each other, not "at" the camera. This reduces the feeling of an advertising speech and increases the feeling of an authentic conversation.
 
 **Double authority:** Two founders sitting together signal organizational stability. This is critical when selling an educational product that requires the client to invest time and money. They need to know the people behind the product aren't going anywhere.
 
@@ -567,15 +567,15 @@ Notice what's not in this film: no excessive B-roll, no distracting graphics, no
 
 **This isn't laziness. It's a choice.**
 
-When the goal is objection handling — every additional element you add weakens the message. The client needs to hear and believe. Not be impressed.
+When the goal is objection handling, every additional element you add weakens the message. The client needs to hear and believe. Not be impressed.
 
-The burned-in subtitles are the only graphic element added — because they help viewing without sound on social media, and highlight the key points of each answer.
+The burned-in subtitles are the only graphic element added, because they help viewing without sound on social media, and highlight the key points of each answer.
 
 ## When the Best Marketing Is the Most Honest Conversation
 
-A "myth busting" video works because of a paradox: the more you talk about your client's fears, the more they trust you. Because they feel you understand them — not selling to them.
+A "myth busting" video works because of a paradox: the more you talk about your client's fears, the more they trust you. Because they feel you understand them, not selling to them.
 
-**The message to clients:** if you have a product that people hesitate to buy due to specific known barriers — this is the format that will dismantle them.`,
+**The message to clients:** if you have a product that people hesitate to buy due to specific known barriers, this is the format that will dismantle them.`,
     date: "2024-10-01",
     tags: ["Content Strategy", "Objection Handling", "EdTech", "Conversion"],
     relatedServiceHref: "/services/corporate",
@@ -585,17 +585,17 @@ A "myth busting" video works because of a paradox: the more you talk about your 
   },
   {
     id: "10-questions-format",
-    coverImage: "/blog/10-questions-cover.svg",
+    coverImage: "/vlogimg/10-questions-cover.jpg",
     titleHe: "פורמט '10 שאלות': הדרך הקצרה ביותר לבנות אמון, מודעות ותוכן לכל המדיות",
     titleEn: "The '10 Questions' Format: The Shortest Path to Building Trust, Awareness, and Content for All Platforms",
-    excerptHe: "פורמט שכולם מבינים מהרגע הראשון, כיפי לצפייה, מתחלק ל-Micro-Content ועובד לשירות לקוחות, מיתוג עסקי ופרסום — מיום צילום אחד קצר.",
-    excerptEn: "A format everyone understands from day one, fun to watch, splits into micro-content, and works for customer service, business branding, and advertising — from one short filming day.",
+    excerptHe: "פורמט שכולם מבינים מהרגע הראשון, כיפי לצפייה, מתחלק ל-Micro-Content ועובד לשירות לקוחות, מיתוג עסקי ופרסום, מיום צילום אחד קצר.",
+    excerptEn: "A format everyone understands from day one, fun to watch, splits into micro-content, and works for customer service, business branding, and advertising, from one short filming day.",
     readingTime: 4,
     bodyHe: `## למה הפורמט הזה עובד כל כך טוב
 
 יש פורמטים שדורשים הסבר ארוך ללקוח. "10 שאלות" הוא לא אחד מהם.
 
-ברגע שאתם אומרים "נצלם אתכם עונים על 10 שאלות" — הלקוח מבין מיד לאן זה הולך. אין חרדת תסריט, אין ויכוחים על מסרים, אין פחד מ"מה יצא". הפורמט הוא הביטחון. וכשהלקוח בטוח — הוא נינוח. וכשהוא נינוח — הוא אותנטי.
+ברגע שאתם אומרים "נצלם אתכם עונים על 10 שאלות", הלקוח מבין מיד לאן זה הולך. אין חרדת תסריט, אין ויכוחים על מסרים, אין פחד מ"מה יצא". הפורמט הוא הביטחון. וכשהלקוח בטוח, הוא נינוח. וכשהוא נינוח, הוא אותנטי.
 
 זו הסיבה שפורמט "10 שאלות" מייצר את אחת מרמות האותנטיות הגבוהות ביותר שניתן להשיג בצילום.
 
@@ -603,7 +603,7 @@ A "myth busting" video works because of a paradox: the more you talk about your 
 
 ## מה הפורמט עושה עבורכם
 
-**בונה אמון מהיר:** הצופה רואה אדם אמיתי עונה על שאלות אמיתיות. לא שחקן, לא תסריט מלוטש. זה עובד במיוחד בעסקים שבהם האמון הוא הנכס הכי חשוב — חינוך, שירותים מקצועיים, בריאות.
+**בונה אמון מהיר:** הצופה רואה אדם אמיתי עונה על שאלות אמיתיות. לא שחקן, לא תסריט מלוטש. זה עובד במיוחד בעסקים שבהם האמון הוא הנכס הכי חשוב: חינוך, שירותים מקצועיים, בריאות.
 
 **מעשיר במידע:** 10 שאלות = 10 הזדמנויות לתת ערך. כל תשובה יכולה לפצח שאלה שהלקוחות שלכם שואלים כל יום, לפרק מיתוס נפוץ, או לספר משהו שרוב האנשים לא יודעים על תחום העיסוק.
 
@@ -617,13 +617,13 @@ A "myth busting" video works because of a paradox: the more you talk about your 
 
 ## מה שחשוב: הפרזנטור
 
-הפורמט עובד — אבל הוא לא מחל על הצד האנושי. הפרזנטור (בין אם מישהו מהצוות של הלקוח או פרזנטור חיצוני) צריך להיות נוח מול מצלמה.
+הפורמט עובד, אבל הוא לא מחל על הצד האנושי. הפרזנטור (בין אם מישהו מהצוות של הלקוח או פרזנטור חיצוני) צריך להיות נוח מול מצלמה.
 
-לא "שחקן" — נוח. יש הבדל עצום.
+לא "שחקן", נוח. יש הבדל עצום.
 
 מישהו שנוח מול מצלמה: מחייך ספונטנית, עונה בשפה הטבעית שלו, לא מרגיש שהוא "מצלם פרסומת". מישהו שלא נוח: תשובות רובוטיות, עיניים נעות, אנרגיה נוקשה שמרגישה על המסך בבירור.
 
-**בפרויקט עבור רגב גוטמן** — מוסד לימודי לסטודנטים בכלכלה, הנהלת חשבונות ומתמטיקה — הפרזנטור הגיע עם אנרגיה טבעית ומנוסה. התוצאה: 10 שאלות שמרגישות כמו שיחה עם חבר שמקצוען בתחום שלו. בדיוק מה שסטודנט צריך לראות לפני שהוא בוחר מאיפה ללמוד.
+**בפרויקט עבור רגב גוטמן**, מוסד לימודי לסטודנטים בכלכלה, הנהלת חשבונות ומתמטיקה, הפרזנטור הגיע עם אנרגיה טבעית ומנוסה. התוצאה: 10 שאלות שמרגישות כמו שיחה עם חבר שמקצוען בתחום שלו. בדיוק מה שסטודנט צריך לראות לפני שהוא בוחר מאיפה ללמוד.
 
 ## מתי להשתמש בפורמט הזה
 
@@ -638,7 +638,7 @@ A "myth busting" video works because of a paradox: the more you talk about your 
 
 Some formats require a long explanation to the client. "10 Questions" is not one of them.
 
-The moment you say "we'll film you answering 10 questions" — the client immediately understands where it's going. No script anxiety, no arguments about messaging, no fear of "what will come out." The format is the security. And when the client is secure — they're relaxed. And when they're relaxed — they're authentic.
+The moment you say "we'll film you answering 10 questions", the client immediately understands where it's going. No script anxiety, no arguments about messaging, no fear of "what will come out." The format is the security. And when the client is secure, they're relaxed. And when they're relaxed, they're authentic.
 
 This is why the "10 Questions" format produces one of the highest levels of authenticity achievable in filming.
 
@@ -646,7 +646,7 @@ This is why the "10 Questions" format produces one of the highest levels of auth
 
 ## What the Format Does for You
 
-**Builds trust fast:** The viewer sees a real person answering real questions. Not an actor, not a polished script. This works especially in businesses where trust is the most important asset — education, professional services, healthcare.
+**Builds trust fast:** The viewer sees a real person answering real questions. Not an actor, not a polished script. This works especially in businesses where trust is the most important asset: education, professional services, healthcare.
 
 **Enriches with information:** 10 questions = 10 opportunities to provide value. Each answer can crack a question your clients ask every day, debunk a common myth, or tell something most people don't know about your field.
 
@@ -660,13 +660,13 @@ This is why the "10 Questions" format produces one of the highest levels of auth
 
 ## What Matters: The Presenter
 
-The format works — but it doesn't forgive the human side. The presenter (whether someone from the client's team or an external presenter) needs to be comfortable on camera.
+The format works, but it doesn't forgive the human side. The presenter (whether someone from the client's team or an external presenter) needs to be comfortable on camera.
 
-Not "an actor" — comfortable. There's a huge difference.
+Not "an actor", comfortable. There's a huge difference.
 
 Someone comfortable on camera: smiles spontaneously, answers in their natural language, doesn't feel like they're "filming a commercial." Someone not comfortable: robotic answers, moving eyes, stiff energy that reads clearly on screen.
 
-**In the project for Regev Gutman** — an educational institution for students in economics, accounting, and mathematics — the presenter arrived with natural, experienced energy. The result: 10 questions that feel like a conversation with a friend who's an expert in their field. Exactly what a student needs to see before choosing where to study.
+**In the project for Regev Gutman**, an educational institution for students in economics, accounting, and mathematics, the presenter arrived with natural, experienced energy. The result: 10 questions that feel like a conversation with a friend who's an expert in their field. Exactly what a student needs to see before choosing where to study.
 
 ## When to Use This Format
 
@@ -686,17 +686,17 @@ One filming day. Short editing. Content that works for six months.`,
   },
   {
     id: "video-to-brand-identity",
-    coverImage: "/blog/video-to-brand-cover.svg",
+    coverImage: "/vlogimg/video-to-brand-cover.svg",
     titleHe: "מוידאו למותג: הדרך החכמה לייצר שפה ויזואלית מנצחת לחברות טכנולוגיה",
     titleEn: "From Video to Brand: The Smart Way to Build a Winning Visual Language for Tech Companies",
-    excerptHe: "חברות טכנולוגיה מוציאות הון על ספרי מותג סטטיים שלא מתרגמים למסך. בפרויקט IRON DRONE בנינו שפה ויזואלית מלאה מתוך הסרט עצמו — והיא הפכה לסטנדרט הרשמי של חברה בורסאית.",
-    excerptEn: "Tech companies spend fortunes on static brand books that don't translate to screen. In the IRON DRONE project we built a complete visual language out of the film itself — and it became a public company's official design standard.",
+    excerptHe: "חברות טכנולוגיה מוציאות הון על ספרי מותג סטטיים שלא מתרגמים למסך. בפרויקט IRON DRONE בנינו שפה ויזואלית מלאה מתוך הסרט עצמו, והיא הפכה לסטנדרט הרשמי של חברה בורסאית.",
+    excerptEn: "Tech companies spend fortunes on static brand books that don't translate to screen. In the IRON DRONE project we built a complete visual language out of the film itself, and it became a public company's official design standard.",
     readingTime: 6,
     bodyHe: `## הבעיה עם ספרי מותג סטטיים
 
 תהליך מיתוג של חברות טכנולוגיה, תשתיות וביטחון דורש לעיתים קרובות תקציבי עתק המועברים למשרדי פרסום עבור יצירת "ספר מותג" סטטי. הבעיה מתחילה כשהמותג פוגש את המסך.
 
-אותם עיצובים סטטיים — הצבע, הטיפוגרפיה, הגריד — לא מתרגמים היטב לעולמות הווידאו, האנימציה והדיגיטל הדינמי. יוצרים מחדש ממקום ה-וידאו, ושם מוצאים שהחוקים שונים לחלוטין.
+אותם עיצובים סטטיים, הצבע, הטיפוגרפיה, הגריד, לא מתרגמים היטב לעולמות הווידאו, האנימציה והדיגיטל הדינמי. יוצרים מחדש ממקום ה-וידאו, ושם מוצאים שהחוקים שונים לחלוטין.
 
 **השפה הוויזואלית של מותג מודרני צריכה להיוולד מתוך תנועה.**
 
@@ -706,7 +706,7 @@ One filming day. Short editing. Content that works for six months.`,
 
 בפרויקט שהפקנו עבור מערכת IRON DRONE מבית Airobotics / Ondas Group, ניגשנו לאתגר ייחודי: החברה הגיעה ללא Brand Book מסודר ובלי שפת אינפוגרפיקה שמתאימה למוצר ביטחוני מתקדם.
 
-במקום לחכות לסוכנות מיתוג — בנינו את השפה בעצמנו, ישירות מתוך עולם הסרט.
+במקום לחכות לסוכנות מיתוג, בנינו את השפה בעצמנו, ישירות מתוך עולם הסרט.
 
 ## שלב 1: Visual DNA מאפס
 
@@ -714,19 +714,19 @@ One filming day. Short editing. Content that works for six months.`,
 
 **פלטת צבעים:** כחול-מתכת עמוק, ירוק HUD צבאי, שחור תפעולי. כל צבע נבחר כדי לשדר שני דברים בו-זמנית: טכנולוגיה מתקדמת + אמינות מבצעית.
 
-**טיפוגרפיה:** פונטים טכנולוגיים עם ריווח מדוד שמדמה ממשק cockpit. כל מספר, כל מפרט טכני — נראה כאילו הוא חלק מממשק אמיתי של מערכת נשק.
+**טיפוגרפיה:** פונטים טכנולוגיים עם ריווח מדוד שמדמה ממשק cockpit. כל מספר, כל מפרט טכני נראה כאילו הוא חלק מממשק אמיתי של מערכת נשק.
 
 **HUD/UI Elements:** ממשקי מסך שנבנו מאפס: נעילות מטרה, טווחי זיהוי, אינדיקטורי גובה ומהירות. כל אלמנט תוכנן כך שהמדהים בו הוא **שהוא נראה אמיתי**.
 
-## שלב 2: האתגר הקולנועי — מהירות פוגשת דיוק
+## שלב 2: האתגר הקולנועי: מהירות פוגשת דיוק
 
 לסרט יש שני מצבי עריכה שצריכים לדור בשלום:
 
-**Speed Ramp מהיר** — רגעי מרדף, טיסה, תנועת נחיל. הצופה חייב להרגיש אדרנלין, מהירות, כוח תפעולי. Drone-to-Drone Tracking אוויריים, זוויות Low-angle שמגדילות את האגרסיביות.
+**Speed Ramp מהיר:** רגעי מרדף, טיסה, תנועת נחיל. הצופה חייב להרגיש אדרנלין, מהירות, כוח תפעולי. Drone-to-Drone Tracking אוויריים, זוויות Low-angle שמגדילות את האגרסיביות.
 
-**Speed Ramp איטי** — רגעי הליבה הטכנולוגיים: שיגור, נעילת מטרה, יירוט. פה הסרט מאט. הצופה צריך לראות, להבין, ולהאמין. בדיוק בנקודה הזו נכנסות שכבות ה-HUD שמסבירות את המכניקה.
+**Speed Ramp איטי:** רגעי הליבה הטכנולוגיים: שיגור, נעילת מטרה, יירוט. פה הסרט מאט. הצופה צריך לראות, להבין, ולהאמין. בדיוק בנקודה הזו נכנסות שכבות ה-HUD שמסבירות את המכניקה.
 
-**סאונד-דיזיין כירורגי:** כל הופעה של גרפיקה "מקבעת" על צליל — בין אם זה ping של מכ"ם, buzz של מנוע חשמלי, או click של נעילה. הסנכרון בין עריכה לסאונד הוא מה שהופך סרט מוצר אינפורמטיבי לחוויה קולנועית.
+**סאונד-דיזיין כירורגי:** כל הופעה של גרפיקה "מקבעת" על צליל, בין אם זה ping של מכ"ם, buzz של מנוע חשמלי, או click של נעילה. הסנכרון בין עריכה לסאונד הוא מה שהופך סרט מוצר אינפורמטיבי לחוויה קולנועית.
 
 ## התוצאה: השפה הפכה לסטנדרט
 
@@ -739,7 +739,7 @@ One filming day. Short editing. Content that works for six months.`,
 
 Branding processes for technology, infrastructure, and defense companies often require enormous budgets transferred to ad agencies for creating a static "brand book." The problem starts when the brand meets the screen.
 
-Those static designs — color, typography, grid — don't translate well to the worlds of video, animation, and dynamic digital. You recreate from the video side, and there you find the rules are completely different.
+Those static designs, color, typography, grid, don't translate well to the worlds of video, animation, and dynamic digital. You recreate from the video side, and there you find the rules are completely different.
 
 **A modern brand's visual language needs to be born from motion.**
 
@@ -749,7 +749,7 @@ Those static designs — color, typography, grid — don't translate well to the
 
 In the project we produced for the IRON DRONE system by Airobotics / Ondas Group, we faced a unique challenge: the company arrived without an organized Brand Book and without an infographic language suited to an advanced defense product.
 
-Instead of waiting for a branding agency — we built the language ourselves, directly from within the film's world.
+Instead of waiting for a branding agency, we built the language ourselves, directly from within the film's world.
 
 ## Stage 1: Visual DNA from Scratch
 
@@ -757,19 +757,19 @@ The art department developed a complete visual concept:
 
 **Color palette:** Deep metal blue, military HUD green, operational black. Each color chosen to communicate two things simultaneously: advanced technology + operational reliability.
 
-**Typography:** Technical fonts with measured spacing simulating a cockpit interface. Every number, every technical spec — looks as if it's part of a real weapons system interface.
+**Typography:** Technical fonts with measured spacing simulating a cockpit interface. Every number, every technical spec looks as if it's part of a real weapons system interface.
 
 **HUD/UI Elements:** Screen interfaces built from scratch: target locks, detection ranges, altitude and speed indicators. Every element designed so the remarkable thing about it is **that it looks real**.
 
-## Stage 2: The Cinematic Challenge — Speed Meets Precision
+## Stage 2: The Cinematic Challenge: Speed Meets Precision
 
 The film has two editing modes that need to coexist:
 
-**Fast Speed Ramp** — chase moments, flight, swarm motion. The viewer must feel adrenaline, speed, operational power. Aerial Drone-to-Drone Tracking, Low-angle shots that increase aggression.
+**Fast Speed Ramp:** chase moments, flight, swarm motion. The viewer must feel adrenaline, speed, operational power. Aerial Drone-to-Drone Tracking, Low-angle shots that increase aggression.
 
-**Slow Speed Ramp** — core technical moments: launch, target lock, intercept. Here the film slows. The viewer needs to see, understand, and believe. Exactly at this point the HUD layers enter to explain the mechanics.
+**Slow Speed Ramp:** core technical moments: launch, target lock, intercept. Here the film slows. The viewer needs to see, understand, and believe. Exactly at this point the HUD layers enter to explain the mechanics.
 
-**Surgical Sound Design:** Every graphic appearance "locks" on a sound — whether a radar ping, an electric motor buzz, or a lock click. The sync between editing and sound is what turns an informative product film into a cinematic experience.
+**Surgical Sound Design:** Every graphic appearance "locks" on a sound, whether a radar ping, an electric motor buzz, or a lock click. The sync between editing and sound is what turns an informative product film into a cinematic experience.
 
 ## The Result: The Language Became the Standard
 
@@ -787,17 +787,17 @@ This isn't agency work. This is strategic partnership.`,
   },
   {
     id: "content-package-raw-footage",
-    coverImage: "/blog/content-package-cover.svg",
+    coverImage: "/vlogimg/content-package-cover.svg",
     titleHe: "מחומרי גלם לנכסים דיגיטליים: איך בונים קמפיין וידאו שלם מיומיים של צילום",
     titleEn: "From Raw Footage to Digital Assets: How to Build a Complete Video Campaign from Two Filming Days",
-    excerptHe: "הטעות הנפוצה ביותר: לגשת להפקה עם מחשבה על תוצר אחד. אולפן הפקות מתקדם לא חושב על 'סרט' — הוא חושב על 'מאגר נכסים'. ניתוח פרויקט Green Wall.",
-    excerptEn: "The most common mistake: approaching production thinking about one output. An advanced production studio doesn't think 'film' — it thinks 'asset bank'. A breakdown of the Green Wall project.",
+    excerptHe: "הטעות הנפוצה ביותר: לגשת להפקה עם מחשבה על תוצר אחד. אולפן הפקות מתקדם לא חושב על 'סרט', הוא חושב על 'מאגר נכסים'. ניתוח פרויקט Green Wall.",
+    excerptEn: "The most common mistake: approaching production thinking about one output. An advanced production studio doesn't think 'film', it thinks 'asset bank'. A breakdown of the Green Wall project.",
     readingTime: 5,
     bodyHe: `## הטעות שמפסידה לכם כסף בכל הפקה
 
 הטעות הנפוצה ביותר של מותגים וחברות היא לגשת להפקת וידאו מתוך מחשבה על תוצר סופי אחד. "אנחנו צריכים סרט תדמית", הם אומרים. "אחד. מלוטש. לאתר."
 
-התוצאה: השקעה מלאה של זמן, תקציב ואנרגיה — בנכס אחד שמתיישן מהרגע שהוא עולה לאוויר, בעוד הרשתות החברתיות דורשות נוכחות שוטפת ומגוונת לכל אורך השנה.
+התוצאה: השקעה מלאה של זמן, תקציב ואנרגיה בנכס אחד שמתיישן מהרגע שהוא עולה לאוויר, בעוד הרשתות החברתיות דורשות נוכחות שוטפת ומגוונת לכל אורך השנה.
 
 **אולפן הפקות מתקדם לא חושב על "סרט". הוא חושב על "מאגר נכסים".**
 
@@ -805,27 +805,27 @@ This isn't agency work. This is strategic partnership.`,
 
 ## הפרויקט: Green Wall, 2 ימי צילום, חבילה שלמה
 
-בפרויקט של חברת Green Wall — חברת קירות ירוקים וגגות ירוקים — ניגשנו לצילומים עם תכנון אסטרטגי מראש.
+בפרויקט של חברת Green Wall, חברת קירות ירוקים וגגות ירוקים, ניגשנו לצילומים עם תכנון אסטרטגי מראש.
 
-**יום 1 — ראיונות מרוכזים:** כל הדוברים, כל הלקוחות הממליצים, כל המנהלים — ליום אחד מאורגן. כל ראיון צולם בצורה שמאפשרת שני סוגי שימוש: חלק מהסרט המרכזי, **וגם** יחידה עצמאית עם חיתוך ראשון-אחרון.
+**יום 1: ראיונות מרוכזים:** כל הדוברים, כל הלקוחות הממליצים, כל המנהלים, ליום אחד מאורגן. כל ראיון צולם בצורה שמאפשרת שני סוגי שימוש: חלק מהסרט המרכזי, **וגם** יחידה עצמאית עם חיתוך ראשון-אחרון.
 
-**יום 2 — שטח ורחפן:** לוקיישנים מרובים, צילומי אוויר, B-roll של המוצר בסביבות שונות. כל שוט מצולם עם שלוש מטרות: Hero Video, אווירה קצרה, קמפיין ממומן.
+**יום 2: שטח ורחפן:** לוקיישנים מרובים, צילומי אוויר, B-roll של המוצר בסביבות שונות. כל שוט מצולם עם שלוש מטרות: Hero Video, אווירה קצרה, קמפיין ממומן.
 
 מאותם חומרי גלם, חדר העריכה הוציא:
 
 ## 3 שכבות תוכן, 3 נקודות במשפך
 
-**שכבה 1 — The Hero Video (סרט המותג המרכזי)**
+**שכבה 1: The Hero Video (סרט המותג המרכזי)**
 
-סרט יוקרתי, צילום רחפן, סיפור מסגרת, Production Value גבוה. נועד לשבת בעמוד הבית, לפתוח פגישות עם לקוחות אסטרטגיים ומשקיעים. זו ה-Flagship — הכרטיס ביקור.
+סרט יוקרתי, צילום רחפן, סיפור מסגרת, Production Value גבוה. נועד לשבת בעמוד הבית, לפתוח פגישות עם לקוחות אסטרטגיים ומשקיעים. זו ה-Flagship, הכרטיס ביקור.
 
-**שכבה 2 — Visual Shorts (סרטי אווירה, Top of Funnel)**
+**שכבה 2: Visual Shorts (סרטי אווירה, Top of Funnel)**
 
-גישת "Less is More": עריכה מינימליסטית, קצב נכון, טיפוגרפיה נקייה — בלי קריינות, בלי ראיונות. **המוצר כל כך ויזואלי** (קירות ירוקים, גגות, טבע בתוך עיר) שהוא מוכר את עצמו. הסרטים האלה עוצרים גלילה, מייצרים מודעות ועובדים מצוין בקמפיינים ממומנים קצרים.
+גישת "Less is More": עריכה מינימליסטית, קצב נכון, טיפוגרפיה נקייה, בלי קריינות, בלי ראיונות. **המוצר כל כך ויזואלי** (קירות ירוקים, גגות, טבע בתוך עיר) שהוא מוכר את עצמו. הסרטים האלה עוצרים גלילה, מייצרים מודעות ועובדים מצוין בקמפיינים ממומנים קצרים.
 
-**שכבה 3 — Standalone Testimonials (הוכחה חברתית לטפטוף)**
+**שכבה 3: Standalone Testimonials (הוכחה חברתית לטפטוף)**
 
-3 סרטי המלצות עצמאיים מיום הראיונות — כל אחד מהם יחידת תוכן עצמאית. הלקוח מטפטף אותם לאורך הגאנט: פוסט LinkedIn השבוע, עמוד נחיתה לקמפיין הבא, שליחה ישירה ללידים מתלבטים.
+3 סרטי המלצות עצמאיים מיום הראיונות, כל אחד מהם יחידת תוכן עצמאית. הלקוח מטפטף אותם לאורך הגאנט: פוסט LinkedIn השבוע, עמוד נחיתה לקמפיין הבא, שליחה ישירה ללידים מתלבטים.
 
 ## מה שהלקוח קיבל
 
@@ -842,7 +842,7 @@ This isn't agency work. This is strategic partnership.`,
 
 The most common mistake companies make is approaching video production thinking about one final output. "We need a brand film," they say. "One. Polished. For the website."
 
-The result: full investment of time, budget, and energy — in one asset that ages from the moment it goes live, while social media demands ongoing, varied presence throughout the year.
+The result: full investment of time, budget, and energy in one asset that ages from the moment it goes live, while social media demands ongoing, varied presence throughout the year.
 
 **An advanced production studio doesn't think "film." It thinks "asset bank."**
 
@@ -850,27 +850,27 @@ The result: full investment of time, budget, and energy — in one asset that ag
 
 ## The Project: Green Wall, 2 Filming Days, Full Package
 
-In the Green Wall project — a green walls and rooftop greenery company — we approached the filming with strategic planning upfront.
+In the Green Wall project, a green walls and rooftop greenery company, we approached the filming with strategic planning upfront.
 
-**Day 1 — Concentrated interviews:** All speakers, all recommending clients, all managers — in one organized day. Every interview was filmed in a way that allows two types of use: part of the main film, **and also** a standalone unit with its own opening and close.
+**Day 1: Concentrated interviews:** All speakers, all recommending clients, all managers, in one organized day. Every interview was filmed in a way that allows two types of use: part of the main film, **and also** a standalone unit with its own opening and close.
 
-**Day 2 — Field and drone:** Multiple locations, aerial footage, B-roll of the product in different environments. Every shot filmed with three purposes: Hero Video, short atmosphere, paid campaign.
+**Day 2: Field and drone:** Multiple locations, aerial footage, B-roll of the product in different environments. Every shot filmed with three purposes: Hero Video, short atmosphere, paid campaign.
 
 From the same raw footage, the editing suite produced:
 
 ## 3 Content Layers, 3 Points in the Funnel
 
-**Layer 1 — The Hero Video (Central Brand Film)**
+**Layer 1: The Hero Video (Central Brand Film)**
 
-A premium film with drone cinematography, narrative framework, and high production value. Designed to sit on the homepage, open meetings with strategic clients and investors. This is the Flagship — the business card.
+A premium film with drone cinematography, narrative framework, and high production value. Designed to sit on the homepage, open meetings with strategic clients and investors. This is the Flagship, the business card.
 
-**Layer 2 — Visual Shorts (Atmosphere Films, Top of Funnel)**
+**Layer 2: Visual Shorts (Atmosphere Films, Top of Funnel)**
 
-The "Less is More" approach: minimalist editing, the right rhythm, clean typography — no voiceover, no interviews. **The product is so visual** (green walls, rooftops, nature inside a city) that it sells itself. These films stop scrolling, generate awareness, and work well in short paid campaigns.
+The "Less is More" approach: minimalist editing, the right rhythm, clean typography, no voiceover, no interviews. **The product is so visual** (green walls, rooftops, nature inside a city) that it sells itself. These films stop scrolling, generate awareness, and work well in short paid campaigns.
 
-**Layer 3 — Standalone Testimonials (Social Proof for Dripping)**
+**Layer 3: Standalone Testimonials (Social Proof for Dripping)**
 
-3 standalone testimonial films from the interview day — each an independent content unit. The client drips them across the calendar: a LinkedIn post this week, a landing page for the next campaign, a direct send to hesitant leads.
+3 standalone testimonial films from the interview day, each an independent content unit. The client drips them across the calendar: a LinkedIn post this week, a landing page for the next campaign, a direct send to hesitant leads.
 
 ## What the Client Received
 
@@ -892,17 +892,17 @@ This isn't the thinking of a filming vendor. This is the thinking of a strategic
   },
   {
     id: "akerstein-100-rebranding",
-    coverImage: "/blog/akerstein-100-cover.svg",
+    coverImage: "/vlogimg/akerstein-100-cover.svg",
     titleHe: "100 שנה לאקרשטיין: איך לוקחים מותג היסטורי ומותגים אותו מחדש לעתיד סינמטי",
     titleEn: "100 Years of Akerstein: How to Take a Historic Brand and Rebrand It for a Cinematic Future",
-    excerptHe: "חברה בת 100 שנה עם ארכיון של דורות, מנהלים שמרנים ואין-ספור דיביזיות. האתגר: סרט אחד של 3 דקות שמחזיק את כולם — ואת הצופה. ניתוח מלא של מה שהפך את הפרויקט הזה לאחת העבודות המורכבות ביותר בתיק.",
-    excerptEn: "A 100-year-old company with generational archives, conservative management, and countless divisions. The challenge: one 3-minute film that holds everyone — and the viewer. A full breakdown of what made this project one of the most complex in the portfolio.",
+    excerptHe: "חברה בת 100 שנה עם ארכיון של דורות, מנהלים שמרנים ואין-ספור דיביזיות. האתגר: סרט אחד של 3 דקות שמחזיק את כולם, ואת הצופה. ניתוח מלא של מה שהפך את הפרויקט הזה לאחת העבודות המורכבות ביותר בתיק.",
+    excerptEn: "A 100-year-old company with generational archives, conservative management, and countless divisions. The challenge: one 3-minute film that holds everyone, and the viewer. A full breakdown of what made this project one of the most complex in the portfolio.",
     readingTime: 7,
     bodyHe: `## כשהלקוח הוא מפלצת של מורכבות (המשמעות הטובה)
 
-יש פרויקטים שבהם האתגר הגדול ביותר הוא לא הצילום ולא העריכה — אלא ההבנה מה הסרט הזה צריך לעשות, עבור מי, ואיך לרצות אנשים עם אג'נדות שונות בלי לאבד את הנשמה של הסיפור.
+יש פרויקטים שבהם האתגר הגדול ביותר הוא לא הצילום ולא העריכה, אלא ההבנה מה הסרט הזה צריך לעשות, עבור מי, ואיך לרצות אנשים עם אג'נדות שונות בלי לאבד את הנשמה של הסיפור.
 
-אקרשטיין היא חברה שמרנית, ותיקה, ועמוסה בהיסטוריה. 100 שנה, משפחות מייסדים, תעשייה כבדה, פרויקטים ארציים — ומנהלים לכל מחלקה שיש לכל אחד מהם דעה על מה הסרט "חייב להראות."
+אקרשטיין היא חברה שמרנית, ותיקה, ועמוסה בהיסטוריה. 100 שנה, משפחות מייסדים, תעשייה כבדה, פרויקטים ארציים, ומנהלים לכל מחלקה שיש לכל אחד מהם דעה על מה הסרט "חייב להראות."
 
 זה בדיוק הפרויקט שמוכיח עד כמה ניהול לקוח חכם שווה לפחות כמו ניהול ציוד.
 
@@ -910,42 +910,42 @@ This isn't the thinking of a filming vendor. This is the thinking of a strategic
 
 ## אתגר 1: ארכיון שמגיע מכמה מאות שנים
 
-כשעובדים על סרט יובל למותג ותיק, מקבלים הרים של חומרים: **פילמים 8mm ו-16mm** ממייסדים, **תמונות שחור-לבן** שהוסרקו בנסיבות לא ברורות, **וידאו אנלוגי VHS** מהשמונים, ו-**צילומים דיגיטליים** מהעשור האחרון — כולם ביחסי מסך שונים ואיכויות שונות.
+כשעובדים על סרט יובל למותג ותיק, מקבלים הרים של חומרים: **פילמים 8mm ו-16mm** ממייסדים, **תמונות שחור-לבן** שהוסרקו בנסיבות לא ברורות, **וידאו אנלוגי VHS** מהשמונים, ו-**צילומים דיגיטליים** מהעשור האחרון, כולם ביחסי מסך שונים ואיכויות שונות.
 
-האתגר הוא לא "לנקות" אותם — זה בלתי אפשרי ולא רצוי. **האתגר הוא לכלול אותם בצורה שמרגישה כבחירה קולנועית, לא כמגבלה טכנית.**
+האתגר הוא לא "לנקות" אותם, זה בלתי אפשרי ולא רצוי. **האתגר הוא לכלול אותם בצורה שמרגישה כבחירה קולנועית, לא כמגבלה טכנית.**
 
-הפתרון: להחליט מראש שחומרי הארכיון יהיו "חלון לזמן" — לא ינסו להיות 4K. הם מוצגים עם גרעיניות, צבע חם ומסגרות שמאותתות "זיכרון", ואז נחתכים חדשות לבקרים לצילומי הרחפן המודרניים. המעבר בין העתיק לחדש הופך למוטיב הויזואלי המרכזי של הסרט.
+הפתרון: להחליט מראש שחומרי הארכיון יהיו "חלון לזמן", לא ינסו להיות 4K. הם מוצגים עם גרעיניות, צבע חם ומסגרות שמאותתות "זיכרון", ואז נחתכים חדשות לבקרים לצילומי הרחפן המודרניים. המעבר בין העתיק לחדש הופך למוטיב הויזואלי המרכזי של הסרט.
 
 ## אתגר 2: לגרום לחברה עם 100 דעות להסכים על 100 שניות
 
 בפרויקטים של תאגידים גדולים, כל סמנכ"ל רוצה שה"זרוע שלו" תקבל מספיק מסך-טיים. כל מחלקת שיווק רוצה את המסרים שלה. כל מנהל בכיר מחפש את עצמו בין הפריימים.
 
-הפתרון: **אסטרטגיית תסריט שמאחדת מבפנים.** במקום לרשום "נראה מפעל, אחר כך נראה פרויקט, אחר כך נראה עובד" — בנינו חוט סיפורי רגשי אחד: **החומרים שיוצרים את ישראל.** כל זרוע של אקרשטיין היא פרק בסיפור הזה — לא בגלל שהיא "חייבת להיכנס", אלא כי היא חלק מהנרטיב.
+הפתרון: **אסטרטגיית תסריט שמאחדת מבפנים.** במקום לרשום "נראה מפעל, אחר כך נראה פרויקט, אחר כך נראה עובד", בנינו חוט סיפורי רגשי אחד: **החומרים שיוצרים את ישראל.** כל זרוע של אקרשטיין היא פרק בסיפור הזה, לא בגלל שהיא "חייבת להיכנס", אלא כי היא חלק מהנרטיב.
 
 כשמנהלים שמרנים קיבלו את התסריט עם הלוגיקה הזו, הם הבינו שהסרט כבד עליהם **יותר** מאשר אם היו מגיעים עם דרישות. הם קיבלו בעלות על הנרטיב.
 
 ## אתגר 3: להחזיק 3 דקות קשב בלי לאבד קצב
 
-שלוש דקות זה נצח בוידאו ברשת. הפתרון הוא לא "לקצר" — הפתרון הוא **קצב עריכה שמשנה עצימות כל 20-30 שניות.**
+שלוש דקות זה נצח בוידאו ברשת. הפתרון הוא לא "לקצר", הפתרון הוא **קצב עריכה שמשנה עצימות כל 20-30 שניות.**
 
 הסרט בנוי כגלים: פתיחה רחבה (אוויר, מחוות, גדולה), אחר כך צלילה פנימה (קלוז-אפ על טקסטורה, חומר, ידיים), אחר כך שוב פתיחה. הקצב הזה מונע עייפות חזותית ומייצר תחושה של נשימה.
 
-בנוסף, מוזיקת הרקע מאפשרת "עיגון קצבי" — בכל שינוי עצימות מוזיקלי, העריכה מחזירה קשב.
+בנוסף, מוזיקת הרקע מאפשרת "עיגון קצבי", ובכל שינוי עצימות מוזיקלי, העריכה מחזירה קשב.
 
 ## מה שיוצא: נכס חברתי מולטי-פונקציונלי
 
 הסרט הזה לא נועד רק ל-YouTube. הוא מוגש:
 
-- **בפתיחת כנסים ואירועי יובל** — יצר "וואו מומנט" בפני קהל חיצוני ועובדים
-- **בישיבות דירקטוריון ומשקיעים** — מיצב את אקרשטיין כמובילת שוק עם 100 שנות עמידה
-- **כנכס Employer Branding** — עובדים ראו את עצמם כחלק מסיפור גדול מהם, וגאוות היחידה עלתה
+- **בפתיחת כנסים ואירועי יובל:** יצר "וואו מומנט" בפני קהל חיצוני ועובדים
+- **בישיבות דירקטוריון ומשקיעים:** מיצב את אקרשטיין כמובילת שוק עם 100 שנות עמידה
+- **כנכס Employer Branding:** עובדים ראו את עצמם כחלק מסיפור גדול מהם, וגאוות היחידה עלתה
 
 **מיתוג מחדש לא אומר לזרוק את העבר. לפעמים זה אומר לגרום לעבר להיות הנכס הכי חזק שיש לך.**`,
     bodyEn: `## When the Client Is a Monster of Complexity (in the Best Way)
 
-There are projects where the biggest challenge isn't the filming or the editing — it's understanding what the film needs to do, for whom, and how to satisfy people with different agendas without losing the soul of the story.
+There are projects where the biggest challenge isn't the filming or the editing, it's understanding what the film needs to do, for whom, and how to satisfy people with different agendas without losing the soul of the story.
 
-Akerstein is a conservative, veteran company loaded with history. 100 years, founding families, heavy industry, national projects — and managers in every department, each with opinions on what the film "must show."
+Akerstein is a conservative, veteran company loaded with history. 100 years, founding families, heavy industry, national projects, and managers in every department, each with opinions on what the film "must show."
 
 This is exactly the project that proves how much smart client management is worth, at least as much as equipment management.
 
@@ -953,35 +953,35 @@ This is exactly the project that proves how much smart client management is wort
 
 ## Challenge 1: An Archive Spanning Several Eras
 
-When you work on a legacy brand's anniversary film, you receive mountains of materials: **8mm and 16mm films** from founders, **black-and-white photos** scanned under unclear circumstances, **analog VHS video** from the eighties, and **digital footage** from the last decade — all in different aspect ratios and qualities.
+When you work on a legacy brand's anniversary film, you receive mountains of materials: **8mm and 16mm films** from founders, **black-and-white photos** scanned under unclear circumstances, **analog VHS video** from the eighties, and **digital footage** from the last decade, all in different aspect ratios and qualities.
 
-The challenge isn't to "clean" them — that's impossible and undesirable. **The challenge is to include them in a way that feels like a cinematic choice, not a technical limitation.**
+The challenge isn't to "clean" them, that's impossible and undesirable. **The challenge is to include them in a way that feels like a cinematic choice, not a technical limitation.**
 
-The solution: decide upfront that archive materials will be a "window in time" — they won't try to be 4K. They're presented with grain, warm color, and framing that signals "memory," then cut sharply to modern drone footage. The transition between old and new becomes the film's central visual motif.
+The solution: decide upfront that archive materials will be a "window in time", they won't try to be 4K. They're presented with grain, warm color, and framing that signals "memory," then cut sharply to modern drone footage. The transition between old and new becomes the film's central visual motif.
 
 ## Challenge 2: Getting a Company with 100 Opinions to Agree on 100 Seconds
 
 In large corporate projects, every VP wants their "arm" to get enough screen time. Every marketing department wants its messages. Every senior manager looks for themselves between the frames.
 
-The solution: **a script strategy that unifies from within.** Instead of writing "we'll show a factory, then a project, then an employee" — we built one emotional narrative thread: **the materials that build Israel.** Every arm of Akerstein is a chapter in that story — not because it "has to fit in," but because it's part of the narrative.
+The solution: **a script strategy that unifies from within.** Instead of writing "we'll show a factory, then a project, then an employee", we built one emotional narrative thread: **the materials that build Israel.** Every arm of Akerstein is a chapter in that story, not because it "has to fit in," but because it's part of the narrative.
 
 When conservative managers received the script with this logic, they understood that the film honored them **more** than if they'd arrived with demands. They received ownership of the narrative.
 
 ## Challenge 3: Holding 3 Minutes of Attention Without Losing Pace
 
-Three minutes is an eternity in online video. The solution isn't to "shorten" — it's **editing rhythm that changes intensity every 20-30 seconds.**
+Three minutes is an eternity in online video. The solution isn't to "shorten", it's **editing rhythm that changes intensity every 20-30 seconds.**
 
 The film is built in waves: wide opening (aerial, gestures, scale), then diving inward (closeup on texture, material, hands), then opening wide again. This rhythm prevents visual fatigue and creates a breathing feeling.
 
-Additionally, the backing music allows "rhythmic anchoring" — with every musical intensity shift, editing recaptures attention.
+Additionally, the backing music allows "rhythmic anchoring", and with every musical intensity shift, editing recaptures attention.
 
 ## What Comes Out: A Multi-Functional Corporate Asset
 
 This film wasn't designed just for YouTube. It's delivered:
 
-- **At conference and anniversary event openings** — created a "wow moment" in front of external audiences and employees
-- **At board and investor meetings** — positioned Akerstein as a market leader with 100 years of standing
-- **As an Employer Branding asset** — employees saw themselves as part of a story bigger than themselves, and unit pride soared
+- **At conference and anniversary event openings**: created a "wow moment" in front of external audiences and employees
+- **At board and investor meetings**: positioned Akerstein as a market leader with 100 years of standing
+- **As an Employer Branding asset**: employees saw themselves as part of a story bigger than themselves, and unit pride soared
 
 **Rebranding doesn't mean throwing away the past. Sometimes it means making the past the most powerful asset you have.**`,
     date: "2025-01-20",
@@ -993,19 +993,19 @@ This film wasn't designed just for YouTube. It's delivered:
   },
   {
     id: "corporate-event-marketing-engine",
-    coverImage: "/blog/corporate-event-cover.svg",
+    coverImage: "/vlogimg/corporate-event-cover.jpg",
     titleHe: "אל תתנו לאירוע שלכם להסתיים כשהאורות כבים: איך הופכים כנס חברה לנכס שיווקי מתמשך",
     titleEn: "Don't Let Your Event End When the Lights Go Out: How to Turn a Corporate Conference into a Lasting Marketing Asset",
-    excerptHe: "חברות משקיעות חודשים בתכנון אירוע, ואז האורות כבים — וזהו. בסביבה השיווקית המודרנית, זה פספוס אדיר. תיעוד אירועים עסקיים הוא כבר מזמן לא מזכרת — הוא מנוע תוכן.",
-    excerptEn: "Companies spend months planning an event, then the lights go out — and that's it. In today's marketing environment, that's a massive missed opportunity. Corporate event documentation is no longer a keepsake — it's a content engine.",
+    excerptHe: "חברות משקיעות חודשים בתכנון אירוע, ואז האורות כבים. בסביבה השיווקית המודרנית, זה פספוס אדיר. תיעוד אירועים עסקיים הוא כבר מזמן לא מזכרת, הוא מנוע תוכן.",
+    excerptEn: "Companies spend months planning an event, then the lights go out. In today's marketing environment, that's a massive missed opportunity. Corporate event documentation is no longer a keepsake, it's a content engine.",
     readingTime: 5,
     bodyHe: `## הפספוס הכי יקר בשיווק ארגוני
 
-חברות וארגונים משקיעים תקציבים עצומים וחודשים ארוכים של תכנון בהפקת אירועים עסקיים. כולם מגיעים, נהנים, ואז האורות כבים — והאירוע נשאר בעיקר כחשבוניות מהקייטרינג וזיכרון רחוק.
+חברות וארגונים משקיעים תקציבים עצומים וחודשים ארוכים של תכנון בהפקת אירועים עסקיים. כולם מגיעים, נהנים, ואז האורות כבים. והאירוע נשאר בעיקר כחשבוניות מהקייטרינג וזיכרון רחוק.
 
 בסביבה העסקית המודרנית, זה פספוס שיווקי אדיר.
 
-אם אתם כבר משקיעים בהפקת אירוע — התיעוד שלו הוא לא "בונוס נחמד". הוא חובה אסטרטגית שמאפשרת לכם לסחוט את המקסימום מהתקציב ולייצר חומרי שיווק שממשיכים לעבוד חודשים קדימה.
+אם אתם כבר משקיעים בהפקת אירוע, התיעוד שלו הוא לא "בונוס נחמד". הוא חובה אסטרטגית שמאפשרת לכם לסחוט את המקסימום מהתקציב ולייצר חומרי שיווק שממשיכים לעבוד חודשים קדימה.
 
 [IMAGE]
 
@@ -1015,19 +1015,19 @@ This film wasn't designed just for YouTube. It's delivered:
 
 אירוע עסקי אחד הוא בעצם **מכרה תוכן** שמספק:
 
-**סמכות מקצועית (Thought Leadership):** הרצאות, פאנלים, ראיונות מומחים — כל אלה, כשנערכים נכון, הופכים לסדרת תוכן ב-LinkedIn שמבססת את מומחיות החברה חודשים אחרי שהכנס הסתיים.
+**סמכות מקצועית (Thought Leadership):** הרצאות, פאנלים, ראיונות מומחים, כל אלה, כשנערכים נכון, הופכים לסדרת תוכן ב-LinkedIn שמבססת את מומחיות החברה חודשים אחרי שהכנס הסתיים.
 
-**Employer Branding חי:** אנרגיה קבוצתית אמיתית, עובדים שנהנים, מנהלים שנגישים — זה לא ניתן לבים. סרטון אירוע מלוטש שמראה שהחברה משקיעה בעובדים שלה הוא מגנט גיוס שעובד 24/7.
+**Employer Branding חי:** אנרגיה קבוצתית אמיתית, עובדים שנהנים, מנהלים שנגישים, זה לא ניתן לבים. סרטון אירוע מלוטש שמראה שהחברה משקיעה בעובדים שלה הוא מגנט גיוס שעובד 24/7.
 
-**Micro-Content לגאנט השיווקי:** מ-15 שניות לסטוריז ועד ציטוטים של נואמים בגרפיקה — אירוע אחד יכול לספק תוכן לחצי שנה שלמה.
+**Micro-Content לגאנט השיווקי:** מ-15 שניות לסטוריז ועד ציטוטים של נואמים בגרפיקה, אירוע אחד יכול לספק תוכן לחצי שנה שלמה.
 
 ## איך אנחנו עובדים באירועים
 
-הגישה שלנו היא **Run-and-Gun Filming**: צוות קל, מנוסה ובלתי נראה שלוכד את האנרגיה האמיתית של האירוע — בלי לעצור אנשים, בלי להפריע לזרימה, בלי חצובות שחוסמות מעברים.
+הגישה שלנו היא **Run-and-Gun Filming**: צוות קל, מנוסה ובלתי נראה שלוכד את האנרגיה האמיתית של האירוע, בלי לעצור אנשים, בלי להפריע לזרימה, בלי חצובות שחוסמות מעברים.
 
-**סאונד מהמיקסר:** כשיש נואם על במה, הסאונד שלנו מגיע ישיר מהמיקסר של האירוע — תוצאה? הקלטות הרצאות שאפשר להשתמש בהן, לא רק ב-B-roll.
+**סאונד מהמיקסר:** כשיש נואם על במה, הסאונד שלנו מגיע ישיר מהמיקסר של האירוע. תוצאה? הקלטות הרצאות שאפשר להשתמש בהן, לא רק ב-B-roll.
 
-**תכנון מודולרי מראש:** לפני האירוע, אנחנו מגדירים יחד את ה"קוביות" — מה צריך לסרטון הסיכום, מה לרשתות, מה להרצאות מלאות. כל שוט מצולם עם המטרה הסופית בראש.
+**תכנון מודולרי מראש:** לפני האירוע, אנחנו מגדירים יחד את ה"קוביות": מה צריך לסרטון הסיכום, מה לרשתות, מה להרצאות מלאות. כל שוט מצולם עם המטרה הסופית בראש.
 
 **עריכה ב-3 רמות:** סרטון סיכום קצבי (2-3 דקות), גרסאות קצרות לרשתות (30-60 שניות), והרצאות מלאות עם עריכה נקייה וכותרות.
 
@@ -1043,11 +1043,11 @@ This film wasn't designed just for YouTube. It's delivered:
 **אל תשארו רק עם החשבוניות מהקייטרינג. תצאו מכל אירוע עם בנק תכנים שמציג את החברה שלכם בשיא תפארתה.**`,
     bodyEn: `## The Most Expensive Miss in Corporate Marketing
 
-Companies and organizations invest enormous budgets and long months of planning into producing business events. Everyone shows up, has a great time, the lights go out — and the event lives on mainly as catering invoices and a distant memory.
+Companies and organizations invest enormous budgets and long months of planning into producing business events. Everyone shows up, has a great time, the lights go out. The event lives on mainly as catering invoices and a distant memory.
 
 In today's business environment, that's a massive marketing miss.
 
-If you're already investing in producing an event — documenting it isn't a "nice bonus." It's a strategic necessity that lets you maximize your budget and generate marketing content that keeps working months ahead.
+If you're already investing in producing an event, documenting it isn't a "nice bonus." It's a strategic necessity that lets you maximize your budget and generate marketing content that keeps working months ahead.
 
 [IMAGE]
 
@@ -1057,19 +1057,19 @@ Most companies think about event documentation as one video: "A conference recap
 
 One business event is essentially a **content mine** that provides:
 
-**Thought Leadership:** Lectures, panels, expert interviews — all of these, when edited correctly, become a LinkedIn content series that establishes the company's expertise months after the conference ended.
+**Thought Leadership:** Lectures, panels, expert interviews, all of these, when edited correctly, become a LinkedIn content series that establishes the company's expertise months after the conference ended.
 
-**Live Employer Branding:** Real group energy, employees enjoying themselves, accessible managers — this can't be faked. A polished event video showing the company invests in its people is a recruitment magnet working 24/7.
+**Live Employer Branding:** Real group energy, employees enjoying themselves, accessible managers, this can't be faked. A polished event video showing the company invests in its people is a recruitment magnet working 24/7.
 
-**Micro-Content for the Marketing Calendar:** From 15-second Stories to speaker quote graphics — one event can supply content for an entire half-year.
+**Micro-Content for the Marketing Calendar:** From 15-second Stories to speaker quote graphics, one event can supply content for an entire half-year.
 
 ## How We Work at Events
 
-Our approach is **Run-and-Gun Filming**: a light, experienced, near-invisible crew that captures the real energy of the event — without stopping people, disrupting flow, or blocking walkways with tripods.
+Our approach is **Run-and-Gun Filming**: a light, experienced, near-invisible crew that captures the real energy of the event, without stopping people, disrupting flow, or blocking walkways with tripods.
 
-**Sound from the mixer:** When there's a speaker on stage, our sound comes directly from the event's mixer — result? Lecture recordings you can actually use, not just B-roll.
+**Sound from the mixer:** When there's a speaker on stage, our sound comes directly from the event's mixer. Result? Lecture recordings you can actually use, not just B-roll.
 
-**Modular planning upfront:** Before the event, we define together the "building blocks" — what's needed for the recap video, what for social media, what for full lectures. Every shot is filmed with the final purpose in mind.
+**Modular planning upfront:** Before the event, we define together the "building blocks": what's needed for the recap video, what for social media, what for full lectures. Every shot is filmed with the final purpose in mind.
 
 **Editing at 3 levels:** A rhythmic recap video (2-3 minutes), shorter social versions (30-60 seconds), and full lectures with clean editing and titles.
 
@@ -1092,88 +1092,88 @@ An event documented correctly keeps generating value months after it ended:
   },
   {
     id: "format-driven-employer-branding",
-    coverImage: "/blog/format-driven-eb-cover.svg",
+    coverImage: "/vlogimg/format-driven-eb-cover.jpg",
     titleHe: "כשהפורמט עושה את העבודה: איך 'סליחה על השאלה' הפך לכלי Employer Branding מנצח",
     titleEn: "When the Format Does the Work: How 'Sorry for Asking' Became a Winning Employer Branding Tool",
-    excerptHe: "לקחת פורמט טלוויזיוני מוכר ולהסב אותו לצרכים עסקיים — זו לא רק הברקה קריאטיבית. זו אסטרטגיית תוכן שמספקת שתי ציפורים במכה אחת: כלי גיוס אותנטי ויום כיף פנים-ארגוני.",
-    excerptEn: "Taking a well-known TV format and adapting it for corporate use — that's not just creative brilliance. It's a content strategy that delivers two birds with one stone: an authentic recruitment tool and an internal team-building event.",
+    excerptHe: "לקחת פורמט טלוויזיוני מוכר ולהסב אותו לצרכים עסקיים, זו לא רק הברקה קריאטיבית. זו אסטרטגיית תוכן שמספקת שתי ציפורים במכה אחת: כלי גיוס אותנטי ויום כיף פנים-ארגוני.",
+    excerptEn: "Taking a well-known TV format and adapting it for corporate use, that's not just creative brilliance. It's a content strategy that delivers two birds with one stone: an authentic recruitment tool and an internal team-building event.",
     readingTime: 6,
     bodyHe: `## הפורמט כגשר בין אנשים לחברה
 
-יש טעות נפוצה שחברות גדולות עושות עם Employer Branding: הן מייצרות סרטים מלוטשים על "הערכים שלנו" ו"היתרונות שלנו" — ולא מביאות אף עובד אמיתי לדבר בגובה העיניים.
+יש טעות נפוצה שחברות גדולות עושות עם Employer Branding: הן מייצרות סרטים מלוטשים על "הערכים שלנו" ו"היתרונות שלנו", ולא מביאות אף עובד אמיתי לדבר בגובה העיניים.
 
 התוצאה? תוכן שנראה טוב בסרגל המידות הטכני, אבל לא מצליח לגרום למועמד פוטנציאלי לחשוב "אני רוצה לעבוד שם."
 
-בפרויקט שיצרנו עבור קבוצת אשטרום, ניגשנו לאתגר אחרת לחלוטין. במקום לבנות תסריט על החברה — לקחנו פורמט שאנשים כבר אוהבים ויודעים, והסבנו אותו.
+בפרויקט שיצרנו עבור קבוצת אשטרום, ניגשנו לאתגר אחרת לחלוטין. במקום לבנות תסריט על החברה, לקחנו פורמט שאנשים כבר אוהבים ויודעים, והסבנו אותו.
 
 [IMAGE]
 
 ## מדוע פורמט מוכר עובד ב-Employer Branding
 
-הפורמט של "סליחה על השאלה" — שאלות אישיות ישירות, תשובות ספונטניות, אווירה של כיף ואותנטיות — עושה משהו שסרטוני תדמית לא מצליחים לעשות: **הוא מוריד את המחסום.**
+הפורמט של "סליחה על השאלה", שאלות אישיות ישירות, תשובות ספונטניות, אווירה של כיף ואותנטיות, עושה משהו שסרטוני תדמית לא מצליחים לעשות: **הוא מוריד את המחסום.**
 
-הצופה מגיע עם ציפיות פורמט: הוא יודע שזה הולך להיות מצחיק, קצת נוקב, ואמיתי. הוא לא מוכן לסרטון שיווקי — הוא מוכן לאנשים. ואז האנשים של אשטרום בדיוק מסיפרים לו מה זה בעצם לעבוד שם.
+הצופה מגיע עם ציפיות פורמט: הוא יודע שזה הולך להיות מצחיק, קצת נוקב, ואמיתי. הוא לא מוכן לסרטון שיווקי, הוא מוכן לאנשים. ואז האנשים של אשטרום בדיוק מסיפרים לו מה זה בעצם לעבוד שם.
 
 ## האתגר האמיתי: 15 דקות מהצילומים
 
 בניגוד לסרטון קצר, פרויקט בן 15 דקות דורש מגוון אתגרים:
 
-**תחקיר וליהוק:** הלב של הפורמט הוא הצוות הנכון. עבדנו על זיהוי עובדים מכל מחלקה ואתר — כאלה שיביאו גיוון, אנרגיה, ויאמינו בתהליך. השאלות עצמן גם עברו עיצוב מדוקדק: האיזון בין שאלות שמצחיקות לבין כאלה שמביאות עומק אמיתי.
+**תחקיר וליהוק:** הלב של הפורמט הוא הצוות הנכון. עבדנו על זיהוי עובדים מכל מחלקה ואתר: כאלה שיביאו גיוון, אנרגיה, ויאמינו בתהליך. השאלות עצמן גם עברו עיצוב מדוקדק: האיזון בין שאלות שמצחיקות לבין כאלה שמביאות עומק אמיתי.
 
-**בימוי non-actors בתנאי שטח:** ראיין עובדים אמיתיים בתנאי אתר בנייה — רעש, אבק, לוגיסטיקה — זה אתגר שונה לגמרי מסטודיו. היכולת לגרום לעובד להרגיש בנוח מספיק כדי לצחוק, להתרגש ולהיות כן מול מצלמה — זה עיקר העבודה.
+**בימוי non-actors בתנאי שטח:** ראיין עובדים אמיתיים בתנאי אתר בנייה, רעש, אבק, לוגיסטיקה, זה אתגר שונה לגמרי מסטודיו. היכולת לגרום לעובד להרגיש בנוח מספיק כדי לצחוק, להתרגש ולהיות כן מול מצלמה, זה עיקר העבודה.
 
-**עריכה סיפורית לאורך:** 15 דקות לא מתחזקות את עצמן. העריכה קבעה את הקצב, בחרה את הרגעים שמחזיקים ומרגשים, שילבה B-roll מחיי החברה, ויצרה קשת שלמה — מהומור ועד גאווה מקצועית אמיתית.
+**עריכה סיפורית לאורך:** 15 דקות לא מתחזקות את עצמן. העריכה קבעה את הקצב, בחרה את הרגעים שמחזיקים ומרגשים, שילבה B-roll מחיי החברה, ויצרה קשת שלמה, מהומור ועד גאווה מקצועית אמיתית.
 
 ## ערך כפול: פנים וחוץ ארגוני
 
 מה שמייחד את הפרויקט הזה הוא שהוא מספק שתי תוצאות עסקיות שונות מהפקה אחת:
 
-**פנים ארגוני:** יום הצילומים עצמו הפך לאירוע מגבש. העובדים שהשתתפו הרגישו שרואים אותם ומעריכים אותם. הסרט שעלה אחר כך עשה גאווה לכל מי שהופיע בו — וגם לאלה שלא.
+**פנים ארגוני:** יום הצילומים עצמו הפך לאירוע מגבש. העובדים שהשתתפו הרגישו שרואים אותם ומעריכים אותם. הסרט שעלה אחר כך עשה גאווה לכל מי שהופיע בו, וגם לאלה שלא.
 
-**חוץ ארגוני:** מועמד שצופה ב-15 דקות של עובדים אמיתיים שמספרים על שגרת החיים של קבוצת אשטרום — הוא לא רק מבין את ה-DNA הארגוני, הוא כבר נמצא בתוכו.
+**חוץ ארגוני:** מועמד שצופה ב-15 דקות של עובדים אמיתיים שמספרים על שגרת החיים של קבוצת אשטרום, הוא לא רק מבין את ה-DNA הארגוני, הוא כבר נמצא בתוכו.
 
 ## מה זה אומר עבורכם
 
-אם יש לכם חברה עם סיפורים ייחודיים שעדיין לא סופרו — Format-Driven Content הוא הדרך להוציא אותם. הפורמט הנכון מוריד את ההתנגדות של הצופה, בונה אמינות מהיום הראשון ומייצר תוכן שאנשים בוחרים לצפות בו.
+אם יש לכם חברה עם סיפורים ייחודיים שעדיין לא סופרו, Format-Driven Content הוא הדרך להוציא אותם. הפורמט הנכון מוריד את ההתנגדות של הצופה, בונה אמינות מהיום הראשון ומייצר תוכן שאנשים בוחרים לצפות בו.
 
 **הסרט הטוב ביותר הוא זה שהצופה שוכח שהוא מיתוג.**`,
     bodyEn: `## The Format as a Bridge Between People and Company
 
-There's a common mistake large companies make with Employer Branding: they produce polished films about "our values" and "our benefits" — without bringing a single real employee to speak eye-to-eye.
+There's a common mistake large companies make with Employer Branding: they produce polished films about "our values" and "our benefits", without bringing a single real employee to speak eye-to-eye.
 
 The result? Content that looks good on technical metrics, but fails to make a potential candidate think "I want to work there."
 
-In the project we created for Ashtrom Group, we approached the challenge completely differently. Instead of building a script about the company — we took a format people already love and know, and adapted it.
+In the project we created for Ashtrom Group, we approached the challenge completely differently. Instead of building a script about the company, we took a format people already love and know, and adapted it.
 
 [IMAGE]
 
 ## Why a Familiar Format Works in Employer Branding
 
-The "Sorry for Asking" format — direct personal questions, spontaneous answers, an atmosphere of fun and authenticity — does something brand films can't: **it lowers the barrier.**
+The "Sorry for Asking" format, direct personal questions, spontaneous answers, an atmosphere of fun and authenticity, does something brand films can't: **it lowers the barrier.**
 
-The viewer arrives with format expectations: they know it's going to be funny, a little pointed, and real. They're not prepared for a marketing video — they're prepared for people. And then Ashtrom's people tell them exactly what it's really like to work there.
+The viewer arrives with format expectations: they know it's going to be funny, a little pointed, and real. They're not prepared for a marketing video, they're prepared for people. And then Ashtrom's people tell them exactly what it's really like to work there.
 
 ## The Real Challenge: 15 Minutes Held Together
 
 Unlike a short film, a 15-minute project demands a different range of challenges:
 
-**Research and casting:** The heart of the format is the right team. We worked on identifying employees from every department and site — people who would bring diversity, energy, and believe in the process. The questions themselves were also carefully crafted: the balance between questions that make people laugh and ones that bring real depth.
+**Research and casting:** The heart of the format is the right team. We worked on identifying employees from every department and site: people who would bring diversity, energy, and believe in the process. The questions themselves were also carefully crafted: the balance between questions that make people laugh and ones that bring real depth.
 
-**Directing non-actors in field conditions:** Interviewing real employees on a construction site — noise, dust, logistics — is a completely different challenge from a studio. The ability to make an employee comfortable enough to laugh, get emotional, and be honest on camera — that's the core of the work.
+**Directing non-actors in field conditions:** Interviewing real employees on a construction site, noise, dust, logistics, is a completely different challenge from a studio. The ability to make an employee comfortable enough to laugh, get emotional, and be honest on camera, that's the core of the work.
 
-**Long-form narrative editing:** 15 minutes don't sustain themselves. Editing determined the pacing, chose the moments that hold and move, integrated B-roll from company life, and created a complete arc — from humor to genuine professional pride.
+**Long-form narrative editing:** 15 minutes don't sustain themselves. Editing determined the pacing, chose the moments that hold and move, integrated B-roll from company life, and created a complete arc, from humor to genuine professional pride.
 
 ## Double Value: Internal and External
 
 What distinguishes this project is that it delivers two different business outcomes from one production:
 
-**Internal:** The filming day itself became a bonding event. The employees who participated felt seen and appreciated. The film that came out afterward created pride for everyone who appeared in it — and even those who didn't.
+**Internal:** The filming day itself became a bonding event. The employees who participated felt seen and appreciated. The film that came out afterward created pride for everyone who appeared in it, and even those who didn't.
 
-**External:** A candidate who watches 15 minutes of real employees describing the daily life of Ashtrom Group — they're not just understanding the organizational DNA, they're already inside it.
+**External:** A candidate who watches 15 minutes of real employees describing the daily life of Ashtrom Group, they're not just understanding the organizational DNA, they're already inside it.
 
 ## What This Means for You
 
-If you have a company with unique stories that haven't been told yet — Format-Driven Content is the way to bring them out. The right format lowers viewer resistance, builds credibility from day one, and creates content people choose to watch.
+If you have a company with unique stories that haven't been told yet, Format-Driven Content is the way to bring them out. The right format lowers viewer resistance, builds credibility from day one, and creates content people choose to watch.
 
 **The best film is the one the viewer forgets is branding.**`,
     date: "2025-05-15",
@@ -1185,41 +1185,41 @@ If you have a company with unique stories that haven't been told yet — Format-
   },
   {
     id: "kickstarter-blueprint",
-    coverImage: "/blog/kickstarter-blueprint-cover.svg",
+    coverImage: "/vlogimg/kickstarter-blueprint-cover.jpg",
     titleHe: "ה-Blueprint של סרט קיקסטארטר: איך הופכים ספקנים לתומכים משלמים",
     titleEn: "The Kickstarter Blueprint: How to Turn Skeptics into Paying Backers",
-    excerptHe: "סרטון קיקסטארטר מוצלח פועל לפי חוקים שונים לחלוטין מסרטון תדמית. כשהמוצר עוד לא קיים — האמון הוא הכל. ניתוח הקמפיין של Dride 4K שגייס 1.1 מיליון דולר.",
-    excerptEn: "A successful Kickstarter video plays by completely different rules than a brand film. When the product doesn't exist yet — trust is everything. Analysis of the Dride 4K campaign that raised $1.1 million.",
+    excerptHe: "סרטון קיקסטארטר מוצלח פועל לפי חוקים שונים לחלוטין מסרטון תדמית. כשהמוצר עוד לא קיים, האמון הוא הכל. ניתוח הקמפיין של Dride 4K שגייס 1.1 מיליון דולר.",
+    excerptEn: "A successful Kickstarter video plays by completely different rules than a brand film. When the product doesn't exist yet, trust is everything. Analysis of the Dride 4K campaign that raised $1.1 million.",
     readingTime: 6,
     bodyHe: `## קמפיין גיוס המונים ≠ סרטון תדמית
 
 רוב חברות ההפקה מגיעות לקמפיין קיקסטארטר עם הכלים של סרטוני מותג: אסתטיקה יפה, מוזיקה מרגשת, מסרים ברמה גבוהה. התוצאה? סרטון מרשים שלא מוכר כלום.
 
-בגיוס המונים, הצופה הוא לא לקוח שרוכש מוצר מוכח. הוא משקיע בחזון של מוצר שעוד לא קיים בשוק. הפחד מכשלון, מאיחור במשלוח, מבעיות ייצור — כל אלה עובדים נגדכם. הסרטון צריך לנטרל התנגדויות, לא רק לייצר התרגשות.
+בגיוס המונים, הצופה הוא לא לקוח שרוכש מוצר מוכח. הוא משקיע בחזון של מוצר שעוד לא קיים בשוק. הפחד מכשלון, מאיחור במשלוח, מבעיות ייצור, כל אלה עובדים נגדכם. הסרטון צריך לנטרל התנגדויות, לא רק לייצר התרגשות.
 
-בפרויקט Dride 4K — מצלמת רכב 4K שפוצחה לקמפיין קיקסטארטר — בנינו כל שנייה של הסרטון סביב מבנה אחד מוכח.
+בפרויקט Dride 4K, מצלמת רכב 4K שפוצחה לקמפיין קיקסטארטר, בנינו כל שנייה של הסרטון סביב מבנה אחד מוכח.
 
 [IMAGE]
 
 ## ה-Kickstarter Blueprint: חמישה שלבים
 
-### שלב 1 — ה-Hook הקולנועי (0–10 שניות)
+### שלב 1: ה-Hook הקולנועי (0–10 שניות)
 
-החמש עד עשר שניות הראשונות הן הכל. הגולש בקיקסטארטר רואה עשרות פרויקטים. ה-Hook לא צריך להסביר — הוא צריך לעצור.
+החמש עד עשר שניות הראשונות הן הכל. הגולש בקיקסטארטר רואה עשרות פרויקטים. ה-Hook לא צריך להסביר, הוא צריך לעצור.
 
-Dride 4K פתח עם המוצר בפעולה, רכב בתנועה, גימור מטאלי שמשדר "זה לא מוצר מוסכייה — זה טכנולוגיה רצינית." לפני שהצופה שמע מילה אחת, הוא כבר הבין שזה שונה.
+Dride 4K פתח עם המוצר בפעולה, רכב בתנועה, גימור מטאלי שמשדר "זה לא מוצר מוסכייה, זה טכנולוגיה רצינית." לפני שהצופה שמע מילה אחת, הוא כבר הבין שזה שונה.
 
-### שלב 2 — הצגת הכאב (The Problem)
+### שלב 2: הצגת הכאב (The Problem)
 
-אחרי ה-Hook, לא מציגים את המוצר — מציגים את הבעיה. **חום קיצוני** שמשבית מצלמות רגילות. **פגיעה ברכב חונה** ללא עדים ובלי ראיות. **קושי בשיתוף** חומרים עם ביטוח ומשטרה.
+אחרי ה-Hook, לא מציגים את המוצר, מציגים את הבעיה. **חום קיצוני** שמשבית מצלמות רגילות. **פגיעה ברכב חונה** ללא עדים ובלי ראיות. **קושי בשיתוף** חומרים עם ביטוח ומשטרה.
 
-הצופה צריך לחשוב "זה בדיוק מה שקרה לי" לפני שהוא שומע על הפתרון. ברגע שיש זיהוי עם הבעיה — הפתרון כבר חצי מכור.
+הצופה צריך לחשוב "זה בדיוק מה שקרה לי" לפני שהוא שומע על הפתרון. ברגע שיש זיהוי עם הבעיה, הפתרון כבר חצי מכור.
 
-### שלב 3 — גיבור המוצר (The Hero Reveal)
+### שלב 3: גיבור המוצר (The Hero Reveal)
 
-עכשיו, ורק עכשיו, מציגים את המוצר — עם תיאור נועז: **"The most rigid dashcam on the planet."** זה לא תיאור מפרט, זה הצהרת עמדה. זה מה שגורם לתומך לרצות לספר לחברים שלו.
+עכשיו, ורק עכשיו, מציגים את המוצר, עם תיאור נועז: **"The most rigid dashcam on the planet."** זה לא תיאור מפרט, זה הצהרת עמדה. זה מה שגורם לתומך לרצות לספר לחברים שלו.
 
-### שלב 4 — Feature Walkthrough שמתרגם ל-Benefits
+### שלב 4: Feature Walkthrough שמתרגם ל-Benefits
 
 כל פיצ'ר טכני מתרגם מיד לתועלת רגשית:
 
@@ -1229,46 +1229,46 @@ Dride 4K פתח עם המוצר בפעולה, רכב בתנועה, גימור מ
 
 המפרט הטכני הוא הראיה. התועלת הרגשית היא הסיבה לקנות.
 
-### שלב 5 — נטרול ההתנגדות הגדולה
+### שלב 5: נטרול ההתנגדות הגדולה
 
 בקיקסטארטר, ההתנגדות הסמויה תמיד אותה: "זה ישלח בזמן? זה לא יעלם לי עם הכסף?" התשובה לא יכולה להיות "אנחנו אמינים." היא צריכה להיות **עדות קונקרטית**.
 
-Dride 4K הציג בסרטון: "כבר רכשנו אלפי מעבדים מראש." זה משפט אחד שנטרל פחד של כל Backer שחשב פעמיים. לא הבטחות — עובדות.
+Dride 4K הציג בסרטון: "כבר רכשנו אלפי מעבדים מראש." זה משפט אחד שנטרל פחד של כל Backer שחשב פעמיים. לא הבטחות, עובדות.
 
 ## התוצאה: 3,748 תומכים, $1,191,083
 
-הפרויקט גייס מעל 1.1 מיליון דולר. לא בגלל שהמוצר היה הכי טוב בשוק — אלא כי הסרטון בנה אמון, תרגם טכנולוגיה לרגש, ונתן לצופה סיבה לפעול **עכשיו**.
+הפרויקט גייס מעל 1.1 מיליון דולר. לא בגלל שהמוצר היה הכי טוב בשוק, אלא כי הסרטון בנה אמון, תרגם טכנולוגיה לרגש, ונתן לצופה סיבה לפעול **עכשיו**.
 
-**סרטון קמפיין הוא המנוע העסקי המרכזי של הגיוס. הוא לא "חלק מהקמפיין" — הוא הקמפיין.**`,
+**סרטון קמפיין הוא המנוע העסקי המרכזי של הגיוס. הוא לא "חלק מהקמפיין", הוא הקמפיין.**`,
     bodyEn: `## Crowdfunding Video ≠ Brand Film
 
 Most production companies come to a Kickstarter campaign with brand film tools: beautiful aesthetics, moving music, high-level messaging. The result? An impressive video that sells nothing.
 
-In crowdfunding, the viewer isn't a customer buying a proven product. They're investing in the vision of a product that doesn't exist in the market yet. Fear of failure, late delivery, production issues — all working against you. The video needs to neutralize objections, not just generate excitement.
+In crowdfunding, the viewer isn't a customer buying a proven product. They're investing in the vision of a product that doesn't exist in the market yet. Fear of failure, late delivery, production issues, all working against you. The video needs to neutralize objections, not just generate excitement.
 
-In the Dride 4K project — a 4K dashcam cracked for a Kickstarter campaign — we built every second of the video around one proven structure.
+In the Dride 4K project, a 4K dashcam cracked for a Kickstarter campaign, we built every second of the video around one proven structure.
 
 [IMAGE]
 
 ## The Kickstarter Blueprint: Five Stages
 
-### Stage 1 — The Cinematic Hook (0–10 seconds)
+### Stage 1: The Cinematic Hook (0–10 seconds)
 
-The first five to ten seconds are everything. A Kickstarter browser sees dozens of projects. The hook doesn't need to explain — it needs to stop.
+The first five to ten seconds are everything. A Kickstarter browser sees dozens of projects. The hook doesn't need to explain, it needs to stop.
 
-Dride 4K opened with the product in action, a car in motion, metallic finish that communicates "this isn't a garage product — this is serious technology." Before the viewer heard a single word, they already understood this was different.
+Dride 4K opened with the product in action, a car in motion, metallic finish that communicates "this isn't a garage product, this is serious technology." Before the viewer heard a single word, they already understood this was different.
 
-### Stage 2 — The Pain Presentation
+### Stage 2: The Pain Presentation
 
-After the hook, don't present the product — present the problem. **Extreme heat** that disables regular cameras. **Parking hits** with no witnesses and no evidence. **Difficulty sharing** footage with insurance and police.
+After the hook, don't present the product, present the problem. **Extreme heat** that disables regular cameras. **Parking hits** with no witnesses and no evidence. **Difficulty sharing** footage with insurance and police.
 
-The viewer needs to think "that's exactly what happened to me" before they hear about the solution. Once there's identification with the problem — the solution is already half sold.
+The viewer needs to think "that's exactly what happened to me" before they hear about the solution. Once there's identification with the problem, the solution is already half sold.
 
-### Stage 3 — The Hero Reveal
+### Stage 3: The Hero Reveal
 
-Now, and only now, present the product — with a bold declaration: **"The most rigid dashcam on the planet."** This isn't a spec description, it's a position statement. This is what makes a backer want to tell their friends.
+Now, and only now, present the product, with a bold declaration: **"The most rigid dashcam on the planet."** This isn't a spec description, it's a position statement. This is what makes a backer want to tell their friends.
 
-### Stage 4 — Feature Walkthrough That Translates to Benefits
+### Stage 4: Feature Walkthrough That Translates to Benefits
 
 Every technical feature immediately translates to an emotional benefit:
 
@@ -1278,17 +1278,17 @@ Every technical feature immediately translates to an emotional benefit:
 
 The technical spec is the proof. The emotional benefit is the reason to buy.
 
-### Stage 5 — Neutralizing the Big Objection
+### Stage 5: Neutralizing the Big Objection
 
 In Kickstarter, the hidden objection is always the same: "Will it ship on time? Will my money disappear?" The answer can't be "we're trustworthy." It needs to be **concrete evidence**.
 
-Dride 4K showed in the video: "We've already purchased thousands of processors in advance." One sentence that neutralized the fear of every backer who thought twice. Not promises — facts.
+Dride 4K showed in the video: "We've already purchased thousands of processors in advance." One sentence that neutralized the fear of every backer who thought twice. Not promises. Facts.
 
 ## The Result: 3,748 Backers, $1,191,083
 
-The project raised over $1.1 million. Not because the product was the best on the market — but because the video built trust, translated technology into emotion, and gave the viewer a reason to act **now**.
+The project raised over $1.1 million. Not because the product was the best on the market, but because the video built trust, translated technology into emotion, and gave the viewer a reason to act **now**.
 
-**A campaign video is the primary business engine of the fundraise. It's not "part of the campaign" — it is the campaign.**`,
+**A campaign video is the primary business engine of the fundraise. It's not "part of the campaign", it is the campaign.**`,
     date: "2025-04-01",
     tags: ["Crowdfunding", "Kickstarter", "Product Launch", "Direct Response"],
     relatedServiceHref: "/services/hightech",
@@ -1298,15 +1298,15 @@ The project raised over $1.1 million. Not because the product was the best on th
   },
   {
     id: "tech-product-video-60sec",
-    coverImage: "/blog/tech-product-video-cover.svg",
+    coverImage: "/vlogimg/tech-product-video-cover.jpg",
     titleHe: "איך להסביר טכנולוגיה מורכבת ב-60 שניות? האמנות של סרטי מוצר לעולם ה-AI והדאטה",
     titleEn: "How to Explain Complex Technology in 60 Seconds? The Art of Product Films for the AI and Data World",
-    excerptHe: "האתגר הגדול של חברות הייטק ו-SaaS הוא לא הפיתוח — אלא היכולת להסביר מה המוצר שלהן עושה ב-60 שניות. שלושת החוקים לסרטון מוצר טכנולוגי שממיר צופים ללידים.",
-    excerptEn: "The biggest challenge for high-tech and SaaS companies isn't development — it's explaining what their product does in 60 seconds. Three laws of a technology product film that converts viewers to leads.",
+    excerptHe: "האתגר הגדול של חברות הייטק ו-SaaS הוא לא הפיתוח, אלא היכולת להסביר מה המוצר שלהן עושה ב-60 שניות. שלושת החוקים לסרטון מוצר טכנולוגי שממיר צופים ללידים.",
+    excerptEn: "The biggest challenge for high-tech and SaaS companies isn't development, it's explaining what their product does in 60 seconds. Three laws of a technology product film that converts viewers to leads.",
     readingTime: 5,
     bodyHe: `## האתגר שכל חברת הייטק מכירה
 
-האתגר הגדול ביותר של חברות הייטק וסטארטאפים בתחום ה-AI וה-Deep Tech הוא לא הפיתוח עצמו — אלא היכולת להסביר ללקוחות ולמשקיעים מה המוצר שלהם באמת עושה, ואיך הוא פותר להם את הבעיה בצורה פשוטה ומהירה. כשהמוצר שלכם מבוסס על אלגוריתמים, תשתית נתונים או חיבורי API, אי אפשר פשוט "לצלם אותו בשטח".
+האתגר הגדול ביותר של חברות הייטק וסטארטאפים בתחום ה-AI וה-Deep Tech הוא לא הפיתוח עצמו, אלא היכולת להסביר ללקוחות ולמשקיעים מה המוצר שלהם באמת עושה, ואיך הוא פותר להם את הבעיה בצורה פשוטה ומהירה. כשהמוצר שלכם מבוסס על אלגוריתמים, תשתית נתונים או חיבורי API, אי אפשר פשוט "לצלם אותו בשטח".
 
 כאן נכנס לתמונה השילוב בין קריאטיב חכם, Motion Graphics מתקדם וסיפור סיפורים טכנולוגי.
 
@@ -1314,11 +1314,11 @@ The project raised over $1.1 million. Not because the product was the best on th
 
 [IMAGE]
 
-## חוק 1: להתחיל מהכאב — לא מהפיצ'ר
+## חוק 1: להתחיל מהכאב, לא מהפיצ'ר
 
-הלקוח שלכם לא קונה טכנולוגיה, הוא קונה פתרון לבעיה. הסרטון נפתח בחרדה הגדולה ביותר של מפתחי AI — מודלים שנשארים מאחור ומאבדים את היתרון התחרותי שלהם בגלל חוסר במידע עדכני. ברגע שהגדרתם את הכאב בשניות הראשונות, הקהל שלכם קשוב לפתרון.
+הלקוח שלכם לא קונה טכנולוגיה, הוא קונה פתרון לבעיה. הסרטון נפתח בחרדה הגדולה ביותר של מפתחי AI, מודלים שנשארים מאחור ומאבדים את היתרון התחרותי שלהם בגלל חוסר במידע עדכני. ברגע שהגדרתם את הכאב בשניות הראשונות, הקהל שלכם קשוב לפתרון.
 
-**רוב חברות הטכנולוגיה עושות את הטעות ההפוכה:** הן מתחילות בפיצ'רים, ב"מה יש לנו", ב-USPs. הצופה עוד לא יודע למה לו אכפת. תנו לו סיבה לצפות — אז תציגו את הפתרון.
+**רוב חברות הטכנולוגיה עושות את הטעות ההפוכה:** הן מתחילות בפיצ'רים, ב"מה יש לנו", ב-USPs. הצופה עוד לא יודע למה לו אכפת. תנו לו סיבה לצפות, אז תציגו את הפתרון.
 
 ## חוק 2: מטפורות ויזואליות שמייצגות מה שלא ניתן לצלם
 
@@ -1326,26 +1326,26 @@ The project raised over $1.1 million. Not because the product was the best on th
 
 שלושה כלים שעושים את זה נכון:
 
-**Particle Systems:** כדורים, נקודות ונתיבים שזורמים בחלל — מדמים את הכמות העצומה של נתונים שעוברים דרך המערכת. הצופה מרגיש "סקייל" בלי להבין מספרים.
+**Particle Systems:** כדורים, נקודות ונתיבים שזורמים בחלל, מדמים את הכמות העצומה של נתונים שעוברים דרך המערכת. הצופה מרגיש "סקייל" בלי להבין מספרים.
 
-**UI Simulation:** ממשקי מסך אמיתיים עם שגיאות קוד מוכרות (404, 502, timeout errors) — הצופה הטכני מזהה אותם מיד ומזדהה עם הכאב. זה לא עיצוב גנרי, זה שפה משותפת.
+**UI Simulation:** ממשקי מסך אמיתיים עם שגיאות קוד מוכרות (404, 502, timeout errors), הצופה הטכני מזהה אותם מיד ומזדהה עם הכאב. זה לא עיצוב גנרי, זה שפה משותפת.
 
-**Beat-matching:** כל תנועה גרפית מסונכרנת עם הביט של הפסקול. זה לא מקרי — זה מה שגורם לסרטון להרגיש "חי" ואנרגטי גם כשאין בו שחקן אחד.
+**Beat-matching:** כל תנועה גרפית מסונכרנת עם הביט של הפסקול. זה לא מקרי, זה מה שגורם לסרטון להרגיש "חי" ואנרגטי גם כשאין בו שחקן אחד.
 
 ## חוק 3: לדבר בשפה של מקבלי ההחלטות
 
-מנהלי מוצר, CTOs וסמנכ"לי טכנולוגיה מחפשים אמינות. שילוב של מונחים מקצועיים נכונים (LLMs, MCP, A2A, Petabyte scale), תצוגות ממשק מוכרות ונתונים השוואתיים מול מתחרים — מעניקים לסרטון את הסמכותיות הדרושה.
+מנהלי מוצר, CTOs וסמנכ"לי טכנולוגיה מחפשים אמינות. שילוב של מונחים מקצועיים נכונים (LLMs, MCP, A2A, Petabyte scale), תצוגות ממשק מוכרות ונתונים השוואתיים מול מתחרים, מעניקים לסרטון את הסמכותיות הדרושה.
 
-**הגרף ההשוואתי הוא כלי שיווקי עוצמתי:** הוא הופך שאלה של "האם לקנות" לשאלה של "למה לא לקנות". מקבל ההחלטות רואה את הנתונים, מבין את הפער — ועובר לשלב הבא.
+**הגרף ההשוואתי הוא כלי שיווקי עוצמתי:** הוא הופך שאלה של "האם לקנות" לשאלה של "למה לא לקנות". מקבל ההחלטות רואה את הנתונים, מבין את הפער, ועובר לשלב הבא.
 
 ## מה זה שווה בפועל
 
-סרטון מוצר חכם הוא לא רק חלון ראווה יפה — הוא זרוע המכירות והשיווק הדיגיטלית של החברה שלכם. הוא מסוגל לקחת את הטכנולוגיה המורכבת ביותר ולתרגם אותה לערך עסקי ברור — בין אם על דף הנחיתה, בהצגה למשקיעים, או ב-LinkedIn.
+סרטון מוצר חכם הוא לא רק חלון ראווה יפה. הוא זרוע המכירות והשיווק הדיגיטלית של החברה שלכם. הוא מסוגל לקחת את הטכנולוגיה המורכבת ביותר ולתרגם אותה לערך עסקי ברור, בין אם על דף הנחיתה, בהצגה למשקיעים, או ב-LinkedIn.
 
 **60 שניות שנעשות נכון שוות יותר מ-6 עמודי מצגת.**`,
     bodyEn: `## The Challenge Every High-Tech Company Knows
 
-The biggest challenge for high-tech companies and startups in AI and Deep Tech isn't the development itself — it's the ability to explain to clients and investors what the product actually does, and how it solves their problem simply and quickly. When your product is based on algorithms, data infrastructure, or API connections, you simply can't "film it in the field."
+The biggest challenge for high-tech companies and startups in AI and Deep Tech isn't the development itself, it's the ability to explain to clients and investors what the product actually does, and how it solves their problem simply and quickly. When your product is based on algorithms, data infrastructure, or API connections, you simply can't "film it in the field."
 
 This is where the combination of smart creative, advanced Motion Graphics, and Tech Storytelling comes in.
 
@@ -1353,11 +1353,11 @@ In the project we created for Bright Data, the goal was to crack the way their d
 
 [IMAGE]
 
-## Law 1: Start with the Pain — Not the Feature
+## Law 1: Start with the Pain, Not the Feature
 
-Your client isn't buying technology, they're buying a solution to a problem. The video opens with the biggest anxiety of AI developers — models falling behind and losing their competitive advantage due to a lack of current data. Once you define the pain in the first seconds, your audience is listening for the solution.
+Your client isn't buying technology, they're buying a solution to a problem. The video opens with the biggest anxiety of AI developers, models falling behind and losing their competitive advantage due to a lack of current data. Once you define the pain in the first seconds, your audience is listening for the solution.
 
-**Most tech companies make the opposite mistake:** they start with features, with "what we have," with USPs. The viewer doesn't yet know why they should care. Give them a reason to watch — then present the solution.
+**Most tech companies make the opposite mistake:** they start with features, with "what we have," with USPs. The viewer doesn't yet know why they should care. Give them a reason to watch, then present the solution.
 
 ## Law 2: Visual Metaphors That Represent the Unfilmable
 
@@ -1365,21 +1365,21 @@ Data isn't a tangible thing. To show the flow, volume, and speed of information,
 
 Three tools that do this right:
 
-**Particle Systems:** spheres, points, and paths flowing through space — simulating the enormous volume of data passing through the system. The viewer feels "scale" without understanding numbers.
+**Particle Systems:** spheres, points, and paths flowing through space, simulating the enormous volume of data passing through the system. The viewer feels "scale" without understanding numbers.
 
-**UI Simulation:** real screen interfaces with familiar error codes (404, 502, timeout errors) — the technical viewer recognizes them immediately and identifies with the pain. This isn't generic design, it's a shared language.
+**UI Simulation:** real screen interfaces with familiar error codes (404, 502, timeout errors), the technical viewer recognizes them immediately and identifies with the pain. This isn't generic design, it's a shared language.
 
-**Beat-matching:** every graphic movement is synchronized with the soundtrack's beat. This isn't accidental — it's what makes the video feel "alive" and energetic even without a single actor.
+**Beat-matching:** every graphic movement is synchronized with the soundtrack's beat. This isn't accidental, it's what makes the video feel "alive" and energetic even without a single actor.
 
 ## Law 3: Speak the Language of Decision-Makers
 
-Product managers, CTOs, and technology VPs look for credibility. Combining the right professional terminology (LLMs, MCP, A2A, Petabyte scale), familiar interface displays, and comparative data against competitors — gives the video the authority it needs.
+Product managers, CTOs, and technology VPs look for credibility. Combining the right professional terminology (LLMs, MCP, A2A, Petabyte scale), familiar interface displays, and comparative data against competitors, gives the video the authority it needs.
 
-**The comparison graph is a powerful sales tool:** it turns the question of "whether to buy" into "why not to buy." The decision-maker sees the data, understands the gap — and moves to the next stage.
+**The comparison graph is a powerful sales tool:** it turns the question of "whether to buy" into "why not to buy." The decision-maker sees the data, understands the gap, and moves to the next stage.
 
 ## What This Is Worth in Practice
 
-A smart product film isn't just a pretty showpiece — it's your company's digital sales and marketing arm. It can take the most complex technology and translate it into clear business value — whether on a landing page, in an investor presentation, or on LinkedIn.
+A smart product film isn't just a pretty showpiece. It's your company's digital sales and marketing arm. It can take the most complex technology and translate it into clear business value, whether on a landing page, in an investor presentation, or on LinkedIn.
 
 **60 seconds done right are worth more than 6 slides of a deck.**`,
     date: "2025-06-01",
@@ -1391,23 +1391,23 @@ A smart product film isn't just a pretty showpiece — it's your company's digit
   },
   {
     id: "max-roi-production",
-    coverImage: "/blog/social-content-cover.svg",
+    coverImage: "/vlogimg/social-content-cover.jpg",
     titleHe: "פיצוח ה-ROI של הסושיאל: איך הופכים יום צילום אחד לעשרות סרטוני תוכן מנצחים",
     titleEn: "Cracking Social ROI: How One Filming Day Becomes Dozens of Winning Content Videos",
-    excerptHe: "הרשתות רעבות לתוכן כל יום. תקציבי ההפקה מוגבלים. הפתרון לא נמצא בעוד ימי צילום — הוא נמצא בתכנון חכם יותר.",
-    excerptEn: "Social media is hungry for content every day. Production budgets are limited. The solution isn't more filming days — it's smarter planning.",
+    excerptHe: "הרשתות רעבות לתוכן כל יום. תקציבי ההפקה מוגבלים. הפתרון לא נמצא בעוד ימי צילום, הוא נמצא בתכנון חכם יותר.",
+    excerptEn: "Social media is hungry for content every day. Production budgets are limited. The solution isn't more filming days, it's smarter planning.",
     readingTime: 5,
     bodyHe: `## הבעיה שמנהלי שיווק לא אוהבים לדבר עליה
 
-מנהלי שיווק ודיגיטל בחברות גדולות מכירים את התסכול: הרשתות צריכות תוכן כל יום, אבל ימי צילום עולים כסף. כל Reel, כל Short, כל Story — אם מייצרים אותם בנפרד, העלות מתפוצצת. הפתרון הנפוץ? להתפשר על איכות. להשתמש בחומרים ישנים. לעלות פחות.
+מנהלי שיווק ודיגיטל בחברות גדולות מכירים את התסכול: הרשתות צריכות תוכן כל יום, אבל ימי צילום עולים כסף. כל Reel, כל Short, כל Story, אם מייצרים אותם בנפרד, העלות מתפוצצת. הפתרון הנפוץ? להתפשר על איכות. להשתמש בחומרים ישנים. לעלות פחות.
 
 זו טעות.
 
-**יש גישה אחרת.** היא לא דורשת יותר ימי צילום — היא דורשת תכנון שונה לחלוטין לפני שמגיעים לסט.
+**יש גישה אחרת.** היא לא דורשת יותר ימי צילום, היא דורשת תכנון שונה לחלוטין לפני שמגיעים לסט.
 
 ## Max ROI Production: עיקרון אחד, עשרות תוצאות
 
-הגישה שלנו מבוססת על פירוק יום הצילום לרכיבים — מה שאנחנו קוראים **"צילום מודולרי"**. במקום להגיע עם תסריט אחד ולצלם אותו קדימה-אחורה, אנחנו מגיעים עם מפת תוכן: רשימת "קוביות" שכל אחת מהן עובדת לבד — וגם יחד עם האחרות.
+הגישה שלנו מבוססת על פירוק יום הצילום לרכיבים, מה שאנחנו קוראים **"צילום מודולרי"**. במקום להגיע עם תסריט אחד ולצלם אותו קדימה-אחורה, אנחנו מגיעים עם מפת תוכן: רשימת "קוביות" שכל אחת מהן עובדת לבד, וגם יחד עם האחרות.
 
 בפרויקט LYFE של קבוצת אשטרום, המטרה הייתה לייצר נכסים דיגיטליים לרשתות החברתיות לאירועי השנה החדשה. יכולנו להגיע, לצלם סרטון אחד ולהסתיים.
 
@@ -1415,30 +1415,30 @@ A smart product film isn't just a pretty showpiece — it's your company's digit
 
 [IMAGE]
 
-## שלב 1 — פיצוח ה"עוגן הויזואלי"
+## שלב 1: פיצוח ה"עוגן הויזואלי"
 
 לפני שאנחנו נוגעים במצלמה, אנחנו מחפשים את **ה-Scroll-stopper**: האלמנט שיעצור אצבע בגלילה תוך שנייה.
 
-בLYFE, הכדורים המטאליים הענקיים בלובי היו התשובה. השתקפויות, צבעים, אינטראקציה עם אנשים — הם הפכו ל"עוגן" שמחבר בין כל הסרטונים ומייצר זיהוי מיידי של המקום.
+בLYFE, הכדורים המטאליים הענקיים בלובי היו התשובה. השתקפויות, צבעים, אינטראקציה עם אנשים, הם הפכו ל"עוגן" שמחבר בין כל הסרטונים ומייצר זיהוי מיידי של המקום.
 
-כל פרויקט יש לו עוגן כזה. לא תמיד הוא ברור מיד — זה חלק מעבודת הפרה-פרודקשן.
+כל פרויקט יש לו עוגן כזה. לא תמיד הוא ברור מיד, זה חלק מעבודת הפרה-פרודקשן.
 
-## שלב 2 — צילום מודולרי בשטח
+## שלב 2: צילום מודולרי בשטח
 
 **רחפן:** פתיחות, סקייל, כניסות דרמטיות למרחב.
 **גוף ראשון (POV):** תחושת "אתה שם". הצופה נכנס למרחב.
 **זוויות נמוכות:** מייצרות גובה ויוקרה.
-**אווירה ואנשים:** הרגעים האנושיים האמיתיים — חיוכים, תנועה, אנרגיה.
+**אווירה ואנשים:** הרגעים האנושיים האמיתיים: חיוכים, תנועה, אנרגיה.
 
-כל "קובייה" מצולמת בטייקים קצרים, מכמה זוויות. בסוף היום — בנק חומרים עשיר שניתן לחתוך אותו בדרכים שונות.
+כל "קובייה" מצולמת בטייקים קצרים, מכמה זוויות. בסוף היום, בנק חומרים עשיר שניתן לחתוך אותו בדרכים שונות.
 
-## שלב 3 — פוסט-פרודקשן מותאם פלטפורמה
+## שלב 3: פוסט-פרודקשן מותאם פלטפורמה
 
 כאן קורה הקסם. אותם חומרים גלם עוברים:
 
-**Beat-matching:** עריכה שמסונכרנת עם הביט של המוזיקה — יוצרת תחושת אנרגיה גבוהה גם בסרטון של 15 שניות.
+**Beat-matching:** עריכה שמסונכרנת עם הביט של המוזיקה, יוצרת תחושת אנרגיה גבוהה גם בסרטון של 15 שניות.
 
-**Motion Overlays:** שכבות גרפיות שמעניקות לוידאו את הלוק הטרנדי — בלי לאבד את היוקרה של המותג.
+**Motion Overlays:** שכבות גרפיות שמעניקות לוידאו את הלוק הטרנדי, בלי לאבד את היוקרה של המותג.
 
 **חיתוך לפלטפורמות:** אותו יום צילום → 9:16 לReels ו-TikTok, 16:9 ליוטיוב, 1:1 לפיד. גרסאות לחגים, לקמפיינים עונתיים, לפוסטים שוטפים.
 
@@ -1451,18 +1451,18 @@ A smart product film isn't just a pretty showpiece — it's your company's digit
 
 **אתם לא צריכים יותר ימי צילום. אתם צריכים ימי צילום חכמים יותר.**
 
-The Video Shop מביאה את האסטרטגיה, את הצוות ואת המתודולוגיה. אתם מביאים את הסיפור שרוצים לספר.`,
+videoshop מביאה את האסטרטגיה, את הצוות ואת המתודולוגיה. אתם מביאים את הסיפור שרוצים לספר.`,
     bodyEn: `## The Problem Marketing Managers Don't Like Talking About
 
-Marketing and digital managers at large companies know the frustration: social media needs content every day, but filming days cost money. Every Reel, every Short, every Story — if produced separately, costs explode. The common solution? Compromise on quality. Use old materials. Post less.
+Marketing and digital managers at large companies know the frustration: social media needs content every day, but filming days cost money. Every Reel, every Short, every Story, if produced separately, costs explode. The common solution? Compromise on quality. Use old materials. Post less.
 
 That's a mistake.
 
-**There's another approach.** It doesn't require more filming days — it requires completely different planning before arriving on set.
+**There's another approach.** It doesn't require more filming days, it requires completely different planning before arriving on set.
 
 ## Max ROI Production: One Principle, Dozens of Results
 
-Our approach is based on breaking down the filming day into components — what we call **"modular shooting."** Instead of arriving with one script and filming it front to back, we arrive with a content map: a list of "building blocks" where each one works alone — and also with the others.
+Our approach is based on breaking down the filming day into components, what we call **"modular shooting."** Instead of arriving with one script and filming it front to back, we arrive with a content map: a list of "building blocks" where each one works alone, and also with the others.
 
 In the LYFE project for Ashtrom Group, the goal was to create digital assets for social media for New Year events. We could have arrived, filmed one video, and left.
 
@@ -1470,30 +1470,30 @@ Instead, we arrived with a complete content strategy for one day.
 
 [IMAGE]
 
-## Stage 1 — Identifying the Visual Anchor
+## Stage 1: Identifying the Visual Anchor
 
 Before we touch a camera, we look for **the scroll-stopper**: the element that will stop a scrolling finger within a second.
 
-At LYFE, the giant metallic orbs in the lobby were the answer. Reflections, colors, interaction with people — they became the "anchor" connecting all the videos and creating immediate recognition of the location.
+At LYFE, the giant metallic orbs in the lobby were the answer. Reflections, colors, interaction with people, they became the "anchor" connecting all the videos and creating immediate recognition of the location.
 
-Every project has such an anchor. It's not always immediately obvious — that's part of the pre-production work.
+Every project has such an anchor. It's not always immediately obvious, that's part of the pre-production work.
 
-## Stage 2 — Modular Shooting on Location
+## Stage 2: Modular Shooting on Location
 
 **Drone:** openings, scale, dramatic entrances into the space.
 **POV (point of view):** the feeling of "you're there." The viewer enters the space.
 **Low angles:** create height and luxury.
-**Atmosphere and people:** the real human moments — smiles, movement, energy.
+**Atmosphere and people:** the real human moments: smiles, movement, energy.
 
-Each "building block" is filmed in short takes, from multiple angles. At the end of the day — a rich footage bank that can be cut in different ways.
+Each "building block" is filmed in short takes, from multiple angles. At the end of the day, a rich footage bank that can be cut in different ways.
 
-## Stage 3 — Platform-Tailored Post-Production
+## Stage 3: Platform-Tailored Post-Production
 
 This is where the magic happens. The same raw footage goes through:
 
-**Beat-matching:** editing synchronized to the music beat — creates a high-energy feeling even in a 15-second video.
+**Beat-matching:** editing synchronized to the music beat, creates a high-energy feeling even in a 15-second video.
 
-**Motion Overlays:** graphic layers that give the video a trending look — without losing the brand's luxury feel.
+**Motion Overlays:** graphic layers that give the video a trending look, without losing the brand's luxury feel.
 
 **Platform cutting:** same filming day → 9:16 for Reels and TikTok, 16:9 for YouTube, 1:1 for feed. Versions for holidays, seasonal campaigns, ongoing posts.
 
@@ -1506,7 +1506,7 @@ From one well-planned filming day, companies receive:
 
 **You don't need more filming days. You need smarter filming days.**
 
-The Video Shop brings the strategy, the crew, and the methodology. You bring the story you want to tell.`,
+videoshop brings the strategy, the crew, and the methodology. You bring the story you want to tell.`,
     date: "2025-02-15",
     tags: ["Social Media", "ROI", "Content Strategy", "Behind the Scenes"],
     relatedServiceHref: "/services/corporate",
@@ -1516,73 +1516,73 @@ The Video Shop brings the strategy, the crew, and the methodology. You bring the
   },
   {
     id: "ai-storyboard-workflow",
-    coverImage: "/blog/ai-storyboard-cover.svg",
-    titleHe: "איך מייצרים סרט AI שנראה כמו הפקה של מיליון דולר — מהסטוריבורד ועד המסירה",
-    titleEn: "How to Produce an AI Film That Looks Like a Million-Dollar Production — From Storyboard to Delivery",
-    excerptHe: "הסוד לא נמצא בכלי. הוא נמצא בתהליך. אחרי עשרות פרויקטי AI — הנה המתודולוגיה המלאה שלנו, שלב אחרי שלב.",
-    excerptEn: "The secret isn't in the tool. It's in the process. After dozens of AI projects — here's our complete methodology, step by step.",
+    coverImage: "/vlogimg/ai-storyboard-cover.jpg",
+    titleHe: "איך מייצרים סרט AI שנראה כמו הפקה של מיליון דולר: מהסטוריבורד ועד המסירה",
+    titleEn: "How to Produce an AI Film That Looks Like a Million-Dollar Production: From Storyboard to Delivery",
+    excerptHe: "הסוד לא נמצא בכלי. הוא נמצא בתהליך. אחרי עשרות פרויקטי AI, הנה המתודולוגיה המלאה שלנו, שלב אחרי שלב.",
+    excerptEn: "The secret isn't in the tool. It's in the process. After dozens of AI projects, here's our complete methodology, step by step.",
     readingTime: 8,
     bodyHe: `## הנחת היסוד הלא נכונה
 
 רוב האנשים שמגיעים אלינו עם בקשה לסרט AI חושבים שהתהליך נראה כך: כותבים פרומפט → מקבלים סרט → מסיימים.
 
-הם מגלים שזה לא עובד ככה. ואנחנו לא מפתיעים אותם — אנחנו מסבירים למה.
+הם מגלים שזה לא עובד ככה. ואנחנו לא מפתיעים אותם, אנחנו מסבירים למה.
 
-**הפקת AI מקצועית עוברת אותם שלבים בדיוק כמו הפקה קלאסית.** ה-AI הוא לא קיצור דרך — הוא כלי ייצור חדש. כמו שמצלמת ARRI לא מצלמת בעצמה, Kling לא מפיק בעצמו. מישהו צריך לדעת מה לבקש ממנה, ומה לעשות עם מה שיוצא.
+**הפקת AI מקצועית עוברת אותם שלבים בדיוק כמו הפקה קלאסית.** ה-AI הוא לא קיצור דרך, הוא כלי ייצור חדש. כמו שמצלמת ARRI לא מצלמת בעצמה, Kling לא מפיק בעצמו. מישהו צריך לדעת מה לבקש ממנה, ומה לעשות עם מה שיוצא.
 
 הנה התהליך המלא שלנו, כפי שהוא מתרחש בפועל.
 
-## שלב 1 — הבריף: לא "מה אתם רוצים" אלא "מה אתם רוצים שיקרה"
+## שלב 1: הבריף: לא "מה אתם רוצים" אלא "מה אתם רוצים שיקרה"
 
 הפגישה הראשונה שלנו עם לקוח AI אף פעם לא מתחילה בשאלה "איזה סרט תרצו?". היא מתחילה בשאלה: **"מה הצופה צריך לחשוב, להרגיש ולעשות שלוש שניות אחרי שהסרט מסתיים?"**
 
 ההבדל הזה קריטי.
 
-לקוח שמגיע ואומר "אנחנו רוצים סרט שמציג את הטכנולוגיה שלנו" עדיין לא יודע מה הוא רוצה. לקוח שמגיע ואומר "אנחנו רוצים שמנמ"ר של תאגיד בנייה בינלאומי יצלצל אלינו אחרי הצפייה" — זה בריף שאפשר לעבוד איתו.
+לקוח שמגיע ואומר "אנחנו רוצים סרט שמציג את הטכנולוגיה שלנו" עדיין לא יודע מה הוא רוצה. לקוח שמגיע ואומר "אנחנו רוצים שמנמ"ר של תאגיד בנייה בינלאומי יצלצל אלינו אחרי הצפייה", זה בריף שאפשר לעבוד איתו.
 
 הבריף הנכון מגדיר:
-- **קהל יעד ספציפי** — לא "עסקים" אלא "VP Operations בחברת קבלנות בינלאומית שמשתתף בדיון תקציב"
-- **פעולה מוגדרת** — לא "מודעות" אלא "בקשת פגישה / שליחת RFP"
-- **חסם אחד שצריך לפרוץ** — מה מונע מהצופה לפעול כרגע? אי-אמון? חוסר ידע? לא מבין את הדחיפות?
+- **קהל יעד ספציפי:** לא "עסקים" אלא "VP Operations בחברת קבלנות בינלאומית שמשתתף בדיון תקציב"
+- **פעולה מוגדרת:** לא "מודעות" אלא "בקשת פגישה / שליחת RFP"
+- **חסם אחד שצריך לפרוץ:** מה מונע מהצופה לפעול כרגע? אי-אמון? חוסר ידע? לא מבין את הדחיפות?
 
 [IMAGE]
 
-## שלב 2 — ארכיטקטורת הנרטיב
+## שלב 2: ארכיטקטורת הנרטיב
 
 אחרי הבריף אנחנו כותבים מסמך של שני עמודים לפני שנוגעים באיזה כלי שהוא:
 
 **The Story Spine:**
-- **Act 1 — הסטטוס קוו:** העולם כפי שהוא נראה בלי הפתרון
-- **Act 2 — הבעיה הנסתרת:** הסיכון שהצופה לא ידע עליו (ולכן לא פעל)
-- **Act 3 — ה-turning point:** הרגע שבו הפתרון מוכנס
-- **Act 4 — העולם החדש:** מה נראה אחרי
+- **Act 1: הסטטוס קוו:** העולם כפי שהוא נראה בלי הפתרון
+- **Act 2: הבעיה הנסתרת:** הסיכון שהצופה לא ידע עליו (ולכן לא פעל)
+- **Act 3: ה-turning point:** הרגע שבו הפתרון מוכנס
+- **Act 4: העולם החדש:** מה נראה אחרי
 
-המבנה הזה עובד בכל סרט — B2B, הומניטרי, טכנולוגי, נדל"ן. אנושות לא השתנתה. אנחנו עדיין מחוברים לסיפורים שנבנו ככה.
+המבנה הזה עובד בכל סרט, B2B, הומניטרי, טכנולוגי, נדל"ן. אנושות לא השתנתה. אנחנו עדיין מחוברים לסיפורים שנבנו ככה.
 
-לאחר מכן: **תסריט מלא.** כל שניה מחושבת. VO, תיאור ויזואלי, גרפיקה, מוזיקה — הכל כתוב על הנייר לפני שפותחים Midjourney.
+לאחר מכן: **תסריט מלא.** כל שניה מחושבת. VO, תיאור ויזואלי, גרפיקה, מוזיקה, הכל כתוב על הנייר לפני שפותחים Midjourney.
 
-## שלב 3 — הסטוריבורד עם AI
+## שלב 3: הסטוריבורד עם AI
 
-**זה הצעד שרוב הלקוחות לא מצפים לו — וזה הצעד שמכריע את כל הפרויקט.**
+**זה הצעד שרוב הלקוחות לא מצפים לו, וזה הצעד שמכריע את כל הפרויקט.**
 
 אנחנו לא יוצרים סטוריבורד "על הדרך". אנחנו מוציאים שלושה עד חמישה ימים **רק** על הסטוריבורד.
 
 הסטוריבורד ב-Midjourney מגדיר:
-- **כל angle** — שוט מהצדדים? מלמעלה? POV?
-- **לוק ויזואלי** — טון, פלטת צבעים, depth of field, lighting direction
-- **ה-art direction של הדמויות** — מה הם לובשים? איפה הם עומדים? מה הם עושים?
-- **ה-environment** — איפה מתרחשת כל סצנה? איזה שעה ביום?
+- **כל angle:** שוט מהצדדים? מלמעלה? POV?
+- **לוק ויזואלי:** טון, פלטת צבעים, depth of field, lighting direction
+- **ה-art direction של הדמויות:** מה הם לובשים? איפה הם עומדים? מה הם עושים?
+- **ה-environment:** איפה מתרחשת כל סצנה? איזה שעה ביום?
 
-כל frame ב-Midjourney עובר לפחות 8-12 iterations לפני שאנחנו מרוצים ממנו. כל שוט שיישמע כמו "קרוב מספיק" — יהפוך לבעיה בשלב הגנרציה.
+כל frame ב-Midjourney עובר לפחות 8-12 iterations לפני שאנחנו מרוצים ממנו. כל שוט שיישמע כמו "קרוב מספיק", יהפוך לבעיה בשלב הגנרציה.
 
 **הסטוריבורד הוא גם כלי ניהול לקוח.** לפני שאנחנו מייצרים שנייה אחת של וידאו, הלקוח מאשר כל frame. זה מונע את אחת הבעיות הגדולות ביותר בהפקות AI: "זה לא מה שחשבתי שיצא".
 
-## שלב 4 — אישור הלקוח
+## שלב 4: אישור הלקוח
 
 לפני הגנרציה, הלקוח מקבל:
 1. תסריט עם טיימינג מדויק
 2. Storyboard מלא (20-40 frames)
-3. Mood board — reference של לוק וטון
+3. Mood board: reference של לוק וטון
 
 הלקוח מאשר את שלושת המסמכים. **רק אז** מתחילה העבודה האמיתית.
 
@@ -1590,11 +1590,11 @@ The Video Shop brings the strategy, the crew, and the methodology. You bring the
 
 [IMAGE]
 
-## שלב 5 — גנרציית התנועה
+## שלב 5: גנרציית התנועה
 
 עכשיו, לבסוף, נכנסים Kling ו-Runway Gen-3 Alpha לתמונה.
 
-**ב-Kling:** כל frame מה-Midjourney הופך ל-seed לגנרציית תנועה. אנחנו מגדירים: כיוון תנועת המצלמה, מהירות, תנועת הדמויות, ואת ה-motion style הכולל. לכל שניה אחת שתיכנס לסרט הסופי — מייצרים 8-15 variants ובוחרים אחת.
+**ב-Kling:** כל frame מה-Midjourney הופך ל-seed לגנרציית תנועה. אנחנו מגדירים: כיוון תנועת המצלמה, מהירות, תנועת הדמויות, ואת ה-motion style הכולל. לכל שניה אחת שתיכנס לסרט הסופי, מייצרים 8-15 variants ובוחרים אחת.
 
 **ב-Runway:** בעיקר עבור shots שדורשים שליטה מדויקת יותר בתנועת המצלמה, או לצמצם inconsistency בין frames.
 
@@ -1603,19 +1603,19 @@ The Video Shop brings the strategy, the crew, and the methodology. You bring the
 - Reference image עקבי לכל דמות/לוקיישן
 - Color correction בפוסט שמאחד את הכל
 
-## שלב 6 — פוסט-פרודקשן
+## שלב 6: פוסט-פרודקשן
 
-**עריכה:** כל ה-clips עולים ל-DaVinci Resolve. בונים את הסרט לפי התסריט והסטוריבורד המאושרים. זה לא "שיחקנו" ב-AI — זה עריכה רצינית עם תשומת לב לקצב, tension, ו-breathing.
+**עריכה:** כל ה-clips עולים ל-DaVinci Resolve. בונים את הסרט לפי התסריט והסטוריבורד המאושרים. זה לא "שיחקנו" ב-AI, זה עריכה רצינית עם תשומת לב לקצב, tension, ו-breathing.
 
-**HUD & Motion Graphics:** ב-After Effects — כל אלמנט גרפי שאנחנו מוסיפים (UI overlays, גרפים, כותרות, annotations) מעוצב לפי שפה ויזואלית מותאמת לסרט. לא template. לא Canva.
+**HUD & Motion Graphics:** ב-After Effects, כל אלמנט גרפי שאנחנו מוסיפים (UI overlays, גרפים, כותרות, annotations) מעוצב לפי שפה ויזואלית מותאמת לסרט. לא template. לא Canva.
 
-**Color Grading:** כל clip עובר grading ב-DaVinci כדי לאחד את הלוק. AI מייצר inconsistencies בצבע — grading מקצועי מוחק אותן.
+**Color Grading:** כל clip עובר grading ב-DaVinci כדי לאחד את הלוק. AI מייצר inconsistencies בצבע, grading מקצועי מוחק אותן.
 
-**Sound Design ו-Mix:** קריינות, מוזיקה, Foley — הכל מעוצב ומיוצב. הסרט הסופי מגיע עם LUFS מנורמלים לכל הפלטפורמות.
+**Sound Design ו-Mix:** קריינות, מוזיקה, Foley, הכל מעוצב ומיוצב. הסרט הסופי מגיע עם LUFS מנורמלים לכל הפלטפורמות.
 
 ## מה זה עולה בזמן
 
-לקוחות מצפים שסרט AI ייקח שבוע. סרט AI מקצועי לוקח **אותו הזמן כמו הפקה קלאסית** — בין 4 ל-8 שבועות.
+לקוחות מצפים שסרט AI ייקח שבוע. סרט AI מקצועי לוקח **אותו הזמן כמו הפקה קלאסית**, בין 4 ל-8 שבועות.
 
 הפירוט:
 - בריף ואישור כיוון: שבוע
@@ -1623,14 +1623,14 @@ The Video Shop brings the strategy, the crew, and the methodology. You bring the
 - גנרציה: שבועיים
 - פוסט-פרודקשן + פידבק: שבועיים
 
-ה"קסם" של AI לא מקצר את הזמן — הוא מרחיב את מה שאפשר ליצור. בתקציב שבעבר ייצר פרומו פשוט, היום אפשר לייצר עולם.
+ה"קסם" של AI לא מקצר את הזמן, הוא מרחיב את מה שאפשר ליצור. בתקציב שבעבר ייצר פרומו פשוט, היום אפשר לייצר עולם.
 
-## מה AI יכול — ומה הוא לא יכול
+## מה AI יכול, ומה הוא לא יכול
 
 **AI מנצח כשצריך לצלם את הלא-ניתן לצילום:**
 - עולמות עתידיים
 - מערכות שסווגות או לא נגישות
-- Scale שאין לו תקציב — שמיים, הרס, המונים
+- Scale שאין לו תקציב: שמיים, הרס, המונים
 - מדינות או אזורים שאי אפשר לנסוע אליהם
 
 **AI מפסיד כשנדרש הרגע האנושי האמיתי:**
@@ -1638,70 +1638,70 @@ The Video Shop brings the strategy, the crew, and the methodology. You bring the
 - CEO מסביר חזון
 - עובד מדבר על מה שהוא אוהב בחברה
 
-לכן ב-Hybrid productions שלנו — תמיד יש שניות של live action אמיתי. הן מה שנותנות לסרט את ה"אמת" שהמוח האנושי מחפש.
+לכן ב-Hybrid productions שלנו, תמיד יש שניות של live action אמיתי. הן מה שנותנות לסרט את ה"אמת" שהמוח האנושי מחפש.
 
-The Video Shop לא מוכרים "סרטי AI". אנחנו מפיקים **סרטים שמשתמשים בכלי הנכון לכל רגע.** לפעמים זה מצלמה. לפעמים זה Kling. תמיד זה תסריט.`,
+videoshop לא מוכרים "סרטי AI". אנחנו מפיקים **סרטים שמשתמשים בכלי הנכון לכל רגע.** לפעמים זה מצלמה. לפעמים זה Kling. תמיד זה תסריט.`,
     bodyEn: `## The Wrong Assumption
 
 Most people who come to us with an AI film request think the process looks like this: write a prompt → get a film → done.
 
-They discover that's not how it works. And we don't surprise them — we explain why.
+They discover that's not how it works. And we don't surprise them, we explain why.
 
-**Professional AI production goes through the exact same stages as classical production.** AI is not a shortcut — it's a new production tool. Just as an ARRI camera doesn't film itself, Kling doesn't produce itself. Someone needs to know what to ask of it, and what to do with what comes out.
+**Professional AI production goes through the exact same stages as classical production.** AI is not a shortcut, it's a new production tool. Just as an ARRI camera doesn't film itself, Kling doesn't produce itself. Someone needs to know what to ask of it, and what to do with what comes out.
 
 Here's our complete process, as it actually happens.
 
-## Stage 1 — The Brief: Not "What Do You Want" But "What Do You Want to Happen"
+## Stage 1: The Brief: Not "What Do You Want" But "What Do You Want to Happen"
 
 Our first meeting with an AI client never starts with "what film do you want?" It starts with: **"What should the viewer think, feel, and do three seconds after the film ends?"**
 
 This difference is critical.
 
-A client who comes and says "we want a film that shows our technology" doesn't yet know what they want. A client who comes and says "we want the COO of an international construction corporation to call us after watching" — that's a brief you can work with.
+A client who comes and says "we want a film that shows our technology" doesn't yet know what they want. A client who comes and says "we want the COO of an international construction corporation to call us after watching", that's a brief you can work with.
 
 The right brief defines:
-- **Specific target audience** — not "businesses" but "VP Operations at an international contracting company attending a budget meeting"
-- **Defined action** — not "awareness" but "request a meeting / send an RFP"
-- **One barrier to break** — what's preventing the viewer from acting right now? Mistrust? Lack of knowledge? Not understanding the urgency?
+- **Specific target audience:** not "businesses" but "VP Operations at an international contracting company attending a budget meeting"
+- **Defined action:** not "awareness" but "request a meeting / send an RFP"
+- **One barrier to break:** what's preventing the viewer from acting right now? Mistrust? Lack of knowledge? Not understanding the urgency?
 
 [IMAGE]
 
-## Stage 2 — Narrative Architecture
+## Stage 2: Narrative Architecture
 
 After the brief we write a two-page document before touching any tool:
 
 **The Story Spine:**
-- **Act 1 — Status quo:** The world as it looks without the solution
-- **Act 2 — The hidden problem:** The risk the viewer didn't know about (and therefore didn't act)
-- **Act 3 — The turning point:** The moment the solution is introduced
-- **Act 4 — The new world:** What it looks like after
+- **Act 1: Status quo:** The world as it looks without the solution
+- **Act 2: The hidden problem:** The risk the viewer didn't know about (and therefore didn't act)
+- **Act 3: The turning point:** The moment the solution is introduced
+- **Act 4: The new world:** What it looks like after
 
-This structure works in every film — B2B, humanitarian, technological, real estate. Humanity hasn't changed. We're still wired to connect to stories built this way.
+This structure works in every film, B2B, humanitarian, technological, real estate. Humanity hasn't changed. We're still wired to connect to stories built this way.
 
-Then: **a full script.** Every second calculated. VO, visual description, graphics, music — everything written on paper before opening Midjourney.
+Then: **a full script.** Every second calculated. VO, visual description, graphics, music, everything written on paper before opening Midjourney.
 
-## Stage 3 — AI Storyboarding
+## Stage 3: AI Storyboarding
 
-**This is the step most clients don't expect — and it's the step that decides the entire project.**
+**This is the step most clients don't expect, and it's the step that decides the entire project.**
 
 We don't create a storyboard "on the way." We spend three to five days **only** on the storyboard.
 
 The Midjourney storyboard defines:
-- **Every angle** — side shot? overhead? POV?
-- **Visual look** — tone, color palette, depth of field, lighting direction
-- **Art direction of characters** — what are they wearing? where are they standing? what are they doing?
-- **The environment** — where does each scene take place? what time of day?
+- **Every angle:** side shot? overhead? POV?
+- **Visual look:** tone, color palette, depth of field, lighting direction
+- **Art direction of characters:** what are they wearing? where are they standing? what are they doing?
+- **The environment:** where does each scene take place? what time of day?
 
-Every Midjourney frame goes through at least 8-12 iterations before we're satisfied. Every shot that sounds "close enough" — will become a problem in the generation stage.
+Every Midjourney frame goes through at least 8-12 iterations before we're satisfied. Every shot that sounds "close enough", will become a problem in the generation stage.
 
 **The storyboard is also a client management tool.** Before we generate a single second of video, the client approves every frame. This prevents one of the biggest problems in AI productions: "that's not what I thought would come out."
 
-## Stage 4 — Client Approval
+## Stage 4: Client Approval
 
 Before generation, the client receives:
 1. Script with precise timing
 2. Complete storyboard (20-40 frames)
-3. Mood board — look and tone reference
+3. Mood board: look and tone reference
 
 The client approves all three documents. **Only then** does the real work begin.
 
@@ -1709,11 +1709,11 @@ This takes another week. But it saves three weeks of iterations after generation
 
 [IMAGE]
 
-## Stage 5 — Motion Generation
+## Stage 5: Motion Generation
 
 Now, finally, Kling and Runway Gen-3 Alpha enter the picture.
 
-**In Kling:** every frame from Midjourney becomes a seed for motion generation. We define: camera movement direction, speed, character movement, and overall motion style. For every second that will go into the final film — we generate 8-15 variants and choose one.
+**In Kling:** every frame from Midjourney becomes a seed for motion generation. We define: camera movement direction, speed, character movement, and overall motion style. For every second that will go into the final film, we generate 8-15 variants and choose one.
 
 **In Runway:** primarily for shots requiring more precise camera movement control, or to reduce inconsistency between frames.
 
@@ -1722,19 +1722,19 @@ Now, finally, Kling and Runway Gen-3 Alpha enter the picture.
 - Consistent reference image for every character/location
 - Color correction in post that unifies everything
 
-## Stage 6 — Post-Production
+## Stage 6: Post-Production
 
-**Editing:** all clips go into DaVinci Resolve. We build the film according to the approved script and storyboard. This isn't "playing with AI" — it's serious editing with attention to rhythm, tension, and breathing.
+**Editing:** all clips go into DaVinci Resolve. We build the film according to the approved script and storyboard. This isn't "playing with AI", it's serious editing with attention to rhythm, tension, and breathing.
 
-**HUD & Motion Graphics:** in After Effects — every graphic element we add (UI overlays, graphs, titles, annotations) is designed according to a visual language tailored to the film. Not a template. Not Canva.
+**HUD & Motion Graphics:** in After Effects, every graphic element we add (UI overlays, graphs, titles, annotations) is designed according to a visual language tailored to the film. Not a template. Not Canva.
 
-**Color Grading:** every clip goes through grading in DaVinci to unify the look. AI generates inconsistencies in color — professional grading erases them.
+**Color Grading:** every clip goes through grading in DaVinci to unify the look. AI generates inconsistencies in color, professional grading erases them.
 
-**Sound Design & Mix:** voiceover, music, Foley — all designed and balanced. The final film arrives with LUFS normalized for every platform.
+**Sound Design & Mix:** voiceover, music, Foley, all designed and balanced. The final film arrives with LUFS normalized for every platform.
 
 ## What This Costs in Time
 
-Clients expect an AI film to take a week. A professional AI film takes **the same time as a classical production** — between 4 and 8 weeks.
+Clients expect an AI film to take a week. A professional AI film takes **the same time as a classical production**, between 4 and 8 weeks.
 
 The breakdown:
 - Brief and direction approval: one week
@@ -1742,14 +1742,14 @@ The breakdown:
 - Generation: two weeks
 - Post-production + feedback: two weeks
 
-The AI "magic" doesn't shorten the time — it expands what's possible. With a budget that previously produced a simple promo, today you can produce a world.
+The AI "magic" doesn't shorten the time, it expands what's possible. With a budget that previously produced a simple promo, today you can produce a world.
 
-## What AI Can Do — And What It Can't
+## What AI Can Do, And What It Can't
 
 **AI wins when you need to film the unfilmable:**
 - Future worlds
 - Classified or inaccessible systems
-- Scale with no budget — skies, destruction, crowds
+- Scale with no budget: skies, destruction, crowds
 - Countries or regions you can't travel to
 
 **AI loses when a genuine human moment is required:**
@@ -1757,9 +1757,9 @@ The AI "magic" doesn't shorten the time — it expands what's possible. With a b
 - CEO explaining a vision
 - Employee talking about what they love about the company
 
-That's why in our hybrid productions — there are always seconds of real live action. They're what give the film the "truth" the human brain is looking for.
+That's why in our hybrid productions, there are always seconds of real live action. They're what give the film the "truth" the human brain is looking for.
 
-The Video Shop doesn't sell "AI films." We produce **films that use the right tool for every moment.** Sometimes that's a camera. Sometimes that's Kling. Always that's a script.`,
+videoshop doesn't sell "AI films." We produce **films that use the right tool for every moment.** Sometimes that's a camera. Sometimes that's Kling. Always that's a script.`,
     date: "2025-04-10",
     tags: ["AI", "Workflow", "Storyboard", "Behind the Scenes"],
     relatedServiceHref: "/services/ai",
@@ -1769,15 +1769,15 @@ The Video Shop doesn't sell "AI films." We produce **films that use the right to
   },
   {
     id: "ai-video-2024",
-    coverImage: "/blog/ai-production-cover.svg",
-    titleHe: "למה רוב סרטי ה-AI נראים מזויפים — ומה קורה כשבמאי אמיתי מחזיק בהגה",
-    titleEn: "Why Most AI Films Look Fake — And What Happens When a Real Director Takes the Wheel",
-    excerptHe: "כולם יכולים ללחוץ על כפתור ב-Kling. לא כולם יודעים מה לעשות עם מה שיוצא. אחרי עשרות פרויקטי AI — הנה מה שלמדנו.",
-    excerptEn: "Anyone can click a button in Kling. Not everyone knows what to do with what comes out. After dozens of AI projects — here's what we learned.",
+    coverImage: "/vlogimg/ai-production-cover.jpg",
+    titleHe: "למה רוב סרטי ה-AI נראים מזויפים, ומה קורה כשבמאי אמיתי מחזיק בהגה",
+    titleEn: "Why Most AI Films Look Fake, and What Happens When a Real Director Takes the Wheel",
+    excerptHe: "כולם יכולים ללחוץ על כפתור ב-Kling. לא כולם יודעים מה לעשות עם מה שיוצא. אחרי עשרות פרויקטי AI, הנה מה שלמדנו.",
+    excerptEn: "Anyone can click a button in Kling. Not everyone knows what to do with what comes out. After dozens of AI projects, here's what we learned.",
     readingTime: 6,
-    bodyHe: `בשנתיים האחרונות, כל אחד עם מחשב נייד יכול ליצור וידאו "מקצועי" בכמה קליקים. Kling, Runway Gen-3 Alpha, Midjourney — הכלים נגישים, זולים, ומרשימים. ובדיוק בגלל זה, רוב מה שנוצר בהם נראה אותו דבר: זוהר, ריק מתוכן, ובלי נשמה.
+    bodyHe: `בשנתיים האחרונות, כל אחד עם מחשב נייד יכול ליצור וידאו "מקצועי" בכמה קליקים. Kling, Runway Gen-3 Alpha, Midjourney, הכלים נגישים, זולים, ומרשימים. ובדיוק בגלל זה, רוב מה שנוצר בהם נראה אותו דבר: זוהר, ריק מתוכן, ובלי נשמה.
 
-אנחנו ב-The Video Shop מגיעים מרקע שונה לגמרי. 20 שנה של בימוי קלאסי. מצלמות, תאורה, שחקנים, מיקים. כשה-AI הגיע, ניסינו להתחמק ממנו. עד שהבנו שזאת לא השאלה הנכונה.
+אנחנו ב-videoshop מגיעים מרקע שונה לגמרי. 20 שנה של בימוי קלאסי. מצלמות, תאורה, שחקנים, מיקים. כשה-AI הגיע, ניסינו להתחמק ממנו. עד שהבנו שזאת לא השאלה הנכונה.
 
 ## הטעות שכולם עושים
 
@@ -1785,31 +1785,31 @@ The Video Shop doesn't sell "AI films." We produce **films that use the right to
 
 זה הפוך לחלוטין ממה שצריך לקרות.
 
-**הכלי לא קובע את הסיפור — הסיפור קובע את הכלי.** בדיוק כמו שבמאי טוב לא בוחר לנצ' לפני שיש קונספט, אנחנו לא פותחים Midjourney לפני שיש פסקת מטרה ברורה. מה רוצים שהצופה ירגיש? מה פעולה שרוצים שיעשה? רק אז מתחילים.
+**הכלי לא קובע את הסיפור, הסיפור קובע את הכלי.** בדיוק כמו שבמאי טוב לא בוחר לנצ' לפני שיש קונספט, אנחנו לא פותחים Midjourney לפני שיש פסקת מטרה ברורה. מה רוצים שהצופה ירגיש? מה פעולה שרוצים שיעשה? רק אז מתחילים.
 
 [IMAGE]
 
-## מה שינה לנו — פרויקט שגרם לנו להפסיק לפחד
+## מה שינה לנו: פרויקט שגרם לנו להפסיק לפחד
 
-הפרויקט הראשון שבו שילבנו AI היה סרט B2B לחברת טכנולוגיה ביטחונית שרצתה להמחיש מערכת אוטונומית בפעולה. הבעיה: לא ניתן לצלם את המערכת. לא ניתן לחשוף אותה. הצוות שלה קטן. התקציב — לא בסדר גודל של הוליווד.
+הפרויקט הראשון שבו שילבנו AI היה סרט B2B לחברת טכנולוגיה ביטחונית שרצתה להמחיש מערכת אוטונומית בפעולה. הבעיה: לא ניתן לצלם את המערכת. לא ניתן לחשוף אותה. הצוות שלה קטן. התקציב, לא בסדר גודל של הוליווד.
 
-השתמשנו ב-Midjourney לפיתוח ה-art direction של כל סצנה, ב-Kling לגנרציית התנועה, ועטפנו הכל בצילומי live action של האנשים האמיתיים בחברה. שבועות של עבודה — לא שעות. כמות iterations בלתי נסבלת. בדיקות, שיפורים, ביטולים מחדש.
+השתמשנו ב-Midjourney לפיתוח ה-art direction של כל סצנה, ב-Kling לגנרציית התנועה, ועטפנו הכל בצילומי live action של האנשים האמיתיים בחברה. שבועות של עבודה, לא שעות. כמות iterations בלתי נסבלת. בדיקות, שיפורים, ביטולים מחדש.
 
-התוצאה? לקוח שהפך את הסרט לנכס השיווקי המרכזי שלו לשנה שלמה. לא כי הוא "נראה טכנולוגי" — אלא כי הוא **סיפר סיפור שהוא לא יכול היה לספר אחרת.**
+התוצאה? לקוח שהפך את הסרט לנכס השיווקי המרכזי שלו לשנה שלמה. לא כי הוא "נראה טכנולוגי", אלא כי הוא **סיפר סיפור שהוא לא יכול היה לספר אחרת.**
 
 ## למה סרטי AI רוב הזמן נכשלים
 
-**חוסר עקביות ויזואלית.** AI מייצר frames יפים בנפרד שלא יושבים יחד. לא מאותה מצלמה, לא מאותה תאורה, לא מאותו עולם. רואים את זה מיד. התיקון? Art direction קפדני — פלטת צבעים מוגדרת, reference מדויק, ו-10 iterations לכל שנייה מוצגת.
+**חוסר עקביות ויזואלית.** AI מייצר frames יפים בנפרד שלא יושבים יחד. לא מאותה מצלמה, לא מאותה תאורה, לא מאותו עולם. רואים את זה מיד. התיקון? Art direction קפדני: פלטת צבעים מוגדרת, reference מדויק, ו-10 iterations לכל שנייה מוצגת.
 
-**תנועת מצלמה לא-טבעית.** AI אוהב תנועות שאף פעם לא תצולמנה במציאות. הצופה לא מזהה את זה בצורה מודעת — הוא פשוט מרגיש שמשהו לא בסדר. כבמאים, אנחנו עורכים כל תנועה לפי כללי הקולנוע הקלאסי, גם בעולם הדיגיטלי.
+**תנועת מצלמה לא-טבעית.** AI אוהב תנועות שאף פעם לא תצולמנה במציאות. הצופה לא מזהה את זה בצורה מודעת, הוא פשוט מרגיש שמשהו לא בסדר. כבמאים, אנחנו עורכים כל תנועה לפי כללי הקולנוע הקלאסי, גם בעולם הדיגיטלי.
 
-**אין רגע אנושי.** הבעיה העמוקה ביותר: AI טוב ב"נראה". הוא לא טוב ב"מרגיש". לכן ב-Hybrid productions שלנו, תמיד יש רגעים של צילום live action אמיתי — אדם, מבט, רגע — שמחזירים את הצופה למציאות.
+**אין רגע אנושי.** הבעיה העמוקה ביותר: AI טוב ב"נראה". הוא לא טוב ב"מרגיש". לכן ב-Hybrid productions שלנו, תמיד יש רגעים של צילום live action אמיתי, אדם, מבט, רגע, שמחזירים את הצופה למציאות.
 
 ## הדבר שלקוחות לא מצפים לו: הזמן
 
-לקוחות חושבים שסרט AI לוקח שבוע. אנחנו עובדים בדיוק ההפך — הפקת AI שלנו לוקחת **לפחות כמו הפקה רגילה**, ולפעמים יותר.
+לקוחות חושבים שסרט AI לוקח שבוע. אנחנו עובדים בדיוק ההפך, הפקת AI שלנו לוקחת **לפחות כמו הפקה רגילה**, ולפעמים יותר.
 
-זה לא כישלון של הטכנולוגיה. זה ההצלחה שלה. **כשתוצר לוקח פחות זמן מהנדרש — זה נראה.** הלקוחות שמגיעים אלינו מחפשים משהו שיעמוד לאורך זמן. נכס שישרת אותם שנה, שנתיים, שלוש — לא קליפ שנראה טוב עד שמישהו אחר יעשה אחד בשבוע הבא.
+זה לא כישלון של הטכנולוגיה. זה ההצלחה שלה. **כשתוצר לוקח פחות זמן מהנדרש, זה נראה.** הלקוחות שמגיעים אלינו מחפשים משהו שיעמוד לאורך זמן. נכס שישרת אותם שנה, שנתיים, שלוש, לא קליפ שנראה טוב עד שמישהו אחר יעשה אחד בשבוע הבא.
 
 הגישה שלנו היא להתחייב לפרויקט בדיוק כמו שהייתה זו הפקה קולנועית: תסריט, storyboard, art direction, עריכה, פידבק, שיפור. שוב ושוב עד שזה נכון.
 
@@ -1817,16 +1817,16 @@ The Video Shop doesn't sell "AI films." We produce **films that use the right to
 
 אם אתם שוקלים הפקת AI לחברה שלכם, שאלו את עצמכם:
 
-**1. מה הסיפור?** לא "אנחנו רוצים סרט AI" — אלא "מה אנחנו רוצים שהצופה יחשוב, ירגיש ויעשה אחרי שיסיים לצפות?"
+**1. מה הסיפור?** לא "אנחנו רוצים סרט AI", אלא "מה אנחנו רוצים שהצופה יחשוב, ירגיש ויעשה אחרי שיסיים לצפות?"
 
-**2. מה לא ניתן לצלם?** זה המקום האמיתי שבו AI זורח — עתיד, עולמות דמיוניים, סקייל שאין תקציב לו. לא כתחליף לצילום רגיל.
+**2. מה לא ניתן לצלם?** זה המקום האמיתי שבו AI זורח: עתיד, עולמות דמיוניים, סקייל שאין תקציב לו. לא כתחליף לצילום רגיל.
 
 **3. האם יש אדם בסרט?** אנחנו ממליצים כמעט תמיד לשלב Live Action, גם בהיקף קטן. זה מה שמבדיל בין "עוד סרט AI" לבין סרט שנזכרים בו.
 
-The Video Shop לא מוכרים "סרטי AI". אנחנו מפיקים **סרטי B2B שמשתמשים ב-AI בחוכמה**. ההבדל הזה שווה הכל.`,
-    bodyEn: `In the last two years, anyone with a laptop can create "professional" video in a few clicks. Kling, Runway Gen-3 Alpha, Midjourney — the tools are accessible, cheap, and impressive. And that's exactly why most of what gets made with them looks the same: shiny, empty, and soulless.
+videoshop לא מוכרים "סרטי AI". אנחנו מפיקים **סרטי B2B שמשתמשים ב-AI בחוכמה**. ההבדל הזה שווה הכל.`,
+    bodyEn: `In the last two years, anyone with a laptop can create "professional" video in a few clicks. Kling, Runway Gen-3 Alpha, Midjourney, the tools are accessible, cheap, and impressive. And that's exactly why most of what gets made with them looks the same: shiny, empty, and soulless.
 
-At The Video Shop, we come from a completely different background. 20 years of classical directing. Cameras, lighting, actors, mics. When AI arrived, we tried to avoid it. Until we understood that was the wrong question.
+At videoshop, we come from a completely different background. 20 years of classical directing. Cameras, lighting, actors, mics. When AI arrived, we tried to avoid it. Until we understood that was the wrong question.
 
 ## The Mistake Everyone Makes
 
@@ -1834,31 +1834,31 @@ The biggest mistake we see? Starting with the AI. Writing a prompt, getting a be
 
 That's completely backwards from what should happen.
 
-**The tool doesn't determine the story — the story determines the tool.** Just like a good director doesn't choose a lens before there's a concept, we don't open Midjourney before there's a clear objective paragraph. What do you want the viewer to feel? What action do you want them to take? Only then do you start.
+**The tool doesn't determine the story, the story determines the tool.** Just like a good director doesn't choose a lens before there's a concept, we don't open Midjourney before there's a clear objective paragraph. What do you want the viewer to feel? What action do you want them to take? Only then do you start.
 
 [IMAGE]
 
-## What Changed for Us — The Project That Made Us Stop Being Afraid
+## What Changed for Us: The Project That Made Us Stop Being Afraid
 
-The first project where we integrated AI was a B2B film for a defense tech company that wanted to depict an autonomous system in action. The problem: you can't film the system. You can't expose it. Their team is small. The budget — not Hollywood scale.
+The first project where we integrated AI was a B2B film for a defense tech company that wanted to depict an autonomous system in action. The problem: you can't film the system. You can't expose it. Their team is small. The budget, not Hollywood scale.
 
-We used Midjourney for the art direction of every scene, Kling for motion generation, and wrapped everything in live action footage of the company's real people. Weeks of work — not hours. An unbearable amount of iterations. Testing, improving, scrapping and starting over.
+We used Midjourney for the art direction of every scene, Kling for motion generation, and wrapped everything in live action footage of the company's real people. Weeks of work, not hours. An unbearable amount of iterations. Testing, improving, scrapping and starting over.
 
-The result? A client who turned the film into their primary marketing asset for an entire year. Not because it "looked technological" — but because it **told a story they couldn't have told any other way.**
+The result? A client who turned the film into their primary marketing asset for an entire year. Not because it "looked technological", but because it **told a story they couldn't have told any other way.**
 
 ## Why AI Films Usually Fail
 
-**Visual inconsistency.** AI generates beautiful frames separately that don't sit together. Not from the same camera, not from the same lighting, not from the same world. You see it immediately. The fix? Careful art direction — defined color palette, precise reference, 10 iterations per second shown.
+**Visual inconsistency.** AI generates beautiful frames separately that don't sit together. Not from the same camera, not from the same lighting, not from the same world. You see it immediately. The fix? Careful art direction: defined color palette, precise reference, 10 iterations per second shown.
 
-**Unnatural camera movement.** AI loves movements that would never be filmed in reality. The viewer doesn't consciously identify this — they just feel something is off. As directors, we edit every movement according to classical cinema rules, even in the digital world.
+**Unnatural camera movement.** AI loves movements that would never be filmed in reality. The viewer doesn't consciously identify this, they just feel something is off. As directors, we edit every movement according to classical cinema rules, even in the digital world.
 
-**No human moment.** The deepest problem: AI is good at "looks like." It's not good at "feels like." That's why in our hybrid productions, there are always live action moments — a person, a look, a moment — that bring the viewer back to reality.
+**No human moment.** The deepest problem: AI is good at "looks like." It's not good at "feels like." That's why in our hybrid productions, there are always live action moments, a person, a look, a moment, that bring the viewer back to reality.
 
 ## The Thing Clients Don't Expect: Time
 
-Clients think an AI film takes a week. We work exactly the opposite — our AI production takes **at least as long as a regular production**, and sometimes longer.
+Clients think an AI film takes a week. We work exactly the opposite, our AI production takes **at least as long as a regular production**, and sometimes longer.
 
-This isn't a failure of the technology. It's its success. **When a deliverable takes less time than required — it shows.** The clients who come to us are looking for something that will last. An asset that will serve them for a year, two years, three — not a clip that looks good until someone else makes one next week.
+This isn't a failure of the technology. It's its success. **When a deliverable takes less time than required, it shows.** The clients who come to us are looking for something that will last. An asset that will serve them for a year, two years, three, not a clip that looks good until someone else makes one next week.
 
 Our approach is to commit to the project just like it was a cinematic production: script, storyboard, art direction, editing, feedback, improvement. Again and again until it's right.
 
@@ -1866,13 +1866,13 @@ Our approach is to commit to the project just like it was a cinematic production
 
 If you're considering an AI production for your company, ask yourself:
 
-**1. What's the story?** Not "we want an AI film" — but "what do we want the viewer to think, feel, and do after they finish watching?"
+**1. What's the story?** Not "we want an AI film", but "what do we want the viewer to think, feel, and do after they finish watching?"
 
-**2. What can't be filmed?** That's the real place AI shines — the future, imaginary worlds, scale that no budget can achieve. Not as a replacement for regular filming.
+**2. What can't be filmed?** That's the real place AI shines: the future, imaginary worlds, scale that no budget can achieve. Not as a replacement for regular filming.
 
 **3. Is there a person in the film?** We almost always recommend including live action, even in a small scope. That's what differentiates "another AI film" from a film people remember.
 
-The Video Shop doesn't sell "AI films." We produce **B2B films that use AI intelligently.** That difference is worth everything.`,
+videoshop doesn't sell "AI films." We produce **B2B films that use AI intelligently.** That difference is worth everything.`,
     date: "2024-11-15",
     tags: ["AI", "B2B", "Kling", "Runway"],
     relatedServiceHref: "/services/ai",
@@ -1882,78 +1882,78 @@ The Video Shop doesn't sell "AI films." We produce **B2B films that use AI intel
   },
   {
     id: "real-estate-drone",
-    coverImage: "/blog/drone-realestate-cover.svg",
+    coverImage: "/vlogimg/drone-realestate-cover.jpg",
     titleHe: "צילום רחפן לנדל\"ן: המדריך שהיזמים לא מקבלים מהמפיקים שלהם",
     titleEn: "Drone Filming for Real Estate: The Guide Developers Never Get From Their Producers",
-    excerptHe: "80% מהעבודה ביום צילום רחפן לא קורה באוויר. ומה שקורה לפני ההמראה קובע אם הפרויקט שלכם ייראה כמו Ashtrom — או כמו כולם.",
-    excerptEn: "80% of the work on a drone filming day doesn't happen in the air. And what happens before takeoff determines whether your project looks like Ashtrom — or like everyone else.",
+    excerptHe: "80% מהעבודה ביום צילום רחפן לא קורה באוויר. ומה שקורה לפני ההמראה קובע אם הפרויקט שלכם ייראה כמו Ashtrom, או כמו כולם.",
+    excerptEn: "80% of the work on a drone filming day doesn't happen in the air. And what happens before takeoff determines whether your project looks like Ashtrom, or like everyone else.",
     readingTime: 5,
-    bodyHe: `יום צילום רחפן טוב לא מתחיל בהמראה. הוא מתחיל שבוע לפני — עם תכנון של כיוון האור, תחזית רוח, מסלולי טיסה, ואישורים רגולטוריים. מי שמגיע לאתר בלי כל זה, מגיע לגמבל. ואנחנו לא מגמבלים עם הפרויקטים של הלקוחות שלנו.
+    bodyHe: `יום צילום רחפן טוב לא מתחיל בהמראה. הוא מתחיל שבוע לפני, עם תכנון של כיוון האור, תחזית רוח, מסלולי טיסה, ואישורים רגולטוריים. מי שמגיע לאתר בלי כל זה, מגיע לגמבל. ואנחנו לא מגמבלים עם הפרויקטים של הלקוחות שלנו.
 
 ## מה ההבדל בין "צלם רחפן" לבין הפקת אוויר מקצועית
 
-ישנם בישראל מאות מפעילי רחפן עם רישיון תעופה. פחות ממאה מהם מבינים סינמטוגרפיה. ועוד פחות יודעים לספר את **הסיפור של המיקום** — לא רק לצלם אותו מלמעלה.
+ישנם בישראל מאות מפעילי רחפן עם רישיון תעופה. פחות ממאה מהם מבינים סינמטוגרפיה. ועוד פחות יודעים לספר את **הסיפור של המיקום**, לא רק לצלם אותו מלמעלה.
 
-כשאנחנו עובדים על פרויקט נדל"ן, אנחנו לא שואלים "מאיפה לצלם?" — אנחנו שואלים "מה צריך הרוכש הפוטנציאלי להבין ולהרגיש?" ומשם בונים את כל מסלול הטיסה.
+כשאנחנו עובדים על פרויקט נדל"ן, אנחנו לא שואלים "מאיפה לצלם?" אנחנו שואלים "מה צריך הרוכש הפוטנציאלי להבין ולהרגיש?" ומשם בונים את כל מסלול הטיסה.
 
-**הקשר מוכר לפני שהנכס מוכר.** תחבורה, ירק, שכנות, נוף — כל אלה צריכים להיות בסרט. לא בתור "רקע" — בתור חלק מהנרטיב.
+**הקשר מוכר לפני שהנכס מוכר.** תחבורה, ירק, שכנות, נוף: כל אלה צריכים להיות בסרט. לא בתור "רקע", אלא בתור חלק מהנרטיב.
 
 [IMAGE]
 
-## הציוד שאנחנו עובדים איתו — ולמה זה משנה
+## הציוד שאנחנו עובדים איתו: ולמה זה משנה
 
-אנחנו מפעילים DJI Inspire 3 לצילומים שדורשים quality מקסימלי. זה הרחפן שמשמש הפקות קולנועיות. Zenmuse X9, 8K RAW, שליטה עצמאית על ה-gimbal. לא כי אנחנו אוהבים ציוד יקר — אלא כי **בפוסט-פרודקשן, כל פיקסל שווה כסף.**
+אנחנו מפעילים DJI Inspire 3 לצילומים שדורשים quality מקסימלי. זה הרחפן שמשמש הפקות קולנועיות. Zenmuse X9, 8K RAW, שליטה עצמאית על ה-gimbal. לא כי אנחנו אוהבים ציוד יקר, אלא כי **בפוסט-פרודקשן, כל פיקסל שווה כסף.**
 
-לצילומים שדורשים גמישות — כניסה לשטחים מוגבלים, צילום בין מבנים, shots שצריכים תגובה מהירה — אנחנו מפעילים DJI Mini 4 Pro. קטן, שקט, נראה פחות "מאיים" לצוות השטח.
+לצילומים שדורשים גמישות, כניסה לשטחים מוגבלים, צילום בין מבנים, shots שצריכים תגובה מהירה, אנחנו מפעילים DJI Mini 4 Pro. קטן, שקט, נראה פחות "מאיים" לצוות השטח.
 
 שני הרחפנים עובדים ב-4K RAW לפחות, עם Log profile שמשאיר מרחב עריכה מקסימלי בגוון הצבע.
 
 ## מה הלקוחות לא יודעים (ומה המתחרים שלכם לא יגידו לכם)
 
-**80% מהעבודה היא בעריכה.** ביום צילום, אנחנו מצלמים פי 10 ממה שישמש בסרט הסופי. כל קדר, כל תנועה — נבחרים בקפידה בפוסט. קצב חתכים, מעברים, בחירת הרגע המדויק — זה מה שעושה את ההבדל בין "רחפן שצילם" לבין "סרט נדל"ן".
+**80% מהעבודה היא בעריכה.** ביום צילום, אנחנו מצלמים פי 10 ממה שישמש בסרט הסופי. כל קדר, כל תנועה, נבחרים בקפידה בפוסט. קצב חתכים, מעברים, בחירת הרגע המדויק, זה מה שעושה את ההבדל בין "רחפן שצילם" לבין "סרט נדל"ן".
 
-**תאורת הזהב שווה הכל.** "Golden hour" — שעה אחרי זריחה ושעה לפני שקיעה — היא לא "עוד אפשרות". עבור נדל"ן פרימיום, היא לרוב **ההבדל בין פרויקט שמוכר את עצמו לבין פרויקט שנמכר בהנחה.** לכן אנחנו מגיעים לאתר לפני שהצוות שלכם עולה על מיטות.
+**תאורת הזהב שווה הכל.** "Golden hour": שעה אחרי זריחה ושעה לפני שקיעה, היא לא "עוד אפשרות". עבור נדל"ן פרימיום, היא לרוב **ההבדל בין פרויקט שמוכר את עצמו לבין פרויקט שנמכר בהנחה.** לכן אנחנו מגיעים לאתר לפני שהצוות שלכם עולה על מיטות.
 
-**רגולציה היא לא בירוקרטיה — היא הגנה עליכם.** אנחנו מסדירים אישורי רשות התעופה האזרחית לכל פרויקט, מתאמים עם גורמי ביטחון במידת הצורך, ומגיעים עם ביטוח מלא. פרויקט נדל"ן עם צילום לא מאושר — גם אם הוא יפה — יכול לייצר בעיות משפטיות שאין טעם לקחת.
+**רגולציה היא לא בירוקרטיה. היא הגנה עליכם.** אנחנו מסדירים אישורי רשות התעופה האזרחית לכל פרויקט, מתאמים עם גורמי ביטחון במידת הצורך, ומגיעים עם ביטוח מלא. פרויקט נדל"ן עם צילום לא מאושר, גם אם הוא יפה, יכול לייצר בעיות משפטיות שאין טעם לקחת.
 
 ## מה מייחד הפקת וידאו נדל"ן שנבנית לאורך זמן
 
-הלקוחות שהכי מרוצים מאיתנו הם אלה שעבדו איתנו על יותר מפרויקט אחד. כי הם מבינים שסרט נדל"ן טוב הוא **נכס לשנים** — לא תמונה שמחליפים בכל קמפיין.
+הלקוחות שהכי מרוצים מאיתנו הם אלה שעבדו איתנו על יותר מפרויקט אחד. כי הם מבינים שסרט נדל"ן טוב הוא **נכס לשנים**, לא תמונה שמחליפים בכל קמפיין.
 
-חברות כמו אשטרום עובדות עם הפקות שיחזיקו 3-5 שנים. הן לא מחפשות "צלם רחפן זול" — הן מחפשות **שותף שיבין את הפרויקט מהמבט הראשון ועד הסרט הסופי.** אנחנו מגיעים לסט של אשטרום בדיוק כמו שמגיעים לכל לקוח — עם הקשב המלא, הציוד הטוב ביותר, והמחויבות לתוצאה.`,
-    bodyEn: `A good drone filming day doesn't start at takeoff. It starts a week before — with planning for light direction, wind forecast, flight paths, and regulatory approvals. Anyone who arrives at the site without all that is gambling. And we don't gamble with our clients' projects.
+חברות כמו אשטרום עובדות עם הפקות שיחזיקו 3-5 שנים. הן לא מחפשות "צלם רחפן זול". הן מחפשות **שותף שיבין את הפרויקט מהמבט הראשון ועד הסרט הסופי.** אנחנו מגיעים לסט של אשטרום בדיוק כמו שמגיעים לכל לקוח, עם הקשב המלא, הציוד הטוב ביותר, והמחויבות לתוצאה.`,
+    bodyEn: `A good drone filming day doesn't start at takeoff. It starts a week before, with planning for light direction, wind forecast, flight paths, and regulatory approvals. Anyone who arrives at the site without all that is gambling. And we don't gamble with our clients' projects.
 
 ## The Difference Between a "Drone Pilot" and Professional Aerial Production
 
-There are hundreds of licensed drone operators in Israel. Fewer than a hundred understand cinematography. And even fewer know how to tell **the story of the location** — not just film it from above.
+There are hundreds of licensed drone operators in Israel. Fewer than a hundred understand cinematography. And even fewer know how to tell **the story of the location**, not just film it from above.
 
-When we work on a real estate project, we don't ask "where should we film from?" — we ask "what does the potential buyer need to understand and feel?" And from there we build the entire flight path.
+When we work on a real estate project, we don't ask "where should we film from?" We ask "what does the potential buyer need to understand and feel?" And from there we build the entire flight path.
 
-**Context sells before the property sells.** Transportation, greenery, neighborhood, views — all of these need to be in the film. Not as "background" — as part of the narrative.
+**Context sells before the property sells.** Transportation, greenery, neighborhood, views: all of these need to be in the film. Not as "background", but as part of the narrative.
 
 [IMAGE]
 
-## The Equipment We Work With — And Why It Matters
+## The Equipment We Work With: And Why It Matters
 
-We operate the DJI Inspire 3 for shoots requiring maximum quality. This is the drone used in cinematic productions. Zenmuse X9, 8K RAW, independent gimbal control. Not because we love expensive equipment — but because **in post-production, every pixel is worth money.**
+We operate the DJI Inspire 3 for shoots requiring maximum quality. This is the drone used in cinematic productions. Zenmuse X9, 8K RAW, independent gimbal control. Not because we love expensive equipment, but because **in post-production, every pixel is worth money.**
 
-For shoots requiring flexibility — entering restricted areas, filming between buildings, shots that need quick response — we operate the DJI Mini 4 Pro. Small, quiet, less "threatening" to the site crew.
+For shoots requiring flexibility, entering restricted areas, filming between buildings, shots that need quick response, we operate the DJI Mini 4 Pro. Small, quiet, less "threatening" to the site crew.
 
 Both drones work in 4K RAW minimum, with a Log profile that leaves maximum color grading room.
 
 ## What Clients Don't Know (And What Your Competitors Won't Tell You)
 
-**80% of the work is in editing.** On filming day, we shoot 10 times more than will be used in the final film. Every frame, every movement — chosen carefully in post. Cut rhythm, transitions, choosing the precise moment — that's what makes the difference between "a drone that filmed" and "a real estate film."
+**80% of the work is in editing.** On filming day, we shoot 10 times more than will be used in the final film. Every frame, every movement, chosen carefully in post. Cut rhythm, transitions, choosing the precise moment, that's what makes the difference between "a drone that filmed" and "a real estate film."
 
-**Golden light is worth everything.** The "golden hour" — one hour after sunrise and one hour before sunset — isn't "just another option." For premium real estate, it's often **the difference between a project that sells itself and a project sold at a discount.** That's why we arrive at the site before your team gets out of bed.
+**Golden light is worth everything.** The "golden hour": one hour after sunrise and one hour before sunset, isn't "just another option." For premium real estate, it's often **the difference between a project that sells itself and a project sold at a discount.** That's why we arrive at the site before your team gets out of bed.
 
-**Regulation isn't bureaucracy — it's protection for you.** We arrange Civil Aviation Authority approvals for every project, coordinate with security bodies when needed, and arrive with full insurance. A real estate project with unauthorized filming — even if beautiful — can create legal problems not worth taking.
+**Regulation isn't bureaucracy. It's protection for you.** We arrange Civil Aviation Authority approvals for every project, coordinate with security bodies when needed, and arrive with full insurance. A real estate project with unauthorized filming, even if beautiful, can create legal problems not worth taking.
 
 ## What Distinguishes Real Estate Video Production Built to Last
 
-The clients most satisfied with us are those who've worked with us on more than one project. Because they understand that a good real estate film is **an asset for years** — not an image you replace with every campaign.
+The clients most satisfied with us are those who've worked with us on more than one project. Because they understand that a good real estate film is **an asset for years**, not an image you replace with every campaign.
 
-Companies like Ashtrom work with productions that will hold for 3-5 years. They're not looking for a "cheap drone pilot" — they're looking for **a partner who understands the project from the first look to the final film.** We arrive at an Ashtrom set exactly as we arrive to every client — with full attention, the best equipment, and a commitment to the result.`,
+Companies like Ashtrom work with productions that will hold for 3-5 years. They're not looking for a "cheap drone pilot". They're looking for **a partner who understands the project from the first look to the final film.** We arrive at an Ashtrom set exactly as we arrive to every client, with full attention, the best equipment, and a commitment to the result.`,
     date: "2024-10-03",
     tags: ["Real Estate", "Drone", "Behind the Scenes"],
     relatedServiceHref: "/services/realestate",
@@ -1962,13 +1962,13 @@ Companies like Ashtrom work with productions that will hold for 3-5 years. They'
   },
   {
     id: "investor-pitch-tips",
-    coverImage: "/blog/investor-pitch-cover.svg",
-    titleHe: "5 הטעויות שהפכו סרטי Investor Pitch מוצלחים לשכחים — וכיצד לא ליפול בהן",
-    titleEn: "5 Mistakes That Turn Good Investor Pitch Films Forgettable — And How to Avoid Them",
-    excerptHe: "הפקנו עשרות סרטי Investor Pitch. הטעויות האלה חוזרות על עצמן שוב ושוב — ולא כי הלקוחות טיפשים, אלא כי אף אחד לא אמר להם את האמת.",
-    excerptEn: "We've produced dozens of Investor Pitch films. These mistakes repeat themselves again and again — not because clients are foolish, but because nobody told them the truth.",
+    coverImage: "/vlogimg/investor-pitch-cover.jpg",
+    titleHe: "5 הטעויות שהפכו סרטי Investor Pitch מוצלחים לשכחים: וכיצד לא ליפול בהן",
+    titleEn: "5 Mistakes That Turn Good Investor Pitch Films Forgettable: And How to Avoid Them",
+    excerptHe: "הפקנו עשרות סרטי Investor Pitch. הטעויות האלה חוזרות על עצמן שוב ושוב, ולא כי הלקוחות טיפשים, אלא כי אף אחד לא אמר להם את האמת.",
+    excerptEn: "We've produced dozens of Investor Pitch films. These mistakes repeat themselves again and again, not because clients are foolish, but because nobody told them the truth.",
     readingTime: 5,
-    bodyHe: `לאחר 20 שנה בתעשייה ועשרות סרטי Investor Pitch שהפקנו, ראינו את אותן הטעויות חוזרות שוב ושוב. ולא כי הלקוחות אינם מקצועיים. אלא כי בתעשייה שלנו, יותר מדי אנשים אומרים "כן" לכל מה שהלקוח רוצה — במקום לומר לו את מה שהוא צריך לשמוע.
+    bodyHe: `לאחר 20 שנה בתעשייה ועשרות סרטי Investor Pitch שהפקנו, ראינו את אותן הטעויות חוזרות שוב ושוב. ולא כי הלקוחות אינם מקצועיים. אלא כי בתעשייה שלנו, יותר מדי אנשים אומרים "כן" לכל מה שהלקוח רוצה, במקום לומר לו את מה שהוא צריך לשמוע.
 
 אנחנו לא עושים את זה.
 
@@ -1976,23 +1976,23 @@ Companies like Ashtrom work with productions that will hold for 3-5 years. They'
 
 Investor Pitch טוב מספר סיפור **אחד** בצורה ברורה. לא שלושה סיפורים. לא "בואו נכניס גם את ה-roadmap". לא "בואו נסביר גם את הטכנולוגיה".
 
-המשקיעים שיושבים מולכם ראו מאות פיצ'ים. **אם הם לא מבינים את הערך הבסיסי בתוך 30 שניות — איבדתם אותם.** כל מסר נוסף שנכנס אחרי הרגע ההוא הוא רעש. לא מידע.
+המשקיעים שיושבים מולכם ראו מאות פיצ'ים. **אם הם לא מבינים את הערך הבסיסי בתוך 30 שניות, איבדתם אותם.** כל מסר נוסף שנכנס אחרי הרגע ההוא הוא רעש. לא מידע.
 
-הפתרון: כתבו את הסרט כמו שכותבים הדלקת אש — מה הניצוץ, מה הדלק, מה הלהבה. סיפור אחד. ישר. חזק.
+הפתרון: כתבו את הסרט כמו שכותבים הדלקת אש: מה הניצוץ, מה הדלק, מה הלהבה. סיפור אחד. ישר. חזק.
 
 [IMAGE]
 
 ## 2. להתמקד בטכנולוגיה ולא בבעיה
 
-משקיעים לא קונים טכנולוגיה. **הם קונים פתרון לבעיה גדולה שהם מאמינים שהיא אמיתית.** חברה שמתחילה בסרט שלה ב"הפלטפורמה שלנו מבוססת על ארכיטקטורה distributed של X עם שכבת Y" — כבר איבדה את החדר.
+משקיעים לא קונים טכנולוגיה. **הם קונים פתרון לבעיה גדולה שהם מאמינים שהיא אמיתית.** חברה שמתחילה בסרט שלה ב"הפלטפורמה שלנו מבוססת על ארכיטקטורה distributed של X עם שכבת Y", כבר איבדה את החדר.
 
-התחילו עם הבעיה. הגדירו אותה בצורה שמישהו מחוץ לתחום יכול להרגיש. תנו לה לנשום שנייה. רק אז — ורק לאחר שהצופה כבר "בפנים" — הציגו את הפתרון.
+התחילו עם הבעיה. הגדירו אותה בצורה שמישהו מחוץ לתחום יכול להרגיש. תנו לה לנשום שנייה. רק אז, ורק לאחר שהצופה כבר "בפנים", הציגו את הפתרון.
 
-## 3. תאורה ואודיו גרועים — הרוצח הכי שקט
+## 3. תאורה ואודיו גרועים: הרוצח הכי שקט
 
-לא משנה כמה הסיפור טוב. **אם ה-CEO נראה כמו שצילמו אותו בחדר ישיבות עם לייטינג ניאון ו-echo — המשקיע שם לב.** הוא אולי לא יגיד את זה בקול. אבל זה יחלחל לאופן שבו הוא מעריך את הרצינות של הפרויקט.
+לא משנה כמה הסיפור טוב. **אם ה-CEO נראה כמו שצילמו אותו בחדר ישיבות עם לייטינג ניאון ו-echo, המשקיע שם לב.** הוא אולי לא יגיד את זה בקול. אבל זה יחלחל לאופן שבו הוא מעריך את הרצינות של הפרויקט.
 
-אנחנו מסרבים לצלם ראיונות בחדרי ישיבות. לא כי אנחנו קשוחים — אלא כי אנחנו יודעים שמנהל קרן שמסתכל על פיצ' שנראה "בית ספר" לא יוכל להפריד בין האיכות החזותית לבין האיכות הנתפסת של הפרויקט. התאורה היא חלק מהמותג.
+אנחנו מסרבים לצלם ראיונות בחדרי ישיבות. לא כי אנחנו קשוחים, אלא כי אנחנו יודעים שמנהל קרן שמסתכל על פיצ' שנראה "בית ספר" לא יוכל להפריד בין האיכות החזותית לבין האיכות הנתפסת של הפרויקט. התאורה היא חלק מהמותג.
 
 ## 4. אין רגע של אמת אנושי
 
@@ -2000,16 +2000,16 @@ Investor Pitch טוב מספר סיפור **אחד** בצורה ברורה. לא
 
 זה יכול להיות עובד שמדבר על למה הוא בא לעבוד בחברה. לקוח שמתאר את החיים לפני ואחרי. מייסד שמספר את הרגע שבו הבין שיש פה משהו. רגע אחד של אמת שווה יותר מ-40 סלייד של מצגת.
 
-## 5. הפיצ' ארוך מדי — וסיים בלי CTA
+## 5. הפיצ' ארוך מדי: וסיים בלי CTA
 
-Investor Pitch: **עד 2 דקות.** חתכו בחוסר רחמים. כל מה שאפשר לחתוך — תחתכו. אם אתם מתווכחים עם עצמכם אם לכלול משהו — אל תכלילו אותו.
+Investor Pitch: **עד 2 דקות.** חתכו בחוסר רחמים. כל מה שאפשר לחתוך, תחתכו. אם אתם מתווכחים עם עצמכם אם לכלול משהו, אל תכלילו אותו.
 
-ואז הטעות השנייה: הסרט נגמר, הצופה אמור לעשות משהו — **ואין שום הנחיה.** CTA ברור בסוף הוא לא "מכירתיות זולה" — הוא כבוד לזמן הצופה. "בואו נדבר", "השאירו פרטים", "קבעו פגישה" — אחד מהם. ישיר.
+ואז הטעות השנייה: הסרט נגמר, הצופה אמור לעשות משהו, **ואין שום הנחיה.** CTA ברור בסוף הוא לא "מכירתיות זולה", הוא כבוד לזמן הצופה. "בואו נדבר", "השאירו פרטים", "קבעו פגישה", אחד מהם. ישיר.
 
 ---
 
-בThe Video Shop, אנחנו עובדים על כל פיצ' כמו שעובדים על סרט. שבועות, לא ימים. פידבק, עריכות, שוב פידבק. לא כי אנחנו מסובכים — אלא כי **הפיצ' שמגייס הון הוא כזה שעבדו עליו עד שכבר לא ניתן לשפר אותו יותר.** רק אז הוא מוכן.`,
-    bodyEn: `After 20 years in the industry and dozens of Investor Pitch films we've produced, we've seen the same mistakes repeat themselves again and again. Not because clients are unprofessional. But because in our industry, too many people say "yes" to everything the client wants — instead of telling them what they need to hear.
+בvideoshop, אנחנו עובדים על כל פיצ' כמו שעובדים על סרט. שבועות, לא ימים. פידבק, עריכות, שוב פידבק. לא כי אנחנו מסובכים, אלא כי **הפיצ' שמגייס הון הוא כזה שעבדו עליו עד שכבר לא ניתן לשפר אותו יותר.** רק אז הוא מוכן.`,
+    bodyEn: `After 20 years in the industry and dozens of Investor Pitch films we've produced, we've seen the same mistakes repeat themselves again and again. Not because clients are unprofessional. But because in our industry, too many people say "yes" to everything the client wants, instead of telling them what they need to hear.
 
 We don't do that.
 
@@ -2017,23 +2017,23 @@ We don't do that.
 
 A good Investor Pitch tells **one** story clearly. Not three stories. Not "let's add the roadmap too." Not "let's explain the technology too."
 
-The investors sitting across from you have seen hundreds of pitches. **If they don't understand the core value within 30 seconds — you've lost them.** Every additional message that comes after that moment is noise. Not information.
+The investors sitting across from you have seen hundreds of pitches. **If they don't understand the core value within 30 seconds, you've lost them.** Every additional message that comes after that moment is noise. Not information.
 
-The solution: write the film like you're lighting a fire — what's the spark, what's the fuel, what's the flame. One story. Straight. Strong.
+The solution: write the film like you're lighting a fire: what's the spark, what's the fuel, what's the flame. One story. Straight. Strong.
 
 [IMAGE]
 
 ## 2. Focusing on Technology, Not the Problem
 
-Investors don't buy technology. **They buy a solution to a big problem they believe is real.** A company that starts its film with "Our platform is based on a distributed architecture of X with Y layer" — has already lost the room.
+Investors don't buy technology. **They buy a solution to a big problem they believe is real.** A company that starts its film with "Our platform is based on a distributed architecture of X with Y layer", has already lost the room.
 
-Start with the problem. Define it in a way someone outside the field can feel. Let it breathe for a second. Only then — and only after the viewer is already "inside" — present the solution.
+Start with the problem. Define it in a way someone outside the field can feel. Let it breathe for a second. Only then, and only after the viewer is already "inside", present the solution.
 
-## 3. Bad Lighting and Audio — The Quietest Killer
+## 3. Bad Lighting and Audio: The Quietest Killer
 
-No matter how good the story is. **If the CEO looks like they were filmed in a conference room with neon lighting and echo — the investor notices.** They may not say it out loud. But it will seep into how they evaluate the seriousness of the project.
+No matter how good the story is. **If the CEO looks like they were filmed in a conference room with neon lighting and echo, the investor notices.** They may not say it out loud. But it will seep into how they evaluate the seriousness of the project.
 
-We refuse to film interviews in conference rooms. Not because we're difficult — but because we know that a fund manager looking at a pitch that looks "amateur" won't be able to separate the visual quality from the perceived quality of the project. Lighting is part of the brand.
+We refuse to film interviews in conference rooms. Not because we're difficult, but because we know that a fund manager looking at a pitch that looks "amateur" won't be able to separate the visual quality from the perceived quality of the project. Lighting is part of the brand.
 
 ## 4. No Moment of Human Truth
 
@@ -2041,15 +2041,15 @@ Everyone talks about their TAM. Their ARR. Their moat. **The ones remembered aft
 
 This could be an employee talking about why they came to work at the company. A customer describing life before and after. A founder sharing the moment they realized there was something here. One moment of truth is worth more than 40 slides of a presentation.
 
-## 5. The Pitch Is Too Long — And Ended Without a CTA
+## 5. The Pitch Is Too Long: And Ended Without a CTA
 
-Investor Pitch: **up to 2 minutes.** Cut mercilessly. Everything that can be cut — cut it. If you're arguing with yourself about whether to include something — don't include it.
+Investor Pitch: **up to 2 minutes.** Cut mercilessly. Everything that can be cut, cut it. If you're arguing with yourself about whether to include something, don't include it.
 
-And then the second mistake: the film ends, the viewer is supposed to do something — **and there's no direction.** A clear CTA at the end isn't "cheap salesmanship" — it's respect for the viewer's time. "Let's talk," "Leave your details," "Schedule a meeting" — one of them. Direct.
+And then the second mistake: the film ends, the viewer is supposed to do something, **and there's no direction.** A clear CTA at the end isn't "cheap salesmanship", it's respect for the viewer's time. "Let's talk," "Leave your details," "Schedule a meeting", one of them. Direct.
 
 ---
 
-At The Video Shop, we work on every pitch like we work on a film. Weeks, not days. Feedback, edits, more feedback. Not because we're complicated — but because **the pitch that raises capital is one that was worked on until it could no longer be improved.** Only then is it ready.`,
+At videoshop, we work on every pitch like we work on a film. Weeks, not days. Feedback, edits, more feedback. Not because we're complicated, but because **the pitch that raises capital is one that was worked on until it could no longer be improved.** Only then is it ready.`,
     date: "2024-09-20",
     tags: ["Hightech", "Investor Pitch", "Tips"],
     relatedServiceHref: "/services/hightech",
@@ -2058,17 +2058,17 @@ At The Video Shop, we work on every pitch like we work on a film. Weeks, not day
   },
   {
     id: "corporate-business-card-film",
-    coverImage: "/blog/corporate-business-card-cover.svg",
+    coverImage: "/vlogimg/corporate-business-card-cover.jpg",
     titleHe: "סרט 'כרטיס הביקור' התאגידי: מתי הפורמט הקלאסי הוא הבחירה הנכונה",
     titleEn: "The Corporate 'Business Card' Film: When the Classic Format Is the Right Choice",
-    excerptHe: "לא כל סרט חייב להיות פורץ דרך. כשהמטרה היא להוכיח גודל, יציבות וסמכות — ה'כרטיס ביקור' התאגידי הוא הכלי החד ביותר בארסנל.",
-    excerptEn: "Not every film has to be groundbreaking. When the goal is to prove scale, stability, and authority — the corporate 'business card' is the sharpest tool in the arsenal.",
+    excerptHe: "לא כל סרט חייב להיות פורץ דרך. כשהמטרה היא להוכיח גודל, יציבות וסמכות, ה'כרטיס ביקור' התאגידי הוא הכלי החד ביותר בארסנל.",
+    excerptEn: "Not every film has to be groundbreaking. When the goal is to prove scale, stability, and authority, the corporate 'business card' is the sharpest tool in the arsenal.",
     readingTime: 5,
     bodyHe: `## הפרדוקס של הפורמט ה"שמרני"
 
 בתעשיית הווידאו יש נטייה לרומנטיזציה: כולם רוצים "פורמט פורץ דרך", "נרטיב בלתי צפוי", "מהלך קריאייטיבי מפתיע". זה הגיוני כשמדובר בסרטוני ויראליות, קמפיינים לצרכן הסופי, או מיתוג מעסיק.
 
-אבל יש לקוחות שונים לחלוטין: **חברות נדל"ן מניב, קרנות תשתית, תאגידים פיננסיים.** הלקוח שלהם — משקיע, בנק, שוכר עוגן — לא מחפש יצירתיות. הוא מחפש ביטחון.
+אבל יש לקוחות שונים לחלוטין: **חברות נדל"ן מניב, קרנות תשתית, תאגידים פיננסיים.** הלקוח שלהם, משקיע, בנק, שוכר עוגן, לא מחפש יצירתיות. הוא מחפש ביטחון.
 
 לסרט כזה יש שם: **"כרטיס ביקור" תאגידי.** ולפורמט הזה יש תפקיד ספציפי מאוד.
 
@@ -2076,33 +2076,33 @@ At The Video Shop, we work on every pitch like we work on a film. Weeks, not day
 
 ## מה המסר האמיתי שסרט תדמית תאגידי מעביר
 
-כשאשטרום נכסים — חברת נדל"ן מניב עם פורטפוליו של מגדלי משרדים, פארקים לוגיסטיים ומרכזי מסחר ברחבי ישראל — יצאה להפיק סרט תדמית, הם לא ביקשו "שיר אהבה למשרדים שלהם". הם ביקשו ויזיטקארטה שתענה על שאלה אחת:
+כשאשטרום נכסים, חברת נדל"ן מניב עם פורטפוליו של מגדלי משרדים, פארקים לוגיסטיים ומרכזי מסחר ברחבי ישראל, יצאה להפיק סרט תדמית, הם לא ביקשו "שיר אהבה למשרדים שלהם". הם ביקשו ויזיטקארטה שתענה על שאלה אחת:
 
 **"למה אנחנו כדאיים לך כשותף, כשוכר, כמשקיע?"**
 
 התשובה לשאלה הזו בנויה מארבעה אלמנטים:
 
 ### 1. ותק + היסטוריה = ביטחון
-"הוקמה ב-1990" זה לא רק תאריך — זה "אנחנו שרדנו משבר 2008, קורונה, ועוד." חברה שפועלת 30+ שנה בנדל"ן מסחרי ישראלי עברה מחזורי שוק. זה מה שמשקיע רוצה לדעת.
+"הוקמה ב-1990" זה לא רק תאריך, זה "אנחנו שרדנו משבר 2008, קורונה, ועוד." חברה שפועלת 30+ שנה בנדל"ן מסחרי ישראלי עברה מחזורי שוק. זה מה שמשקיע רוצה לדעת.
 
 ### 2. פריסה ארצית = סקייל
-רשימת הערים — תל אביב, הרצליה, חיפה, ירושלים, באר שבע — היא לא שיווק. זו הוכחה שלחברה יש **גב לוגיסטי** ולא רק פרויקט מקומי אחד.
+רשימת הערים: תל אביב, הרצליה, חיפה, ירושלים, באר שבע, היא לא שיווק. זו הוכחה שלחברה יש **גב לוגיסטי** ולא רק פרויקט מקומי אחד.
 
 ### 3. PropTech = שדרוג תפיסתי
-הצגת AshtromHost — האפליקציה לניהול הנכס — היא "טוויסט" שהופך חברת נדל"ן "אפורה" לחברת **PropTech**. עבור שוכרים צעירים, חברות טכנולוגיה, ושותפים בינלאומיים: זה הפרש בין "מוציא שכירות" לבין "ספק חווית עבודה".
+הצגת AshtromHost, האפליקציה לניהול הנכס, היא "טוויסט" שהופך חברת נדל"ן "אפורה" לחברת **PropTech**. עבור שוכרים צעירים, חברות טכנולוגיה, ושותפים בינלאומיים: זה הפרש בין "מוציא שכירות" לבין "ספק חווית עבודה".
 
 ### 4. ESG = כניסה לשיחה הגלובלית
-LEED Gold ופאנלים סולאריים אינם נחמדות. בשוק הנדל"ן העסקי של 2024, **חברות Enterprise גדולות מחויבות לדיווח ESG.** הן לא יכולות להיכנס לבניין שאינו עומד בתקנים. כלומר — לנכס ירוק יש שוק שכירים שבניין "רגיל" לא ניגש אליו.
+LEED Gold ופאנלים סולאריים אינם נחמדות. בשוק הנדל"ן העסקי של 2024, **חברות Enterprise גדולות מחויבות לדיווח ESG.** הן לא יכולות להיכנס לבניין שאינו עומד בתקנים. כלומר, לנכס ירוק יש שוק שכירים שבניין "רגיל" לא ניגש אליו.
 
 ## למה רחפן הוא הכלי הכי חסכוני להוכחת גודל
 
-בנדל"ן מסחרי, רחפן הוא לא "טרנד" — הוא **הפתרון ההנדסי** לבעיה ספציפית: איך מראים בניין של 50,000 מ"ר, מגרש בנייה פעיל, ופארק שלם — בלי להוציא מאות אלפים על תשתיות צילום?
+בנדל"ן מסחרי, רחפן הוא לא "טרנד", הוא **הפתרון ההנדסי** לבעיה ספציפית: איך מראים בניין של 50,000 מ"ר, מגרש בנייה פעיל, ופארק שלם, בלי להוציא מאות אלפים על תשתיות צילום?
 
 תשובה: טיסת רחפן אחת + עורך טוב = אמינות ויזואלית שעולה על כל שחזור גרפי.
 
 המעבר בין **אתר בנייה פעיל** → **מגדל גמור ומאוכלס** בסרט אחד עושה משהו שמצגות פאוורפוינט לא מצליחות: **הוא מוכיח שהחברה מסיימת פרויקטים.**
 
-## מבנה ה"כרטיס ביקור" התאגידי — תבנית עבודה
+## מבנה ה"כרטיס ביקור" התאגידי: תבנית עבודה
 
 **פתיחה (0:00–0:15):** הצהרת זהות. שם + נתון מרכזי (שנת ייסוד / מ"ר / ערים).
 
@@ -2114,21 +2114,21 @@ LEED Gold ופאנלים סולאריים אינם נחמדות. בשוק הנד
 
 סרט "כרטיס ביקור" תאגידי הוא הבחירה הלא נכונה כש:
 
-- **הקהל הוא צרכן סופי** — הם רוצים רגש, לא נתונים
-- **המוצר חדש ולא מוכר** — צריך הסבר, לא הפגנת גודל
-- **המטרה היא ויראליות** — הפורמט הזה לא מיועד לשיתוף ברשתות
-- **הקמפיין הוא גיוס המונים** — שם הרגש הוא הכל
+- **הקהל הוא צרכן סופי:** הם רוצים רגש, לא נתונים
+- **המוצר חדש ולא מוכר:** צריך הסבר, לא הפגנת גודל
+- **המטרה היא ויראליות:** הפורמט הזה לא מיועד לשיתוף ברשתות
+- **הקמפיין הוא גיוס המונים:** שם הרגש הוא הכל
 
-אבל כשמדובר ב-**B2B ארגוני, שוק נדל"ן, תשתיות, פיננסים** — הפורמט הזה לא "ישן". הוא **מדויק**.
+אבל כשמדובר ב-**B2B ארגוני, שוק נדל"ן, תשתיות, פיננסים**, הפורמט הזה לא "ישן". הוא **מדויק**.
 
 ---
 
-ב-The Video Shop אנחנו יודעים לזהות מתי הפרויקט דורש "פרץ קריאייטיבי" ומתי הוא דורש **ביצוע מקצועי ומדויק של פורמט מנוסה.** שתי היכולות האלה שוות בדיוק אותו דבר.`,
+ב-videoshop אנחנו יודעים לזהות מתי הפרויקט דורש "פרץ קריאייטיבי" ומתי הוא דורש **ביצוע מקצועי ומדויק של פורמט מנוסה.** שתי היכולות האלה שוות בדיוק אותו דבר.`,
     bodyEn: `## The Paradox of the "Conservative" Format
 
 There's a tendency in video production to romanticize: everyone wants a "groundbreaking format," "unexpected narrative," "surprising creative move." That makes sense for viral content, B2C campaigns, or employer branding.
 
-But there are completely different clients: **commercial real estate companies, infrastructure funds, financial corporations.** Their customer — investor, bank, anchor tenant — isn't looking for creativity. They're looking for confidence.
+But there are completely different clients: **commercial real estate companies, infrastructure funds, financial corporations.** Their customer, investor, bank, anchor tenant, isn't looking for creativity. They're looking for confidence.
 
 This type of film has a name: the corporate **"business card."** And this format has a very specific role.
 
@@ -2136,33 +2136,33 @@ This type of film has a name: the corporate **"business card."** And this format
 
 ## What a Corporate Brand Film Really Communicates
 
-When Ashtrom Properties — a commercial real estate company with a portfolio of office towers, logistics parks, and commercial centers across Israel — set out to produce a brand film, they weren't asking for a "love letter to their offices." They were asking for a calling card that answers one question:
+When Ashtrom Properties, a commercial real estate company with a portfolio of office towers, logistics parks, and commercial centers across Israel, set out to produce a brand film, they weren't asking for a "love letter to their offices." They were asking for a calling card that answers one question:
 
-**"Why are we worth it — as a partner, as a tenant, as an investor?"**
+**"Why are we worth it: as a partner, as a tenant, as an investor?"**
 
 The answer to that question is built from four elements:
 
 ### 1. Longevity + History = Confidence
-"Founded in 1990" isn't just a date — it's "we survived 2008, COVID, and more." A company operating 30+ years in Israeli commercial real estate has been through market cycles. That's what an investor wants to know.
+"Founded in 1990" isn't just a date, it's "we survived 2008, COVID, and more." A company operating 30+ years in Israeli commercial real estate has been through market cycles. That's what an investor wants to know.
 
 ### 2. National Footprint = Scale
-The list of cities — Tel Aviv, Herzliya, Haifa, Jerusalem, Beer Sheva — isn't marketing. It's proof the company has **logistical backbone** and not just one local project.
+The list of cities: Tel Aviv, Herzliya, Haifa, Jerusalem, Beer Sheva, isn't marketing. It's proof the company has **logistical backbone** and not just one local project.
 
 ### 3. PropTech = Perceptual Upgrade
-Showcasing AshtromHost — the property management app — is a "twist" that turns a "gray" real estate company into a **PropTech** company. For younger tenants, tech companies, and international partners: this is the difference between "landlord" and "work experience provider."
+Showcasing AshtromHost, the property management app, is a "twist" that turns a "gray" real estate company into a **PropTech** company. For younger tenants, tech companies, and international partners: this is the difference between "landlord" and "work experience provider."
 
 ### 4. ESG = Entry into the Global Conversation
-LEED Gold and solar panels aren't nice-to-haves. In the 2024 commercial real estate market, **large enterprise companies are committed to ESG reporting.** They can't enter a building that doesn't meet standards. Meaning — a green asset has a tenant market that a "regular" building simply can't access.
+LEED Gold and solar panels aren't nice-to-haves. In the 2024 commercial real estate market, **large enterprise companies are committed to ESG reporting.** They can't enter a building that doesn't meet standards. Meaning, a green asset has a tenant market that a "regular" building simply can't access.
 
 ## Why Drone Footage Is the Most Cost-Efficient Way to Prove Scale
 
-In commercial real estate, drone footage isn't a "trend" — it's the **engineering solution** to a specific problem: how do you show a 50,000 sqm building, an active construction site, and an entire park — without spending hundreds of thousands on camera infrastructure?
+In commercial real estate, drone footage isn't a "trend", it's the **engineering solution** to a specific problem: how do you show a 50,000 sqm building, an active construction site, and an entire park, without spending hundreds of thousands on camera infrastructure?
 
 Answer: one drone flight + a good editor = visual credibility that surpasses any graphic reconstruction.
 
 The cut from **active construction site** → **finished, occupied tower** in one film does something PowerPoint presentations cannot: **it proves the company finishes projects.**
 
-## The Corporate "Business Card" Structure — A Working Template
+## The Corporate "Business Card" Structure: A Working Template
 
 **Opening (0:00–0:15):** Identity statement. Name + core metric (founding year / sqm / cities).
 
@@ -2174,35 +2174,35 @@ The cut from **active construction site** → **finished, occupied tower** in on
 
 The corporate "business card" film is the wrong choice when:
 
-- **The audience is the end consumer** — they want emotion, not data
-- **The product is new and unknown** — it needs explanation, not a show of force
-- **The goal is virality** — this format isn't designed for social sharing
-- **The campaign is crowdfunding** — there, emotion is everything
+- **The audience is the end consumer:** they want emotion, not data
+- **The product is new and unknown:** it needs explanation, not a show of force
+- **The goal is virality:** this format isn't designed for social sharing
+- **The campaign is crowdfunding:** there, emotion is everything
 
-But when it comes to **B2B enterprise, real estate, infrastructure, finance** — this format isn't "old." It's **precise**.
+But when it comes to **B2B enterprise, real estate, infrastructure, finance**, this format isn't "old." It's **precise**.
 
 ---
 
-At The Video Shop, we know how to identify when a project demands a "creative leap" and when it demands **professional, precise execution of a proven format.** Both capabilities are worth exactly the same thing.`,
+At videoshop, we know how to identify when a project demands a "creative leap" and when it demands **professional, precise execution of a proven format.** Both capabilities are worth exactly the same thing.`,
     date: "2023-04-15",
     tags: ["Real Estate", "Corporate", "Strategy", "B2B"],
     relatedYoutubeId: "ome2LtSiFWQ",
   },
   {
     id: "celebrity-event-employer-branding",
-    coverImage: "/blog/celebrity-event-cover.svg",
+    coverImage: "/vlogimg/celebrity-event-cover.jpg",
     titleHe: "מעבר לתמונה הקבוצתית: כך הופכים אירוע חברה לנכס שיווקי מרגש",
     titleEn: "Beyond the Group Photo: How to Turn a Corporate Event into an Emotional Marketing Asset",
-    excerptHe: "אירועי חברה הם ההזדמנות הכי מוזלת ליצור תוכן Employer Branding אמיתי. כשמוסיפים טאלנט נכון — הם הופכים לתוכן שהעובדים משתפים מעצמם.",
-    excerptEn: "Corporate events are the most cost-effective opportunity to create real Employer Branding content. Add the right talent — and they become content employees share on their own.",
+    excerptHe: "אירועי חברה הם ההזדמנות הכי מוזלת ליצור תוכן Employer Branding אמיתי. כשמוסיפים טאלנט נכון, הם הופכים לתוכן שהעובדים משתפים מעצמם.",
+    excerptEn: "Corporate events are the most cost-effective opportunity to create real Employer Branding content. Add the right talent, and they become content employees share on their own.",
     readingTime: 5,
     bodyHe: `## אירוע חברה: ההשקעה הכי מוזלת בתוכן Employer Branding
 
-חברות מוציאות עשרות אלפי שקלים על אירוע חברה. קייטרינג, מקום, ציוד, הסעות, מרצים — תקציב אמיתי. ואז האירוע מסתיים. ומה נשאר?
+חברות מוציאות עשרות אלפי שקלים על אירוע חברה. קייטרינג, מקום, ציוד, הסעות, מרצים, תקציב אמיתי. ואז האירוע מסתיים. ומה נשאר?
 
 תמונה קבוצתית. כמה סטורי שנעלמו בחצות.
 
-**הגישה שלנו שונה:** האירוע הוא לא ה"אירוע" — האירוע הוא **חומר הגלם** להפקה.
+**הגישה שלנו שונה:** האירוע הוא לא ה"אירוע", האירוע הוא **חומר הגלם** להפקה.
 
 בפרויקט שהפקנו עבור חברת לוי שטרק, הגענו לאירוע חברה כמו שמגיעים לסט קולנוע: עם תסריט, עם כוונה, ועם ידיעה ברורה מה אנחנו מוציאים ממנו.
 
@@ -2216,7 +2216,7 @@ At The Video Shop, we know how to identify when a project demands a "creative le
 
 **תשובה: כי קורה בו משהו בלתי צפוי שהוא לא ראה לפני כן.**
 
-דודו ארז הוא לא רק "פרזנטור" — הוא **מכפיל ערך**. הנוכחות שלו הופכת כל אינטראקציה עם עובד לרגע שאפשר לצלם. כל תגובה ספונטנית הופכת לתוכן. האנרגיה שלו מוציאה את האנשים מה"מוד מנוחה" ומכניסה אותם ל"מוד השתתפות".
+דודו ארז הוא לא רק "פרזנטור", הוא **מכפיל ערך**. הנוכחות שלו הופכת כל אינטראקציה עם עובד לרגע שאפשר לצלם. כל תגובה ספונטנית הופכת לתוכן. האנרגיה שלו מוציאה את האנשים מה"מוד מנוחה" ומכניסה אותם ל"מוד השתתפות".
 
 וזה בדיוק מה שצריך כדי לצלם.
 
@@ -2224,31 +2224,31 @@ At The Video Shop, we know how to identify when a project demands a "creative le
 
 עבודה עם טאלנטים מוכרים לא מסתיימת ב"בואו נצלם ביחד". זה תהליך:
 
-**כתיבת תסריט מותאם:** לכל טאלנט יש שפה, קצב וסגנון הומור. תסריט "גנרי" יישמע מאולץ. כתבנו חומר שנכתב *עבור* דודו ארז — לא חומר שדודו ארז אמור לומר.
+**כתיבת תסריט מותאם:** לכל טאלנט יש שפה, קצב וסגנון הומור. תסריט "גנרי" יישמע מאולץ. כתבנו חומר שנכתב *עבור* דודו ארז, לא חומר שדודו ארז אמור לומר.
 
-**ניהול לוח זמנים:** טאלנטים מגיעים לחלון זמן מוגדר. כל דקה שאתה מבזבז על "אולי ננסה עוד פעם" — נעלמת. הגענו מוכנים: רשימת סצנות מסודרת לפי סדר עדיפויות, כל לוקיישן מסומן מראש.
+**ניהול לוח זמנים:** טאלנטים מגיעים לחלון זמן מוגדר. כל דקה שאתה מבזבז על "אולי ננסה עוד פעם", נעלמת. הגענו מוכנים: רשימת סצנות מסודרת לפי סדר עדיפויות, כל לוקיישן מסומן מראש.
 
-**הנחיית הספונטניות:** אחד הפרדוקסים של הפקה עם קומיקאים: הרגעים הכי טובים הם ה"בלתי צפויים" — אבל הם קורים רק כשהתנאים מאפשרים אותם. יצרנו סיטואציות שבהן הספונטניות *יכלה* לקרות, ואז הנחנו את עצמנו מהדרך.
+**הנחיית הספונטניות:** אחד הפרדוקסים של הפקה עם קומיקאים: הרגעים הכי טובים הם ה"בלתי צפויים", אבל הם קורים רק כשהתנאים מאפשרים אותם. יצרנו סיטואציות שבהן הספונטניות *יכלה* לקרות, ואז הנחנו את עצמנו מהדרך.
 
-### עריכה שמשחזרת אנרגיה — לא מתעדת אירוע
+### עריכה שמשחזרת אנרגיה, לא מתעדת אירוע
 
 הבדל מהותי: **תיעוד מראה מה קרה. עריכה מרגישה מה היה שם.**
 
 סרטון recap רגיל עובר בסדר כרונולוגי: פתיחה, הרצאות, אוכל, ריקודים, להתראות. זה נכון. זה גם משעמם.
 
-הגישה שלנו: **עריכה לפי שיא האנרגיה.** פתיחה בשיא, "נשימה" עם רגעים אנושיים יפים, שיא שני, הרמת כוסית קצרה שמותירה רגש. הצופה לא יודע כמה זמן האירוע ארך — הוא מרגיש שהיה שם.
+הגישה שלנו: **עריכה לפי שיא האנרגיה.** פתיחה בשיא, "נשימה" עם רגעים אנושיים יפים, שיא שני, הרמת כוסית קצרה שמותירה רגש. הצופה לא יודע כמה זמן האירוע ארך, הוא מרגיש שהיה שם.
 
 ## מה העובדים מקבלים שלא ציפו לו
 
 ### המזכרת שחיה לנצח
 
-תמונה קבוצתית נשמרת בגוגל פוטוס ונשכחת. סרטון שדודו ארז מפרגן לך בו אישית — **נשלח לאמא**.
+תמונה קבוצתית נשמרת בגוגל פוטוס ונשכחת. סרטון שדודו ארז מפרגן לך בו אישית, **נשלח לאמא**.
 
 זה ההבדל בין מזכרת לבין **נכס רגשי**. האחת יוצרת זיכרון. השני יוצר קשר.
 
 ### האפקט הויראלי הפנים-ארגוני
 
-כשעובד משתף סרטון אירוע חברה ברצון — זה לא "עוד תוכן". זה Employer Branding ב-100% ממשק אורגני, בלי שקל פרסום.
+כשעובד משתף סרטון אירוע חברה ברצון, זה לא "עוד תוכן". זה Employer Branding ב-100% ממשק אורגני, בלי שקל פרסום.
 
 חשבו מה קורה כשמחצית מעובדי חברה של 200 אנשים מעלים את הסרטון לסטורי שלהם ביום שאחרי האירוע. **כמה אנשים רואים שם עובדים מאושרים, צוחקים, מחוברים לחברה שלהם?**
 
@@ -2258,9 +2258,9 @@ At The Video Shop, we know how to identify when a project demands a "creative le
 
 **1. הסרטון הראשי (2-3 דקות):** לאינטרא-נט, ל-YouTube, למצגות גיוס.
 
-**2. קליפים קצרים (15-30 שניות):** לכל רגע שיא עם הטאלנט — פרפקט לסטורי ולרילס.
+**2. קליפים קצרים (15-30 שניות):** לכל רגע שיא עם הטאלנט, פרפקט לסטורי ולרילס.
 
-**3. ריאיונות עובדים:** "מה אמרתם לחברים שעבדתם עם דודו ארז?" — תוכן Testimonial שמוכר את החברה לקנדידטים.
+**3. ריאיונות עובדים:** "מה אמרתם לחברים שעבדתם עם דודו ארז?" תוכן Testimonial שמוכר את החברה לקנדידטים.
 
 ## למי זה מתאים?
 
@@ -2271,14 +2271,14 @@ At The Video Shop, we know how to identify when a project demands a "creative le
 
 ---
 
-אם האירוע הבא שלכם כבר מתוכנן — אתם כבר בחצי הדרך להפקה. [בואו נדבר](/contact) לפני שהאורות נדלקים.`,
+אם האירוע הבא שלכם כבר מתוכנן, אתם כבר בחצי הדרך להפקה. [בואו נדבר](/contact) לפני שהאורות נדלקים.`,
     bodyEn: `## Corporate Events: The Most Underpriced Employer Branding Content
 
-Companies spend tens of thousands on a corporate event. Catering, venue, equipment, transportation, speakers — real budget. And then the event ends. What remains?
+Companies spend tens of thousands on a corporate event. Catering, venue, equipment, transportation, speakers, real budget. And then the event ends. What remains?
 
 A group photo. A few Stories that disappeared at midnight.
 
-**Our approach is different:** the event isn't the "event" — the event is the **raw material** for production.
+**Our approach is different:** the event isn't the "event", the event is the **raw material** for production.
 
 In the project we produced for Levi Strauss, we arrived at the corporate event like you arrive at a film set: with a script, with intention, and with clear knowledge of what we're taking out of it.
 
@@ -2292,7 +2292,7 @@ A simple question: what makes an employee watch a corporate event video twice, s
 
 **Answer: because something unexpected happens in it that they haven't seen before.**
 
-Dudu Erez isn't just a "presenter" — he's a **value multiplier.** His presence turns every interaction with an employee into a filmable moment. Every spontaneous reaction becomes content. His energy pulls people out of "relaxation mode" and into "participation mode."
+Dudu Erez isn't just a "presenter", he's a **value multiplier.** His presence turns every interaction with an employee into a filmable moment. Every spontaneous reaction becomes content. His energy pulls people out of "relaxation mode" and into "participation mode."
 
 And that's exactly what you need to film.
 
@@ -2300,31 +2300,31 @@ And that's exactly what you need to film.
 
 Working with recognized talent doesn't end at "let's film together." It's a process:
 
-**Tailored scriptwriting:** every talent has a language, rhythm, and comedy style. A "generic" script sounds forced. We wrote material created *for* Dudu Erez — not material Dudu Erez is supposed to say.
+**Tailored scriptwriting:** every talent has a language, rhythm, and comedy style. A "generic" script sounds forced. We wrote material created *for* Dudu Erez, not material Dudu Erez is supposed to say.
 
-**Schedule management:** talent arrives for a defined time window. Every minute wasted on "maybe we'll try again" — disappears. We arrived prepared: a scenes list ordered by priority, every location marked in advance.
+**Schedule management:** talent arrives for a defined time window. Every minute wasted on "maybe we'll try again" disappears. We arrived prepared: a scenes list ordered by priority, every location marked in advance.
 
-**Directing the spontaneous:** one paradox of producing with comedians: the best moments are the "unexpected" ones — but they only happen when conditions allow them. We created situations where spontaneity *could* happen, then got out of the way.
+**Directing the spontaneous:** one paradox of producing with comedians: the best moments are the "unexpected" ones, but they only happen when conditions allow them. We created situations where spontaneity *could* happen, then got out of the way.
 
-### Editing That Recreates Energy — Not Documents an Event
+### Editing That Recreates Energy, Not Documents an Event
 
 A fundamental difference: **documentation shows what happened. Editing makes you feel what was there.**
 
 A standard recap video goes chronologically: opening, talks, food, dancing, goodbye. Accurate. Also boring.
 
-Our approach: **edit by energy peak.** Open at the peak, "breathe" with beautiful human moments, second peak, a short toast that leaves emotion. The viewer doesn't know how long the event ran — they feel like they were there.
+Our approach: **edit by energy peak.** Open at the peak, "breathe" with beautiful human moments, second peak, a short toast that leaves emotion. The viewer doesn't know how long the event ran, they feel like they were there.
 
 ## What Employees Get That They Didn't Expect
 
 ### The Memento That Lives Forever
 
-A group photo gets saved to Google Photos and forgotten. A video where Dudu Erez personally cheers you on — **gets sent to your mother.**
+A group photo gets saved to Google Photos and forgotten. A video where Dudu Erez personally cheers you on, **gets sent to your mother.**
 
 That's the difference between a memento and an **emotional asset.** One creates a memory. The other creates a bond.
 
 ### The Internal Viral Effect
 
-When an employee willingly shares a corporate event video — it's not "more content." It's Employer Branding at 100% organic reach, without a single shekel in advertising.
+When an employee willingly shares a corporate event video, it's not "more content." It's Employer Branding at 100% organic reach, without a single shekel in advertising.
 
 Think about what happens when half of a 200-person company's employees post the video to their Stories the day after the event. **How many people see happy employees, laughing, connected to their company?**
 
@@ -2334,9 +2334,9 @@ That's the most credible advertising there is.
 
 **1. Main film (2-3 minutes):** for the intranet, YouTube, recruitment presentations.
 
-**2. Short clips (15-30 seconds):** every peak moment with talent — perfect for Stories and Reels.
+**2. Short clips (15-30 seconds):** every peak moment with talent, perfect for Stories and Reels.
 
-**3. Employee interviews:** "What did you tell friends about working with Dudu Erez?" — Testimonial content that sells the company to candidates.
+**3. Employee interviews:** "What did you tell friends about working with Dudu Erez?" Testimonial content that sells the company to candidates.
 
 ## Who Is This Right For?
 
@@ -2347,7 +2347,7 @@ That's the most credible advertising there is.
 
 ---
 
-If your next event is already planned — you're already halfway to a production. [Let's talk](/contact) before the lights go on.`,
+If your next event is already planned, you're already halfway to a production. [Let's talk](/contact) before the lights go on.`,
     date: "2023-08-01",
     tags: ["Employer Branding", "Event Recap", "Celebrity", "Case Study"],
     relatedYoutubeId: "94W9SfZcx-Y",
@@ -2357,7 +2357,7 @@ If your next event is already planned — you're already halfway to a production
   },
   {
     id: "event-recap-brand-asset",
-    coverImage: "/blog/event-recap-cover.svg",
+    coverImage: "/vlogimg/event-recap-cover.jpg",
     titleHe: "סיכום אירוע כנכס מותגי: איך הופכים תיעוד לסרט תדמית",
     titleEn: "Event Recap as Brand Asset: How to Turn Documentation into a Brand Film",
     excerptHe: "כשהתקציב מוגבל, הפתרון לא תמיד הוא לדחות את ההפקה. לפעמים האירוע שכבר קורה הוא חומר הגלם שמחכה לעורך נכון.",
@@ -2369,7 +2369,7 @@ If your next event is already planned — you're already halfway to a production
 
 עבורנו, זו שאלה אחרת: **"מה כבר קיים שאפשר להפיק ממנו?"**
 
-כשגישנו לפרויקט תוכנית המנהיגות הרפואית-טכנולוגית של Nucleai — ארגון שמחבר בין רופאים לחברות AI בהיירטק הרפואי — לא הגענו עם ציוד לצילום יום מלא. הגענו לאירוע. ויצאנו עם סרט תדמית.
+כשגישנו לפרויקט תוכנית המנהיגות הרפואית-טכנולוגית של Nucleai, ארגון שמחבר בין רופאים לחברות AI בהיירטק הרפואי, לא הגענו עם ציוד לצילום יום מלא. הגענו לאירוע. ויצאנו עם סרט תדמית.
 
 [IMAGE]
 
@@ -2378,36 +2378,36 @@ If your next event is already planned — you're already halfway to a production
 לא כל אירוע שווה להפיק. שלושה תנאים הכרחיים:
 
 **1. דוברים שמספרים סיפורים אמיתיים**
-בכנסים עסקיים, הדוברים לא "משחקים" — הם מדברים על מה שחשוב להם. אבי וידמן מ-Nucleai שאומר "אנחנו צריכים רופאים שידריכו אותנו" — זה לא שורה כתובה. זה האמת של המיזם. וזה מה שהמצלמה קולטת ולא יכולה לשחזר.
+בכנסים עסקיים, הדוברים לא "משחקים", הם מדברים על מה שחשוב להם. אבי וידמן מ-Nucleai שאומר "אנחנו צריכים רופאים שידריכו אותנו", זה לא שורה כתובה. זה האמת של המיזם. וזה מה שהמצלמה קולטת ולא יכולה לשחזר.
 
 **2. ויזואל שמראה קהילה**
-חדר מלא רופאים ויזמים שמדברים, מתייעצים, מחייכים — זה לא "תיעוד". זה **ראיה**. הצופה רואה שהדבר קיים, שהוא גדול, שיש בו חיים. שום Zoom call לא יוצר את האפקט הזה.
+חדר מלא רופאים ויזמים שמדברים, מתייעצים, מחייכים, זה לא "תיעוד". זה **ראיה**. הצופה רואה שהדבר קיים, שהוא גדול, שיש בו חיים. שום Zoom call לא יוצר את האפקט הזה.
 
 **3. נתונים שמכמתים גודל**
-"11 בתי חולים", "20+ מוסדות רפואיים" — מספרים על מסך לא עולים כסף. אבל הם עושים משהו שהסיפור לבד לא עושה: הם נותנים קנה מידה.
+"11 בתי חולים", "20+ מוסדות רפואיים", מספרים על מסך לא עולים כסף. אבל הם עושים משהו שהסיפור לבד לא עושה: הם נותנים קנה מידה.
 
 ## הטכניקה: מריבוי קולות לנרטיב אחד
 
 האתגר הטכני של סרטון Talking Heads עם מספר דוברים: **איך שומרים על קו נרטיבי רציף?**
 
 ### שיטת ה"פאזל הנרטיבי"
-אנחנו לא חותכים לפי סדר הדיבור — אנחנו חותכים לפי **פאזות המסר**:
+אנחנו לא חותכים לפי סדר הדיבור, אנחנו חותכים לפי **פאזות המסר**:
 
-- **פאזה 1 — הבעיה:** "לרפואה ולטכנולוגיה יש פער שצריך לגשר עליו."
-- **פאזה 2 — הפתרון:** "התוכנית הזו מביאה אותם לאותו שולחן."
-- **פאזה 3 — ההוכחה:** מספרים, קהילה, ראיות.
-- **פאזה 4 — ה-FOMO:** "הצטרפו אלינו."
+- **פאזה 1: הבעיה:** "לרפואה ולטכנולוגיה יש פער שצריך לגשר עליו."
+- **פאזה 2: הפתרון:** "התוכנית הזו מביאה אותם לאותו שולחן."
+- **פאזה 3: ההוכחה:** מספרים, קהילה, ראיות.
+- **פאזה 4: ה-FOMO:** "הצטרפו אלינו."
 
-כל דובר מקדם פאזה — לא "מספר את הסיפור שלו".
+כל דובר מקדם פאזה, לא "מספר את הסיפור שלו".
 
-### כתוביות בסגנון כתב יד — לא קישוט
-הכתוביות בסגנון handwritten ממלאות תפקיד ספציפי: הן יוצרות **המשכיות ויזואלית** בין שני דוברים שאין בינהם קשר ויזואלי. הצופה עובר מרופאה בחדר ישיבות ליזם בכנס — והכתובית שמופיעה מחברת ביניהם.
+### כתוביות בסגנון כתב יד: לא קישוט
+הכתוביות בסגנון handwritten ממלאות תפקיד ספציפי: הן יוצרות **המשכיות ויזואלית** בין שני דוברים שאין בינהם קשר ויזואלי. הצופה עובר מרופאה בחדר ישיבות ליזם בכנס, והכתובית שמופיעה מחברת ביניהם.
 
 ### תאורה טבעית: אמינות שאין לה מחיר
 
 כאן ניגוד לוגיסטי יוצר יתרון: **תאורת סטודיו נראית כמו פרסומת. תאורה טבעית נראית כמו עדות.**
 
-לפרויקט שמוכר "אמינות מקצועית" ו"ידע אמיתי" — האסתטיקה הטבעית של אירוע עובדת *בשביל* המסר, לא *נגדו*.
+לפרויקט שמוכר "אמינות מקצועית" ו"ידע אמיתי", האסתטיקה הטבעית של אירוע עובדת *בשביל* המסר, לא *נגדו*.
 
 ## מה הלקוח מקבל שהוא לא ציפה לו
 
@@ -2415,31 +2415,31 @@ If your next event is already planned — you're already halfway to a production
 
 **1. סרט תדמית:** 2-3 דקות שמסכמים את התוכנית, ההשפעה והקהילה.
 
-**2. קטעי LinkedIn:** מהחומר הגולמי, 3-5 קליפים קצרים לפוסטים — כל דובר מקבל "הבזק" משלו.
+**2. קטעי LinkedIn:** מהחומר הגולמי, 3-5 קליפים קצרים לפוסטים, כל דובר מקבל "הבזק" משלו.
 
-**3. ארכיון תיעוד:** כל האירוע מתועד לשימוש עתידי — Case Studies, דוחות, מצגות.
+**3. ארכיון תיעוד:** כל האירוע מתועד לשימוש עתידי: Case Studies, דוחות, מצגות.
 
 **השקעה אחת = שלושה נכסי שיווק.**
 
 ## מתי הגישה הזו מתאימה
 
-✅ **תוכניות חינוך וליווי** — הביצוע הוא הנכס הכי חזק.
-✅ **כנסי תעשייה** — הקהל, הדוברים והאנרגיה לא ניתנים ל"שחזור".
-✅ **קהילות מקצועיות** — FOMO עובד רק כשרואים את הקהל שהחמצת.
-✅ **לקוחות עם תקציב מוגבל** — ROI מקסימלי מהשקעה בצילום יום אחד.
+✅ **תוכניות חינוך וליווי:** הביצוע הוא הנכס הכי חזק.
+✅ **כנסי תעשייה:** הקהל, הדוברים והאנרגיה לא ניתנים ל"שחזור".
+✅ **קהילות מקצועיות:** FOMO עובד רק כשרואים את הקהל שהחמצת.
+✅ **לקוחות עם תקציב מוגבל:** ROI מקסימלי מהשקעה בצילום יום אחד.
 
 ❌ **לא מתאים:** השקות מוצר, פרסומות מסחריות, סרטים שדורשים שליטה מוחלטת בסביבה.
 
 ---
 
-ב-The Video Shop אנחנו מאמינים שהגדרת "הפקה" לא מתחילה עם "מה נצלם" — היא מתחילה עם **"מה כבר קורה שאפשר לצלם."** כשחושבים כך, כל אירוע הוא הזדמנות הפקה.`,
+ב-videoshop אנחנו מאמינים שהגדרת "הפקה" לא מתחילה עם "מה נצלם", היא מתחילה עם **"מה כבר קורה שאפשר לצלם."** כשחושבים כך, כל אירוע הוא הזדמנות הפקה.`,
     bodyEn: `## Opportunity Capture: The Approach That Saves Budget and Creates Value
 
 Some clients arrive with a gap: they need a brand film, but don't have a budget for production from scratch. For most studios, it's a short conversation: "Come back when you have a budget."
 
 For us, it's a different question: **"What already exists that we can produce from?"**
 
-When we approached the Nucleai medical-tech leadership program project — an organization that connects doctors with AI companies in medical hightech — we didn't arrive with equipment for a full filming day. We arrived at an event. And left with a brand film.
+When we approached the Nucleai medical-tech leadership program project, an organization that connects doctors with AI companies in medical hightech, we didn't arrive with equipment for a full filming day. We arrived at an event. And left with a brand film.
 
 [IMAGE]
 
@@ -2448,36 +2448,36 @@ When we approached the Nucleai medical-tech leadership program project — an or
 Not every event is worth producing from. Three necessary conditions:
 
 **1. Speakers who tell real stories**
-At business conferences, speakers aren't "performing" — they're talking about what matters to them. Avi Widman from Nucleai saying "we need doctors to guide us" — that's not a written line. That's the venture's truth. And that's what the camera captures and cannot recreate.
+At business conferences, speakers aren't "performing", they're talking about what matters to them. Avi Widman from Nucleai saying "we need doctors to guide us": that's not a written line. That's the venture's truth. And that's what the camera captures and cannot recreate.
 
 **2. Visuals that show a community**
-A room full of doctors and entrepreneurs talking, consulting, smiling — that's not "documentation." That's **evidence.** The viewer sees that the thing exists, that it's large, that it has life. No Zoom call creates this effect.
+A room full of doctors and entrepreneurs talking, consulting, smiling, that's not "documentation." That's **evidence.** The viewer sees that the thing exists, that it's large, that it has life. No Zoom call creates this effect.
 
 **3. Numbers that quantify scale**
-"11 hospitals," "20+ medical institutions" — numbers on screen cost nothing. But they do something the story alone doesn't: they give scale.
+"11 hospitals," "20+ medical institutions", numbers on screen cost nothing. But they do something the story alone doesn't: they give scale.
 
 ## The Technique: From Multiple Voices to One Narrative
 
 The technical challenge of a Talking Heads video with multiple speakers: **how do you maintain a continuous narrative thread?**
 
 ### The "Narrative Puzzle" Method
-We don't cut in order of speaking — we cut by **message phases:**
+We don't cut in order of speaking, we cut by **message phases:**
 
-- **Phase 1 — The problem:** "Medicine and technology have a gap that needs bridging."
-- **Phase 2 — The solution:** "This program brings them to the same table."
-- **Phase 3 — The proof:** numbers, community, evidence.
-- **Phase 4 — The FOMO:** "Join us."
+- **Phase 1: The problem:** "Medicine and technology have a gap that needs bridging."
+- **Phase 2: The solution:** "This program brings them to the same table."
+- **Phase 3: The proof:** numbers, community, evidence.
+- **Phase 4: The FOMO:** "Join us."
 
-Each speaker advances a phase — they don't "tell their story."
+Each speaker advances a phase, they don't "tell their story."
 
-### Handwritten-Style Subtitles — Not Decoration
-The handwritten-style subtitles serve a specific role: they create **visual continuity** between two speakers with no visual connection. The viewer moves from a doctor in a conference room to an entrepreneur at a conference — and the subtitle appearing between them creates the bridge.
+### Handwritten-Style Subtitles: Not Decoration
+The handwritten-style subtitles serve a specific role: they create **visual continuity** between two speakers with no visual connection. The viewer moves from a doctor in a conference room to an entrepreneur at a conference, and the subtitle appearing between them creates the bridge.
 
 ### Natural Lighting: Credibility That Has No Price
 
 Here a logistical constraint creates an advantage: **studio lighting looks like advertising. Natural lighting looks like testimony.**
 
-For a project selling "professional credibility" and "real knowledge" — the natural aesthetic of an event works *for* the message, not *against* it.
+For a project selling "professional credibility" and "real knowledge", the natural aesthetic of an event works *for* the message, not *against* it.
 
 ## What the Client Gets That They Didn't Expect
 
@@ -2485,24 +2485,24 @@ When you arrive at an event and produce from it, the client gets three assets:
 
 **1. Brand film:** 2-3 minutes summarizing the program, impact, and community.
 
-**2. LinkedIn clips:** from the raw material, 3-5 short clips for posts — each speaker gets their own "flash."
+**2. LinkedIn clips:** from the raw material, 3-5 short clips for posts, each speaker gets their own "flash."
 
-**3. Documentation archive:** the entire event documented for future use — case studies, reports, presentations.
+**3. Documentation archive:** the entire event documented for future use: case studies, reports, presentations.
 
 **One investment = three marketing assets.**
 
 ## When This Approach Is Right
 
-✅ **Education and mentorship programs** — the execution is the most powerful asset.
-✅ **Industry conferences** — the audience, speakers, and energy can't be "recreated."
-✅ **Professional communities** — FOMO only works when you see the audience you missed.
-✅ **Clients with limited budget** — maximum ROI from a single day's filming investment.
+✅ **Education and mentorship programs:** the execution is the most powerful asset.
+✅ **Industry conferences:** the audience, speakers, and energy can't be "recreated."
+✅ **Professional communities:** FOMO only works when you see the audience you missed.
+✅ **Clients with limited budget:** maximum ROI from a single day's filming investment.
 
 ❌ **Not suitable for:** product launches, commercial ads, films requiring full environment control.
 
 ---
 
-At The Video Shop, we believe the definition of "production" doesn't begin with "what do we film" — it begins with **"what is already happening that we can film."** When you think this way, every event is a production opportunity.`,
+At videoshop, we believe the definition of "production" doesn't begin with "what do we film", it begins with **"what is already happening that we can film."** When you think this way, every event is a production opportunity.`,
     date: "2023-06-01",
     tags: ["HealthTech", "Event Recap", "Strategy", "Tips"],
     relatedYoutubeId: "VsiMUos3_58",
@@ -2512,17 +2512,17 @@ At The Video Shop, we believe the definition of "production" doesn't begin with 
   },
   {
     id: "vertica-flagship-case-study",
-    coverImage: "/blog/vertica-flagship-cover.svg",
+    coverImage: "/vlogimg/vertica-flagship-cover.jpg",
     titleHe: "כשבימוי פוגש אסטרטגיה: ה-Case Study של Vertica Lifestyle Ad",
     titleEn: "When Direction Meets Strategy: The Vertica Lifestyle Ad Case Study",
-    excerptHe: "ב-HealthTech רוב החברות נופלות למלכודת ה'רצינות יתר'. הן מוכרות פתרונות, לא חוויות. הפרויקט של Vertica הוא הדגמה מלאה של ה-DNA שלנו: מהרעיון הראשוני ועד ל-Final Cut — ליווי אסטרטגי שהופך מוצר טכני לשיחת סלון.",
-    excerptEn: "In HealthTech, most companies fall into the 'over-seriousness' trap. They sell solutions, not experiences. The Vertica project is a full demonstration of our DNA: from first idea to final cut — strategic partnership that turns a technical product into a cultural conversation.",
+    excerptHe: "ב-HealthTech רוב החברות נופלות למלכודת ה'רצינות יתר'. הן מוכרות פתרונות, לא חוויות. הפרויקט של Vertica הוא הדגמה מלאה של ה-DNA שלנו: מהרעיון הראשוני ועד ל-Final Cut, ליווי אסטרטגי שהופך מוצר טכני לשיחת סלון.",
+    excerptEn: "In HealthTech, most companies fall into the 'over-seriousness' trap. They sell solutions, not experiences. The Vertica project is a full demonstration of our DNA: from first idea to final cut, strategic partnership that turns a technical product into a cultural conversation.",
     readingTime: 6,
     bodyHe: `## למה הבחרנו בסרט הזה כסרט הדגל שלנו
 
 סרט דגל לא נבחר בגלל שהוא היפה ביותר. הוא נבחר כי הוא מספר הכי טוב מה אנחנו.
 
-הפרסומת שיצרנו עבור Vertica — מכשיר HealthTech — עשתה דבר שרוב החברות בתחום לא מעזות לעשות: **היא הפכה נושא רגיש לשמחה.** בריאות, גוף, מוגבלות — אלה נושאים שהמיינסטרים מטפל בהם בכפפות לבנות, בנימה חינוכית, בזהירות יתר. אנחנו בחרנו בריקוד.
+הפרסומת שיצרנו עבור Vertica, מכשיר HealthTech, עשתה דבר שרוב החברות בתחום לא מעזות לעשות: **היא הפכה נושא רגיש לשמחה.** בריאות, גוף, מוגבלות, אלה נושאים שהמיינסטרים מטפל בהם בכפפות לבנות, בנימה חינוכית, בזהירות יתר. אנחנו בחרנו בריקוד.
 
 [IMAGE]
 
@@ -2536,52 +2536,52 @@ At The Video Shop, we believe the definition of "production" doesn't begin with 
 
 ### הפיצוח הקריאייטיבי: ריקוד כשפה
 
-הפתרון הגיע מכיוון לא צפוי: **קצב ואנרגיה.** כשאדם רוקד — הוא לא מתנצל על גופו. הוא מציג אותו. הריקוד הפך את הנרטיב מ"מישהו שסובל" ל"מישהו שחי בגוף שלו".
+הפתרון הגיע מכיוון לא צפוי: **קצב ואנרגיה.** כשאדם רוקד, הוא לא מתנצל על גופו. הוא מציג אותו. הריקוד הפך את הנרטיב מ"מישהו שסובל" ל"מישהו שחי בגוף שלו".
 
-זה לא רק קריאייטיב — זו **הצהרת עמדה מותגית.** Vertica לא מתייחסת לגוף כלבעיה שצריך לתקן. היא מתייחסת אליו כלכוח שצריך לשחרר.
+זה לא רק קריאייטיב, זו **הצהרת עמדה מותגית.** Vertica לא מתייחסת לגוף כלבעיה שצריך לתקן. היא מתייחסת אליו כלכוח שצריך לשחרר.
 
 ## האנטומיה של ההפקה
 
 ### בימוי שחקנים: דיוק בכל תנועה
-בסרטים שמשתמשים בריקוד כאמצעי, הסכנה היא לאבד את המסר בתוך ה"מחזמר". כל תנועה בפרסומת הזו עוצבה כדי לשדר ספציפיקה של פעולה — לא לבצע. כל הבעה — לא לשחק תפקיד.
+בסרטים שמשתמשים בריקוד כאמצעי, הסכנה היא לאבד את המסר בתוך ה"מחזמר". כל תנועה בפרסומת הזו עוצבה כדי לשדר ספציפיקה של פעולה, לא לבצע. כל הבעה, לא לשחק תפקיד.
 
 הבימוי עבד על ניגוד: אנרגיה מבחוץ, כנות מבפנים. הצופה צריך להרגיש גם "זה מהנה" וגם "זה אמיתי".
 
 ### כוריאוגרפיה ממוקדת מסר
-הכוריאוגרפיה לא הגיעה מאסטרטיב לריקוד. היא הגיעה מהשאלה: **"מה גוף שמרגיש חופשי נראה כמוהו?"** הרגעים שבהם השחקן עוצר בין תנועות לתנועות — הם הרגעים שמוכרים. כי שם הצופה מזהה את עצמו.
+הכוריאוגרפיה לא הגיעה מאסטרטיב לריקוד. היא הגיעה מהשאלה: **"מה גוף שמרגיש חופשי נראה כמוהו?"** הרגעים שבהם השחקן עוצר בין תנועות לתנועות, הם הרגעים שמוכרים. כי שם הצופה מזהה את עצמו.
 
 ### פוסט-פרודקשן: לשמור על האותנטי
-הסכנה בפוסט של סרטי "אנרגיה" היא לצבוע הכל בפילטרים שהופכים אותם ל-Instagram Reel עוד אחד. העיבוד השמיר על בהירות ויזואלית, צבע עור אמיתי, ותאורה שנראית כמו אור יום — לא כמו מאחורה צבועה.
+הסכנה בפוסט של סרטי "אנרגיה" היא לצבוע הכל בפילטרים שהופכים אותם ל-Instagram Reel עוד אחד. העיבוד השמיר על בהירות ויזואלית, צבע עור אמיתי, ותאורה שנראית כמו אור יום, לא כמו מאחורה צבועה.
 
-## מה הסרט הזה מוכיח על The Video Shop
+## מה הסרט הזה מוכיח על videoshop
 
 הסרט הזה הוא שלושה דברים בו-זמנית:
 
 **1. יכולת קריאייטיבית:** אנחנו לא רק מצלמים מה שנאמר לנו. אנחנו מביאים אסטרטגיה ופיצוח קריאייטיבי שמגיעים *לפני* הצילום.
 
-**2. בימוי מדויק:** מחוות, הבעות, קצב — אנחנו עובדים ברמה של שחקנים ולא רק "אנשים שמשתמשים במוצר".
+**2. בימוי מדויק:** מחוות, הבעות, קצב, אנחנו עובדים ברמה של שחקנים ולא רק "אנשים שמשתמשים במוצר".
 
 **3. ליווי מלא:** Vertica קיבל מאתנו שלושה סרטים שמכסים את מסע הלקוח כולו:
-- **פרסומת Lifestyle** — מודעות ורגש
-- **סרטון הפרכת מיתוסים** — שיקול והסרת חסמים
-- **סרטון הדרכה + 3D** — שימוש ואמון
+- **פרסומת Lifestyle:** מודעות ורגש
+- **סרטון הפרכת מיתוסים:** שיקול והסרת חסמים
+- **סרטון הדרכה + 3D:** שימוש ואמון
 
 זו לא "חבילת הפקה". זו **אסטרטגיית תוכן ביצוע.**
 
 ## הלקח לכל מותג HealthTech ו-EdTech
 
-אם המוצר שלכם פותר בעיה אמיתית — אתם כבר מחצית מהדרך. אבל אם הפרסומת שלכם לא גורמת לאנשים להרגיש שהם *יכולים* להחזיק בפתרון הזה — אתם מאבדים לקוחות לא בגלל המוצר, אלא בגלל שהמסר לא הגיע.
+אם המוצר שלכם פותר בעיה אמיתית, אתם כבר מחצית מהדרך. אבל אם הפרסומת שלכם לא גורמת לאנשים להרגיש שהם *יכולים* להחזיק בפתרון הזה, אתם מאבדים לקוחות לא בגלל המוצר, אלא בגלל שהמסר לא הגיע.
 
 **הקריאייטיב הוא לא "עטיפה". הוא המוצר.**
 
 ---
 
-הפרויקט הזה זמין לצפייה מלאה בפורטפוליו. ליצירת קשר לגבי פרויקט דומה — [דף יצירת קשר](/contact).`,
+הפרויקט הזה זמין לצפייה מלאה בפורטפוליו. ליצירת קשר לגבי פרויקט דומה, [דף יצירת קשר](/contact).`,
     bodyEn: `## Why We Chose This Film as Our Flagship
 
 A flagship film isn't chosen because it's the most beautiful. It's chosen because it best explains who we are.
 
-The commercial we created for Vertica — a HealthTech device — did something most companies in the field don't dare to do: **it turned a sensitive subject into joy.** Health, body, limitation — topics the mainstream handles with white gloves, educational tone, excessive caution. We chose dance.
+The commercial we created for Vertica, a HealthTech device, did something most companies in the field don't dare to do: **it turned a sensitive subject into joy.** Health, body, limitation, topics the mainstream handles with white gloves, educational tone, excessive caution. We chose dance.
 
 [IMAGE]
 
@@ -2595,47 +2595,47 @@ When we approached the Vertica project, we didn't ask "how do we explain the pro
 
 ### The Creative Breakthrough: Dance as Language
 
-The solution came from an unexpected direction: **rhythm and energy.** When a person dances — they don't apologize for their body. They present it. Dance shifted the narrative from "someone who suffers" to "someone who lives in their body."
+The solution came from an unexpected direction: **rhythm and energy.** When a person dances, they don't apologize for their body. They present it. Dance shifted the narrative from "someone who suffers" to "someone who lives in their body."
 
-This isn't just creative — it's a **brand positioning statement.** Vertica doesn't treat the body as a problem to fix. It treats it as a force to release.
+This isn't just creative, it's a **brand positioning statement.** Vertica doesn't treat the body as a problem to fix. It treats it as a force to release.
 
 ## The Anatomy of the Production
 
 ### Actor Direction: Precision in Every Movement
-In films that use dance as a medium, the danger is losing the message inside the "musical." Every movement in this ad was designed to convey action specificity — not to perform. Every expression — not to play a role.
+In films that use dance as a medium, the danger is losing the message inside the "musical." Every movement in this ad was designed to convey action specificity, not to perform. Every expression, not to play a role.
 
 Direction worked on contrast: energy on the outside, honesty on the inside. The viewer needs to feel both "this is fun" and "this is real."
 
 ### Message-Driven Choreography
-The choreography didn't come from a dance aesthetic. It came from the question: **"what does a body that feels free look like?"** The moments where the actor pauses between movements — those are the selling moments. Because that's where the viewer recognizes themselves.
+The choreography didn't come from a dance aesthetic. It came from the question: **"what does a body that feels free look like?"** The moments where the actor pauses between movements, those are the selling moments. Because that's where the viewer recognizes themselves.
 
 ### Post-Production: Protecting the Authentic
-The danger in post for "energy" films is painting everything with filters that turn them into another Instagram Reel. The processing preserved visual clarity, real skin tone, and lighting that looks like daylight — not a painted backdrop.
+The danger in post for "energy" films is painting everything with filters that turn them into another Instagram Reel. The processing preserved visual clarity, real skin tone, and lighting that looks like daylight, not a painted backdrop.
 
-## What This Film Proves About The Video Shop
+## What This Film Proves About videoshop
 
 This film is three things simultaneously:
 
 **1. Creative capability:** we don't just film what we're told. We bring strategy and creative breakthroughs that arrive *before* filming.
 
-**2. Precise direction:** gestures, expressions, rhythm — we work at the level of actors, not "people using a product."
+**2. Precise direction:** gestures, expressions, rhythm, we work at the level of actors, not "people using a product."
 
 **3. Full-service partnership:** Vertica received three films covering the complete customer journey:
-- **Lifestyle Ad** — awareness and emotion
-- **Myth Busting** — consideration and barrier removal
-- **Instructional + 3D** — use and trust
+- **Lifestyle Ad:** awareness and emotion
+- **Myth Busting:** consideration and barrier removal
+- **Instructional + 3D:** use and trust
 
 This isn't a "production package." It's a **content strategy in execution.**
 
 ## The Lesson for Every HealthTech and EdTech Brand
 
-If your product solves a real problem — you're already halfway there. But if your advertising doesn't make people feel they *can* hold that solution — you're losing customers not because of the product, but because the message didn't land.
+If your product solves a real problem, you're already halfway there. But if your advertising doesn't make people feel they *can* hold that solution, you're losing customers not because of the product, but because the message didn't land.
 
 **Creative is not the "packaging." It's the product.**
 
 ---
 
-This project is available for full viewing in the portfolio. To discuss a similar project — [contact us](/contact).`,
+This project is available for full viewing in the portfolio. To discuss a similar project, [contact us](/contact).`,
     date: "2023-09-15",
     tags: ["HealthTech", "Commercial", "Case Study", "Strategy"],
     relatedYoutubeId: "rixmoZ4Y4Uk",
@@ -2645,23 +2645,23 @@ This project is available for full viewing in the portfolio. To discuss a simila
   },
   {
     id: "instructional-video-customer-journey",
-    coverImage: "/blog/instructional-video-cover.svg",
+    coverImage: "/vlogimg/instructional-video-cover.jpg",
     titleHe: "מסע הלקוח בווידאו: למה סרטון ההדרכה הוא הסגירה שאף אחד לא מכין",
     titleEn: "The Video Customer Journey: Why the Instructional Video Is the Close Nobody Prepares",
-    excerptHe: "כולם משקיעים בסרט התדמית. מעטים מכינים סרטון הדרכה. אבל הלקוח שמחפש 'איך זה עובד' לפני שהוא קונה — הוא הלקוח הכי קרוב לסגירה.",
-    excerptEn: "Everyone invests in the brand film. Few prepare an instructional video. But the customer searching 'how does this work' before buying — is the closest customer to closing.",
+    excerptHe: "כולם משקיעים בסרט התדמית. מעטים מכינים סרטון הדרכה. אבל הלקוח שמחפש 'איך זה עובד' לפני שהוא קונה, הוא הלקוח הכי קרוב לסגירה.",
+    excerptEn: "Everyone invests in the brand film. Few prepare an instructional video. But the customer searching 'how does this work' before buying, is the closest customer to closing.",
     readingTime: 5,
-    bodyHe: `## שלושה סרטונים, שלושה שלבים — אחד שכולם מדלגים עליו
+    bodyHe: `## שלושה סרטונים, שלושה שלבים: אחד שכולם מדלגים עליו
 
 כשחברה מחליטה להשקיע בווידאו, היא בדרך כלל שואלת: "איזה סרט אנחנו מכינים?" השאלה הנכונה היא: **"באיזה שלב של מסע הלקוח אנחנו נמצאים?"**
 
 מסע לקוח קלאסי מכיל שלושה שלבים שלכל אחד מהם יש פורמט וידאו מתאים:
 
-**שלב 1 — מודעות (Awareness):** סרט תדמית. מראה מי אתם, מה אתם מייצרים ולמה כדאי לשים לב. הוא לא מוכר — הוא מכיר.
+**שלב 1: מודעות (Awareness):** סרט תדמית. מראה מי אתם, מה אתם מייצרים ולמה כדאי לשים לב. הוא לא מוכר, הוא מכיר.
 
-**שלב 2 — שיקול (Consideration):** "הפרכת מיתוסים" / השוואה / שאלות ותשובות. הלקוח כבר יודע שאתם קיימים. עכשיו הוא שואל: *"למה דווקא אתם?"*
+**שלב 2: שיקול (Consideration):** "הפרכת מיתוסים" / השוואה / שאלות ותשובות. הלקוח כבר יודע שאתם קיימים. עכשיו הוא שואל: *"למה דווקא אתם?"*
 
-**שלב 3 — רכישה ושימוש (Purchase & Use):** סרטון הדרכה. הלקוח כמעט החליט. הוא מחפש ביטחון אחרון: *"האם אצליח להשתמש בזה?"*
+**שלב 3: רכישה ושימוש (Purchase & Use):** סרטון הדרכה. הלקוח כמעט החליט. הוא מחפש ביטחון אחרון: *"האם אצליח להשתמש בזה?"*
 
 **רוב החברות מכינות שלב 1. כמה מכינות שלב 2. כמעט אף אחד לא מכין שלב 3.**
 
@@ -2678,13 +2678,13 @@ This project is available for full viewing in the portfolio. To discuss a simila
 
 **סרטון הדרכה טוב מבטל את שלושתן.**
 
-## האנטומיה של סרטון הדרכה שעובד — ניתוח מקרה
+## האנטומיה של סרטון הדרכה שעובד: ניתוח מקרה
 
-בפרויקט שהפקנו עבור מכשיר Medical, האתגר היה לגרום ללקוחות להרגיש ביטחון מול מכשיר שמשתמש בגלי רדיו — טכנולוגיה שנשמעת מורכבת ואפילו מפחידה מעט עבור הדיוט.
+בפרויקט שהפקנו עבור מכשיר Medical, האתגר היה לגרום ללקוחות להרגיש ביטחון מול מכשיר שמשתמש בגלי רדיו, טכנולוגיה שנשמעת מורכבת ואפילו מפחידה מעט עבור הדיוט.
 
 ### א. Unboxing כהפגת חרדה
 
-הסרטון פותח בפריסת כל חלקי המארז על המשטח. זה לא "אסתטיקה" — זו **פסיכולוגיה**. הלקוח רואה שאין הפתעות. הכל מולו, הכל מסודר, הכל הגיוני.
+הסרטון פותח בפריסת כל חלקי המארז על המשטח. זה לא "אסתטיקה", זו **פסיכולוגיה**. הלקוח רואה שאין הפתעות. הכל מולו, הכל מסודר, הכל הגיוני.
 
 כל מוצר מורכב שמגיע בקופסה צריך את הסצנה הזו.
 
@@ -2692,52 +2692,52 @@ This project is available for full viewing in the portfolio. To discuss a simila
 
 צילום מלמעלה למטה (Bird's Eye / Top-Down) הוא הסטנדרט לסרטוני הדרכה מסיבה פשוטה: הוא משחזר את נקודת המבט של הלקוח. כשהמוצר מונח על שולחן, ה-Top-Down מקביל בדיוק לאיך הלקוח עצמו יסתכל על המוצר.
 
-כל זווית אחרת יוצרת דיסוריינטציה — "אם אני מסתכל מהצד, איפה הכפתור הזה נמצא אצלי?"
+כל זווית אחרת יוצרת דיסוריינטציה: "אם אני מסתכל מהצד, איפה הכפתור הזה נמצא אצלי?"
 
 ### ג. הדמיות תלת-מימד רפואיות: הפיכת הבלתי-נראה לנראה
 
 **זה ה-differentiator האמיתי** שהופך סרטון הדרכה בינוני לסרטון הדרכה מעולה.
 
-גלי רדיו על רקמות — אי-אפשר לצלם את זה. אפשר להסביר בטקסט, אבל הלקוח לא ייזכר. הדמיית תלת-מימד רפואית בכחול, שמראה בדיוק מה קורה מתחת לעור, עושה שלושה דברים:
+גלי רדיו על רקמות, אי-אפשר לצלם את זה. אפשר להסביר בטקסט, אבל הלקוח לא ייזכר. הדמיית תלת-מימד רפואית בכחול, שמראה בדיוק מה קורה מתחת לעור, עושה שלושה דברים:
 
-1. **מסבירה** — הלקוח מבין מנגנון, לא רק הוראות
-2. **מהימנה** — "רפואי" + תלת-מימד = "מדעי" = "בטוח"
-3. **מבדלת** — מוצרים מתחרים עם הוראות שימוש מודפסות לא יכולים להתחרות בזה
+1. **מסבירה:** הלקוח מבין מנגנון, לא רק הוראות
+2. **מהימנה:** "רפואי" + תלת-מימד = "מדעי" = "בטוח"
+3. **מבדלת:** מוצרים מתחרים עם הוראות שימוש מודפסות לא יכולים להתחרות בזה
 
-### ד. כתוביות ואייקונים — לא אביזר, תשתית
+### ד. כתוביות ואייקונים: לא אביזר, תשתית
 
 נתון: 85% מהצפייה בסרטונים ברשתות החברתיות היא ללא סאונד.
 
-סרטון הדרכה שדורש אודיו כדי להבין — **לא עובד**. כתוביות ואייקונים שמופיעים בתזמון מדויק הופכים את הסרטון לנגיש בכל מצב: ברכבת, בחנות, בלילה.
+סרטון הדרכה שדורש אודיו כדי להבין, **לא עובד**. כתוביות ואייקונים שמופיעים בתזמון מדויק הופכים את הסרטון לנגיש בכל מצב: ברכבת, בחנות, בלילה.
 
 ## ה-ROI של סרטון הדרכה: מה אפשר למדוד
 
 **הפחתת פניות לשירות לקוחות:** ניתן לבדוק כמה פניות "איך מפעילים" יש לפני ואחרי פרסום הסרטון.
 
-**הגדלת שיעור המרה בדף המוצר:** סרטון הדרכה שמוטמע בדף מוצר מגדיל המרות. הלקוח רואה שזה פשוט — הוא קונה.
+**הגדלת שיעור המרה בדף המוצר:** סרטון הדרכה שמוטמע בדף מוצר מגדיל המרות. הלקוח רואה שזה פשוט, הוא קונה.
 
-**הפחתת החזרות:** לקוח שמבין את המוצר לפני הרכישה — מחזיר פחות.
+**הפחתת החזרות:** לקוח שמבין את המוצר לפני הרכישה, מחזיר פחות.
 
-**Social Proof עקיף:** צופה שמחפש מידע ורואה שהחברה "כבר חשבה על זה" — רוכש יותר אמון.
+**Social Proof עקיף:** צופה שמחפש מידע ורואה שהחברה "כבר חשבה על זה", רוכש יותר אמון.
 
 ## מסקנה: הסרטון שלא נראה ה"מרשים" הוא לעתים הכי חשוב
 
 בפגישה עם לקוח, לא פעם שומעים: "אנחנו רוצים סרט תדמית מרהיב." נדיר ששומעים: "אנחנו רוצים סרטון הדרכה מעולה."
 
-אבל כשאנחנו שואלים לקוחות מה מונע מהלקוחות שלהם לסגור — לעתים קרובות התשובה היא: "הם לא בטוחים שיצליחו להשתמש בזה."
+אבל כשאנחנו שואלים לקוחות מה מונע מהלקוחות שלהם לסגור, לעתים קרובות התשובה היא: "הם לא בטוחים שיצליחו להשתמש בזה."
 
 **זו בדיוק הבעיה שסרטון ההדרכה פותר.**`,
-    bodyEn: `## Three Videos, Three Stages — One That Everyone Skips
+    bodyEn: `## Three Videos, Three Stages: One That Everyone Skips
 
 When a company decides to invest in video, it usually asks: "What film are we making?" The right question is: **"At what stage of the customer journey are we?"**
 
 A classic customer journey has three stages, each with an appropriate video format:
 
-**Stage 1 — Awareness:** Brand film. Shows who you are, what you make, and why it's worth attention. It doesn't sell — it introduces.
+**Stage 1: Awareness:** Brand film. Shows who you are, what you make, and why it's worth attention. It doesn't sell, it introduces.
 
-**Stage 2 — Consideration:** Myth busting / comparison / Q&A. The customer already knows you exist. Now they ask: *"Why specifically you?"*
+**Stage 2: Consideration:** Myth busting / comparison / Q&A. The customer already knows you exist. Now they ask: *"Why specifically you?"*
 
-**Stage 3 — Purchase & Use:** Instructional video. The customer has almost decided. They're seeking one final reassurance: *"Will I be able to use this?"*
+**Stage 3: Purchase & Use:** Instructional video. The customer has almost decided. They're seeking one final reassurance: *"Will I be able to use this?"*
 
 **Most companies prepare Stage 1. A few prepare Stage 2. Almost no one prepares Stage 3.**
 
@@ -2754,13 +2754,13 @@ One of three outcomes: they don't buy, they buy and call customer service, or th
 
 **A good instructional video eliminates all three.**
 
-## The Anatomy of an Instructional Video That Works — Case Study
+## The Anatomy of an Instructional Video That Works: Case Study
 
-In a project we produced for a medical device, the challenge was making customers feel confident about a device that uses radio waves — technology that sounds complex and even slightly intimidating to a layperson.
+In a project we produced for a medical device, the challenge was making customers feel confident about a device that uses radio waves, technology that sounds complex and even slightly intimidating to a layperson.
 
 ### A. Unboxing as Anxiety Reduction
 
-The video opens by spreading all kit components on the surface. This isn't "aesthetics" — it's **psychology**. The customer sees there are no surprises. Everything is in front of them, organized, logical.
+The video opens by spreading all kit components on the surface. This isn't "aesthetics", it's **psychology**. The customer sees there are no surprises. Everything is in front of them, organized, logical.
 
 Every complex product that arrives in a box needs this scene.
 
@@ -2768,39 +2768,39 @@ Every complex product that arrives in a box needs this scene.
 
 Bird's Eye / Top-Down filming is the industry standard for instructional videos for a simple reason: it replicates the customer's viewpoint. When the product is on a table, Top-Down exactly matches how the customer themselves will look at the product.
 
-Any other angle creates disorientation — "if I'm looking from the side, where is that button on mine?"
+Any other angle creates disorientation: "if I'm looking from the side, where is that button on mine?"
 
 ### C. Medical 3D Visualization: Making the Invisible Visible
 
 **This is the real differentiator** that turns a mediocre instructional video into an excellent one.
 
-Radio waves on tissue — you can't film that. You can explain in text, but the customer won't remember. A medical 3D visualization in blue, showing exactly what happens under the skin, does three things:
+Radio waves on tissue, you can't film that. You can explain in text, but the customer won't remember. A medical 3D visualization in blue, showing exactly what happens under the skin, does three things:
 
-1. **Explains** — the customer understands a mechanism, not just instructions
-2. **Builds trust** — "medical" + 3D = "scientific" = "safe"
-3. **Differentiates** — competing products with printed instructions can't compete with this
+1. **Explains:** the customer understands a mechanism, not just instructions
+2. **Builds trust:** "medical" + 3D = "scientific" = "safe"
+3. **Differentiates:** competing products with printed instructions can't compete with this
 
-### D. Subtitles and Icons — Not an Accessory, Infrastructure
+### D. Subtitles and Icons: Not an Accessory, Infrastructure
 
 Fact: 85% of social media video viewing happens without sound.
 
-An instructional video that requires audio to understand — **doesn't work**. Subtitles and icons appearing at precise timing make the video accessible in any situation: on the train, in a store, at night.
+An instructional video that requires audio to understand, **doesn't work**. Subtitles and icons appearing at precise timing make the video accessible in any situation: on the train, in a store, at night.
 
 ## The ROI of an Instructional Video: What You Can Measure
 
 **Reduction in customer service inquiries:** you can track how many "how to use" contacts exist before and after publishing the video.
 
-**Increased conversion rate on the product page:** an embedded instructional video increases conversions. The customer sees it's simple — they buy.
+**Increased conversion rate on the product page:** an embedded instructional video increases conversions. The customer sees it's simple, they buy.
 
-**Reduced returns:** a customer who understands the product before purchase — returns less.
+**Reduced returns:** a customer who understands the product before purchase, returns less.
 
-**Indirect social proof:** a viewer searching for information who sees the company "already thought of this" — builds more trust.
+**Indirect social proof:** a viewer searching for information who sees the company "already thought of this", builds more trust.
 
 ## Conclusion: The Film That Doesn't Look "Impressive" Is Often the Most Important
 
 In client meetings, we often hear: "We want a stunning brand film." We rarely hear: "We want an excellent instructional video."
 
-But when we ask clients what prevents their customers from closing — the answer is often: "They're not sure they'll be able to use it."
+But when we ask clients what prevents their customers from closing, the answer is often: "They're not sure they'll be able to use it."
 
 **That's exactly the problem the instructional video solves.**`,
     date: "2023-11-05",
@@ -2812,25 +2812,25 @@ But when we ask clients what prevents their customers from closing — the answe
   },
   {
     id: "hybrid-distribution-employer-branding",
-    coverImage: "/blog/hybrid-distribution-cover.svg",
+    coverImage: "/vlogimg/hybrid-distribution-cover.jpg",
     titleHe: "הפקה אחת, ארבעה ערוצים: המדריך למערך ההפצה ההיברידי של מיתוג מעסיק",
     titleEn: "One Production, Four Channels: The Guide to Hybrid Distribution for Employer Branding",
-    excerptHe: "הגרסה הקצרה של 'להיות אשטרומיסט' לא הייתה אחרי-מחשבה — היא הייתה חלק מהתכנון מהיום הראשון. כך בונים מערך הפצה שמגיע לכל קהל ביומו ובפורמט שלו.",
-    excerptEn: "The short version of 'Being an Ashtromist' wasn't an afterthought — it was part of the plan from day one. Here's how to build a distribution system that reaches every audience on their terms.",
+    excerptHe: "הגרסה הקצרה של 'להיות אשטרומיסט' לא הייתה אחרי-מחשבה, היא הייתה חלק מהתכנון מהיום הראשון. כך בונים מערך הפצה שמגיע לכל קהל ביומו ובפורמט שלו.",
+    excerptEn: "The short version of 'Being an Ashtromist' wasn't an afterthought, it was part of the plan from day one. Here's how to build a distribution system that reaches every audience on their terms.",
     readingTime: 5,
-    bodyHe: `## כשגרסה "קצרה" היא לא פשרה — היא אסטרטגיה
+    bodyHe: `## כשגרסה "קצרה" היא לא פשרה, היא אסטרטגיה
 
 רוב הארגונים מגיעים לחדר עריכה עם שאלה אחת: "כמה קצר אנחנו חייבים לעשות את זה?" זו השאלה הלא נכונה.
 
 השאלה הנכונה: **לאיזה קהל, באיזה פלטפורמה, ובאיזה שלב של המשפך?**
 
-כשעבדנו עם קבוצת אשטרום על קמפיין "להיות אשטרומיסט", תכננו מהיום הראשון שתי גרסאות עם מטרות שונות לחלוטין — לא שתי ערכות חיתוך של אותו סרט.
+כשעבדנו עם קבוצת אשטרום על קמפיין "להיות אשטרומיסט", תכננו מהיום הראשון שתי גרסאות עם מטרות שונות לחלוטין, לא שתי ערכות חיתוך של אותו סרט.
 
 [IMAGE]
 
 ## הגרסה הארוכה: נרטיב לגיוס ברצינות
 
-הגרסה הארוכה נועדה לקהל שכבר שוקל להגיש מועמדות לאשטרום — או שמתלבט. היא עונה לשאלות: **מי אשטרום? מה ה-DNA? למה זה לא עוד עבודה?**
+הגרסה הארוכה נועדה לקהל שכבר שוקל להגיש מועמדות לאשטרום, או שמתלבט. היא עונה לשאלות: **מי אשטרום? מה ה-DNA? למה זה לא עוד עבודה?**
 
 הפורמט: ריאיונות מעמיקים עם עובדים מכל שכבות הארגון, שילוב צילומי רחפן הנותנים פרספקטיבה על הפריסה הארצית, ועריכה שמאפשרת לכל דובר סיפור מלא בלי לפצל.
 
@@ -2838,9 +2838,9 @@ But when we ask clients what prevents their customers from closing — the answe
 
 ## הגרסה הקצרה: עצירת גלילה להנעת פעולה
 
-45 שניות. עריכת "פינג-פונג" — חיתוך בין דוברים *בתוך* משפט. לוקיישן חדש כל 3-4 שניות. טיפוגרפיה עם ה-+ המותגי בכל מעבר.
+45 שניות. עריכת "פינג-פונג": חיתוך בין דוברים *בתוך* משפט. לוקיישן חדש כל 3-4 שניות. טיפוגרפיה עם ה-+ המותגי בכל מעבר.
 
-**המטרה:** לא לספר סיפור — להדליק סקרנות. מי שצפה בשלמות מגיע לגרסה הארוכה. מי שרק גלל — נחשף לשם.
+**המטרה:** לא לספר סיפור, אלא להדליק סקרנות. מי שצפה בשלמות מגיע לגרסה הארוכה. מי שרק גלל, נחשף לשם.
 
 **הפלטפורמות:** Instagram Reels, LinkedIn Stories, פרסום ממומן לגיל/תחום.
 
@@ -2848,7 +2848,7 @@ But when we ask clients what prevents their customers from closing — the answe
 
 **עלות:** יום צילום אחד. שתי גרסאות שיכולות להצדיק כל אחת בנפרד את עלות ההפקה.
 
-**עקביות:** אותם עובדים, אותה אסתטיקה ויזואלית, אותו DNA — אבל אורז שונה לפלטפורמה שונה.
+**עקביות:** אותם עובדים, אותה אסתטיקה ויזואלית, אותו DNA, אבל אורז שונה לפלטפורמה שונה.
 
 **מדידה:** ניתן להשוות ביצועים: מה גרסת הרחפן עשתה לעומת הראיון האישי? הנתונים האלה שייכים לך לפרויקט הבא.
 
@@ -2874,28 +2874,28 @@ But when we ask clients what prevents their customers from closing — the answe
 **איפה:** About Us, מצגות לשותפים, אירועי תעשייה
 **מטרה:** "אנחנו לא רק חברה, אנחנו תרבות"
 
-## התכנון מתחיל לפני ההפקה — לא אחריה
+## התכנון מתחיל לפני ההפקה, לא אחריה
 
-הטעות הכי נפוצה: צולמה הפקה מלאה, אחר כך שואלים "האם יש משהו לחתוך לרשתות?" בשלב הזה — כמעט תמיד התשובה היא לא. כי לא צולמו Reaction shots מהירים, לא צולמו takes עם קצב פינג-פונג, לא תוכנן Timeline שמאפשר קיצור.
+הטעות הכי נפוצה: צולמה הפקה מלאה, אחר כך שואלים "האם יש משהו לחתוך לרשתות?" בשלב הזה, כמעט תמיד התשובה היא לא. כי לא צולמו Reaction shots מהירים, לא צולמו takes עם קצב פינג-פונג, לא תוכנן Timeline שמאפשר קיצור.
 
 **המערך ההיברידי בנוי מהסטוריבורד. לא מחדר העריכה.**
 
 ---
 
-ב-The Video Shop כל פרויקט מיתוג מעסיק מתחיל בשאלה: מה הערוצים שלך ומה המסר לכל קהל? רק אחרי שיש תשובה ברורה — מגיעים לסט.`,
-    bodyEn: `## When a "Short" Version Isn't a Compromise — It's a Strategy
+ב-videoshop כל פרויקט מיתוג מעסיק מתחיל בשאלה: מה הערוצים שלך ומה המסר לכל קהל? רק אחרי שיש תשובה ברורה, מגיעים לסט.`,
+    bodyEn: `## When a "Short" Version Isn't a Compromise, It's a Strategy
 
 Most organizations arrive at the editing room with one question: "How short do we have to make this?" That's the wrong question.
 
 The right question: **Which audience, on which platform, at which funnel stage?**
 
-When we worked with Ashtrom Group on the "Being an Ashtromist" campaign, we planned from day one for two versions with completely different goals — not two cut-down versions of the same film.
+When we worked with Ashtrom Group on the "Being an Ashtromist" campaign, we planned from day one for two versions with completely different goals, not two cut-down versions of the same film.
 
 [IMAGE]
 
 ## The Long Version: Narrative for Serious Candidates
 
-The long version is designed for an audience already considering applying to Ashtrom — or wavering. It answers: **Who is Ashtrom? What's the DNA? Why is this not just another job?**
+The long version is designed for an audience already considering applying to Ashtrom, or wavering. It answers: **Who is Ashtrom? What's the DNA? Why is this not just another job?**
 
 The format: in-depth interviews with employees from across the organization, drone footage providing perspective on the national footprint, and editing that gives each speaker a complete story without splitting it.
 
@@ -2903,9 +2903,9 @@ The format: in-depth interviews with employees from across the organization, dro
 
 ## The Short Version: Scroll-Stopping Action Trigger
 
-45 seconds. "Ping-pong" editing — cutting between speakers *mid-sentence*. New location every 3-4 seconds. Brand "+" typography on every transition.
+45 seconds. "Ping-pong" editing, cutting between speakers *mid-sentence*. New location every 3-4 seconds. Brand "+" typography on every transition.
 
-**The goal:** not to tell a story — to ignite curiosity. Those who watch in full arrive at the long version. Those who just scrolled — got exposed to the name.
+**The goal:** not to tell a story, but to ignite curiosity. Those who watch in full arrive at the long version. Those who just scrolled, got exposed to the name.
 
 **Platforms:** Instagram Reels, LinkedIn Stories, paid advertising by age/field.
 
@@ -2913,7 +2913,7 @@ The format: in-depth interviews with employees from across the organization, dro
 
 **Cost:** one filming day. Two versions that can each individually justify the production cost.
 
-**Consistency:** same employees, same visual aesthetic, same DNA — but different packaging for different platforms.
+**Consistency:** same employees, same visual aesthetic, same DNA, but different packaging for different platforms.
 
 **Measurement:** performance comparison is possible: what did the drone version achieve vs. the personal interview? That data belongs to you for the next project.
 
@@ -2937,23 +2937,781 @@ The format: in-depth interviews with employees from across the organization, dro
 ### 4. B2B Representation
 **What:** long version + quotes for corporate identity
 **Where:** About Us, partner presentations, industry events
-**Goal:** "We're not just a company — we're a culture"
+**Goal:** "We're not just a company, we're a culture"
 
-## Planning Starts Before Production — Not After
+## Planning Starts Before Production, Not After
 
-The most common mistake: a full production is filmed, then someone asks "Is there anything to cut for social?" At that stage — almost always the answer is no. Because fast reaction shots weren't filmed, ping-pong paced takes weren't done, no timeline was designed that allows shortening.
+The most common mistake: a full production is filmed, then someone asks "Is there anything to cut for social?" At that stage, almost always the answer is no. Because fast reaction shots weren't filmed, ping-pong paced takes weren't done, no timeline was designed that allows shortening.
 
 **The hybrid system is built from the storyboard. Not from the editing room.**
 
 ---
 
-At The Video Shop, every employer branding project starts with a question: what are your channels and what's the message for each audience? Only once there's a clear answer — do we arrive on set.`,
+At videoshop, every employer branding project starts with a question: what are your channels and what's the message for each audience? Only once there's a clear answer, do we arrive on set.`,
     date: "2023-07-10",
     tags: ["Employer Branding", "Strategy", "Distribution"],
     relatedYoutubeId: "loW4i8ZOLNA",
     relatedServiceHref: "/services/recruitment",
     relatedServiceLabelHe: "סרטי Employer Branding",
     relatedServiceLabelEn: "Employer Branding Videos",
+  },
+  {
+    id: "kama-ole-seret-tadmit",
+    coverImage: "/vlogimg/kama-ole-seret-tadmit-cover.jpg",
+    titleHe: "כמה עולה סרט תדמית? מדריך מחירים אמיתי לשנת 2025",
+    titleEn: "How Much Does a Brand Film Cost? An Honest Pricing Guide for 2025",
+    excerptHe: "מה באמת קובע את המחיר של סרט תדמית? מדריך שקוף שמסביר את הפרמטרים — בלי בלוף.",
+    excerptEn: "What really determines the price of a brand film? A transparent breakdown of all the factors — no fluff.",
+    date: "2025-01-15",
+    readingTime: 7,
+    tags: ["מחירים", "סרט תדמית", "תקציב"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית לעסקים",
+    relatedServiceLabelEn: "Corporate Brand Films",
+    bodyHe: `## כמה עולה סרט תדמית? מדריך מחירים אמיתי
+
+זו השאלה שכל בעל עסק שואל — וכמעט אף חברת הפקה לא עונה עליה ישירות. אז בוא נדבר בגלוי.
+
+**הטווח הריאלי בשוק הישראלי:**
+
+- **עד ₪10,000** — סרטון קצר בסגנון ראיון, יום צילום אחד, עריכה בסיסית. מתאים לעסקים קטנים שצריכים נוכחות. לא מתאים אם רוצים משהו שייראה premium.
+- **₪10,000–₪25,000** — שני ימי צילום, תסריט, גרפיקה, מוזיקה מורשית. זה הטווח הנפוץ ביותר עבור SMB בישראל.
+- **₪25,000–₪60,000** — מספר ימי הפקה, צוות גדול, אנימציה, לוקיישנים מרובים. מתאים לחברות שמציגות את עצמן למשקיעים, רשתות גדולות, ואנשי מוצר.
+- **₪60,000+** — הפקות פרסומת מלאות, שחקנים, סאונד-דיזיין מורכב, עריכות רבות. מדיה ארצית.
+
+[IMAGE]
+
+## מה בדיוק משפיע על המחיר?
+
+### 1. ימי צילום
+
+יום צילום כולל: צוות (במאי, צלם, עוזר, תאורה), ציוד, לוקיישן ואחרים. יום אחד = בערך ₪8,000–₪15,000 בלי עריכה. אי אפשר "לחסוך" כאן בלי שזה ייראה.
+
+### 2. כתיבת תסריט ופרה-פרודקשן
+
+תסריט טוב חוסך ימי צילום. שעות של תכנון = פחות ימי עריכה. זה לא הוצאה — זה השקעה.
+
+### 3. עריכה ופוסט-פרודקשן
+
+צבע, גרפיקה, מוזיקה, כתוביות, תרגום — כל אלה נספרים. סרטון בן 2 דקות עשוי לקחת 30–60 שעות עריכה.
+
+### 4. גרסאות ורציות
+
+אחת מהלקות הנפוצות: "נוכל לקבל גרסה ל-Instagram?" אחרי ההפקה, זה כרוך בעוד שעות עריכה. מראש — זה זול יותר.
+
+## מה שלא אומרים לכם
+
+כשאחד מציע לכם סרט תדמית ב-₪3,000 — שאלו: כמה ימי צילום? מה כולל הצוות? מי עורך? מי כותב? לרוב מדובר בסרטון מוצלח מבחינה טכנית, אבל חסר את הסיפור, המסר, האסטרטגיה.
+
+## כיצד להגדיר תקציב נכון?
+
+במקום לשאול "כמה עולה סרט" — שאלו: **"מה הסרט הזה אמור להחזיר לי?"**
+
+אם הסרט מביא לידים ב-₪500 כל אחד ומחיר עסקה ממוצעת הוא ₪15,000 — כמה לידים צריך הסרט להביא כדי להחזיר ₪25,000?
+
+**שניים. בלבד.**
+
+זה השיח שאנחנו אוהבים לנהל עם לקוחות לפני שבוחרים תקציב.
+
+---
+
+רוצים הצעת מחיר שקופה ומפורטת? מלאו את השאלון הקצר — ניצור קשר תוך יום.`,
+    bodyEn: `## How Much Does a Brand Film Cost? An Honest Guide
+
+This is the question every business owner asks — and almost no production company answers directly. So let's talk openly.
+
+**Realistic ranges in the Israeli market:**
+
+- **Under ₪10,000** — Short interview-style video, one shoot day, basic edit. Good for small businesses that need presence. Not suitable if you want something premium.
+- **₪10,000–₪25,000** — Two shoot days, script, graphics, licensed music. The most common range for Israeli SMBs.
+- **₪25,000–₪60,000** — Multiple production days, larger crew, animation, multiple locations. Suitable for companies presenting to investors, retail chains, and product teams.
+- **₪60,000+** — Full commercial productions, actors, complex sound design, many revision rounds. National media scale.
+
+[IMAGE]
+
+## What Actually Affects the Price?
+
+### 1. Shoot Days
+
+A shoot day includes: director, camera operator, assistant, lighting, equipment, location and more. One day ≈ ₪8,000–₪15,000 before editing. You can't "save" here without it showing.
+
+### 2. Scripting and Pre-Production
+
+A good script saves shoot days. Hours of planning = fewer editing days. This isn't an expense — it's an investment.
+
+### 3. Editing and Post-Production
+
+Color grading, graphics, music, subtitles, translation — all add up. A 2-minute video can take 30–60 hours of editing.
+
+### 4. Versions and Cuts
+
+One of the most common surprises: "Can we get an Instagram version?" After production, that means more editing hours. Plan ahead — it's cheaper.
+
+## What They Don't Tell You
+
+When someone offers you a brand film for ₪3,000 — ask: how many shoot days? What's the crew? Who edits? Who writes? Usually it's technically fine, but lacks story, message, and strategy.
+
+## How to Set the Right Budget?
+
+Instead of asking "how much does a video cost" — ask: **"What should this video return for me?"**
+
+If the video brings leads at ₪500 each and your average deal is ₪15,000 — how many leads does the video need to bring to recover ₪25,000?
+
+**Two. That's it.**
+
+That's the conversation we love having with clients before choosing a budget.
+
+---
+
+Want a transparent, itemized quote? Fill out our short quiz — we'll be in touch within a day.`,
+  },
+  {
+    id: "seret-giyus-hon-startup",
+    coverImage: "/vlogimg/seret-giyus-hon-startup-cover.jpg",
+    titleHe: "סרט גיוס הון לסטארטאפ: איך עושים אותו נכון",
+    titleEn: "Startup Fundraising Video: How to Do It Right",
+    excerptHe: "משקיעים רואים אלפי מצגות. סרט שמספר את הסיפור נכון — יכול לשנות החלטות. כל מה שצריך לדעת לפני ההפקה.",
+    excerptEn: "Investors see thousands of pitches. A video that tells the story right can change decisions. Everything you need to know before production.",
+    date: "2025-03-20",
+    readingTime: 8,
+    tags: ["סטארטאפ", "גיוס הון", "משקיעים"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית לעסקים",
+    relatedServiceLabelEn: "Corporate Brand Films",
+    bodyHe: `## סרט גיוס הון לסטארטאפ: המדריך המלא
+
+משקיע ממוצע מקבל מאות פניות בשנה. המצגת שלכם היא דלת — הסרט הוא מה שקובע אם הוא נפתחת.
+
+## למה סרט ולא סתם מצגת?
+
+**מצגת** מספרת עובדות.
+**סרט** יוצר אמון.
+
+משקיע שצופה בסרטון של שתי דקות רואה: צוות אמיתי, ביטחון עצמי, תרבות ארגונית, דרך תקשורת. הוא מרגיש את האנרגיה לפני שהוא קרא מספר אחד בדוחות.
+
+[IMAGE]
+
+## מה צריך להיות בסרט גיוס הון?
+
+### 1. הבעיה — 20 שניות
+
+לא "אנחנו פותרים בעיה בשוק ה-X" — אלא רגע אנושי. מישהו מתוסכל. משהו שבור. הצופה אמור להרגיש: "כן, זו בעיה."
+
+### 2. הפתרון — 30 שניות
+
+הדגמה של המוצר, לא הסבר עליו. הצג אחד ואחת שמשתמשים — לא אנימציה גנרית.
+
+### 3. הסיפור שמאחורי — 20 שניות
+
+למה אתם? מה גרם לכם להקים את זה? לא קורות חיים — רגע מכונן.
+
+### 4. הנתונים — 15 שניות
+
+משתמשים, הכנסות, צמיחה. מספרים בצורה ויזואלית, לא טקסט על מסך.
+
+### 5. הקריאה לפעולה — 10 שניות
+
+מה אתם מחפשים? כמה? לאיזה שלב? היו ספציפיים.
+
+## שגיאות נפוצות
+
+**הסבר יותר מדי** — המשקיע לא צריך להבין את המוצר. הוא צריך להבין שאתם תפתרו בעיה שאנשים שמשלמים עליה.
+
+**צוות לא נראה** — אם הסרט הוא רק אנימציה עם קריין, פספסתם. המשקיע קונה אנשים, לא רעיון.
+
+**מוסיקה מלחיצה** — סרטי גיוס הון ישראלים אוהבים מוסיקה "עוצמתית". הבעיה: היא מפריעה לתהליך החשיבה של הצופה.
+
+## כמה צריך להיות?
+
+**1.5–3 דקות.** לא פחות (אין מספיק ביסוס), לא יותר (לא יצפו עד הסוף).
+
+## כמה זה עולה?
+
+סרט גיוס הון מקצועי עולה בדרך כלל **₪18,000–₪45,000** — תלוי ברמת ההפקה, מיקום, גרסאות שפה, ואנימציה.
+
+זה לא הוצאה. זה כלי שנועד לסגור round.
+
+---
+
+נשמח לשמוע על הסטארטאפ שלכם ולהציע מה מתאים. ממלאים את השאלון — ומתחילים לדבר.`,
+    bodyEn: `## Startup Fundraising Video: The Complete Guide
+
+The average investor receives hundreds of pitches a year. Your deck is the door — the video is what decides if it opens.
+
+## Why a Video and Not Just a Deck?
+
+**A deck** conveys facts.
+**A video** builds trust.
+
+An investor watching a two-minute video sees: a real team, confidence, company culture, communication style. They feel the energy before reading a single number in the financials.
+
+[IMAGE]
+
+## What Belongs in a Fundraising Video?
+
+### 1. The Problem — 20 seconds
+
+Not "we solve a problem in market X" — a human moment. Someone frustrated. Something broken. The viewer should feel: "Yes, that's a real problem."
+
+### 2. The Solution — 30 seconds
+
+A demo of the product, not an explanation of it. Show a real user — not generic animation.
+
+### 3. The Founding Story — 20 seconds
+
+Why you? What made you build this? Not a CV — a defining moment.
+
+### 4. The Numbers — 15 seconds
+
+Users, revenue, growth. Numbers visually displayed, not text on a slide.
+
+### 5. The Ask — 10 seconds
+
+What are you looking for? How much? For which stage? Be specific.
+
+## Common Mistakes
+
+**Over-explaining** — the investor doesn't need to understand your product. They need to understand you'll solve a problem people pay for.
+
+**Invisible team** — if the video is only animation with a voiceover, you've missed the point. Investors buy people, not ideas.
+
+**Intense music** — Israeli fundraising videos often use "powerful" music. The problem: it disrupts the viewer's thought process.
+
+## How Long Should It Be?
+
+**1.5–3 minutes.** Not shorter (not enough grounding), not longer (they won't watch to the end).
+
+## How Much Does It Cost?
+
+A professional fundraising video typically costs **₪18,000–₪45,000** — depending on production level, location, language versions, and animation.
+
+This isn't an expense. It's a tool built to close a round.
+
+---
+
+We'd love to hear about your startup and suggest what fits. Fill out the quiz and let's talk.`,
+  },
+  {
+    id: "employer-branding-video-israel",
+    coverImage: "/vlogimg/employer-branding-video-cover.jpg",
+    titleHe: "Employer Branding וידאו בישראל: המדריך המלא לגיוס עובדים עם תוכן",
+    titleEn: "Employer Branding Video in Israel: Complete Guide to Recruiting with Content",
+    excerptHe: "חברות ישראליות מאבדות מועמדים טובים לטובת חברות שמספרות סיפור טוב יותר. כך עושים employer branding שבאמת עובד.",
+    excerptEn: "Israeli companies lose great candidates to companies that tell a better story. Here's how to do employer branding that actually works.",
+    date: "2025-05-10",
+    readingTime: 9,
+    tags: ["Employer Branding", "גיוס עובדים", "HR", "תוכן"],
+    relatedServiceHref: "/services/recruitment",
+    relatedServiceLabelHe: "סרטי Employer Branding",
+    relatedServiceLabelEn: "Employer Branding Videos",
+    bodyHe: `## Employer Branding וידאו: למה זה קריטי לחברות ישראליות ב-2025
+
+שוק התעסוקה הישראלי הפך. מועמדים טובים מוצפים בהצעות — ואם הם לא יודעים מי אתם לפני שהם מגיעים לראיון, הם כבר שם עם נטייה לדחות.
+
+**סרט employer branding** הוא לא סרטוניק חמוד לעמוד ה-LinkedIn שלכם. הוא כלי גיוס אסטרטגי.
+
+[IMAGE]
+
+## מה ההבדל בין סרט תדמית לסרט employer branding?
+
+**סרט תדמית** מדבר ללקוחות: "הנה מה שאנחנו עושים ולמה כדאי לקנות מאיתנו."
+
+**סרט employer branding** מדבר לעובדים עתידיים: "הנה מה שחיים כאן כל יום, ולמה אנשים בוחרים להישאר."
+
+הקהל שונה. המסר שונה. הפורמט שונה.
+
+## מה עובד — ומה לא
+
+### עובד:
+- **עובדים אמיתיים מדברים בשמם עצמם** — לא תסריט שכתבתם, אלא מה שהם חושבים
+- **יום רגיל בחיי עובד** — מה קורה ב-9:00? איך נראה ה-stand-up? מה אוכלים?
+- **מנהלים שמסבירים איך הם מגדלים אנשים** — ולא רק "אנחנו משפחה"
+- **ספציפיות** — "צמחתי מ-Junior ל-Team Lead ב-14 חודש" עדיף על "כאן יש הזדמנויות"
+
+### לא עובד:
+- מוסיקה "אנרגטית" ועריכה מהירה שמסתירה שאין מה להגיד
+- ראיונות שנראים כמו קטלוג מוצרים: "אנחנו חברה מובילה עם ערכים חזקים"
+- ביצועים מאולצים מעובדים שברור שמשחקים תפקיד
+- הסתרת מגרעות — מועמד טוב ידע לזהות חברה שמוכרת אשליות
+
+## כמה גרסאות צריך?
+
+סרט employer branding אחד לא מספיק. הנה המינימום:
+
+| גרסה | אורך | שימוש |
+|------|------|--------|
+| ראשית | 2–3 דקות | דף קריירות, YouTube |
+| קצרה | 60 שניות | LinkedIn, הצגות |
+| Reels/Shorts | 15–30 שניות | Instagram, TikTok |
+
+## כמה זה עולה?
+
+תלוי בהיקף, אבל טווח מציאותי:
+
+- **סרט בסיסי (גרסה אחת, יום צילום):** ₪12,000–₪22,000
+- **סרט מלא עם מספר גרסאות:** ₪25,000–₪50,000
+- **קמפיין employer branding שלם:** ₪50,000+
+
+## ROI אמיתי
+
+חברה שמוציאה ₪30,000 על סרט employer branding ובאה לחסוך **יום עבודה אחד** של HR-מנהלת שעוסקת בסינון מועמדים לא מתאימים — כבר מחזירה חלק מהעלות בשנה הראשונה.
+
+המדד האמיתי: **איכות מועמדים**, לא כמות. פחות קורות חיים של מי שלא מתאים, יותר מגע ממי שכבר "קנה" את החברה לפני הראיון.
+
+---
+
+רוצים לדבר על employer branding לחברה שלכם? השאירו פרטים — נחזור אליכם.`,
+    bodyEn: `## Employer Branding Video: Why It's Critical for Israeli Companies in 2025
+
+The Israeli job market has flipped. Good candidates are flooded with offers — and if they don't know who you are before the interview, they're already leaning toward declining.
+
+An **employer branding video** isn't a cute clip for your LinkedIn page. It's a strategic recruitment tool.
+
+[IMAGE]
+
+## What's the Difference Between a Brand Film and an Employer Branding Video?
+
+**A brand film** speaks to customers: "Here's what we do and why you should buy from us."
+
+**An employer branding video** speaks to future employees: "Here's what life here looks like every day, and why people choose to stay."
+
+Different audience. Different message. Different format.
+
+## What Works — and What Doesn't
+
+### Works:
+- **Real employees speaking in their own words** — not a script you wrote, but what they actually think
+- **A regular day in an employee's life** — what happens at 9:00? What does the stand-up look like? What do people eat?
+- **Managers explaining how they develop people** — not just "we're a family"
+- **Specificity** — "I grew from Junior to Team Lead in 14 months" beats "there are opportunities here"
+
+### Doesn't Work:
+- "Energetic" music and fast cuts hiding that there's nothing to say
+- Interviews that sound like product catalogs: "We're a leading company with strong values"
+- Awkward performances from employees who are clearly playing a role
+- Hiding flaws — good candidates can spot a company selling illusions
+
+## How Many Versions Do You Need?
+
+One employer branding video isn't enough. Here's the minimum:
+
+| Version | Length | Use |
+|---------|--------|-----|
+| Main | 2–3 minutes | Careers page, YouTube |
+| Short | 60 seconds | LinkedIn, presentations |
+| Reels/Shorts | 15–30 seconds | Instagram, TikTok |
+
+## How Much Does It Cost?
+
+Depends on scope, but a realistic range:
+
+- **Basic video (one version, one shoot day):** ₪12,000–₪22,000
+- **Full video with multiple versions:** ₪25,000–₪50,000
+- **Complete employer branding campaign:** ₪50,000+
+
+## Real ROI
+
+A company spending ₪30,000 on an employer branding video that saves **one work day** of an HR manager filtering unsuitable candidates — already recovers part of the cost in the first year.
+
+The real metric: **candidate quality**, not quantity. Fewer CVs from people who don't fit, more contact from people who've already "bought into" the company before the interview.
+
+---
+
+Want to talk employer branding for your company? Leave your details — we'll be in touch.`,
+  },
+  {
+    id: "hafakat-video-b2b",
+    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    titleHe: "הפקת וידאו B2B: למה עסקים שמוכרים לעסקים צריכים סרט שונה לגמרי",
+    titleEn: "B2B Video Production: Why Businesses Selling to Businesses Need a Completely Different Film",
+    excerptHe: "סרט B2B שנראה כמו פרסומת B2C — לא עובד. הנה מה שבאמת משכנע קונים מוסדיים.",
+    excerptEn: "A B2B video that looks like a B2C ad doesn't work. Here's what actually convinces institutional buyers.",
+    date: "2025-07-01",
+    readingTime: 7,
+    tags: ["B2B", "שיווק", "הפקת וידאו", "תוכן"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית לעסקים",
+    relatedServiceLabelEn: "Corporate Brand Films",
+    bodyHe: `## הפקת וידאו B2B: הכל שונה כשמוכרים לעסק
+
+כשאתם מוכרים לצרכן פרטי — רגש הוא הכל. כשמוכרים לחברה — רגש חשוב, אבל הוא צריך להיות מגובה בלוגיקה.
+
+קונה B2B לא מקבל החלטה לבד. הוא מציג לוועדה. הוועדה שואלת שאלות שהוא צריך לדעת לענות עליהן. הסרט שלכם צריך לתת לו את הכלים לעשות את זה.
+
+[IMAGE]
+
+## מה ההבדל בין סרט B2C לסרט B2B?
+
+| נושא | B2C | B2B |
+|------|-----|-----|
+| קהל | אדם אחד, החלטה מיידית | ועדה, תהליך ממושך |
+| מניע | רגש, שאיפה, פחד | ROI, אמינות, יכולת |
+| אורך | 15–60 שניות | 1.5–4 דקות |
+| שפה | פשוטה, ויזואלית | מדויקת, מקצועית |
+| קריאה לפעולה | "קנה עכשיו" | "בואו נדבר / קבע פגישה" |
+
+## מה חייב להיות בסרט B2B?
+
+### הבעיה שאתם פותרים — בשפה של הלקוח
+
+לא "אנחנו מספקים פתרונות חדשניים" — אלא "מנהלי רכש מתמודדים עם X, וזה גורם ל-Y. אנחנו פותרים את זה על ידי Z."
+
+### לקוח מרוצה שמדבר בעצמו (Case Study)
+
+**זה הנשק הכי חזק בסרט B2B.** לקוח שמסביר את הבעיה שהייתה לו, מה השתנה, ומה התוצאות — מוכר יותר מכל קריין מקצועי.
+
+### יכולת ותהליך — לא רק תוצרים
+
+קונים B2B רוצים להבין: מי מאחורי זה? מה תהליך העבודה? אם משהו ישתבש — מי אחראי?
+
+### נתונים ספציפיים
+
+"חסכנו 30% בעלויות לוגיסטיקה" עדיף מ"שיפרנו את היעילות". ספציפיות בונה אמינות.
+
+## הטעות הנפוצה ביותר
+
+להשקיע בסרט שמרשים — אבל לא מסביר כלום. הרבה חברות B2B מייצרות סרטים יפים שנראים טוב ב-showreel של חברת ההפקה, אבל לא ממירים בפגישות מכירה.
+
+**שאלה טובה לפני ההפקה:** "אם מנהל רכש ירצה להציג את הסרט לוועדה של 5 אנשים — האם הוא נותן להם מספיק מידע לאשר?"
+
+## כמה זה עולה?
+
+סרט B2B מקצועי בישראל:
+
+- **סרט תדמית + Case Study אחד:** ₪20,000–₪40,000
+- **סרט מוצר עם הדגמה חיה:** ₪15,000–₪30,000
+- **סדרת Case Studies (3 לקוחות):** ₪35,000–₪65,000
+
+## מתי הסרט כבר מחזיר את עצמו?
+
+עסקה B2B ממוצעת בישראל עומדת על מאות אלפי שקלים. אם הסרט עוזר לסגור **עסקה אחת נוספת בשנה** — הוא כבר החזיר את עצמו פי כמה.
+
+הסרט לא מחליף את אנשי המכירות — הוא מכין את הקרקע לפני שהם מגיעים.
+
+---
+
+רוצים לדבר על אסטרטגיית וידאו B2B לחברה שלכם? ממלאים שאלון — ומתחילים.`,
+    bodyEn: `## B2B Video Production: Everything Is Different When You Sell to Businesses
+
+When you sell to consumers — emotion is everything. When you sell to companies — emotion matters, but it needs to be backed by logic.
+
+A B2B buyer doesn't make decisions alone. They present to a committee. The committee asks questions they need to be able to answer. Your video needs to give them the tools to do that.
+
+[IMAGE]
+
+## What's the Difference Between a B2C and B2B Video?
+
+| Topic | B2C | B2B |
+|-------|-----|-----|
+| Audience | One person, immediate decision | Committee, extended process |
+| Driver | Emotion, aspiration, fear | ROI, credibility, capability |
+| Length | 15–60 seconds | 1.5–4 minutes |
+| Language | Simple, visual | Precise, professional |
+| CTA | "Buy now" | "Let's talk / Schedule a meeting" |
+
+## What Must Be in a B2B Video?
+
+### The Problem You Solve — in the Client's Language
+
+Not "we provide innovative solutions" — but "procurement managers face X, which causes Y. We solve this through Z."
+
+### A Happy Client Speaking for Themselves (Case Study)
+
+**This is the most powerful weapon in a B2B video.** A client who explains the problem they had, what changed, and what the results were — sells more than any professional narrator.
+
+### Capability and Process — Not Just Deliverables
+
+B2B buyers want to understand: who's behind this? What's the workflow? If something goes wrong — who's responsible?
+
+### Specific Data
+
+"We saved 30% in logistics costs" beats "we improved efficiency." Specificity builds credibility.
+
+## The Most Common Mistake
+
+Investing in an impressive video that explains nothing. Many B2B companies produce beautiful videos that look great on a production company's showreel but don't convert in sales meetings.
+
+**A good question before production:** "If a procurement manager wants to show this video to a committee of 5 people — does it give them enough information to approve?"
+
+## How Much Does It Cost?
+
+A professional B2B video in Israel:
+
+- **Brand film + one Case Study:** ₪20,000–₪40,000
+- **Product video with live demo:** ₪15,000–₪30,000
+- **Case Study series (3 clients):** ₪35,000–₪65,000
+
+## When Does the Video Pay for Itself?
+
+The average B2B deal in Israel is worth hundreds of thousands of shekels. If the video helps close **one additional deal per year** — it's already paid for itself many times over.
+
+The video doesn't replace salespeople — it prepares the ground before they arrive.
+
+---
+
+Want to talk B2B video strategy for your company? Fill out the quiz — let's get started.`,
+  },
+  {
+    id: "כמה-עולה-סרט-תדמית",
+    coverImage: undefined,
+    titleHe: "כמה עולה סרט תדמית? המדריך המלא לתמחור הפקת וידאו בישראל 2025",
+    titleEn: "How Much Does a Brand Film Cost? The Complete Guide to Video Production Pricing in Israel 2025",
+    excerptHe: "התשובה האמיתית לשאלה שכולם שואלים: כמה עולה סרט תדמית לחברה בישראל? מחירים, גורמים, ומתי ההשקעה שתמכרת לכם.",
+    excerptEn: "The real answer to the question everyone asks: how much does a brand film cost in Israel? Prices, factors, and when the investment pays off.",
+    readingTime: 6,
+    tags: ["תמחור", "סרט תדמית", "הפקת וידאו"],
+    date: "2025-04-10",
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הפקת וידאו לחברות הייטק",
+    relatedServiceLabelEn: "High-Tech Video Production",
+    bodyHe: `## השאלה שכולם שואלים ואף אחד לא עונה עליה ישר
+
+"כמה עולה סרט תדמית?" — זו השאלה הראשונה שכל לקוח שואל, ולרוב הוא מקבל תשובה מתחמקת: "תלוי בסקופ".
+
+זה נכון, אבל לא מועיל. במאמר הזה נשבור את השקיפות ונספר בדיוק מה משפיע על המחיר, מה טווחי המחירים הריאליים בישראל, ואיך לדעת אם ההצעה שקיבלתם הגיונית.
+
+[IMAGE]
+
+## מה קובע את מחיר סרט התדמית?
+
+### 1. ימי צילום
+
+יום צילום בישראל עם צוות מקצועי עולה בין **₪8,000 ל-₪18,000**, תלוי בגודל הצוות והציוד. סרט תדמית ממוצע דורש 1-3 ימי צילום.
+
+### 2. לוקיישנים
+
+צילום בסטודיו פנימי זול בהרבה מצילום חיצוני עם פרמיטים, אבטחה ולוגיסטיקה. לוקיישן ייחודי יכול להוסיף ₪5,000-₪15,000.
+
+### 3. שחקנים ומוקרינים
+
+שחקן מקצועי לפנייה מול מצלמה: ₪2,000-₪8,000 ליום. ווייס אובר מקצועי: ₪1,500-₪4,000.
+
+### 4. פוסט-פרודקשן
+
+עריכה, צביעה (Color Grading), מוזיקה ועיצוב סאונד הם לפחות 30%-40% מהתקציב הכולל. מוגרפיקה ואנימציה מוסיפים עוד.
+
+### 5. תסריט וקריאייטיב
+
+לקוחות רבים מזלזלים בשלב הזה. תסריט טוב הוא ההבדל בין סרט שמוכר לסרט שמשחית זמן של הצופה.
+
+## טווחי מחירים ריאליים בישראל (2025)
+
+| סוג סרט | טווח מחיר | מה כולל |
+|---------|-----------|---------|
+| סרט תדמית קצר (60-90 שניות) | ₪15,000–₪35,000 | יום צילום, עריכה, מוזיקה |
+| סרט Employer Branding | ₪25,000–₪55,000 | 2 ימי צילום, ראיונות, עריכה מורכבת |
+| סרט הייטק / Explainer | ₪18,000–₪45,000 | תסריט, אנימציה, ווייס אובר |
+| סרט אירוע קורפורייט | ₪12,000–₪28,000 | כיסוי אירוע, עריכה, מוזיקה |
+| סדרת Case Study (3 לקוחות) | ₪35,000–₪70,000 | 3 ימי צילום, עריכות נפרדות |
+
+## מה ההבדל בין ₪15,000 ל-₪60,000?
+
+לא בהכרח האיכות. ההבדל בין הצעה של ₪15,000 להצעה של ₪60,000 לאותו סרט יכול לנבוע מ:
+
+**גורמים לגיטימיים שמעלים מחיר:**
+- גודל צוות (1 איש vs. 5 אנשים)
+- ציוד (מצלמה אחת vs. מולטי-קאם, דרון, רכבת תאורה)
+- שחקנים מקצועיים vs. עובדי החברה
+- מוגרפיקה ואנימציה מותאמת
+
+**גורמים שלא מצדיקים מחיר גבוה:**
+- שם גדול של סטודיו שמייצר בפועל פחות
+- ציוד שלא צריך לסרט שלכם
+- תפקידים כפולים בצוות
+
+## מתי ההשקעה משתלמת?
+
+חשבו על זה כך: אם הסרט עוזר לסגור עסקה אחת נוספת בשנה, או לגייס מועמד מצוין שהייתם מפסידים — הוא כבר החזיר את עצמו.
+
+**לקוחות B2B:** עסקה ממוצעת בישראל שווה עשרות עד מאות אלפי שקלים. סרט שמסייע בשלב ה-Consideration הוא אחד ה-ROI הגבוהים בכלים השיווקיים.
+
+**גיוס עובדים:** עלות גיוס עובד כוללת שבועות של Human Resources, דמי גיוס (10%-20% ממשכורת שנתית), והדרכה. סרט Employer Branding שמקטין זמן גיוס ב-20% שווה הרבה יותר מהעלות שלו.
+
+## שאלות שכדאי לשאול לפני שחותמים
+
+1. מה כולל בדיוק ה-Scope? (מספר ימי צילום, ימי עריכה, כמה תיקונים)
+2. מי מוביל את הפרויקט — המנהל שפגשתם, או פרילנסר שלא הכרתם?
+3. מה קורה אם מכסת התיקונים נגמרת?
+4. האם יש אפשרות לגרסאות קצרות לרשתות חברתיות?
+
+---
+
+רוצים הצעת מחיר שקופה בלי הפתעות? אנחנו עונים תוך 24 שעות.`,
+    bodyEn: `## The Question Everyone Asks But Nobody Answers Directly
+
+"How much does a brand film cost?" — that's the first question every client asks, and they usually get an evasive answer: "It depends on the scope."
+
+That's true, but not helpful. In this article we'll break the silence and tell you exactly what influences the price, what the realistic price ranges in Israel are, and how to know if the quote you received makes sense.
+
+[IMAGE]
+
+## What Determines the Price of a Brand Film?
+
+### 1. Shoot Days
+
+A professional shoot day in Israel with a full crew costs between **₪8,000 and ₪18,000**, depending on crew size and equipment. An average brand film requires 1-3 shoot days.
+
+### 2. Locations
+
+Shooting in an internal studio is much cheaper than exterior shooting with permits, security, and logistics. A unique location can add ₪5,000-₪15,000.
+
+### 3. Actors and On-Camera Talent
+
+A professional on-camera actor: ₪2,000-₪8,000 per day. Professional voice over: ₪1,500-₪4,000.
+
+### 4. Post-Production
+
+Editing, color grading, music and sound design account for at least 30%-40% of the total budget. Motion graphics and animation add more.
+
+### 5. Script and Creative
+
+Many clients underestimate this stage. A good script is the difference between a film that sells and one that wastes the viewer's time.
+
+## Realistic Price Ranges in Israel (2025)
+
+| Film Type | Price Range | What's Included |
+|-----------|-------------|-----------------|
+| Short brand film (60-90 sec) | ₪15,000–₪35,000 | One shoot day, editing, music |
+| Employer Branding film | ₪25,000–₪55,000 | 2 shoot days, interviews, complex editing |
+| High-tech / Explainer film | ₪18,000–₪45,000 | Script, animation, voice over |
+| Corporate event film | ₪12,000–₪28,000 | Event coverage, editing, music |
+| Case Study series (3 clients) | ₪35,000–₪70,000 | 3 shoot days, separate edits |
+
+## When Does the Investment Pay Off?
+
+Think of it this way: if the film helps close one additional deal per year, or recruit an excellent candidate you would have lost — it's already paid for itself.
+
+**B2B clients:** An average deal in Israel is worth tens to hundreds of thousands of shekels. A film that aids the Consideration stage has one of the highest ROIs among marketing tools.
+
+**Recruitment:** The cost of hiring an employee includes weeks of HR time, agency fees (10%-20% of annual salary), and training. An Employer Branding film that reduces hiring time by 20% is worth far more than its cost.
+
+---
+
+Want a transparent quote with no surprises? We respond within 24 hours.`,
+  },
+  {
+    id: "איך-לבחור-חברת-הפקת-וידאו",
+    coverImage: undefined,
+    titleHe: "איך לבחור חברת הפקת וידאו? 7 שאלות שחייבים לשאול לפני שחותמים",
+    titleEn: "How to Choose a Video Production Company? 7 Questions You Must Ask Before Signing",
+    excerptHe: "לא כל חברות הפקת הוידאו שוות. המדריך המעשי לבחירת הספק הנכון — בלי להתחרט.",
+    excerptEn: "Not all video production companies are equal. The practical guide to choosing the right vendor — without regret.",
+    readingTime: 5,
+    tags: ["מדריך", "בחירת ספק", "הפקת וידאו"],
+    date: "2025-05-15",
+    relatedServiceHref: "/services",
+    relatedServiceLabelHe: "כל שירותי הוידאו שלנו",
+    relatedServiceLabelEn: "All Our Video Services",
+    bodyHe: `## הבעיה עם חיפוש חברת הפקת וידאו
+
+כשמחפשים "הפקת וידאו ישראל" בגוגל, מקבלים עשרות תוצאות. איך מבדילים בין חברה שתייצר תוצאה מדהימה לבין אחת שתבזבז לכם את התקציב?
+
+7 השאלות האלה יעשו לכם את ההבדל.
+
+[IMAGE]
+
+## שאלה 1: מי יוביל את הפרויקט בפועל?
+
+זו השאלה הכי חשובה. בחברות גדולות רבות, מי שמגיע לפגישה המכירה (מנהל, סניור) הוא לא מי שמצלם בפועל. בקשו לפגוש את הצלם/במאי שיעבוד על הפרויקט שלכם לפני שאתם חותמים.
+
+**סימן אזהרה:** "נשלח את הצוות הכי מתאים" בלי להציג אנשים ספציפיים.
+
+## שאלה 2: האם יש להם ניסיון בתחום שלכם?
+
+סרט לחברת הייטק שונה לחלוטין מסרט נדל"ן. שאלו לראות דוגמאות ספציפיות לתחום שלכם, לא רק את הסרטים הכי יפים שהם עשו.
+
+## שאלה 3: מה כולל בדיוק ה-Scope?
+
+בקשו פירוט כתוב של:
+- מספר ימי צילום
+- מספר ימי עריכה
+- כמה גרסאות עריכה כלולות
+- כמה סבבי תיקונים מותרים
+- מה קורה אם עוברים את המכסה
+
+**סימן אזהרה:** הצעת מחיר שלא מפרטת את אלה.
+
+## שאלה 4: מה לוח הזמנים הריאלי?
+
+הבטחה של "שבועיים" לסרט תדמית מלא היא לרוב לא ריאלית. שאלו:
+- כמה זמן לשלב הקריאייטיב?
+- מתי מגישים את העריכה הראשונה?
+- כמה זמן לתיקונים?
+
+## שאלה 5: מי מחזיק בזכויות?
+
+חשוב: בחלק מהחוזים, חברת ההפקה שומרת על זכויות לשימוש בסרט לתיק העבודות שלהם, אנשים מסוימים, או אפילו לפרסום. ודאו שאתם מקבלים זכויות מלאות.
+
+## שאלה 6: האם יש להם ביטוח?
+
+ביטוח צילומים הוא חובה. תאונות על סט קורות. אם לחברה אין ביטוח — הנזק הפוטנציאלי עלול ליפול עליכם.
+
+## שאלה 7: האם אתם "חברים"?
+
+זה נשמע רגשי, אבל הוא קריטי. אתם הולכים לבלות ימי צילום אינטנסיביים עם הצוות הזה. שיח ישיר, נוחות לאמר "לא אהבתי", ויכולת לדבר על תקציב בפתיחות — אלה מרכיבים של שותפות מוצלחת.
+
+## הסימנים שאומרים "זאת החברה הנכונה"
+
+- מראים לכם דוגמאות מהתחום שלכם בלי שביקשתם
+- שואלים שאלות על העסק שלכם לפני שמציעים פתרון
+- נותנים לכם הצעה מפורטת עם שורות ספציפיות
+- מספרים מה *לא* עובד, לא רק מה כן
+- מציגים לקוחות שאפשר לפנות אליהם
+
+---
+
+רוצים לראות איך זה נראה בפועל? צפו בתיק העבודות שלנו וצרו קשר לשיחת הכרה.`,
+    bodyEn: `## The Problem with Searching for a Video Production Company
+
+When you search "video production Israel" on Google, you get dozens of results. How do you distinguish between a company that will produce an amazing result and one that will waste your budget?
+
+These 7 questions will make all the difference.
+
+[IMAGE]
+
+## Question 1: Who Will Actually Lead the Project?
+
+This is the most important question. At many large companies, the person who comes to the sales meeting (manager, senior) is not the one who actually films. Ask to meet the cinematographer/director who will work on your project before you sign.
+
+**Red flag:** "We'll send the most suitable team" without presenting specific people.
+
+## Question 2: Do They Have Experience in Your Industry?
+
+A film for a high-tech company is completely different from a real estate film. Ask to see specific examples from your industry, not just their most beautiful films.
+
+## Question 3: What Exactly Is the Scope?
+
+Request written detail of:
+- Number of shoot days
+- Number of editing days
+- How many editing versions are included
+- How many revision rounds are allowed
+- What happens if you exceed the quota
+
+**Red flag:** A quote that doesn't detail these.
+
+## Question 4: What's the Realistic Timeline?
+
+A promise of "two weeks" for a full brand film is usually not realistic. Ask:
+- How long for the creative phase?
+- When will the first edit be delivered?
+- How long for revisions?
+
+## Question 5: Who Owns the Rights?
+
+Important: in some contracts, the production company retains rights to use the film in their portfolio, for certain people, or even for publication. Make sure you receive full rights.
+
+## Question 6: Do They Have Insurance?
+
+Production insurance is mandatory. Accidents happen on set. If the company has no insurance — the potential damage could fall on you.
+
+## Question 7: Are You "Friends"?
+
+This sounds emotional, but it's critical. You're going to spend intensive shoot days with this team. Direct communication, comfort saying "I didn't like it," and the ability to talk about budget openly — these are components of a successful partnership.
+
+---
+
+Want to see what this looks like in practice? View our portfolio and contact us for a getting-to-know-you conversation.`,
   },
 ];
 
@@ -2981,20 +3739,20 @@ export const faqItems: FAQItem[] = [
   {
     questionHe: "האם אתם עובדים עם חברות קטנות או רק עם ארגונים גדולים?",
     questionEn: "Do you work with small companies or only large organizations?",
-    answerHe: "אנחנו עובדים עם סטארטאפים בשלב ה-seed ועם חברות ציבוריות גדולות — השיקול שלנו הוא לא גודל החברה אלא איכות הפרויקט והתאמה קריאייטיבית. עבדנו עם חברות כמו Palo Alto Networks, Humavox, Ashtrom ו-CROPX לצד סטארטאפים בשלביהם הראשונים.",
-    answerEn: "We work with seed-stage startups and large public companies alike — our consideration is not company size but project quality and creative fit. We've worked with companies like Palo Alto Networks, Humavox, Ashtrom, and CROPX alongside early-stage startups.",
+    answerHe: "אנחנו עובדים עם סטארטאפים בשלב ה-seed ועם חברות ציבוריות גדולות, השיקול שלנו הוא לא גודל החברה אלא איכות הפרויקט והתאמה קריאייטיבית. עבדנו עם חברות כמו Palo Alto Networks, Humavox, Ashtrom ו-CROPX לצד סטארטאפים בשלביהם הראשונים.",
+    answerEn: "We work with seed-stage startups and large public companies alike, our consideration is not company size but project quality and creative fit. We've worked with companies like Palo Alto Networks, Humavox, Ashtrom, and CROPX alongside early-stage startups.",
   },
   {
     questionHe: "מה ההבדל בין הפקת AI לבין הפקה רגילה?",
     questionEn: "What is the difference between AI production and regular production?",
-    answerHe: "הפקת AI משלבת כלים כמו Kling, Runway Gen-3 Alpha ו-Midjourney כדי ליצור ויזואלים שלא ניתן לצלם בצורה רגילה — עולמות דיגיטליים, אנימציות, הדמיות — בתקציב נגיש. ב-Hybrid productions אנחנו משלבים AI עם צילומי live action לתוצאה שנראית כמו הפקת ענק.",
-    answerEn: "AI production integrates tools like Kling, Runway Gen-3 Alpha, and Midjourney to create visuals that cannot be filmed conventionally — digital worlds, animations, visualizations — at accessible budgets. In hybrid productions, we combine AI with live action footage for a result that looks like a major production.",
+    answerHe: "הפקת AI משלבת כלים כמו Kling, Runway Gen-3 Alpha ו-Midjourney כדי ליצור ויזואלים שלא ניתן לצלם בצורה רגילה: עולמות דיגיטליים, אנימציות, הדמיות, בתקציב נגיש. ב-Hybrid productions אנחנו משלבים AI עם צילומי live action לתוצאה שנראית כמו הפקת ענק.",
+    answerEn: "AI production integrates tools like Kling, Runway Gen-3 Alpha, and Midjourney to create visuals that cannot be filmed conventionally: digital worlds, animations, visualizations, at accessible budgets. In hybrid productions, we combine AI with live action footage for a result that looks like a major production.",
   },
   {
     questionHe: "האם אתם מספקים גם את המוזיקה והסאונד?",
     questionEn: "Do you also provide the music and sound?",
-    answerHe: "כן. אנחנו מגיעים עם ספריית מוזיקה מורשית מלאה, ובפרויקטים מתאימים עובדים עם מלחינים ומוזיקאים ליצירת מוזיקה מקורית. עיצוב הסאונד, מיקס ומאסטרינג — הכל כלול בחבילה.",
-    answerEn: "Yes. We come with a full licensed music library, and for suitable projects we work with composers and musicians to create original music. Sound design, mixing, and mastering — all included in the package.",
+    answerHe: "כן. אנחנו מגיעים עם ספריית מוזיקה מורשית מלאה, ובפרויקטים מתאימים עובדים עם מלחינים ומוזיקאים ליצירת מוזיקה מקורית. עיצוב הסאונד, מיקס ומאסטרינג, הכל כלול בחבילה.",
+    answerEn: "Yes. We come with a full licensed music library, and for suitable projects we work with composers and musicians to create original music. Sound design, mixing, and mastering, all included in the package.",
   },
   {
     questionHe: "האם ניתן לקבל את הסרט בכמה פורמטים (אינסטגרם, יוטיוב, לינקדאין)?",
