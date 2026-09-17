@@ -72,7 +72,7 @@ function renderBody(text: string, sectionImages: string[], imageAlt: string) {
       const src = sectionImages[imgIdx++];
       if (!src) continue;
       elements.push(
-        <figure key={`img-${i}`} className="my-12 -mx-4 md:-mx-12">
+        <figure key={`img-${i}`} className="my-10">
           <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-gray-200">
             <Image src={src} alt={imageAlt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
           </div>
