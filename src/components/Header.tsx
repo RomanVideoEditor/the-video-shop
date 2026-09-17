@@ -34,14 +34,27 @@ export default function Header({ locale }: { locale: string }) {
       <nav className="max-w-[var(--container)] mx-auto px-6 flex items-center justify-between h-[64px]">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <div className="w-8 h-8 bg-[#FFD000] rounded-full flex items-center justify-center">
-            <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+        <Link href="/" className="flex items-center gap-2 shrink-0 group">
+          <div className="w-8 h-8 bg-[#FFD000] rounded-full flex items-center justify-center logo-pulse">
+            <svg className="w-4 h-4 text-black logo-play" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
           </div>
           <span className="font-bold text-[#111] text-[17px] tracking-tight">videoshop</span>
         </Link>
+        <style>{`
+          @keyframes logo-ping {
+            0%, 60%, 100% { box-shadow: 0 0 0 0 rgba(255,208,0,0.7); transform: scale(1); }
+            30% { box-shadow: 0 0 0 8px rgba(255,208,0,0); transform: scale(1.08); }
+          }
+          @keyframes logo-play-bounce {
+            0%, 60%, 100% { transform: translateX(0) scale(1); }
+            25% { transform: translateX(2px) scale(1.1); }
+            40% { transform: translateX(0) scale(0.95); }
+          }
+          .logo-pulse { animation: logo-ping 3.5s ease-in-out infinite; }
+          .logo-play { animation: logo-play-bounce 3.5s ease-in-out infinite; }
+        `}</style>
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-7">
