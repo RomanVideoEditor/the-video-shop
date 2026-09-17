@@ -314,6 +314,59 @@ export default async function BlogPostPage({
           </div>
         )}
 
+        {/* Related posts */}
+        {(() => {
+          const related = vlogPosts
+            .filter((p) => p.id !== slug && p.coverImage)
+            .filter((p) => p.tags?.some((t) => post.tags?.includes(t)))
+            .slice(0, 2);
+          const fallback = related.length < 2
+            ? vlogPosts.filter((p) => p.id !== slug && p.coverImage && !related.find((r) => r.id === p.id)).slice(0, 2 - related.length)
+            : [];
+          const posts2 = [...related, ...fallback].slice(0, 2);
+          if (posts2.length === 0) return null;
+          return (
+            <div className="mt-16 pt-10 border-t border-gray-200">
+              <p className="text-[10px] font-semibold tracking-[0.35em] text-[#555]/50 uppercase mb-6">
+                {isHe ? "המשך לקרוא" : "Continue Reading"}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {posts2.map((rp) => {
+                  const rpTitle = isHe ? rp.titleHe : rp.titleEn;
+                  return (
+                    <Link key={rp.id} href={`/vlog/${rp.id}`} className="group block">
+                      <div className="relative overflow-hidden rounded-xl border border-gray-200 bg-white">
+                        {/* Image */}
+                        <div className="relative w-full aspect-[16/9] overflow-hidden">
+                          <Image
+                            src={rp.coverImage!}
+                            alt={rpTitle}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            sizes="(max-width: 640px) 100vw, 380px"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                        </div>
+                        {/* Text over image bottom */}
+                        <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between gap-3">
+                          <h3 className="text-sm font-bold text-white leading-snug line-clamp-2 flex-1">
+                            {rpTitle}
+                          </h3>
+                          <span className="shrink-0 w-9 h-9 rounded-full bg-[#FFD000] flex items-center justify-center group-hover:bg-white transition-colors">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={isHe ? "rotate-180" : ""}>
+                              <path d="M3 8h10M9 4l4 4-4 4" stroke="#111" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })()}
+
         {/* CTA */}
         <div className="mt-14 p-8 bg-white border border-gray-200 rounded-2xl">
           <p className="text-xs font-semibold tracking-tight text-[#FFD000]/60 mb-3">videoshop</p>
