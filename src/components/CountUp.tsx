@@ -40,7 +40,7 @@ export default function CountUp({ to, suffix = "", duration = 1800, className = 
 
   return (
     <span ref={ref} className={className}>
-      {value}{suffix}
+      {value}<span className="text-[#FFD000]">{suffix}</span>
     </span>
   );
 }

@@ -23,12 +23,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/en/services/ai`, priority: 0.85, freq: "monthly" },
     { url: `${BASE}/services/defense`, priority: 0.85, freq: "monthly" },
     { url: `${BASE}/en/services/defense`, priority: 0.85, freq: "monthly" },
+    { url: `${BASE}/services/animation`, priority: 0.85, freq: "monthly" },
+    { url: `${BASE}/en/services/animation`, priority: 0.85, freq: "monthly" },
+    { url: `${BASE}/services/training`, priority: 0.85, freq: "monthly" },
+    { url: `${BASE}/en/services/training`, priority: 0.85, freq: "monthly" },
     { url: `${BASE}/vlog`, priority: 0.8, freq: "weekly" },
     { url: `${BASE}/en/vlog`, priority: 0.8, freq: "weekly" },
     { url: `${BASE}/about`, priority: 0.65, freq: "monthly" },
     { url: `${BASE}/en/about`, priority: 0.65, freq: "monthly" },
     { url: `${BASE}/contact`, priority: 0.75, freq: "monthly" },
     { url: `${BASE}/en/contact`, priority: 0.75, freq: "monthly" },
+    { url: `${BASE}/pricing`, priority: 0.80, freq: "monthly" },
+    { url: `${BASE}/en/pricing`, priority: 0.80, freq: "monthly" },
+    { url: `${BASE}/testimonials`, priority: 0.70, freq: "monthly" },
+    { url: `${BASE}/en/testimonials`, priority: 0.70, freq: "monthly" },
   ];
 
   const blogEntries = vlogPosts.flatMap((post) => [

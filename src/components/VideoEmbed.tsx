@@ -15,7 +15,7 @@ export default function VideoEmbed({ youtubeId, vimeoId, title, altText, classNa
   const [playing, setPlaying] = useState(false);
 
   const thumbUrl = youtubeId
-    ? `https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`
+    ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
     : `https://vumbnail.com/${vimeoId}.jpg`;
 
   const embedSrc = youtubeId

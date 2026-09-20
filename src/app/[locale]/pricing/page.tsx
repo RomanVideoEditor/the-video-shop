@@ -93,9 +93,20 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
   const { locale } = await params;
   const isHe = locale === "he";
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: isHe ? f.qHe : f.qEn,
+      acceptedAnswer: { "@type": "Answer", text: isHe ? f.aHe : f.aEn },
+    })),
+  };
+
   return (
     <main className="min-h-screen">
       <BreadcrumbSchema locale={locale} crumbs={[{ name: isHe ? "מחירון" : "Pricing", path: "/pricing" }]} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 bg-[#f4f4f4] relative overflow-hidden">
@@ -105,7 +116,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
           style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }}
         />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
+          <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
             {isHe ? "מחירון" : "Pricing"}
           </span>
           <h1 className="text-4xl md:text-5xl font-black text-[#111] mt-6 mb-4 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>

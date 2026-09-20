@@ -18,7 +18,7 @@ const securityHeaders = [
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: https://img.youtube.com https://i.ytimg.com https://vumbnail.com https://i.vimeocdn.com https://www.google-analytics.com https://cdn.jsdelivr.net",
-      "frame-src https://www.youtube.com https://player.vimeo.com",
+      "frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com",
       "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com",
       "media-src 'self'",
     ].join("; "),

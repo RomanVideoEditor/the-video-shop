@@ -4,9 +4,12 @@ import { Link } from "@/i18n/navigation";
 import dynamic from "next/dynamic";
 import FAQSchema from "@/components/FAQSchema";
 import CountUp from "@/components/CountUp";
+import { vlogPosts } from "@/lib/videos";
 
 const FAQSection = dynamic(() => import("@/components/FAQSection"));
 const PortfolioGrid = dynamic(() => import("@/components/PortfolioGrid"));
+import TestimonialRotator from "@/components/TestimonialRotator";
+import LogoTicker from "@/components/LogoTicker";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -16,103 +19,180 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 /* ── data ─────────────────────────────────────────────────────────── */
 
-const clients = [
-  { name: "Palo Alto Networks", style: "font-bold tracking-tight text-[15px]" },
-  { name: "Ashtrom",            style: "font-bold tracking-widest text-[13px] uppercase" },
-  { name: "Bright Data",        style: "font-semibold text-[15px]" },
-  { name: "Airobotics",         style: "font-bold italic text-[14px]" },
-  { name: "Nucleai",            style: "font-bold text-[15px]" },
-  { name: "Vertica",            style: "font-bold tracking-wide text-[14px]" },
-  { name: "DRIDE",              style: "font-black tracking-widest text-[14px] uppercase" },
-  { name: "Levi Strauss",       style: "font-semibold text-[14px]" },
-  { name: "UserWay",            style: "font-bold text-[15px]" },
-  { name: "CROPX",              style: "font-black tracking-wider text-[13px] uppercase" },
-  { name: "מפעל הפיס",          style: "font-bold text-[14px]" },
-  { name: "Humavox",            style: "font-bold text-[14px]" },
+
+// Anchors: always shown first — update based on GA4 data (highest click→contact conversion)
+const portfolioAnchors = [
+  {
+    id: "8RbqUaMR9_c",
+    titleHe: "להיות אשטרומיסט זה קודם כל אופי",
+    titleEn: "Being an Ashtromist Is First of All Character",
+    descHe: "קמפיין Employer Branding ארצי לאשטרום — אחת מהפקות הדגל שלנו. צילומים ב-20+ אתרים, עשרות עובדים non-actors, ועריכת 'פינג-פונג' קצבית שהפכה 'אשטרומיסט' מסיסמה לזהות.",
+    descEn: "Nationwide Employer Branding campaign for Ashtrom — one of our flagship productions. Shoots across 20+ sites, dozens of non-actor employees, and rhythmic 'ping-pong' editing that turned 'Ashtromist' from a slogan into an identity.",
+  },
+  {
+    id: "N4iNxvFGA34",
+    titleHe: "IRON DRONE | Airobotics — הסרט שיצר שפה ויזואלית לחברה בורסאית",
+    titleEn: "IRON DRONE | Airobotics — The Film That Created a Visual Language for a Public Company",
+    descHe: "סרט ביטחוני-טכנולוגי שנבנה ללא Brand Book — ויצא כסטנדרט הוויזואלי הרשמי של ONDS. HUD/UI, Speed Ramps ו-Drone-to-Drone Tracking.",
+    descEn: "A defense-tech film built without a Brand Book — and adopted as ONDS's official visual standard. HUD/UI, Speed Ramps, and Drone-to-Drone aerial tracking.",
+  },
+  {
+    id: "JncBv6FbkRc",
+    titleHe: "DRIDE: סרט Kickstarter שגייס מעל מיליון דולר",
+    titleEn: "DRIDE: Kickstarter Film That Raised Over $1M",
+    descHe: "אחד הקמפיינים הישראליים המוצלחים ביותר ב-Kickstarter. הסרט הפך מצלמת רכב חכמה לתנועה — ועזר לגייס מעל מיליון דולר.",
+    descEn: "One of the most successful Israeli Kickstarter campaigns. The film turned a smart dashcam into a movement — raising over $1M in funding.",
+  },
 ];
 
-const portfolioVideos = [
+// Challenger pool: rotated randomly each session — 3 will be shown alongside anchors.
+// GA4 event 'portfolio_video_click' shows which ones get clicked → promote winners to anchors.
+const portfolioPool = [
   {
-    id: "rixmoZ4Y4Uk",
-    titleHe: "Vertica: פרסומת לייפסטייל",
-    titleEn: "Vertica: Lifestyle Ad",
-    descHe: "פרסומת לייפסטייל לפרויקט הנדל\"ן היוקרתי Vertica. הסרט שם דגש על תחושת החיים בפרויקט: אסתטיקה, אור ותנועה, כדי למכור חוויה, לא רק דירה.",
-    descEn: "A lifestyle commercial for the luxury real estate project Vertica. The film focuses on the feeling of living in the development: aesthetics, light and movement, selling an experience, not just an apartment.",
+    id: "nFaOyZwj2PY",
+    titleHe: "Buildots: Green Screen ו-Compositing אולפן",
+    titleEn: "Buildots: Green Screen & Studio Compositing",
+    descHe: "הפקת מסך ירוק מוקפדת עם שילוב UI של ממשק Buildots. שליטה מוחלטת על תאורה, זוויות וקומפוזיציה — ללא צורך באתרי בנייה פעילים.",
+    descEn: "Meticulous green screen production with Buildots UI integration. Total control over lighting, angles and composition — without needing active construction sites.",
   },
   {
-    id: "94W9SfZcx-Y",
-    titleHe: "Levi Strauss: אירוע כוכבים",
-    titleEn: "Levi Strauss: Celebrity Event",
-    descHe: "תיעוד אירוע יחסי ציבור של Levi Strauss עם כוכבים ומשפיענים ישראלים. הסרט לכד את האווירה, האנרגיה והרגעים האותנטיים של הערב.",
-    descEn: "Coverage of a Levi Strauss PR event with Israeli celebrities and influencers. The film captured the atmosphere, energy and authentic moments of the evening.",
+    id: "3mxQZMC9ZpI",
+    titleHe: "Ludeo: Live-Action + אנימציה תלת-ממד לפלטפורמת גיימינג",
+    titleEn: "Ludeo: Live-Action + 3D Animation for a Gaming Platform",
+    descHe: "סרט קונספט לפלטפורמה שהופכת צפייה פסיבית לשחייה אינטראקטיבית. שילוב בין חדר גיימינג ריאליסטי ל'מעבדת Ludeo' תלת-ממדית.",
+    descEn: "Concept film for a platform turning passive viewing into interactive play. Combines a realistic gaming room with a 3D 'Ludeo Lab' animated world.",
   },
   {
-    id: "VsiMUos3_58",
-    titleHe: "Nucleai: אירוע חברה",
-    titleEn: "Nucleai: Company Event",
-    descHe: "Nucleai היא סטארטאפ AI רפואי שפיתח פתרונות לניתוח פתולוגיה דיגיטלית. הסרט תיעד את אירוע החברה השנתי ושימש לתקשורת פנים-ארגונית וגיוס עובדים.",
-    descEn: "Nucleai is a medical AI startup developing digital pathology analysis solutions. The film documented their annual company event for internal communications and employer branding.",
+    id: "URDNpEwabCc",
+    titleHe: "Airobotics Developer Program: הכרזה Host-Driven",
+    titleEn: "Airobotics Developer Program: Host-Driven Announcement",
+    descHe: "סרט הכרזה B2B לפלטפורמת רחפנים תעשייתיים — מנחה אחת מובילה ממשרדי הפיתוח למתקן הניסויים. VFX ו-UI integration אורגני.",
+    descEn: "B2B announcement film for an industrial drone platform — one presenter guides from R&D offices to the test facility. Organic VFX and UI integration.",
+  },
+  {
+    id: "yDJ5shdbFMw",
+    titleHe: "BIG FASHION גלילות: קמפיין OOH מהאוויר",
+    titleEn: "BIG FASHION Gililot: OOH Campaign from the Air",
+    descHe: "תיעוד אווירי של פריסת שלטי חוצות ענק להשקת קניון. רחפן שמראה את מה שאף אחד לא רואה מהאדמה — את הנפח הכולל של הקמפיין.",
+    descEn: "Aerial documentation of a massive billboard campaign for a mall launch. The drone shows what no one sees from the ground — the full volume of the campaign.",
+  },
+  {
+    id: "ome2LtSiFWQ",
+    titleHe: "אשטרום נכסים: סרט תדמית קורפורייט",
+    titleEn: "Ashtrom Properties: Corporate Brand Film",
+    descHe: "700K+ מ\"ר, 60 נכסים מניבים, פעילות בגרמניה ואנגליה. שילוב ארכיון היסטורי, רחפנים, CGI ולייב-אקשן בהפקה ארצית.",
+    descEn: "700K+ sqm, 60 income-producing assets, operations in Germany and England. Combining historical archive, drones, CGI and live-action in a nationwide production.",
+  },
+  {
+    id: "7vCj49e42Ow",
+    titleHe: "Vertica: Onboarding רפואי עם CGI",
+    titleEn: "Vertica: Medical Onboarding with CGI",
+    descHe: "סרט הדרכה למוצר MedTech אינטימי — High-key אולפן, Blue Medical Mesh תלת-ממד, ו-Overhead Close-ups. ללא מבוכה, עם אמינות מקסימלית.",
+    descEn: "Instructional film for an intimate MedTech product — High-key studio, 3D Blue Medical Mesh, Overhead and Extreme Close-ups. Zero embarrassment, maximum credibility.",
+  },
+  {
+    id: "Fmd3fB5Pb-M",
+    titleHe: "Connect 2 Innovate | Startup Nation Central",
+    titleEn: "Connect 2 Innovate | Startup Nation Central",
+    descHe: "דיפלומטיה דרך חדשנות — ישראל × מרוקו. מפעלי מים לצד שולחן אוכל מרוקאי. Kinetic Typography בכתב יד ופסקול אתני-מודרני.",
+    descEn: "Innovation diplomacy — Israel × Morocco. Water plants alongside a Moroccan dinner table. Handwritten Kinetic Typography and an ethnic-modern soundtrack.",
+  },
+  {
+    id: "d2Bckns6JTA",
+    titleHe: "Intel Fab 28: תרגיל חירום קולנועי",
+    titleEn: "Intel Fab 28: Cinematic Emergency Drill",
+    descHe: "5 זירות מקבילות — Hazmat, שריפה, חילוץ מגובה, סריקת הריסות, מפקדה. FPV רחפן, גרפיקה טקטית וסאונד-דיזיין שמעצור הנשימה.",
+    descEn: "5 simultaneous zones — Hazmat, fire, height rescue, debris search, command center. FPV drone, tactical graphics and breath-stopping sound design.",
+  },
+  {
+    id: "coZNfEng59g",
+    titleHe: "Intel Fab 28 קרית גת: תרגיל חירום 2025",
+    titleEn: "Intel Fab 28 Kiryat Gat: Emergency Drill 2025",
+    descHe: "4 זירות — שריפה, דליפת אמוניה, Rope Rescue מבור, Search & Rescue. מפת HUD עם לוויין. סיכום Emergency Manager בחפ\"ק.",
+    descEn: "4 zones — fire, ammonia leak, Rope Rescue, Search & Rescue. Satellite HUD map. Emergency Manager summary at the command post.",
+  },
+  {
+    id: "jAU89DS0oig",
+    titleHe: "Intel IDC חיפה: תרגיל חירום 2025 — 3,000 עובדים",
+    titleEn: "Intel IDC Haifa: Emergency Drill 2025 — 3,000 Employees",
+    descHe: "6 זירות בו-זמניות, קמפוס ענק, מפת HUD דינמית 3D שמסמנת כל זירה בזמן אמת. ניהול אורכסטרלי של 6 צוותות צילום.",
+    descEn: "6 simultaneous zones, vast campus, 3D dynamic HUD map marking each scene in real time. Orchestral management of 6 camera crews.",
+  },
+  {
+    id: "mqVFjv-gPS4",
+    titleHe: "Airobotics Optimus: הכרזת FAA Type Certification",
+    titleEn: "Airobotics Optimus: FAA Type Certification Announcement",
+    descHe: "מנכ\"ל Ondas Holdings (NASDAQ: ONDS) בלוקיישן לילי יוקרתי. תקריבי מאקרו של הזרוע הרובוטית. הכרזה שהפכה רגולציה יבשה לרגש.",
+    descEn: "CEO of Ondas Holdings (NASDAQ: ONDS) at a premium night location. Robotic arm macro close-ups. An announcement that turned dry regulation into emotion.",
   },
   {
     id: "HKkqkHBSt7Q",
     titleHe: "Bright Data: AI Explainer",
     titleEn: "Bright Data: AI Explainer",
-    descHe: "סרט Explainer לפלטפורמת ה-AI של Bright Data, חברת web data עולמית. האתגר: להסביר מוצר טכנולוגי מורכב בצורה ברורה ומושכת לקהל עסקי.",
-    descEn: "An explainer film for Bright Data's AI platform, a global web data company. The challenge: communicate a complex tech product clearly and compellingly to a business audience.",
-  },
-  {
-    id: "JncBv6FbkRc",
-    titleHe: "DRIDE: Kickstarter",
-    titleEn: "DRIDE: Kickstarter",
-    descHe: "סרט קמפיין Kickstarter למצלמת הרכב החכמה DRIDE. הסרט עזר לגייס מעל מיליון דולר, אחד מהקמפיינים הישראליים המוצלחים ביותר בפלטפורמה.",
-    descEn: "A Kickstarter campaign film for the DRIDE smart dashcam. The film helped raise over $1M, one of the most successful Israeli campaigns on the platform.",
+    descHe: "סרט Explainer לפלטפורמת ה-AI של Bright Data, חברת web data עולמית. טכנולוגיה מורכבת — בצורה ברורה ומשכנעת.",
+    descEn: "An explainer film for Bright Data's AI platform, a global web data company. Complex technology — communicated clearly and compellingly.",
   },
   {
     id: "GFkN83F-DBU",
     titleHe: "אקרשטיין: 100 שנה",
     titleEn: "Akerstein: 100 Years",
-    descHe: "סרט מחווה לציון 100 שנות פעילות של קבוצת אקרשטיין, מהחברות הגדולות בישראל לתשתיות ובנייה. שילוב של ארכיון היסטורי עם צילום עכשווי.",
-    descEn: "A tribute film marking 100 years of the Akerstein Group, one of Israel's largest infrastructure and construction companies. A blend of historical archive with contemporary cinematography.",
+    descHe: "סרט מחווה ל-100 שנות פעילות — שילוב ארכיון היסטורי עם צילום עכשווי. מורשת וחדשנות בסרט אחד.",
+    descEn: "A tribute film marking 100 years — combining historical archive with contemporary cinematography. Legacy and innovation in one film.",
   },
   {
-    id: "N4iNxvFGA34",
-    titleHe: "Iron Drone Airobotics",
-    titleEn: "Iron Drone Airobotics",
-    descHe: "סרט הדגמה לטכנולוגיית Iron Drone של Airobotics, מערכת רחפן אוטונומית לאבטחה ותגובה לאיומים. הסרט שילב צילומי אוויר מרשימים עם הסברת יכולות המוצר.",
-    descEn: "A demo film for Airobotics' Iron Drone technology, an autonomous drone system for security and threat response. Combining impressive aerial footage with clear product capability storytelling.",
+    id: "94W9SfZcx-Y",
+    titleHe: "Levi Strauss: אירוע כוכבים",
+    titleEn: "Levi Strauss: Celebrity Event",
+    descHe: "תיעוד אירוע PR עם דודו ארז. הסרט הפך לתוכן ויראלי פנים-ארגוני — עובדים שיתפו אותו מרצון.",
+    descEn: "PR event coverage with celebrity talent. The film became internal viral content — employees shared it voluntarily.",
   },
   {
-    id: "loW4i8ZOLNA",
-    titleHe: "להיות אשטרומיסט",
-    titleEn: "Be an Ashtromist",
-    descHe: "סרט Employer Branding לקבוצת אשטרום שמטרתו למשוך טאלנטים צעירים. הסרט מציג את התרבות, הפרויקטים והאנשים שמאחורי אחת מחברות הנדל\"ן המובילות בישראל.",
-    descEn: "An employer branding film for the Ashtrom Group aimed at attracting young talent. The film showcases the culture, projects and people behind one of Israel's leading real estate companies.",
-  },
-  {
-    id: "M0EhoVJsxJM",
-    titleHe: "מקבי: אירוע קורפורייט",
-    titleEn: "Maccabi: Corporate Event",
-    descHe: "תיעוד אירוע קורפורייט גדול לרשת שירותי הבריאות מקבי. הסרט שימש לתקשורת פנים-ארגונית ולהצגת ערכי החברה לאלפי עובדים.",
-    descEn: "Coverage of a large corporate event for the Maccabi Healthcare network. The film served internal communications and conveyed company values to thousands of employees.",
+    id: "rixmoZ4Y4Uk",
+    titleHe: "Vertica: פרסומת לייפסטייל",
+    titleEn: "Vertica: Lifestyle Ad",
+    descHe: "פרסומת לייפסטייל לפרויקט הנדל\"ן היוקרתי. אסתטיקה, אור ותנועה — מוכרים חוויה, לא רק דירה.",
+    descEn: "Lifestyle commercial for a luxury real estate project. Aesthetics, light and movement — selling an experience, not just an apartment.",
   },
 ];
 
 const specialties = [
-  { titleHe: "הייטק, ביטחוני ו-SaaS",   titleEn: "High-Tech, Defense & SaaS",       descHe: "סרטי פיצ', Tech Explainer וקונספט: מה שמסביר את הבלתי ניתן להסברה.",      descEn: "Pitch films, Tech Explainers and concept videos: explaining the unexplainable.", href: "/services/hightech" },
-  { titleHe: "נדל\"ן מסחרי ואדריכלות",  titleEn: "Real Estate & Architecture",       descHe: "צילומי רחפן ואדריכלות לאשטרום, ג'י סיטי ועוד.",                             descEn: "Drone and architectural videos for Israel's leading real estate firms.",           href: "/services/realestate" },
-  { titleHe: "Employer Branding וגיוס",  titleEn: "Employer Branding & Recruitment",  descHe: "סרטי גיוס שמושכים טאלנטים, Kickstarter שגייס מעל מיליון דולר.",             descEn: "Recruitment films that attract talent, with Kickstarter campaigns that raised $1M+.", href: "/services/corporate" },
-  { titleHe: "הפקות וידאו AI",           titleEn: "AI Video Production",             descHe: "Kling, Runway Gen-3, Midjourney: עולמות שהמצלמה לא יכולה לצלם.",           descEn: "Kling, Runway Gen-3, Midjourney: worlds no camera can reach.",                  href: "/services/ai" },
-  { titleHe: "אירועים קורפורייט",        titleEn: "Corporate Events",                descHe: "תיעוד וידאו מקצועי של כנסים, השקות מוצרים ואירועי חברה.",                  descEn: "Professional coverage of conferences, product launches and company events.",      href: "/services/corporate" },
-  { titleHe: "סרטי מוצר ו-Explainer",  titleEn: "Product & Explainer Videos",       descHe: "דמו מוצר ברור שמסביר את הערך ב-60 שניות.",                                 descEn: "Clear product demos that communicate value in 60 seconds.",                      href: "/services/hightech" },
-  { titleHe: "סרטי הדרכה ו-eLearning", titleEn: "Training & eLearning Videos",      descHe: "Onboarding, הדרכת מוצר ו-compliance: מה שעובדים אמיתיים צופים ומיישמים.", descEn: "Onboarding, product training and compliance: what real employees watch and implement.", href: "/services/training" },
-  { titleHe: "אנימציה ומוגרפיקה",      titleEn: "Animation & Motion Graphics",      descHe: "2D, Explainer ו-Motion Design: כשהמצלמה לא מספיקה.",                       descEn: "2D animation, Explainer and Motion Design: when the camera is not enough.",      href: "/services/animation" },
+  { titleHe: "הייטק, ביטחוני ו-SaaS",   titleEn: "High-Tech, Defense & SaaS",       descHe: "סרטי B2B ל-Intel, Ondas Holdings (NASDAQ) ו-Palo Alto Networks — פיצ' שסוגר סבבי גיוס ו-Explainer שמנצח בדירקטוריונים.",      descEn: "B2B films for Intel, Ondas Holdings (NASDAQ) and Palo Alto Networks — pitch films that close rounds and explainers that win boardrooms.", href: "/services/hightech" },
+  { titleHe: "נדל\"ן מסחרי ואדריכלות",  titleEn: "Real Estate & Architecture",       descHe: "מרחפן לסרט מותג: אשטרום נכסים, ג'י סיטי, BIG FASHION — מאתר הבנייה ועד אירוע פתיחת דגל.",                             descEn: "Drone to brand film: Ashtrom Properties, G City, BIG FASHION — from construction site to flagship opening day.",           href: "/services/realestate" },
+  { titleHe: "Employer Branding וגיוס",  titleEn: "Employer Branding & Recruitment",  descHe: "הפקות ארציות ב-20+ אתרים — הפכנו 'אשטרומיסט' מסיסמה לזהות שאלפי עובדים חיים לפיה.",             descEn: "Nationwide productions across 20+ sites — turned 'Ashtromist' from a slogan into an identity thousands of employees live by.", href: "/services/corporate" },
+  { titleHe: "הפקות וידאו AI",           titleEn: "AI Video Production",             descHe: "מסווג, לא קיים עדיין, או בלתי ניתן לצילום? Midjourney → Kling → Runway Gen-3 לחברות ביטחון וטכנולוגיה.",           descEn: "Classified, pre-built, or impossible to film? Midjourney → Kling → Runway Gen-3 pipeline for defense and tech companies.",                  href: "/services/ai" },
+  { titleHe: "סרטי הדרכה ו-eLearning", titleEn: "Training & eLearning Videos",      descHe: "Onboarding רפואי לוורטיקה, תיעוד תרגיל חירום ל-Intel Fab 28 — תוכן הדרכה שעובדים אמיתיים צופים בו.", descEn: "Medical onboarding for Vertica MedTech, emergency drill documentation for Intel Fab 28 — training content real employees actually watch.", href: "/services/training" },
+  { titleHe: "אנימציה ומוגרפיקה",      titleEn: "Animation & Motion Graphics",      descHe: "גרין סקרין לבילדוטס, עולמות גיימינג תלת-ממד ל-Ludeo — כשלייב אקשן לבד לא מספיק.",                       descEn: "Green screen compositing for Buildots, 3D gaming worlds for Ludeo — when live action alone isn't enough.",      href: "/services/animation" },
 ];
 
-const whyItems = [
-  { titleHe: "מגיעים תוך 24 שעות",    titleEn: "Brief within 24 hours",    descHe: "קבלו הצעת מחיר מפורטת תוך שעות מהפנייה הראשונה.",                              descEn: "Receive a detailed quote within hours of your first contact." },
-  { titleHe: "לקוחות Fortune סומכים", titleEn: "Fortune clients trust us",  descHe: "Palo Alto Networks, Ashtrom, Bright Data ועוד 50+ חברות מובילות.",              descEn: "Palo Alto Networks, Ashtrom, Bright Data and 50+ leading companies." },
-  { titleHe: "תמחור שקוף",             titleEn: "Transparent pricing",      descHe: "מחיר ברור מראש, ללא עלויות נסתרות, עם אפשרות לשותפות ארוכת טווח.",            descEn: "Clear pricing upfront, no hidden costs, with long-term partnership options." },
-  { titleHe: "ביצוע ללא פשרות",        titleEn: "Flawless execution",       descHe: "כל פרויקט בנוי לפי הבריף שלכם, On-brand ולפי הסטנדרט הגבוה ביותר.",          descEn: "Every project is built around your brief, on-brand, to the highest standard." },
+const whyItems: { statHe: string; statEn: string; titleHe: string; titleEn: string; descHe: string; descEn: string }[] = [
+  {
+    statHe: "בוטיק",  statEn: "Boutique",
+    titleHe: "סטודיו, לא מפעל",
+    titleEn: "Studio, Not a Factory",
+    descHe: "תשומת לב מלאה לכל פרויקט — לא תהיה לקוח מספר 47.",
+    descEn: "Full attention on every project — you won't be client number 47.",
+  },
+  {
+    statHe: "A→Z",  statEn: "A→Z",
+    titleHe: "ליווי אישי מלא",
+    titleEn: "Full Personal Guidance",
+    descHe: "מהברייף הראשון ועד הסרט המוגמר — איתך בכל שלב.",
+    descEn: "From first brief to final delivery — with you every step of the way.",
+  },
+  {
+    statHe: "TOP",  statEn: "TOP",
+    titleHe: "מטובי המקצוענים בישראל",
+    titleEn: "Top Professionals in Israel",
+    descHe: "צוות בכיר של במאים, עורכים ואנשי מותג.",
+    descEn: "Senior team of directors, editors and brand strategists.",
+  },
+  {
+    statHe: "B2B",  statEn: "B2B",
+    titleHe: "מבינים את השוק שלך",
+    titleEn: "We Speak Your Market",
+    descHe: "מדברים את שפת ההייטק, הנדל\"ן והתאגידים.",
+    descEn: "We speak high-tech, real estate and corporate — fluently.",
+  },
 ];
 
 const steps = [
@@ -193,8 +273,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 style={{ animation: "fadeInUp .55s .2s ease both" }}
               >
                 {isHe
-                  ? "סטודיו בוטיק עם 20 שנות ניסיון: הייטק, נדל\"ן מסחרי, Employer Branding והפקות AI."
-                  : "Boutique studio with 20 years experience: high-tech, real estate, employer branding and AI productions."}
+                  ? "סטודיו בוטיק B2B: הייטק, ביטחוני, נדל\"ן מסחרי ו-AI. לקוחות: Intel, Ondas Holdings (NASDAQ), Palo Alto Networks ועוד."
+                  : "B2B boutique studio: high-tech, defense, commercial real estate and AI. Clients: Intel, Ondas Holdings (NASDAQ), Palo Alto Networks, and more."}
               </p>
 
               <div style={{ animation: "fadeInUp .55s .3s ease both" }}>
@@ -218,7 +298,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   loop
                   muted
                   playsInline
-                  preload="none"
+                  preload="auto"
                   poster="/hero-poster.jpg"
                   aria-hidden="true"
                   role="presentation"
@@ -253,24 +333,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* ── CLIENTS — infinite marquee ────────────────────────────── */}
-      <section id="clients" className="bg-white py-14 px-6 overflow-hidden">
-        <p className="text-center text-xs font-bold text-[#717171] uppercase tracking-widest mb-8 reveal">
-          {isHe ? "סומכים עלינו" : "Trusted by"}
-        </p>
-        <div className="relative">
-          {/* Fade edges */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-16 z-10" style={{ background: "linear-gradient(to right, white, transparent)" }} />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-16 z-10" style={{ background: "linear-gradient(to left, white, transparent)" }} />
-          {/* Marquee track — duplicated for seamless loop */}
-          <div className="flex w-max animate-marquee gap-12 items-center">
-            {[...clients, ...clients].map((c, i) => (
-              <div key={i} className="shrink-0 grayscale opacity-50 hover:opacity-90 hover:grayscale-0 transition-all duration-200 cursor-default">
-                <span className={`text-[#222] ${c.style}`}>{c.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <LogoTicker isHe={isHe} />
 
       {/* ── WHY CHOOSE ───────────────────────────────────────────── */}
       <section id="why" className="bg-[#f4f4f4] py-20 px-6">
@@ -307,38 +370,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 stagger">
               {whyItems.map((item, i) => (
                 <div key={i} className={`${cardBase} p-6 card-lift hover:border-[#FFD000]/60 transition-all duration-200 reveal`}>
-                  <h3 className="font-bold text-[#111] text-[15px] mb-2">{isHe ? item.titleHe : item.titleEn}</h3>
-                  <p className="text-sm text-[#555] leading-relaxed">{isHe ? item.descHe : item.descEn}</p>
+                  <p className="text-3xl font-black text-[#FFD000] mb-1 leading-none">{isHe ? item.statHe : item.statEn}</p>
+                  <h3 className="font-bold text-[#111] text-[14px] mb-1">{isHe ? item.titleHe : item.titleEn}</h3>
+                  <p className="text-[12px] text-[#666] leading-snug">{isHe ? item.descHe : item.descEn}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Trust banner */}
-          <div className={`${cardBase} mt-14 p-8 text-center reveal`}>
-            <h3 className="text-xl font-black text-[#111] mb-1">
-              {isHe ? "סטודיו מהמובילים בישראל" : "Israel's leading video production studio"}
-            </h3>
-            <p className="text-sm text-[#555] mb-6">
-              {isHe
-                ? "חברות הייטק, נדל\"ן ומגזר ביטחוני בוחרות ב-videoshop."
-                : "High-tech, real estate and defense companies across Israel choose videoshop."}
-            </p>
-            <div className="flex justify-center flex-wrap gap-10 stagger">
-              {[
-                { to: 20,  suffix: "+", labelHe: "שנות ניסיון",      labelEn: "Years Experience" },
-                { to: 100, suffix: "+", labelHe: "פרויקטים הושלמו",  labelEn: "Projects Completed" },
-                { to: 4.9, suffix: "★", labelHe: "דירוג ממוצע",      labelEn: "Average Rating" },
-              ].map((s) => (
-                <div key={s.labelEn} className="text-center reveal-scale">
-                  <p className="text-3xl font-black text-[#111]">
-                    <CountUp to={s.to} suffix={s.suffix} />
-                  </p>
-                  <p className="text-xs text-[#717171] mt-1 font-medium">{isHe ? s.labelHe : s.labelEn}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -356,16 +395,76 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               {isHe ? "הצג עוד ←" : "Show more →"}
             </Link>
           </div>
-          <PortfolioGrid videos={portfolioVideos} locale={locale} />
+          <PortfolioGrid anchors={portfolioAnchors} pool={portfolioPool} locale={locale} />
         </div>
       </section>
+
+      {/* ── BLOG PREVIEW ─────────────────────────────────────────── */}
+      {(() => {
+        const recentPosts = [...vlogPosts]
+          .filter(p => p.coverImage || p.relatedYoutubeId)
+          .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+          .slice(0, 3);
+        return (
+          <section className="bg-[#111] py-20 px-6">
+            <div className="max-w-[var(--container)] mx-auto">
+              <div className="flex flex-wrap items-center justify-between gap-y-3 mb-10 reveal">
+                <div>
+                  <p className="inline-flex items-center gap-2 text-xs font-bold text-[#FFD000] uppercase tracking-widest mb-3">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFD000] inline-block shrink-0" />
+                    {isHe ? "ישר מהסטודיו" : "From the studio"}
+                  </p>
+                  <h2 className="text-2xl md:text-3xl font-black text-white tracking-[-0.01em]">
+                    {isHe ? "תובנות והפקות אחרונות" : "Latest insights & productions"}
+                  </h2>
+                </div>
+                <Link href="/vlog" className="text-sm font-bold text-[#FFD000] underline underline-offset-4 hover:no-underline shrink-0">
+                  {isHe ? "כל הכתבות ←" : "All articles →"}
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {recentPosts.map((post) => (
+                  <Link
+                    key={post.id}
+                    href={`/vlog/${post.id}`}
+                    className="group bg-white/5 border border-white/10 rounded-[14px] overflow-hidden hover:border-[#FFD000]/50 transition-all duration-200 reveal"
+                  >
+                    <div className="relative aspect-video overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={post.coverImage ?? `https://img.youtube.com/vi/${post.relatedYoutubeId}/mqdefault.jpg`}
+                        alt={isHe ? post.titleHe : post.titleEn}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-black/40" />
+                      <div className="absolute top-3 end-3 bg-[#FFD000] text-[#111] text-[10px] font-bold px-2 py-1 rounded-full">
+                        {post.readingTime} {isHe ? "דק׳" : "min"}
+                      </div>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-white font-bold text-[14px] leading-snug mb-2 group-hover:text-[#FFD000] transition-colors duration-200 line-clamp-2">
+                        {isHe ? post.titleHe : post.titleEn}
+                      </h3>
+                      <p className="text-[#888] text-xs leading-relaxed line-clamp-2">
+                        {isHe ? post.excerptHe : post.excerptEn}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* ── SPECIALTIES ──────────────────────────────────────────── */}
       <section id="specialties" className="bg-[#f4f4f4] py-20 px-6">
         <div className="max-w-[var(--container)] mx-auto">
           <p className={`${sectionLabel} justify-center w-full flex reveal`}>{yellowDot}{isHe ? "תחומי התמחות" : "Specialties"}</p>
           <h2 className="text-3xl md:text-4xl font-black text-[#111] text-center tracking-[-0.01em] mb-12 reveal">
-            {isHe ? "מה אנחנו מציעים" : "What we offer"}
+            {isHe ? "אילו סרטי תדמית והפקות וידאו אנחנו מפיקים?" : "What types of corporate videos and brand films do we produce?"}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger">
             {specialties.map((s, i) => (
@@ -389,29 +488,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* ── TESTIMONIAL ──────────────────────────────────────────── */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-2xl mx-auto">
-          <div className={`${cardBase} p-8 md:p-12 border-s-4 border-s-[#FFD000] reveal`}>
-            <div className="flex gap-0.5 mb-5">
-              {[...Array(5)].map((_, j) => (
-                <svg key={j} className="w-5 h-5 text-[#FFD000]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-              ))}
-            </div>
-            <blockquote className="text-lg md:text-xl text-[#111] font-medium leading-relaxed mb-7">
-              &ldquo;{isHe
-                ? "עבודה עם videoshop הייתה game changer אמיתי. יצירתיים, אמינים ותמיד צעד אחד קדימה."
-                : "Working with videoshop was a real game changer. Creative, reliable, and always one step ahead."}&rdquo;
-            </blockquote>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#FFD000] rounded-full flex items-center justify-center shrink-0">
-                <span className="font-black text-sm text-[#111]">DM</span>
-              </div>
-              <div>
-                <p className="font-bold text-[#111] text-sm">Daniel Menashe</p>
-                <p className="text-xs text-[#717171]">{isHe ? "מנהל שיווק" : "Marketing Director"}</p>
-              </div>
-            </div>
-          </div>
+          <TestimonialRotator isHe={isHe} />
         </div>
       </section>
 
@@ -420,7 +497,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="max-w-4xl mx-auto">
           <p className={`${sectionLabel} justify-center w-full flex reveal`}>{yellowDot}{isHe ? "איך זה עובד?" : "How it works"}</p>
           <h2 className="text-3xl md:text-4xl font-black text-[#111] text-center tracking-[-0.01em] mb-3 reveal">
-            {isHe ? "התהליך שלנו" : "Our Process"}
+            {isHe ? "איך מפיקים סרט תדמית איתנו?" : "How does video production work with us?"}
           </h2>
           <p className="text-[#555] text-center mb-12 max-w-sm mx-auto reveal">
             {isHe ? "מבריף ועד הסרט הסופי, פשוט, מהיר ומקצועי." : "From brief to final film: simple, fast and professional."}
@@ -438,6 +515,22 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <p className="text-[10px] font-bold uppercase tracking-widest text-[#717171] mb-1.5">{step.tag}</p>
                 <h3 className="font-bold text-[#111] text-lg mb-2">{isHe ? step.titleHe : step.titleEn}</h3>
                 <p className="text-sm text-[#555] leading-relaxed">{isHe ? step.descHe : step.descEn}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Stats */}
+          <div className="flex justify-center flex-wrap gap-12 mt-12 mb-10 stagger">
+            {[
+              { to: 20,  suffix: "+", labelHe: "שנות ניסיון",      labelEn: "Years Experience" },
+              { to: 100, suffix: "+", labelHe: "פרויקטים הושלמו",  labelEn: "Projects Completed" },
+              { to: 4.9, suffix: "★", labelHe: "דירוג ממוצע",      labelEn: "Average Rating" },
+            ].map((s) => (
+              <div key={s.labelEn} className="text-center reveal-scale">
+                <p className="text-4xl font-black text-[#111]">
+                  <CountUp to={s.to} suffix={s.suffix} />
+                </p>
+                <p className="text-xs text-[#717171] mt-1 font-medium">{isHe ? s.labelHe : s.labelEn}</p>
               </div>
             ))}
           </div>

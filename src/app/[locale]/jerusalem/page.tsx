@@ -50,7 +50,7 @@ export default async function JerusalemPage({ params }: { params: Promise<{ loca
       <section className="pt-32 pb-20 px-6 relative overflow-hidden" dir={isHe ? "rtl" : "ltr"}>
         <div aria-hidden="true" className="animate-float-slow pointer-events-none absolute -top-16 -right-16 w-72 h-72 rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }} />
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
+          <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
             {isHe ? "הפקת וידאו ירושלים" : "Video Production Jerusalem"}
           </span>
           <h1 className="text-4xl md:text-6xl font-black text-[#111] mt-6 mb-6 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>

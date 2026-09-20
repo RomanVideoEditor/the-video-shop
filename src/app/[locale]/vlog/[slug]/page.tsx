@@ -225,7 +225,7 @@ export default async function BlogPostPage({
         {/* Tags + meta */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
           {post.tags.map((tag) => (
-            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/25 px-3 py-1 rounded-full">
+            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/40 px-3 py-1 rounded-full">
               {tag}
             </span>
           ))}
@@ -245,7 +245,7 @@ export default async function BlogPostPage({
 
         {/* Related video — shown before article title if exists */}
         {(post.relatedYoutubeId || post.relatedVimeoId) && (
-          <div className="mb-10 rounded-xl overflow-hidden border border-gray-200 shadow-2xl">
+          <div className="mb-10 rounded-xl overflow-hidden">
             <VideoEmbed
               youtubeId={post.relatedYoutubeId}
               vimeoId={post.relatedVimeoId}
@@ -301,7 +301,7 @@ export default async function BlogPostPage({
           <div className="mt-10 flex items-center gap-4 p-5 border border-[#FFD000]/20 rounded-xl bg-[#FFD000]/5">
             <div className="w-px h-10 bg-[#FFD000]/40 shrink-0" />
             <div className="flex-1">
-              <p className="text-xs font-semibold tracking-widest text-[#FFD000]/60 uppercase mb-1">
+              <p className="text-xs font-semibold tracking-widest text-[#FFD000]/80 uppercase mb-1">
                 {isHe ? "השירות הרלוונטי" : "Related Service"}
               </p>
               <Link
@@ -369,7 +369,7 @@ export default async function BlogPostPage({
 
         {/* CTA */}
         <div className="mt-14 p-8 bg-white border border-gray-200 rounded-2xl">
-          <p className="text-xs font-semibold tracking-tight text-[#FFD000]/60 mb-3">videoshop</p>
+          <p className="text-xs font-semibold tracking-tight text-[#FFD000] mb-3">videoshop</p>
           <h3 className="text-xl md:text-2xl font-black text-[#111] mb-3 leading-tight">
             {isHe
               ? "הפרויקט הבא שלכם מתחיל בשיחה"

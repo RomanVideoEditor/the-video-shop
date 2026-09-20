@@ -17,6 +17,50 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 const testimonials = [
   {
+    nameHe: "דניאל מנשה",
+    nameEn: "Daniel Menashe",
+    roleHe: "Head of Design, Bright Data",
+    roleEn: "Head of Design, Bright Data",
+    quoteHe: "Video Shop פשוט מבינים את העניין. תהליך חלק, תוצאות מהממות. ממליץ בחום.",
+    quoteEn: "Video Shop just gets it. Smooth process, killer results. Highly recommend.",
+    category: "hightech",
+    rating: 5,
+    color: "#007AFF",
+  },
+  {
+    nameHe: "מאיה נגלר",
+    nameEn: "Maya Nagler",
+    roleHe: "Marcom Manager, אשטרום נכסים",
+    roleEn: "Marcom Manager, Ashtrom",
+    quoteHe: "העבודה עם Video Shop הייתה game changer אמיתי. יצירתיים, אמינים, ותמיד צעד קדימה.",
+    quoteEn: "Working with Video Shop was a game changer. Creative, reliable, and always one step ahead.",
+    category: "corporate",
+    rating: 5,
+    color: "#AF52DE",
+  },
+  {
+    nameHe: "ענת אסא",
+    nameEn: "Anat Assa",
+    roleHe: "VP HR, CropX",
+    roleEn: "VP HR, CropX",
+    quoteHe: "Video Shop פגעו בול! יצירתיים, אמינים, בזמן ובתקציב. מומלצים בחום!",
+    quoteEn: "Video Shop nailed it! Creative, reliable, on time, and on budget. Highly recommended!",
+    category: "corporate",
+    rating: 5,
+    color: "#34C759",
+  },
+  {
+    nameHe: "אשלי רוז",
+    nameEn: "Ashley Rose",
+    roleHe: "Marketing, i-BrainTech",
+    roleEn: "Marketing, i-BrainTech",
+    quoteHe: "Video Shop הביאו את הסיפור שלנו לחיים עם דיוק ויצירתיות. הסרט הסופי העלה את המותג שלנו באחת.",
+    quoteEn: "Video Shop brought our story to life with precision and creativity. The final video was spot-on and elevated our brand instantly.",
+    category: "hightech",
+    rating: 5,
+    color: "#FF6B00",
+  },
+  {
     nameHe: "ד״ר מיכל לוי",
     nameEn: "Dr. Michal Levy",
     roleHe: "מנכ״לית, MedTech Solutions",
@@ -25,78 +69,85 @@ const testimonials = [
     quoteEn: "We got a brand film that opened doors for us in the US. Everyone who watched it asked for a meeting. The ROI was phenomenal — 10x within a year.",
     category: "hightech",
     rating: 5,
+    color: "#FF2D55",
   },
   {
     nameHe: "אריאל שפירא",
     nameEn: "Ariel Shapira",
     roleHe: "VP Marketing, CyberGuard",
     roleEn: "VP Marketing, CyberGuard",
-    quoteHe: "הצוות הבין את עולם הסייבר על בוריו. לא היינו צריכים להסביר מונחים טכניים — הם כבר ידעו. הסרט משמש אותנו בכל כנס ב-RSA ו-CyberWeek.",
-    quoteEn: "The team understood the cyber world inside out. We didn't need to explain technical terms — they already knew. The film serves us at every RSA and CyberWeek conference.",
+    quoteHe: "הצוות הבין את עולם הסייבר על בוריו. לא היינו צריכים להסביר מונחים טכניים — הם כבר ידעו.",
+    quoteEn: "The team understood the cyber world inside out. We didn't need to explain technical terms — they already knew.",
     category: "hightech",
     rating: 5,
+    color: "#5856D6",
   },
   {
     nameHe: "נועה כהן",
     nameEn: "Noa Cohen",
     roleHe: "Head of HR, FinTech Pro",
     roleEn: "Head of HR, FinTech Pro",
-    quoteHe: "סרט ה-Employer Branding שלנו הכפיל את אחוז הפניות הספונטניות ב-LinkedIn. אנחנו עברנו ממשיכת מועמדים לדחייתם — זו בעיה טובה להיות בה.",
-    quoteEn: "Our Employer Branding film doubled spontaneous LinkedIn inquiries. We went from attracting candidates to turning them away — that's a good problem to have.",
+    quoteHe: "סרט ה-Employer Branding שלנו הכפיל את אחוז הפניות הספונטניות ב-LinkedIn. עברנו ממשיכת מועמדים לדחייתם.",
+    quoteEn: "Our Employer Branding film doubled spontaneous LinkedIn inquiries. We went from attracting candidates to turning them away.",
     category: "corporate",
     rating: 5,
+    color: "#34AADC",
   },
   {
     nameHe: "ליאור בן דוד",
     nameEn: "Lior Ben David",
     roleHe: "מנהל שיווק, RealEstate360",
     roleEn: "Marketing Manager, RealEstate360",
-    quoteHe: "הדרונים, ה-CGI ואווירת הסרט היו ברמה של Hollywood. הלקוחות שאלו אם זה פרויקט בחו\"ל. מכרנו 40% מהיחידות לפני גמר הבנייה.",
-    quoteEn: "The drones, CGI, and film atmosphere were Hollywood-level. Clients asked if it was a project abroad. We sold 40% of units before construction ended.",
+    quoteHe: "הדרונים, ה-CGI ואווירת הסרט היו ברמה של Hollywood. מכרנו 40% מהיחידות לפני גמר הבנייה.",
+    quoteEn: "The drones, CGI, and film atmosphere were Hollywood-level. We sold 40% of units before construction ended.",
     category: "realestate",
     rating: 5,
-  },
-  {
-    nameHe: "שירה אברמוביץ",
-    nameEn: "Shira Abramowitz",
-    roleHe: "COO, EduTech Academy",
-    roleEn: "COO, EduTech Academy",
-    quoteHe: "סרטי ההדרכה שהכינו עבורנו חסכו לנו 200 שעות הדרכה בשנה. הם ברורים, מרתקים ופשוט עובדים — גם לעובדים שאין להם סבלנות לסרטונים.",
-    quoteEn: "The training videos they made saved us 200 training hours a year. They're clear, engaging, and simply work — even for employees with no patience for videos.",
-    category: "training",
-    rating: 5,
+    color: "#FF9500",
   },
   {
     nameHe: "אמיר ברק",
     nameEn: "Amir Barak",
     roleHe: "CMO, AI Startup",
     roleEn: "CMO, AI Startup",
-    quoteHe: "הכנו סרט שמסביר מוצר AI מורכב תוך 90 שניות בצורה שגם לא-טכנולוגים מבינים. זה לא קל לעשות. הם עשו את זה נפלא.",
-    quoteEn: "We created a film explaining a complex AI product in 90 seconds in a way even non-technical people understand. That's not easy to do. They did it beautifully.",
+    quoteHe: "הכנו סרט שמסביר מוצר AI מורכב תוך 90 שניות. זה לא קל לעשות. הם עשו את זה נפלא.",
+    quoteEn: "We made a film explaining a complex AI product in 90 seconds in a way even non-technical people understand. They did it beautifully.",
     category: "ai",
     rating: 5,
+    color: "#FF3B30",
   },
   {
     nameHe: "רחל מזרחי",
     nameEn: "Rachel Mizrahi",
     roleHe: "Brand Manager, GlobalRetail",
     roleEn: "Brand Manager, GlobalRetail",
-    quoteHe: "עבדנו איתם על 3 פרויקטים ב-18 חודשים. הם תמיד בתקציב, תמיד בזמן ותמיד מספקים מעל הציפיות. שותפות ארוכת-טווח.",
-    quoteEn: "We worked with them on 3 projects in 18 months. Always on budget, always on time, always delivering above expectations. A long-term partnership.",
+    quoteHe: "עבדנו איתם על 3 פרויקטים ב-18 חודשים. תמיד בתקציב, תמיד בזמן ותמיד מספקים מעל הציפיות.",
+    quoteEn: "We worked with them on 3 projects in 18 months. Always on budget, always on time, always delivering above expectations.",
     category: "corporate",
     rating: 5,
-  },
-  {
-    nameHe: "יוני גולן",
-    nameEn: "Yoni Golan",
-    roleHe: "Founder, DefenseTech",
-    roleEn: "Founder, DefenseTech",
-    quoteHe: "ביטחוני זה לא קל לצלם — גישות מוגבלות, חומרה סודית, רגישות גבוהה. הם ידעו בדיוק איך לעבוד בסביבה כזו. מקצועיים ברמה שלא ראיתי.",
-    quoteEn: "Defense is not easy to film — limited access, classified hardware, high sensitivity. They knew exactly how to work in such an environment. Professional at a level I haven't seen.",
-    category: "defense",
-    rating: 5,
+    color: "#30B0C7",
   },
 ];
+
+function getInitials(name: string) {
+  const parts = name.replace(/ד״ר\s*/, "").trim().split(/\s+/);
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function Avatar({ name, color }: { name: string; color: string }) {
+  const initials = getInitials(name);
+  return (
+    <div
+      className="w-11 h-11 rounded-full flex items-center justify-center shrink-0 text-white text-sm font-bold tracking-wide select-none"
+      style={{
+        background: `linear-gradient(135deg, ${color}dd 0%, ${color} 100%)`,
+        boxShadow: `0 2px 8px ${color}55`,
+      }}
+    >
+      {initials}
+    </div>
+  );
+}
 
 const stars = (n: number) =>
   Array.from({ length: n }, (_, i) => (
@@ -121,7 +172,7 @@ export default async function TestimonialsPage({ params }: { params: Promise<{ l
           style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }}
         />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
+          <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full" style={{ animation: "fadeInUp .45s ease both" }}>
             {isHe ? "לקוחות מספרים" : "Testimonials"}
           </span>
           <h1 className="text-4xl md:text-5xl font-black text-[#111] mt-6 mb-4 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>
@@ -150,9 +201,7 @@ export default async function TestimonialsPage({ params }: { params: Promise<{ l
                 &quot;{isHe ? t.quoteHe : t.quoteEn}&quot;
               </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-[#f0f0f0]">
-                <div className="w-10 h-10 rounded-full bg-[#FFD000]/20 flex items-center justify-center text-sm font-black text-[#111]">
-                  {(isHe ? t.nameHe : t.nameEn).charAt(0)}
-                </div>
+                <Avatar name={isHe ? t.nameHe : t.nameEn} color={t.color} />
                 <div>
                   <div className="font-bold text-[#111] text-sm">{isHe ? t.nameHe : t.nameEn}</div>
                   <div className="text-[#717171] text-xs">{isHe ? t.roleHe : t.roleEn}</div>

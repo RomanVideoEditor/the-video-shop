@@ -69,8 +69,8 @@ function buildSchema(locale: string) {
         priceRange: "$$$",
         aggregateRating: {
           "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "47",
+          ratingValue: "5.0",
+          reviewCount: "12",
           bestRating: "5",
           worstRating: "1",
         },
@@ -138,8 +138,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"} className={`${inter.variable} ${heebo.variable}`}>
       <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://img.youtube.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preload" href="/hero-poster.jpg" as="image" fetchPriority="high" />
+        <link rel="preload" href="/hero.mp4" as="video" type="video/mp4" fetchPriority="high" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       </head>
       <body className="min-h-screen flex flex-col bg-[#f4f4f4] text-[#111]">

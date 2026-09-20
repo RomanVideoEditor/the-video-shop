@@ -53,6 +53,29 @@ export default async function AnimationPage({
         ctaText={isHe ? "מה הרעיון שצריך לפרוץ מהמסך?" : "What's the idea that needs to break out of the screen?"}
         badge={isHe ? "אנימציה ומוגרפיקה" : "Animation & Motion Graphics"}
         locale={locale}
+        relatedVideos={[
+          { id: "nFaOyZwj2PY", titleHe: "Buildots — גרין סקרין וקומפוזיטינג", titleEn: "Buildots — Green Screen & Compositing" },
+          { id: "3mxQZMC9ZpI", titleHe: "Ludeo — קונספט פילם גיימינג", titleEn: "Ludeo — Gaming Concept Film" },
+          { id: "URDNpEwabCc", titleHe: "Airobotics — Developer Program", titleEn: "Airobotics — Developer Program" },
+        ]}
+        relatedPosts={[
+          { id: "buildots-green-screen-blog", titleHe: "איך מפיקים גרין סקרין לסרט B2B", titleEn: "How to Produce Green Screen for a B2B Film" },
+          { id: "ludeo-gaming-blog", titleHe: "גיימינג מפגש עם קולנוע — קונספט פילם ל-Ludeo", titleEn: "Gaming Meets Cinema — Concept Film for Ludeo" },
+          { id: "airobotics-developer-program-blog", titleHe: "כשהאנימציה מסבירה את הטכנולוגיה — Airobotics", titleEn: "When Animation Explains the Tech — Airobotics" },
+        ]}
+        faqItems={isHe ? [
+          { q: "כמה עולה סרטון אנימציה לחברה?", a: "סרטון אנימציה לחברה עולה בדרך כלל בין 12,000 ל-70,000 ש\"ח, תלוי באורך וסגנון. סרטוני Explainer קצרים (60-90 שניות) ב-2D הם הנפוצים ביותר לחברות הייטק ו-SaaS. מוגרפיקה פשוטה זולה יותר; אנימציה תלת-ממד מורכבת עולה יותר." },
+          { q: "מה ההבדל בין מוגרפיקה לאנימציה?", a: "מוגרפיקה (Motion Graphics) עובדת עם צורות, טקסט ואיקונים — אידיאלית להסבר תהליכים, נתונים ומוצרי SaaS. אנימציה כוללת דמויות, עולמות ועלילות — טובה יותר לסיפור רגשי. לרוב הפרויקטים הב-B2B שלנו אנחנו משלבים את שניהם." },
+          { q: "כמה זמן לוקח לייצר סרטון אנימציה?", a: "4-6 שבועות מקיק-אוף עד מסירה: שבועיים לסקריפט ו-storyboard, שבועיים לאנימציה, שבוע למיקס סאונד ומוזיקה. פרויקטים קצרים ופשוטים יכולים להסתיים תוך 3 שבועות." },
+          { q: "האם ניתן לשלב אנימציה עם צילום חי (Live Action)?", a: "כן — זה בדיוק מה שעשינו עבור Buildots ו-Ludeo. Hybrid production משלב אנשים ומוצרים אמיתיים עם עולמות אנימטיים — התוצאה נראית כמו הפקת ענק ועובדת מצוין לקמפיינים שיווקיים ולסרטי השקה." },
+          { q: "האם האנימציה מתאימה לרשתות חברתיות?", a: "לגמרי. כל סרטוני האנימציה שלנו מסופקים גם בגרסאות 9:16 לרילס וסטוריז, 1:1 לפיד, ועריכות מקוצרות ל-15/30 שניות לפרסום ממומן." },
+        ] : [
+          { q: "How much does an animated explainer video cost?", a: "An animated explainer video typically costs between $3,000 and $18,000 USD, depending on length and style. Short 60-90 second 2D explainer videos are most common for high-tech and SaaS companies. Basic motion graphics are less expensive; complex 3D animation costs more." },
+          { q: "What is the difference between motion graphics and animation?", a: "Motion graphics work with shapes, text, and icons — ideal for explaining processes, data, and SaaS products. Animation includes characters, worlds, and stories — better for emotional storytelling. For most B2B projects, we combine both." },
+          { q: "How long does animation production take?", a: "4-6 weeks from kickoff to delivery: two weeks for script and storyboard, two weeks for animation, one week for sound mix and music. Short, simpler projects can be completed in 3 weeks." },
+          { q: "Can animation be combined with live action filming?", a: "Yes — this is exactly what we did for Buildots and Ludeo. Hybrid production combines real people and products with animated worlds — the result looks like a major production and works great for marketing campaigns and launch films." },
+          { q: "Is animation suitable for social media?", a: "Absolutely. All our animation videos are delivered in 9:16 versions for Reels and Stories, 1:1 for feed, and short edits of 15/30 seconds for paid advertising." },
+        ]}
       />
     </>
   );

@@ -1,4 +1,4 @@
-export type VideoCategory =
+﻿export type VideoCategory =
   | "hightech"
   | "product"
   | "ai"
@@ -41,6 +41,202 @@ export interface PortfolioVideo {
 }
 
 export const portfolioVideos: PortfolioVideo[] = [
+  {
+    id: "ashtromist-flagship-short",
+    youtubeId: "8RbqUaMR9_c",
+    titleHe: "להיות אשטרומיסט זה קודם כל אופי | פרויקט הדגל — גרסה קצרה",
+    titleEn: "Being an Ashtromist Is First of All Character | Flagship Campaign — Short Version",
+    challengeHe: "לקחת קונצרן בנייה ותשתיות עצום עם אלפי עובדים בעשרות אתרים ולזקק את כולם לזהות ארגונית אחת שמניעה גאווה, שייכות וגיוס. הקמפיין כולו נבנה סביב שאלה אחת: מה עושה אדם לאשטרומיסט?",
+    challengeEn: "Take a massive construction and infrastructure conglomerate with thousands of employees across dozens of sites and distill them into one organizational identity that drives pride, belonging, and recruitment. The entire campaign was built around one question: what makes a person an Ashtromist?",
+    solutionHe: "מסע צילומים ארצי אינטנסיבי: אתרי בנייה פעילים, משרדים, חמ\"לים ותשתיות בכל רחבי ישראל. בימוי non-actors שהוציא גאווה ואותנטיות אמיתית. עריכת 'פינג-פונג' קצבית עם מעברים בין דוברים תוך משפט, שינויי לוקיישן תכופים וצילומי רחפן של מגדלי LYFE. מאותה הפקה: גרסה ארוכה לקמפיין, גרסה קצרה לרשתות, ועשרות נגזרות לפייסבוק, גוגל ודיספליי. 'אשטרומיסט' הפך לזהות — לא לסיסמה.",
+    solutionEn: "An intensive nationwide filming journey: active construction sites, offices, command centers, and infrastructure across Israel. Non-actor directing that brought out real pride and authenticity. Rhythmic 'ping-pong' editing with cuts between speakers mid-sentence, frequent location changes, and drone footage of the LYFE towers. From the same production: a long campaign version, a short social version, and dozens of derivatives for Facebook, Google, and display ads. 'Ashtromist' became an identity — not a slogan.",
+    category: "recruitment",
+    client: "Ashtrom Group",
+    duration: "0:45",
+    date: "2024-06-01",
+  },
+  {
+    id: "airobotics-developer-program",
+    youtubeId: "URDNpEwabCc",
+    titleHe: "Airobotics Developer Program: סרט תדמית והכרזה לפלטפורמת רחפנים תעשייתיים",
+    titleEn: "Airobotics Developer Program: Brand & Announcement Film for Industrial Drone Platform",
+    challengeHe: "להכריז על תוכנית מפתחים חדשה לפלטפורמת רחפנים אוטונומיים תעשייתיים — קהל מפתחי תוכנה ב-B2B — ולהסביר טכנולוגיה מורכבת (API, מכונה וירטואלית, Payload, Airbase) בצורה ויזואלית ברורה ומשכנעת.",
+    challengeEn: "Announce a new developer program for an industrial autonomous drone platform — targeting B2B software developers — and explain complex technology (API, virtual machine, payload, Airbase) in a visually clear and compelling way.",
+    solutionHe: "מבנה Host-driven עם מנחה אחת (סיוון אברהמי) שמובילה את כל הסרטון — ממשרדי הפיתוח דרך מתקן הניסויים ועד לקריאה לפעולה. שפה ויזואלית תעשייתית נקייה בפלטת שחור-אפור-כתום. שילוב VFX ו-UI integration אורגני על גבי חומרי וידאו אמיתיים. צילומי שטח של המראה אוטונומית מ-Airbase תחת רשתות הגנה. עריכה שמאזנת קצב דינמי עם מסרים טכניים מורכבים.",
+    solutionEn: "Host-driven structure with a single presenter (Sivan Abrami) guiding the entire film — from the development offices through the test facility to the CTA. Clean industrial visual language in black-gray-orange palette. Organic VFX and UI integration layered on real video footage. Field shots of autonomous launches from Airbase under protective nets. Editing that balances dynamic pacing with complex technical messaging.",
+    category: "hightech",
+    client: "Airobotics",
+    duration: "3:28",
+    date: "2024-04-01",
+  },
+  {
+    id: "iron-drone-airobotics",
+    youtubeId: "N4iNxvFGA34",
+    titleHe: "IRON DRONE: סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
+    titleEn: "IRON DRONE: The Film That Defined a Public Company's Visual Language | Airobotics / Ondas Group",
+    challengeHe: "להפיק סרט מוצר לטכנולוגיה ביטחונית מתקדמת, בלי Brand Book, בלי שפת אינפוגרפיקה קיימת, ולצאת עם זהות מותגית שתאמץ כסטנדרט הרשמי.",
+    challengeEn: "Produce a product film for advanced defense technology, without a Brand Book, without existing infographic language, and emerge with a brand identity adopted as the official standard.",
+    solutionHe: "בניית Visual DNA מאפס: פלטת צבעים, טיפוגרפיה טכנולוגית, HUD/UI שמשדר סמכות מבצעית. Speed Ramps שמאיטים ברגעי הליבה הטכנולוגיים (שיגור, נעילת מטרה, יירוט) ומאיצים בתנועת מרדף. Drone-to-Drone Tracking אוויריים וסאונד-דיזיין כירורגי שיושב על הביט. התוצאה: הגרפיקה שפותחה לסרט הפכה לסטנדרט העיצובי הרשמי של ONDS.",
+    solutionEn: "Built Visual DNA from scratch: color palette, tech typography, HUD/UI conveying operational authority. Speed Ramps that slow at core technical moments (launch, target lock, intercept) and accelerate in pursuit motion. Aerial Drone-to-Drone tracking and surgical sound design sitting on the beat. Result: the graphics developed for the film became ONDS's official design standard.",
+    category: "ai",
+    client: "Airobotics / Ondas Group",
+    duration: "2:20",
+    date: "2023-12-01",
+  },
+  {
+    id: "airobotics-optimus-faa-certification",
+    youtubeId: "mqVFjv-gPS4",
+    titleHe: "Airobotics Optimus: הכרזת FAA Type Certification — הרחפן האוטונומי הראשון מעל אנשים",
+    titleEn: "Airobotics Optimus: FAA Type Certification Announcement — The First Autonomous Drone Over People",
+    challengeHe: "להעביר מסר רגולטורי מורכב (FAA Type Certification היסטורי) בצורה ויזואלית מרגשת ויוקרתית — לקהל משקיעים, לקוחות B2B ורגולטורים בינלאומיים — עבור חברה נסחרת בנאסד\"ק (ONDS).",
+    challengeEn: "Convey a complex regulatory message (historic FAA Type Certification) in a visually exciting and prestigious way — to an audience of investors, B2B clients, and international regulators — for a NASDAQ-listed company (ONDS).",
+    solutionHe: "שילוב Keynote תאגידית (אריק ברוק, מנכ\"ל Ondas Holdings) עם לוקיישן לילי יוקרתי — עמדת עגינה על גג בניין על רקע קו רקיע מואר. תקריבי מאקרו של הזרוע הרובוטית (Robotic Arm) והחלפת סוללה אוטונומית בקפסולה. צילומי אוויר ואקשן מעל ערים, מפעלים ואתרי חירום. טיפוגרפיה בולטת ('TYPE CERTIFICATION', '24/7', 'HIGHEST LEVEL') ופסקול אלקטרוני קצבי שמגיע לשיא בהמראת הרחפן.",
+    solutionEn: "Combined corporate Keynote (Eric Brock, CEO of Ondas Holdings) with a premium night location — docking station on a rooftop against an illuminated skyline. Macro close-ups of the Robotic Arm and autonomous battery swap inside the capsule. Aerial and action shots over cities, industrial plants, and emergency sites. Bold typography ('TYPE CERTIFICATION', '24/7', 'HIGHEST LEVEL') and a rhythmic electronic score building to a climax at the drone's launch.",
+    category: "ai",
+    client: "Airobotics / Ondas Holdings",
+    duration: "2:00",
+    date: "2024-09-01",
+  },
+  {
+    id: "buildots-green-screen",
+    youtubeId: "nFaOyZwj2PY",
+    titleHe: "Buildots: הפקת מסך ירוק ואולפן — שליטה מוחלטת על מציאות הצילום",
+    titleEn: "Buildots: Green Screen & Studio Production — Full Control Over the Filming Reality",
+    challengeHe: "להציג את טכנולוגיית ניהול הבנייה של Buildots בצורה ויזואלית עוצמתית, מבלי לגרור צוותי הפקה לאתרי בנייה פעילים ומסוכנים לימי צילום ארוכים. הסרט נדרש להכיל טאלנט, סביבות עבודה מורכבות, ממשקי תוכנה (UI) ולשמור על קצב קומי-דינמי לאורך כולו.",
+    challengeEn: "Present Buildots' construction management technology in a visually powerful way, without dragging production crews to active, dangerous construction sites for long filming days. The film needed to feature talent, complex work environments, software UIs, and maintain a dynamic comic pace throughout.",
+    solutionHe: "הפקת Green Screen מוקפדת באולפן: הטאלנט צולם על רקע ירוק ונתפר בדיוק לסביבות בנייה, משרדים ולוקיישנים מורכבים. תאורת אולפן שמשקפת בדיוק את תאורת הרקע — ליצירת חיבור אורגני מושלם. שילוב VFX ו-UI Integration של ממשקי Buildots כך שנראים טבעיים לחלוטין בתוך הסצנה. בימוי קצבי ודרמתי-קומי שמעביר מסר תוכנתי מורכב (ניהול פרויקטים ובנייה) בצורה סוחפת.",
+    solutionEn: "Meticulous Green Screen studio production: talent filmed against green screen and seamlessly composited into construction environments, offices, and complex locations. Studio lighting that precisely mirrors background lighting — creating a perfectly organic integration. VFX and UI Integration of Buildots interfaces designed to look completely natural within the scene. Rhythmic dramatic-comic direction that delivers a complex software message (construction project management) in a compelling way.",
+    category: "hightech",
+    client: "Buildots",
+    duration: "2:15",
+    date: "2023-09-01",
+  },
+  {
+    id: "ludeo-gaming-concept",
+    youtubeId: "3mxQZMC9ZpI",
+    titleHe: "Ludeo: סרט קונספט לפלטפורמת הגיימינג שמהפכת את צפייה לשחייה",
+    titleEn: "Ludeo: Concept Film for the Gaming Platform That Turns Watching Into Playing",
+    challengeHe: "להסביר טכנולוגיה גיימינג חדשה לגמרי — מושג שגיימרים מעולם לא ראו — בדקה וחצי. הסרט נדרש לעבוד על שני קהלים בו-זמנית: גיימרים שרוצים להרגיש את ה-wow ומשקיעים/מפתחים שצריכים להבין את ה-how.",
+    challengeEn: "Explain a completely new gaming technology — a concept gamers have never seen — in a minute and a half. The film needed to work for two audiences simultaneously: gamers who want to feel the wow, and investors/developers who need to understand the how.",
+    solutionHe: "מבנה דו-שכבתי: Live-Action ריאליסטי בחדר גיימינג (תאורת RGB סגולה-כחולה) לעולם הגיימר, ולצדו עולמות אנימציה תלת-ממדיים עתידניים שמסבירים את הטכנולוגיה מאחורי הקלעים. דמויות אנימציה אבסטרקטיות ב'מעבדת Ludeo' מדגימות כיצד המערכת חותכת אוטומטית רגעי שיא, מגדירה יעדים ויוצרת קובץ משחק ניתן לשיתוף. סגיר בסלוגן 'Redefine how players discover and engage with your game'.",
+    solutionEn: "Dual-layer structure: realistic Live-Action in a gaming room (purple-blue RGB lighting) for the gamer world, alongside futuristic 3D animated worlds explaining the technology behind the scenes. Abstract animated characters in the 'Ludeo Lab' demonstrate how the system automatically clips epic moments, defines objectives, and creates a shareable playable file. Closing with the tagline 'Redefine how players discover and engage with your game'.",
+    category: "hightech",
+    client: "Ludeo",
+    duration: "1:18",
+    date: "2023-06-01",
+  },
+  {
+    id: "big-fashion-giliot-launch",
+    youtubeId: "yDJ5shdbFMw",
+    titleHe: "BIG FASHION גלילות: השקה בקמפיין חוצות ואווירי | תיעוד רחפן ועריכה קצבית",
+    titleEn: "BIG FASHION Gililot: Grand Opening Out-of-Home Campaign | Aerial Drone & Rhythmic Editing",
+    challengeHe: "לתעד ולהגביר את הנוכחות המותגית הענקית של השקת BIG FASHION גלילות במרחב הציבורי — עשרות שלטי חוצות, גשרי פרסום ושלטי ענק על גורדי שחקים לאורך ציר איילון — וליצור ממנה נכס שיווקי שמשדר דחיפות וציפייה.",
+    challengeEn: "Document and amplify the massive brand presence of the BIG FASHION Gililot launch in public space — dozens of out-of-home placements, advertising bridges, and giant building wraps along Ayalon — and create a marketing asset that conveys urgency and anticipation.",
+    solutionHe: "צילומי רחפן אוויריים בהיקף רחב מעל צירי תנועה מרכזיים, מגדלי עסקים ומטרופולין תוסס — מנקודת מבט שאי אפשר להשיג בצילום רגיל. עריכה קצבית מהירה מסונכרנת למוזיקה עם מעברים חדים בין יום ללילה שמדגישים את השלטים בתנאי תאורה שונים. התוצאה: תיעוד קמפיין OOH שמוכיח נוכחות בלתי אפשרית להתעלם ממנה.",
+    solutionEn: "Wide-scale aerial drone footage above central traffic arteries, business towers, and a vibrant metropolis — from a vantage point impossible to achieve with ground shooting. Fast rhythmic editing synced to music with sharp day-to-night transitions that highlight the signage in different lighting conditions. Result: an OOH campaign documentation that proves a presence impossible to ignore.",
+    category: "commercial",
+    client: "BIG Fashion",
+    duration: "0:45",
+    date: "2025-02-27",
+  },
+  {
+    id: "ashtrom-properties-brand",
+    youtubeId: "ome2LtSiFWQ",
+    titleHe: "אשטרום נכסים: סרט תדמית קורפורייט — 60 נכסים מניבים, ותק של עשרות שנים",
+    titleEn: "Ashtrom Properties: Corporate Brand Film — 60 Income-Producing Assets, Decades of Legacy",
+    challengeHe: "להציג פורטפוליו נדל\"ן עסקי ענק (700+ אלף מ\"ר, פעילות בגרמניה ואנגליה) בצורה שמשדרת גם עוצמה כלכלית וגם חמימות אנושית — ולדבר בו-זמנית לחברות הייטק, שותפים עסקיים וציבור הרחב.",
+    challengeEn: "Present a massive commercial real estate portfolio (700K+ sqm, operations in Germany and England) in a way that conveys both financial power and human warmth — while speaking simultaneously to high-tech companies, business partners, and the general public.",
+    solutionHe: "צילומי רחפן קולנועיים המציגים את קנה המידה האמיתי של הפרויקטים מפריסה ארצית רחבה. שילוב חכם בין לייב-אקשן לארכיון היסטורי עם גרפיקת טיים-ליין שמעצים את תחושת הוותק והאמינות. שילוב הדמיות CGI חלק עם צילומים אמיתיים לפרויקטים בשלבי פיתוח. שפה ויזואלית עקבית בצבעי המותג עם אדריכלות, אנשים ומרחבים — שמעניקה נשמה לפורטפוליו נדל\"ני.",
+    solutionEn: "Cinematic drone footage presenting the true scale of projects across a wide national spread. Smart integration of live-action with historical archive footage and timeline graphics that reinforce the sense of longevity and credibility. Seamless CGI visualization blended with real footage for projects in development stages. Consistent brand-color visual language combining architecture, people, and spaces — giving soul to a real estate portfolio.",
+    category: "realestate",
+    client: "Ashtrom Properties",
+    duration: "3:00",
+    date: "2024-03-01",
+  },
+  {
+    id: "vertica-medtech-onboarding",
+    youtubeId: "7vCj49e42Ow",
+    titleHe: "Vertica: סרט Onboarding לגאדג'ט רפואי אינטימי — CGI רפואי, אולפן ו-How-To",
+    titleEn: "Vertica: Onboarding Film for an Intimate Medical Device — Medical CGI, Studio & How-To",
+    challengeHe: "ליצור סרט הדרכה מלא למוצר MedTech אינטימי ורגיש (טיפול ב-RF) — בלי ליצור מבוכה — שיסביר פתיחת קופסה, חיבור מגנטי, ג'ל, ניקוי ומנגנון הטיפול עצמו, בסטנדרט גלובלי מוכן לפלטפורמות US/EU.",
+    challengeEn: "Create a complete instructional film for a sensitive, intimate MedTech product (RF treatment) — without creating embarrassment — explaining unboxing, magnetic connection, gel, cleaning, and the treatment mechanism itself, to a global standard ready for US/EU platforms.",
+    solutionHe: "בימוי אולפן עם High-key lighting נקי ושחקן בלבוש ניטרלי, קצב עריכה מכוון לאוכלוסיית יעד מבוגרת. שילוב CGI רפואי (Blue Mesh תלת-ממד) שמסביר את מיקום האלקטרודות והזרמים האלקטרומגנטיים — ללא צילום אינטימי. צילומי Overhead ו-Extreme Close-up מסונכרנים לזווית ה-CGI. סצנת ניקוי אמיתית בכיור לאמינות מלאה. תוצאה: סרטון שמוריד פניות שירות לקוחות, החזרות מוצר ושימושים שגויים.",
+    solutionEn: "Clean High-key studio direction with neutral wardrobe, editing pace calibrated for an older target audience. Medical CGI (3D Blue Mesh) explaining electrode placement and electromagnetic currents — without intimate filming. Overhead and Extreme Close-up shots synchronized to CGI angle. Real sink-cleaning scene for full credibility. Result: a film that reduces customer support calls, product returns, and misuse.",
+    category: "product",
+    client: "Vertica",
+    duration: "4:00",
+    date: "2023-11-01",
+  },
+  {
+    id: "startup-nation-connect2innovate",
+    youtubeId: "Fmd3fB5Pb-M",
+    titleHe: "Connect 2 Innovate | Startup Nation Central: דיפלומטיה דרך חדשנות — ישראל × מרוקו",
+    titleEn: "Connect 2 Innovate | Startup Nation Central: Innovation Diplomacy in Action — Israel × Morocco",
+    challengeHe: "לתעד ולהמחיש שיתוף פעולה טכנולוגי ואסטרטגי בין-מדינתי (ישראל-מרוקו) בסרט אחד — בלי ליפול לקלישאות תאגידיות — ולייצר כלי דיפלומטי שמניע השקעות ושותפויות B2B בינלאומיות.",
+    challengeEn: "Document and convey a strategic tech collaboration between Israel and Morocco in a single film — without falling into corporate clichés — and create a diplomatic tool that drives international B2B investments and partnerships.",
+    solutionHe: "מבנה נרטיבי שמתחיל ברגש ('In a region where borders often divide, innovation builds bridges') ועובר ממרחק לחיבור אנושי. שילוב בין צילומי שטח תעשייתיים (מפעלי מים, טכניון) לסצנות תרבות מקומית חמות (ארוחה מרוקאית, נגינה). תקריבי Close-up על לחיצות ידיים וחיוכים לצד שוטי רחפן רחבים. Kinetic Typography בכתב יד שמבטא אנושיות. פסקול אתני-מודרני שמלווה הדרגתית מאווירה שקטה לאנרגיה.",
+    solutionEn: "Narrative structure opening with emotion ('In a region where borders often divide, innovation builds bridges') transitioning from distance to human connection. Combining industrial field shots (water plants, Technion) with warm local culture scenes (Moroccan meal, music). Close-ups on handshakes and smiles alongside wide drone shots. Handwritten Kinetic Typography expressing humanity. Ethnic-modern soundtrack gradually building from quiet atmosphere to energy.",
+    category: "hightech",
+    client: "Startup Nation Central",
+    duration: "3:10",
+    date: "2024-01-01",
+  },
+  {
+    id: "intel-fab28-emergency-drill",
+    youtubeId: "d2Bckns6JTA",
+    titleHe: "Intel Fab 28: תרגיל חירום קולנועי — הפקת ענק רב-זירתית בסטנדרט בינלאומי",
+    titleEn: "Intel Fab 28: Cinematic Emergency Drill — Large-Scale Multi-Zone Production to International Standard",
+    challengeHe: "לתעד תרגיל חירום מלא במפעל שבבים מהמתקדמים בעולם — 5 זירות מקבילות (Hazmat, שריפה, חילוץ מגובה, סריקת הריסות, מפקדה) — בזמן אמת, ללא הפרעה לייצור, עם סנכרון מלא מול מד\"א, כבאות והצלה וצוות ERT הפנימי.",
+    challengeEn: "Document a full emergency drill at one of the world's most advanced semiconductor plants — 5 simultaneous scenarios (Hazmat, fire, height rescue, debris search, command center) — in real-time, without disrupting production, with full synchronization across Magen David Adom, fire & rescue, and internal ERT teams.",
+    solutionHe: "ניהול multi-camera בזמן אמת על 5 זירות נפרדות: צילומי רחפן FPV לסקירת זירות פינוי המוני, צילומי כתף דינמיים עוקבים אחר צוותי Hazmat בחליפות מגן, ותקריבי חבלים מגובה. גרפיקה טקטית (Radar overlays, Target points, Lower thirds) שמאפיינת כל צוות וזירה בזמן אמת. סאונד-דיזיין עם אזעקות, רשתות קשר וסירנות על פסקול דרמטי. תוצאה: מסמך ויזואלי שמשדר מוכנות שיא ומשמש להכשרת עובדים, הצגה מול רגולטורים וחיזוק מנהיגות בטיחותית.",
+    solutionEn: "Real-time multi-camera management across 5 separate zones: FPV drone shots surveying mass evacuation zones, dynamic shoulder-rig shots tracking Hazmat teams in protective suits, and high-angle rope rescue close-ups. Tactical graphics (Radar overlays, Target points, Lower thirds) identifying each team and zone in real-time. Sound design with alarms, radio comms, and sirens over a dramatic score. Result: a visual document conveying peak readiness, used for employee training, regulatory presentations, and safety leadership reinforcement.",
+    category: "hightech",
+    client: "Intel Israel",
+    duration: "5:00",
+    date: "2023-05-01",
+  },
+  {
+    id: "intel-fab28-kgat-2025",
+    youtubeId: "coZNfEng59g",
+    titleHe: "Intel Fab 28 קרית גת: תרגיל חירום 2025 — 4 זירות, חפ\"ק אחוד וסנכרון לאומי",
+    titleEn: "Intel Fab 28 Kiryat Gat: Emergency Drill 2025 — 4 Scenes, Unified Command & National Sync",
+    challengeHe: "לתעד תרגיל חירום רב-זירתי במפעל השבבים של Intel Fab 28 קרית גת — 4 זירות במקביל (שריפה, דליפת אמוניה, חילוץ מבור/גובה, זירת הרס Search & Rescue) — בזמן אמת, ללא הפרעה לייצור, עם סנכרון מלא בין צוות ERT הפנימי, מד\"א, כבאות ומשרד הסביבה.",
+    challengeEn: "Document a multi-zone emergency drill at Intel Fab 28 Kiryat Gat — 4 simultaneous zones (fire, ammonia leak, pit/height rescue, Search & Rescue crash site) — in real-time, without disrupting production, with full synchronization between the internal ERT team, Magen David Adom, fire & rescue, and the Ministry of Environment.",
+    solutionHe: "כיסוי רב-קמרה על 4 זירות: שריפה במבנה CUB עם צוותי כיבוי בציוד נושם, חליפות Hazmat לדליפת אמוניה, חילוץ חבלים (Rope Rescue) מבור, וחילוץ 8 לכודים מהריסות עם ציוד הידראולי כבד. רחפן לתצלומי קמפוס רחבים וסקירת פריסת הציוד. עריכת HUD עם מפת לוויין של המתחם שמסמנת 5 זירות ומפקדה חיצונית בזמן אמת. סיכום מנהל התרגיל (Emergency Manager) כסגירה נרטיבית.",
+    solutionEn: "Multi-camera coverage across 4 zones: building fire with SCBA-equipped firefighters, Hazmat suits for ammonia leak, Rope Rescue from a pit, and extraction of 8 trapped people from debris with heavy hydraulic equipment. Drone for wide campus aerials and equipment deployment overviews. HUD editing with satellite map pinpointing 5 zones and an external command post in real-time. Emergency Manager summary as narrative closure.",
+    category: "hightech",
+    client: "Intel Israel",
+    duration: "5:39",
+    date: "2025-05-01",
+  },
+  {
+    id: "intel-haifa-idc-emergency-drill",
+    youtubeId: "jAU89DS0oig",
+    titleHe: "Intel IDC חיפה: תרגיל חירום 2025 — 3,000 עובדים, 6 זירות, מפה אחת",
+    titleEn: "Intel IDC Haifa: Emergency Drill 2025 — 3,000 Employees, 6 Scenes, One Map",
+    challengeHe: "לתעד תרגיל חירום של 3,000 עובדים ב-IDC חיפה — 6 זירות בו-זמניות (דליפת חומצה, חילוץ מגובה, אירוע Hazmat, סריקת בניינים, זירת הרס ומפקדה) — תוך שמירה על הצופה מסונכרן עם מה שקורה בכל רחבי הקמפוס הענק.",
+    challengeEn: "Document a 3,000-employee emergency drill at Intel IDC Haifa — 6 simultaneous scenes (acid leak, height rescue, Hazmat, building sweeps, crash site, and command center) — while keeping the viewer synced with what's happening across the vast campus.",
+    solutionHe: "כיסוי רב-קמרה על 6 זירות נפרדות: צילומי רחפן אווירים לתמונה הכוללת של הקמפוס, מצלמות כתף דינמיות עוקבות אחר צוותי ERT ו-Hazmat בזמן אמת, ותקריבי חילוץ דרמטיים. פוסט-פרודקשן עם מפה דיגיטלית אינטראקטיבית (HUD Display 3D) שמסמנת כל זירה בזמן אמת על גבי תמונות אוויר של הקמפוס — הפתרון לאתגר הנרטיבי של 6 חזיתות מקבילות. תוצאה: מסמך ויזואלי שמשמש להכשרה, להצגת מנהיגות בטיחותית בפני רגולטורים ולמיתוג מעסיק ברמה בינלאומית.",
+    solutionEn: "Multi-camera coverage across 6 separate zones: aerial drone shots for the overall campus picture, dynamic shoulder-rig cameras tracking ERT and Hazmat teams in real-time, and dramatic rescue close-ups. Post-production with an interactive digital map (3D HUD Display) pinpointing each scene in real-time over aerial campus imagery — the solution to the narrative challenge of 6 parallel fronts. Result: a visual document used for training, presenting safety leadership to regulators, and employer branding at an international level.",
+    category: "hightech",
+    client: "Intel Israel",
+    duration: "4:30",
+    date: "2025-03-01",
+  },
+  {
+    id: "ashtromist-flagship-long",
+    youtubeId: "3wO3R6Xr8bU",
+    titleHe: "להיות אשטרומיסט זה קודם כל אופי | פרויקט הדגל — גרסה ארוכה",
+    titleEn: "Being an Ashtromist Is First of All Character | Flagship Campaign — Full Version",
+    challengeHe: "לייצר סרט Employer Branding מקיף שיעבוד גם כנכס גיוסי ארוך-טווח, גם כסרט תדמית ארגוני לכנסים וישיבות הנהלה, וגם כבסיס לכל נגזרות הקמפיין הדיגיטלי.",
+    challengeEn: "Create a comprehensive Employer Branding film that would serve as a long-term recruitment asset, an organizational brand film for conferences and board meetings, and the production foundation for all digital campaign derivatives.",
+    solutionHe: "שבוע הפקה מלא בכל רחבי הארץ. כל עובד בגובה עיניים — מטכנאים ועד מנכ\"ל — עם Sound Design קצבי שמתכתב עם פעימות התעשייה. צילומי רחפן מרשימים של פרויקטים מרכזיים כולל מגדלי LYFE. אינטגרציה מדויקת בין הבריף האסטרטגי של אשטרום לחומרי הגלם מהשטח. הסרט הפך לסטנדרט ה-Employer Branding הרשמי של הקבוצה.",
+    solutionEn: "A full production week across Israel. Every employee at eye level — from technicians to CEO — with rhythmic sound design echoing the industry's pulse. Impressive drone footage of flagship projects including LYFE towers. Precise integration between Ashtrom's strategic brief and the raw field footage. The film became the Group's official Employer Branding standard.",
+    category: "recruitment",
+    client: "Ashtrom Group",
+    duration: "2:10",
+    date: "2024-06-01",
+  },
   {
     id: "levi-strauss-celebrity-event",
     youtubeId: "94W9SfZcx-Y",
@@ -139,20 +335,6 @@ export const portfolioVideos: PortfolioVideo[] = [
     client: "Regev Gutman",
     duration: "4:30",
     date: "2024-08-01",
-  },
-  {
-    id: "iron-drone-airobotics",
-    youtubeId: "N4iNxvFGA34",
-    titleHe: "IRON DRONE: סרט שגייס שפה ויזואלית לחברה בורסאית | Airobotics / Ondas Group",
-    titleEn: "IRON DRONE: The Film That Defined a Public Company's Visual Language | Airobotics / Ondas Group",
-    challengeHe: "להפיק סרט מוצר לטכנולוגיה ביטחונית מתקדמת, בלי Brand Book, בלי שפת אינפוגרפיקה קיימת, ולצאת עם זהות מותגית שתאמץ כסטנדרט הרשמי.",
-    challengeEn: "Produce a product film for advanced defense technology, without a Brand Book, without existing infographic language, and emerge with a brand identity adopted as the official standard.",
-    solutionHe: "בניית Visual DNA מאפס: פלטת צבעים, טיפוגרפיה טכנולוגית, HUD/UI שמשדר סמכות מבצעית. Speed Ramps שמאיטים ברגעי הליבה הטכנולוגיים (שיגור, נעילת מטרה, יירוט) ומאיצים בתנועת מרדף. Drone-to-Drone Tracking אוויריים וסאונד-דיזיין כירורגי שיושב על הביט. התוצאה: הגרפיקה שפותחה לסרט הפכה לסטנדרט העיצובי הרשמי של ONDS.",
-    solutionEn: "Built Visual DNA from scratch: color palette, tech typography, HUD/UI conveying operational authority. Speed Ramps that slow at core technical moments (launch, target lock, intercept) and accelerate in pursuit motion. Aerial Drone-to-Drone tracking and surgical sound design sitting on the beat. Result: the graphics developed for the film became ONDS's official design standard.",
-    category: "ai",
-    client: "Airobotics / Ondas Group",
-    duration: "2:20",
-    date: "2023-12-01",
   },
   {
     id: "green-wall-hero",
@@ -484,6 +666,1920 @@ export interface VlogPost {
 
 export const vlogPosts: VlogPost[] = [
   {
+    id: "ashtromist-employer-branding-case-study",
+    relatedYoutubeId: "8RbqUaMR9_c",
+    titleHe: "איך הפכנו 'אשטרומיסט' מסיסמה לזהות: מאחורי הקלעים של קמפיין Employer Branding דגל",
+    titleEn: "How We Turned 'Ashtromist' from a Slogan into an Identity: Behind the Scenes of a Flagship Employer Branding Campaign",
+    excerptHe: "קבוצת אשטרום, אחת מקבוצות הבנייה והתשתיות הגדולות בישראל, הגיעה אלינו עם שאלה אחת: איך גורמים לאלפי עובדים שונים, בעשרות אתרים, להרגיש שהם חלק ממשהו אחד? מסע הפקה ארצי, ימי צילום אינטנסיביים באתרי בנייה, ועריכה שהפכה 'אשטרומיסט' לזהות.",
+    excerptEn: "Ashtrom Group, one of Israel's largest construction and infrastructure conglomerates, came to us with one question: how do you make thousands of different employees, across dozens of sites, feel they're part of one thing? A national production journey, intensive filming days at construction sites, and editing that turned 'Ashtromist' into an identity.",
+    readingTime: 7,
+    tags: ["employer branding", "אשטרום", "HR", "גיוס", "non-actor directing", "פרויקט דגל"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "Employer Branding וגיוס",
+    relatedServiceLabelEn: "Employer Branding & Recruitment",
+    date: "2024-06-15",
+    bodyHe: `## הקמפיין שנולד מתוך שאלה אחת
+
+כשקבוצת אשטרום הגיעה אלינו, לא חיפשו סרט תדמית רגיל. הם חיפשו תשובה לשאלה קשה: **כיצד גורמים לאלפי עובדים שונים — מטכנאי שטח ועד מנהל פרויקטים בכיר, ממהנדס ועד פקידת קבלה — להרגיש שהם חלק מאותו DNA ארגוני?**
+
+הבריף היה ברור: לבנות זהות ולא פרסומת. הסלוגן שהם הביאו אתם, "להיות אשטרומיסט זה קודם כל אופי", היה הנקודת פתיחה. תפקידנו היה להפוך אותו לאמת שאנשים מרגישים — לא לסיסמה שהם קוראים.
+
+## מסע צילומים ארצי: להגיע לכל אשטרומיסט במקומו
+
+החלטנו מהרגע הראשון שהסרט הזה לא ייצולם באולפן. הוא יצולם **בשטח, בגובה עיניים, בתנאים האמיתיים** שבהם אשטרומיסטים עובדים מדי יום.
+
+זה אומר: ירידה לאתרי בנייה פעילים עם אפודים זוהרים וקסדות ביטחון. כניסה לחמ"לים של ניהול תשתיות. צילום ישיבות צוות בהפסקות קפה. עבודה עם מהנדסים שמסתכלים על תכניות בנייה בשמש הצהרים.
+
+**הלוגיסטיקה לבדה הייתה פרויקט בתוך פרויקט:** תיאומים מול עשרות מיקומים ברחבי הארץ, ניהול מול גורמי בטיחות באתרים, לו"ז שנבנה סביב שיפטים ודרישות תפעוליות — ולא סביב שעות הפקה נוחות.
+
+[IMAGE]
+
+## הכישרון האמיתי: לא שחקנים, אשטרומיסטים אמיתיים
+
+הדבר הכי קשה ב-Employer Branding הוא לצלם **עובדים אמיתיים** שמרגישים טבעיים מול מצלמה. אנשים שרגילים להרים פטיש או לנהל ישיבות תקציב — לא לתת עדות מצולמת.
+
+כאן נכנסת מיומנות ה-**non-actor directing**: היכולת ליצור תנאים שבהם אדם רגיל מרגיש מספיק בנוח להגיד את הדבר האמיתי שהוא חושב. לא לקרוא מטלפרומפטר. לא לחזור על משפטים שמישהו כתב לו. לספר **מה הוא מרגיש לעמוד מול הפרויקט שלו**.
+
+תהליך העבודה שלנו: שיחות מקדימות ארוכות עם כל עובד לפני הצילום, הבנת הסיפור האישי שלהם, ויצירת אינטראקציה שמרגישה כמו שיחה ולא כמו ראיון.
+
+**התוצאה מדברת בעד עצמה:** הרגעים החזקים ביותר בסרט — שנבחרו בעריכה — הם הרגעים שבהם עובד פשוט, מי שלא "אמור" להיות הכוכב, אומר משהו שמגיע מהבטן.
+
+## אסטרטגיית העריכה: סיפור אחד, עשרות גרסאות
+
+אחת ההחלטות האסטרטגיות החשובות ביותר בפרויקט הייתה **לתכנן מראש את ריבוי הנגזרות**.
+
+מהפקה אחת, מאותם ימי צילום, יצאנו עם:
+
+**הסרט הראשי (2:10):** הנרטיב המלא של הקמפיין — מה המשמעות של להיות אשטרומיסט, מראשית ועד סוף. מיועד לכנסים, ישיבות הנהלה, ועמודי נחיתה.
+
+**הגרסה הקצרה (0:45):** "פינג-פונג" עריכה קצבית שתופסת תשומת לב תוך 3 שניות. מיועדת לפרסום ממומן ברשתות החברתיות.
+
+**עשרות נגזרות לקמפיין הדיגיטלי:** רזולוציות שונות לפייסבוק, אינסטגרם, גוגל דיספליי, יוטיוב פרה-רול. גרסאות עם כיתובים שונים, קריאות לפעולה, ומיקוד על סגמנטים שונים של מועמדים.
+
+**הכלל שמנחה אותנו:** כל שוט שנכנס ליום הצילום צריך לשרת לפחות 3 נגזרות שונות. זה מה שמגדיל ROI מהותי על תקציב ההפקה.
+
+[IMAGE]
+
+## הצילומי רחפן: כשהסקייל הופך לטיעון
+
+אחד האלמנטים הויזואליים החזקים ביותר בסרט הם **צילומי הרחפן של מגדלי LYFE** ושאר פרויקטי הקבוצה.
+
+לצילומי רחפן בפרויקט כזה יש שתי מטרות שונות:
+
+**ראיית הפיל:** להראות לצופה את גודל הארגון שהוא שוקל להצטרף אליו. כשאתה רואה ממעוף הציפור מגדלים שאשטרומיסטים בנו, **אתה מבין שאתה מצטרף למשהו גדול**.
+
+**הקשר ויזואלי:** מעבר חד מצילום רחפן של מגדל לצילום קלוז-אפ על פניו של מהנדס שבנה אותו — הוא הברק הסינמטי שמחבר סקייל לאנושיות.
+
+## מה שלמדנו על Employer Branding שעובד
+
+אחרי שנים של עבודה בתחום, הפרויקט הזה חידד כמה עקרונות שאנחנו מאמינים בהם עמוקות:
+
+**עובדים אמיתיים > שחקנים:** האותנטיות שעובד אמיתי מביא לפריים לא ניתנת לסימולציה. הלקוח הפוטנציאלי מזהה אותה מיד.
+
+**זהות > מסרים:** "אשטרומיסט זה אופי" עובד כי הוא לא מוכר תנאי עבודה — הוא מוכר **שייכות**. המועמד הנכון שואל את עצמו: "האם אני אשטרומיסט?" לפני שהוא שואל "כמה משלמים?"
+
+**גרסה אחת לא מספיקה:** קמפיין Employer Branding מודרני דורש מספר נגזרות לאותם פלטפורמות שונות. תקצוב נכון של הפקה מתחשב בזה מראש.
+
+**הבריף הוא שיחה, לא מסמך:** עבדנו בשיתוף פעולה צמוד עם מחלקת HR ומחלקת השיווק של אשטרום לאורך כל התהליך. כל שינוי קטן בתסריט, כל דיוק בניסוח — נוצר יחד.
+
+## התוצאה: כשסרט הופך לרכיב ב-DNA הארגוני
+
+בסוף התהליך, "אשטרומיסט" הפך ממילה לזהות. לא כי כתבנו תסריט טוב. אלא כי הצלחנו לתפוס משהו שכבר היה קיים אצל העובדים — ולתת לו מסגרת ויזואלית וסאונד.
+
+**זו ההגדרה שלנו ל-Employer Branding שעובד:** לא לבנות משהו מדומיין מבחוץ. לגלות את מה שקיים מבפנים, ולגרום לו להיראות כמו שהוא מרגיש.`,
+    bodyEn: `## The Campaign Born from One Question
+
+When Ashtrom Group came to us, they weren't looking for a regular brand film. They were looking for an answer to a hard question: **how do you make thousands of different employees — from field technicians to senior project managers, from engineers to receptionists — feel like they're all part of the same organizational DNA?**
+
+The brief was clear: build an identity, not an advertisement. The slogan they brought, "Being an Ashtromist is first of all character," was the starting point. Our job was to turn it into something people feel — not a slogan they read.
+
+## A National Filming Journey: Meeting Every Ashtromist Where They Are
+
+From the very first moment we decided this film would not be shot in a studio. It would be shot **in the field, at eye level, in the real conditions** where Ashtromists work every day.
+
+That means: descending into active construction sites with high-visibility vests and safety helmets. Entering infrastructure management command centers. Shooting team meetings during coffee breaks. Working with engineers looking at blueprints in the midday sun.
+
+**The logistics alone were a project within a project:** coordinating with dozens of locations across the country, managing site safety officers, building a schedule around shifts and operational requirements — not around convenient production hours.
+
+[IMAGE]
+
+## The Real Talent: Not Actors, Real Ashtromists
+
+The hardest thing in Employer Branding is filming **real employees** who feel natural in front of a camera. People used to swinging a hammer or managing budget meetings — not to giving filmed testimony.
+
+This is where **non-actor directing** comes in: the ability to create conditions where an ordinary person feels comfortable enough to say the real thing they actually think. Not reading from a teleprompter. Not repeating lines someone wrote for them. Telling **what they feel standing in front of their project**.
+
+Our process: long pre-shoot conversations with every employee before filming, understanding their personal story, and creating an interaction that feels like a conversation, not an interview.
+
+**The result speaks for itself:** the strongest moments in the film — selected in editing — are the moments when a regular employee, someone who "shouldn't" be the star, says something that comes from the gut.
+
+## The Editing Strategy: One Story, Dozens of Versions
+
+One of the most important strategic decisions in the project was **planning the derivatives upfront**.
+
+From one production, from the same filming days, we came out with:
+
+**The Main Film (2:10):** The full campaign narrative — what it means to be an Ashtromist, beginning to end. Intended for conferences, board meetings, and landing pages.
+
+**The Short Version (0:45):** Rhythmic "ping-pong" editing that grabs attention within 3 seconds. Intended for paid social media advertising.
+
+**Dozens of Digital Campaign Derivatives:** Different resolutions for Facebook, Instagram, Google Display, YouTube pre-roll. Versions with different captions, calls to action, and focus on different candidate segments.
+
+**The rule that guides us:** every shot that enters a filming day needs to serve at least 3 different derivatives. That's what materially increases ROI on the production budget.
+
+[IMAGE]
+
+## The Drone Shots: When Scale Becomes an Argument
+
+One of the visually strongest elements in the film is the **drone footage of the LYFE towers** and other Group projects.
+
+Drone shots in this kind of project serve two different purposes:
+
+**Seeing the elephant:** showing the viewer the size of the organization they're considering joining. When you see from a bird's eye view the towers that Ashtromists built, **you understand you're joining something big**.
+
+**Visual connection:** a sharp cut from a drone shot of a tower to a close-up of the engineer's face who built it — that's the cinematic flash that connects scale to humanity.
+
+## What We Learned About Employer Branding That Works
+
+After years of work in this field, this project crystallized several principles we believe in deeply:
+
+**Real employees > actors:** The authenticity a real employee brings to the frame cannot be simulated. The potential hire identifies it immediately.
+
+**Identity > messages:** "Ashtromist is character" works because it doesn't sell working conditions — it sells **belonging**. The right candidate asks themselves: "Am I an Ashtromist?" before they ask "What does it pay?"
+
+**One version isn't enough:** A modern Employer Branding campaign requires multiple derivatives for different platforms. Proper production budgeting accounts for this upfront.
+
+**The brief is a conversation, not a document:** We worked in close collaboration with Ashtrom's HR and marketing departments throughout the process. Every small script change, every phrasing refinement — created together.
+
+## The Result: When a Film Becomes Part of Organizational DNA
+
+At the end of the process, "Ashtromist" went from a word to an identity. Not because we wrote a good script. But because we managed to capture something that already existed in the employees — and gave it a visual framework and sound.
+
+**That's our definition of Employer Branding that works:** not building something imagined from outside. Discovering what exists inside, and making it look the way it feels.`,
+  },
+  {
+    id: "video-to-brand-identity",
+    coverImage: "/vlogimg/video-to-brand-cover.jpg",
+    sectionImages: ["/vlogimg/video-to-brand-s1.jpg", "/vlogimg/video-to-brand-s2.jpg"],
+    titleHe: "מוידאו למותג: הדרך החכמה לייצר שפה ויזואלית מנצחת לחברות טכנולוגיה",
+    titleEn: "From Video to Brand: The Smart Way to Build a Winning Visual Language for Tech Companies",
+    excerptHe: "חברות טכנולוגיה מוציאות הון על ספרי מותג סטטיים שלא מתרגמים למסך. בפרויקט IRON DRONE בנינו שפה ויזואלית מלאה מתוך הסרט עצמו, והיא הפכה לסטנדרט הרשמי של חברה בורסאית.",
+    excerptEn: "Tech companies spend fortunes on static brand books that don't translate to screen. In the IRON DRONE project we built a complete visual language out of the film itself, and it became a public company's official design standard.",
+    readingTime: 6,
+    bodyHe: `## הבעיה עם ספרי מותג סטטיים
+
+תהליך מיתוג של חברות טכנולוגיה, תשתיות וביטחון דורש לעיתים קרובות תקציבי עתק המועברים למשרדי פרסום עבור יצירת "ספר מותג" סטטי. הבעיה מתחילה כשהמותג פוגש את המסך.
+
+אותם עיצובים סטטיים, הצבע, הטיפוגרפיה, הגריד, לא מתרגמים היטב לעולמות הווידאו, האנימציה והדיגיטל הדינמי. יוצרים מחדש ממקום ה-וידאו, ושם מוצאים שהחוקים שונים לחלוטין.
+
+**השפה הוויזואלית של מותג מודרני צריכה להיוולד מתוך תנועה.**
+
+[IMAGE]
+
+## IRON DRONE: כשסרט מוצר הפך לזהות חברה
+
+בפרויקט שהפקנו עבור מערכת IRON DRONE מבית Airobotics / Ondas Group, ניגשנו לאתגר ייחודי: החברה הגיעה ללא Brand Book מסודר ובלי שפת אינפוגרפיקה שמתאימה למוצר ביטחוני מתקדם.
+
+במקום לחכות לסוכנות מיתוג, בנינו את השפה בעצמנו, ישירות מתוך עולם הסרט.
+
+## שלב 1: Visual DNA מאפס
+
+מחלקת הארט פיתחה קונספט ויזואלי מלא:
+
+**פלטת צבעים:** כחול-מתכת עמוק, ירוק HUD צבאי, שחור תפעולי. כל צבע נבחר כדי לשדר שני דברים בו-זמנית: טכנולוגיה מתקדמת + אמינות מבצעית.
+
+**טיפוגרפיה:** פונטים טכנולוגיים עם ריווח מדוד שמדמה ממשק cockpit. כל מספר, כל מפרט טכני נראה כאילו הוא חלק מממשק אמיתי של מערכת נשק.
+
+**HUD/UI Elements:** ממשקי מסך שנבנו מאפס: נעילות מטרה, טווחי זיהוי, אינדיקטורי גובה ומהירות. כל אלמנט תוכנן כך שהמדהים בו הוא **שהוא נראה אמיתי**.
+
+## שלב 2: האתגר הקולנועי: מהירות פוגשת דיוק
+
+לסרט יש שני מצבי עריכה שצריכים לדור בשלום:
+
+**Speed Ramp מהיר:** רגעי מרדף, טיסה, תנועת נחיל. הצופה חייב להרגיש אדרנלין, מהירות, כוח תפעולי. Drone-to-Drone Tracking אוויריים, זוויות Low-angle שמגדילות את האגרסיביות.
+
+**Speed Ramp איטי:** רגעי הליבה הטכנולוגיים: שיגור, נעילת מטרה, יירוט. פה הסרט מאט. הצופה צריך לראות, להבין, ולהאמין. בדיוק בנקודה הזו נכנסות שכבות ה-HUD שמסבירות את המכניקה.
+
+**סאונד-דיזיין כירורגי:** כל הופעה של גרפיקה "מקבעת" על צליל, בין אם זה ping של מכ"ם, buzz של מנוע חשמלי, או click של נעילה. הסנכרון בין עריכה לסאונד הוא מה שהופך סרט מוצר אינפורמטיבי לחוויה קולנועית.
+
+## התוצאה: השפה הפכה לסטנדרט
+
+מה שהתחיל כסרט מוצר הפך לתשתית מותגית: **הגרפיקה, האנימציה וה-HUD שפיתחנו לסרט אומצו על ידי ONDS כסטנדרט הרשמי** לכלל מערך השיווק שלהם.
+
+**ROI כפול:** הלקוח הגיע לסרט, יצא עם זהות מותגית. ללא תוספת תקציב. ללא משרד פרסום.
+
+זו לא עבודת סוכנות. זו שותפות אסטרטגית.`,
+    bodyEn: `## The Problem with Static Brand Books
+
+Branding processes for technology, infrastructure, and defense companies often require enormous budgets transferred to ad agencies for creating a static "brand book." The problem starts when the brand meets the screen.
+
+Those static designs, color, typography, grid, don't translate well to the worlds of video, animation, and dynamic digital. You recreate from the video side, and there you find the rules are completely different.
+
+**A modern brand's visual language needs to be born from motion.**
+
+[IMAGE]
+
+## IRON DRONE: When a Product Film Became a Company's Identity
+
+In the project we produced for the IRON DRONE system by Airobotics / Ondas Group, we faced a unique challenge: the company arrived without an organized Brand Book and without an infographic language suited to an advanced defense product.
+
+Instead of waiting for a branding agency, we built the language ourselves, directly from within the film's world.
+
+## Stage 1: Visual DNA from Scratch
+
+The art department developed a complete visual concept:
+
+**Color palette:** Deep metal blue, military HUD green, operational black. Each color chosen to communicate two things simultaneously: advanced technology + operational reliability.
+
+**Typography:** Technical fonts with measured spacing simulating a cockpit interface. Every number, every technical spec looks as if it's part of a real weapons system interface.
+
+**HUD/UI Elements:** Screen interfaces built from scratch: target locks, detection ranges, altitude and speed indicators. Every element designed so the remarkable thing about it is **that it looks real**.
+
+## Stage 2: The Cinematic Challenge: Speed Meets Precision
+
+The film has two editing modes that need to coexist:
+
+**Fast Speed Ramp:** chase moments, flight, swarm motion. The viewer must feel adrenaline, speed, operational power. Aerial Drone-to-Drone Tracking, Low-angle shots that increase aggression.
+
+**Slow Speed Ramp:** core technical moments: launch, target lock, intercept. Here the film slows. The viewer needs to see, understand, and believe. Exactly at this point the HUD layers enter to explain the mechanics.
+
+**Surgical Sound Design:** Every graphic appearance "locks" on a sound, whether a radar ping, an electric motor buzz, or a lock click. The sync between editing and sound is what turns an informative product film into a cinematic experience.
+
+## The Result: The Language Became the Standard
+
+What started as a product film became brand infrastructure: **the graphics, animation, and HUD we developed for the film were adopted by ONDS as the official standard** for their entire marketing operation.
+
+**Double ROI:** The client came for a film, left with a brand identity. No extra budget. No ad agency.
+
+This isn't agency work. This is strategic partnership.`,
+    date: "2024-02-10",
+    tags: ["Defense Tech", "Motion Design", "Brand Identity", "Visual Language"],
+    relatedServiceHref: "/services/ai",
+    relatedServiceLabelHe: "הפקות AI וסרטי ביטחון",
+    relatedServiceLabelEn: "AI & Defense Tech Productions",
+    relatedYoutubeId: "N4iNxvFGA34",
+  },
+  {
+    id: "airobotics-developer-program-blog",
+    relatedYoutubeId: "URDNpEwabCc",
+    titleHe: "איך מסבירים לעולם טכנולוגיה שמעולם לא ראה: ניתוח סרט ה-Developer Program של Airobotics",
+    titleEn: "How to Explain Technology the World Has Never Seen: Analyzing the Airobotics Developer Program Film",
+    excerptHe: "כשהמוצר הוא פלטפורמת רחפנים אוטונומיים תעשייתיים עם API, מכונות וירטואליות ועגינה אוטומטית — איך מסבירים את זה לקהל מפתחים ב-3 דקות? מאחורי הקלעים של פרויקט הכרזה מורכב.",
+    excerptEn: "When the product is an industrial autonomous drone platform with APIs, virtual machines, and automatic docking — how do you explain it to a developer audience in 3 minutes? Behind the scenes of a complex announcement project.",
+    readingTime: 5,
+    date: "2024-04-15",
+    tags: ["High-Tech", "B2B Video", "Drone Tech", "Developer Marketing", "Host-driven"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## כשהמוצר קשה להסבר — הסרט הוא ה-UX של המותג
+
+יש קטגוריה שלמה של חברות שהמוצר שלהן פשוט קשה להסביר. לא בגלל שהן לא טובות בשיווק. אלא כי מה שהן עשו לא ממש קיים עדיין בדמיון הציבורי.
+
+Airobotics בנתה פלטפורמת רחפנים אוטונומיים תעשייתיים — Airbase שמחליף סוללות בעצמו, Optimus שממריא ונוחת ללא מפעיל, ממשקי API שמאפשרים למפתחים לבנות יישומים מעל הנתונים האוויריים. המוצר מרשים. אבל איך מסבירים אותו?
+
+**הסרט הוא ה-UX של המותג.** כשאין אנלוגיה קיימת — הצגה ויזואלית טובה היא הדרך היחידה.
+
+## הבחירה הנרטיבית: Host-Driven על פני B-Roll גנרי
+
+הדיון הראשוני היה בין שתי גישות:
+
+**גישה א' — B-Roll heavy:** הרבה צילומי שטח, טכנולוגיה בפעולה, מוזיקה, כיתובים גרפיים. ויזואלי ומרשים, אבל מסתכן בכך שהצופה יצא מרוצה ולא מבין.
+
+**גישה ב' — Host-driven:** מנחה אחת שמובילה את כל הסרטון, מייצרת אמון אישי ומבטיחה שהצופה מבין כל שלב לפני שעוברים לשלב הבא.
+
+בחרנו גישה ב'. הסיבה: הקהל הוא **מפתחי תוכנה ב-B2B**. הם לא צריכים להתרגש — הם צריכים להבין ולהחליט. Host-driven מדבר שפתם.
+
+[IMAGE]
+
+## צילום ב-2 עולמות: משרד ושטח
+
+הסרטון נע בין שני מוקדים שצולמו בשני ימים:
+
+**המשרד:** חלל העבודה של Airobotics — מפתחים מול מחשבים, לוחות זרימה, צוות. זה נותן אמינות ארגונית: "אנחנו חברה אמיתית עם אנשים אמיתיים."
+
+**מתקן הניסויים החיצוני:** ה-Airbase האמיתי, עם רחפנים שממריאים אוטונומית מתחת לרשתות הגנה. זה נותן את ה-wow moment — ההוכחה שזה קיים.
+
+המעבר בין השניים לא אקראי. בנינו מסלול נרטיבי שמתחיל בהסבר, ממשיך להדגמה, וחוזר לפרטים הטכניים — כך שהצופה רואה את הטכנולוגיה בדיוק כשהוא מוכן להאמין בה.
+
+## שילוב UI ו-VFX: כשהנתונים נראים אמיתיים
+
+האתגר הגרפי: איך מסבירים ממשקי API, מכונות וירטואליות וחלוקת נתונים — בלי להראות slide presentation?
+
+הפתרון: **שילוב UI Integration אורגני.** צילומי מסך ממשיים של ממשק התוכנה, overlay על גבי צילומי השטח, animation קל שמבהיר זרימת מידע.
+
+**הכלל שהנחה אותנו:** כל אלמנט גרפי חייב לענות על שאלה שהצופה שואל באותו רגע. לא דקורציה — תשובה.
+
+## ניהול המנחה: "לא לקרוא, לדבר"
+
+סיוון אברהמי, המנחה, לא הגיעה עם ניסיון של ממש מול מצלמה. הפרויקט הצריך אותה לדבר על תוכן טכני מורכב תוך כדי הובלה ויזואלית של הצופה — בלי שיראה שהיא קוראת.
+
+שיטת העבודה שלנו: **חזרות ארוכות על התוכן עד שהוא הפך לשיח טבעי, לא לשינון.** ביום הצילום עצמו, הטלפרומפטר היה רשת ביטחון בלבד — לא מקרא.
+
+התוצאה: ביצוע שמרגיש כמו שיחה, לא מצגת.
+
+## מה זה אומר לחברות טכנולוגיה בישראל
+
+כשחברה יוצאת עם תוכנית מפתחים, הסרטון הוא כרטיס הכניסה שלה לקהילה. מפתחים סקפטיים מטבעם — הם מזהים מיד את ההבדל בין שיווק ריק לתוכן אמיתי.
+
+**הדברים שעבדו כאן:**
+- מנחה שמבינה את הנושא (לא דוגמנית)
+- הדגמה אמיתית, לא אנימציה
+- הסבר שלב-אחר-שלב שמכבד את האינטליגנציה של הקהל
+- CTA ברור שמוביל לדף מידע ספציפי
+
+**הדבר שהכי קשה:** לדעת מה לא לשים. הסרטון הזה יכל להיות 8 דקות. הוא 3.5 דקות. כל דקה שגזרנו — שיפרנו את ה-completion rate.`,
+    bodyEn: `## When the Product Is Hard to Explain — the Film Is the Brand's UX
+
+There's a whole category of companies whose product is simply hard to explain. Not because they're bad at marketing. But because what they built doesn't really exist yet in the public imagination.
+
+Airobotics built an industrial autonomous drone platform — an Airbase that replaces batteries itself, an Optimus drone that takes off and lands without an operator, API interfaces that let developers build applications on top of aerial data. The product is impressive. But how do you explain it?
+
+**The film is the brand's UX.** When there's no existing analogy — good visual presentation is the only way.
+
+## The Narrative Choice: Host-Driven over Generic B-Roll
+
+The initial discussion was between two approaches:
+
+**Approach A — B-Roll heavy:** lots of field footage, technology in action, music, graphic captions. Visual and impressive, but risks the viewer leaving satisfied and confused.
+
+**Approach B — Host-driven:** one presenter leading the entire film, building personal trust and ensuring the viewer understands each step before moving to the next.
+
+We chose approach B. The reason: the audience is **B2B software developers**. They don't need to be excited — they need to understand and decide. Host-driven speaks their language.
+
+[IMAGE]
+
+## Filming in 2 Worlds: Office and Field
+
+The film moves between two focal points shot over two days:
+
+**The office:** Airobotics' workspace — developers at computers, flow charts, team. This gives organizational credibility: "We're a real company with real people."
+
+**The external test facility:** the real Airbase, with drones launching autonomously under protective nets. This delivers the wow moment — proof that it exists.
+
+The transition between the two isn't random. We built a narrative path that starts with explanation, moves to demonstration, and returns to technical details — so the viewer sees the technology exactly when they're ready to believe in it.
+
+## UI and VFX Integration: When Data Looks Real
+
+The graphic challenge: how do you explain APIs, virtual machines, and data sharing — without showing a slide presentation?
+
+The solution: **organic UI integration.** Real screenshots of the software interface, overlay on top of field footage, light animation that clarifies data flow.
+
+**The rule that guided us:** every graphic element must answer a question the viewer is asking at that moment. Not decoration — an answer.
+
+## Managing the Presenter: "Don't Read, Talk"
+
+Sivan Abrami, the presenter, didn't arrive with much camera experience. The project required her to speak on complex technical content while visually guiding the viewer — without it looking like she was reading.
+
+Our method: **long rehearsals on the content until it became natural conversation, not memorization.** On the actual shoot day, the teleprompter was a safety net only — not a reading device.
+
+The result: a performance that feels like a conversation, not a presentation.
+
+## What This Means for Israeli Tech Companies
+
+When a company launches a developer program, the film is its entry ticket to the community. Developers are naturally skeptical — they immediately spot the difference between empty marketing and real content.
+
+**What worked here:**
+- A presenter who understands the subject (not a model)
+- Real demonstration, not animation
+- Step-by-step explanation that respects the audience's intelligence
+- A clear CTA leading to a specific information page
+
+**The hardest thing:** knowing what not to include. This film could have been 8 minutes. It's 3.5 minutes. Every minute we cut — we improved the completion rate.`,
+  },
+  {
+    id: "airobotics-optimus-faa-blog",
+    relatedYoutubeId: "mqVFjv-gPS4",
+    titleHe: "מהפכת הרחפנים האוטונומיים: מאחורי הקלעים של סרטון ההכרזה הבינלאומי של Airobotics Optimus",
+    titleEn: "The Autonomous Drone Revolution: Behind the Scenes of Airobotics Optimus's International Announcement Film",
+    excerptHe: "FAA Type Certification להמראה מעל אנשים וכבישים — ההכרזה הרגולטורית שמפיחה חיים בשוק הרחפנים האוטונומיים. איך מתרגמים אישור טכני/רגולטורי מורכב לסרט הכרזה שמדרבן משקיעים, לקוחות ורגולטורים בינלאומיים כאחד.",
+    excerptEn: "FAA Type Certification for flight over people and roads — the regulatory announcement that breathes life into the autonomous drone market. How to translate a complex technical/regulatory approval into an announcement film that galvanizes investors, clients, and international regulators alike.",
+    readingTime: 6,
+    date: "2024-09-15",
+    tags: ["Drone Tech", "FAA", "Defense", "Corporate Announcement", "High-Tech", "Airobotics", "Ondas Holdings"],
+    relatedServiceHref: "/services/defense",
+    relatedServiceLabelHe: "ביטחוני וטכנולוגי",
+    relatedServiceLabelEn: "Defense & Tech Video",
+    bodyHe: `## הרגע ההיסטורי שאי אפשר לאבד בפוסט
+
+חברות רבות משיגות אבני דרך רגולטוריות ומחרימות אותן להודעה לעיתונות קרה.
+
+Airobotics ו-Ondas Holdings בחרו אחרת.
+
+ה-FAA Type Certification לרחפן Optimus הוא לא "עוד אישור" — זה ההכרזה שמאפשרת לרחפן אוטונומי לטוס מעל אנשים, כבישים ואזורים מאוכלסים (BVLOS) **ללא הגבלה ובאופן קבוע** — מה שמאות מיזמי רחפנים בעולם עדיין מנסים להשיג. הם הבינו שרגע כזה צריך סרט שיוודא שאף משקיע ואף לקוח B2B לא יפספס את עוצמתו.
+
+**האתגר:** "FAA Type Certification" הוא מושג טכני יבש. הצופה הממוצע — גם B2B — לא מבין מה המשמעות. הסרט צריך לתרגם אישור ביורוקרטי לרגש.
+
+## הפתרון שהפך רגולציה לסרט הכרזה
+
+### 1. מנכ"ל מול לוקיישן — לא מול מצלמה
+
+אריק ברוק (CEO, Ondas Holdings) צולם **בלוקיישן לילי יוקרתי** — עמדת העגינה של ה-Optimus על גג בניין, עם קו הרקיע המואר ברקע.
+
+**למה זה עובד:**
+מנכ"ל מול מצלמה ריקה = סרט שיווקי. מנכ"ל מול הטכנולוגיה שלו בלילה = Keynote. הלוקיישן הפך את ההכרזה הפורמלית לחוויה ויזואלית.
+
+### 2. תקריבי מאקרו של הרובוטיקה
+
+אחד מה-USPs המרכזיים של Optimus הוא **החלפת סוללה וחיישנים אוטונומית לחלוטין** — הזרוע הרובוטית שעושה את כל הפעולה בתוך הקפסולה.
+
+בלי תקריב מאקרו מפורט של הזרוע בפעולה — הקהל לא מאמין שזה אמיתי. עם התקריב — הוא רואה את הדיוק ומאמין.
+
+[IMAGE]
+
+### 3. טיפוגרפיה כנרטיב
+
+"TYPE CERTIFICATION" / "24/7" / "HIGHEST LEVEL OF CERTIFICATION" — לא כותרות דקורטיביות. **הן מבנה הנרטיב.**
+
+כל כותרת שמופיעה מחזקת נקודת מכירה (USP) ספציפית בו-זמנית עם הוויזואל. הצופה רואה ושמע ב-2 ערוצים — וזה מכפיל שימור.
+
+### 4. הבנייה המוזיקלית לשיא אחד
+
+הפסקול האלקטרוני מתחיל ב-Tension בינוני ועולה באופן עקבי — לא ב"קפיצות" — עד לרגע שבו הרחפן ממריא. **ממריאה = השחרור הרגשי** שכל הסרט בנה לכיוון אליו.
+
+## האמת על ה-Type Certification — ולמה זה משנה לשיווק
+
+FAA Type Certification מאפשר:
+- **BVLOS** (Beyond Visual Line of Sight) — טיסה מחוץ לשדה הראייה
+- **טיסה מעל אנשים ובניינים** — ללא אישור מיוחד לכל טיסה
+- **שימוש 24/7** — כולל בלילה ובתנאי מזג אוויר משתנים
+
+**בשפת שיווק:** זה ההבדל בין "פיילוט ניסיוני" ל"מוצר שפועל."
+
+הסרט מתרגם את זה לשפה רגשית: לא "קיבלנו אישור" — אלא "אנחנו הראשונים שיכולים."
+
+## מה לומדים מהפרויקט הזה לסרטי הכרזה B2B
+
+**1. הרגולציה היא הסיפור, לא הרקע:**
+אל תקבר את ה-Type Certification בכיתוב קטן. הפוך אותו לכותרת הראשונה, לנרטיב המרכזי. הצופה צריך להבין "למה עכשיו" תוך 10 שניות.
+
+**2. בנה את השיא:**
+כל סרט הכרזה צריך רגע אחד שלשמו הכל מוביל. ב-Optimus זה ההמראה. בסרטי B2B אחרים זה יכול להיות השקת מוצר, גיוס עובדים ראשון, כניסה לשוק חדש.
+
+**3. Keynote + Product + Action:**
+השילוש הזה — מנכ"ל, תקריב הטכנולוגיה, שימוש בפועל — עובד לרוב חברות B2B טכנולוגיות. הוא מספק: מי אחראי, מה הטכנולוגיה, ואיך היא נראית בשטח.`,
+    bodyEn: `## The Historic Moment You Can't Lose in Post
+
+Many companies achieve regulatory milestones and bury them in a cold press release.
+
+Airobotics and Ondas Holdings chose differently.
+
+The FAA Type Certification for the Optimus drone isn't "just another approval" — it's the announcement that allows an autonomous drone to fly over people, roads, and populated areas (BVLOS) **permanently and without limitation** — something hundreds of drone ventures worldwide are still trying to achieve. They understood that a moment like this needs a film that ensures no investor or B2B client misses its power.
+
+**The challenge:** "FAA Type Certification" is dry technical jargon. The average viewer — even B2B — doesn't understand the significance. The film needs to translate a bureaucratic approval into emotion.
+
+## The Solution That Turned Regulation Into an Announcement Film
+
+### 1. CEO Facing a Location — Not a Camera
+
+Eric Brock (CEO, Ondas Holdings) was filmed at a **premium night location** — the Optimus docking station on a building rooftop, with the illuminated skyline in the background.
+
+**Why this works:**
+CEO facing an empty camera = marketing film. CEO facing his technology at night = Keynote. The location turned the formal announcement into a visual experience.
+
+### 2. Macro Close-ups of the Robotics
+
+One of Optimus's key USPs is **fully autonomous battery and sensor swapping** — the robotic arm performing the entire operation inside the capsule.
+
+Without a detailed macro close-up of the arm in action — the audience doesn't believe it's real. With the close-up — they see the precision and they believe.
+
+[IMAGE]
+
+### 3. Typography as Narrative
+
+"TYPE CERTIFICATION" / "24/7" / "HIGHEST LEVEL OF CERTIFICATION" — these aren't decorative titles. **They are the structure of the narrative.**
+
+Every title that appears reinforces a specific selling point (USP) simultaneously with the visual. The viewer sees and hears in 2 channels — and this doubles retention.
+
+### 4. Building the Musical Arc to One Peak
+
+The electronic score starts at medium tension and rises consistently — not in "jumps" — until the moment the drone launches. **Launch = the emotional release** that the entire film has been building toward.
+
+## The Truth About Type Certification — and Why It Matters for Marketing
+
+FAA Type Certification enables:
+- **BVLOS** (Beyond Visual Line of Sight) — flight outside the field of view
+- **Flight over people and buildings** — without special approval for each flight
+- **24/7 operation** — including at night and in varying weather conditions
+
+**In marketing language:** this is the difference between a "pilot program" and "a product that works."
+
+The film translates this into emotional language: not "we received approval" — but "we're the first who can."
+
+## What This Project Teaches for B2B Announcement Films
+
+**1. The regulation is the story, not the background:**
+Don't bury the Type Certification in small print. Make it the first headline, the central narrative. The viewer needs to understand "why now" within 10 seconds.
+
+**2. Build the peak:**
+Every announcement film needs one moment that everything leads toward. For Optimus it's the launch. For other B2B films it could be a product launch, first hire, or entry into a new market.
+
+**3. Keynote + Product + Action:**
+This trio — CEO, technology close-up, real-world use — works for most B2B tech companies. It delivers: who's responsible, what the technology is, and how it looks in the field.`,
+  },
+  {
+    id: "buildots-green-screen-blog",
+    relatedYoutubeId: "nFaOyZwj2PY",
+    titleHe: "מסך ירוק כפתרון הפקה אסטרטגי: ניתוח הפרויקט של Buildots",
+    titleEn: "Green Screen as a Strategic Production Solution: The Buildots Project Analysis",
+    excerptHe: "כשאתרי הבנייה מסוכנים, הלוחות זמנים לחוצים והצוות לא יכול להיות בעשרה מקומות בו-זמנית — מסך ירוק הופך מטכניקה ל-Decision. ניתוח מה מאחורי הסרט של Buildots.",
+    excerptEn: "When construction sites are dangerous, schedules are tight, and the crew can't be in ten places at once — green screen stops being a technique and becomes a Decision. An analysis of what's behind the Buildots film.",
+    readingTime: 5,
+    date: "2023-09-20",
+    tags: ["High-Tech", "Green Screen", "Compositing", "Studio Production", "VFX"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## המגבלה שהפכה לפתרון
+
+יש רגע בכל הפקה שבו מישהו שואל את השאלה: "אנחנו באמת צריכים ללכת לשם?"
+
+בפרויקט של Buildots — חברת טכנולוגיה שמפחיתה את הכאוס באתרי בנייה — "שם" היה כמה אתרי בנייה פעילים, משרדים עמוסים, ועוד לוקיישנים שכל אחד מהם היה מצריך צוות הפקה, ביטוחים, תיאומים ביטחוניים ולוגיסטיקה מורכבת.
+
+**הסיכון הלוגיסטי הפך להחלטה אמנותית.**
+
+במקום לרדת לשטח, הבאנו את השטח לאולפן.
+
+## מה זה בכלל אומר "Green Screen כאסטרטגיה הפקתית"?
+
+Green Screen (מסך ירוק) לרוב נחשב לכלי CGI — דרך לשים אנשים בחלל הפקות יקרות שבחיים לא תוכל לאסוף צוות אליהן.
+
+אבל בפרויקט Buildots השתמשנו בו באופן אחר לגמרי: **ככלי שמאפשר שליטה מוחלטת על מה שלרוב לא ניתן לשלוט בו.**
+
+כשאתה מצלם על מסך ירוק באולפן:
+- אתה שולט על התאורה במאה אחוז (לא תלוי בשמש, בענן, בשעה)
+- אתה שולט על ביצועי הטאלנט (אפשר לעשות 20 טייקים בלי לאבד את שעת הזהב)
+- אתה שולט על הרצף הנרטיבי (מרכיבים את הסצנות בדיוק בסדר שנרצה)
+- אתה מגן על הצוות (אין סכנות שטח, אין חיתוכים בלוח הזמנים)
+
+[IMAGE]
+
+## האתגר הטכני: גרום לזה שייראה אמיתי
+
+מסך ירוק שנראה כמו מסך ירוק — זה כישלון הפקה. **ההצלחה האמיתית היא כשהצופה לא שואל את השאלה.**
+
+שלושה עקרונות הנחו את ההפקה של Buildots:
+
+**עקרון 1 — ההתאמה של האור**
+
+כל קליפ רקע שהשתמשנו בו — אתר בנייה, משרד, חדר ישיבות — נותח לגבי הכיוון, הצבע והעוצמה של האור. לאחר מכן, תאורת האולפן שוחזרה לדייק עם הרקע: אור שמש מימין? Light from right, same color temp. תאורה סטרלינג צהבהבה? Tungsten key.
+
+בלי זה — הטאלנט נראה "פסטד" לתוך הסצנה. עם זה — הוא פשוט שם.
+
+**עקרון 2 — ה-UI חייב להיות רגל של הסצנה**
+
+Buildots היא חברת תוכנה. הממשק שלה הוא המוצר. בסרט, הממשק לא מוצג כהדגמה — הוא חלק מהמרחב הפיזי שהטאלנט חי בו.
+
+UI Integration טוב הוא כזה שהצופה לא שם לב שהוסף בפוסט. אנחנו השגנו זאת דרך scale מדויק, perspective matching, ותאורת reflection שנראית כאילו המסך מאיר את הפנים.
+
+**עקרון 3 — הקצב מסתיר את התפרים**
+
+בימוי קצבי-קומי, מעברים חדים ומשחק פרספקטיבה — כל אלה עובדים לטובתנו. הצופה עסוק בלהיות מרותק — לא בלבחון את ה-compositing.
+
+## הבימוי: בין סרט תדמית לסקיץ' קומי
+
+אחד האתגרים הייחודיים של פרויקט Buildots היה ה-Tone. מדובר בחברת B2B שמוכרת לקבלנים ולמנהלי פרויקטים — קהל שמוכר-מדי לשיווק גנרי ולשוק לשיחה.
+
+הפתרון: **קצב דרמתי-קומי שמכבד את האינטליגנציה של הקהל.**
+
+הסצנות בנויות עם setup-payoff ברור. הטאלנט לא "מציג" — הוא חי בסיטואציה. הקומדיה נובעת מהמצב, לא מ-punchlines.
+
+## מה זה אומר עבורך
+
+כשאתה שוקל Green Screen לפרויקט שלך — השאלה היא לא "האם יש לנו תקציב VFX?" אלא "מה אנחנו מרוויחים בשליטה לעומת מה שאנחנו מפסידים בספונטניות?"
+
+בפרויקטים כמו Buildots, התשובה ברורה: **שליטה שווה יותר.**
+
+מסך ירוק מאפשר להגיד ללקוח: "אנחנו לא מוגבלים על ידי מה שקיים. אנחנו בוחרים מה ייראה."`,
+    bodyEn: `## The Constraint That Became the Solution
+
+There's a moment in every production when someone asks the question: "Do we actually need to go there?"
+
+In the Buildots project — a tech company that reduces chaos on construction sites — "there" was several active construction sites, busy offices, and additional locations, each of which would require a production crew, insurance, security clearances, and complex logistics.
+
+**The logistical risk became an artistic decision.**
+
+Instead of going into the field, we brought the field into the studio.
+
+## What Does "Green Screen as a Production Strategy" Even Mean?
+
+Green Screen is usually thought of as a CGI tool — a way to put people in expensive production spaces that you could never actually gather a crew to access.
+
+But in the Buildots project, we used it in a completely different way: **as a tool that enables total control over what's usually uncontrollable.**
+
+When you shoot on green screen in a studio:
+- You control lighting one hundred percent (no dependency on sun, clouds, or time of day)
+- You control talent performance (you can do 20 takes without losing the golden hour)
+- You control the narrative sequence (scenes are assembled in exactly the order you want)
+- You protect the crew (no field hazards, no schedule disruptions)
+
+[IMAGE]
+
+## The Technical Challenge: Make It Look Real
+
+A green screen that looks like a green screen — that's a production failure. **True success is when the viewer never even asks the question.**
+
+Three principles guided the Buildots production:
+
+**Principle 1 — Light Matching**
+
+Every background clip we used — a construction site, office, conference room — was analyzed for direction, color, and intensity of light. Studio lighting was then reconstructed to precisely match the background: sunlight from the right? Light from right, same color temp. Warm tungsten office glow? Tungsten key.
+
+Without this — talent looks "pasted" into the scene. With it — they're simply there.
+
+**Principle 2 — UI Must Be a Leg of the Scene**
+
+Buildots is a software company. Their interface is the product. In the film, the interface isn't shown as a demo — it's part of the physical space the talent inhabits.
+
+Good UI Integration is when the viewer doesn't notice it was added in post. We achieved this through precise scale, perspective matching, and reflection lighting that makes the screen appear to illuminate the face.
+
+**Principle 3 — Pace Hides the Seams**
+
+Rhythmic-comic direction, sharp cuts, and perspective play — all of these work in our favor. The viewer is busy being engaged — not examining the compositing.
+
+## The Direction: Between Brand Film and Corporate Sketch
+
+One of Buildots' unique challenges was Tone. This is a B2B company selling to contractors and project managers — an audience too familiar with generic marketing and sales pitches.
+
+The solution: **dramatic-comic pacing that respects the audience's intelligence.**
+
+Scenes are built with clear setup-payoff. Talent doesn't "present" — they inhabit the situation. Comedy emerges from the scenario, not from punchlines.
+
+## What This Means for You
+
+When you're considering Green Screen for your project — the question isn't "Do we have a VFX budget?" but "What do we gain in control versus what do we lose in spontaneity?"
+
+In projects like Buildots, the answer is clear: **control is worth more.**
+
+Green Screen lets you tell the client: "We're not limited by what exists. We choose what will be seen."`,
+  },
+  {
+    id: "ludeo-gaming-blog",
+    relatedYoutubeId: "3mxQZMC9ZpI",
+    titleHe: "Live-Action + אנימציה תלת-ממד: איך מסבירים לגיימרים טכנולוגיה שמעולם לא ראו | Ludeo",
+    titleEn: "Live-Action + 3D Animation: How to Explain Technology Gamers Have Never Seen | Ludeo",
+    excerptHe: "כשהמוצר הוא מושג חדש לגמרי — לא שיפור של משהו קיים — הסרט חייב לעשות שני דברים בו-זמנית: לגרום לגיימר להרגיש את ה-wow וגם לגרום למשקיע להבין את ה-how. ניתוח הפתרון ב-Ludeo.",
+    excerptEn: "When the product is a completely new concept — not an improvement on something existing — the film must do two things simultaneously: make the gamer feel the wow and make the investor understand the how. An analysis of the solution at Ludeo.",
+    readingTime: 5,
+    date: "2023-06-20",
+    tags: ["Gaming", "High-Tech", "3D Animation", "VFX", "Concept Film", "Live-Action"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הבעיה: לשכנע מישהו שהוא רוצה משהו שמעולם לא שמע עליו
+
+כשהמוצר הוא שיפור של משהו קיים — קל יחסית לספר עליו. "יותר מהיר, יותר זול, יותר פשוט." הצופה מבין את הבסיס.
+
+אבל כשהמוצר הוא מושג חדש לגמרי — הסרט חייב קודם כל ליצור את הצורך, ורק אחר כך להציג את הפתרון.
+
+Ludeo בנתה טכנולוגיה שמאפשרת לגיימר לקחת קליפ YouTube של שחקן אחר, להיכנס ישירות לנקודת הזמן המדויקת שבה קרה הרגע האפי — ולשחק אותו בעצמו. להתחרות. לנצח. לשתף.
+
+מושג כזה לא קיים בשפה הנוכחית של הגיימינג. **הסרט נדרש להיות ה-tutorial לחוויה.**
+
+## שני קהלים, סרט אחד
+
+הבריף של Ludeo הגיע עם אתגר ייחודי: הסרט צריך לעבוד לשני קהלים שונים לגמרי.
+
+**קהל א' — הגיימר:**
+רוצה להרגיש. לא להבין. אם אתה מסביר לו יותר מדי — איבדת אותו. הוא צריך לראות את ה-wow ולחשוב "רגע — אני יכול לעשות את זה?!"
+
+**קהל ב' — המשקיע/מפתח המשחק:**
+רוצה להבין. לא רק להרגיש. הוא שואל: איך הטכנולוגיה עובדת? מה זה אומר למונטיזציה? איך זה משתלב בפלטפורמות קיימות?
+
+הפתרון שמצאנו: **שכבות נרטיביות מקבילות.**
+
+[IMAGE]
+
+## הפתרון הויזואלי: שני עולמות, שיחה אחת
+
+בנינו מבנה נרטיבי דו-שכבתי:
+
+**שכבה 1 — Live-Action ריאליסטי**
+
+חדר גיימינג אמיתי. גיימר אמיתי. מסכים, תאורת RGB סגולה-כחולה, אווירת לילה. הכל מוכר, הכל אותנטי. זאת השפה שהגיימר מדבר.
+
+בשכבה הזאת, הסרט מתחיל בתסכול — גיימר שצופה בסרטוני גיימפליי מהצד, יודע שהוא יכול להכות את השיא, אבל לא יכול להיכנס. ואז — ה-Ludeo מגיע.
+
+**שכבה 2 — אנימציה תלת-ממדית עתידנית**
+
+מה שקורה "מאחורי הקלעים" — ב"מעבדת Ludeo" — מוצג כעולם תלת-ממד מופשט: דמויות כחולות-אבסטרקטיות שמנהלות את הטכנולוגיה. הן חותכות רגעי שיא. מגדירות יעדים. יוצרות קובץ שחקן-יחיד.
+
+**למה הפרדה כזאת?** כי לאנימציה יש יכולת לתרגם תהליך טכני לוויזואל ישיר בלי להפריע לזרימה הנרטיבית. הגיימר ממשיך לראות "סיפור" — המשקיע מבין "מה".
+
+## בניית ה-VFX: גרום לטכנולוגיה להיראות חלקה
+
+השלב הטכנית-קריאייטיבי המורכב ביותר: **UI/UX Integration — איך ממשק המשתמש נראה כחלק אינטגרלי מהסצנה, לא כ-overlay גנרי.**
+
+הכלל שהנחה אותנו: **ה-UI הוא שחקן בסצנה — לא כיתוב.**
+
+לוח המובילים (Leaderboard) לא מוצג כ-screenshot. הוא מופיע ומגיב לפעולות הגיימר בזמן אמת — עולה, מסמן ניצחון, מאפשר שיתוף.
+
+ממשק הבחירה של הרגע האפי לא מוסבר — הוא מוצג: הגיימר לוחץ, העולם נשאב.
+
+## הבימוי: אנרגיה של גיימינג, לא מצגת
+
+גיימרים מפתחים radar חד לתוכן מזויף. כשחברת גיימינג מפיקה תוכן שנראה כמו מצגת שיווקית — הם עוזבים תוך שניות.
+
+הבימוי של Ludeo נבנה על קצב שמשקף ישירות את אנרגיית הגיימינג עצמו: **מהיר, ריגושי, עם payoff ברורים.**
+
+Setup: תסכול → Discovery → המהפך → ניצחון → שיתוף.
+
+כל שלב מרגיש כמו פרוגרסיה במשחק עצמו. הצופה לא רואה סרט — הוא חי ב-gameplay loop.
+
+## מה זה אומר לחברות טכנולוגיה שמסבירות מושגים חדשים
+
+**הדבר שלמדנו מ-Ludeo:** כשהמוצר הוא innovation אמיתי — אי אפשר לסמוך על ה-product לדבר בעד עצמו. הסרט חייב ליצור את ה-mental model לפני שהוא מציג את ה-product.
+
+שלושה שלבים שעובדים:
+1. **צור את הכאב** — הראה את מה שקיים עכשיו ולמה הוא לא מספיק
+2. **הראה את הפתרון** — ויזואלי, מוחשי, מהיר
+3. **תן לצופה לדמיין את עצמו שם** — לא "המוצר עושה X" אלא "אתה יכול לעשות X"
+
+זה ההבדל בין סרט שמסביר לסרט שמוכר.`,
+    bodyEn: `## The Problem: Convincing Someone They Want Something They've Never Heard Of
+
+When the product is an improvement on something existing — it's relatively easy to talk about. "Faster, cheaper, simpler." The viewer understands the foundation.
+
+But when the product is a completely new concept — the film must first create the need, and only then present the solution.
+
+Ludeo built technology that lets a gamer take a YouTube clip of another player, enter directly at the precise moment the epic moment happened — and play it themselves. Compete. Win. Share.
+
+A concept like this doesn't exist in the current language of gaming. **The film needed to be the tutorial for the experience.**
+
+## Two Audiences, One Film
+
+Ludeo's brief came with a unique challenge: the film needs to work for two completely different audiences.
+
+**Audience A — The Gamer:**
+Wants to feel. Not understand. If you explain too much — you've lost them. They need to see the wow and think "wait — can I do this?!"
+
+**Audience B — The Investor/Game Developer:**
+Wants to understand. Not just feel. They ask: how does the technology work? What does this mean for monetization? How does it integrate with existing platforms?
+
+The solution we found: **parallel narrative layers.**
+
+[IMAGE]
+
+## The Visual Solution: Two Worlds, One Conversation
+
+We built a dual-layer narrative structure:
+
+**Layer 1 — Realistic Live-Action**
+
+A real gaming room. A real gamer. Screens, purple-blue RGB lighting, night atmosphere. All familiar, all authentic. This is the language the gamer speaks.
+
+In this layer, the film begins with frustration — a gamer watching gameplay videos from the sidelines, knowing they can beat the record, but unable to enter. And then — Ludeo arrives.
+
+**Layer 2 — Futuristic 3D Animation**
+
+What happens "behind the scenes" — in the "Ludeo Lab" — is presented as an abstract 3D world: abstract blue figures managing the technology. They clip epic moments. Define objectives. Create a single-player shareable file.
+
+**Why this separation?** Because animation has the ability to translate a technical process into direct visual without disrupting the narrative flow. The gamer continues seeing a "story" — the investor understands the "what."
+
+## Building the VFX: Make Technology Look Seamless
+
+The most complex technical-creative phase: **UI/UX Integration — making the user interface appear as an integral part of the scene, not a generic overlay.**
+
+The rule that guided us: **The UI is a character in the scene — not a caption.**
+
+The Leaderboard isn't shown as a screenshot. It appears and responds to the gamer's actions in real-time — rises, marks victory, enables sharing.
+
+The epic moment selection interface isn't explained — it's shown: the gamer clicks, the world is sucked in.
+
+## The Direction: Gaming Energy, Not a Presentation
+
+Gamers develop sharp radar for fake content. When a gaming company produces content that looks like a marketing presentation — they leave within seconds.
+
+Ludeo's direction was built on a pace that directly mirrors gaming energy itself: **fast, visceral, with clear payoffs.**
+
+Setup: Frustration → Discovery → The Turning Point → Victory → Sharing.
+
+Every step feels like progression in the game itself. The viewer doesn't watch a film — they live the gameplay loop.
+
+## What This Means for Tech Companies Explaining New Concepts
+
+**What we learned from Ludeo:** When the product is real innovation — you can't rely on the product to speak for itself. The film must create the mental model before it presents the product.
+
+Three steps that work:
+1. **Create the pain** — show what exists now and why it's not enough
+2. **Show the solution** — visual, tangible, fast
+3. **Let the viewer imagine themselves there** — not "the product does X" but "you can do X"
+
+That's the difference between a film that explains and a film that sells.`,
+  },
+  {
+    id: "big-fashion-giliot-blog",
+    relatedYoutubeId: "yDJ5shdbFMw",
+    titleHe: "רחפן ו-OOH: כשצילום אווירי הופך קמפיין חוצות לנכס וידאו | BIG FASHION גלילות",
+    titleEn: "Drone & OOH: When Aerial Cinematography Turns an Out-of-Home Campaign Into a Video Asset | BIG FASHION Gililot",
+    excerptHe: "קמפיין חוצות עם עשרות שלטים ברחבי גוש דן הוא השקעה ענקית. אבל מי רואה את כולם יחד? רחפן. ניתוח הפרויקט שיצר נכס שיווקי מקמפיין OOH של BIG FASHION גלילות.",
+    excerptEn: "An out-of-home campaign with dozens of billboards across greater Tel Aviv is a massive investment. But who sees them all together? A drone. An analysis of the project that created a marketing asset from BIG FASHION Gililot's OOH campaign.",
+    readingTime: 4,
+    date: "2025-03-05",
+    tags: ["Commercial", "Drone", "OOH", "Retail", "Aerial Cinematography"],
+    relatedServiceHref: "/services/commercial",
+    relatedServiceLabelHe: "מסחרי ואירועים",
+    relatedServiceLabelEn: "Commercial & Events",
+    bodyHe: `## הבעיה הנסתרת של קמפיין OOH
+
+קמפיין חוצות מוצלח הוא אחד מהצעדים השיווקיים הכי עוצמתיים שיש. כשאתה רואה שלט ענק על גורד שחקים בציר איילון, גשר פרסום, ועוד שלושים שלטים ברחבי גוש דן — אתה מרגיש שהמותג הזה *נמצא*.
+
+אבל יש בעיה: **אף אחד לא רואה את כולם.**
+
+הנהג שעובר על איילון רואה שלט אחד. הולך הרגל ברמת השרון רואה שני שלטים. האדם ברחוב לעולם לא חווה את הנפח הכולל של הקמפיין.
+
+**רחפן פותר את זה.**
+
+## BIG FASHION גלילות: הכנות להשקה גדולה
+
+לקראת פתיחת BIG FASHION גלילות — מתחם קניות ואופנה חדש ברמת השרון — הושקה מערכת פרסום חוצות מסיבית: שלטי ענק על מגדלי עסקים, גשרי פרסום, שלטי תחנות אוטובוס, ופריסה מלאה לאורך ציר המרכזי.
+
+ההשקה — 27.02, יום חמישי — הצריכה לייצר מקסימום ציפייה בפרק זמן קצר.
+
+המשימה שקיבלנו: **לתעד את כל הנוכחות הזאת בנכס וידאו אחד שמשדר עוצמה ודחיפות.**
+
+[IMAGE]
+
+## הפתרון: רחפן כ"עד" הקמפיין
+
+צילום רחפן אווירי נותן לצופה את מה שאי אפשר לראות מהאדמה: **הנפח הכולל.**
+
+כשהמצלמה עולה ומתרחקת, פתאום רואים שלושה שלטים בפריים אחד. ממשיכים עולים — ורואים ריכוז של נוכחות מותגית שאי אפשר להכחיש.
+
+הגישה שלנו בפרויקט:
+
+**שכבת יום + שכבת לילה**
+
+שלטי חוצות נראים שונה לגמרי ביום ובלילה. בסרטון שילבנו את שתי השכבות: צילומים בשעות שיא היום שמדגישים את הגודל, וצילומי לילה שבהם התאורה הפנימית של השלטים יוצרת נוכחות חזקה יותר ממה שאפשר לצפות.
+
+העריכה קצבית שמחליפה בין יום ללילה לא רק מציגה שתי תמונות — היא יוצרת תחושה שהקמפיין "שם" 24/7.
+
+**מעל לתנועה, לא מתוכה**
+
+הנקודת מבט האווירית של הרחפן נותנת קונטקסט שצילום רגיל לא יכול לתת: אנחנו רואים את השלט *ואת* העורק המרכזי שמולו. מאות אלפי מכוניות ביום עוברות שם. הרחפן מדגים את זה בלי לאמר מילה.
+
+## עריכה קצבית: ליצור דחיפות
+
+הסרטון נבנה על לוגיקה של ספירה לאחור. כל כמה שניות — שלט חדש, זווית חדשה, נקודת מבט חדשה. הקצב האנרגטי המסונכרן למוזיקה עובד על שני מישורים:
+
+**מישור רגשי:** תחושה שהאירוע קרוב, שיש עוצמה, שמשהו גדול עומד לקרות.
+
+**מישור מידעי:** הצופה רואה נוכחות מותגית אחרי נוכחות — מצטבר רושם של קמפיין מבוצע על הצד הטוב ביותר.
+
+## מה זה אומר לקמפיין OOH שלך
+
+כל קמפיין חוצות ראוי לנכס וידאו מלווה. הסיבות:
+
+**1. הנצחה ושיתוף:** שלט חוצות נמחק ביום שאחרי הקמפיין. סרטון רחפן שלו — נשאר, מופץ, מוכיח ROI.
+
+**2. מדיה דיגיטלית מנכס פיזי:** הסרטון פועל ברשתות החברתיות, בפרסום דיגיטלי, בהצגות למשקיעים — בכל ערוץ שבו השלטים הפיזיים לא יכולים להגיע.
+
+**3. הוכחת נוכחות:** ללקוח, לשותפים, למדיה — "הנה הקמפיין שלנו בשטח" הוא דבר אחד. "הנה הווידאו שמראה את הקמפיין שלנו בשטח" — זה הרבה יותר עוצמתי.
+
+**4. תוכן שיווקי לתקופות עתידיות:** הסרטון משמש גם כ-Case Study להשקות עתידיות, גם כחומר PR, וגם כנכס להצגות לשוכרים ושותפים עסקיים.
+
+הרחפן לא רק מתעד את הקמפיין — הוא *מגביר* אותו.`,
+    bodyEn: `## The Hidden Problem with OOH Campaigns
+
+A successful out-of-home campaign is one of the most powerful marketing moves there is. When you see a massive billboard on a high-rise along Ayalon, an advertising bridge, and thirty more signs across greater Tel Aviv — you feel that brand *is there*.
+
+But there's a problem: **no one sees them all.**
+
+The driver on Ayalon sees one sign. The pedestrian in Ramat HaSharon sees two. The person on the street never experiences the full volume of the campaign.
+
+**A drone solves this.**
+
+## BIG FASHION Gililot: Preparing for a Major Launch
+
+In anticipation of the opening of BIG FASHION Gililot — a new fashion and retail complex in Ramat HaSharon — a massive out-of-home advertising system launched: giant signs on business towers, advertising bridges, bus stop placements, and full coverage along the main artery.
+
+The launch — 27.02, Thursday — needed to generate maximum anticipation in a short timeframe.
+
+Our assignment: **document all of this presence in one video asset that conveys power and urgency.**
+
+[IMAGE]
+
+## The Solution: Drone as the Campaign's "Witness"
+
+Aerial drone footage gives the viewer what's impossible to see from the ground: **the total volume.**
+
+When the camera rises and pulls back, you suddenly see three signs in one frame. Keep rising — and you see a concentration of brand presence that's undeniable.
+
+Our approach in the project:
+
+**Day Layer + Night Layer**
+
+Out-of-home signs look completely different by day and by night. In the film we combined both layers: daytime shots during peak hours that emphasize scale, and night shots where the signs' internal illumination creates a stronger presence than you'd expect.
+
+The rhythmic editing switching between day and night doesn't just present two pictures — it creates the feeling that the campaign is "there" 24/7.
+
+**Above the Traffic, Not Within It**
+
+The drone's aerial perspective provides context that ground-level shooting cannot: we see the sign *and* the major artery in front of it. Hundreds of thousands of cars pass there daily. The drone demonstrates this without saying a word.
+
+## Rhythmic Editing: Creating Urgency
+
+The film was built on a countdown logic. Every few seconds — a new sign, a new angle, a new perspective. The energetic pace synced to music works on two levels:
+
+**Emotional level:** the feeling that the event is near, that there's power, that something big is about to happen.
+
+**Informational level:** the viewer sees brand presence after brand presence — accumulating an impression of a campaign executed at the highest level.
+
+## What This Means for Your OOH Campaign
+
+Every out-of-home campaign deserves a companion video asset. The reasons:
+
+**1. Preservation and sharing:** a billboard disappears the day after the campaign ends. A drone film of it — stays, circulates, proves ROI.
+
+**2. Digital media from a physical asset:** the film works on social media, digital advertising, investor presentations — every channel the physical signs can't reach.
+
+**3. Proof of presence:** to clients, partners, media — "here's our campaign in the field" is one thing. "Here's the video showing our campaign in the field" — that's far more powerful.
+
+**4. Marketing content for future periods:** the film also serves as a Case Study for future launches, PR material, and an asset for presentations to tenants and business partners.
+
+The drone doesn't just document the campaign — it *amplifies* it.`,
+  },
+  {
+    id: "ashtrom-properties-blog",
+    relatedYoutubeId: "ome2LtSiFWQ",
+    titleHe: "כשהנדל\"ן מרגיש: ניתוח סרט התדמית של אשטרום נכסים",
+    titleEn: "When Real Estate Feels Human: Analyzing the Ashtrom Properties Brand Film",
+    excerptHe: "700 אלף מ\"ר, 60 נכסים מניבים, ועשרות שנות היסטוריה — איך מספרים את הסיפור הזה בצורה שמרגשת ולא רק מרשימה? מאחורי הקלעים של הפקה נדל\"נית קורפורייטית בסקאלה ארצית.",
+    excerptEn: "700,000 sqm, 60 income-producing assets, and decades of history — how do you tell that story in a way that moves, not just impresses? Behind the scenes of a nationwide corporate real estate production.",
+    readingTime: 5,
+    date: "2024-03-15",
+    tags: ["Real Estate", "Corporate", "Drone", "CGI", "Brand Film", "B2B"],
+    relatedServiceHref: "/services/realestate",
+    relatedServiceLabelHe: "נדל\"ן ואדריכלות",
+    relatedServiceLabelEn: "Real Estate & Architecture",
+    bodyHe: `## הבעיה עם סרטי נדל"ן
+
+סרטי נדל"ן מייגעים. לא בגלל הנכסים — בגלל הגישה.
+
+טסים עם רחפן, מציגים מגדל, מוסיפים מוזיקת אמביאנט, כותבים "איכות שאין שניה לה" — ויוצאים עם סרט שנראה כמו כל שאר סרטי הנדל"ן.
+
+הבעיה: **נדל"ן עסקי הוא מוצר שנרכש ברציו, אבל מוצע לרגש.** אנשים חותמים על חוזי שכירות ב-20 מיליון שקל על סמך תחושת ביטחון, ותק ועתיד.
+
+**הסרט של אשטרום נכסים נבנה להפעיל את הרגש הזה — בשפה קורפורייטית.**
+
+## הכלל הראשון: ותק אינו מספרים — הוא תמונות
+
+כשמסרים כמו "60 שנות ניסיון" נאמרים בוויס-אובר — הם נשמעים כמו מודעת דרושים. כשאתה *רואה* עשורים של היסטוריה מתפתחים לפניך בצילומי ארכיון, עם גרפיקת טיים-ליין שמחברת עבר להווה — אתה *מאמין* לוותק.
+
+בסרט של אשטרום נכסים, שילבנו חומרי ארכיון היסטוריים עם צילומי עכשיו — ואת החיבור ביניהם עשינו ויזואלי ולא מילולי. הצופה עושה את החיבור בעצמו. **זה הרבה יותר עוצמתי ממה שספיקר יאמר לו.**
+
+[IMAGE]
+
+## הכלל השני: ארכיטקטורה + אנשים = נשמה
+
+הבדיחה המקצועית בתעשייה: "נכסים נראים טוב יותר בלי אנשים."
+
+מבחינה טכנית — נכון. מבחינה שיווקית — הרסני.
+
+חברת נדל"ן עסקית שמוכרת *חלל* אינה מוכרת מ"ר. היא מוכרת את מה שקורה *בתוך* המ"ר: ישיבות שמשנות החלטות, חברות שצומחות, קהילות עסקיות שמתפתחות.
+
+בסרט, כל שוט ארכיטקטוני קיבל *מקביל* של אנשים בפעולה — בפגישה, בהליכה, בשיחה ספונטנית במסדרון. **הבניין שוקל כמה שיקול. האנשים בתוכו — זה המותג.**
+
+## הכלל השלישי: CGI כגשר בין הווה לעתיד
+
+אשטרום נכסים יש פרויקטים שעדיין בפיתוח. איך מציגים נכס שעדיין לא קיים?
+
+שתי גישות שגויות:
+- רנדרים בלבד — קרים, מנוכרים, לא מאמינים
+- להסתיר — החמצת הזדמנות שיווקית
+
+**הגישה שלנו: שילוב חלק של CGI בתוך חומרי הלייב-אקשן.**
+
+כשה-CGI מתחיל ממקום שאתה מכיר — אותה עיר, אותו ציר, אותה אסתטיקת מותג — הקפיצה מ"מה שיש" ל"מה שיהיה" מרגישה אמינה. הצופה לא צריך לנחש את ההבדל.
+
+## ניהול הפקה בסקאלה ארצית
+
+הפקה מהסוג הזה דורשת לוגיסטיקה שרוב חברות ההפקה לא מנוסות בה:
+
+**מה זה אומר בפועל:**
+- תיאום צילומים בעשרות לוקיישנים בכל הארץ (תל אביב, בני ברק, ירושלים, צפון) — כל אחד עם הרשאות שונות, שוכרים פעילים ואילוצי שעות
+- צוות רחפן מוסמך עם היתרי טיסה בשטחים עירוניים סגורים
+- ניהול גישה לנכסים פעילים מבלי להפריע לשוכרים
+- גיוס ארכיון היסטורי מהתיקים הפנימיים של הלקוח ועיבוד שלו לפורמט HD
+- סינכרון בין יחידת ה-CGI לצוות הצילום — שתי שפות הפקה שונות שחייבות לדבר אחת עם השניה
+
+**האמת:** הלוגיסטיקה של סרט כזה מורכבת יותר מהלוגיסטיקה של עסקה נדל"נית ממוצעת.
+
+## מה מביאים לשיחת הבריף
+
+כשחברת נדל"ן עסקית מגיעה לשיחת בריף עם חברת הפקות, היא לרוב מגיעה עם שלושה נכסים שהיא הכי גאה בהם ורשימה של "מסרים".
+
+מה שאנחנו עושים: **בונים נרטיב לפני שאנחנו בונים שאטליסט.**
+
+מי הקהל? מה הוא כבר יודע? מה הוא צריך להרגיש? מה הפעולה שאנחנו רוצים שיעשה אחרי שראה את הסרט?
+
+רק אחרי שיש תשובות לאלה — נבנה את מפת הצילומים.`,
+    bodyEn: `## The Problem with Real Estate Films
+
+Real estate films are boring. Not because of the properties — because of the approach.
+
+Fly with a drone, show a tower, add ambient music, write "unparalleled quality" — and you emerge with a film that looks like every other real estate film.
+
+The problem: **commercial real estate is a product purchased through reason, but offered to emotion.** People sign rental contracts for 20 million shekels based on a feeling of security, longevity, and future.
+
+**The Ashtrom Properties film was built to activate that emotion — in a corporate language.**
+
+## Rule One: Legacy Isn't Numbers — It's Images
+
+When messages like "60 years of experience" are delivered in voiceover — they sound like a job posting. When you *see* decades of history unfolding before you in archival footage, with timeline graphics connecting past to present — you *believe* the legacy.
+
+In the Ashtrom Properties film, we integrated historical archival material with current footage — and we made the connection between them visual, not verbal. The viewer makes the connection themselves. **That's far more powerful than what any speaker can tell them.**
+
+[IMAGE]
+
+## Rule Two: Architecture + People = Soul
+
+The industry's professional joke: "properties look better without people."
+
+Technically — correct. Strategically — disastrous.
+
+A commercial real estate company selling *space* isn't selling square meters. It's selling what happens *inside* the square meters: meetings that change decisions, companies that grow, business communities that develop.
+
+In the film, every architectural shot received a *parallel* of people in action — in a meeting, walking, in a spontaneous hallway conversation. **The building weighs as much as it weighs. The people inside it — that's the brand.**
+
+## Rule Three: CGI as a Bridge Between Present and Future
+
+Ashtrom Properties has projects still in development. How do you present an asset that doesn't yet exist?
+
+Two wrong approaches:
+- Renders only — cold, alienating, unconvincing
+- Hide them — missed marketing opportunity
+
+**Our approach: seamless integration of CGI within live-action material.**
+
+When the CGI starts from a place you recognize — the same city, the same artery, the same brand aesthetic — the jump from "what exists" to "what will be" feels credible. The viewer doesn't need to guess the difference.
+
+## Managing a Nationwide Production
+
+A production of this kind requires logistics that most production companies aren't experienced with:
+
+**What this means in practice:**
+- Coordinating shoots at dozens of locations nationwide (Tel Aviv, Bnei Brak, Jerusalem, the North) — each with different permits, active tenants, and time constraints
+- A certified drone crew with flight permits in closed urban areas
+- Managing access to active properties without disrupting tenants
+- Sourcing historical archives from the client's internal files and processing them to HD format
+- Synchronizing the CGI unit with the filming crew — two different production languages that must speak to each other
+
+**The truth:** the logistics of a film like this are more complex than the logistics of an average real estate deal.
+
+## What to Bring to the Brief Meeting
+
+When a commercial real estate company arrives for a brief meeting with a production company, they usually bring three properties they're most proud of and a list of "messages."
+
+What we do: **build a narrative before we build a shot list.**
+
+Who's the audience? What do they already know? What do they need to feel? What action do we want them to take after watching the film?
+
+Only after there are answers to these — do we build the shot map.`,
+  },
+  {
+    id: "vertica-medtech-blog",
+    relatedYoutubeId: "7vCj49e42Ow",
+    titleHe: "איך מוכרים מוצר שאי אפשר לדבר עליו: הפקת Onboarding לטכנולוגיה רפואית אינטימית | Vertica",
+    titleEn: "How to Sell a Product You Can't Talk About: Onboarding Production for Intimate Medical Technology | Vertica",
+    excerptHe: "מוצרי MedTech אינטימיים הם אחת מהאתגרות הגדולות בתקשורת שיווקית. הם נדרשים להיות מדויקים רפואית, נגישים רגשית, ולא יוצרים מבוכה — בו-זמנית. ניתוח ההחלטות מאחורי סרט ה-Onboarding של Vertica.",
+    excerptEn: "Intimate MedTech products are one of the biggest challenges in marketing communication. They need to be medically precise, emotionally accessible, and non-embarrassing — simultaneously. An analysis of the decisions behind the Vertica onboarding film.",
+    readingTime: 5,
+    date: "2023-11-15",
+    tags: ["MedTech", "Onboarding", "Medical CGI", "Product Film", "How-To"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הבעיה שאי אפשר להתעלם ממנה
+
+כשחברת MedTech מגיעה עם מוצר אינטימי — טיפול רפואי שקשור לאזורים שאנשים לא מדברים עליהם בגלוי — מחלקת השיווק נכנסת למשבר.
+
+איך מסבירים מוצר כזה?
+- יותר מדי טכני → מבהיל
+- יותר מדי "נחמד" → לא אמין
+- יותר מדי ישיר → מביך
+- יותר מדי עקיף → מבולבל
+
+הפרויקט של Vertica — מכשיר RF לטיפול באי-אונות — הגיע עם כל האתגרים האלה בבת אחת.
+
+**המטרה שהגדרנו:** סרט Onboarding שצופה ראשון-בו לא ירגיש אפילו רגע אחד של אי נוחות.
+
+## ההחלטה הראשונה: טון לפני תסריט
+
+לפני שכתבנו מילה אחת בתסריט, הגדרנו את הטון. זה השלב שרוב הלקוחות מדלגים עליו — ומשלמים על כך מאוחר יותר.
+
+**הטון שבחרנו: "הסבר של רופא שאתה סומך עליו."**
+
+לא טלשופינג. לא אנפורמרשיל. לא קמפיין עם מוזיקה דרמתית. רופא שיושב מולך, מסביר, מדגים, ועושה שהכל מרגיש פשוט.
+
+זה הנחה את כל ההחלטות שאחריה:
+- בגדים: נקיים, ניטרליים, לא מינוכרים ולא צבעוניים
+- תאורה: High-key רכה, לא צבעונית, לא דרמתית
+- קצב: איטי ומכוון, לא מהיר ואנרגטי
+- שחקן: ישיר לעין, ביטחון עצמי, לא מופתע מכלום
+
+[IMAGE]
+
+## ה-CGI הרפואי: להסביר מה שאי אפשר לצלם
+
+הרגע הטכנית-קריאייטיבי המורכב ביותר: **איך מסבירים מנגנון פיזיולוגי אינטימי — ויזואלית — בלי לצלם מה שאי אפשר לצלם?**
+
+הפתרון: **Blue Medical Mesh — דמות אנושית שקופה בתלת-ממד.**
+
+טכנולוגית ה-RF עובדת על ידי אלקטרומגנטיזם שחודר לרקמות ומגרה מחדש את מחזור הדם. כדי להסביר את זה ויזואלית, יצרנו:
+
+1. **מודל תלת-ממד** של הגוף האנושי (mesh כחול שקוף) שמציג את מיקום המכשיר ביחס לאנטומיה
+2. **אנימציית זרמים** שמדגימה את חדירת ה-RF לרקמות
+3. **הצגה של אזורי הטיפול** ללא כל צילום ישיר
+
+ה-CGI פתר את הבעיה מבלי להוריד את הרמה המקצועית — נהפוך הוא, הוא הוסיף אמינות רפואית שצילום רגיל לא היה מאפשר.
+
+## הסנכרון בין אולפן ל-CGI
+
+הרגע הטכני שדרש הכי הרבה תכנון: **כדי שה-CGI ייראה מסונכרן עם השחקן, גם הזווית וגם הסקאלה חייבות להיות זהות.**
+
+תכנון שקדם לצילום:
+- הגדרה מדויקת של זווית הצילום של השחקן (שיתאים לזווית המודל התלת-ממדי)
+- מיקום ידי השחקן תוכנן כך שיתכתב עם מיקום ה-CGI
+- לייב-אקשן צולם קודם, CGI הוסף לאחר מכן בהתאמה מדויקת
+
+ללא תכנון זה ב-preproduction — ה-CGI היה מרגיש "פסטד" ולא אינטגרלי.
+
+## צילומי Close-up ו-Overhead: הדיוק שבונה אמון
+
+מוצר טכני שדורש הפעלה מדויקת — טעינה מגנטית, ג'ל, כפתורים, LED — לא יכול להיות מוצג בלבד בשוטים רחבים.
+
+הכנסנו שני סוגי צילום שבדרך כלל לא מופיעים יחד:
+
+**Overhead (מלמעלה):** מאפשר לצופה לראות בדיוק מה הידיים עושות — פתיחת הקופסה, הוצאת הרכיבים, חיבור מגנטי — כאילו הוא עצמו עושה את זה.
+
+**Extreme Close-up:** נוריות ה-LED, הקליק המגנטי, ניקוי — הדברים שצופה חייב לראות בגדול כדי לזכור אותם.
+
+העריכה בין שניהם יצרה זרימה שמרגישה כמו הדרכה אישית, לא מדריך כתוב.
+
+## סצנת הניקוי: למה לא לדלג על זה
+
+לקוחות רבים רוצים לדלג על סצנות ניקוי ותחזוקה. "זה לא מסקרן. הצופה יקפוץ."
+
+**הטעות הגדולה.**
+
+לצרכן שקונה מוצר MedTech אינטימי, הניקוי הוא אחד מחסמי הרכישה הגדולים ביותר. "כמה זה מסובך? האם זה מעייף? האם זה היגייני?"
+
+סצנת הניקוי בכיור — פשוטה, מהירה, ישירה — מורידה חסם ענקי: **"אה, זה פשוט בדיוק כמו כל מוצר אחר שיש לי בבית."**
+
+אמינות מגיעה מהפרטים הקטנים שמותגים בדרך כלל מתביישים להראות.
+
+## מה הסרט הזה מוכיח עבורך
+
+ללקוח שמחפש חברת הפקות לפרויקט MedTech או מוצר טכני מורכב:
+
+**הסרט של Vertica מדגים:**
+- יכולת לעבוד עם נושאים רגישים מבלי לפגוע בנראות ובאמינות
+- שילוב CGI רפואי בתוך הפקת לייב-אקשן
+- הפקה בסטנדרט גלובלי (אנגלית, מוכן ל-US/EU platforms)
+- ROI מדיד: פחות פניות שירות, פחות החזרות, יותר שביעות רצון
+
+וידאו Onboarding טוב לא מסביר את המוצר. **הוא גורם ללקוח שלך לרצות להשתמש בו.**`,
+    bodyEn: `## The Problem You Can't Ignore
+
+When a MedTech company arrives with an intimate product — medical treatment related to areas people don't discuss openly — the marketing department goes into crisis.
+
+How do you explain a product like this?
+- Too technical → frightening
+- Too "nice" → not credible
+- Too direct → embarrassing
+- Too indirect → confusing
+
+The Vertica project — an RF device for treating erectile dysfunction — arrived with all of these challenges at once.
+
+**The goal we defined:** an Onboarding film where a first-time viewer won't feel a single moment of discomfort.
+
+## The First Decision: Tone Before Script
+
+Before we wrote a single word of script, we defined the tone. This is the stage most clients skip — and pay for later.
+
+**The tone we chose: "an explanation from a doctor you trust."**
+
+Not telemarketing. Not an infomercial. Not a campaign with dramatic music. A doctor sitting across from you, explaining, demonstrating, making everything feel simple.
+
+This guided every decision that followed:
+- Wardrobe: clean, neutral, neither clinical nor colorful
+- Lighting: soft High-key, not colorful, not dramatic
+- Pace: slow and deliberate, not fast and energetic
+- Talent: direct eye contact, self-assured, unsurprised by anything
+
+[IMAGE]
+
+## Medical CGI: Explaining What You Can't Film
+
+The most complex technical-creative moment: **how do you explain an intimate physiological mechanism — visually — without filming what can't be filmed?**
+
+The solution: **Blue Medical Mesh — a transparent 3D human figure.**
+
+RF technology works through electromagnetism that penetrates tissue and re-stimulates blood circulation. To explain this visually, we created:
+
+1. **A 3D model** of the human body (transparent blue mesh) showing the device's position relative to anatomy
+2. **Current animation** demonstrating RF penetration into tissue
+3. **Treatment zone display** without any direct filming
+
+The CGI solved the problem without lowering professional standards — on the contrary, it added medical credibility that regular filming wouldn't have allowed.
+
+## Syncing Studio with CGI
+
+The technical moment requiring the most planning: **for the CGI to appear synchronized with the talent, both the angle and scale must be identical.**
+
+Pre-production planning:
+- Precise definition of talent filming angle (to match the 3D model angle)
+- Talent hand placement planned to correspond with CGI positioning
+- Live-action filmed first, CGI added afterward in precise alignment
+
+Without this preproduction planning — the CGI would feel "pasted" rather than integral.
+
+## Close-up and Overhead Shots: The Precision That Builds Trust
+
+A technical product requiring precise operation — magnetic charging, gel, buttons, LED — cannot be shown only in wide shots.
+
+We introduced two types of filming that don't usually appear together:
+
+**Overhead (top-down):** lets the viewer see exactly what the hands are doing — unboxing, extracting components, magnetic connection — as if they're doing it themselves.
+
+**Extreme Close-up:** the LED indicators, the magnetic click, cleaning — the things a viewer must see large to remember.
+
+The editing between the two created a flow that feels like personal instruction, not a written manual.
+
+## The Cleaning Scene: Why You Don't Skip This
+
+Many clients want to skip cleaning and maintenance scenes. "It's not exciting. Viewers will skip ahead."
+
+**The big mistake.**
+
+For a consumer buying an intimate MedTech product, cleaning is one of the biggest purchase barriers. "How complicated is it? Is it tiring? Is it hygienic?"
+
+The sink-cleaning scene — simple, quick, direct — removes a massive barrier: **"Oh, this is just as straightforward as any other product I have at home."**
+
+Credibility comes from the small details that brands are usually too embarrassed to show.
+
+## What This Film Proves for You
+
+For a client looking for a production company for a MedTech or complex technical product project:
+
+**The Vertica film demonstrates:**
+- Ability to work with sensitive subjects without compromising appearance and credibility
+- Medical CGI integration within live-action production
+- Production to global standard (English, ready for US/EU platforms)
+- Measurable ROI: fewer support calls, fewer returns, higher satisfaction
+
+A good Onboarding video doesn't explain your product. **It makes your customer want to use it.**`,
+  },
+  {
+    id: "startup-nation-connect2innovate-blog",
+    relatedYoutubeId: "Fmd3fB5Pb-M",
+    titleHe: "סרט שפותח גבולות: מאחורי הקלעים של Connect 2 Innovate | Startup Nation Central",
+    titleEn: "A Film That Opens Borders: Behind the Scenes of Connect 2 Innovate | Startup Nation Central",
+    excerptHe: "איך מצלמים שיתוף פעולה בין-מדינתי רגיש (ישראל ומרוקו) בלי לעשות אותו נראה כמו PR ממשלתי? ניתוח ההחלטות הקריאייטיביות מאחורי הסרט שהפך דיפלומטיה לרגש.",
+    excerptEn: "How do you film a sensitive international collaboration (Israel and Morocco) without making it look like government PR? An analysis of the creative decisions behind the film that turned diplomacy into emotion.",
+    readingTime: 5,
+    date: "2024-01-20",
+    tags: ["B2B Video", "Corporate Storytelling", "International", "Innovation", "Startup Nation"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הנושא שקשה מאוד לצלם
+
+יש פרויקטים שמגיעים עם אתגר שאי אפשר לפתור רק עם ציוד טוב.
+
+"Connect 2 Innovate" של Startup Nation Central לא בא לתעד כנס עסקי. הוא בא לתעד **משהו שקשה הרבה יותר:** את האמון שנבנה בין אנשים ממדינות שהדיפלומטיה ביניהן עדיין חדשה.
+
+ישראלים ומרוקאים, יזמים וממשלות, טכנולוגיה ותרבות — כולם בסרט אחד. ובלי שזה ייראה כמו PR תעמולתי.
+
+**האתגר:** איך מצלמים שיתוף פעולה בין-מדינתי בלי שהוא ייראה מבוים?
+
+## ההחלטה הראשונה: "אל תסביר — תראה"
+
+ברמת הבריף, Startup Nation Central הגיעו עם הרבה "מסרים" ו"נקודות שיוצרות ערך". הדבר הטבעי היה לבנות סרט שמסביר את התוכנית, את הארגון, את המטרות.
+
+**בחרנו ללכת לכיוון ההפוך.**
+
+הפתיחה של הסרט: לא לוגו, לא כותרת, לא מצגת. משפט אחד: *"In a region where borders often divide, innovation builds bridges."*
+
+ואז — נוף. אנשים. חיוכים. לחיצות ידיים. שיחות.
+
+הצופה מרגיש לפני שהוא מבין. **ברגע שהוא מרגיש — הוא כבר שלנו.**
+
+[IMAGE]
+
+## הניגוד הגדול: מפעל התפלה לצד שולחן אוכל מרוקאי
+
+ההחלטה הקריאייטיבית שעשתה הכי הרבה עבודה: **שילוב בין ה"קשיח" ל"רך".**
+
+**הצד הקשיח:** מפעלי מים, מתקני טכנולוגיה, חדרי ישיבות בטכניון. קנה מידה, תעשייה, רצינות. אנחנו מראים שזה ביזנס אמיתי.
+
+**הצד הרך:** שולחן אוכל ערבי-מרוקאי מסורתי, נגינה בסביבה, חיוכים בין אנשים שרגע היו זרים. אנחנו מראים שזה קשר אנושי אמיתי.
+
+הניגוד הזה אינו אקראי. הוא **מגדיר את המהות של Innovation Diplomacy:** לא מסמכים ולא הסכמים — אנשים שמחליטים לסמוך אחד על השני.
+
+## הטיפוגרפיה בכתב יד: למה להפסיק ולא להוסיף
+
+מרבית הלקוחות בסרטי קורפורייט רוצים גרפיקה נקייה, ברורה, תאגידית. Helvetica, לבן על שחור, ואנימציה חלקה.
+
+בסרט הזה הלכנו לכיוון אחר: **טיפוגרפיה בכתב יד, כמו רשימות ורעיונות.**
+
+הסיבה: כתב יד מבטא מחשבה בפעולה. Startup. Sketch. Idea. הוא מנוגד לכל אסתטיקת ה"כנס הרשמי" ויוצר תחושה שהדברים עדיין נבנים, עדיין חיים, עדיין מתפתחים.
+
+**אלמנט גרפי אחד יכול לשנות את כל הטון של הסרט.**
+
+## הפסקול: מאטמוספרה לאנרגיה
+
+הפסקול של הסרט נבנה כמסע:
+
+**שלב 1 — כניסה שקטה:** צלילים אטמוספריים, כמעט ambient. אנחנו לא "מכריזים" — אנחנו מזמינים.
+
+**שלב 2 — בניית מתח:** כלי הקשה קלים, לחן שמתפתח. הצופה מרגיש שמשהו מתרחש.
+
+**שלב 3 — שחרור:** מקצב אלקטרוני-אתני מודרני שמחבר בין עולם ה-Tech לבין הצלילים התרבותיים של מרוקו ושל ישראל.
+
+הפסקול לא "מציג" — הוא **מנהל את האנרגיה הרגשית של הצופה לאורך כל הסרט.**
+
+## קומפוזיציה: Close-up לצד Drone
+
+בחרנו במכוון לעבוד בשני קצוות של הסקאלה הקינמטית:
+
+**Drone Shots רחבים:** מראים קנה מידה — מפעלים, ערים, פרויקטים. "הנה כמה גדול מה שקורה כאן."
+
+**Extreme Close-ups:** לחיצת יד, מבט, חיוך, אצבע שמצביעה על מפה. "הנה כמה אנושי מה שקורה כאן."
+
+הפינג-פונג בין השתיים יוצר דינמיקה שהצופה מרגיש בלי להגדיר אותה: **גדול ואישי בו-זמנית.**
+
+## מה לומדים מ-Connect 2 Innovate לפרויקט שלך
+
+ארגונים בינלאומיים, גופי חדשנות, קרנות וממשלות — כולם צריכים סרטים שמניעים פעולה מצד שותפים, משקיעים ומדינות.
+
+**מה שעובד בסרטים האלה:**
+- פתיחה רגשית לפני הסבר תאגידי
+- ניגוד בין ה"גדול" (קנה מידה, תעשייה) ל"קטן" (אדם, חיוך, רגע)
+- פסקול שמנהל את האנרגיה — לא רק מרפד
+- גרפיקה שמביעה ערכים, לא רק מידע
+- מסר שצופה יכול לחזור עליו: "חדשנות בונה גשרים"
+
+**מה שלא עובד:**
+- פתיחה עם לוגו וסיסמה
+- סרט שמסביר לפני שהוא מרגיש
+- גרפיקה שמנסה להיות "מקצועית" על חשבון אנושיות
+
+סרט B2B טוב לא מסביר מה הארגון עושה. הוא גורם לצופה לרצות להיות חלק ממנו.`,
+    bodyEn: `## The Subject That's Very Hard to Film
+
+Some projects arrive with a challenge that can't be solved with good equipment alone.
+
+Startup Nation Central's "Connect 2 Innovate" didn't come to document a business conference. It came to document **something much harder:** the trust being built between people from countries whose diplomacy is still new.
+
+Israelis and Moroccans, entrepreneurs and governments, technology and culture — all in one film. Without it looking like propaganda PR.
+
+**The challenge:** how do you film international cooperation without it looking staged?
+
+## The First Decision: "Don't Explain — Show"
+
+At the brief level, Startup Nation Central arrived with many "messages" and "value-creating points." The natural thing was to build a film explaining the program, the organization, the goals.
+
+**We chose to go the opposite direction.**
+
+The film's opening: no logo, no title, no presentation. One sentence: *"In a region where borders often divide, innovation builds bridges."*
+
+Then — landscape. People. Smiles. Handshakes. Conversations.
+
+The viewer feels before they understand. **Once they feel — they're already ours.**
+
+[IMAGE]
+
+## The Great Contrast: Desalination Plant Next to a Moroccan Dinner Table
+
+The creative decision that did the most work: **combining the "hard" with the "soft."**
+
+**The hard side:** water plants, technology facilities, conference rooms at the Technion. Scale, industry, seriousness. We show this is real business.
+
+**The soft side:** a traditional Moroccan dinner table, music in an intimate setting, smiles between people who were strangers moments ago. We show this is real human connection.
+
+This contrast isn't random. It **defines the essence of Innovation Diplomacy:** not documents and not agreements — people deciding to trust each other.
+
+## Handwritten Typography: Why to Break, Not Add
+
+Most clients in corporate films want clean, clear, corporate graphics. Helvetica, white on black, smooth animation.
+
+In this film, we went a different direction: **handwritten typography, like notes and ideas.**
+
+The reason: handwriting expresses thought in action. Startup. Sketch. Idea. It contrasts with all the "official conference" aesthetic and creates a feeling that things are still being built, still alive, still developing.
+
+**A single graphic element can change the entire tone of a film.**
+
+## The Soundtrack: From Atmosphere to Energy
+
+The film's soundtrack was built as a journey:
+
+**Phase 1 — Quiet entry:** atmospheric sounds, almost ambient. We're not "announcing" — we're inviting.
+
+**Phase 2 — Building tension:** light percussion, a developing melody. The viewer feels something is happening.
+
+**Phase 3 — Release:** modern ethnic-electronic rhythm connecting the world of Tech with the cultural sounds of Morocco and Israel.
+
+The soundtrack doesn't "present" — it **manages the viewer's emotional energy throughout the entire film.**
+
+## Composition: Close-up Alongside Drone
+
+We deliberately chose to work at both ends of the cinematic scale:
+
+**Wide Drone Shots:** show scale — plants, cities, projects. "Here's how big what's happening here is."
+
+**Extreme Close-ups:** a handshake, a gaze, a smile, a finger pointing to a map. "Here's how human what's happening here is."
+
+The ping-pong between the two creates a dynamic the viewer feels without defining: **large and personal simultaneously.**
+
+## What Connect 2 Innovate Teaches for Your Project
+
+International organizations, innovation bodies, funds, and governments — all need films that drive action from partners, investors, and countries.
+
+**What works in these films:**
+- Emotional opening before corporate explanation
+- Contrast between the "large" (scale, industry) and the "small" (person, smile, moment)
+- Soundtrack that manages energy — doesn't just pad
+- Graphics that express values, not just information
+- A message a viewer can repeat: "innovation builds bridges"
+
+**What doesn't work:**
+- Opening with a logo and tagline
+- A film that explains before it feels
+- Graphics trying to be "professional" at the expense of humanity
+
+A good B2B film doesn't explain what the organization does. It makes the viewer want to be part of it.`,
+  },
+  {
+    id: "intel-fab28-blog",
+    relatedYoutubeId: "d2Bckns6JTA",
+    titleHe: "איך הופכים תרגיל חירום תאגידי לסרט אקשן קולנועי: הפקת הענק של Intel Fab 28",
+    titleEn: "How to Turn a Corporate Emergency Drill Into a Cinematic Action Film: The Intel Fab 28 Large-Scale Production",
+    excerptHe: "תרגיל חירום הוא אחד הצילומים המורכבים שיש: אין לוח זמנים קבוע, יש חמש זירות במקביל, ואי אפשר לעצור את הייצור. ניתוח ניהול הפקה רב-זירתית בזמן אמת עם Intel.",
+    excerptEn: "An emergency drill is one of the most complex shoots there is: no fixed schedule, five simultaneous zones, and you can't stop production. An analysis of real-time multi-zone production management with Intel.",
+    readingTime: 6,
+    date: "2023-05-20",
+    tags: ["Corporate", "Safety Video", "Multi-Camera", "Drone", "Industrial", "Intel"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הצילום שאי אפשר לחזור עליו
+
+יש שני סוגים של פרויקטי וידאו מבחינת הסיכון ההפקתי.
+
+**סוג א':** אתה יכול לחזור. הטאלנט חזר לאולפן, הלוקיישן נפתח שוב, הסצנה צולמה מחדש.
+
+**סוג ב':** אין חזרה. הרגע קורה פעם אחת, בזמן אמת, ואתה תועד אותו — או שלא.
+
+תרגיל החירום של Intel Fab 28 הוא סוג ב' — ועוד עם מכפיל קושי: לא רגע אחד, אלא **חמישה רגעים בו-זמנית ב-5 זירות שונות בפני המפעל.**
+
+## מה זה אומר בפועל: לוגיסטיקה לפני קריאייטיב
+
+בפרויקטים של Event ותיעוד בזמן אמת, הלוגיסטיקה קודמת לכל. **מי עומד איפה, מי מכסה מה, ומה קורה אם שני דברים קורים בו-זמנית בשני מקומות?**
+
+לפני יום הצילום, בנינו מפת כיסוי:
+
+- **זירה 1 — Hazmat ואמוניה:** צוות צילום כתף עוקב אחר צוות ERT לבוש חליפות. זווית מזורית שמראה את מורכבות הלבישה.
+- **זירה 2 — שריפה בבניין מרכזי:** רחפן FPV לשוטים אוויריים + צוות שני בגובה הקרקע.
+- **זירה 3 — חילוץ מגובה:** צלם אחד מוקדש לתקריבי חבלים ולפנים של המחלצים.
+- **זירה 4 — סריקת הריסות:** צילום כתף דינמי שעוקב אחר הצוות ב-real-time.
+- **זירה 5 — מפקדה (חפ"ק):** רחפן רחב לסקירת הפריסה הכוללת + פנימה לצוות הפיקוד.
+
+**כל צלם קיבל briefing מפורט + תחנת רדיו לעדכונים בזמן אמת.**
+
+[IMAGE]
+
+## הרחפן FPV: כלי שמשנה הכל בתיעוד תעשייתי
+
+בסרטי תיעוד תאגידי, רחפן רגיל נותן נקודת מבט יפה. **רחפן FPV נותן נקודת מבט שמרגישה כמו שחקן בתוך האירוע.**
+
+ב-Fab 28 השתמשנו ב-FPV ליצירת שוטים שעוקבים אחר ההמונים בפינוי — נעים ביניהם, מגיחים מעל גג בניין, צוללים לתוך אזור ה-Hazmat.
+
+**הצופה לא צופה באירוע — הוא בתוכו.**
+
+## הגרפיקה הטקטית: בין מסמך להפקה קולנועית
+
+ה-Lower thirds, ה-Radar overlays וה-Target points לא נוספו רק כ"מידע" — הם כלי נרטיבי.
+
+בסרטי אקשן קולנועיים, גרפיקה טקטית מאותת לצופה: "אנחנו בזמן אמת, זה מבצע, יש תיאום." זה מגביר את תחושת הדחיפות.
+
+**ביישום B2B זה עובד אחרת:** הגרפיקה גם מספקת מידע (שמות הצוותים, זירות) וגם משדרת ארגון ומקצועיות. הצופה ב-HR שצופה בסרט מרגיש: "החברה שלנו מאורגנת. אנחנו מוכנים."
+
+זה לא טפסי בטיחות. **זה תוכן שמייצר גאווה ארגונית.**
+
+## סאונד-דיזיין: להרגיש את הדחיפות
+
+אפקט קולי אחד עשה את כל ההבדל: **רשת הקשר.**
+
+הצרחות המשוברות, הביפים, הפקודות בין צוותים — הוסיפו מימד של אותנטיות שמוזיקה דרמטית לבד לא יכולה לתת. השמעת את זה אתה יודע שזה אמיתי.
+
+שכבות הסאונד שבנינו:
+1. מוזיקה דרמטית עם מקצב פועם — תחושת דחיפות כללית
+2. אזעקות ממשיות שנקלטו בזמן הצילום — אותנטיות
+3. פקודות רשת קשר — תחושת תיאום ושליטה
+4. SFX של ציוד: חליפות הנסגרות, שסתומי חמצן, כבלים
+
+**כשהסאונד עובד כמו שצריך, הצופה עוצר לנשום.**
+
+## אימפקט עסקי: מה הסרט הזה שווה לאינטל
+
+**שכבה 1 — הכשרה:** הסרט משמש כחומר הכשרה לעובדים חדשים. עדיף לראות את הצוות בפעולה פעם אחת מלקרוא 80 עמודי נוהל.
+
+**שכבה 2 — רגולטורים:** חברות תעשייה כפופות לביקורות בטיחות קשות. סרט כזה מציג לרגולטור ביצועי ERT בפועל — לא תיאוריה.
+
+**שכבה 3 — תדמית:** Intel משדרת: "אנחנו לא רק מייצרים שבבים. אנחנו מוסד שאנשים בו בטוחים."
+
+**שכבה 4 — גיוס:** מהנדסים ואנשי טכנולוגיה שמחפשים מקום עבודה רואים שזאת לא רק חברה — זאת חברה שמשקיעה ברמה שאחרות לא מגיעות אליה.
+
+## מה לומדים מ-Fab 28 לפרויקט שלך
+
+אם יש לך תרגיל חירום, כנס ביטחון, יום שדה תעשייתי, או כל אירוע שקורה פעם אחת — **הוא שווה לצלם.**
+
+לא כי "יהיה יפה לאתר". אלא כי:
+- הוא מכשיר עובדים בצורה שמסמכים לא יכולים
+- הוא מוכיח מוכנות לרגולטורים ולשותפים
+- הוא בונה גאווה ארגונית שמשפרת שימור עובדים
+- הוא נכס שיווקי ייחודי שאף מתחרה לא יכול לחקות
+
+**תרגיל שלא צולם — לא קרה.**`,
+    bodyEn: `## The Shoot You Can't Repeat
+
+There are two types of video projects in terms of production risk.
+
+**Type A:** You can go back. The talent returned to the studio, the location reopened, the scene was reshot.
+
+**Type B:** No going back. The moment happens once, in real-time, and you documented it — or you didn't.
+
+Intel Fab 28's emergency drill is Type B — with a difficulty multiplier: not one moment, but **five simultaneous moments across 5 different zones throughout the facility.**
+
+## What This Means in Practice: Logistics Before Creative
+
+In Event and real-time documentation projects, logistics come before everything. **Who stands where, who covers what, and what happens if two things happen simultaneously in two places?**
+
+Before shoot day, we built a coverage map:
+
+- **Zone 1 — Hazmat and Ammonia:** shoulder-rig crew tracking ERT team in protective suits. Close angle showing the complexity of suiting up.
+- **Zone 2 — Building fire:** FPV drone for aerial shots + second ground-level crew.
+- **Zone 3 — Height rescue:** one dedicated cinematographer for rope close-ups and rescuers' faces.
+- **Zone 4 — Debris search:** dynamic shoulder-rig following the team in real-time.
+- **Zone 5 — Command center (HQ):** wide drone for overall deployment overview + interior for command team.
+
+**Every cinematographer received a detailed briefing + a radio station for real-time updates.**
+
+[IMAGE]
+
+## The FPV Drone: A Tool That Changes Everything in Industrial Documentation
+
+In corporate documentary films, a regular drone gives a beautiful perspective. **An FPV drone gives a perspective that feels like being a player inside the event.**
+
+At Fab 28 we used FPV to create shots that follow the crowds in evacuation — moving between them, emerging from above a building roof, diving into the Hazmat zone.
+
+**The viewer isn't watching the event — they're inside it.**
+
+## Tactical Graphics: Between Document and Cinematic Production
+
+The Lower thirds, Radar overlays, and Target points weren't added just as "information" — they're a narrative tool.
+
+In cinematic action films, tactical graphics signal to the viewer: "We're in real-time, this is an operation, there's coordination." This amplifies the sense of urgency.
+
+**In B2B application it works differently:** the graphics both provide information (team names, zones) and convey organization and professionalism. The HR viewer watching the film feels: "Our company is organized. We're ready."
+
+This isn't safety forms. **This is content that creates organizational pride.**
+
+## Sound Design: Making You Feel the Urgency
+
+One sound effect made all the difference: **the radio network.**
+
+The broken fragments, the beeps, the commands between teams — added a dimension of authenticity that dramatic music alone can't provide. When you hear it, you know it's real.
+
+The sound layers we built:
+1. Dramatic music with a pulsing beat — general sense of urgency
+2. Real alarms recorded during filming — authenticity
+3. Radio network commands — sense of coordination and control
+4. Equipment SFX: suits closing, oxygen valves, cables
+
+**When sound works as it should, the viewer stops breathing.**
+
+## Business Impact: What This Film Is Worth to Intel
+
+**Layer 1 — Training:** the film serves as training material for new employees. Seeing the team in action once is better than reading 80 pages of procedure.
+
+**Layer 2 — Regulators:** industrial companies are subject to strict safety inspections. A film like this presents real ERT performance to the regulator — not theory.
+
+**Layer 3 — Brand image:** Intel signals: "We don't just manufacture chips. We're an institution where people are safe."
+
+**Layer 4 — Recruitment:** engineers and tech professionals looking for a workplace see that this isn't just a company — it's a company that invests at a level others don't reach.
+
+## What Fab 28 Teaches for Your Project
+
+If you have an emergency drill, a safety conference, an industrial field day, or any event that happens once — **it's worth filming.**
+
+Not because "it'll look good on the website." But because:
+- It trains employees in ways documents cannot
+- It proves readiness to regulators and partners
+- It builds organizational pride that improves employee retention
+- It's a unique marketing asset no competitor can replicate
+
+**A drill that wasn't filmed — didn't happen.**`,
+  },
+  {
+    id: "intel-fab28-kgat-blog",
+    relatedYoutubeId: "coZNfEng59g",
+    titleHe: "לצלם אקשן בזמן אמת: מאחורי הקלעים של תרגיל החירום ב-Intel Fab 28 קרית גת",
+    titleEn: "Filming Action in Real Time: Behind the Scenes of Intel Fab 28 Kiryat Gat Emergency Drill",
+    excerptHe: "מפעל שבבים פעיל, 4 זירות חירום בו-זמניות, ERT + מד\"א + כבאות + משרד הסביבה — כולם בזמן אמת. איך מתכננים, מצלמים ועורכים פרויקט שאין בו 'קאט שני'.",
+    excerptEn: "An active semiconductor plant, 4 simultaneous emergency zones, ERT + MDA + fire rescue + Ministry of Environment — all in real time. How you plan, film, and edit a project with no second take.",
+    readingTime: 6,
+    date: "2025-05-20",
+    tags: ["Corporate", "Safety Video", "Multi-Camera", "Drone", "Intel", "Industrial", "Emergency Drill"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הייצור לא עוצר. הצילום כן צריך לרוץ.
+
+Intel Fab 28 בקרית גת הוא אחד ממפעלי השבבים המתקדמים בעולם. כשהם מקיימים תרגיל חירום — הם לא מדמים.
+
+ארבע זירות אמיתיות, בו-זמנית, עם כוחות חירום לאומיים אמיתיים:
+
+- **שריפה במבנה CUB** — כניסת צוותי כיבוי עם ציוד נושם, עשן סמיך, עובדים שנפגעו
+- **דליפת אמוניה** — הפעלת מערכות מתזים (Dilution), עובדים מנוטרלים, FAB ERT HAZMAT בחליפות אטימה
+- **חילוץ מבור/גובה (AWN 28)** — Rope Rescue לעובדת הלכודה בבור, 'יחידת להבה' בפעולה
+- **זירת הרס — Search & Rescue** — חילוץ 8 לכודים מהריסות בטון וצינורות עם ציוד הידראולי כבד וכלי חיתוך
+
+**אחת לכמה שנים, ואי אפשר לחזור עליו.**
+
+## לפני הצילום: מפת כיסוי ולא רק ציוד
+
+הטעות הנפוצה ביותר בצילומי אירועים: לחשוב שהצלחה תלויה בכמות הציוד.
+
+ב-Fab 28, ההכנה הייתה מפת כיסוי מפורטת לפי דקות:
+
+- **00:01–00:14** — שגרת יום, מוכנות: צלם כתף אחד בכל קומה מרכזית
+- **00:15** — אזעקת רעידת אדמה: רחפן מוכן, מסקר את פריסת הפינוי
+- **01:50** — שריפת CUB: צלם כתף עוקב אחר צוות הכיבוי
+- **01:56** — Hazmat: צלם שני עם חליפת מגן נכנס לזירת האמוניה
+- **02:00** — AWN 28: צלם שלישי ממוקם על ידי הבור, מוכן לחילוץ
+- **02:06** — S&R: רחפן FPV לתצלום רחב + צלם קרקעי בין ההריסות
+
+**כל שינוי בתכנון בזמן אמת — עדכון ברדיו, לא ריצה בשטח.**
+
+[IMAGE]
+
+## הגרפיקה שמפות כל הפקת חירום: HUD Display
+
+הפתרון שהכי "מוכר" בפוסט-פרודקשן של סרטי תרגיל הוא **מפת HUD על גבי תצלום לוויין.**
+
+ב-Fab 28 בנינו מפה שמציגה 5 נקודות:
+**CRASH SITE / FIRE ALARM / AMMONIA LEAK / HEIGHT RESCUE / EXTERNAL JOINT (חפ"ק)**
+
+המפה מופיעה בכל מעבר זירה (02:10, 02:56, 03:45, 05:13) — הצופה תמיד יודע איפה הוא.
+
+**למה זה קריטי:** בפרויקטים עם 4 זירות ייכנס הצופה לאובדן עניין אם הוא לא מבין "מה הקשר בין מה שראיתי לפני לבין מה שאני רואה עכשיו." המפה פותרת את זה.
+
+## הסגירה שמשנה את כל הסרט
+
+הסרטון נחתם בדברי סיכום של **אדם מנסור, Emergency Manager** בחפ"ק החיצוני.
+
+זה לא "ראש מדבר רנדומלי" — זה בחירה קריאייטיבית מכוונת.
+
+כשמנהל החירום עומד בשטח ומסכם את התרחיש, הצופה מקבל שלושה דברים בבת אחת:
+1. **הסבר** — מה היה מטרת התרגיל
+2. **אישור** — "ה-ERT שלנו עבד. הצוות עבד."
+3. **פנים** — אדם אחראי שניתן לסמוך עליו
+
+בלי הסיכום, הסרט נגמר בפעולה ואין "נחיתה". עם הסיכום — יש תחושת השלמה.
+
+## מה Fab 28 מלמד לכל צילום ארגוני אחד
+
+שלושה עקרונות שאפשר להעביר לכל פרויקט corporate:
+
+**1. זמן ההכנה = זמן הצילום:**
+ב-Fab 28, הכנו כמה שעות ברצינות. ביום הצילום, לא היה אובדן — כי כל תרחיש כבר עבר בראש.
+
+**2. מעברי HUD כ-"פסיק" נרטיבי:**
+בכל נקודה שהצופה עלול לאבד את החוט, מפה מחזירה אותו. שיטה זו עובדת בכל סרט בעל יותר מ-2 לוקיישנים.
+
+**3. הסגירה האנושית:**
+לא משנה כמה האקשן מרשים — אם הסרט נגמר ב"רחפן מרחוק", אין חיבור. תמיד לחפש את הסגירה שנותנת **אדם, מסר ומשמעות.**`,
+    bodyEn: `## Production Doesn't Stop. Filming Has to Keep Going.
+
+Intel Fab 28 in Kiryat Gat is one of the most advanced semiconductor plants in the world. When they run an emergency drill — they don't simulate.
+
+Four real zones, simultaneously, with real national emergency forces:
+
+- **Building CUB Fire** — firefighters with breathing equipment entering, thick smoke, injured employees
+- **Ammonia Leak** — dilution systems activated, employees neutralized on site, FAB ERT HAZMAT in sealed suits
+- **Pit/Height Rescue (AWN 28)** — Rope Rescue for a trapped employee in a pit, 'Lahava Unit' in action
+- **Crash Site — Search & Rescue** — extraction of 8 trapped people from concrete rubble and pipes with heavy hydraulic equipment and disc cutters
+
+**Once every few years, and you can't repeat it.**
+
+## Before Filming: A Coverage Map, Not Just Equipment
+
+The most common mistake in event filming: thinking success depends on the amount of equipment.
+
+At Fab 28, preparation was a detailed coverage map by minute:
+
+- **00:01–00:14** — routine day, readiness: one shoulder-rig camera on each main floor
+- **00:15** — earthquake alarm: drone ready, surveying evacuation deployment
+- **01:50** — CUB fire: shoulder camera following the firefighting team
+- **01:56** — Hazmat: second camera with protective suit entering the ammonia zone
+- **02:00** — AWN 28: third camera positioned at the pit edge, ready for rescue
+- **02:06** — S&R: FPV drone for wide shot + ground camera in the debris
+
+**Any real-time change in plan — update over radio, not running across the site.**
+
+[IMAGE]
+
+## The Graphic That Maps Every Emergency Production: HUD Display
+
+The solution that "sells" best in emergency drill post-production is **a HUD map over a satellite image.**
+
+At Fab 28 we built a map showing 5 points:
+**CRASH SITE / FIRE ALARM / AMMONIA LEAK / HEIGHT RESCUE / EXTERNAL JOINT (Command Post)**
+
+The map appears at every scene transition (02:10, 02:56, 03:45, 05:13) — the viewer always knows where they are.
+
+**Why this is critical:** in projects with 4 zones, the viewer will lose interest if they don't understand "what's the connection between what I just saw and what I'm seeing now." The map solves this.
+
+## The Closure That Changes the Entire Film
+
+The film ends with summary remarks by **Adam Mansour, Emergency Manager**, at the external command post.
+
+This isn't a "random talking head" — it's a deliberate creative choice.
+
+When the Emergency Manager stands in the field and summarizes the scenario, the viewer receives three things at once:
+1. **Explanation** — what the drill's objective was
+2. **Confirmation** — "our ERT worked. The team worked."
+3. **A face** — a responsible person who can be trusted
+
+Without the summary, the film ends in action with no "landing." With the summary — there's a sense of completion.
+
+## What Fab 28 Teaches for Every Other Organizational Shoot
+
+Three principles transferable to any corporate project:
+
+**1. Prep time = shoot time:**
+At Fab 28, we prepared seriously for several hours. On shoot day, there was no confusion — because every scenario had already run through our heads.
+
+**2. HUD transitions as a narrative "comma":**
+At every point where the viewer might lose the thread, a map brings them back. This method works for any film with more than 2 locations.
+
+**3. The human closure:**
+No matter how impressive the action — if the film ends on "a distant drone shot," there's no connection. Always look for the closure that gives **a person, a message, and meaning.**`,
+  },
+  {
+    id: "intel-haifa-idc-blog",
+    relatedYoutubeId: "jAU89DS0oig",
+    titleHe: "3,000 עובדים, 6 זירות, מפה אחת: מה שמפיקים תרגיל חירום ב-Intel IDC חיפה",
+    titleEn: "3,000 Employees, 6 Scenes, One Map: What Producing Intel IDC Haifa's Emergency Drill Teaches You",
+    excerptHe: "כשיש לך שש זירות חירום בו-זמניות — Hazmat, חילוץ מגובה, דליפת חומצה, הריסות, סריקות בניינים ומפקדה — האתגר לא הצילום. האתגר הוא לגרום לצופה להבין מה קורה. הפתרון: מפה.",
+    excerptEn: "When you have six simultaneous emergency scenes — Hazmat, height rescue, acid leak, crash site, building sweeps, and command center — the challenge isn't filming. The challenge is making the viewer understand what's happening. The solution: a map.",
+    readingTime: 6,
+    date: "2025-04-01",
+    tags: ["Corporate", "Safety Video", "Multi-Camera", "Drone", "Intel", "Emergency Drill", "HUD Graphics"],
+    relatedServiceHref: "/services/hightech",
+    relatedServiceLabelHe: "הייטק וסטארטאפ",
+    relatedServiceLabelEn: "High-Tech & Startup Video",
+    bodyHe: `## הבעיה של 6 חזיתות במקביל
+
+תרגיל חירום של 3,000 עובדים ב-Intel IDC חיפה — זה לא אירוע שצולמים ממקום אחד.
+
+זה קמפוס ענק עם **שש זירות פעילות בו-זמנית:** דליפת חומצה, חילוץ מגובה (USAR), אירוע Hazmat, סריקת הריסות, פינוי המוני מבנים ומפקדה חיצונית שמנהלת הכל.
+
+הבעיה הנרטיבית: אפשר לצלם את כל שש הזירות בנפרד ולקבל שישה קטעי וידאו מרשימים. אבל בסוף תקבל **סרט שהצופה לא יבין בו איפה הוא.**
+
+האתגר האמיתי לא היה לוגיסטי — אלא נרטיבי.
+
+## הפתרון: המפה שמחברת הכל
+
+הדבר שהכי מרשים בפוסט-פרודקשן של IDC הוא **מפת ה-HUD הדינמית.**
+
+לקחנו תצלום אוויר של הקמפוס וצוות הגרפיקה בנה עליו שכבת HUD (Heads-Up Display) תלת-ממדית — בדיוק כמו שרואים בסרטי טכנולוגיה ואקשן. כל זירה מסומנת, ממוספרת, ומוצגת על גבי הקמפוס האמיתי.
+
+**מה זה עושה לצופה:**
+- הוא יודע תמיד "איפה הוא" בתוך הקמפוס
+- המעבר בין זירות מרגיש כמו מעבר בין פרקי מבצע — לא קפיצה אקראית
+- תחושת ניהול ושליטה עוברת לצופה: "החברה יודעת מה היא עושה"
+
+[IMAGE]
+
+## צילום בזמן אמת: שישה צוותות, שישה בריפינגים
+
+לפני יום הצילום, הכנו מפת כיסוי מפורטת:
+
+- **זירה 1 — דליפת חומצה (Acid Leak):** צוות Hazmat עם חליפות אטימה ייעודיות. צלם כתף אחד עוקב מקרוב.
+- **זירה 2 — חילוץ מגובה (USAR):** מנוף כיבוי לחילוץ לכוד ממרפסת קומה גבוהה. רחפן + צלם קרקעי.
+- **זירה 3 — Hazmat כללי:** פינוי מסודר, לבישת ציוד מגן. תקריבים על ידיים, על פנים.
+- **זירה 4 — זירת הרס:** חילוץ פצועים מסימולציית הריסות בטון. כתף דינמי.
+- **זירה 5 — סריקת בניינים:** ERT סורק קומות ומקלטים בניין אחר בניין. רחפן + כתף.
+- **זירה 6 — מפקדה (חפ"ק):** הרחפן מסקר את הפריסה הכוללת, אחר כך נכנס פנימה לצוות הפיקוד.
+
+**כל צלם קיבל רדיו, מפה מודפסת ו-briefing של 20 דקות.**
+
+## למה צילומי אוויר עושים הכל אחרת
+
+בסרטי תרגיל חירום, הרחפן לא "רק מצלם מלמעלה". הוא פותר בעיה נרטיבית.
+
+כשהמצלמה עולה ורואה 3,000 איש פונים ממתחמי הקמפוס — **קנה המידה עובר לצופה.** הוא מבין שזה לא תרגיל של 50 עובדים. זה מנגנון שלם שעובד.
+
+בשילוב עם הגרפיקה, השוטים האוויריים הפכו לגשרים בין הזירות — כל פעם שעוברים זירה חדשה, רחפן עולה, המפה מציגה את הנקודה, ואנחנו צוללים פנימה.
+
+**התוצאה: סרט שנראה כמו תיעוד מבצע — לא כנס בטיחות.**
+
+## שלוש השכבות של האימפקט העסקי
+
+כשלקוח שואל "למה שאצלם את תרגיל החירום שלי?" התשובה היא שלוש שכבות:
+
+**שכבה 1 — הדרכה בפועל:**
+90% מהנהלים לא יקראו מדריך בטיחות של 60 עמוד. הם ישמחו לצפות בסרט של 4 דקות שמראה להם **איך צוות ERT נוהג בפועל, לא בתיאוריה.**
+
+**שכבה 2 — רגולטורים ושותפים:**
+Intel מפיקה בארץ ובעולם. כשיש ביקורת בטיחות מ-OSHA או מרגולטור אירופאי, **סרט כזה מוכיח ביצועים בפועל** — לא הצהרות כוונות.
+
+**שכבה 3 — מיתוג מעסיק:**
+מהנדסים שמחפשים עבודה ב-Intel רואים את הסרט. הם לא רק רואים "חברה טכנולוגית". הם רואים **ארגון שמשקיע ברמת הכנה שחברות אחרות לא מגיעות אליה.**
+
+זה לא נכס בטיחותי. **זה נכס גיוס.**
+
+## מה לומדים מ-IDC חיפה לפרויקט שלך
+
+אם יש לך אירוע ארגוני שקורה פעם אחת — תרגיל, כנס, יום שדה, פינוי — **הוא שווה לצלם.**
+
+הנקודה הקריטית: **האורכסטרציה קודמת לצילום.** ב-IDC, השקענו יותר זמן בתכנון מאשר בצילום עצמו. מי עומד איפה, מי מכסה מה, מה קורה אם שתי זירות מתלהטות בו-זמנית.
+
+כי בצילום כזה, **אין "קאט".**`,
+    bodyEn: `## The Problem of 6 Simultaneous Fronts
+
+An emergency drill involving 3,000 employees at Intel IDC Haifa is not an event you film from one spot.
+
+This is a vast campus with **six active zones simultaneously:** acid leak, height rescue (USAR), Hazmat incident, debris search, mass building evacuation, and an external command center managing everything.
+
+The narrative problem: you can film all six zones separately and get six impressive video clips. But in the end you get **a film where the viewer has no idea where they are.**
+
+The real challenge wasn't logistical — it was narrative.
+
+## The Solution: The Map That Connects Everything
+
+The most impressive element of IDC's post-production is **the dynamic HUD map.**
+
+We took an aerial photograph of the campus and the graphics team built a three-dimensional HUD (Heads-Up Display) layer over it — exactly like what you see in tech and action films. Each scene is marked, numbered, and displayed on top of the real campus.
+
+**What this does for the viewer:**
+- They always know "where they are" within the campus
+- Transitions between zones feel like moving between phases of an operation — not random cuts
+- A sense of management and control transfers to the viewer: "This company knows what it's doing"
+
+[IMAGE]
+
+## Real-Time Filming: Six Teams, Six Briefings
+
+Before shoot day, we prepared a detailed coverage map:
+
+- **Zone 1 — Acid Leak:** Hazmat team with specialized sealed suits. One shoulder-rig camera following close.
+- **Zone 2 — Height Rescue (USAR):** Fire department crane for high-floor rescue from a balcony. Drone + ground camera.
+- **Zone 3 — General Hazmat:** Organized evacuation, protective gear deployment. Close-ups on hands, faces.
+- **Zone 4 — Crash Site:** Casualty extraction from simulated concrete debris. Dynamic shoulder rig.
+- **Zone 5 — Building Sweeps:** ERT scanning floors and shelters building by building. Drone + shoulder.
+- **Zone 6 — Command Center (HQ):** Drone surveys overall deployment, then enters interior for command team coverage.
+
+**Every cinematographer received a radio, a printed map, and a 20-minute briefing.**
+
+## Why Aerial Shots Change Everything
+
+In emergency drill films, the drone doesn't just "shoot from above." It solves a narrative problem.
+
+When the camera rises and shows 3,000 people evacuating campus facilities — **scale is transferred to the viewer.** They understand this isn't a 50-person drill. This is a complete mechanism functioning in real time.
+
+Combined with the graphics, the aerial shots became bridges between zones — every time we move to a new scene, a drone rises, the map shows the location, and we dive in.
+
+**The result: a film that looks like an operation documentary — not a safety conference.**
+
+## The Three Layers of Business Impact
+
+When a client asks "why should I film my emergency drill?" the answer has three layers:
+
+**Layer 1 — Actual Training:**
+90% of executives won't read a 60-page safety manual. They will happily watch a 4-minute film that shows them **how an ERT team actually operates, not in theory.**
+
+**Layer 2 — Regulators and Partners:**
+Intel operates in Israel and globally. When there's a safety inspection from OSHA or a European regulator, **a film like this proves actual performance** — not statements of intent.
+
+**Layer 3 — Employer Branding:**
+Engineers looking to work at Intel see the film. They don't just see "a tech company." They see **an organization that invests at a level of preparedness other companies don't reach.**
+
+This is not a safety asset. **This is a recruitment asset.**
+
+## What IDC Haifa Teaches for Your Project
+
+If you have an organizational event that happens once — a drill, a conference, a field day, an evacuation — **it's worth filming.**
+
+The critical point: **orchestration comes before filming.** At IDC, we invested more time in planning than in actual filming. Who stands where, who covers what, what happens if two zones heat up simultaneously.
+
+Because in a shoot like this, **there's no "cut."**`,
+  },
+  {
     id: "myth-busting-format",
     coverImage: "/vlogimg/myth-busting-cover.jpg",
     sectionImages: ["/vlogimg/myth-busting-s1.jpg", "/vlogimg/myth-busting-s2.jpg"],
@@ -686,108 +2782,6 @@ One filming day. Short editing. Content that works for six months.`,
     relatedServiceLabelHe: "סרטי תוכן ופורמטים",
     relatedServiceLabelEn: "Content Films & Formats",
     relatedYoutubeId: "gE-8-eOtQg0",
-  },
-  {
-    id: "video-to-brand-identity",
-    coverImage: "/vlogimg/video-to-brand-cover.jpg",
-    sectionImages: ["/vlogimg/video-to-brand-s1.jpg", "/vlogimg/video-to-brand-s2.jpg"],
-    titleHe: "מוידאו למותג: הדרך החכמה לייצר שפה ויזואלית מנצחת לחברות טכנולוגיה",
-    titleEn: "From Video to Brand: The Smart Way to Build a Winning Visual Language for Tech Companies",
-    excerptHe: "חברות טכנולוגיה מוציאות הון על ספרי מותג סטטיים שלא מתרגמים למסך. בפרויקט IRON DRONE בנינו שפה ויזואלית מלאה מתוך הסרט עצמו, והיא הפכה לסטנדרט הרשמי של חברה בורסאית.",
-    excerptEn: "Tech companies spend fortunes on static brand books that don't translate to screen. In the IRON DRONE project we built a complete visual language out of the film itself, and it became a public company's official design standard.",
-    readingTime: 6,
-    bodyHe: `## הבעיה עם ספרי מותג סטטיים
-
-תהליך מיתוג של חברות טכנולוגיה, תשתיות וביטחון דורש לעיתים קרובות תקציבי עתק המועברים למשרדי פרסום עבור יצירת "ספר מותג" סטטי. הבעיה מתחילה כשהמותג פוגש את המסך.
-
-אותם עיצובים סטטיים, הצבע, הטיפוגרפיה, הגריד, לא מתרגמים היטב לעולמות הווידאו, האנימציה והדיגיטל הדינמי. יוצרים מחדש ממקום ה-וידאו, ושם מוצאים שהחוקים שונים לחלוטין.
-
-**השפה הוויזואלית של מותג מודרני צריכה להיוולד מתוך תנועה.**
-
-[IMAGE]
-
-## IRON DRONE: כשסרט מוצר הפך לזהות חברה
-
-בפרויקט שהפקנו עבור מערכת IRON DRONE מבית Airobotics / Ondas Group, ניגשנו לאתגר ייחודי: החברה הגיעה ללא Brand Book מסודר ובלי שפת אינפוגרפיקה שמתאימה למוצר ביטחוני מתקדם.
-
-במקום לחכות לסוכנות מיתוג, בנינו את השפה בעצמנו, ישירות מתוך עולם הסרט.
-
-## שלב 1: Visual DNA מאפס
-
-מחלקת הארט פיתחה קונספט ויזואלי מלא:
-
-**פלטת צבעים:** כחול-מתכת עמוק, ירוק HUD צבאי, שחור תפעולי. כל צבע נבחר כדי לשדר שני דברים בו-זמנית: טכנולוגיה מתקדמת + אמינות מבצעית.
-
-**טיפוגרפיה:** פונטים טכנולוגיים עם ריווח מדוד שמדמה ממשק cockpit. כל מספר, כל מפרט טכני נראה כאילו הוא חלק מממשק אמיתי של מערכת נשק.
-
-**HUD/UI Elements:** ממשקי מסך שנבנו מאפס: נעילות מטרה, טווחי זיהוי, אינדיקטורי גובה ומהירות. כל אלמנט תוכנן כך שהמדהים בו הוא **שהוא נראה אמיתי**.
-
-## שלב 2: האתגר הקולנועי: מהירות פוגשת דיוק
-
-לסרט יש שני מצבי עריכה שצריכים לדור בשלום:
-
-**Speed Ramp מהיר:** רגעי מרדף, טיסה, תנועת נחיל. הצופה חייב להרגיש אדרנלין, מהירות, כוח תפעולי. Drone-to-Drone Tracking אוויריים, זוויות Low-angle שמגדילות את האגרסיביות.
-
-**Speed Ramp איטי:** רגעי הליבה הטכנולוגיים: שיגור, נעילת מטרה, יירוט. פה הסרט מאט. הצופה צריך לראות, להבין, ולהאמין. בדיוק בנקודה הזו נכנסות שכבות ה-HUD שמסבירות את המכניקה.
-
-**סאונד-דיזיין כירורגי:** כל הופעה של גרפיקה "מקבעת" על צליל, בין אם זה ping של מכ"ם, buzz של מנוע חשמלי, או click של נעילה. הסנכרון בין עריכה לסאונד הוא מה שהופך סרט מוצר אינפורמטיבי לחוויה קולנועית.
-
-## התוצאה: השפה הפכה לסטנדרט
-
-מה שהתחיל כסרט מוצר הפך לתשתית מותגית: **הגרפיקה, האנימציה וה-HUD שפיתחנו לסרט אומצו על ידי ONDS כסטנדרט הרשמי** לכלל מערך השיווק שלהם.
-
-**ROI כפול:** הלקוח הגיע לסרט, יצא עם זהות מותגית. ללא תוספת תקציב. ללא משרד פרסום.
-
-זו לא עבודת סוכנות. זו שותפות אסטרטגית.`,
-    bodyEn: `## The Problem with Static Brand Books
-
-Branding processes for technology, infrastructure, and defense companies often require enormous budgets transferred to ad agencies for creating a static "brand book." The problem starts when the brand meets the screen.
-
-Those static designs, color, typography, grid, don't translate well to the worlds of video, animation, and dynamic digital. You recreate from the video side, and there you find the rules are completely different.
-
-**A modern brand's visual language needs to be born from motion.**
-
-[IMAGE]
-
-## IRON DRONE: When a Product Film Became a Company's Identity
-
-In the project we produced for the IRON DRONE system by Airobotics / Ondas Group, we faced a unique challenge: the company arrived without an organized Brand Book and without an infographic language suited to an advanced defense product.
-
-Instead of waiting for a branding agency, we built the language ourselves, directly from within the film's world.
-
-## Stage 1: Visual DNA from Scratch
-
-The art department developed a complete visual concept:
-
-**Color palette:** Deep metal blue, military HUD green, operational black. Each color chosen to communicate two things simultaneously: advanced technology + operational reliability.
-
-**Typography:** Technical fonts with measured spacing simulating a cockpit interface. Every number, every technical spec looks as if it's part of a real weapons system interface.
-
-**HUD/UI Elements:** Screen interfaces built from scratch: target locks, detection ranges, altitude and speed indicators. Every element designed so the remarkable thing about it is **that it looks real**.
-
-## Stage 2: The Cinematic Challenge: Speed Meets Precision
-
-The film has two editing modes that need to coexist:
-
-**Fast Speed Ramp:** chase moments, flight, swarm motion. The viewer must feel adrenaline, speed, operational power. Aerial Drone-to-Drone Tracking, Low-angle shots that increase aggression.
-
-**Slow Speed Ramp:** core technical moments: launch, target lock, intercept. Here the film slows. The viewer needs to see, understand, and believe. Exactly at this point the HUD layers enter to explain the mechanics.
-
-**Surgical Sound Design:** Every graphic appearance "locks" on a sound, whether a radar ping, an electric motor buzz, or a lock click. The sync between editing and sound is what turns an informative product film into a cinematic experience.
-
-## The Result: The Language Became the Standard
-
-What started as a product film became brand infrastructure: **the graphics, animation, and HUD we developed for the film were adopted by ONDS as the official standard** for their entire marketing operation.
-
-**Double ROI:** The client came for a film, left with a brand identity. No extra budget. No ad agency.
-
-This isn't agency work. This is strategic partnership.`,
-    date: "2024-02-10",
-    tags: ["Defense Tech", "Motion Design", "Brand Identity", "Visual Language"],
-    relatedServiceHref: "/services/ai",
-    relatedServiceLabelHe: "הפקות AI וסרטי ביטחון",
-    relatedServiceLabelEn: "AI & Defense Tech Productions",
-    relatedYoutubeId: "N4iNxvFGA34",
   },
   {
     id: "content-package-raw-footage",
@@ -3344,6 +5338,300 @@ The real metric: **candidate quality**, not quantity. Fewer CVs from people who 
 Want to talk employer branding for your company? Leave your details — we'll be in touch.`,
   },
   {
+    id: "kama-ole-seret-tadmit-2026",
+    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    titleHe: "כמה עולה סרט תדמית ב-2026 — פירוט מחירים לפי סוג הפקה",
+    titleEn: "How Much Does a Corporate Brand Film Cost in 2026 — Price Breakdown by Production Type",
+    excerptHe: "מה מחיר סרט תדמית לחברה בישראל? פירוט ריאלי של עלויות לפי סוג ואורך, כולל AI, אנימציה והפקות מלאות.",
+    excerptEn: "What does a corporate brand film cost in Israel? A realistic breakdown of costs by type and length, including AI, animation, and full productions.",
+    date: "2026-09-01",
+    readingTime: 6,
+    tags: ["מחירים", "סרט תדמית", "הפקת וידאו", "B2B"],
+    relatedServiceHref: "/pricing",
+    relatedServiceLabelHe: "מחירון הפקות",
+    relatedServiceLabelEn: "Production Pricing",
+    bodyHe: `## כמה עולה סרט תדמית לחברה ב-2026?
+
+זו השאלה שכל מנהל שיווק שואל לפני שהוא מתחיל לחפש סטודיו. התשובה הקצרה: תלוי. אבל יש מספרים ריאליים שאפשר להסתמך עליהם.
+
+## טווחי מחירים לפי סוג הפקה
+
+**סרטון קצר (עד 60 שניות)**
+- יום צילום אחד
+- עריכה בסיסית + מוזיקה
+- **מחיר: 9,000–18,000 ש"ח**
+
+**סרט תדמית סטנדרטי (90–120 שניות)**
+- 2 ימי צילום, מוגרפיקה, עיצוב צליל
+- מתאים לעמוד הבית, לינקדאין, כנסים
+- **מחיר: 18,000–45,000 ש"ח**
+
+**הפקה פרמיום (2–4 דקות)**
+- תסריט, 3+ ימי צילום, אנימציה, AI, ספריית גרסאות
+- לחברות שמציגות לדירקטוריון ולמשקיעים
+- **מחיר: 35,000–90,000 ש"ח ומעלה**
+
+**הפקת AI (ללא צילום)**
+- Midjourney + Kling + Runway Gen-3
+- אידיאלי לסטארטאפים טרום-מוצר וחברות ביטחוניות
+- **מחיר: 15,000–40,000 ש"ח**
+
+**סרטון אנימציה Explainer**
+- 60–90 שניות, 2D/מוגרפיקה
+- **מחיר: 12,000–50,000 ש"ח לפי מורכבות**
+
+## מה משפיע הכי הרבה על המחיר?
+
+1. **מספר ימי צילום** — כל יום צילום עולה כסף: צוות, ציוד, לוקיישן
+2. **רמת הפוסט-פרודקשן** — מוגרפיקה, AI, VFX, מוזיקה מקורית
+3. **מורכבות הסקריפט** — כמה לוקיישנים, כמה אנשים, כמה גרסאות
+4. **סבבי תיקונים** — יותר סבבים = יותר עלויות עריכה
+
+## מה לא כלול בדרך כלל
+
+- שחקנים או דוברים חיצוניים
+- תרגומים ותמלול
+- הפצה (מדיה ממומנת)
+- מוזיקה מקורית (לרוב מגיעים עם ספרייה)
+
+## איך לבחור נכון לפי תקציב
+
+אם התקציב מוגבל — עדיף סרט קצר אחד מצוין מאשר שני סרטים בינוניים. השקעה בסקריפט ובבימוי חוזרת עליה עצמה. מה שלקוחות מרגישים בסרט זה לא כמה ימי צילום היו — אלא כמה טוב הסרט מייצג אותם.
+
+---
+
+רוצים הצעת מחיר ספציפית לפרויקט שלכם? שיחת הכרה ראשונה היא תמיד חינמית.`,
+    bodyEn: `## How Much Does a Corporate Brand Film Cost in 2026?
+
+This is the question every marketing manager asks before they start looking for a studio. The short answer: it depends. But there are realistic numbers you can rely on.
+
+## Price Ranges by Production Type
+
+**Short video (up to 60 seconds)**
+- One shoot day
+- Basic editing + music
+- **Price: ₪9,000–18,000**
+
+**Standard brand film (90–120 seconds)**
+- 2 shoot days, motion graphics, sound design
+- Suitable for homepage, LinkedIn, conferences
+- **Price: ₪18,000–45,000**
+
+**Premium production (2–4 minutes)**
+- Script, 3+ shoot days, animation, AI, version library
+- For companies presenting to boards and investors
+- **Price: ₪35,000–90,000+**
+
+**AI production (no filming)**
+- Midjourney + Kling + Runway Gen-3
+- Ideal for pre-product startups and defense companies
+- **Price: ₪15,000–40,000**
+
+**Animated explainer video**
+- 60–90 seconds, 2D/motion graphics
+- **Price: ₪12,000–50,000 depending on complexity**
+
+## What Affects the Price Most?
+
+1. **Number of shoot days** — every shoot day costs money: crew, equipment, location
+2. **Post-production level** — motion graphics, AI, VFX, original music
+3. **Script complexity** — how many locations, people, versions
+4. **Revision rounds** — more rounds = more editing costs
+
+## What's Usually Not Included
+
+- External actors or speakers
+- Translation and transcription
+- Distribution (paid media)
+- Original music (usually comes with a library)
+
+## How to Choose Right for Your Budget
+
+If the budget is limited — one excellent short film is better than two mediocre films. Investment in script and direction pays for itself. What clients feel in a film isn't how many shoot days there were — but how well the film represents them.
+
+---
+
+Want a specific quote for your project? The first introductory call is always free.`,
+  },
+  {
+    id: "7-sheelot-livchir-studio-video",
+    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    titleHe: "7 שאלות שחייבים לשאול לפני שבוחרים סטודיו הפקת וידאו",
+    titleEn: "7 Questions You Must Ask Before Choosing a Video Production Studio",
+    excerptHe: "לא כל הסטודיואים שווים. הנה 7 שאלות שיחסכו לכם כסף, זמן ואכזבות.",
+    excerptEn: "Not all studios are equal. Here are 7 questions that will save you money, time, and disappointment.",
+    date: "2026-08-01",
+    readingTime: 5,
+    tags: ["הפקת וידאו", "טיפים", "B2B", "סטודיו"],
+    relatedServiceHref: "/services/corporate",
+    relatedServiceLabelHe: "סרטי תדמית וקורפורייט",
+    relatedServiceLabelEn: "Corporate Brand Films",
+    bodyHe: `## 7 שאלות שחייבים לשאול לפני שבוחרים סטודיו הפקת וידאו
+
+בחירת סטודיו וידאו זה לא כמו להזמין מוצר מאמזון. אתם בוחרים שותף יצירתי לפרויקט שייצג את החברה שלכם לשנים. הנה 7 שאלות שיעזרו לכם לבחור נכון.
+
+## שאלה 1: מי יבים את הפרויקט בפועל?
+
+סטודיואים גדולים מוכרים ומאאוטסורסים לפרילנסרים. תשאלו: מי הבמאי שיישב איתי בחדר? אם התשובה היא "אחד מהצוות שלנו" — תבקשו לפגוש אותו לפני חתימה.
+
+## שאלה 2: יש דוגמה מהתחום שלי?
+
+פורטפוליו יפה מלא בסרטי אוכל לא יכין אתכם לסרט B2B טכנולוגי. תשאלו ספציפית: יש לכם ניסיון עם חברות הייטק / נדל"ן / ביטחוני?
+
+## שאלה 3: מה כלול במחיר?
+
+מחיר "החל מ-X" לרוב לא כולל: שחקנים, מוזיקה מקורית, גרסאות נוספות, שינויים מחוץ לסקופ. תבקשו פירוט מלא.
+
+## שאלה 4: כמה סבבי תיקונים כלולים?
+
+2-3 סבבים זה תקין. פחות מזה — תנסו להרוויח על חשבונכם. יותר מ-5 — כנראה שאין תהליך עבודה ברור.
+
+## שאלה 5: מה קורה אם לא אהבתי?
+
+תשאלו ישירות: מה קורה אם אחרי הסרט הגמר לא אהבתי את הכיוון? האם יש נקודת עצירה בתהליך שבה ניתן לשנות כיוון? סטודיו טוב יאמר לכם כן — ויסביר איך.
+
+## שאלה 6: יש ביטוח הפקה?
+
+ביטוח הפקה הוא חובה. תאונות קורות בסט. אם אין ביטוח — הנזק הפוטנציאלי יכול ליפול עליכם.
+
+## שאלה 7: "יש כימיה"?
+
+זה נשמע רגשי, אבל זה קריטי. אתם הולכים לבלות ימי צילום אינטנסיביים עם הצוות הזה. תקשורת ישירה, נוחות לומר "לא אהבתי", יכולת לדבר על תקציב בפתיחות — אלה מרכיבים של שותפות מוצלחת.
+
+---
+
+רוצים לראות איך זה נראה בפועל? צפו בתיק העבודות שלנו וצרו קשר לשיחת הכרה.`,
+    bodyEn: `## 7 Questions You Must Ask Before Choosing a Video Production Studio
+
+Choosing a video studio isn't like ordering a product from Amazon. You're choosing a creative partner for a project that will represent your company for years. Here are 7 questions to help you choose correctly.
+
+## Question 1: Who Will Actually Direct the Project?
+
+Large studios sell and outsource to freelancers. Ask: who is the director who will sit with me in the room? If the answer is "one of our team" — ask to meet them before signing.
+
+## Question 2: Do You Have Examples from My Industry?
+
+A beautiful portfolio full of food films won't prepare you for a technical B2B film. Ask specifically: do you have experience with high-tech / real estate / defense companies?
+
+## Question 3: What's Included in the Price?
+
+A price "starting from X" usually doesn't include: actors, original music, additional versions, changes outside scope. Ask for a full breakdown.
+
+## Question 4: How Many Revision Rounds Are Included?
+
+2-3 rounds is standard. Less than that — they're trying to profit at your expense. More than 5 — there's probably no clear work process.
+
+## Question 5: What Happens If I Don't Like It?
+
+Ask directly: what happens if after the final film I didn't like the direction? Is there a stopping point in the process where the direction can be changed? A good studio will say yes — and explain how.
+
+## Question 6: Do They Have Insurance?
+
+Production insurance is mandatory. Accidents happen on set. If the company has no insurance — the potential damage could fall on you.
+
+## Question 7: Is There "Chemistry"?
+
+This sounds emotional, but it's critical. You're going to spend intensive shoot days with this team. Direct communication, comfort saying "I didn't like it," and the ability to talk about budget openly — these are components of a successful partnership.
+
+---
+
+Want to see what this looks like in practice? View our portfolio and contact us for a getting-to-know-you conversation.`,
+  },
+  {
+    id: "ai-video-production-2026",
+    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    titleHe: "איך AI משנה את הפקת הוידאו התאגידי ב-2026",
+    titleEn: "How AI Is Changing Corporate Video Production in 2026",
+    excerptHe: "Kling, Runway Gen-3, Midjourney — לא עוד כלים ניסיוניים. הנה איך AI הופך להפקות אמיתיות עם לקוחות אמיתיים.",
+    excerptEn: "Kling, Runway Gen-3, Midjourney — no longer experimental tools. Here's how AI is turning into real productions with real clients.",
+    date: "2026-07-01",
+    readingTime: 7,
+    tags: ["AI", "וידאו AI", "הפקת וידאו", "טכנולוגיה"],
+    relatedServiceHref: "/services/ai",
+    relatedServiceLabelHe: "הפקות וידאו AI",
+    relatedServiceLabelEn: "AI Video Productions",
+    bodyHe: `## איך AI משנה את הפקת הוידאו התאגידי ב-2026
+
+לפני שנתיים, כשהצגנו ל-CMO של חברת הייטק סרטון שהופק עם Midjourney ו-Runway, הוא שאל "זה אמיתי?". היום הוא שואל "כמה זה עולה פחות מצילום רגיל?"
+
+## מה השתנה — ובמה
+
+**Midjourney V7** — תמונות פוטוריאליסטיות שניתן לבנות עליהן עולמות ויזואליים שלמים. בוחרים מחר, ולמחרת יש 50 פריימים מוכנים.
+
+**Kling 2.0** — וידאו מתמונה ב-4K. תנועה טבעית, פרזיסיה ויזואלית שלא הייתה אפשרית לפני שנה. משתמשים בו כשהציוד מסווג, הפרויקט לא קיים עדיין, או כשנדרשים ויזואלים שאי אפשר לצלם.
+
+**Runway Gen-3 Alpha** — שיפורים ופעולות מורכבות. כשיש קטע מצולם שצריך להפוך לסינמטי.
+
+**ElevenLabs** — קריין AI ב-30+ שפות, כולל עברית. מקצר את הפוסט-פרודקשן בשבוע שלם.
+
+## מה AI לא יכול לעשות (עדיין)
+
+- בימוי: להחליט מה אומר לקהל הזה
+- נרטיב: לבנות סיפור שמשכנע ועובד ב-90 שניות
+- לקוח: לשאול שאלה נכונה בפגישת הקיק-אוף
+- תחושת בטן: לדעת שהפריים הזה עובד ושה הזה לא
+
+AI הוא כלי מונמן על ידי במאי. בלי הבמאי — זה נראה כמו תרגיל טכנולוגי.
+
+## מתי כדאי לבחור הפקת AI?
+
+- **מוצר שעדיין לא קיים** — סטארטאפ בשלב ה-seed, גיוס הון לפני MVP
+- **ציוד מסווג** — חברות ביטחוניות שלא יכולות לחשוף את המוצר
+- **ויזואלים עתידיים** — בינוי, תכנון עירוני, פרויקטי נדל"ן טרום-בנייה
+- **תקציב מוגבל עם שאיפות גדולות** — Hybrid production חוסך 40-60%
+
+## עלויות: כמה חוסכים עם AI?
+
+הפקה רגילה של 3 ימי צילום + פוסט מלא = 60,000-120,000 ש"ח.
+אותה רמת ויזואלית עם AI = 20,000-45,000 ש"ח.
+
+הפרש? 40-60%. שווה לחשוב על זה.
+
+---
+
+עובדים עם AI בכל פרויקט שני שלנו. רוצים לראות דוגמאות? צרו קשר.`,
+    bodyEn: `## How AI Is Changing Corporate Video Production in 2026
+
+Two years ago, when we showed a CMO of a high-tech company a video produced with Midjourney and Runway, he asked "is this real?". Today he asks "how much less does this cost than regular filming?"
+
+## What Changed — and In What
+
+**Midjourney V7** — photorealistic images on which you can build entire visual worlds. Choose today, and tomorrow you have 50 ready frames.
+
+**Kling 2.0** — video from image in 4K. Natural movement, visual precision that wasn't possible a year ago. Used when equipment is classified, the project doesn't yet exist, or when visuals that can't be filmed are needed.
+
+**Runway Gen-3 Alpha** — improvements and complex actions. When there's filmed footage that needs to become cinematic.
+
+**ElevenLabs** — AI voiceover in 30+ languages, including Hebrew. Shortens post-production by a full week.
+
+## What AI Can't Do (Yet)
+
+- Direction: deciding what tells this audience something
+- Narrative: building a story that convinces and works in 90 seconds
+- Client: asking the right question in the kickoff meeting
+- Gut feeling: knowing this frame works and that one doesn't
+
+AI is a tool operated by a director. Without the director — it looks like a technological exercise.
+
+## When Should You Choose AI Production?
+
+- **Product that doesn't yet exist** — seed-stage startup, fundraising before MVP
+- **Classified equipment** — defense companies that can't expose their product
+- **Future visuals** — construction, urban planning, pre-construction real estate
+- **Limited budget with big ambitions** — Hybrid production saves 40-60%
+
+## Costs: How Much Do You Save with AI?
+
+Regular production of 3 shoot days + full post = ₪60,000-120,000.
+Same visual level with AI = ₪20,000-45,000.
+
+Difference? 40-60%. Worth thinking about.
+
+---
+
+We use AI in every other project we work on. Want to see examples? Get in touch.`,
+  },
+  {
     id: "hafakat-video-b2b",
     sectionImages: ["/vlogimg/hafakat-video-b2b-s1.jpg"],
     coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
@@ -3792,5 +6080,29 @@ export const faqItems: FAQItem[] = [
     questionEn: "Is the studio personally involved in every project?",
     answerHe: "כן. הסטודיו מעורב ישירות בכל פרויקט מהפגישה הראשונה ועד הסרט הסופי. אין מצב שנמכר לכם בוטיק ותקבלו קו ייצור. זה בדיוק מה שאומר 'בוטיק'.",
     answerEn: "Yes. The studio is directly involved in every project from the first meeting to the final film. There's no situation where you're sold boutique and get a production line. That's exactly what 'boutique' means.",
+  },
+  {
+    questionHe: "כמה עולה סרטון אנימציה לחברה?",
+    questionEn: "How much does an animated explainer video cost?",
+    answerHe: "סרטון אנימציה לחברה עולה בדרך כלל בין 15,000 ל-80,000 ש\"ח, תלוי באורך, סגנון (2D, מוגרפיקה, תלת-ממד) ומורכבות הכתיבה. סרטוני Explainer קצרים (60-90 שניות) הם הפופולריים ביותר לחברות הייטק ו-SaaS — הם מסבירים מוצר מורכב בצורה ברורה ומהירה.",
+    answerEn: "An animated explainer video for a company typically costs between $4,000 and $20,000 USD, depending on length, style (2D, motion graphics, 3D) and script complexity. Short explainer videos (60-90 seconds) are most popular for high-tech and SaaS companies — they explain complex products clearly and quickly.",
+  },
+  {
+    questionHe: "מה ההבדל בין סרט תדמית לסרט חברה?",
+    questionEn: "What is the difference between a brand film and a corporate video?",
+    answerHe: "סרט תדמית מספר את הסיפור של החברה — הערכים, האנשים, החזון — ומיועד לבנות תדמית ואמון לאורך זמן. סרט חברה (corporate video) הוא מונח כללי יותר שכולל גם סרטי גיוס, אירועים, הדרכות ומצגות לדירקטוריון. אצלנו כל הסוגים האלה עוברים את אותה רמת קריאטיב ואיכות הפקה.",
+    answerEn: "A brand film tells the company's story — values, people, vision — and is designed to build image and trust over time. A corporate video is a broader term that includes recruitment films, events, training, and board presentations. At our studio, all these types go through the same level of creative direction and production quality.",
+  },
+  {
+    questionHe: "האם אפשר להפיק סרט וידאו עם AI בלי לצלם בכלל?",
+    questionEn: "Can you produce a video with AI without any filming?",
+    answerHe: "כן, ולפעמים זו הבחירה הנכונה. עבור מוצרים שעדיין לא קיימים, סביבות בלתי ניתנות לצילום (מפעלים סודיים, תרחישי עתיד, אנימציות טכניות), אנחנו בונים את הסרט כולו עם Midjourney, Kling ו-Runway Gen-3. התוצאה נראית כמו הפקה של מיליון דולר ועולה שבריר מכך.",
+    answerEn: "Yes, and sometimes it's the right choice. For products that don't exist yet, environments impossible to film (classified facilities, future scenarios, technical animations), we build the entire film with Midjourney, Kling, and Runway Gen-3. The result looks like a million-dollar production and costs a fraction of that.",
+  },
+  {
+    questionHe: "האם אתם מבצעים גם ימי צילום בלבד (ללא עריכה)?",
+    questionEn: "Do you offer filming-only days (without editing)?",
+    answerHe: "כן. אנחנו מציעים ימי צילום עצמאיים עם צוות מלא: במאי, צלם, תאורה וציוד. הגורמים הנפוצים: כנסים ואירועים, ראיונות לחברה, תיעוד תהליכים, ו-B-roll לצוות הפנימי. ניתן גם להוסיף עריכה בסיסית בתוספת עלות.",
+    answerEn: "Yes. We offer standalone filming days with a full crew: director, cinematographer, lighting, and equipment. Common uses: conferences and events, company interviews, process documentation, and B-roll for in-house teams. Basic editing can be added at an additional cost.",
   },
 ];

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import PortfolioModal from "./PortfolioModal";
 
 interface Video {
@@ -11,21 +11,71 @@ interface Video {
 }
 
 interface Props {
-  videos: Video[];
+  anchors: Video[];   // always shown first (positions 1-3)
+  pool: Video[];      // rotated challengers (positions 4-6)
   locale: string;
 }
 
-export default function PortfolioGrid({ videos, locale }: Props) {
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function pickChallengers(pool: Video[], n: number, seed: string): Video[] {
+  // Deterministic shuffle per session using a simple seeded Fisher-Yates
+  const arr = [...pool];
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) {
+    h = (Math.imul(31, h) + seed.charCodeAt(i)) | 0;
+  }
+  for (let i = arr.length - 1; i > 0; i--) {
+    h = (Math.imul(1664525, h) + 1013904223) | 0;
+    const j = Math.abs(h) % (i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr.slice(0, n);
+}
+
+export default function PortfolioGrid({ anchors, pool, locale }: Props) {
   const [active, setActive] = useState<Video | null>(null);
+  const [displayed, setDisplayed] = useState<Video[]>([]);
+  const [showAll, setShowAll] = useState(false);
+  const seedRef = useRef<string>("");
   const isHe = locale === "he";
+
+  useEffect(() => {
+    // Stable session seed stored in sessionStorage so reload = same rotation
+    let seed = sessionStorage.getItem("pf_seed");
+    if (!seed) {
+      seed = Date.now().toString(36) + Math.random().toString(36);
+      sessionStorage.setItem("pf_seed", seed);
+    }
+    seedRef.current = seed;
+    const challengers = pickChallengers(pool, 3, seed);
+    setDisplayed([...anchors, ...challengers]);
+  }, [anchors, pool]);
+
+  const trackClick = (v: Video) => {
+    try {
+      window.gtag?.("event", "portfolio_video_click", {
+        video_id: v.id,
+        video_title: isHe ? v.titleHe : v.titleEn,
+        slot_type: anchors.some((a) => a.id === v.id) ? "anchor" : "challenger",
+      });
+    } catch {}
+  };
+
+  const allVideos = [...anchors, ...pool];
+  const visibleVideos = showAll ? allVideos : displayed;
 
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {videos.map((v, idx) => (
+        {visibleVideos.map((v, idx) => (
           <button
             key={v.id}
-            onClick={() => setActive(v)}
+            onClick={() => { trackClick(v); setActive(v); }}
             className="group relative aspect-video bg-[#111] rounded-[14px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,.10)] hover:shadow-[0_6px_24px_rgba(0,0,0,.18)] transition-all duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-[#FFD000] focus:ring-offset-2"
             aria-label={isHe ? v.titleHe : v.titleEn}
           >
@@ -56,6 +106,18 @@ export default function PortfolioGrid({ videos, locale }: Props) {
           </button>
         ))}
       </div>
+
+      {/* Show all toggle */}
+      {!showAll && pool.length > 3 && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setShowAll(true)}
+            className="px-6 py-2.5 rounded-full border border-[#111]/20 text-[#111] text-sm font-semibold hover:border-[#FFD000] hover:text-[#111] transition-colors duration-200"
+          >
+            {isHe ? `ראה את כל העבודות (${allVideos.length})` : `See all work (${allVideos.length})`}
+          </button>
+        </div>
+      )}
 
       {active && (
         <PortfolioModal

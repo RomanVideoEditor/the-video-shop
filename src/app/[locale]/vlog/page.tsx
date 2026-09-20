@@ -46,7 +46,7 @@ export default async function VlogPage({
           style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }}
         />
         <div className="max-w-4xl mx-auto relative z-10">
-          <p className="text-[11px] font-semibold tracking-[0.4em] text-[#FFD000]/70 uppercase mb-6" style={{ animation: "fadeInUp .45s ease both" }}>
+          <p className="text-[11px] font-semibold tracking-[0.4em] text-[#FFD000] uppercase mb-6" style={{ animation: "fadeInUp .45s ease both" }}>
             videoshop
           </p>
           <h1 className="text-5xl md:text-7xl font-black text-[#111] mb-6 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>
@@ -94,7 +94,7 @@ export default async function VlogPage({
                       {/* Tags + date */}
                       <div className="flex flex-wrap items-center gap-3 mb-3">
                         {post.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className="text-[10px] font-semibold tracking-[0.25em] text-[#FFD000]/70 uppercase">
+                          <span key={tag} className="text-[10px] font-semibold tracking-[0.25em] text-[#FFD000] uppercase">
                             {tag}
                           </span>
                         ))}

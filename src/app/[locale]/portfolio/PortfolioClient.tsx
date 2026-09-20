@@ -57,14 +57,30 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
     <>
       {/* Hero */}
       <section className="pt-32 pb-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="inline-block mb-6">
-            <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full">
-              Portfolio
-            </span>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div className={isHe ? "order-2 lg:order-1" : ""}>
+            <div className="inline-block mb-6">
+              <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full">
+                Portfolio
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black text-[#111] mb-6">{labels.h1}</h1>
+            <p className="text-xl text-[#555] max-w-md">{labels.subtitle}</p>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-[#111] mb-6">{labels.h1}</h1>
-          <p className="text-xl text-[#555] max-w-2xl">{labels.subtitle}</p>
+          <div className={`relative ${isHe ? "order-1 lg:order-2" : ""}`}>
+            <div className="relative rounded-[20px] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,.18)] aspect-video">
+              <video
+                src="/hero.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="none"
+                poster="/hero-poster.jpg"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

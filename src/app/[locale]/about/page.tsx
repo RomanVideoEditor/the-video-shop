@@ -43,7 +43,7 @@ export default async function AboutPage({
         />
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="inline-block mb-6" style={{ animation: "fadeInUp .45s ease both" }}>
-            <span className="text-xs font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/30 px-4 py-2 rounded-full">
+            <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full">
               The Studio
             </span>
           </div>
