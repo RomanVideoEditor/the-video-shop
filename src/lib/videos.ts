@@ -684,6 +684,7 @@ export const vlogPosts: VlogPost[] = [
   },
   {
     id: "ashtromist-employer-branding-case-study",
+    sectionImages: ["/vlogimg/format-driven-eb-s1.jpg", "/vlogimg/format-driven-eb-s2.jpg", "/vlogimg/employer-branding-video-s2.jpg", "/vlogimg/kama-ole-seret-tadmit-s2.jpg"],
     relatedYoutubeId: "8RbqUaMR9_c",
     titleHe: "איך הפכנו 'אשטרומיסט' מסיסמה לזהות: מאחורי הקלעים של קמפיין Employer Branding דגל",
     titleEn: "How We Turned 'Ashtromist' from a Slogan into an Identity: Behind the Scenes of a Flagship Employer Branding Campaign",
@@ -938,6 +939,7 @@ This isn't agency work. This is strategic partnership.`,
   },
   {
     id: "airobotics-developer-program-blog",
+    sectionImages: ["/vlogimg/ai-storyboard-s1.jpg", "/vlogimg/ai-storyboard-s2.jpg"],
     relatedYoutubeId: "URDNpEwabCc",
     titleHe: "איך מסבירים לעולם טכנולוגיה שמעולם לא ראה: ניתוח סרט ה-Developer Program של Airobotics",
     titleEn: "How to Explain Technology the World Has Never Seen: Analyzing the Airobotics Developer Program Film",
@@ -1066,6 +1068,7 @@ When a company launches a developer program, the film is its entry ticket to the
   },
   {
     id: "airobotics-optimus-faa-blog",
+    sectionImages: ["/vlogimg/ai-production-s1.jpg", "/vlogimg/ai-production-s2.jpg"],
     relatedYoutubeId: "mqVFjv-gPS4",
     titleHe: "מהפכת הרחפנים האוטונומיים: מאחורי הקלעים של סרטון ההכרזה הבינלאומי של Airobotics Optimus",
     titleEn: "The Autonomous Drone Revolution: Behind the Scenes of Airobotics Optimus's International Announcement Film",
@@ -1196,6 +1199,7 @@ This trio — CEO, technology close-up, real-world use — works for most B2B te
   },
   {
     id: "buildots-green-screen-blog",
+    sectionImages: ["/vlogimg/tech-product-video-s1.jpg", "/vlogimg/tech-product-video-s2.jpg"],
     relatedYoutubeId: "nFaOyZwj2PY",
     titleHe: "מסך ירוק כפתרון הפקה אסטרטגי: ניתוח הפרויקט של Buildots",
     titleEn: "Green Screen as a Strategic Production Solution: The Buildots Project Analysis",
@@ -1332,6 +1336,7 @@ Green Screen lets you tell the client: "We're not limited by what exists. We cho
   },
   {
     id: "ludeo-gaming-blog",
+    sectionImages: ["/vlogimg/social-content-s1.jpg", "/vlogimg/social-content-s2.jpg"],
     relatedYoutubeId: "3mxQZMC9ZpI",
     titleHe: "Live-Action + אנימציה תלת-ממד: איך מסבירים לגיימרים טכנולוגיה שמעולם לא ראו | Ludeo",
     titleEn: "Live-Action + 3D Animation: How to Explain Technology Gamers Have Never Seen | Ludeo",
@@ -1486,6 +1491,7 @@ That's the difference between a film that explains and a film that sells.`,
   },
   {
     id: "big-fashion-giliot-blog",
+    sectionImages: ["/vlogimg/corporate-event-s1.jpg", "/vlogimg/drone-realestate-s1.jpg"],
     relatedYoutubeId: "yDJ5shdbFMw",
     titleHe: "רחפן ו-OOH: כשצילום אווירי הופך קמפיין חוצות לנכס וידאו | BIG FASHION גלילות",
     titleEn: "Drone & OOH: When Aerial Cinematography Turns an Out-of-Home Campaign Into a Video Asset | BIG FASHION Gililot",
@@ -1618,6 +1624,7 @@ The drone doesn't just document the campaign — it *amplifies* it.`,
   },
   {
     id: "ashtrom-properties-blog",
+    sectionImages: ["/vlogimg/drone-realestate-s1.jpg", "/vlogimg/drone-realestate-s2.jpg"],
     relatedYoutubeId: "ome2LtSiFWQ",
     titleHe: "כשהנדל\"ן מרגיש: ניתוח סרט התדמית של אשטרום נכסים",
     titleEn: "When Real Estate Feels Human: Analyzing the Ashtrom Properties Brand Film",
@@ -1756,6 +1763,7 @@ Only after there are answers to these — do we build the shot map.`,
   },
   {
     id: "vertica-medtech-blog",
+    sectionImages: ["/vlogimg/instructional-video-s1.jpg", "/vlogimg/vertica-flagship-s2.jpg"],
     relatedYoutubeId: "7vCj49e42Ow",
     titleHe: "איך מוכרים מוצר שאי אפשר לדבר עליו: הפקת Onboarding לטכנולוגיה רפואית אינטימית | Vertica",
     titleEn: "How to Sell a Product You Can't Talk About: Onboarding Production for Intimate Medical Technology | Vertica",
@@ -1950,6 +1958,7 @@ A good Onboarding video doesn't explain your product. **It makes your customer w
   },
   {
     id: "startup-nation-connect2innovate-blog",
+    sectionImages: ["/vlogimg/corporate-event-s2.jpg", "/vlogimg/event-recap-s2.jpg"],
     relatedYoutubeId: "Fmd3fB5Pb-M",
     titleHe: "סרט שפותח גבולות: מאחורי הקלעים של Connect 2 Innovate | Startup Nation Central",
     titleEn: "A Film That Opens Borders: Behind the Scenes of Connect 2 Innovate | Startup Nation Central",
@@ -2130,6 +2139,7 @@ A good B2B film doesn't explain what the organization does. It makes the viewer 
   },
   {
     id: "intel-fab28-blog",
+    sectionImages: ["/vlogimg/instructional-video-s1.jpg", "/vlogimg/tech-product-video-s2.jpg"],
     relatedYoutubeId: "d2Bckns6JTA",
     titleHe: "איך הופכים תרגיל חירום תאגידי לסרט אקשן קולנועי: הפקת הענק של Intel Fab 28",
     titleEn: "How to Turn a Corporate Emergency Drill Into a Cinematic Action Film: The Intel Fab 28 Large-Scale Production",
@@ -2302,6 +2312,7 @@ Not because "it'll look good on the website." But because:
   },
   {
     id: "intel-fab28-kgat-blog",
+    sectionImages: ["/vlogimg/vertica-flagship-s1.jpg", "/vlogimg/tech-product-video-s1.jpg"],
     relatedYoutubeId: "coZNfEng59g",
     titleHe: "לצלם אקשן בזמן אמת: מאחורי הקלעים של תרגיל החירום ב-Intel Fab 28 קרית גת",
     titleEn: "Filming Action in Real Time: Behind the Scenes of Intel Fab 28 Kiryat Gat Emergency Drill",
@@ -2448,6 +2459,7 @@ No matter how impressive the action — if the film ends on "a distant drone sho
   },
   {
     id: "intel-haifa-idc-blog",
+    sectionImages: ["/vlogimg/corporate-business-card-s1.jpg", "/vlogimg/investor-pitch-s2.jpg"],
     relatedYoutubeId: "jAU89DS0oig",
     titleHe: "3,000 עובדים, 6 זירות, מפה אחת: מה שמפיקים תרגיל חירום ב-Intel IDC חיפה",
     titleEn: "3,000 Employees, 6 Scenes, One Map: What Producing Intel IDC Haifa's Emergency Drill Teaches You",
@@ -5084,6 +5096,8 @@ One of the most common surprises: "Can we get an Instagram version?" After produ
 
 When someone offers you a brand film for ₪3,000 — ask: how many shoot days? What's the crew? Who edits? Who writes? Usually it's technically fine, but lacks story, message, and strategy.
 
+[IMAGE: Hidden costs in video production — what's not included in a brand film quote]
+
 ## How to Set the Right Budget?
 
 Instead of asking "how much does a video cost" — ask: **"What should this video return for me?"**
@@ -5093,6 +5107,8 @@ If the video brings leads at ₪500 each and your average deal is ₪15,000 — 
 **Two. That's it.**
 
 That's the conversation we love having with clients before choosing a budget.
+
+[IMAGE: Choosing the right video production studio — questions to ask before signing]
 
 ---
 
@@ -5356,7 +5372,8 @@ Want to talk employer branding for your company? Leave your details — we'll be
   },
   {
     id: "kama-ole-seret-tadmit-2026",
-    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    coverImage: "/vlogimg/madrich-michir-cover.jpg",
+    sectionImages: ["/vlogimg/madrich-michir-s1.jpg", "/vlogimg/madrich-michir-s2.jpg", "/vlogimg/corporate-business-card-s2.jpg"],
     titleHe: "כמה עולה סרט תדמית ב-2026 — פירוט מחירים לפי סוג הפקה",
     titleEn: "How Much Does a Corporate Brand Film Cost in 2026 — Price Breakdown by Production Type",
     excerptHe: "מה מחיר סרט תדמית לחברה בישראל? פירוט ריאלי של עלויות לפי סוג ואורך, כולל AI, אנימציה והפקות מלאות.",
@@ -5397,6 +5414,8 @@ Want to talk employer branding for your company? Leave your details — we'll be
 - 60–90 שניות, 2D/מוגרפיקה
 - **מחיר: 12,000–50,000 ש"ח לפי מורכבות**
 
+[IMAGE: פירוט מחירי הפקת סרט תדמית בישראל — VideoShop]
+
 ## מה משפיע הכי הרבה על המחיר?
 
 1. **מספר ימי צילום** — כל יום צילום עולה כסף: צוות, ציוד, לוקיישן
@@ -5411,9 +5430,13 @@ Want to talk employer branding for your company? Leave your details — we'll be
 - הפצה (מדיה ממומנת)
 - מוזיקה מקורית (לרוב מגיעים עם ספרייה)
 
+[IMAGE: מה לא כלול בסרט תדמית — עלויות נסתרות בהפקת וידאו]
+
 ## איך לבחור נכון לפי תקציב
 
 אם התקציב מוגבל — עדיף סרט קצר אחד מצוין מאשר שני סרטים בינוניים. השקעה בסקריפט ובבימוי חוזרת עליה עצמה. מה שלקוחות מרגישים בסרט זה לא כמה ימי צילום היו — אלא כמה טוב הסרט מייצג אותם.
+
+[IMAGE: בחירת סטודיו הפקת וידאו — שאלות נכונות לפני חתימה על חוזה]
 
 ---
 
@@ -5472,7 +5495,8 @@ Want a specific quote for your project? The first introductory call is always fr
   },
   {
     id: "7-sheelot-livchir-studio-video",
-    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    coverImage: "/vlogimg/10-questions-cover.jpg",
+    sectionImages: ["/vlogimg/vertica-flagship-s1.jpg", "/vlogimg/tech-product-video-s1.jpg", "/vlogimg/corporate-business-card-s2.jpg"],
     titleHe: "7 שאלות שחייבים לשאול לפני שבוחרים סטודיו הפקת וידאו",
     titleEn: "7 Questions You Must Ask Before Choosing a Video Production Studio",
     excerptHe: "לא כל הסטודיואים שווים. הנה 7 שאלות שיחסכו לכם כסף, זמן ואכזבות.",
@@ -5495,6 +5519,8 @@ Want a specific quote for your project? The first introductory call is always fr
 
 פורטפוליו יפה מלא בסרטי אוכל לא יכין אתכם לסרט B2B טכנולוגי. תשאלו ספציפית: יש לכם ניסיון עם חברות הייטק / נדל"ן / ביטחוני?
 
+[IMAGE: פורטפוליו הפקת וידאו B2B — סרטי תדמית מקצועיים בישראל]
+
 ## שאלה 3: מה כלול במחיר?
 
 מחיר "החל מ-X" לרוב לא כולל: שחקנים, מוזיקה מקורית, גרסאות נוספות, שינויים מחוץ לסקופ. תבקשו פירוט מלא.
@@ -5503,6 +5529,8 @@ Want a specific quote for your project? The first introductory call is always fr
 
 2-3 סבבים זה תקין. פחות מזה — תנסו להרוויח על חשבונכם. יותר מ-5 — כנראה שאין תהליך עבודה ברור.
 
+[IMAGE: תהליך עבודה עם סטודיו וידאו מקצועי — סבבי עריכה ואישור]
+
 ## שאלה 5: מה קורה אם לא אהבתי?
 
 תשאלו ישירות: מה קורה אם אחרי הסרט הגמר לא אהבתי את הכיוון? האם יש נקודת עצירה בתהליך שבה ניתן לשנות כיוון? סטודיו טוב יאמר לכם כן — ויסביר איך.
@@ -5510,6 +5538,8 @@ Want a specific quote for your project? The first introductory call is always fr
 ## שאלה 6: יש ביטוח הפקה?
 
 ביטוח הפקה הוא חובה. תאונות קורות בסט. אם אין ביטוח — הנזק הפוטנציאלי יכול ליפול עליכם.
+
+[IMAGE: ביטוח הפקה ומקצועיות בסט — VideoShop]
 
 ## שאלה 7: "יש כימיה"?
 
@@ -5530,6 +5560,8 @@ Large studios sell and outsource to freelancers. Ask: who is the director who wi
 
 A beautiful portfolio full of food films won't prepare you for a technical B2B film. Ask specifically: do you have experience with high-tech / real estate / defense companies?
 
+[IMAGE: B2B video production portfolio — professional brand films in Israel]
+
 ## Question 3: What's Included in the Price?
 
 A price "starting from X" usually doesn't include: actors, original music, additional versions, changes outside scope. Ask for a full breakdown.
@@ -5538,6 +5570,8 @@ A price "starting from X" usually doesn't include: actors, original music, addit
 
 2-3 rounds is standard. Less than that — they're trying to profit at your expense. More than 5 — there's probably no clear work process.
 
+[IMAGE: Professional video editing workflow — revision rounds and approval process]
+
 ## Question 5: What Happens If I Don't Like It?
 
 Ask directly: what happens if after the final film I didn't like the direction? Is there a stopping point in the process where the direction can be changed? A good studio will say yes — and explain how.
@@ -5545,6 +5579,8 @@ Ask directly: what happens if after the final film I didn't like the direction? 
 ## Question 6: Do They Have Insurance?
 
 Production insurance is mandatory. Accidents happen on set. If the company has no insurance — the potential damage could fall on you.
+
+[IMAGE: Professional production set safety — insurance and crew standards]
 
 ## Question 7: Is There "Chemistry"?
 
@@ -5556,7 +5592,8 @@ Want to see what this looks like in practice? View our portfolio and contact us 
   },
   {
     id: "ai-video-production-2026",
-    coverImage: "/vlogimg/hafakat-video-b2b-cover.jpg",
+    coverImage: "/vlogimg/ai-production-cover.jpg",
+    sectionImages: ["/vlogimg/ai-production-s1.jpg", "/vlogimg/ai-storyboard-s1.jpg", "/vlogimg/ai-production-s2.jpg"],
     titleHe: "איך AI משנה את הפקת הוידאו התאגידי ב-2026",
     titleEn: "How AI Is Changing Corporate Video Production in 2026",
     excerptHe: "Kling, Runway Gen-3, Midjourney — לא עוד כלים ניסיוניים. הנה איך AI הופך להפקות אמיתיות עם לקוחות אמיתיים.",
@@ -5581,6 +5618,8 @@ Want to see what this looks like in practice? View our portfolio and contact us 
 
 **ElevenLabs** — קריין AI ב-30+ שפות, כולל עברית. מקצר את הפוסט-פרודקשן בשבוע שלם.
 
+[IMAGE: כלי AI להפקת וידאו — Midjourney, Kling, Runway Gen-3 בפרויקט תאגידי]
+
 ## מה AI לא יכול לעשות (עדיין)
 
 - בימוי: להחליט מה אומר לקהל הזה
@@ -5589,6 +5628,8 @@ Want to see what this looks like in practice? View our portfolio and contact us 
 - תחושת בטן: לדעת שהפריים הזה עובד ושה הזה לא
 
 AI הוא כלי מונמן על ידי במאי. בלי הבמאי — זה נראה כמו תרגיל טכנולוגי.
+
+[IMAGE: AI Storyboard לסרט תאגידי — איך עובד תהליך ההפקה]
 
 ## מתי כדאי לבחור הפקת AI?
 
@@ -5603,6 +5644,8 @@ AI הוא כלי מונמן על ידי במאי. בלי הבמאי — זה נ�
 אותה רמת ויזואלית עם AI = 20,000-45,000 ש"ח.
 
 הפרש? 40-60%. שווה לחשוב על זה.
+
+[IMAGE: חיסכון בעלויות הפקת וידאו עם AI — Hybrid Production ב-VideoShop]
 
 ---
 
@@ -5621,6 +5664,8 @@ Two years ago, when we showed a CMO of a high-tech company a video produced with
 
 **ElevenLabs** — AI voiceover in 30+ languages, including Hebrew. Shortens post-production by a full week.
 
+[IMAGE: AI video production tools — Midjourney, Kling, Runway Gen-3 in a corporate project]
+
 ## What AI Can't Do (Yet)
 
 - Direction: deciding what tells this audience something
@@ -5629,6 +5674,8 @@ Two years ago, when we showed a CMO of a high-tech company a video produced with
 - Gut feeling: knowing this frame works and that one doesn't
 
 AI is a tool operated by a director. Without the director — it looks like a technological exercise.
+
+[IMAGE: AI storyboard for corporate video — how the production process works]
 
 ## When Should You Choose AI Production?
 
@@ -5643,6 +5690,8 @@ Regular production of 3 shoot days + full post = ₪60,000-120,000.
 Same visual level with AI = ₪20,000-45,000.
 
 Difference? 40-60%. Worth thinking about.
+
+[IMAGE: AI video cost savings — Hybrid Production at VideoShop]
 
 ---
 
