@@ -21,6 +21,7 @@ import { fetchKeywordMetrics, pickWeakestTopic } from "./gsc.js";
 import { generateFaqItems, generateBlogPost } from "./claude.js";
 import { commitFaqItems, openBlogPostPr } from "./changes.js";
 import { sendSummaryEmail } from "./email.js";
+import { researchIndustryKeywords } from "./keywords.js";
 
 // ── Step 1: Close any pending cycle ──────────────────────────────────────────
 
@@ -62,7 +63,7 @@ async function closePendingCycle() {
 
 // ── Step 2–5: Run new cycle ───────────────────────────────────────────────────
 
-async function runNewCycle() {
+async function runNewCycle(research) {
   const recentTopicIds = await getRecentTopicIds(60);
   const { topic, metrics } = await pickWeakestTopic(KEYWORD_TOPICS, recentTopicIds);
 
@@ -120,6 +121,7 @@ async function runNewCycle() {
       : null,
     baselineMetrics: metrics,
     followupMetrics: null,
+    keywordResearch: research || null,
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);
@@ -131,12 +133,33 @@ function avg(arr) {
   return arr.length ? arr.reduce((s, v) => s + v, 0) / arr.length : 100;
 }
 
+async function runKeywordResearch() {
+  const lastCycles = await getLastCycles(4);
+  // Run research every 4 cycles (~2 months)
+  if (lastCycles.length > 0 && lastCycles.length % 4 !== 0) return;
+
+  console.log("[agent] Running industry keyword research...");
+  const research = await researchIndustryKeywords(KEYWORD_TOPICS);
+
+  const highOpp = research.keywords.filter((k) => k.opportunity === "high");
+  console.log(`[agent] Keyword research complete. ${highOpp.length} high-opportunity keywords found.`);
+  console.log(`[agent] Summary: ${research.summary}`);
+
+  // Log top keywords
+  highOpp.forEach((k) => {
+    console.log(`  [${k.language.toUpperCase()}] "${k.keyword}" → ${k.suggestedTopic}: ${k.rationale}`);
+  });
+
+  return research;
+}
+
 async function main() {
   console.log("[agent] Starting SEO agent run at", new Date().toISOString());
 
   try {
+    const research = await runKeywordResearch();
     await closePendingCycle();
-    await runNewCycle();
+    await runNewCycle(research);
     console.log("[agent] Done.");
   } catch (err) {
     console.error("[agent] Fatal error:", err);

@@ -41,25 +41,22 @@ export async function commitFaqItems(topicId, newFaqItems) {
 
   const { content, sha } = await getGithubFile(filePath);
 
-  // Find the closing bracket of faqItems array and insert before it
-  // Pattern: last `}` followed by `]` in the faqItems block
-  const newItemsCode = newFaqItems
-    .map(
-      (item) =>
-        `  {\n    q: ${JSON.stringify(item.qHe)},\n    a: ${JSON.stringify(item.aHe)},\n  },`
-    )
+  const heItems = newFaqItems
+    .map((item) => `          { q: ${JSON.stringify(item.qHe)}, a: ${JSON.stringify(item.aHe)} },`)
+    .join("\n");
+  const enItems = newFaqItems
+    .map((item) => `          { q: ${JSON.stringify(item.qEn)}, a: ${JSON.stringify(item.aEn)} },`)
     .join("\n");
 
-  // Insert before the closing ] of the faqItems prop
-  const insertMarker = /(\s*\]\s*\}\s*\n\s*\/>)/;
-  if (!insertMarker.test(content)) {
-    throw new Error(`Could not find faqItems insertion point in ${filePath}`);
-  }
+  // Insert Hebrew items before the `] : [` divider
+  const heMarker = /(\s*\] : \[)/;
+  if (!heMarker.test(content)) throw new Error(`Could not find Hebrew FAQ closing in ${filePath}`);
+  let updated = content.replace(heMarker, `\n${heItems}\n$1`);
 
-  const updated = content.replace(
-    insertMarker,
-    `\n${newItemsCode}\n$1`
-  );
+  // Insert English items before the closing `]}`
+  const enMarker = /(\s*\]\}[\s\n]*\/>)/;
+  if (!enMarker.test(updated)) throw new Error(`Could not find English FAQ closing in ${filePath}`);
+  updated = updated.replace(enMarker, `\n${enItems}\n$1`);
 
   await octokit.rest.repos.createOrUpdateFileContents({
     owner,

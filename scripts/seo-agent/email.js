@@ -17,7 +17,36 @@ function delta(before, after) {
   return "= no change";
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel }) {
+function buildKeywordResearchSection(research) {
+  if (!research) return "";
+  const highOpp = research.keywords.filter((k) => k.opportunity === "high").slice(0, 8);
+  const rows = highOpp.map((k) => `
+    <tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee">${k.keyword}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${k.language === "he" ? "🇮🇱" : "🌐"}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666;font-size:12px">${k.suggestedTopic}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#888;font-size:11px">${k.rationale}</td>
+    </tr>`).join("");
+
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">מחקר מילות מפתח — טרנדים בתעשייה</h3>
+    <p style="font-size:13px;color:#444;margin:8px 0 12px">${research.summary}</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <thead>
+        <tr style="background:#f5f5f5">
+          <th style="padding:6px 10px;text-align:right">מילת מפתח</th>
+          <th style="padding:6px 10px">שפה</th>
+          <th style="padding:6px 10px">דף מומלץ</th>
+          <th style="padding:6px 10px">סיבה</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p style="font-size:11px;color:#999;margin-top:8px">* מחקר זה מופיע כל ~2 חודשים. הוסף מילות מפתח רלוונטיות ל-config.js ידנית.</p>`;
+}
+
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch }) {
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
 
   const metricsRows = (baselineMetrics || []).map((b) => {
@@ -65,6 +94,8 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
     </table>
 
     ${!hasFollowup ? '<p style="color:#888;font-size:12px;margin-top:8px">* נתוני "אחרי" יופיעו בדוח הבא לאחר 2 שבועות של אינדוקס.</p>' : ""}
+
+    ${buildKeywordResearchSection(keywordResearch)}
 
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
     <p style="font-size:11px;color:#999;margin:0">
