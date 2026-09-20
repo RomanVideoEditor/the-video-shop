@@ -68,14 +68,19 @@ function renderBody(text: string, sectionImages: string[], imageAlt: string) {
     const block = blocks[i].trim();
     if (!block) continue;
 
-    if (block === "[IMAGE]") {
+    if (block.startsWith("[IMAGE")) {
       const src = sectionImages[imgIdx++];
       if (!src) continue;
+      const captionMatch = block.match(/^\[IMAGE:\s*(.+)\]$/);
+      const caption = captionMatch ? captionMatch[1] : null;
       elements.push(
         <figure key={`img-${i}`} className="my-10">
           <div className="relative w-full aspect-[16/7] rounded-xl overflow-hidden bg-[#111] border border-gray-200">
-            <Image src={src} alt={imageAlt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
+            <Image src={src} alt={caption || imageAlt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 800px" />
           </div>
+          {caption && (
+            <figcaption className="mt-3 text-sm text-gray-500 text-center italic">{caption}</figcaption>
+          )}
         </figure>
       );
       continue;
