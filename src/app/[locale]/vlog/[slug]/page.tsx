@@ -48,12 +48,15 @@ export async function generateMetadata({
 
 // Inline: handle **bold** and *italic*
 function renderInline(text: string): React.ReactNode[] {
-  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*)/g);
+  const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, j) => {
     if (part.startsWith("**") && part.endsWith("**"))
       return <strong key={j} className="text-[#111] font-bold">{part.slice(2, -2)}</strong>;
     if (part.startsWith("*") && part.endsWith("*"))
       return <em key={j}>{part.slice(1, -1)}</em>;
+    const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch)
+      return <a key={j} href={linkMatch[2]} className="text-[#111] underline underline-offset-2 hover:text-[#FFD000] transition-colors" target="_blank" rel="noopener noreferrer">{linkMatch[1]}</a>;
     return part;
   });
 }
