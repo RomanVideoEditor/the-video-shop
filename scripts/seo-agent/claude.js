@@ -11,11 +11,12 @@ export async function generateFaqItems(topic, existingFaqs = [], metrics) {
     .map((m) => m.keyword)
     .join(", ");
 
+  const safeLabel = topic.label.replace(/"/g, "'");
   const prompt = `You are an SEO specialist for videoshop (the-videoshop.com), a boutique video production studio in Tel Aviv, Israel.
 The studio produces: corporate brand films, animation/explainer videos, AI video, high-tech/startup films, real estate video, training videos.
 Real clients: Intel, Palo Alto Networks, Ashtrom, Ondas Holdings (NASDAQ).
 
-Topic: "${topic.label}" (page: ${topic.pagePath})
+Topic: "${safeLabel}" (page: ${topic.pagePath})
 Weak keywords (position >20 in Google): ${weakKeywords || "all keywords need improvement"}
 
 Existing FAQ questions already on this page:
@@ -106,10 +107,11 @@ function injectInternalLinks(body, lang) {
 
 // Generate a short blog post targeting a specific keyword cluster
 export async function generateBlogPost(topic, targetKeyword, metrics) {
+  const safeLabel = topic.label.replace(/"/g, "'");
   const prompt = `You are a content writer for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
 
 Write a blog post targeting the keyword: "${targetKeyword}"
-Related to service: "${topic.label}" (${topic.pagePath})
+Related to service: "${safeLabel}" (${topic.pagePath})
 Other keywords to include naturally: ${topic.keywords.filter(k => k !== targetKeyword).slice(0, 3).join(", ")}
 
 Requirements:

@@ -22,9 +22,10 @@ const TOPIC_META_KEYS = {
 };
 
 async function generateTitleTag(topicLabel, keywords, currentTitleHe, currentTitleEn, ctrIssue = false) {
+  const safeLabel = topicLabel.replace(/"/g, "'");
   const prompt = `You are an SEO specialist for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
 
-Service page: "${topicLabel}"
+Service page: "${safeLabel}"
 ${ctrIssue ? "⚠️ This page has LOW CTR despite good ranking — the title is not compelling enough." : ""}
 Target keywords: ${keywords.join(", ")}
 
@@ -57,9 +58,10 @@ Return ONLY valid JSON:
 }
 
 async function generateMetaDescription(topicLabel, keywords, currentDescHe, currentDescEn) {
+  const safeLabel = topicLabel.replace(/"/g, "'");
   const prompt = `You are an SEO specialist for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
 
-Service page: "${topicLabel}"
+Service page: "${safeLabel}"
 Target keywords (weak in Google, need boosting): ${keywords.join(", ")}
 
 Current Hebrew meta description:
