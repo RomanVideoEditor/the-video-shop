@@ -42,11 +42,6 @@ export default async function AnimationPage({
         crumbs={[
           { name: isHe ? "שירותים" : "Services", path: "/services" },
           { name: isHe ? "אנימציה ומוגרפיקה" : "Animation & Motion Graphics", path: "/services/animation" },
-          { q: "How much does an animation video for a company cost?", a: "The cost of an animation video for a company depends on video length, design complexity, and original artwork requirements. We offer flexible packages starting from ₪5,000 to ₪50,000+, tailored to your budget. Let's create an animated solution that fits your needs." },
-          { q: "What's the difference between an explainer animation and a corporate video?", a: "An explainer animation focuses on explaining a concept, product, or service simply and clearly—typically 60-90 seconds long. A corporate video is broader, focusing on brand storytelling, values, and company narrative. We use both approaches to achieve different goals for your business." },
-          { q: "Do you create animated explainer videos for high-tech companies in Israel?", a: "Yes, we have extensive experience creating animated explainer videos for high-tech companies and startups in Israel. We've worked with companies like Intel and Palo Alto Networks, and we understand the technical nuances and industry requirements. Our explainer animations simplify complex concepts into clear, engaging content." },
-          { q: "What animation style works best for a company animation video?", a: "It depends on your brand identity, target audience, and the message you want to deliver. Styles effective for a company animation video include clean motion graphics, subtle 2D animation, or modern 3D—all can create an effective explainer animation. We recommend a style based on an in-depth analysis of your marketing goals." },
-
         ]}
       />
       <ServicePage

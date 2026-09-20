@@ -42,11 +42,6 @@ export default async function RealEstatePage({
         crumbs={[
           { name: isHe ? "שירותים" : "Services", path: "/services" },
           { name: isHe ? "נדל\"ן ואדריכלות" : "Real Estate & Architecture", path: "/services/realestate" },
-          { q: "How much does commercial real estate video production cost in Israel?", a: "The cost of commercial real estate video production depends on your project scope – from a short property showcase to a full campaign with drone footage and professional editing. At Videoshop, we provide custom quotes tailored to every property owner and real estate agent's budget, with transparent pricing and no surprises." },
-          { q: "Is drone filming legal in Israel for real estate videos?", a: "Yes, drone filming in Israel for real estate videos is completely legal when operated by a licensed drone operator with all required permits. Our team includes certified operators who understand local regulations and can bring impressive aerial perspectives to your property." },
-          { q: "What's the difference between commercial real estate video and residential property video?", a: "Commercial real estate video requires a completely different approach – it needs to showcase business potential, foot traffic, demographics, and long-term value, while a residential property video focuses on lifestyle and comfort. We know exactly how to tell the story of each property type to attract the right audience." },
-          { q: "Can real estate video production in Israel actually increase property sales?", a: "Absolutely – properties with quality video content receive more inquiries and offers from lenders and potential buyers. At Videoshop, we create videos that aren't just beautiful, but designed to sell – with strong storytelling, professional documentation, and drone footage when it matters." },
-
         ]}
       />
       <ServicePage

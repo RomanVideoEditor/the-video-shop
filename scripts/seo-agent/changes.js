@@ -48,15 +48,21 @@ export async function commitFaqItems(topicId, newFaqItems) {
     .map((item) => `          { q: ${JSON.stringify(item.qEn)}, a: ${JSON.stringify(item.aEn)} },`)
     .join("\n");
 
-  // Insert Hebrew items before the `] : [` divider
-  const heMarker = /(\s*\] : \[)/;
-  if (!heMarker.test(content)) throw new Error(`Could not find Hebrew FAQ closing in ${filePath}`);
-  let updated = content.replace(heMarker, `\n${heItems}\n$1`);
+  // Anchor: find the faqItems prop to avoid matching BreadcrumbSchema crumbs
+  const faqStart = content.indexOf("faqItems={isHe ? [");
+  if (faqStart === -1) throw new Error(`Could not find faqItems prop in ${filePath}`);
 
-  // Insert English items before the closing `]}`
-  const enMarker = /(\s*\]\}[\s\n]*\/>)/;
-  if (!enMarker.test(updated)) throw new Error(`Could not find English FAQ closing in ${filePath}`);
-  updated = updated.replace(enMarker, `\n${enItems}\n$1`);
+  // Insert Hebrew items: find ] : [ AFTER faqItems start
+  const heMarkerPos = content.indexOf("] : [", faqStart);
+  if (heMarkerPos === -1) throw new Error(`Could not find Hebrew/English divider in ${filePath}`);
+  let updated = content.slice(0, heMarkerPos) + `\n${heItems}\n` + content.slice(heMarkerPos);
+
+  // Insert English items: find ]} AFTER ] : [ (now shifted in updated string)
+  const faqStartUpdated = updated.indexOf("faqItems={isHe ? [");
+  const dividerPos = updated.indexOf("] : [", faqStartUpdated);
+  const enMarkerPos = updated.indexOf("]}", dividerPos + 5);
+  if (enMarkerPos === -1) throw new Error(`Could not find English FAQ closing in ${filePath}`);
+  updated = updated.slice(0, enMarkerPos) + `\n${enItems}\n` + updated.slice(enMarkerPos);
 
   await octokit.rest.repos.createOrUpdateFileContents({
     owner,
