@@ -5,14 +5,13 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "vlog": "Blog",
-    "testimonials": "Reviews",
+    "testimonials": "Testimonials",
     "contact": "Contact",
     "servicesDefense": "Defense & AI Tech",
     "servicesRealestate": "Real Estate & Architecture",
     "servicesCorporate": "Brand & Corporate",
     "servicesAI": "AI Video Production",
-    "pricing": "Pricing",
-    "testimonials": "Testimonials"
+    "pricing": "Pricing"
   },
   "home": {
     "h1": "videoshop",
@@ -225,7 +224,7 @@
     "servicesTrainingTitle": "Training & eLearning Videos | videoshop",
     "servicesTrainingDesc": "Professional training video production: onboarding, product training, compliance and eLearning. Reduces training time, improves results.",
     "servicesAnimationTitle": "Explainer Video & Animation Production for Companies | videoshop Israel",
-    "servicesAnimationDesc": "Animated explainer videos, motion graphics and 2D/3D animation for high-tech and SaaS companies. When the camera can't show it — animation explains the unexplainable.",
+    "servicesAnimationDesc": "Explainer video studio for Israeli tech. Animated explainer videos that turn complex SaaS into clear, 60-second stories. Get your quote today.",
     "pricingTitle": "Video Production Pricing | videoshop",
     "pricingDesc": "Video production pricing for businesses in Israel: brand films, Employer Branding, training and AI. Quote within 24 hours.",
     "testimonialsTitle": "Client Testimonials | videoshop",
