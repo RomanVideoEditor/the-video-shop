@@ -46,11 +46,11 @@ export async function getPendingCycle() {
   const snap = await db
     .collection("seo_cycles")
     .where("result", "==", "pending")
-    .orderBy("startedAt", "asc")
-    .limit(1)
     .get();
   if (snap.empty) return null;
-  const doc = snap.docs[0];
+  // Sort client-side to avoid composite index requirement
+  const docs = snap.docs.sort((a, b) => a.data().startedAt - b.data().startedAt);
+  const doc = docs[0];
   return { id: doc.id, ...doc.data() };
 }
 
