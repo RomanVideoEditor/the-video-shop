@@ -27,6 +27,9 @@ export const CONFIG = {
   // ── Claude API ──
   anthropicApiKey: process.env.ANTHROPIC_API_KEY,
 
+  // ── PageSpeed Insights (optional — free Google API key) ──
+  pageSpeedApiKey: process.env.PAGESPEED_API_KEY || null,
+
   // ── Email ──
   emailTo: process.env.NOTIFY_EMAIL || "gornih.roman@gmail.com",
   emailFrom: process.env.SMTP_FROM || "seo-agent@the-videoshop.com",

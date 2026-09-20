@@ -22,6 +22,8 @@ import { generateFaqItems, generateBlogPost } from "./claude.js";
 import { commitFaqItems, openBlogPostPr } from "./changes.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
+import { runPageSpeedAudit } from "./pagespeed.js";
+import { optimizeMetaForTopic } from "./meta.js";
 
 // ── Step 1: Close any pending cycle ──────────────────────────────────────────
 
@@ -78,12 +80,31 @@ async function runNewCycle(research) {
   let prNumber = null;
   let actionDescription = "";
 
+  // Always run PageSpeed audit
+  const pageSpeedReport = await runPageSpeedAudit(process.env.PAGESPEED_API_KEY).catch((err) => {
+    console.warn("[agent] PageSpeed audit failed:", err.message);
+    return null;
+  });
+
+  // Run meta optimizer every 3rd cycle (on safe_auto cycles only, to avoid too many commits)
+  let metaResult = null;
+  if (actionType === "safe_auto") {
+    const weakKeywords = metrics.filter((m) => m.position > 15).map((m) => m.keyword);
+    if (weakKeywords.length > 0) {
+      metaResult = await optimizeMetaForTopic(topic.id, topic.label, weakKeywords).catch((err) => {
+        console.warn("[agent] Meta optimizer failed:", err.message);
+        return null;
+      });
+      if (metaResult) filesChanged.push("src/messages/he.json", "src/messages/en.json");
+    }
+  }
+
   if (actionType === "safe_auto") {
     // Generate and commit FAQ items
     console.log("[agent] Generating FAQ items...");
     const newFaqs = await generateFaqItems(topic, [], metrics);
     const result = await commitFaqItems(topic.id, newFaqs);
-    filesChanged = [result.filePath];
+    filesChanged = [result.filePath, ...(metaResult ? ["src/messages/he.json", "src/messages/en.json"] : [])];
     actionDescription = `Added ${result.itemsAdded} FAQ items to ${result.filePath}`;
     console.log(`[agent] Committed FAQ items: ${actionDescription}`);
   } else {
@@ -122,6 +143,8 @@ async function runNewCycle(research) {
     baselineMetrics: metrics,
     followupMetrics: null,
     keywordResearch: research || null,
+    pageSpeedReport: pageSpeedReport || null,
+    metaResult: metaResult || null,
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);

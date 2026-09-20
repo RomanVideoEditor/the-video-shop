@@ -50,6 +50,9 @@ jobs:
           # Claude AI
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+          # PageSpeed Insights (optional — free Google API key)
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+
           # Email
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           SMTP_FROM: ${{ secrets.SMTP_FROM }}

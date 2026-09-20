@@ -46,7 +46,71 @@ function buildKeywordResearchSection(research) {
     <p style="font-size:11px;color:#999;margin-top:8px">* מחקר זה מופיע כל ~2 חודשים. הוסף מילות מפתח רלוונטיות ל-config.js ידנית.</p>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch }) {
+function buildPageSpeedSection(report) {
+  if (!report) return "";
+  const scoreColor = (s) => s >= 90 ? "#22c55e" : s >= 70 ? "#f59e0b" : "#ef4444";
+  const rows = report.results.map((r) => {
+    if (r.error) return `<tr><td style="padding:6px 10px;border-bottom:1px solid #eee">${r.label}</td><td colspan="5" style="padding:6px 10px;border-bottom:1px solid #eee;color:#ef4444;font-size:12px">שגיאה: ${r.error}</td></tr>`;
+    return `<tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee">${r.label}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-weight:600;color:${scoreColor(r.performance)}">${r.performance}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;color:${scoreColor(r.seo)}">${r.seo}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:12px;color:#666">${r.lcp}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:12px;color:#666">${r.cls}</td>
+    </tr>`;
+  }).join("");
+
+  const alertBanner = report.alerts.length
+    ? `<p style="background:#fef2f2;border-right:4px solid #ef4444;padding:10px 14px;border-radius:4px;font-size:13px;color:#b91c1c;margin-bottom:12px">⚠️ ${report.alerts.length} דף/דפים מתחת לסף ${report.threshold} — ביצועים נמוכים עלולים לפגוע בדירוג.</p>`
+    : `<p style="background:#f0fdf4;border-right:4px solid #22c55e;padding:10px 14px;border-radius:4px;font-size:13px;color:#15803d;margin-bottom:12px">✅ כל הדפים מעל סף הביצועים (${report.threshold}+)</p>`;
+
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Core Web Vitals — PageSpeed (Mobile)</h3>
+    ${alertBanner}
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <thead>
+        <tr style="background:#f5f5f5">
+          <th style="padding:6px 10px;text-align:right">דף</th>
+          <th style="padding:6px 10px">ביצועים</th>
+          <th style="padding:6px 10px">SEO</th>
+          <th style="padding:6px 10px">LCP</th>
+          <th style="padding:6px 10px">CLS</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function buildMetaSection(metaResult) {
+  if (!metaResult) return "";
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Meta Description — עודכן אוטומטית</h3>
+    <p style="font-size:13px;color:#444"><strong>דף:</strong> ${metaResult.topicLabel}</p>
+    <p style="font-size:12px;color:#888"><strong>סיבה:</strong> ${metaResult.rationale}</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:8px">
+      <thead><tr style="background:#f5f5f5">
+        <th style="padding:6px 10px;text-align:right">שפה</th>
+        <th style="padding:6px 10px">לפני</th>
+        <th style="padding:6px 10px">אחרי</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td style="padding:6px 10px;border-bottom:1px solid #eee">🇮🇱 עברית</td>
+          <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#888">${metaResult.before.he}</td>
+          <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#111">${metaResult.after.he}</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 10px">🌐 אנגלית</td>
+          <td style="padding:6px 10px;color:#888">${metaResult.before.en}</td>
+          <td style="padding:6px 10px;color:#111">${metaResult.after.en}</td>
+        </tr>
+      </tbody>
+    </table>`;
+}
+
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult }) {
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
 
   const metricsRows = (baselineMetrics || []).map((b) => {
@@ -95,6 +159,8 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
 
     ${!hasFollowup ? '<p style="color:#888;font-size:12px;margin-top:8px">* נתוני "אחרי" יופיעו בדוח הבא לאחר 2 שבועות של אינדוקס.</p>' : ""}
 
+    ${buildMetaSection(metaResult)}
+    ${buildPageSpeedSection(pageSpeedReport)}
     ${buildKeywordResearchSection(keywordResearch)}
 
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
