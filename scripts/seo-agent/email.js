@@ -30,8 +30,8 @@ function buildKeywordResearchSection(research) {
 
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">מחקר מילות מפתח — טרנדים בתעשייה</h3>
-    <p style="font-size:13px;color:#444;margin:8px 0 12px">${research.summary}</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">מחקר מילות מפתח — טרנדים בתעשייה</h3>
+    <p style="font-size:13px;color:#444;margin:8px 0 12px;direction:rtl;text-align:right">${research.summary}</p>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead>
         <tr style="background:#f5f5f5">
@@ -66,7 +66,7 @@ function buildPageSpeedSection(report) {
 
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Core Web Vitals — PageSpeed (Mobile)</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Core Web Vitals — PageSpeed (Mobile)</h3>
     ${alertBanner}
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead>
@@ -96,8 +96,8 @@ function buildCtrSection(pages) {
 
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">⚠️ CTR נמוך — דפים שצריכים כותרת/תיאור חזקים יותר</h3>
-    <p style="font-size:12px;color:#666;margin-bottom:12px">דפים עם דירוג טוב בגוגל אבל אחוז קליקים נמוך — הכותרת או ה-meta description לא מושכים מספיק.</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">⚠️ CTR נמוך — דפים שצריכים כותרת/תיאור חזקים יותר</h3>
+    <p style="font-size:12px;color:#666;margin-bottom:12px;direction:rtl;text-align:right">דפים עם דירוג טוב בגוגל אבל אחוז קליקים נמוך — הכותרת או ה-meta description לא מושכים מספיק.</p>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead>
         <tr style="background:#f5f5f5">
@@ -116,9 +116,9 @@ function buildMetaSection(metaResult) {
   if (!metaResult) return "";
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Meta Description — עודכן אוטומטית</h3>
-    <p style="font-size:13px;color:#444"><strong>דף:</strong> ${metaResult.topicLabel}</p>
-    <p style="font-size:12px;color:#888"><strong>סיבה:</strong> ${metaResult.rationale}</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Meta Description — עודכן אוטומטית</h3>
+    <p style="font-size:13px;color:#444;direction:rtl;text-align:right"><strong>דף:</strong> ${metaResult.topicLabel}</p>
+    <p style="font-size:12px;color:#888;direction:rtl;text-align:right"><strong>סיבה:</strong> ${metaResult.rationale}</p>
     <table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:8px">
       <thead><tr style="background:#f5f5f5">
         <th style="padding:6px 10px;text-align:right">שפה</th>
@@ -144,8 +144,8 @@ function buildTitleSection(titleResult) {
   if (!titleResult) return "";
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Title Tag — עודכן אוטומטית</h3>
-    <p style="font-size:12px;color:#888;margin-bottom:8px">${titleResult.rationale}</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Title Tag — עודכן אוטומטית</h3>
+    <p style="font-size:12px;color:#888;margin-bottom:8px;direction:rtl;text-align:right">${titleResult.rationale}</p>
     <table style="width:100%;border-collapse:collapse;font-size:12px">
       <thead><tr style="background:#f5f5f5">
         <th style="padding:6px 10px;text-align:right">שפה</th><th style="padding:6px 10px">לפני</th><th style="padding:6px 10px">אחרי</th>
@@ -161,9 +161,9 @@ function buildRefreshSection(refreshResult) {
   if (!refreshResult) return "";
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">🔄 Content Refresh — פוסט עודכן</h3>
-    <p style="font-size:13px;color:#444"><strong>${refreshResult.titleHe}</strong></p>
-    <p style="font-size:12px;color:#888">תאריך: ${refreshResult.oldDate} → <strong>${refreshResult.newDate}</strong></p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">🔄 Content Refresh — פוסט עודכן</h3>
+    <p style="font-size:13px;color:#444;direction:rtl;text-align:right"><strong>${refreshResult.titleHe}</strong></p>
+    <p style="font-size:12px;color:#888;direction:rtl;text-align:right">תאריך: ${refreshResult.oldDate} → <strong>${refreshResult.newDate}</strong></p>
     <blockquote style="border-right:3px solid #FFD000;margin:8px 0;padding:8px 12px;color:#555;font-size:12px">${refreshResult.updateHe}</blockquote>`;
 }
 
@@ -178,8 +178,8 @@ function buildLowHangingSection(keywords) {
     </tr>`).join("");
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">🎯 פירות נמוכים — מילות מפתח קרובות ל-Top 10</h3>
-    <p style="font-size:12px;color:#666;margin-bottom:12px">מילות מפתח שאתה כבר ב-11-25 — פוסט אחד טוב יכול להכניס אותן ל-Top 10.</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">🎯 פירות נמוכים — מילות מפתח קרובות ל-Top 10</h3>
+    <p style="font-size:12px;color:#666;margin-bottom:12px;direction:rtl;text-align:right">מילות מפתח שאתה כבר ב-11-25 — פוסט אחד טוב יכול להכניס אותן ל-Top 10.</p>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead><tr style="background:#f5f5f5">
         <th style="padding:6px 10px;text-align:right">מילת מפתח</th>
@@ -227,22 +227,22 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
       </div>`;
 
   return `<!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he">
 <head><meta charset="UTF-8"/></head>
-<body style="font-family:Arial,sans-serif;color:#111;max-width:680px;margin:0 auto;padding:20px">
-  <div style="background:#111;padding:20px 24px;border-radius:8px 8px 0 0;text-align:right">
+<body style="font-family:Arial,sans-serif;color:#111;max-width:680px;margin:0 auto;padding:20px;direction:rtl;text-align:right">
+  <div style="background:#111;padding:20px 24px;border-radius:8px 8px 0 0;direction:rtl;text-align:right">
     <span style="color:#FFD000;font-size:22px;font-weight:900;letter-spacing:-0.5px">the-videoshop</span><span style="color:#fff;font-size:13px;margin-right:10px;opacity:0.6">SEO Agent</span>
-    <h1 style="color:#FFD000;margin:10px 0 0;font-size:17px;font-weight:400">דוח דו-שבועי</h1>
+    <h1 style="color:#FFD000;margin:10px 0 0;font-size:17px;font-weight:400;direction:rtl;text-align:right">דוח דו-שבועי</h1>
   </div>
 
-  <div style="border:1px solid #eee;border-top:none;padding:24px;border-radius:0 0 8px 8px">
+  <div style="border:1px solid #eee;border-top:none;padding:24px;border-radius:0 0 8px 8px;direction:rtl;text-align:right">
 
     ${actionBanner}
 
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;margin-top:8px">מה עשה הבוט הפעם?</h3>
-    <p style="font-size:13px;color:#444;margin:0 0 20px">בדק את מילות המפתח שלך בגוגל, בחר את הנושא החלש ביותר (<strong>${topicLabel}</strong>), וכתב תוכן שיעזור לך לעלות בתוצאות.</p>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;margin-top:8px;direction:rtl;text-align:right">מה עשה הבוט הפעם?</h3>
+    <p style="font-size:13px;color:#444;margin:0 0 20px;direction:rtl;text-align:right">בדק את מילות המפתח שלך בגוגל, בחר את הנושא החלש ביותר (<strong>${topicLabel}</strong>), וכתב תוכן שיעזור לך לעלות בתוצאות.</p>
 
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">מדדי מילות מפתח — מצב נוכחי</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">מדדי מילות מפתח — מצב נוכחי</h3>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead>
         <tr style="background:#f5f5f5">
