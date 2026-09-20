@@ -41,9 +41,9 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
 <html lang="he" dir="rtl">
 <head><meta charset="UTF-8"/></head>
 <body style="font-family:Arial,sans-serif;color:#111;max-width:680px;margin:0 auto;padding:20px">
-  <div style="background:#111;padding:16px 24px;border-radius:8px 8px 0 0">
-    <img src="https://www.the-videoshop.com/logo.svg" alt="videoshop" height="32" style="filter:brightness(0) invert(1)" onerror="this.style.display='none'"/>
-    <h1 style="color:#FFD000;margin:8px 0 0;font-size:18px">SEO Agent — דוח דו-שבועי</h1>
+  <div style="background:#111;padding:20px 24px;border-radius:8px 8px 0 0;text-align:right">
+    <span style="color:#FFD000;font-size:22px;font-weight:900;letter-spacing:-0.5px">the-videoshop</span><span style="color:#fff;font-size:13px;margin-right:10px;opacity:0.6">SEO Agent</span>
+    <h1 style="color:#FFD000;margin:10px 0 0;font-size:17px;font-weight:400">דוח דו-שבועי</h1>
   </div>
 
   <div style="border:1px solid #eee;border-top:none;padding:24px;border-radius:0 0 8px 8px">
