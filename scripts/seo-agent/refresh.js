@@ -83,9 +83,13 @@ export async function refreshStalePosts(topicKeywords = []) {
 
   const update = await generateRefreshParagraph(target.id, titleHe, topicKeywords.slice(0, 3));
 
+  // Escape double-quotes so the notice can be injected into a TS string literal
+  const safeHe = update.updateHe.replace(/"/g, '\\"');
+  const safeEn = update.updateEn.replace(/"/g, '\\"');
+
   // Prepend update notice to bodyHe and bodyEn
-  const heNotice = `\n\n> **עדכון ${update.updateDate.slice(0, 7)}:** ${update.updateHe}\n\n`;
-  const enNotice = `\n\n> **Update ${update.updateDate.slice(0, 7)}:** ${update.updateEn}\n\n`;
+  const heNotice = `\\n\\n> **עדכון ${update.updateDate.slice(0, 7)}:** ${safeHe}\\n\\n`;
+  const enNotice = `\\n\\n> **Update ${update.updateDate.slice(0, 7)}:** ${safeEn}\\n\\n`;
 
   // Update date field and inject update notice into bodies
   let updated = content
