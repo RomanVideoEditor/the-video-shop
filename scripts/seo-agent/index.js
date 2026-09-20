@@ -182,6 +182,8 @@ async function runNewCycle(research) {
   // Send email (no followup metrics yet — will be in the next cycle's email)
   await sendSummaryEmail({
     topicLabel: topic.label,
+    topicId: topic.id,
+    topicPagePath: topic.pagePath,
     actionType,
     filesChanged,
     prUrl: prNumber

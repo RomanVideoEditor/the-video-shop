@@ -112,11 +112,14 @@ function buildCtrSection(pages) {
     <p style="font-size:11px;color:#999;margin-top:6px">* הבוט יטפל בדפים אלה בריצות הבאות דרך Meta Optimizer.</p>`;
 }
 
-function buildMetaSection(metaResult) {
+function buildMetaSection(metaResult, topicLiveUrl) {
   if (!metaResult) return "";
+  const liveLink = topicLiveUrl
+    ? `<a href="${topicLiveUrl}" style="color:#FFD000;background:#111;padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none;font-weight:700;margin-right:8px">👁 ראה את הדף →</a>`
+    : "";
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Meta Description — עודכן אוטומטית</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Meta Description — עודכן אוטומטית ${liveLink}</h3>
     <p style="font-size:13px;color:#444;direction:rtl;text-align:right"><strong>דף:</strong> ${metaResult.topicLabel}</p>
     <p style="font-size:12px;color:#888;direction:rtl;text-align:right"><strong>סיבה:</strong> ${metaResult.rationale}</p>
     <table style="width:100%;border-collapse:collapse;font-size:12px;margin-top:8px">
@@ -140,11 +143,14 @@ function buildMetaSection(metaResult) {
     </table>`;
 }
 
-function buildTitleSection(titleResult) {
+function buildTitleSection(titleResult, topicLiveUrl) {
   if (!titleResult) return "";
+  const liveLink = topicLiveUrl
+    ? `<a href="${topicLiveUrl}" style="color:#FFD000;background:#111;padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none;font-weight:700;margin-right:8px">👁 ראה את הדף →</a>`
+    : "";
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Title Tag — עודכן אוטומטית</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">Title Tag — עודכן אוטומטית ${liveLink}</h3>
     <p style="font-size:12px;color:#888;margin-bottom:8px;direction:rtl;text-align:right">${titleResult.rationale}</p>
     <table style="width:100%;border-collapse:collapse;font-size:12px">
       <thead><tr style="background:#f5f5f5">
@@ -159,9 +165,13 @@ function buildTitleSection(titleResult) {
 
 function buildRefreshSection(refreshResult) {
   if (!refreshResult) return "";
+  const SITE = "https://www.the-videoshop.com";
+  const postUrl = `${SITE}/he/vlog/${refreshResult.postId}`;
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">🔄 Content Refresh — פוסט עודכן</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">🔄 Content Refresh — פוסט עודכן
+      <a href="${postUrl}" style="color:#FFD000;background:#111;padding:5px 12px;border-radius:5px;font-size:12px;text-decoration:none;font-weight:700;margin-right:8px">👁 ראה את הפוסט →</a>
+    </h3>
     <p style="font-size:13px;color:#444;direction:rtl;text-align:right"><strong>${refreshResult.titleHe}</strong></p>
     <p style="font-size:12px;color:#888;direction:rtl;text-align:right">תאריך: ${refreshResult.oldDate} → <strong>${refreshResult.newDate}</strong></p>
     <blockquote style="border-right:3px solid #FFD000;margin:8px 0;padding:8px 12px;color:#555;font-size:12px">${refreshResult.updateHe}</blockquote>`;
@@ -192,7 +202,9 @@ function buildLowHangingSection(keywords) {
     <p style="font-size:11px;color:#999;margin-top:6px">* הבוט ישתמש בהן לכתיבת תוכן בריצות הבאות.</p>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords }) {
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, topicId, topicPagePath, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords }) {
+  const SITE = "https://www.the-videoshop.com";
+  const topicLiveUrl = topicPagePath ? `${SITE}/he${topicPagePath}` : null;
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
 
   const metricsRows = (baselineMetrics || []).map((b) => {
@@ -219,11 +231,13 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
           👉 לחץ כאן לקריאה ואישור הפוסט
         </a>
         <p style="font-size:11px;color:#999;margin:14px 0 0">בגיטהאב — לחץ "Merge pull request" לאחר שקראת</p>
+        ${topicLiveUrl ? `<p style="font-size:11px;color:#777;margin:6px 0 0">לאחר אישור הפוסט יופיע כאן: <a href="${topicLiveUrl}" style="color:#777">${topicLiveUrl}</a></p>` : ""}
       </div>`
-    : `<div style="background:#f0fdf4;border:1px solid #22c55e;border-radius:8px;padding:16px 20px;margin-bottom:24px">
-        <p style="font-size:15px;font-weight:700;margin:0 0 6px;color:#15803d">✅ עדכון אוטומטי — לא נדרש אישור</p>
-        <p style="font-size:13px;color:#444;margin:0">הבוט הוסיף שאלות ותשובות (FAQ) לדף <strong>${topicLabel}</strong> באתר. השינוי כבר פורסם.</p>
-        <p style="font-size:12px;color:#888;margin:6px 0 0">קבצים שעודכנו: ${filesChanged?.join(", ")}</p>
+    : `<div style="background:#f0fdf4;border:1px solid #22c55e;border-radius:8px;padding:16px 20px;margin-bottom:24px;direction:rtl;text-align:right">
+        <p style="font-size:15px;font-weight:700;margin:0 0 6px;color:#15803d;direction:rtl;text-align:right">✅ עדכון אוטומטי — לא נדרש אישור</p>
+        <p style="font-size:13px;color:#444;margin:0;direction:rtl;text-align:right">הבוט הוסיף שאלות ותשובות (FAQ) לדף <strong>${topicLabel}</strong> באתר. השינוי כבר פורסם.</p>
+        <p style="font-size:12px;color:#888;margin:6px 0 0;direction:rtl;text-align:right">קבצים שעודכנו: ${filesChanged?.join(", ")}</p>
+        ${topicLiveUrl ? `<p style="margin:10px 0 0;direction:rtl;text-align:right"><a href="${topicLiveUrl}" style="background:#111;color:#FFD000;font-size:13px;font-weight:700;padding:8px 18px;border-radius:6px;text-decoration:none;display:inline-block">👁 ראה את הדף החי באתר →</a></p>` : ""}
       </div>`;
 
   return `<!DOCTYPE html>
@@ -257,8 +271,8 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
 
     ${!hasFollowup ? '<p style="color:#888;font-size:12px;margin-top:8px">* נתוני "אחרי" יופיעו בדוח הבא לאחר 2 שבועות של אינדוקס.</p>' : ""}
 
-    ${buildMetaSection(metaResult)}
-    ${buildTitleSection(titleResult)}
+    ${buildMetaSection(metaResult, topicLiveUrl)}
+    ${buildTitleSection(titleResult, topicLiveUrl)}
     ${buildRefreshSection(refreshResult)}
     ${buildLowHangingSection(lowHangingKeywords)}
     ${buildCtrSection(lowCtrPages)}
