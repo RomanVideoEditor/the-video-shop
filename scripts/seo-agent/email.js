@@ -140,7 +140,59 @@ function buildMetaSection(metaResult) {
     </table>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult, lowCtrPages }) {
+function buildTitleSection(titleResult) {
+  if (!titleResult) return "";
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">Title Tag — עודכן אוטומטית</h3>
+    <p style="font-size:12px;color:#888;margin-bottom:8px">${titleResult.rationale}</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <thead><tr style="background:#f5f5f5">
+        <th style="padding:6px 10px;text-align:right">שפה</th><th style="padding:6px 10px">לפני</th><th style="padding:6px 10px">אחרי</th>
+      </tr></thead>
+      <tbody>
+        <tr><td style="padding:6px 10px;border-bottom:1px solid #eee">🇮🇱</td><td style="padding:6px 10px;border-bottom:1px solid #eee;color:#888">${titleResult.before.he}</td><td style="padding:6px 10px;border-bottom:1px solid #eee">${titleResult.after.he}</td></tr>
+        <tr><td style="padding:6px 10px">🌐</td><td style="padding:6px 10px;color:#888">${titleResult.before.en}</td><td style="padding:6px 10px">${titleResult.after.en}</td></tr>
+      </tbody>
+    </table>`;
+}
+
+function buildRefreshSection(refreshResult) {
+  if (!refreshResult) return "";
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">🔄 Content Refresh — פוסט עודכן</h3>
+    <p style="font-size:13px;color:#444"><strong>${refreshResult.titleHe}</strong></p>
+    <p style="font-size:12px;color:#888">תאריך: ${refreshResult.oldDate} → <strong>${refreshResult.newDate}</strong></p>
+    <blockquote style="border-right:3px solid #FFD000;margin:8px 0;padding:8px 12px;color:#555;font-size:12px">${refreshResult.updateHe}</blockquote>`;
+}
+
+function buildLowHangingSection(keywords) {
+  if (!keywords || keywords.length === 0) return "";
+  const rows = keywords.map((k) => `
+    <tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee">${k.keyword}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-weight:600;color:#f59e0b">${k.position}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${k.impressions.toLocaleString()}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;color:#22c55e">+${k.potentialClicks}</td>
+    </tr>`).join("");
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">🎯 פירות נמוכים — מילות מפתח קרובות ל-Top 10</h3>
+    <p style="font-size:12px;color:#666;margin-bottom:12px">מילות מפתח שאתה כבר ב-11-25 — פוסט אחד טוב יכול להכניס אותן ל-Top 10.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <thead><tr style="background:#f5f5f5">
+        <th style="padding:6px 10px;text-align:right">מילת מפתח</th>
+        <th style="padding:6px 10px">מיקום</th>
+        <th style="padding:6px 10px">חשיפות/חודש</th>
+        <th style="padding:6px 10px">קליקים פוטנציאליים</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p style="font-size:11px;color:#999;margin-top:6px">* הבוט ישתמש בהן לכתיבת תוכן בריצות הבאות.</p>`;
+}
+
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords }) {
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
 
   const metricsRows = (baselineMetrics || []).map((b) => {
@@ -190,6 +242,9 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
     ${!hasFollowup ? '<p style="color:#888;font-size:12px;margin-top:8px">* נתוני "אחרי" יופיעו בדוח הבא לאחר 2 שבועות של אינדוקס.</p>' : ""}
 
     ${buildMetaSection(metaResult)}
+    ${buildTitleSection(titleResult)}
+    ${buildRefreshSection(refreshResult)}
+    ${buildLowHangingSection(lowHangingKeywords)}
     ${buildCtrSection(lowCtrPages)}
     ${buildPageSpeedSection(pageSpeedReport)}
     ${buildKeywordResearchSection(keywordResearch)}

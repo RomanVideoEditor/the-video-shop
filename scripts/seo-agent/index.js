@@ -23,7 +23,9 @@ import { commitFaqItems, openBlogPostPr } from "./changes.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
 import { runPageSpeedAudit } from "./pagespeed.js";
-import { optimizeMetaForTopic } from "./meta.js";
+import { optimizeMetaForTopic, optimizeTitleForTopic } from "./meta.js";
+import { findLowHangingKeywords } from "./lowhanging.js";
+import { refreshStalePosts } from "./refresh.js";
 
 // ── Step 1: Close any pending cycle ──────────────────────────────────────────
 
@@ -80,6 +82,15 @@ async function runNewCycle(research) {
   let prNumber = null;
   let actionDescription = "";
 
+  // Low-hanging fruit — keywords at positions 11-25
+  const lowHangingKeywords = await findLowHangingKeywords().catch((err) => {
+    console.warn("[agent] Low-hanging keyword scan failed:", err.message);
+    return [];
+  });
+  if (lowHangingKeywords.length) {
+    console.log(`[agent] Top low-hanging keyword: "${lowHangingKeywords[0].keyword}" at pos ${lowHangingKeywords[0].position}`);
+  }
+
   // CTR analysis — pages with good rank but poor click-through
   const lowCtrPages = await fetchLowCtrPages().catch((err) => {
     console.warn("[agent] CTR analysis failed:", err.message);
@@ -96,17 +107,43 @@ async function runNewCycle(research) {
     return null;
   });
 
-  // Run meta optimizer every 3rd cycle (on safe_auto cycles only, to avoid too many commits)
+  // Meta + title optimizer (on safe_auto cycles)
   let metaResult = null;
+  let titleResult = null;
+  let refreshResult = null;
   if (actionType === "safe_auto") {
     const weakKeywords = metrics.filter((m) => m.position > 15).map((m) => m.keyword);
+    const hasCtrIssue = lowCtrPages.some((p) => p.page.includes(topic.pagePath));
+
     if (weakKeywords.length > 0) {
       metaResult = await optimizeMetaForTopic(topic.id, topic.label, weakKeywords).catch((err) => {
         console.warn("[agent] Meta optimizer failed:", err.message);
         return null;
       });
-      if (metaResult) filesChanged.push("src/messages/he.json", "src/messages/en.json");
+
+      // Optimize title if this topic has a CTR issue or it's every other safe cycle
+      const lastCycles = await getLastCycles(2);
+      const shouldOptimizeTitle = hasCtrIssue || lastCycles.filter((c) => c.actionType === "safe_auto").length % 2 === 0;
+      if (shouldOptimizeTitle) {
+        titleResult = await optimizeTitleForTopic(topic.id, topic.label, weakKeywords, hasCtrIssue).catch((err) => {
+          console.warn("[agent] Title optimizer failed:", err.message);
+          return null;
+        });
+      }
     }
+
+    // Content refresh — update a stale blog post
+    refreshResult = await refreshStalePosts(topic.keywords).catch((err) => {
+      console.warn("[agent] Content refresh failed:", err.message);
+      return null;
+    });
+
+    const extraFiles = [
+      ...(metaResult ? ["src/messages/he.json", "src/messages/en.json"] : []),
+      ...(titleResult ? ["src/messages/he.json", "src/messages/en.json"] : []),
+      ...(refreshResult ? ["src/lib/videos.ts"] : []),
+    ];
+    if (extraFiles.length) filesChanged.push(...[...new Set(extraFiles)]);
   }
 
   if (actionType === "safe_auto") {
@@ -155,7 +192,10 @@ async function runNewCycle(research) {
     keywordResearch: research || null,
     pageSpeedReport: pageSpeedReport || null,
     metaResult: metaResult || null,
+    titleResult: titleResult || null,
+    refreshResult: refreshResult || null,
     lowCtrPages: lowCtrPages.length ? lowCtrPages : null,
+    lowHangingKeywords: lowHangingKeywords.length ? lowHangingKeywords.slice(0, 10) : null,
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);
