@@ -17,7 +17,7 @@ import {
   updateCycleResult,
   getRecentTopicIds,
 } from "./state.js";
-import { fetchKeywordMetrics, pickWeakestTopic } from "./gsc.js";
+import { fetchKeywordMetrics, pickWeakestTopic, fetchLowCtrPages } from "./gsc.js";
 import { generateFaqItems, generateBlogPost } from "./claude.js";
 import { commitFaqItems, openBlogPostPr } from "./changes.js";
 import { sendSummaryEmail } from "./email.js";
@@ -79,6 +79,16 @@ async function runNewCycle(research) {
   let filesChanged = [];
   let prNumber = null;
   let actionDescription = "";
+
+  // CTR analysis — pages with good rank but poor click-through
+  const lowCtrPages = await fetchLowCtrPages().catch((err) => {
+    console.warn("[agent] CTR analysis failed:", err.message);
+    return [];
+  });
+  if (lowCtrPages.length) {
+    console.log(`[agent] ${lowCtrPages.length} page(s) with low CTR despite good position:`);
+    lowCtrPages.forEach((p) => console.log(`  ${p.page} pos=${p.position} ctr=${p.ctr}%`));
+  }
 
   // Always run PageSpeed audit
   const pageSpeedReport = await runPageSpeedAudit(process.env.PAGESPEED_API_KEY).catch((err) => {
@@ -145,6 +155,7 @@ async function runNewCycle(research) {
     keywordResearch: research || null,
     pageSpeedReport: pageSpeedReport || null,
     metaResult: metaResult || null,
+    lowCtrPages: lowCtrPages.length ? lowCtrPages : null,
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);

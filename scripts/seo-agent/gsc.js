@@ -73,3 +73,36 @@ export async function pickWeakestTopic(topics, recentTopicIds) {
   scored.sort((a, b) => b.avgPos - a.avgPos);
   return scored[0];
 }
+
+// Fetch all pages ranked in GSC, find ones with good position but low CTR
+// These are candidates for meta/title improvement
+export async function fetchLowCtrPages(daysBack = 28, positionThreshold = 15, ctrThreshold = 0.03) {
+  const auth = await getAuth().getClient();
+  const webmasters = google.searchconsole({ version: "v1", auth });
+
+  const endDate = new Date();
+  const startDate = new Date(Date.now() - daysBack * 86400000);
+  const fmt = (d) => d.toISOString().split("T")[0];
+
+  const res = await webmasters.searchanalytics.query({
+    siteUrl: CONFIG.gscSiteUrl,
+    requestBody: {
+      startDate: fmt(startDate),
+      endDate: fmt(endDate),
+      dimensions: ["page"],
+      rowLimit: 50,
+    },
+  });
+
+  const rows = res.data?.rows ?? [];
+  return rows
+    .filter((r) => r.position <= positionThreshold && r.impressions > 30 && (r.clicks / r.impressions) < ctrThreshold)
+    .map((r) => ({
+      page: r.keys[0],
+      position: Math.round(r.position * 10) / 10,
+      impressions: r.impressions,
+      clicks: r.clicks,
+      ctr: Math.round((r.clicks / r.impressions) * 1000) / 10, // as %
+    }))
+    .sort((a, b) => a.position - b.position); // best position first (most fixable)
+}

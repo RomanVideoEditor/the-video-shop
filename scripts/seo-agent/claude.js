@@ -55,6 +55,55 @@ Return ONLY valid JSON (no markdown, no explanation):
   }
 }
 
+// Internal link map for blog posts — keyword → service page URL
+const INTERNAL_LINKS = {
+  he: [
+    { keyword: "סרט תדמית",        url: "/he/services/corporate" },
+    { keyword: "סרטי חברה",        url: "/he/services/corporate" },
+    { keyword: "employer branding", url: "/he/services/corporate" },
+    { keyword: "הייטק",            url: "/he/services/hightech" },
+    { keyword: "סטארטאפ",          url: "/he/services/hightech" },
+    { keyword: "investor pitch",    url: "/he/services/hightech" },
+    { keyword: "אנימציה",          url: "/he/services/animation" },
+    { keyword: "סרטון הסבר",       url: "/he/services/animation" },
+    { keyword: "וידאו AI",         url: "/he/services/ai" },
+    { keyword: "בינה מלאכותית",    url: "/he/services/ai" },
+    { keyword: "נדל\"ן",           url: "/he/services/realestate" },
+    { keyword: "רחפן",             url: "/he/services/realestate" },
+    { keyword: "מחיר",             url: "/he/pricing" },
+    { keyword: "כמה עולה",         url: "/he/pricing" },
+  ],
+  en: [
+    { keyword: "corporate video",         url: "/en/services/corporate" },
+    { keyword: "employer branding",       url: "/en/services/corporate" },
+    { keyword: "high-tech video",         url: "/en/services/hightech" },
+    { keyword: "startup film",            url: "/en/services/hightech" },
+    { keyword: "investor pitch",          url: "/en/services/hightech" },
+    { keyword: "explainer video",         url: "/en/services/animation" },
+    { keyword: "animation",               url: "/en/services/animation" },
+    { keyword: "AI video",                url: "/en/services/ai" },
+    { keyword: "real estate video",       url: "/en/services/realestate" },
+    { keyword: "drone",                   url: "/en/services/realestate" },
+    { keyword: "video production cost",   url: "/en/pricing" },
+    { keyword: "how much",                url: "/en/pricing" },
+  ],
+};
+
+function injectInternalLinks(body, lang) {
+  const links = INTERNAL_LINKS[lang] ?? [];
+  let result = body;
+  const used = new Set();
+  for (const { keyword, url } of links) {
+    if (used.has(url)) continue; // max one link per destination page
+    const regex = new RegExp(`(?<![\\[\\(])\\b(${keyword})\\b(?![\\]\\)])`, "i");
+    if (regex.test(result)) {
+      result = result.replace(regex, `[$1](https://www.the-videoshop.com${url})`);
+      used.add(url);
+    }
+  }
+  return result;
+}
+
 // Generate a short blog post targeting a specific keyword cluster
 export async function generateBlogPost(topic, targetKeyword, metrics) {
   const prompt = `You are a content writer for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
@@ -90,11 +139,18 @@ Return ONLY valid JSON:
   });
 
   const text = response.content[0].text.trim();
+  let post;
   try {
-    return JSON.parse(text);
+    post = JSON.parse(text);
   } catch {
     const match = text.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
-    throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
+    if (match) post = JSON.parse(match[0]);
+    else throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
   }
+
+  // Inject internal links into both language bodies
+  post.bodyHe = injectInternalLinks(post.bodyHe, "he");
+  post.bodyEn = injectInternalLinks(post.bodyEn, "en");
+
+  return post;
 }

@@ -82,6 +82,36 @@ function buildPageSpeedSection(report) {
     </table>`;
 }
 
+function buildCtrSection(pages) {
+  if (!pages || pages.length === 0) return "";
+  const rows = pages.slice(0, 8).map((p) => {
+    const shortPage = p.page.replace("https://www.the-videoshop.com", "");
+    return `<tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:12px;direction:ltr">${shortPage}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${p.position}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${p.impressions.toLocaleString()}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;color:#ef4444;font-weight:600">${p.ctr}%</td>
+    </tr>`;
+  }).join("");
+
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">⚠️ CTR נמוך — דפים שצריכים כותרת/תיאור חזקים יותר</h3>
+    <p style="font-size:12px;color:#666;margin-bottom:12px">דפים עם דירוג טוב בגוגל אבל אחוז קליקים נמוך — הכותרת או ה-meta description לא מושכים מספיק.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <thead>
+        <tr style="background:#f5f5f5">
+          <th style="padding:6px 10px;text-align:right">דף</th>
+          <th style="padding:6px 10px">מיקום</th>
+          <th style="padding:6px 10px">חשיפות</th>
+          <th style="padding:6px 10px">CTR</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p style="font-size:11px;color:#999;margin-top:6px">* הבוט יטפל בדפים אלה בריצות הבאות דרך Meta Optimizer.</p>`;
+}
+
 function buildMetaSection(metaResult) {
   if (!metaResult) return "";
   return `
@@ -110,7 +140,7 @@ function buildMetaSection(metaResult) {
     </table>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult }) {
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, keywordResearch, pageSpeedReport, metaResult, lowCtrPages }) {
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
 
   const metricsRows = (baselineMetrics || []).map((b) => {
@@ -160,6 +190,7 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
     ${!hasFollowup ? '<p style="color:#888;font-size:12px;margin-top:8px">* נתוני "אחרי" יופיעו בדוח הבא לאחר 2 שבועות של אינדוקס.</p>' : ""}
 
     ${buildMetaSection(metaResult)}
+    ${buildCtrSection(lowCtrPages)}
     ${buildPageSpeedSection(pageSpeedReport)}
     ${buildKeywordResearchSection(keywordResearch)}
 
@@ -192,7 +223,7 @@ export async function sendSummaryEmail(params) {
     from: CONFIG.emailFrom,
     to: CONFIG.emailTo,
     subject,
-    html: buildHtml(params),
+    html: buildHtml({ ...params }),
   });
 
   console.log(`[email] Sent to ${CONFIG.emailTo}: ${subject}`);
