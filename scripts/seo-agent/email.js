@@ -208,9 +208,23 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
       </tr>`;
   }).join("");
 
-  const actionHtml = actionType === "pr" && prUrl
-    ? `<p>📄 <strong>Pull Request:</strong> <a href="${prUrl}">${prUrl}</a> — review and merge to apply changes.</p>`
-    : `<p>✅ <strong>Changes auto-merged to main</strong> (safe update: ${filesChanged?.join(", ")})</p>`;
+  const actionBanner = actionType === "pr" && prUrl
+    ? `<!-- PR APPROVAL BANNER -->
+      <div style="background:#fff8e1;border:2px solid #FFD000;border-radius:10px;padding:20px 24px;margin-bottom:24px;text-align:center">
+        <p style="font-size:18px;font-weight:900;margin:0 0 6px;color:#111">⚠️ נדרש אישור שלך</p>
+        <p style="font-size:14px;color:#555;margin:0 0 16px">הבוט כתב פוסט בלוג חדש לאתר. <strong>הוא לא יפורסם עד שתאשר.</strong></p>
+        <p style="font-size:13px;color:#333;margin:0 0 4px">נושא הפוסט: <strong>${topicLabel}</strong></p>
+        <p style="font-size:13px;color:#666;margin:0 0 20px">הפוסט כולל תוכן SEO שיעלה אותך בגוגל. קרא אותו ואשר בלחיצה:</p>
+        <a href="${prUrl}" style="background:#FFD000;color:#111;font-size:15px;font-weight:900;padding:14px 32px;border-radius:8px;text-decoration:none;display:inline-block">
+          👉 לחץ כאן לקריאה ואישור הפוסט
+        </a>
+        <p style="font-size:11px;color:#999;margin:14px 0 0">בגיטהאב — לחץ "Merge pull request" לאחר שקראת</p>
+      </div>`
+    : `<div style="background:#f0fdf4;border:1px solid #22c55e;border-radius:8px;padding:16px 20px;margin-bottom:24px">
+        <p style="font-size:15px;font-weight:700;margin:0 0 6px;color:#15803d">✅ עדכון אוטומטי — לא נדרש אישור</p>
+        <p style="font-size:13px;color:#444;margin:0">הבוט הוסיף שאלות ותשובות (FAQ) לדף <strong>${topicLabel}</strong> באתר. השינוי כבר פורסם.</p>
+        <p style="font-size:12px;color:#888;margin:6px 0 0">קבצים שעודכנו: ${filesChanged?.join(", ")}</p>
+      </div>`;
 
   return `<!DOCTYPE html>
 <html lang="he" dir="rtl">
@@ -222,11 +236,13 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
   </div>
 
   <div style="border:1px solid #eee;border-top:none;padding:24px;border-radius:0 0 8px 8px">
-    <h2 style="font-size:16px;margin-top:0">נושא הפעולה: ${topicLabel}</h2>
 
-    ${actionHtml}
+    ${actionBanner}
 
-    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">מדדי מילות מפתח</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;margin-top:8px">מה עשה הבוט הפעם?</h3>
+    <p style="font-size:13px;color:#444;margin:0 0 20px">בדק את מילות המפתח שלך בגוגל, בחר את הנושא החלש ביותר (<strong>${topicLabel}</strong>), וכתב תוכן שיעזור לך לעלות בתוצאות.</p>
+
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px">מדדי מילות מפתח — מצב נוכחי</h3>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <thead>
         <tr style="background:#f5f5f5">
