@@ -42,6 +42,11 @@ export default async function CorporatePage({
         crumbs={[
           { name: isHe ? "שירותים" : "Services", path: "/services" },
           { name: isHe ? "קורפורייט וידאו" : "Corporate Video", path: "/services/corporate" },
+  {
+    q: "האם videoshop מעבדה עם startup וחברות high-tech לסרטי תדמית?",
+    a: "כן, אנחנו מתמחים בעבודה עם חברות high-tech וstartup בתל אביב ובכל ישראל. הלקוחות שלנו כוללים Intel, Palo Alto Networks וOndas Holdings, ואנחנו יודעים איך להציג טכנולוגיה מורכבת בדרך חזותית ומעניינת. אנחנו גם מומחים בסרטי AI video וסרטי הסבר שמעניינים משקיעים ולקוחות כאחד.",
+  },
+
         ]}
       />
       <ServicePage
