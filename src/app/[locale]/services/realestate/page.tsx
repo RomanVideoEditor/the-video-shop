@@ -42,6 +42,11 @@ export default async function RealEstatePage({
         crumbs={[
           { name: isHe ? "שירותים" : "Services", path: "/services" },
           { name: isHe ? "נדל\"ן ואדריכלות" : "Real Estate & Architecture", path: "/services/realestate" },
+          { q: "How much does commercial real estate video production cost in Israel?", a: "The cost of commercial real estate video production depends on your project scope – from a short property showcase to a full campaign with drone footage and professional editing. At Videoshop, we provide custom quotes tailored to every property owner and real estate agent's budget, with transparent pricing and no surprises." },
+          { q: "Is drone filming legal in Israel for real estate videos?", a: "Yes, drone filming in Israel for real estate videos is completely legal when operated by a licensed drone operator with all required permits. Our team includes certified operators who understand local regulations and can bring impressive aerial perspectives to your property." },
+          { q: "What's the difference between commercial real estate video and residential property video?", a: "Commercial real estate video requires a completely different approach – it needs to showcase business potential, foot traffic, demographics, and long-term value, while a residential property video focuses on lifestyle and comfort. We know exactly how to tell the story of each property type to attract the right audience." },
+          { q: "Can real estate video production in Israel actually increase property sales?", a: "Absolutely – properties with quality video content receive more inquiries and offers from lenders and potential buyers. At Videoshop, we create videos that aren't just beautiful, but designed to sell – with strong storytelling, professional documentation, and drone footage when it matters." },
+
         ]}
       />
       <ServicePage
@@ -68,6 +73,11 @@ export default async function RealEstatePage({
           { q: "האם אתם מורשי טיסה ברחפן?", a: "כן — כל הצוות שלנו מוסמך לטיסות רחפן מסחריות בישראל בהתאם לתקנות רשות התעופה האזרחית. עבדנו בפרויקטים של אשטרום, G City, BIG FASHION ועוד." },
           { q: "כמה עולה סרט וידאו לפרויקט נדל\"ן?", a: "תלוי בסקופ — מסרט שיווקי קצר לדיגיטל ועד סרט תדמית מלא לאירוע פתיחה. מתחיל בעשרות אלפי שקלים ועולה בהתאם לכמות ימי הצילום ורמת הפוסט." },
           { q: "האם אפשר לצלם פרויקט שעדיין נמצא בבנייה?", a: "בהחלט — לפעמים זה הזמן הכי חשוב. תיעוד שלבי הבנייה, הדמיות AI למה שיהיה, וצילומי רחפן מהאוויר יחד עם ה-rendering הסופי יוצרים סרט מכירה חזק לפני שהפרויקט מוכן." },
+          { q: "כמה עולה ייצור וידאו נדל\"ן מסחרי בישראל?", a: "עלות וידאו נדל\"ן מסחרי תלויה בסקופ של הפרויקט – מ-סרטון קצר של נכס בודד ועד קמפיין מלא עם צילום רחפן ישראל ועריכה מקצועית. אנחנו ב-Videoshop מספקים הצעות מותאמות לתקציב של כל בעל נכס או סוכן נדלן, עם תמחור שקוף וללא הפתעות." },
+          { q: "האם צילום רחפן ישראל חוקי לסרטוני נדלן?", a: "כן, צילום רחפן ישראל לסרטוני נדלן הוא לגמרי חוקי כאשר מבוצע על ידי מפעיל רחפן מוסמך עם כל ההיתרים הנדרשים. בצוות שלנו יש מפעילים מוסמכים שמבינים את כל התקנות המקומיות ויכולים להביא זווית חדשה ומרשימה לנכס שלך." },
+          { q: "מה ההבדל בין וידאו נדל\"ן מסחרי לסרטון בעל נכס רגיל?", a: "וידאו נדל\"ן מסחרי דורש גישה שונה לגמרי – זה צריך להציג פוטנציאל עסקי, תנועת הולכים, נתונים דמוגרפיים והערך ארוך טווח, בעוד שסרטון בעל נכס מתמקד בחיים והנוחות. אנחנו יודעים בדיוק איך לספר את הסיפור של כל סוג נכס כדי למשוך את הקהל הנכון." },
+          { q: "האם real estate video production israel יכול להגביר מכירות נכסים?", a: "בהחלט – נכסים עם סרטוני וידאו איכותיים מקבלים יותר בדיקות והצעות מהמשכנתאות והקונים פוטנציאליים. בVideoshop אנחנו יוצרים סרטונים שלא רק יפים, אלא גם מכוונים למכור – בעזרת סיפור חזק, תיעוד מקצועי וצילום רחפן ישראל כשצריך." },
+
         ] : [
           { q: "What does a commercial real estate marketing video include?", a: "A commercial real estate film typically includes: drone footage, ground and architecture filming, executive and tenant interviews, and planning animations for pre-built projects. The result is a film that sells to tenants, investors, and financing bodies." },
           { q: "Are you licensed drone operators?", a: "Yes — our entire team is certified for commercial drone flights in Israel per Civil Aviation Authority regulations. We have worked on projects for Ashtrom, G City, BIG FASHION, and more." },
