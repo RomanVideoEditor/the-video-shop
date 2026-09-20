@@ -63,7 +63,7 @@ export default async function AboutPage({
       </section>
 
       {/* Stats */}
-      <section className="py-16 px-6 bg-[#f4f4f4] border-y border-gray-200">
+      <section className="py-16 px-6 bg-[#111] border-y border-[#222]">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-3 gap-8 text-center stagger">
             {[
@@ -75,7 +75,7 @@ export default async function AboutPage({
                 <div className="text-5xl font-black text-[#FFD000] mb-2">
                   <CountUp to={s.to} suffix={s.suffix} />
                 </div>
-                <div className="text-sm text-[#555] font-medium">{s.label}</div>
+                <div className="text-sm text-[#aaa] font-medium">{s.label}</div>
               </div>
             ))}
           </div>
@@ -83,16 +83,16 @@ export default async function AboutPage({
       </section>
 
       {/* How we work */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-[#111]">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="reveal">
               <h2 className="text-2xl font-bold text-[#FFD000] mb-6">{t("howTitle")}</h2>
-              <p className="text-[#555] leading-relaxed text-lg">{t("howText")}</p>
+              <p className="text-[#aaa] leading-relaxed text-lg">{t("howText")}</p>
             </div>
             <div className="reveal">
               <h2 className="text-2xl font-bold text-[#FFD000] mb-6">{t("techTitle")}</h2>
-              <p className="text-[#555] leading-relaxed text-lg">{t("techText")}</p>
+              <p className="text-[#aaa] leading-relaxed text-lg">{t("techText")}</p>
             </div>
           </div>
         </div>

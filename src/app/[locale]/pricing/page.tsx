@@ -150,7 +150,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                 </div>
               )}
               <h2 className="text-xl font-black text-[#111] mb-1">{isHe ? pkg.nameHe : pkg.nameEn}</h2>
-              <p className="text-2xl font-black text-[#FFD000] mb-3">{isHe ? pkg.priceHe : pkg.priceEn}</p>
+              <p className="inline-block text-2xl font-black text-[#FFD000] bg-[#111] px-4 py-1 rounded-lg mb-3">{isHe ? pkg.priceHe : pkg.priceEn}</p>
               <p className="text-sm text-[#555] mb-6">{isHe ? pkg.descHe : pkg.descEn}</p>
               <ul className="space-y-2 mb-8">
                 {(isHe ? pkg.featuresHe : pkg.featuresEn).map((f) => (

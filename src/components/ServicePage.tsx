@@ -77,20 +77,20 @@ export default function ServicePage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {/* Hero */}
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-6 relative overflow-hidden bg-[#111]">
         <div
           aria-hidden="true"
-          className="animate-float-slow pointer-events-none absolute -top-20 -right-20 w-80 h-80 rounded-full opacity-[0.06]"
+          className="animate-float-slow pointer-events-none absolute -top-20 -right-20 w-80 h-80 rounded-full opacity-[0.12]"
           style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }}
         />
         <div className="max-w-4xl mx-auto relative z-10">
           <div className="inline-block mb-6" style={{ animation: "fadeInUp .45s ease both" }}>
-            <span className="text-xs font-semibold tracking-[0.3em] bg-[#111] text-[#FFD000] uppercase px-4 py-2 rounded-full">
+            <span className="text-xs font-semibold tracking-[0.3em] bg-[#FFD000] text-[#111] uppercase px-4 py-2 rounded-full">
               {badge}
             </span>
           </div>
           <h1
-            className="text-4xl md:text-6xl font-black text-[#111] leading-tight mb-6"
+            className="text-4xl md:text-6xl font-black text-white leading-tight mb-6"
             style={{ animation: "fadeInUp .5s .08s ease both" }}
           >
             {h1}

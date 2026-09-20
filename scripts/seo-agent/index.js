@@ -159,6 +159,7 @@ async function runNewCycle(research) {
     console.log("[agent] Generating blog post...");
     const weakestKeyword = metrics.sort((a, b) => b.position - a.position)[0].keyword;
     const post = await generateBlogPost(topic, weakestKeyword, metrics);
+    post.topicId = topic.id;
     const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
     prNumber = num;
     filesChanged = ["src/lib/videos.ts"];

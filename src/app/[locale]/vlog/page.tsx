@@ -39,20 +39,20 @@ export default async function VlogPage({
     <>
       <BreadcrumbSchema locale={locale} crumbs={[{ name: isHe ? "בלוג" : "Blog", path: "/vlog" }]} />
       {/* Header */}
-      <section className="pt-32 pb-16 px-6 relative overflow-hidden">
+      <section className="pt-32 pb-16 px-6 relative overflow-hidden bg-[#111]">
         <div
           aria-hidden="true"
-          className="animate-float-slow pointer-events-none absolute -top-16 -right-16 w-72 h-72 rounded-full opacity-[0.06]"
+          className="animate-float-slow pointer-events-none absolute -top-16 -right-16 w-72 h-72 rounded-full opacity-[0.12]"
           style={{ background: "radial-gradient(circle, #FFD000 0%, transparent 70%)" }}
         />
         <div className="max-w-4xl mx-auto relative z-10">
           <p className="text-[11px] font-semibold tracking-[0.4em] text-[#FFD000] uppercase mb-6" style={{ animation: "fadeInUp .45s ease both" }}>
             videoshop
           </p>
-          <h1 className="text-5xl md:text-7xl font-black text-[#111] mb-6 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight" style={{ animation: "fadeInUp .5s .08s ease both" }}>
             {t("h1")}
           </h1>
-          <p className="text-lg text-[#555] max-w-xl" style={{ animation: "fadeInUp .5s .16s ease both" }}>{t("subtitle")}</p>
+          <p className="text-lg text-[#aaa] max-w-xl" style={{ animation: "fadeInUp .5s .16s ease both" }}>{t("subtitle")}</p>
         </div>
       </section>
 

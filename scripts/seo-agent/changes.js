@@ -76,8 +76,20 @@ export async function commitFaqItems(topicId, newFaqItems) {
  * Create a new blog post in src/lib/videos.ts and open a PR.
  * The post object must have: id, titleHe, titleEn, excerptHe, excerptEn, tags, bodyHe, bodyEn
  */
+// Map topic id → a relevant existing cover image from /public/vlogimg/
+const TOPIC_COVER_IMAGES = {
+  corporate:  "/vlogimg/corporate-business-card-cover.jpg",
+  hightech:   "/vlogimg/investor-pitch-cover.jpg",
+  animation:  "/vlogimg/ai-storyboard-cover.jpg",
+  ai:         "/vlogimg/ai-production-cover.jpg",
+  realestate: "/vlogimg/drone-realestate-cover.jpg",
+  training:   "/vlogimg/instructional-video-cover.jpg",
+  pricing:    "/vlogimg/madrich-michir-cover.jpg",
+};
+
 export async function openBlogPostPr(post) {
   const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+  const coverImage = post.topicId ? (TOPIC_COVER_IMAGES[post.topicId] || null) : null;
   const branch = `seo-agent/blog-${post.id}-${Date.now()}`;
 
   // 1. Get current main SHA
@@ -104,7 +116,7 @@ export async function openBlogPostPr(post) {
     titleEn: ${JSON.stringify(post.titleEn)},
     excerptHe: ${JSON.stringify(post.excerptHe)},
     excerptEn: ${JSON.stringify(post.excerptEn)},
-    tags: ${JSON.stringify(post.tags)},
+    tags: ${JSON.stringify(post.tags)},${coverImage ? `\n    coverImage: ${JSON.stringify(coverImage)},` : ""}
     bodyHe: ${JSON.stringify(post.bodyHe)},
     bodyEn: ${JSON.stringify(post.bodyEn)},
   },`;
