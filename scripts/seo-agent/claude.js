@@ -106,11 +106,15 @@ function injectInternalLinks(body, lang) {
 }
 
 // Generate a short blog post targeting a specific keyword cluster
-export async function generateBlogPost(topic, targetKeyword, metrics, relatedPosts = []) {
+export async function generateBlogPost(topic, targetKeyword, metrics, relatedPosts = [], performanceInsights = null) {
   const safeLabel = topic.label.replace(/"/g, "'");
 
   const relatedPostsBlock = relatedPosts.length
     ? `\nExisting blog posts you can link to (use [Post Title](https://www.the-videoshop.com/he/vlog/ID) in Hebrew body and /en/vlog/ID in English body — 1-2 links per post, natural placement only):\n${relatedPosts.map(p => `- ID: ${p.id} | He: ${p.titleHe} | En: ${p.titleEn}`).join("\n")}`
+    : "";
+
+  const insightsBlock = performanceInsights?.promptSummary
+    ? `\nLearned from past successful cycles: ${performanceInsights.promptSummary}`
     : "";
 
   const prompt = `You are a content writer for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
@@ -118,7 +122,7 @@ export async function generateBlogPost(topic, targetKeyword, metrics, relatedPos
 Write a blog post targeting the keyword: "${targetKeyword}"
 Related to service: "${safeLabel}" (${topic.pagePath})
 Other keywords to include naturally: ${topic.keywords.filter(k => k !== targetKeyword).slice(0, 3).join(", ")}
-${relatedPostsBlock}
+${insightsBlock}${relatedPostsBlock}
 Requirements:
 - Hebrew post with English translation
 - Length: 500-700 words per language

@@ -20,6 +20,8 @@ import {
 import { fetchKeywordMetrics, pickWeakestTopic, fetchLowCtrPages, pingSitemap, fetchOrphanQueries } from "./gsc.js";
 import { generateFaqItems, generateBlogPost } from "./claude.js";
 import { commitFaqItems, openBlogPostPr, getExistingBlogPosts } from "./changes.js";
+import { savePerformanceMemory, getPerformanceInsights } from "./memory.js";
+import { optimizeSnippetCandidates } from "./snippet.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
 import { runPageSpeedAudit } from "./pagespeed.js";
@@ -50,6 +52,13 @@ async function closePendingCycle() {
 
   await updateCycleResult(pending.id, followupMetrics, result);
 
+  // Save successful patterns to performance memory for future prompts
+  if (result === "improved") {
+    await savePerformanceMemory(pending, followupMetrics).catch((err) =>
+      console.warn("[agent] Performance memory save failed:", err.message)
+    );
+  }
+
   await sendSummaryEmail({
     topicLabel: topic.label,
     actionType: pending.actionType,
@@ -71,6 +80,12 @@ async function runNewCycle(research) {
   const recentTopicIds = await getRecentTopicIds(60);
   const { topic, metrics } = await pickWeakestTopic(KEYWORD_TOPICS, recentTopicIds);
 
+  // Load performance memory to guide Claude
+  const performanceInsights = await getPerformanceInsights().catch(() => null);
+  if (performanceInsights) {
+    console.log(`[agent] Performance insights loaded: ${performanceInsights.totalSuccessfulCycles} past wins, avg Δ${performanceInsights.avgPositionImprovement} positions`);
+  }
+
   console.log(`[agent] Selected topic: ${topic.label} (avg position: ${avg(metrics.map(m => m.position)).toFixed(1)})`);
 
   // Decide action: alternate between FAQ (safe) and blog (PR)
@@ -81,6 +96,7 @@ async function runNewCycle(research) {
   let filesChanged = [];
   let prNumber = null;
   let actionDescription = "";
+  let snippetResult = null;
 
   // Low-hanging fruit — keywords at positions 11-25
   const lowHangingKeywords = await findLowHangingKeywords().catch((err) => {
@@ -157,6 +173,17 @@ async function runNewCycle(research) {
 
     // Ping sitemap after committing changes to main
     await pingSitemap().catch(() => {});
+
+    // Featured snippet optimization — runs every safe_auto cycle
+    snippetResult = await optimizeSnippetCandidates().catch((err) => {
+      console.warn("[agent] Snippet optimization failed:", err.message);
+      return null;
+    });
+    if (snippetResult) {
+      console.log(`[agent] Snippet injected → "${snippetResult.postId}" (pos ${snippetResult.position})`);
+      if (!filesChanged.includes("src/lib/videos.ts")) filesChanged.push("src/lib/videos.ts");
+      actionDescription += ` + snippet for "${snippetResult.postId}"`;
+    }
   } else {
     // Fetch existing posts for internal linking
     const existingPosts = await getExistingBlogPosts(12).catch(() => []);
@@ -167,7 +194,7 @@ async function runNewCycle(research) {
     // Generate blog post and open PR
     console.log("[agent] Generating blog post...");
     const weakestKeyword = metrics.sort((a, b) => b.position - a.position)[0].keyword;
-    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts);
+    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts, performanceInsights);
     post.topicId = topic.id;
     const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
     prNumber = num;
@@ -208,6 +235,8 @@ async function runNewCycle(research) {
     refreshResult: refreshResult || null,
     lowCtrPages: lowCtrPages.length ? lowCtrPages : null,
     lowHangingKeywords: lowHangingKeywords.length ? lowHangingKeywords.slice(0, 10) : null,
+    snippetResult: snippetResult || null,
+    performanceInsights: performanceInsights || null,
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);

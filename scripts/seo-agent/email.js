@@ -225,7 +225,50 @@ function buildLowHangingSection(keywords) {
     <p style="font-size:11px;color:#999;margin-top:6px">* הבוט ישתמש בהן לכתיבת תוכן בריצות הבאות.</p>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, topicId, topicPagePath, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords }) {
+function buildSnippetSection(snippetResult) {
+  if (!snippetResult) return "";
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">⭐ Featured Snippet — אופטימיזציה</h3>
+    <p style="font-size:13px;color:#444;direction:rtl;text-align:right">
+      נוספה פסקת תשובה ישירה לפוסט <strong>${snippetResult.postId}</strong>
+      שמדורג מיקום <strong>${snippetResult.position}</strong> עבור השאילתה
+      "<em>${snippetResult.query}</em>" (${snippetResult.impressions} חשיפות/חודש).
+    </p>
+    <p style="font-size:12px;color:#666;direction:rtl;text-align:right">הפסקה נועדה לתפוס Position 0 (תיבת snippet) ב-Google.</p>
+    <blockquote style="border-right:3px solid #FFD000;margin:8px 0;padding:8px 12px;color:#555;font-size:12px;direction:rtl;text-align:right">${snippetResult.snippetHe}</blockquote>`;
+}
+
+function buildPerformanceMemorySection(insights) {
+  if (!insights) return "";
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #22c55e;padding-bottom:6px;direction:rtl;text-align:right">🧠 זיכרון ביצועים — מה למדנו עד כה</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666;width:50%">מחזורים מוצלחים</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-weight:600">${insights.totalSuccessfulCycles}</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666">שיפור מיקום ממוצע</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-weight:600;color:#22c55e">+${insights.avgPositionImprovement} מיקומים</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666">פעולה מנצחת</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-weight:600">${insights.bestAction}</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666">נושאים מוצלחים</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee">${insights.bestTopics.join(", ")}</td>
+      </tr>
+      ${insights.topKeywords.length ? `<tr>
+        <td style="padding:6px 10px;color:#666">מילות מפתח שהשתפרו</td>
+        <td style="padding:6px 10px">${insights.topKeywords.join(", ")}</td>
+      </tr>` : ""}
+    </table>`;
+}
+
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, topicId, topicPagePath, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords, snippetResult, performanceInsights }) {
   const SITE = "https://www.the-videoshop.com";
   const topicLiveUrl = topicPagePath ? `${SITE}/he${topicPagePath}` : null;
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
@@ -297,10 +340,12 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
     ${buildMetaSection(metaResult, topicLiveUrl)}
     ${buildTitleSection(titleResult, topicLiveUrl)}
     ${buildRefreshSection(refreshResult)}
+    ${buildSnippetSection(snippetResult)}
     ${buildLowHangingSection(lowHangingKeywords)}
     ${buildCtrSection(lowCtrPages)}
     ${buildPageSpeedSection(pageSpeedReport)}
     ${buildKeywordResearchSection(keywordResearch)}
+    ${buildPerformanceMemorySection(performanceInsights)}
 
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
     <p style="font-size:11px;color:#999;margin:0">
