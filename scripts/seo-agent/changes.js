@@ -76,6 +76,24 @@ export async function commitFaqItems(topicId, newFaqItems) {
   return { filePath, itemsAdded: newFaqItems.length };
 }
 
+// ── Extract existing blog posts for internal linking ─────────────────────────
+
+export async function getExistingBlogPosts(limit = 15) {
+  try {
+    const { content } = await getGithubFile("src/lib/videos.ts");
+    const results = [];
+    // Match each entry's id + titleHe + titleEn (within the vlogPosts array)
+    const blockRegex = /\{\s*\n\s*id:\s*"([^"]+)"(?:[^}]*?)titleHe:\s*"([^"]+)"(?:[^}]*?)titleEn:\s*"([^"]+)"/gs;
+    let match;
+    while ((match = blockRegex.exec(content)) !== null && results.length < limit) {
+      results.push({ id: match[1], titleHe: match[2], titleEn: match[3] });
+    }
+    return results;
+  } catch {
+    return [];
+  }
+}
+
 // ── Blog post PR ──────────────────────────────────────────────────────────────
 
 /**

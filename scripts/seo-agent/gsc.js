@@ -2,10 +2,12 @@
 import { google } from "googleapis";
 import { CONFIG } from "./config.js";
 
-function getAuth() {
+function getAuth(readWrite = false) {
   return new google.auth.GoogleAuth({
     credentials: CONFIG.googleCredentials,
-    scopes: ["https://www.googleapis.com/auth/webmasters.readonly"],
+    scopes: readWrite
+      ? ["https://www.googleapis.com/auth/webmasters"]
+      : ["https://www.googleapis.com/auth/webmasters.readonly"],
   });
 }
 
@@ -105,4 +107,69 @@ export async function fetchLowCtrPages(daysBack = 28, positionThreshold = 15, ct
       ctr: Math.round((r.clicks / r.impressions) * 1000) / 10, // as %
     }))
     .sort((a, b) => a.position - b.position); // best position first (most fixable)
+}
+
+// ── Sitemap ping ──────────────────────────────────────────────────────────────
+
+// Notify Google Search Console that the sitemap has been updated
+export async function pingSitemap() {
+  try {
+    const auth = await getAuth(true).getClient();
+    const webmasters = google.searchconsole({ version: "v1", auth });
+    const sitemapUrl = `${CONFIG.siteUrl}/sitemap.xml`;
+    await webmasters.sitemaps.submit({
+      siteUrl: CONFIG.gscSiteUrl,
+      feedpath: sitemapUrl,
+    });
+    console.log(`[gsc] Sitemap submitted: ${sitemapUrl}`);
+  } catch (err) {
+    console.warn("[gsc] Sitemap ping failed:", err.message);
+  }
+}
+
+// ── Keyword gap analysis ──────────────────────────────────────────────────────
+
+// Fetch queries with high impressions that aren't already covered by existing post IDs/titles
+export async function fetchOrphanQueries(existingPostIds = [], daysBack = 90, limit = 8) {
+  try {
+    const auth = await getAuth().getClient();
+    const webmasters = google.searchconsole({ version: "v1", auth });
+
+    const endDate = new Date();
+    const startDate = new Date(Date.now() - daysBack * 86400000);
+    const fmt = (d) => d.toISOString().split("T")[0];
+
+    const res = await webmasters.searchanalytics.query({
+      siteUrl: CONFIG.gscSiteUrl,
+      requestBody: {
+        startDate: fmt(startDate),
+        endDate: fmt(endDate),
+        dimensions: ["query"],
+        rowLimit: 200,
+      },
+    });
+
+    const rows = res.data?.rows ?? [];
+    // Filter out brand queries and queries already covered by existing posts
+    const covered = existingPostIds.map((id) => id.toLowerCase().replace(/-/g, " "));
+    return rows
+      .filter((r) => {
+        const q = r.keys[0].toLowerCase();
+        const isBrand = q.includes("videoshop") || q.includes("video shop") || q.includes("הוידאו שופ");
+        const isCovered = covered.some((c) => q.includes(c.slice(0, 12)));
+        return !isBrand && !isCovered && r.impressions >= 50;
+      })
+      .sort((a, b) => b.impressions - a.impressions)
+      .slice(0, limit)
+      .map((r) => ({
+        query: r.keys[0],
+        impressions: r.impressions,
+        clicks: r.clicks,
+        position: Math.round(r.position * 10) / 10,
+        ctr: Math.round((r.clicks / r.impressions) * 1000) / 10,
+      }));
+  } catch (err) {
+    console.warn("[gsc] Orphan query fetch failed:", err.message);
+    return [];
+  }
 }

@@ -106,14 +106,19 @@ function injectInternalLinks(body, lang) {
 }
 
 // Generate a short blog post targeting a specific keyword cluster
-export async function generateBlogPost(topic, targetKeyword, metrics) {
+export async function generateBlogPost(topic, targetKeyword, metrics, relatedPosts = []) {
   const safeLabel = topic.label.replace(/"/g, "'");
+
+  const relatedPostsBlock = relatedPosts.length
+    ? `\nExisting blog posts you can link to (use [Post Title](https://www.the-videoshop.com/he/vlog/ID) in Hebrew body and /en/vlog/ID in English body — 1-2 links per post, natural placement only):\n${relatedPosts.map(p => `- ID: ${p.id} | He: ${p.titleHe} | En: ${p.titleEn}`).join("\n")}`
+    : "";
+
   const prompt = `You are a content writer for videoshop (the-videoshop.com), a boutique B2B video production studio in Tel Aviv.
 
 Write a blog post targeting the keyword: "${targetKeyword}"
 Related to service: "${safeLabel}" (${topic.pagePath})
 Other keywords to include naturally: ${topic.keywords.filter(k => k !== targetKeyword).slice(0, 3).join(", ")}
-
+${relatedPostsBlock}
 Requirements:
 - Hebrew post with English translation
 - Length: 500-700 words per language
@@ -121,6 +126,7 @@ Requirements:
 - Concrete, factual — mention real clients (Intel, Palo Alto, Ashtrom) where relevant
 - Include 1-2 specific price ranges (in NIS) where relevant to the topic
 - No fluff, no generic marketing language
+- Add 1-2 internal links to the most relevant existing blog posts listed above (if any)
 
 Return ONLY valid JSON:
 {

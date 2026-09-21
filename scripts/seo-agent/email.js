@@ -28,6 +28,28 @@ function buildKeywordResearchSection(research) {
       <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#888;font-size:11px">${k.rationale}</td>
     </tr>`).join("");
 
+  const orphanSection = research.orphanQueries?.length ? (() => {
+    const oRows = research.orphanQueries.map((q) => `
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-family:monospace;font-size:12px">${q.query}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${q.impressions}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${q.position}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${q.ctr}%</td>
+      </tr>`).join("");
+    return `
+      <h3 style="font-size:14px;border-bottom:2px solid #f59e0b;padding-bottom:6px;direction:rtl;text-align:right;margin-top:20px">🔍 שאילתות ללא פוסט ייעודי (הזדמנויות תוכן)</h3>
+      <p style="font-size:12px;color:#666;margin:4px 0 10px;direction:rtl;text-align:right">אנשים מחפשים אותנו על נושאים אלו — שקול לכתוב פוסט ייעודי:</p>
+      <table style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead><tr style="background:#f5f5f5">
+          <th style="padding:6px 10px;text-align:right">שאילתה</th>
+          <th style="padding:6px 10px">חשיפות</th>
+          <th style="padding:6px 10px">מיקום</th>
+          <th style="padding:6px 10px">CTR</th>
+        </tr></thead>
+        <tbody>${oRows}</tbody>
+      </table>`;
+  })() : "";
+
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
     <h3 style="font-size:14px;border-bottom:2px solid #FFD000;padding-bottom:6px;direction:rtl;text-align:right">מחקר מילות מפתח — טרנדים בתעשייה</h3>
@@ -43,7 +65,8 @@ function buildKeywordResearchSection(research) {
       </thead>
       <tbody>${rows}</tbody>
     </table>
-    <p style="font-size:11px;color:#999;margin-top:8px">* מחקר זה מופיע כל ~2 חודשים. הוסף מילות מפתח רלוונטיות ל-config.js ידנית.</p>`;
+    <p style="font-size:11px;color:#999;margin-top:8px">* מחקר זה מופיע כל ~2 חודשים. הוסף מילות מפתח רלוונטיות ל-config.js ידנית.</p>
+    ${orphanSection}`;
 }
 
 function buildPageSpeedSection(report) {

@@ -17,9 +17,9 @@ import {
   updateCycleResult,
   getRecentTopicIds,
 } from "./state.js";
-import { fetchKeywordMetrics, pickWeakestTopic, fetchLowCtrPages } from "./gsc.js";
+import { fetchKeywordMetrics, pickWeakestTopic, fetchLowCtrPages, pingSitemap, fetchOrphanQueries } from "./gsc.js";
 import { generateFaqItems, generateBlogPost } from "./claude.js";
-import { commitFaqItems, openBlogPostPr } from "./changes.js";
+import { commitFaqItems, openBlogPostPr, getExistingBlogPosts } from "./changes.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
 import { runPageSpeedAudit } from "./pagespeed.js";
@@ -154,11 +154,20 @@ async function runNewCycle(research) {
     filesChanged = [result.filePath, ...(metaResult ? ["src/messages/he.json", "src/messages/en.json"] : [])];
     actionDescription = `Added ${result.itemsAdded} FAQ items to ${result.filePath}`;
     console.log(`[agent] Committed FAQ items: ${actionDescription}`);
+
+    // Ping sitemap after committing changes to main
+    await pingSitemap().catch(() => {});
   } else {
+    // Fetch existing posts for internal linking
+    const existingPosts = await getExistingBlogPosts(12).catch(() => []);
+    if (existingPosts.length) {
+      console.log(`[agent] Fetched ${existingPosts.length} existing posts for internal linking`);
+    }
+
     // Generate blog post and open PR
     console.log("[agent] Generating blog post...");
     const weakestKeyword = metrics.sort((a, b) => b.position - a.position)[0].keyword;
-    const post = await generateBlogPost(topic, weakestKeyword, metrics);
+    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts);
     post.topicId = topic.id;
     const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
     prNumber = num;
@@ -226,6 +235,15 @@ async function runKeywordResearch() {
   highOpp.forEach((k) => {
     console.log(`  [${k.language.toUpperCase()}] "${k.keyword}" → ${k.suggestedTopic}: ${k.rationale}`);
   });
+
+  // GSC keyword gap analysis — queries we rank for but haven't written about yet
+  const existingPosts = await getExistingBlogPosts(50).catch(() => []);
+  const orphanQueries = await fetchOrphanQueries(existingPosts.map((p) => p.id)).catch(() => []);
+  if (orphanQueries.length) {
+    console.log(`[agent] ${orphanQueries.length} high-impression queries without dedicated posts:`);
+    orphanQueries.forEach((q) => console.log(`  "${q.query}" — ${q.impressions} impressions, pos ${q.position}`));
+    research.orphanQueries = orphanQueries;
+  }
 
   return research;
 }

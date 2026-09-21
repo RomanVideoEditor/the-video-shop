@@ -1,0 +1,38 @@
+name: SEO Agent — Auto-merge blog PRs
+
+on:
+  schedule:
+    # Runs daily at 11:00 UTC (= 13:00 Israel time)
+    # Merges [SEO Agent] PRs that are >24h old and have all checks passing
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  automerge:
+    name: Auto-merge eligible SEO Agent PRs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: scripts/seo-agent/package.json
+
+      - name: Install agent dependencies
+        run: npm install
+        working-directory: scripts/seo-agent
+
+      - name: Auto-merge eligible PRs
+        run: node automerge.js
+        working-directory: scripts/seo-agent
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
