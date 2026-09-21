@@ -138,8 +138,8 @@ export default async function AboutPage({
               },
             ].map((step, i) => (
               <div key={i} className="flex gap-8 py-8 border-b border-gray-200 last:border-0 group reveal">
-                <div className="text-4xl font-black text-[#FFD000]/30 group-hover:text-[#FFD000]/60 transition-colors shrink-0 w-16 text-center">
-                  {step.n}
+                <div className="flex items-center justify-center shrink-0 w-16 h-16 rounded-full bg-[#111] group-hover:bg-[#222] transition-colors">
+                  <span className="text-xl font-black text-[#FFD000]">{step.n}</span>
                 </div>
                 <div>
                   <h3 className="font-bold text-[#111] text-lg mb-2">{isRTL ? step.titleHe : step.titleEn}</h3>

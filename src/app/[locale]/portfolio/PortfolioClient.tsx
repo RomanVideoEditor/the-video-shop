@@ -119,7 +119,7 @@ export default function PortfolioClient({ locale, labels, videos }: Props) {
                 />
                 <div className="p-6">
                   {video.client && (
-                    <span className="text-xs font-semibold tracking-wider text-[#FFD000] uppercase">{video.client}</span>
+                    <span className="inline-block text-xs font-semibold tracking-wider text-[#FFD000] uppercase bg-[#111] px-2 py-1 rounded">{video.client}</span>
                   )}
                   <h2 className="text-xl font-bold text-[#111] mt-2 mb-4">
                     {isHe ? video.titleHe : video.titleEn}

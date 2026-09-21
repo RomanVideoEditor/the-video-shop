@@ -67,6 +67,7 @@ export default async function VlogPage({
           {vlogPosts.map((post, index) => {
             const title = isHe ? post.titleHe : post.titleEn;
             const excerpt = isHe ? post.excerptHe : post.excerptEn;
+            const tags = isHe ? post.tagsHe : post.tagsEn;
             const isFirst = index === 0;
 
             return (
@@ -93,8 +94,8 @@ export default async function VlogPage({
                     <div className="flex-1 min-w-0">
                       {/* Tags + date */}
                       <div className="flex flex-wrap items-center gap-3 mb-3">
-                        {post.tags.slice(0, 2).map((tag) => (
-                          <span key={tag} className="text-[10px] font-semibold tracking-[0.25em] text-[#FFD000] uppercase">
+                        {tags.slice(0, 2).map((tag) => (
+                          <span key={tag} className="text-[10px] font-semibold tracking-[0.25em] text-[#FFD000] uppercase bg-[#111] px-2 py-1 rounded-full">
                             {tag}
                           </span>
                         ))}

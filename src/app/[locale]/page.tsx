@@ -322,7 +322,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   <p className="text-xs font-bold text-[#111] leading-none mb-0.5">Rated Excellent</p>
                   <div className="flex items-center gap-1">
                     <span className="text-xs font-black text-[#111]">4.9</span>
-                    <span className="text-[#FFD000] text-xs tracking-tight">★★★★★</span>
+                    <span className="text-[#FFD000] text-xs tracking-tight bg-[#111] px-1 rounded">★★★★★</span>
                   </div>
                   <p className="text-[10px] text-[#717171] leading-none mt-0.5">{isHe ? "100+ פרויקטים" : "100+ projects"}</p>
                 </div>
@@ -358,7 +358,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 ].map((s) => (
                   <div key={s.labelEn} className={`${cardBase} p-4 text-center reveal-scale`}>
                     <p className="text-xl font-black text-[#111]">
-                      <CountUp to={s.to} suffix={s.suffix} />
+                      <CountUp to={s.to} suffix={s.suffix} suffixClassName="text-[#111]" />
                     </p>
                     <p className="text-[11px] text-[#717171] mt-1 font-medium">{isHe ? s.labelHe : s.labelEn}</p>
                   </div>
@@ -370,7 +370,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 stagger">
               {whyItems.map((item, i) => (
                 <div key={i} className={`${cardBase} p-6 card-lift hover:border-[#FFD000]/60 transition-all duration-200 reveal`}>
-                  <p className="text-3xl font-black text-[#FFD000] mb-1 leading-none">{isHe ? item.statHe : item.statEn}</p>
+                  <p className="inline-block text-2xl font-black text-[#FFD000] bg-[#111] px-3 py-1 rounded-lg mb-1 leading-none">{isHe ? item.statHe : item.statEn}</p>
                   <h3 className="font-bold text-[#111] text-[14px] mb-1">{isHe ? item.titleHe : item.titleEn}</h3>
                   <p className="text-[12px] text-[#666] leading-snug">{isHe ? item.descHe : item.descEn}</p>
                 </div>
@@ -528,7 +528,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             ].map((s) => (
               <div key={s.labelEn} className="text-center reveal-scale">
                 <p className="text-4xl font-black text-[#111]">
-                  <CountUp to={s.to} suffix={s.suffix} />
+                  <CountUp to={s.to} suffix={s.suffix} suffixClassName="text-[#111]" />
                 </p>
                 <p className="text-xs text-[#717171] mt-1 font-medium">{isHe ? s.labelHe : s.labelEn}</p>
               </div>

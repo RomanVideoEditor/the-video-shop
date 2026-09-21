@@ -186,6 +186,7 @@ export default async function BlogPostPage({
   const t = await getTranslations({ locale, namespace: "vlog" });
   const isHe = locale === "he";
   const title = isHe ? post.titleHe : post.titleEn;
+  const tags = isHe ? post.tagsHe : post.tagsEn;
   const body = isHe ? post.bodyHe : post.bodyEn;
   const BASE = "https://www.the-videoshop.com";
   const canonical = isHe ? `${BASE}/vlog/${slug}` : `${BASE}/en/vlog/${slug}`;
@@ -232,8 +233,8 @@ export default async function BlogPostPage({
 
         {/* Tags + meta */}
         <div className="flex flex-wrap items-center gap-3 mb-6">
-          {post.tags.map((tag) => (
-            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#FFD000] uppercase border border-[#FFD000]/40 px-3 py-1 rounded-full">
+          {tags.map((tag) => (
+            <span key={tag} className="text-[10px] font-semibold tracking-[0.3em] text-[#FFD000] uppercase bg-[#111] px-3 py-1 rounded-full">
               {tag}
             </span>
           ))}
@@ -326,7 +327,7 @@ export default async function BlogPostPage({
         {(() => {
           const related = vlogPosts
             .filter((p) => p.id !== slug && p.coverImage)
-            .filter((p) => p.tags?.some((t) => post.tags?.includes(t)))
+            .filter((p) => p.tagsEn?.some((t) => post.tagsEn?.includes(t)))
             .slice(0, 2);
           const fallback = related.length < 2
             ? vlogPosts.filter((p) => p.id !== slug && p.coverImage && !related.find((r) => r.id === p.id)).slice(0, 2 - related.length)
@@ -377,7 +378,7 @@ export default async function BlogPostPage({
 
         {/* CTA */}
         <div className="mt-14 p-8 bg-white border border-gray-200 rounded-2xl">
-          <p className="text-xs font-semibold tracking-tight text-[#FFD000] mb-3">videoshop</p>
+          <p className="inline-block text-xs font-semibold tracking-tight text-[#FFD000] bg-[#111] px-2.5 py-1 rounded mb-3">videoshop</p>
           <h3 className="text-xl md:text-2xl font-black text-[#111] mb-3 leading-tight">
             {isHe
               ? "הפרויקט הבא שלכם מתחיל בשיחה"

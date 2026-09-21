@@ -235,7 +235,7 @@ export default async function ServicesPage({
             <div key={phase.phase}>
               {/* Phase header */}
               <div className="flex items-center gap-4 mb-10">
-                <span className="text-[#FFD000] font-mono text-sm tracking-widest">
+                <span className="text-[#FFD000] font-mono text-sm tracking-widest bg-[#111] px-2 py-1 rounded">
                   0{phaseIndex + 1}
                 </span>
                 <div className="h-px bg-gray-200 flex-1" />

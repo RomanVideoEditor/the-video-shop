@@ -6,9 +6,10 @@ interface Props {
   suffix?: string;
   duration?: number;
   className?: string;
+  suffixClassName?: string;
 }
 
-export default function CountUp({ to, suffix = "", duration = 1800, className = "" }: Props) {
+export default function CountUp({ to, suffix = "", duration = 1800, className = "", suffixClassName = "text-[#FFD000]" }: Props) {
   const [value, setValue] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
@@ -40,7 +41,7 @@ export default function CountUp({ to, suffix = "", duration = 1800, className = 
 
   return (
     <span ref={ref} className={className}>
-      {value}<span className="text-[#FFD000]">{suffix}</span>
+      {value}<span className={suffixClassName}>{suffix}</span>
     </span>
   );
 }
