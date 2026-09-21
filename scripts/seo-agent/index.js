@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ─── SEO AGENT — MAIN ORCHESTRATOR ──────────────────────────────────────────
-// Runs bi-weekly via GitHub Actions.
+// Runs weekly via GitHub Actions.
 // Flow:
 //   1. Check for a pending cycle (from 2 weeks ago) → measure followup metrics → close it
 //   2. Pick the weakest-ranking topic not recently touched

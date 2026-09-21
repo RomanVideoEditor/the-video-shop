@@ -241,16 +241,27 @@ function buildSnippetSection(snippetResult) {
 
 function buildPerformanceMemorySection(insights) {
   if (!insights) return "";
+
+  const failBlock = insights.totalFailedCycles > 0 ? `
+    <p style="font-size:12px;font-weight:600;color:#ef4444;margin:16px 0 6px;direction:rtl;text-align:right">❌ מה לא עבד (${insights.totalFailedCycles} מחזורים)</p>
+    <table style="width:100%;border-collapse:collapse;font-size:13px">
+      ${insights.worstTopics?.length ? `<tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666;width:50%">נושאים שלא הגיבו</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#ef4444">${insights.worstTopics.join(", ")}</td>
+      </tr>` : ""}
+      ${insights.worstKeywords?.length ? `<tr>
+        <td style="padding:6px 10px;color:#666">מילות מפתח שהידרדרו</td>
+        <td style="padding:6px 10px;color:#ef4444">${insights.worstKeywords.join(", ")}</td>
+      </tr>` : ""}
+    </table>` : "";
+
   return `
     <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
-    <h3 style="font-size:14px;border-bottom:2px solid #22c55e;padding-bottom:6px;direction:rtl;text-align:right">🧠 זיכרון ביצועים — מה למדנו עד כה</h3>
+    <h3 style="font-size:14px;border-bottom:2px solid #22c55e;padding-bottom:6px;direction:rtl;text-align:right">🧠 זיכרון ביצועים — מה למדנו</h3>
+    <p style="font-size:12px;font-weight:600;color:#22c55e;margin:0 0 6px;direction:rtl;text-align:right">✅ מה עבד (${insights.totalSuccessfulCycles} מחזורים)</p>
     <table style="width:100%;border-collapse:collapse;font-size:13px">
       <tr>
-        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666;width:50%">מחזורים מוצלחים</td>
-        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-weight:600">${insights.totalSuccessfulCycles}</td>
-      </tr>
-      <tr>
-        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666">שיפור מיקום ממוצע</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666;width:50%">שיפור ממוצע</td>
         <td style="padding:6px 10px;border-bottom:1px solid #eee;font-weight:600;color:#22c55e">+${insights.avgPositionImprovement} מיקומים</td>
       </tr>
       <tr>
@@ -259,13 +270,14 @@ function buildPerformanceMemorySection(insights) {
       </tr>
       <tr>
         <td style="padding:6px 10px;border-bottom:1px solid #eee;color:#666">נושאים מוצלחים</td>
-        <td style="padding:6px 10px;border-bottom:1px solid #eee">${insights.bestTopics.join(", ")}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee">${insights.bestTopics?.join(", ") ?? "—"}</td>
       </tr>
-      ${insights.topKeywords.length ? `<tr>
+      ${insights.topKeywords?.length ? `<tr>
         <td style="padding:6px 10px;color:#666">מילות מפתח שהשתפרו</td>
         <td style="padding:6px 10px">${insights.topKeywords.join(", ")}</td>
       </tr>` : ""}
-    </table>`;
+    </table>
+    ${failBlock}`;
 }
 
 function buildCannibalizationSection(data) {
@@ -402,7 +414,7 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
 <body style="font-family:Arial,sans-serif;color:#111;max-width:680px;margin:0 auto;padding:20px;direction:rtl;text-align:right">
   <div style="background:#111;padding:20px 24px;border-radius:8px 8px 0 0;direction:rtl;text-align:right">
     <span style="color:#FFD000;font-size:22px;font-weight:900;letter-spacing:-0.5px">the-videoshop</span><span style="color:#fff;font-size:13px;margin-right:10px;opacity:0.6">SEO Agent</span>
-    <h1 style="color:#FFD000;margin:10px 0 0;font-size:17px;font-weight:400;direction:rtl;text-align:right">דוח דו-שבועי</h1>
+    <h1 style="color:#FFD000;margin:10px 0 0;font-size:17px;font-weight:400;direction:rtl;text-align:right">דוח שבועי</h1>
   </div>
 
   <div style="border:1px solid #eee;border-top:none;padding:24px;border-radius:0 0 8px 8px;direction:rtl;text-align:right">
