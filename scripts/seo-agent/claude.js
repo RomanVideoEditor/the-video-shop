@@ -45,7 +45,12 @@ Return ONLY valid JSON (no markdown, no explanation):
     messages: [{ role: "user", content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  const rawText = response.content?.find((b) => b.type === "text")?.text;
+  if (!rawText) {
+    console.warn(`[claude] FAQ response had no text block (stop_reason: ${response.stop_reason}) — skipping FAQ this cycle`);
+    return [];
+  }
+  const text = rawText.trim();
   try {
     return JSON.parse(text);
   } catch {
@@ -53,9 +58,6 @@ Return ONLY valid JSON (no markdown, no explanation):
     if (match) {
       try { return JSON.parse(match[0]); } catch {}
     }
-    // GitHub Actions masks secrets inside stdout — if *** appears in the
-    // response it means a secret value collided with generated text.
-    // Log a warning and return an empty array so the cycle can continue.
     if (text.includes("***")) {
       console.warn("[claude] FAQ response contained masked secret token — skipping FAQ update this cycle");
       return [];
@@ -189,7 +191,9 @@ Return ONLY valid JSON:
     messages: [{ role: "user", content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  const rawText = response.content?.find((b) => b.type === "text")?.text;
+  if (!rawText) throw new Error(`Claude blog post response had no text block. stop_reason: ${response.stop_reason}`);
+  const text = rawText.trim();
   let post;
   try {
     post = JSON.parse(text);
