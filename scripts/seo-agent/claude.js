@@ -49,9 +49,17 @@ Return ONLY valid JSON (no markdown, no explanation):
   try {
     return JSON.parse(text);
   } catch {
-    // Try to extract JSON from response
     const match = text.match(/\[[\s\S]*\]/);
-    if (match) return JSON.parse(match[0]);
+    if (match) {
+      try { return JSON.parse(match[0]); } catch {}
+    }
+    // GitHub Actions masks secrets inside stdout — if *** appears in the
+    // response it means a secret value collided with generated text.
+    // Log a warning and return an empty array so the cycle can continue.
+    if (text.includes("***")) {
+      console.warn("[claude] FAQ response contained masked secret token — skipping FAQ update this cycle");
+      return [];
+    }
     throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
   }
 }
@@ -187,8 +195,15 @@ Return ONLY valid JSON:
     post = JSON.parse(text);
   } catch {
     const match = text.match(/\{[\s\S]*\}/);
-    if (match) post = JSON.parse(match[0]);
-    else throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
+    if (match) {
+      try { post = JSON.parse(match[0]); } catch {}
+    }
+    if (!post) {
+      if (text.includes("***")) {
+        throw new Error("Blog post response contained GitHub Actions masked secret token — retry next cycle");
+      }
+      throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
+    }
   }
 
   // Inject internal links into both language bodies
