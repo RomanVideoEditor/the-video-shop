@@ -105,9 +105,36 @@ function injectInternalLinks(body, lang) {
   return result;
 }
 
+// Determine what funnel stage to write for based on recent post history
+function chooseFunnelStage(recentPostIds = []) {
+  // Count recent posts by stage (inferred from slug patterns)
+  const bottomSignals = ["מחיר", "עלות", "cost", "price", "השוואה", "comparison", "hire", "agency", "budget", "pricing"];
+  const recentBottomCount = recentPostIds.filter((id) =>
+    bottomSignals.some((s) => id.toLowerCase().includes(s))
+  ).length;
+
+  // 1 in 3 posts should be bottom-of-funnel (price/comparison/hire intent)
+  if (recentBottomCount === 0 && recentPostIds.length >= 2) return "bottom";
+  return "top"; // default: awareness / educational
+}
+
 // Generate a short blog post targeting a specific keyword cluster
 export async function generateBlogPost(topic, targetKeyword, metrics, relatedPosts = [], performanceInsights = null, conversionInsights = null) {
   const safeLabel = topic.label.replace(/"/g, "'");
+
+  const funnelStage = chooseFunnelStage(relatedPosts.map((p) => p.id));
+  const funnelGuidance = funnelStage === "bottom"
+    ? `FUNNEL STAGE: Bottom-of-funnel (decision intent).
+This post targets someone who is READY TO BUY and comparing studios.
+- Lead with a concrete price range in the title and intro (NIS)
+- Include a comparison table or bullet list: "what you get at videoshop vs. a freelancer vs. a large agency"
+- End with a direct CTA: "קבלו הצעת מחיר תוך 24 שעות" / "Get a quote within 24 hours"
+- Mention at least one named client (Intel, Palo Alto, Ashtrom) + the outcome they got`
+    : `FUNNEL STAGE: Top-of-funnel (awareness / educational).
+This post targets someone learning about video production — build trust and authority.
+- Educate, don't sell aggressively
+- Include a practical tip or framework they can use immediately
+- Soft CTA at end (e.g., "רוצה לדעת עוד?" / "Curious how we'd approach your project?")`;
 
   const relatedPostsBlock = relatedPosts.length
     ? `\nExisting blog posts you can link to (use [Post Title](https://www.the-videoshop.com/he/vlog/ID) in Hebrew body and /en/vlog/ID in English body — 1-2 links per post, natural placement only):\n${relatedPosts.map(p => `- ID: ${p.id} | He: ${p.titleHe} | En: ${p.titleEn}`).join("\n")}`
@@ -125,14 +152,14 @@ export async function generateBlogPost(topic, targetKeyword, metrics, relatedPos
 Write a blog post targeting the keyword: "${targetKeyword}"
 Related to service: "${safeLabel}" (${topic.pagePath})
 Other keywords to include naturally: ${topic.keywords.filter(k => k !== targetKeyword).slice(0, 3).join(", ")}
+
+${funnelGuidance}
 ${insightsBlock}${relatedPostsBlock}
-Requirements:
+General requirements:
 - Hebrew post with English translation
 - Length: 500-700 words per language
-- Structure: intro paragraph, 3-4 H2 sections with question-format headings, CTA at end
-- Concrete, factual — mention real clients (Intel, Palo Alto, Ashtrom) where relevant
-- Include 1-2 specific price ranges (in NIS) where relevant to the topic
-- No fluff, no generic marketing language
+- Structure: intro paragraph, 3-4 H2 sections with question-format headings
+- Concrete, factual — no generic marketing language
 - Add 1-2 internal links to the most relevant existing blog posts listed above (if any)
 
 Return ONLY valid JSON:
@@ -147,9 +174,10 @@ Return ONLY valid JSON:
   "bodyEn": "Article body in English with ## H2 headings"
 }`;
 
+  // Sonnet for blog posts — higher quality B2B content justifies the cost
   const response = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
-    max_tokens: 3000,
+    model: "claude-sonnet-5",
+    max_tokens: 4000,
     messages: [{ role: "user", content: prompt }],
   });
 

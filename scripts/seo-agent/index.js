@@ -23,7 +23,7 @@ import { commitFaqItems, openBlogPostPr, getExistingBlogPosts } from "./changes.
 import { savePerformanceMemory, getPerformanceInsights } from "./memory.js";
 import { optimizeSnippetCandidates } from "./snippet.js";
 import { detectCannibalization } from "./cannibalization.js";
-import { analyzeConversions, getLatestConversionInsights } from "./conversions.js";
+import { analyzeConversions, getLatestConversionInsights, getTopAttributedPosts } from "./conversions.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
 import { runPageSpeedAudit } from "./pagespeed.js";
@@ -54,12 +54,10 @@ async function closePendingCycle() {
 
   await updateCycleResult(pending.id, followupMetrics, result);
 
-  // Save successful patterns to performance memory for future prompts
-  if (result === "improved") {
-    await savePerformanceMemory(pending, followupMetrics).catch((err) =>
-      console.warn("[agent] Performance memory save failed:", err.message)
-    );
-  }
+  // Save ALL closed cycles to performance memory — learn from failures too
+  await savePerformanceMemory(pending, followupMetrics, result).catch((err) =>
+    console.warn("[agent] Performance memory save failed:", err.message)
+  );
 
   await sendSummaryEmail({
     topicLabel: topic.label,
@@ -82,11 +80,19 @@ async function runNewCycle(research) {
   const recentTopicIds = await getRecentTopicIds(60);
   const { topic, metrics } = await pickWeakestTopic(KEYWORD_TOPICS, recentTopicIds);
 
-  // Load performance memory + conversion insights to guide Claude
-  const [performanceInsights, conversionInsights] = await Promise.all([
+  // Load performance memory + conversion insights + attribution data to guide Claude
+  const [performanceInsights, conversionInsights, topAttributed] = await Promise.all([
     getPerformanceInsights().catch(() => null),
     getLatestConversionInsights().catch(() => null),
+    getTopAttributedPosts(5).catch(() => []),
   ]);
+
+  // Merge attribution data into conversion insights prompt
+  if (topAttributed.length && conversionInsights) {
+    const top = topAttributed[0];
+    const attrNote = `🏆 All-time top post: "${top.slug}" (score ${top.conversionScore}). Write new posts in similar style.`;
+    conversionInsights.promptSummary = [conversionInsights.promptSummary, attrNote].filter(Boolean).join(" ");
+  }
   if (performanceInsights) {
     console.log(`[agent] Performance insights: ${performanceInsights.totalSuccessfulCycles} past wins, avg Δ${performanceInsights.avgPositionImprovement} positions`);
   }
@@ -105,10 +111,12 @@ async function runNewCycle(research) {
 
   console.log(`[agent] Selected topic: ${topic.label} (avg position: ${avg(metrics.map(m => m.position)).toFixed(1)})`);
 
-  // Decide action: alternate between FAQ (safe) and blog (PR)
-  const lastCycles = await getLastCycles(4);
-  const lastAction = lastCycles[0]?.actionType;
-  const actionType = lastAction === "safe_auto" ? "pr" : "safe_auto";
+  // Decide action: 2 blog posts out of every 3 cycles (FAQ every 3rd).
+  // Pattern: pr → pr → safe_auto → pr → pr → safe_auto …
+  // This yields ~3 blog posts/month instead of ~1, maximising content velocity.
+  const lastCycles = await getLastCycles(3);
+  const recentFaqCount = lastCycles.filter((c) => c.actionType === "safe_auto").length;
+  const actionType = recentFaqCount === 0 && lastCycles.length >= 2 ? "safe_auto" : "pr";
 
   let filesChanged = [];
   let prNumber = null;

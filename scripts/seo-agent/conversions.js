@@ -1,4 +1,4 @@
-// ─── GA4 CONVERSION TRACKER ──────────────────────────────────────────────────
+// ─── GA4 CONVERSION TRACKER + POST ATTRIBUTION ───────────────────────────────
 // Queries Google Analytics 4 to find which blog posts generate the most
 // conversions (contact form submissions) and engaged sessions.
 //
@@ -7,9 +7,15 @@
 //      (first event name that returns data is used)
 //   B. Engagement: top pages by engaged_sessions — proxy for content quality
 //
+// Attribution loop (new):
+//   After each analysis, we update a per-post attribution record in Firebase
+//   (`post_attribution` collection). This lets the memory system know which
+//   specific post slugs generated leads so future posts can replicate them.
+//
 // Results are saved to Firebase `conversion_insights` and surfaced in:
 //   1. The email report (which posts convert)
 //   2. The Claude performance memory prompt (replicate converting patterns)
+//   3. `post_attribution` — per-post cumulative conversion score
 //
 // NOTE: GA4_PROPERTY_ID must be the NUMERIC property ID (e.g., "123456789")
 //       NOT the measurement ID (G-XXXXXXXXXX).
@@ -183,9 +189,77 @@ async function saveConversionInsights(insights) {
   });
 }
 
+// ── Attribution loop: update per-post conversion scores ──────────────────────
+// Each post gets a cumulative record in `post_attribution`:
+// {
+//   slug, totalConversions, totalEngagedSessions, lastSeenAt,
+//   conversionScore: weighted composite (conversions × 3 + engagedSessions)
+// }
+async function updatePostAttribution(convertingPages, engagedPages) {
+  const db = initFirebase();
+  const collection = db.collection("post_attribution");
+  const batch = db.batch();
+
+  // Build a merged map: slug → { conversions, engagedSessions }
+  const slugMap = {};
+
+  for (const page of convertingPages) {
+    const slug = slugFromPath(page.path);
+    if (!slug) continue;
+    slugMap[slug] = slugMap[slug] ?? { conversions: 0, engagedSessions: 0 };
+    slugMap[slug].conversions += page.conversions;
+  }
+
+  for (const page of engagedPages) {
+    const slug = slugFromPath(page.path);
+    if (!slug) continue;
+    slugMap[slug] = slugMap[slug] ?? { conversions: 0, engagedSessions: 0 };
+    slugMap[slug].engagedSessions += page.engagedSessions;
+  }
+
+  // Upsert each slug's record
+  for (const [slug, data] of Object.entries(slugMap)) {
+    const ref = collection.doc(slug);
+    const existing = await ref.get();
+    const prev = existing.exists ? existing.data() : { totalConversions: 0, totalEngagedSessions: 0 };
+
+    const totalConversions     = (prev.totalConversions     ?? 0) + data.conversions;
+    const totalEngagedSessions = (prev.totalEngagedSessions ?? 0) + data.engagedSessions;
+    // Weighted composite: conversions count triple (they signal actual leads)
+    const conversionScore      = totalConversions * 3 + totalEngagedSessions;
+
+    batch.set(ref, {
+      slug,
+      totalConversions,
+      totalEngagedSessions,
+      conversionScore,
+      lastSeenAt: Timestamp.now(),
+    }, { merge: true });
+  }
+
+  await batch.commit();
+  console.log(`[conversions] Attribution updated for ${Object.keys(slugMap).length} posts`);
+}
+
+// ── Retrieve top-attributed posts (for memory prompt) ─────────────────────────
+export async function getTopAttributedPosts(limit = 5) {
+  try {
+    const db = initFirebase();
+    const snap = await db
+      .collection("post_attribution")
+      .orderBy("conversionScore", "desc")
+      .limit(limit)
+      .get();
+    if (snap.empty) return [];
+    return snap.docs.map((d) => d.data());
+  } catch {
+    return [];
+  }
+}
+
 // ── Build prompt-ready summary ────────────────────────────────────────────────
 
-function buildConversionPromptSummary(converting, engaged) {
+function buildConversionPromptSummary(converting, engaged, topAttributed = []) {
   const lines = [];
 
   if (converting.pages.length) {
@@ -200,6 +274,18 @@ function buildConversionPromptSummary(converting, engaged) {
     const slugs = topEng.map((p) => slugFromPath(p.path)).filter(Boolean);
     lines.push(`Most engaged blog posts (${topEng[0]?.engagedSessions} engaged sessions): ${slugs.join(", ")}.`);
     lines.push(`Replicate the depth, structure, and specificity of these posts in new content.`);
+  }
+
+  // Attribution loop: cumulative winners across all cycles
+  if (topAttributed.length) {
+    const top = topAttributed[0];
+    lines.push(
+      `🏆 All-time top converting post: "${top.slug}" (score ${top.conversionScore}: ${top.totalConversions} leads + ${top.totalEngagedSessions} engaged sessions).`
+    );
+    if (topAttributed.length > 1) {
+      const others = topAttributed.slice(1, 4).map((p) => p.slug).join(", ");
+      lines.push(`Other high-attribution posts: ${others}. Study their angle, funnel stage, and CTA when writing new posts.`);
+    }
   }
 
   return lines.join(" ");
@@ -229,12 +315,20 @@ export async function analyzeConversions() {
     return null;
   }
 
-  const promptSummary = buildConversionPromptSummary(convertingResult, engagedPages);
+  // Attribution loop — update cumulative per-post scores in Firebase
+  await updatePostAttribution(convertingResult.pages, engagedPages).catch((err) =>
+    console.warn("[conversions] Attribution update failed:", err.message)
+  );
+
+  // Retrieve top attributed posts to enrich the prompt summary
+  const topAttributed = await getTopAttributedPosts(5).catch(() => []);
+  const promptSummary = buildConversionPromptSummary(convertingResult, engagedPages, topAttributed);
 
   const insights = {
-    convertingPages: convertingResult.pages.slice(0, 5),
-    eventName:       convertingResult.eventName,
-    engagedPages:    engagedPages.slice(0, 5),
+    convertingPages:  convertingResult.pages.slice(0, 5),
+    eventName:        convertingResult.eventName,
+    engagedPages:     engagedPages.slice(0, 5),
+    topAttributed:    topAttributed.slice(0, 5),
     promptSummary,
   };
 
