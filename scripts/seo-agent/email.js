@@ -268,7 +268,97 @@ function buildPerformanceMemorySection(insights) {
     </table>`;
 }
 
-function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, topicId, topicPagePath, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords, snippetResult, performanceInsights }) {
+function buildCannibalizationSection(data) {
+  if (!data?.pairs?.length) return "";
+
+  const SEVERITY_COLOR = { high: "#ef4444", medium: "#f59e0b", low: "#6b7280" };
+
+  const rows = data.pairs.map((p) => {
+    const winnerSlug = p.winner.page.replace(/.*\//, "");
+    const loserSlug  = p.loser.page.replace(/.*\//, "");
+    return `
+      <tr>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-family:monospace;font-size:11px;max-width:120px;word-break:break-all">${p.query}</td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px">${winnerSlug} <span style="color:#22c55e">✓${p.winner.position}</span></td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:11px">${loserSlug} <span style="color:#ef4444">✗${p.loser.position}</span></td>
+        <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-weight:600">${p.totalImpressions}</td>
+      </tr>`;
+  }).join("");
+
+  const suggestionBlock = data.suggestion ? `
+    <div style="background:#fffbeb;border:1px solid #f59e0b;border-radius:6px;padding:12px 16px;margin-top:12px;direction:rtl;text-align:right">
+      <p style="font-size:12px;font-weight:700;color:#92400e;margin:0 0 6px">💡 המלצה לתיקון: "${data.worstQuery}"</p>
+      <p style="font-size:12px;color:#444;margin:0 0 6px">${data.suggestion.recommendation}</p>
+      ${data.suggestion.newTargetKeyword ? `<p style="font-size:11px;color:#666;margin:0">מילת מפתח חלופית מוצעת: <strong>${data.suggestion.newTargetKeyword}</strong></p>` : ""}
+      <span style="font-size:10px;background:${SEVERITY_COLOR[data.suggestion.severity] ?? "#9ca3af"};color:#fff;padding:2px 8px;border-radius:10px">${data.suggestion.severity}</span>
+    </div>` : "";
+
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #ef4444;padding-bottom:6px;direction:rtl;text-align:right">⚠️ קניבליזציה — עמודים שמתחרים על אותה מילת מפתח</h3>
+    <p style="font-size:12px;color:#666;margin:4px 0 10px;direction:rtl;text-align:right">Google מתבלבל בין עמודים אלו — זה מחלק את ה-authority ומוריד את שניהם.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <thead><tr style="background:#fef2f2">
+        <th style="padding:6px 10px;text-align:right">מילת מפתח</th>
+        <th style="padding:6px 10px;text-align:right">מנצח</th>
+        <th style="padding:6px 10px;text-align:right">מפסיד</th>
+        <th style="padding:6px 10px">סה"כ חשיפות</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    ${suggestionBlock}`;
+}
+
+function buildConversionSection(insights) {
+  if (!insights) return "";
+
+  const convRows = (insights.convertingPages ?? []).slice(0, 5).map((p) => {
+    const slug = p.path.replace(/.*\/vlog\//, "").replace(/\/$/, "") || p.path;
+    return `<tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;font-family:monospace;font-size:11px">${slug}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-weight:700;color:#22c55e">${p.conversions}</td>
+    </tr>`;
+  }).join("");
+
+  const engRows = (insights.engagedPages ?? []).slice(0, 5).map((p) => {
+    const slug = p.path.replace(/.*\/vlog\//, "").replace(/\/$/, "") || p.path;
+    return `<tr>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;font-family:monospace;font-size:11px">${slug}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${p.engagedSessions}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center">${p.avgDuration}s</td>
+    </tr>`;
+  }).join("");
+
+  const convTable = convRows ? `
+    <p style="font-size:12px;font-weight:600;color:#111;margin:12px 0 6px;direction:rtl;text-align:right">המרות (${insights.eventName ?? "event"})</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <thead><tr style="background:#f5f5f5">
+        <th style="padding:6px 10px;text-align:right">פוסט</th>
+        <th style="padding:6px 10px">המרות</th>
+      </tr></thead>
+      <tbody>${convRows}</tbody>
+    </table>` : `<p style="font-size:12px;color:#888;margin:8px 0;direction:rtl;text-align:right">לא נמצאו נתוני המרות ישירות. הגדר event בשם <code>contact_form_submit</code> ב-GA4.</p>`;
+
+  const engTable = engRows ? `
+    <p style="font-size:12px;font-weight:600;color:#111;margin:16px 0 6px;direction:rtl;text-align:right">פוסטים עם מעורבות גבוהה</p>
+    <table style="width:100%;border-collapse:collapse;font-size:12px">
+      <thead><tr style="background:#f5f5f5">
+        <th style="padding:6px 10px;text-align:right">פוסט</th>
+        <th style="padding:6px 10px">Sessions</th>
+        <th style="padding:6px 10px">ממוצע שהייה</th>
+      </tr></thead>
+      <tbody>${engRows}</tbody>
+    </table>` : "";
+
+  return `
+    <hr style="border:none;border-top:1px solid #eee;margin:24px 0"/>
+    <h3 style="font-size:14px;border-bottom:2px solid #3b82f6;padding-bottom:6px;direction:rtl;text-align:right">📞 GA4 — פוסטים שמביאים לידים</h3>
+    <p style="font-size:12px;color:#666;margin:4px 0 10px;direction:rtl;text-align:right">הבוט מבצע לינג לסגנון ונושאי הפוסטים המצליחים בכתיבת תוכן חדש.</p>
+    ${convTable}
+    ${engTable}`;
+}
+
+function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, followupMetrics, topicLabel, topicId, topicPagePath, keywordResearch, pageSpeedReport, metaResult, titleResult, refreshResult, lowCtrPages, lowHangingKeywords, snippetResult, performanceInsights, cannibalizationData, conversionInsights }) {
   const SITE = "https://www.the-videoshop.com";
   const topicLiveUrl = topicPagePath ? `${SITE}/he${topicPagePath}` : null;
   const hasFollowup = followupMetrics && followupMetrics.length > 0;
@@ -341,6 +431,8 @@ function buildHtml({ cycle, actionType, filesChanged, prUrl, baselineMetrics, fo
     ${buildTitleSection(titleResult, topicLiveUrl)}
     ${buildRefreshSection(refreshResult)}
     ${buildSnippetSection(snippetResult)}
+    ${buildCannibalizationSection(cannibalizationData)}
+    ${buildConversionSection(conversionInsights)}
     ${buildLowHangingSection(lowHangingKeywords)}
     ${buildCtrSection(lowCtrPages)}
     ${buildPageSpeedSection(pageSpeedReport)}

@@ -44,6 +44,9 @@ jobs:
 
           # Google APIs (Search Console + GA4)
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          # GA4_PROPERTY_ID must be the NUMERIC property ID (e.g. "123456789")
+          # NOT the measurement ID (G-XXXXXXXXXX).
+          # Find it: Google Analytics → Admin → Property Settings → Property ID
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
 

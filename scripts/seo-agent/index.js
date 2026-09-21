@@ -22,6 +22,8 @@ import { generateFaqItems, generateBlogPost } from "./claude.js";
 import { commitFaqItems, openBlogPostPr, getExistingBlogPosts } from "./changes.js";
 import { savePerformanceMemory, getPerformanceInsights } from "./memory.js";
 import { optimizeSnippetCandidates } from "./snippet.js";
+import { detectCannibalization } from "./cannibalization.js";
+import { analyzeConversions, getLatestConversionInsights } from "./conversions.js";
 import { sendSummaryEmail } from "./email.js";
 import { researchIndustryKeywords } from "./keywords.js";
 import { runPageSpeedAudit } from "./pagespeed.js";
@@ -80,10 +82,25 @@ async function runNewCycle(research) {
   const recentTopicIds = await getRecentTopicIds(60);
   const { topic, metrics } = await pickWeakestTopic(KEYWORD_TOPICS, recentTopicIds);
 
-  // Load performance memory to guide Claude
-  const performanceInsights = await getPerformanceInsights().catch(() => null);
+  // Load performance memory + conversion insights to guide Claude
+  const [performanceInsights, conversionInsights] = await Promise.all([
+    getPerformanceInsights().catch(() => null),
+    getLatestConversionInsights().catch(() => null),
+  ]);
   if (performanceInsights) {
-    console.log(`[agent] Performance insights loaded: ${performanceInsights.totalSuccessfulCycles} past wins, avg Δ${performanceInsights.avgPositionImprovement} positions`);
+    console.log(`[agent] Performance insights: ${performanceInsights.totalSuccessfulCycles} past wins, avg Δ${performanceInsights.avgPositionImprovement} positions`);
+  }
+  if (conversionInsights) {
+    console.log(`[agent] Conversion insights loaded: ${conversionInsights.convertingPages?.length ?? 0} converting posts`);
+  }
+
+  // Cannibalization detection — runs every cycle, reported in email
+  const cannibalizationData = await detectCannibalization().catch((err) => {
+    console.warn("[agent] Cannibalization check failed:", err.message);
+    return null;
+  });
+  if (cannibalizationData?.pairs?.length) {
+    console.log(`[agent] ⚠ ${cannibalizationData.pairs.length} cannibalizing keyword pairs detected`);
   }
 
   console.log(`[agent] Selected topic: ${topic.label} (avg position: ${avg(metrics.map(m => m.position)).toFixed(1)})`);
@@ -194,7 +211,7 @@ async function runNewCycle(research) {
     // Generate blog post and open PR
     console.log("[agent] Generating blog post...");
     const weakestKeyword = metrics.sort((a, b) => b.position - a.position)[0].keyword;
-    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts, performanceInsights);
+    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts, performanceInsights, conversionInsights);
     post.topicId = topic.id;
     const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
     prNumber = num;
@@ -237,6 +254,8 @@ async function runNewCycle(research) {
     lowHangingKeywords: lowHangingKeywords.length ? lowHangingKeywords.slice(0, 10) : null,
     snippetResult: snippetResult || null,
     performanceInsights: performanceInsights || null,
+    cannibalizationData: cannibalizationData || null,
+    conversionInsights: conversionInsights || (research?.conversionInsights ?? null),
   });
 
   console.log(`[agent] New cycle saved: ${cycleId}`);
@@ -273,6 +292,13 @@ async function runKeywordResearch() {
     orphanQueries.forEach((q) => console.log(`  "${q.query}" — ${q.impressions} impressions, pos ${q.position}`));
     research.orphanQueries = orphanQueries;
   }
+
+  // GA4 conversion analysis — every research cycle
+  const conversionInsights = await analyzeConversions().catch((err) => {
+    console.warn("[agent] GA4 conversion analysis failed:", err.message);
+    return null;
+  });
+  if (conversionInsights) research.conversionInsights = conversionInsights;
 
   return research;
 }
