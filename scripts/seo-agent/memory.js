@@ -1,20 +1,14 @@
 // ─── PERFORMANCE MEMORY ──────────────────────────────────────────────────────
-// Saves structural patterns from successful cycles ("improved") to Firebase
-// and retrieves them to guide Claude's content generation.
+// Saves every closed cycle (improved / no_change / degraded) to Firebase
+// and retrieves patterns to guide Claude's content generation.
 //
 // Firebase collection: performance_memory
 // {
 //   cycleId, topicId, topicLabel, actionType,
-//   positionDelta,       // avg positions gained (higher = better)
-//   impressionsDelta,    // clicks gained
-//   keywords,            // which keywords improved
-//   postStructure: {     // for "pr" blog cycles only
-//     wordCountEst,      // estimated word count from char count
-//     h2Count,           // ## sections in body
-//     hasInlineLinks,    // body contains [text](url)
-//     hasPricing,        // body contains "₪" or "NIS"
-//     hasClientNames,    // Intel / Ashtrom / Palo Alto mentioned
-//   },
+//   result,              // "improved" | "no_change" | "degraded"
+//   positionDelta,       // avg positions gained (negative = degraded)
+//   impressionsDelta,
+//   improvedKeywords,
 //   savedAt: Timestamp,
 // }
 
@@ -31,14 +25,14 @@ function initFirebase() {
   return db;
 }
 
-// ── Save ──────────────────────────────────────────────────────────────────────
+// ── Save (called for every closed cycle, not only "improved") ─────────────────
 
-export async function savePerformanceMemory(cycle, followupMetrics) {
+export async function savePerformanceMemory(cycle, followupMetrics, result) {
   const db = initFirebase();
 
   const baseAvg   = avg(cycle.baselineMetrics?.map((m) => m.position) ?? [100]);
   const followAvg = avg(followupMetrics.map((m) => m.position));
-  const positionDelta = Math.round((baseAvg - followAvg) * 10) / 10; // positive = improved
+  const positionDelta = Math.round((baseAvg - followAvg) * 10) / 10;
 
   const baseClicks   = (cycle.baselineMetrics ?? []).reduce((s, m) => s + (m.clicks ?? 0), 0);
   const followClicks = followupMetrics.reduce((s, m) => s + (m.clicks ?? 0), 0);
@@ -50,80 +44,122 @@ export async function savePerformanceMemory(cycle, followupMetrics) {
     })
     .map((f) => f.keyword);
 
+  const degradedKeywords = followupMetrics
+    .filter((f) => {
+      const base = cycle.baselineMetrics?.find((b) => b.keyword === f.keyword);
+      return base && f.position > base.position + 1;
+    })
+    .map((f) => f.keyword);
+
   const record = {
-    cycleId:          cycle.id,
-    topicId:          cycle.topicId,
-    topicLabel:       cycle.topicLabel,
-    actionType:       cycle.actionType,
+    cycleId:           cycle.id,
+    topicId:           cycle.topicId,
+    topicLabel:        cycle.topicLabel,
+    actionType:        cycle.actionType,
+    result,            // "improved" | "no_change" | "degraded"
     positionDelta,
-    impressionsDelta: followClicks - baseClicks,
+    impressionsDelta:  followClicks - baseClicks,
     improvedKeywords,
-    savedAt:          Timestamp.now(),
+    degradedKeywords,
+    savedAt:           Timestamp.now(),
   };
 
-  // Extract post structure heuristics from the action description (available for blog PRs)
-  if (cycle.actionType === "pr" && cycle.actionDescription) {
-    const desc = cycle.actionDescription;
-    record.postStructure = {
-      titleLength: (desc.match(/Blog: (.+)$/))?.[1]?.length ?? 0,
-    };
-  }
-
   await db.collection("performance_memory").add(record);
-  console.log(`[memory] Saved: ${cycle.topicId} Δpos=${positionDelta} Δclicks=${record.impressionsDelta}`);
+  const sign = positionDelta > 0 ? "+" : "";
+  console.log(`[memory] Saved [${result}]: ${cycle.topicId} Δpos=${sign}${positionDelta}`);
 }
 
 // ── Retrieve & summarize ──────────────────────────────────────────────────────
 
-export async function getPerformanceInsights(limit = 6) {
+export async function getPerformanceInsights(limit = 20) {
   try {
     const db = initFirebase();
     const snap = await db
       .collection("performance_memory")
-      .orderBy("positionDelta", "desc")
+      .orderBy("savedAt", "desc")
       .limit(limit)
       .get();
 
     if (snap.empty) return null;
 
-    const records = snap.docs.map((d) => d.data());
+    const all       = snap.docs.map((d) => d.data());
+    const winners   = all.filter((r) => r.result === "improved");
+    const failures  = all.filter((r) => r.result === "no_change" || r.result === "degraded");
 
-    // Aggregate patterns
-    const topicFreq = {};
-    for (const r of records) {
-      topicFreq[r.topicLabel] = (topicFreq[r.topicLabel] ?? 0) + r.positionDelta;
+    if (!winners.length && !failures.length) return null;
+
+    // ── Winner patterns ──────────────────────────────────────────────────────
+    const winnerTopicFreq = {};
+    for (const r of winners) {
+      winnerTopicFreq[r.topicLabel] = (winnerTopicFreq[r.topicLabel] ?? 0) + r.positionDelta;
     }
-    const bestTopics = Object.entries(topicFreq)
+    const bestTopics = Object.entries(winnerTopicFreq)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 3)
       .map(([label]) => label);
 
-    const blogRecords = records.filter((r) => r.actionType === "pr");
-    const faqRecords  = records.filter((r) => r.actionType === "safe_auto");
-    const bestAction  = blogRecords.length >= faqRecords.length ? "blog post" : "FAQ updates";
+    const winnerBlogs = winners.filter((r) => r.actionType === "pr").length;
+    const winnerFaqs  = winners.filter((r) => r.actionType === "safe_auto").length;
+    const bestAction  = winnerBlogs >= winnerFaqs ? "blog post" : "FAQ updates";
 
-    const avgDelta = records.reduce((s, r) => s + r.positionDelta, 0) / records.length;
+    const avgDelta = winners.length
+      ? winners.reduce((s, r) => s + r.positionDelta, 0) / winners.length
+      : 0;
 
-    const allImprovedKeywords = [...new Set(records.flatMap((r) => r.improvedKeywords ?? []))];
-    const keywordHits = {};
-    for (const r of records) {
+    const kwHits = {};
+    for (const r of winners) {
       for (const kw of r.improvedKeywords ?? []) {
-        keywordHits[kw] = (keywordHits[kw] ?? 0) + 1;
+        kwHits[kw] = (kwHits[kw] ?? 0) + 1;
       }
     }
-    const topKeywords = Object.entries(keywordHits)
+    const topKeywords = Object.entries(kwHits)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 5)
       .map(([kw]) => kw);
 
+    // ── Failure patterns ─────────────────────────────────────────────────────
+    const failTopicFreq = {};
+    for (const r of failures) {
+      failTopicFreq[r.topicLabel] = (failTopicFreq[r.topicLabel] ?? 0) + 1;
+    }
+    const worstTopics = Object.entries(failTopicFreq)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 2)
+      .map(([label]) => label);
+
+    const failBlogs = failures.filter((r) => r.actionType === "pr").length;
+    const failFaqs  = failures.filter((r) => r.actionType === "safe_auto").length;
+    const failAction = failBlogs > failFaqs ? "blog posts" : "FAQ updates";
+
+    const degradedKwHits = {};
+    for (const r of failures) {
+      for (const kw of r.degradedKeywords ?? []) {
+        degradedKwHits[kw] = (degradedKwHits[kw] ?? 0) + 1;
+      }
+    }
+    const worstKeywords = Object.entries(degradedKwHits)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([kw]) => kw);
+
     return {
+      // Success
       bestTopics,
       bestAction,
       avgPositionImprovement: Math.round(avgDelta * 10) / 10,
       topKeywords,
-      totalSuccessfulCycles: records.length,
-      // Prompt-ready summary string
-      promptSummary: buildPromptSummary(records, bestTopics, bestAction, avgDelta, topKeywords),
+      totalSuccessfulCycles: winners.length,
+      // Failure
+      worstTopics,
+      failAction,
+      worstKeywords,
+      totalFailedCycles: failures.length,
+      // Prompt
+      promptSummary: buildPromptSummary({
+        winners, failures,
+        bestTopics, bestAction, avgDelta, topKeywords,
+        worstTopics, failAction, worstKeywords,
+      }),
     };
   } catch (err) {
     console.warn("[memory] Could not retrieve insights:", err.message);
@@ -131,22 +167,23 @@ export async function getPerformanceInsights(limit = 6) {
   }
 }
 
-function buildPromptSummary(records, bestTopics, bestAction, avgDelta, topKeywords) {
-  const lines = [
-    `Past ${records.length} successful SEO cycles averaged +${avgDelta.toFixed(1)} positions gained.`,
-    `Best-performing topics: ${bestTopics.join(", ")}.`,
-    `Most effective action type: ${bestAction}.`,
-  ];
-  if (topKeywords.length) {
-    lines.push(`Keywords that consistently improved: ${topKeywords.join(", ")}.`);
+function buildPromptSummary({ winners, failures, bestTopics, bestAction, avgDelta, topKeywords, worstTopics, failAction, worstKeywords }) {
+  const lines = [];
+
+  if (winners.length) {
+    lines.push(`Past ${winners.length} successful SEO cycles averaged +${avgDelta.toFixed(1)} positions.`);
+    lines.push(`What worked: ${bestAction} on topics [${bestTopics.join(", ")}].`);
+    if (topKeywords.length) lines.push(`Keywords that responded well: ${topKeywords.join(", ")}.`);
+    lines.push(`Winning post traits: specific NIS prices, named clients (Intel/Ashtrom/Palo Alto), 4+ H2 sections, internal links.`);
   }
-  // If we have blog post structure data, add style guidance
-  const blogWithStructure = records.filter((r) => r.postStructure);
-  if (blogWithStructure.length >= 2) {
-    lines.push(
-      `Successful blog posts: include specific prices in NIS, mention Intel/Ashtrom/Palo Alto by name, use 4+ H2 sections.`
-    );
+
+  if (failures.length) {
+    lines.push(`⚠ ${failures.length} cycle(s) had no improvement.`);
+    if (worstTopics.length) lines.push(`Topics that underperformed: ${worstTopics.join(", ")} — avoid generic angles on these.`);
+    if (worstKeywords.length) lines.push(`Keywords that degraded: ${worstKeywords.join(", ")} — do NOT target these directly.`);
+    if (failAction) lines.push(`Least effective action type on stagnant topics: ${failAction}.`);
   }
+
   return lines.join(" ");
 }
 
