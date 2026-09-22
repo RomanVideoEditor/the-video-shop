@@ -439,9 +439,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                         className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-black/40" />
-                      <div className="absolute top-3 end-3 bg-[#FFD000] text-[#111] text-[10px] font-bold px-2 py-1 rounded-full">
-                        {post.readingTime} {isHe ? "דק׳" : "min"}
-                      </div>
+                      {post.readingTime && (
+                        <div className="absolute top-3 end-3 bg-[#FFD000] text-[#111] text-[10px] font-bold px-2 py-1 rounded-full">
+                          {post.readingTime} {isHe ? "דק׳" : "min"}
+                        </div>
+                      )}
                     </div>
                     <div className="p-5">
                       <h3 className="text-white font-bold text-[14px] leading-snug mb-2 group-hover:text-[#FFD000] transition-colors duration-200 line-clamp-2">

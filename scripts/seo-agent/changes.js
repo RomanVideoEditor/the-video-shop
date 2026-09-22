@@ -141,6 +141,7 @@ export async function openBlogPostPr(post) {
     excerptHe: ${JSON.stringify(post.excerptHe)},
     excerptEn: ${JSON.stringify(post.excerptEn)},
     tags: ${JSON.stringify(post.tags)},${coverImage ? `\n    coverImage: ${JSON.stringify(coverImage)},` : ""}
+    readingTime: ${Math.max(3, Math.round((post.bodyHe?.split(/\s+/).length ?? 0) / 200))},
     bodyHe: ${JSON.stringify(post.bodyHe)},
     bodyEn: ${JSON.stringify(post.bodyEn)},
   },`;
