@@ -69,26 +69,27 @@ export default async function VlogPage({
             const excerpt = isHe ? post.excerptHe : post.excerptEn;
             const tags = isHe ? post.tagsHe : post.tagsEn;
             const isFirst = index === 0;
+            const thumbSrc = post.coverImage
+              ?? (post.relatedYoutubeId ? `https://img.youtube.com/vi/${post.relatedYoutubeId}/hqdefault.jpg` : null)
+              ?? "/vlogimg/corporate-business-card-cover.jpg";
 
             return (
               <article key={post.id} className="reveal">
                 <Link href={`/vlog/${post.id}`} className="group block py-10">
                   <div className={`flex gap-8 items-start ${isFirst ? "flex-col" : "flex-col sm:flex-row"}`}>
-                    {/* Cover image */}
-                    {post.coverImage && (
-                      <div className={`relative overflow-hidden rounded-lg bg-white border border-gray-200 shrink-0 ${
-                        isFirst ? "w-full aspect-[16/7]" : "w-full sm:w-56 aspect-video"
-                      }`}>
-                        <Image
-                          src={post.coverImage}
-                          alt={`${title} | videoshop Blog`}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
-                          sizes={isFirst ? "(max-width: 768px) 100vw, 800px" : "(max-width: 640px) 100vw, 224px"}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                      </div>
-                    )}
+                    {/* Cover image — always shown */}
+                    <div className={`relative overflow-hidden rounded-xl shrink-0 ${
+                      isFirst ? "w-full aspect-[16/7]" : "w-full sm:w-64 aspect-video"
+                    }`}>
+                      <Image
+                        src={thumbSrc}
+                        alt={`${title} | videoshop Blog`}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes={isFirst ? "(max-width: 768px) 100vw, 800px" : "(max-width: 640px) 100vw, 256px"}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    </div>
 
                     {/* Text */}
                     <div className="flex-1 min-w-0">
