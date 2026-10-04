@@ -79,6 +79,10 @@ async function closePendingCycle() {
 async function runNewCycle(research) {
   const recentTopicIds = await getRecentTopicIds(60);
   const { topic, metrics } = await pickWeakestTopic(KEYWORD_TOPICS, recentTopicIds);
+  if (!topic) {
+    console.log("[agent] No topic selected (GSC data unavailable or all topics recent). Exiting.");
+    return;
+  }
 
   // Load performance memory + conversion insights + attribution data to guide Claude
   const [performanceInsights, conversionInsights, topAttributed] = await Promise.all([
