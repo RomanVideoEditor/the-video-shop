@@ -4,7 +4,8 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = path.join(__dirname, "../public/blog");
-const API_KEY = "AQ.Ab8RN6IDy8iLIs78ZhO4BGQJ4Qu5CsORECD65vvBa-CU7Nn32A";
+const API_KEY = process.env.GEMINI_API_KEY;
+if (!API_KEY) throw new Error("GEMINI_API_KEY environment variable is not set");
 
 if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
