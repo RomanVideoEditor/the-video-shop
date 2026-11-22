@@ -47,7 +47,7 @@ Return ONLY valid JSON:
 }`;
 
   const response = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
+    model: "claude-haiku-5-5",
     max_tokens: 2000,
     messages: [{ role: "user", content: prompt }],
   });
@@ -56,8 +56,12 @@ Return ONLY valid JSON:
   try {
     return JSON.parse(text);
   } catch {
-    const match = text.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
+    // extract first {...} block, allowing nested braces
+    const start = text.indexOf("{");
+    const end = text.lastIndexOf("}");
+    if (start !== -1 && end !== -1 && end > start) {
+      return JSON.parse(text.slice(start, end + 1));
+    }
     throw new Error(`Keyword research returned invalid JSON: ${text.slice(0, 200)}`);
   }
 }
