@@ -47,7 +47,7 @@ Return ONLY valid JSON:
 }`;
 
   const response = await client.messages.create({
-    model: "claude-haiku-5-5",
+    model: "claude-haiku-5-5-20251014",
     max_tokens: 300,
     messages: [{ role: "user", content: prompt }],
   });
@@ -85,7 +85,7 @@ Return ONLY valid JSON:
 }`;
 
   const response = await client.messages.create({
-    model: "claude-haiku-5-5",
+    model: "claude-haiku-5-5-20251014",
     max_tokens: 500,
     messages: [{ role: "user", content: prompt }],
   });
