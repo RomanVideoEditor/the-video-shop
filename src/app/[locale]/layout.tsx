@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -155,6 +157,8 @@ export default async function LocaleLayout({
           <CookieBanner locale={locale} />
           <RevealInit />
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-KJBDYMNGWW" strategy="lazyOnload" />
         <Script id="ga4-init" strategy="lazyOnload">{`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KJBDYMNGWW');`}</Script>
       </body>
