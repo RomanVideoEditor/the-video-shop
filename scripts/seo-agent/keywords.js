@@ -19,7 +19,7 @@ Markets: Israel (Hebrew searches) + English-speaking markets (global B2B).
 Current target keywords already in use:
 ${existingKeywords}
 
-Task: Identify 15 high-opportunity keywords we are MISSING — keywords that:
+Task: Identify 10 high-opportunity keywords we are MISSING — keywords that:
 1. Have real search volume (people actually search for these)
 2. Are NOT already in our list above
 3. Are relevant to video production for B2B companies in 2025-2026
@@ -48,7 +48,7 @@ Return ONLY valid JSON:
 
   const response = await client.messages.create({
     model: "claude-haiku-5-5",
-    max_tokens: 4000,
+    max_tokens: 8000,
     messages: [{ role: "user", content: prompt }],
   });
 
