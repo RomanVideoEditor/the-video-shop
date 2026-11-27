@@ -52,6 +52,9 @@ Return ONLY valid JSON:
     messages: [{ role: "user", content: prompt }],
   });
 
+  if (!response.content || !response.content[0] || !response.content[0].text) {
+    throw new Error(`Empty response from Claude: stop_reason=${response.stop_reason}, content=${JSON.stringify(response.content)}`);
+  }
   const text = response.content[0].text.trim();
   try {
     return JSON.parse(text);
