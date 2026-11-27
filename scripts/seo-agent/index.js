@@ -223,13 +223,22 @@ async function runNewCycle(research) {
     // Generate blog post and open PR
     console.log("[agent] Generating blog post...");
     const weakestKeyword = metrics.sort((a, b) => b.position - a.position)[0].keyword;
-    const post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts, performanceInsights, conversionInsights);
-    post.topicId = topic.id;
-    const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
-    prNumber = num;
-    filesChanged = ["src/lib/videos.ts"];
-    actionDescription = `Opened PR #${num} for blog post: ${post.titleHe}`;
-    console.log(`[agent] PR opened: ${prUrl}`);
+    let post;
+    try {
+      post = await generateBlogPost(topic, weakestKeyword, metrics, existingPosts, performanceInsights, conversionInsights);
+    } catch (blogErr) {
+      console.warn("[agent] Blog post generation failed (will retry next cycle):", blogErr.message.slice(0, 120));
+      actionDescription = "Blog post generation skipped (Claude response issue — retry next cycle)";
+      filesChanged = [];
+    }
+    if (post) {
+      post.topicId = topic.id;
+      const { prNumber: num, prUrl, branch } = await openBlogPostPr(post);
+      prNumber = num;
+      filesChanged = ["src/lib/videos.ts"];
+      actionDescription = `Opened PR #${num} for blog post: ${post.titleHe}`;
+      console.log(`[agent] PR opened: ${prUrl}`);
+    }
   }
 
   // Save cycle
