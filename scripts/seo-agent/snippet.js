@@ -121,7 +121,7 @@ Return ONLY valid JSON:
 }`;
 
   const response = await client.messages.create({
-    model: "claude-haiku-5-5-20251014",
+    model: "claude-haiku-5-5",
     max_tokens: 400,
     messages: [{ role: "user", content: prompt }],
   });
