@@ -193,7 +193,8 @@ Return ONLY valid JSON:
 
   const rawText = response.content?.find((b) => b.type === "text")?.text;
   if (!rawText) throw new Error(`Claude blog post response had no text block. stop_reason: ${response.stop_reason}`);
-  const text = rawText.trim();
+  // Strip markdown code fences if present (```json ... ```)
+  const text = rawText.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```\s*$/, "").trim();
   let post;
   try {
     post = JSON.parse(text);
