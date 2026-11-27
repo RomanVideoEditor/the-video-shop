@@ -204,9 +204,6 @@ Return ONLY valid JSON:
       try { post = JSON.parse(match[0]); } catch {}
     }
     if (!post) {
-      if (text.includes("***")) {
-        throw new Error("Blog post response contained GitHub Actions masked secret token — retry next cycle");
-      }
       throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
     }
   }
