@@ -126,7 +126,9 @@ Return ONLY valid JSON:
     messages: [{ role: "user", content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  const textBlock = response.content?.find((b) => b.type === "text");
+  if (!textBlock) throw new Error("[snippet] No text block in Claude response");
+  const text = textBlock.text.trim();
   try { return JSON.parse(text); }
   catch {
     const m = text.match(/\{[\s\S]*\}/);

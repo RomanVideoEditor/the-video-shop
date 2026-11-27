@@ -134,7 +134,9 @@ Return ONLY valid JSON:
     messages:   [{ role: "user", content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  const textBlock = response.content?.find((b) => b.type === "text");
+  const text = textBlock ? textBlock.text.trim() : "";
+  if (!text) return { recommendation: "No suggestion available", newTargetKeyword: "", severity: "medium" };
   try { return JSON.parse(text); }
   catch {
     const m = text.match(/\{[\s\S]*\}/);

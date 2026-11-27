@@ -53,7 +53,9 @@ Return ONLY valid JSON:
     messages: [{ role: "user", content: prompt }],
   });
 
-  const text = response.content[0].text.trim();
+  const textBlock = response.content?.find((b) => b.type === "text");
+  if (!textBlock) throw new Error("No text block in refresh response");
+  const text = textBlock.text.trim();
   try { return JSON.parse(text); }
   catch { const m = text.match(/\{[\s\S]*\}/); if (m) return JSON.parse(m[0]); throw new Error("Invalid JSON from refresh"); }
 }

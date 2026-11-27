@@ -48,14 +48,15 @@ Return ONLY valid JSON:
 
   const response = await client.messages.create({
     model: "claude-haiku-5-5",
-    max_tokens: 2000,
+    max_tokens: 4000,
     messages: [{ role: "user", content: prompt }],
   });
 
-  if (!response.content || !response.content[0] || !response.content[0].text) {
+  const textBlock = response.content?.find((b) => b.type === "text");
+  if (!textBlock) {
     throw new Error(`Empty response from Claude: stop_reason=${response.stop_reason}, content=${JSON.stringify(response.content)}`);
   }
-  const text = response.content[0].text.trim();
+  const text = textBlock.text.trim();
   try {
     return JSON.parse(text);
   } catch {
