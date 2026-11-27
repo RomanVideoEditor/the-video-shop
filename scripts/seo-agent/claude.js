@@ -186,7 +186,7 @@ Return ONLY valid JSON:
 
   // Sonnet for blog posts — higher quality B2B content justifies the cost
   const response = await client.messages.create({
-    model: "claude-sonnet-5",
+    model: "claude-sonnet-5-5",
     max_tokens: 4000,
     messages: [{ role: "user", content: prompt }],
   });
@@ -199,12 +199,15 @@ Return ONLY valid JSON:
   try {
     post = JSON.parse(text);
   } catch {
-    const match = text.match(/\{[\s\S]*\}/);
-    if (match) {
-      try { post = JSON.parse(match[0]); } catch {}
+    // Try to extract first {...} block
+    const start = text.indexOf("{");
+    const end = text.lastIndexOf("}");
+    if (start !== -1 && end > start) {
+      try { post = JSON.parse(text.slice(start, end + 1)); } catch {}
     }
     if (!post) {
-      throw new Error(`Claude returned invalid JSON: ${text.slice(0, 200)}`);
+      // Note: don't print text — GitHub Actions may mask parts of it, making the error confusing
+      throw new Error(`Claude returned invalid JSON (length ${text.length}, stop_reason: ${response.stop_reason})`);
     }
   }
 
