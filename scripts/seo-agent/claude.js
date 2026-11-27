@@ -187,7 +187,7 @@ Return ONLY valid JSON:
   // Sonnet for blog posts — higher quality B2B content justifies the cost
   const response = await client.messages.create({
     model: "claude-sonnet-5-5",
-    max_tokens: 4000,
+    max_tokens: 8000,
     messages: [{ role: "user", content: prompt }],
   });
 
