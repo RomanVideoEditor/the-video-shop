@@ -122,7 +122,7 @@ Return ONLY valid JSON:
 
   const response = await client.messages.create({
     model: "claude-haiku-5-5",
-    max_tokens: 400,
+    max_tokens: 1500,
     messages: [{ role: "user", content: prompt }],
   });
 
