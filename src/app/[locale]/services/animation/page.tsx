@@ -74,13 +74,17 @@ export default async function AnimationPage({
           { q: "האם אתם עושים animated explainer video עבור חברות הייטק בישראל?", a: "כן, אנו בעלי ניסיון עשיר ב-animated explainer video עבור חברות הייטק וסטארטאפים בישראל. עבדנו עם חברות כמו Intel ו-Palo Alto Networks, ואנו מבינים את הדיוקים הטכניים והדרישות של התעשייה. אנימציה הסברתית שלנו מפשטת קונספטים מורכבים לתוכן ברור וקשור." },
           { q: "איזה סגנון אנימציה הכי מתאים לסרטון אנימציה לחברה שלי?", a: "זה תלוי בזהות המותג שלך, קהל היעד, וההודעה שאתה רוצה להעביר. סגנונות מוטב עבור סרטון אנימציה לחברה כוללים motion graphics פשוטה, 2D אנימציה עדינה, או 3D מודרני - כולם יכולים ליצור סרטון אנימציה הסברתית אפקטיבי. אנו ממליצים על סגנון בהתאם לניתוח עומק של המטרות השיווקיות שלך." },
 
-        ] : [
+        
+
+] : [
           { q: "How much does an animated explainer video cost?", a: "An animated explainer video typically costs between $3,000 and $18,000 USD, depending on length and style. Short 60-90 second 2D explainer videos are most common for high-tech and SaaS companies. Basic motion graphics are less expensive; complex 3D animation costs more." },
           { q: "What is the difference between motion graphics and animation?", a: "Motion graphics work with shapes, text, and icons — ideal for explaining processes, data, and SaaS products. Animation includes characters, worlds, and stories — better for emotional storytelling. For most B2B projects, we combine both." },
           { q: "How long does animation production take?", a: "4-6 weeks from kickoff to delivery: two weeks for script and storyboard, two weeks for animation, one week for sound mix and music. Short, simpler projects can be completed in 3 weeks." },
           { q: "Can animation be combined with live action filming?", a: "Yes — this is exactly what we did for Buildots and Ludeo. Hybrid production combines real people and products with animated worlds — the result looks like a major production and works great for marketing campaigns and launch films." },
           { q: "Is animation suitable for social media?", a: "Absolutely. All our animation videos are delivered in 9:16 versions for Reels and Stories, 1:1 for feed, and short edits of 15/30 seconds for paid advertising." },
-        ]}
+        
+
+]}
       />
     </>
   );
